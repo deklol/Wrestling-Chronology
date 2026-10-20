@@ -1,14 +1,19 @@
 # Wrestling Chronology
 
-## Install on Fire TV
+## Install with Downloader on Fire TV
 
-Open **Downloader by AFTVnews**, enter the URL below and select **Go**. Download the APK, allow Downloader to install unknown apps if prompted, and select **Install**.
+**Downloader code: `2909774`**
 
-```text
-https://github.com/deklol/Wrestling-Chronology/releases/latest/download/Wrestling-Chronology.apk
-```
+**Short URL: [aftv.news/2909774](https://aftv.news/2909774)**
 
-[Download the latest APK](https://github.com/deklol/Wrestling-Chronology/releases/latest/download/Wrestling-Chronology.apk)
+1. Install and open **Downloader by AFTVnews** on your Fire TV or Fire Stick.
+2. Enter **`2909774`** in Downloader's URL field and select **Go**.
+3. Download the APK. If prompted, allow Downloader to install unknown apps in Fire TV settings, then return and select **Install**.
+4. Open **Wrestling Chronology** from your apps.
+
+[Download the latest APK directly](https://github.com/deklol/Wrestling-Chronology/releases/latest/download/Wrestling-Chronology.apk)
+
+For future updates, use the same Downloader code or check **Settings > Update app**. Install updates over the existing app to preserve viewing history.
 
 A remote-friendly Fire TV app for watching full wrestling shows in chronological order. Choose WWF/WWE, WCW, ECW or TNA, select a year, and play the available shows and events in one queue.
 
