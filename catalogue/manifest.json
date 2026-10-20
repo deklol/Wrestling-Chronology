@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "companies": {
+    "wwe": {
+      "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/wwe.json",
+      "sha256": "6f57d9995ee03290377b4d0327c46c55f34880c01e8e7e973879be55273440f8",
+      "bytes": 1962202,
+      "revision": 1792536624
+    },
+    "ecw": {
+      "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/ecw.json",
+      "sha256": "0936cff89bd17ecc7ffa1c65530fa496ac380c95d6719938ded002d49dee16d8",
+      "bytes": 536747,
+      "revision": 1792536625
+    },
+    "wcw": {
+      "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/wcw.json",
+      "sha256": "c50f03dd6565e954220db4c94a8175f3c73ff1ecad50e719b5f7885cc94f88f2",
+      "bytes": 3115839,
+      "revision": 1792536572
+    },
+    "tna": {
+      "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/tna.json",
+      "sha256": "df986b8ecb779b919be1844def3b6145418da43bef9eff8f87374ccf331007ee",
+      "bytes": 837809,
+      "revision": 1792536625
+    }
+  }
+}

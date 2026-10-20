@@ -1,0 +1,2219 @@
+{
+  "schemaVersion": 1,
+  "description": "Public source configuration. Edit, refresh the JSON packs, then commit to GitHub. Source changes do not need an APK rebuild.",
+  "youtube": {
+    "enabled": true,
+    "channelId": "UCNSnSemXKDc9UEZ7m31wY9Q",
+    "playlists": [
+      {
+        "id": "UUNSnSemXKDc9UEZ7m31wY9Q",
+        "name": "ECW recent full-show uploads",
+        "show": "Auto",
+        "enabled": true,
+        "channelId": "UCNSnSemXKDc9UEZ7m31wY9Q",
+        "authorUrl": "https://www.youtube.com/@ECW",
+        "maxPages": 3,
+        "recentOnly": true
+      }
+    ],
+    "videos": []
+  },
+  "archive": {
+    "enabled": true,
+    "collectionsPerScan": 12,
+    "collections": [
+      {
+        "id": "re-c-dub-1995-complete",
+        "name": "Hardcore TV 1995",
+        "enabled": true,
+        "showHint": "Hardcore TV",
+        "dateOrder": "MDY",
+        "overrides": {
+          "1995/Hardcore TV/01 - January 3rd 1995.mp4": {
+            "date": "1995-01-03",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/02 - January 10th 1995.mp4": {
+            "date": "1995-01-10",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/03 - January 17th 1995.mp4": {
+            "date": "1995-01-17",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/04 - January 24th 1995.mp4": {
+            "date": "1995-01-24",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/05 - January 31st 1995.mp4": {
+            "date": "1995-01-31",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/06 - February 7th 1995.mp4": {
+            "date": "1995-02-07",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/07 - February 14th 1995.mp4": {
+            "date": "1995-02-14",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/08 - February 21st 1995.mp4": {
+            "date": "1995-02-21",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/09 - February 28th 1995.mp4": {
+            "date": "1995-02-28",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/10 - March 7th 1995.mp4": {
+            "date": "1995-03-07",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/11 - March 14th 1995.mp4": {
+            "date": "1995-03-14",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/12 - March 21st 1995.mp4": {
+            "date": "1995-03-21",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/13 - March 28th 1995.mp4": {
+            "date": "1995-03-28",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/14 - April 4th 1995.mp4": {
+            "date": "1995-04-04",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/15 - April 11th 1995.mp4": {
+            "date": "1995-04-11",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/16 - April 18th 1995.mp4": {
+            "date": "1995-04-18",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/17 - April 25th 1995.mp4": {
+            "date": "1995-04-25",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/18 - May 2nd 1995.mp4": {
+            "date": "1995-05-02",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/19 - May 9th 1995.mp4": {
+            "date": "1995-05-09",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/20 - May 16th 1995.mp4": {
+            "date": "1995-05-16",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/21 - May 23rd 1995.mp4": {
+            "date": "1995-05-23",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/22 - May 30th 1995.mp4": {
+            "date": "1995-05-30",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/23 - June 6th 1995.mp4": {
+            "date": "1995-06-06",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/24 - June 13th 1995.mp4": {
+            "date": "1995-06-13",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/25 - June 20th 1995.mp4": {
+            "date": "1995-06-20",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/26 - June 27th 1995.mp4": {
+            "date": "1995-06-27",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/27 - July 4th 1995.mp4": {
+            "date": "1995-07-04",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/28 - July 11th 1995.mp4": {
+            "date": "1995-07-11",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/29 - July 18th 1995.mp4": {
+            "date": "1995-07-18",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/30 - July 25th 1995.mp4": {
+            "date": "1995-07-25",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/31 - August 1st 1995.mp4": {
+            "date": "1995-08-01",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/32 - August 8th 1995.mp4": {
+            "date": "1995-08-08",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/33 - August 15th 1995.mp4": {
+            "date": "1995-08-15",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/34 - August 22nd 1995.mp4": {
+            "date": "1995-08-22",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/35 - August 29th 1995.mp4": {
+            "date": "1995-08-29",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/36 - September 5th 1995.mp4": {
+            "date": "1995-09-05",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/37 - September 12th 1995.mp4": {
+            "date": "1995-09-12",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/38 - September 19th 1995.mp4": {
+            "date": "1995-09-19",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/39 - September 26th 1995.mp4": {
+            "date": "1995-09-26",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/40 - October 6th 1995.mp4": {
+            "date": "1995-10-06",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/41 - October 10th 1995.mp4": {
+            "date": "1995-10-10",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/42 - October 17th 1995.mp4": {
+            "date": "1995-10-17",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/43 - October 24th 1995.mp4": {
+            "date": "1995-10-24",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/44 - October 31st 1995.mp4": {
+            "date": "1995-10-31",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/45 - November 7th 1995.mp4": {
+            "date": "1995-11-07",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/46 - November 14th 1995.mp4": {
+            "date": "1995-11-14",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/47 - November 21st 1995.mp4": {
+            "date": "1995-11-21",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/48 - November 28th 1995.mp4": {
+            "date": "1995-11-28",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/49 - December 5th 1995.mp4": {
+            "date": "1995-12-05",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/50 - December 12th 1995.mp4": {
+            "date": "1995-12-12",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/51 - December 19th 1995.mp4": {
+            "date": "1995-12-19",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Hardcore TV/52 - December 24th 1995.mp4": {
+            "date": "1995-12-24",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1995/Super Cards/01 - ECW Double Tables (1995).mp4": {
+            "date": "1995-02-04",
+            "show": "PPV",
+            "title": "Double Tables"
+          },
+          "1995/Super Cards/02 - ECW Return of the Funker (1995).mp4": {
+            "date": "1995-02-25",
+            "show": "PPV",
+            "title": "Return of the Funker"
+          },
+          "1995/Super Cards/05 - ECW Three Way Dance (1995).mp4": {
+            "date": "1995-04-08",
+            "show": "PPV",
+            "title": "Three Way Dance"
+          },
+          "1995/Super Cards/06 - ECW Hostile City Showdown (1995).mp4": {
+            "date": "1995-04-15",
+            "show": "PPV",
+            "title": "Hostile City Showdown"
+          },
+          "1995/Super Cards/08 - ECW Barbed Wire, Hoodies & Chokeslams (1995).mp4": {
+            "date": "1995-06-17",
+            "show": "PPV",
+            "title": "Barbed Wire, Hoodies & Chokeslams"
+          },
+          "1995/Super Cards/09 - ECW Hardcore Heaven (1995).mp4": {
+            "date": "1995-07-01",
+            "show": "PPV",
+            "title": "Hardcore Heaven"
+          },
+          "1995/Super Cards/11 - ECW Gangstas Paradise (1995).mp4": {
+            "date": "1995-09-16",
+            "show": "PPV",
+            "title": "Gangstas Paradise"
+          },
+          "1995/Super Cards/12 - ECW November To Remember (1995).mp4": {
+            "date": "1995-11-18",
+            "show": "PPV",
+            "title": "November to Remember"
+          },
+          "1995/Super Cards/13 - ECW Holiday Hell (1995).mp4": {
+            "date": "1995-12-29",
+            "show": "PPV",
+            "title": "Holiday Hell"
+          }
+        },
+        "year": 1995
+      },
+      {
+        "id": "re-c-dub-1996-complete",
+        "name": "Hardcore TV 1996",
+        "enabled": true,
+        "showHint": "Hardcore TV",
+        "dateOrder": "MDY",
+        "overrides": {
+          "1996/Hardcore TV/01 - January 2nd 1996.mp4": {
+            "date": "1996-01-02",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/02 - January 9th 1996.mp4": {
+            "date": "1996-01-09",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/03 - January 16th 1996.mp4": {
+            "date": "1996-01-16",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/04 - January 23rd 1996.mp4": {
+            "date": "1996-01-23",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/05 - January 30th 1996.mp4": {
+            "date": "1996-01-30",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/06 - February 6th 1996.mp4": {
+            "date": "1996-02-06",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/07 - February 13th 1996.mp4": {
+            "date": "1996-02-13",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/08 - February 20th 1996.mp4": {
+            "date": "1996-02-20",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/09 - February 27th 1996.mp4": {
+            "date": "1996-02-27",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/10 - March 5th 1996.mp4": {
+            "date": "1996-03-05",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/11 - March 12th 1996.mp4": {
+            "date": "1996-03-12",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/12 - March 19th 1996.mp4": {
+            "date": "1996-03-19",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/13 - March 26th 1996.mp4": {
+            "date": "1996-03-26",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/14 - April 2nd 1996.mp4": {
+            "date": "1996-04-02",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/15 - April 9th 1996.mp4": {
+            "date": "1996-04-09",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/16 - April 16th 1996.mp4": {
+            "date": "1996-04-16",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/17 - April 23rd 1996.mp4": {
+            "date": "1996-04-23",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/18 - April 30th 1996.mp4": {
+            "date": "1996-04-30",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/19 - May 7th 1996.mp4": {
+            "date": "1996-05-07",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/20 - May 14th 1996.mp4": {
+            "date": "1996-05-14",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/21 - May 21st 1996.mp4": {
+            "date": "1996-05-21",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/22 - May 28th 1996.mp4": {
+            "date": "1996-05-28",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/23 - June 4th 1996.mp4": {
+            "date": "1996-06-04",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/24 - June 11th 1996.mp4": {
+            "date": "1996-06-11",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/25 - June 17th 1996.mp4": {
+            "date": "1996-06-17",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/26 - June 25th 1996.mp4": {
+            "date": "1996-06-25",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/27 - July 2nd 1996.mp4": {
+            "date": "1996-07-02",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/28 - July 9th 1996.mp4": {
+            "date": "1996-07-09",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/29 - July 16th 1996.mp4": {
+            "date": "1996-07-16",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/30 - July 23rd 1996.mp4": {
+            "date": "1996-07-23",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/31 - July 30th 1996.mp4": {
+            "date": "1996-07-30",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/32 - August 6th 1996.mp4": {
+            "date": "1996-08-06",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/33 - August 13th 1996.mp4": {
+            "date": "1996-08-13",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/34 - August 20th 1996.mp4": {
+            "date": "1996-08-20",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/35 - August 27th 1996.mp4": {
+            "date": "1996-08-27",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/36 - September 3rd 1996.mp4": {
+            "date": "1996-09-03",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/37 - September 10th 1996.mp4": {
+            "date": "1996-09-10",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/38 - September 17th 1996.mp4": {
+            "date": "1996-09-17",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/39 - September 24th 1996.mp4": {
+            "date": "1996-09-24",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/40 - October 1st 1996.mp4": {
+            "date": "1996-10-01",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/41 - October 8th 1996.mp4": {
+            "date": "1996-10-08",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/42 - October 15th 1996.mp4": {
+            "date": "1996-10-15",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/43 - October 22nd 1996.mp4": {
+            "date": "1996-10-22",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/44 - October 29th 1996.mp4": {
+            "date": "1996-10-29",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/45 - November 5th 1996.mp4": {
+            "date": "1996-11-05",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/46 - November 12th 1996.mp4": {
+            "date": "1996-11-12",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/47 - November 19th 1996.mp4": {
+            "date": "1996-11-19",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/48 - November 26th 1996.mp4": {
+            "date": "1996-11-26",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/49 - December 3rd 1996.mp4": {
+            "date": "1996-12-03",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/50 - December 10th 1996.mp4": {
+            "date": "1996-12-10",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/51 - December 17th 1996.mp4": {
+            "date": "1996-12-17",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Hardcore TV/52 - December 25th 1996.mp4": {
+            "date": "1996-12-25",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1996/Super Cards/01 - ECW House Party (1996).mp4": {
+            "date": "1996-01-05",
+            "show": "PPV",
+            "title": "House Party"
+          },
+          "1996/Super Cards/02 - ECW Big Apple Blizzard Blast (1996).mp4": {
+            "date": "1996-02-03",
+            "show": "PPV",
+            "title": "Big Apple Blizzard Blast"
+          },
+          "1996/Super Cards/03 - ECW CyberSlam (1996).mp4": {
+            "date": "1996-02-17",
+            "show": "PPV",
+            "title": "CyberSlam"
+          },
+          "1996/Super Cards/04 - ECW Just Another Night (1996).mp4": {
+            "date": "1996-02-23",
+            "show": "PPV",
+            "title": "Just Another Night"
+          },
+          "1996/Super Cards/05 - ECW Big Ass Extreme Bash (1996).mp4": {
+            "date": "1996-03-08",
+            "show": "PPV",
+            "title": "Big Ass Extreme Bash"
+          },
+          "1996/Super Cards/06 - ECW Massacre On Queens Boulevard (1996).mp4": {
+            "date": "1996-04-13",
+            "show": "PPV",
+            "title": "Massacre on Queens Boulevard"
+          },
+          "1996/Super Cards/07 - ECW Hostile City Showdown (1996).mp4": {
+            "date": "1996-04-20",
+            "show": "PPV",
+            "title": "Hostile City Showdown"
+          },
+          "1996/Super Cards/08 - ECW A Matter Of Respect (1996).mp4": {
+            "date": "1996-05-11",
+            "show": "PPV",
+            "title": "A Matter of Respect"
+          },
+          "1996/Super Cards/09 - ECW Hardcore Heaven (1996).mp4": {
+            "date": "1996-06-22",
+            "show": "PPV",
+            "title": "Hardcore Heaven"
+          },
+          "1996/Super Cards/10 -  ECW Heat Wave (1996).mp4": {
+            "date": "1996-07-13",
+            "show": "PPV",
+            "title": "Heat Wave"
+          },
+          "1996/Super Cards/11 - ECW The Doctor Is In (1996).mp4": {
+            "date": "1996-08-03",
+            "show": "PPV",
+            "title": "The Doctor Is In"
+          },
+          "1996/Super Cards/13 - ECW Natural Born Killaz (1996).mp4": {
+            "date": "1996-08-24",
+            "show": "PPV",
+            "title": "Natural Born Killaz"
+          },
+          "1996/Super Cards/14 - ECW November To Remember (1996).mp4": {
+            "date": "1996-11-16",
+            "show": "PPV",
+            "title": "November to Remember"
+          }
+        },
+        "year": 1996
+      },
+      {
+        "id": "re-c-dub-1997-complete",
+        "name": "Hardcore TV 1997",
+        "enabled": true,
+        "showHint": "Hardcore TV",
+        "dateOrder": "MDY",
+        "overrides": {
+          "1997/Hardcore TV/01 - January 7th 1997.mp4": {
+            "date": "1997-01-07",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/02 - January 14th 1997.mp4": {
+            "date": "1997-01-14",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/03 - January 21st 1997.mp4": {
+            "date": "1997-01-21",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/04 - January 28th 1997.mp4": {
+            "date": "1997-01-28",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/05 - February 4th 1997.mp4": {
+            "date": "1997-02-04",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/06 - February 11th 1997.mp4": {
+            "date": "1997-02-11",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/07 - February 18th 1997.mp4": {
+            "date": "1997-02-18",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/08 - February 25th 1997.mp4": {
+            "date": "1997-02-25",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/09 - March 4th 1997.mp4": {
+            "date": "1997-03-04",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/10 - March 11th 1997.mp4": {
+            "date": "1997-03-11",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/11 - March 18th 1997.mp4": {
+            "date": "1997-03-18",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/12 - March 25th 1997.mp4": {
+            "date": "1997-03-25",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/13 - April 1st 1997.mp4": {
+            "date": "1997-04-01",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/14 - April 8th 1997.mp4": {
+            "date": "1997-04-08",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/15 - April 15th 1997.mp4": {
+            "date": "1997-04-15",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/16 - April 22nd 1997.mp4": {
+            "date": "1997-04-22",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/17 - April 29th 1997.mp4": {
+            "date": "1997-04-29",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/18 - May 6th 1997.mp4": {
+            "date": "1997-05-06",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/19 - May 13th 1997.mp4": {
+            "date": "1997-05-13",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/20 - May 20th 1997.mp4": {
+            "date": "1997-05-20",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/21 - May 27th 1997.mp4": {
+            "date": "1997-05-27",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/22 - June 3rd 1997.mp4": {
+            "date": "1997-06-03",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/23 - June 10th 1997.mp4": {
+            "date": "1997-06-10",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/24 - June 17th 1997.mp4": {
+            "date": "1997-06-17",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/25 - June 24th 1997.mp4": {
+            "date": "1997-06-24",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/26 - July 1st 1997.mp4": {
+            "date": "1997-07-01",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/27 - July 8th 1997.mp4": {
+            "date": "1997-07-08",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/28 - July 15th 1997.mp4": {
+            "date": "1997-07-15",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/29 - July 22nd 1997.mp4": {
+            "date": "1997-07-22",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/30 - July 29th 1997.mp4": {
+            "date": "1997-07-29",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/31 - August 5th 1997 .mp4": {
+            "date": "1997-08-05",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/32 - August 12th 1997.mp4": {
+            "date": "1997-08-12",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/33 - August 19th 1997.mp4": {
+            "date": "1997-08-19",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/34 - August 26th 1997 .mp4": {
+            "date": "1997-08-26",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/35 - September 2nd 1997.mp4": {
+            "date": "1997-09-02",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/36 - September 9th 1997.mp4": {
+            "date": "1997-09-09",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/37 - September 16th 1997.mp4": {
+            "date": "1997-09-16",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/38 - September 23rd 1997 .mp4": {
+            "date": "1997-09-23",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/39 - September 30th 1997.mp4": {
+            "date": "1997-09-30",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/40 - October 11th 1997.mp4": {
+            "date": "1997-10-11",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/41 - October 18th 1997.mp4": {
+            "date": "1997-10-18",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/42 - October 25th 1997 .mp4": {
+            "date": "1997-10-25",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/43 - November 1st 1997.mp4": {
+            "date": "1997-11-01",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/44 - November 8th 1997.mp4": {
+            "date": "1997-11-08",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/45 - November 15th 1997.mp4": {
+            "date": "1997-11-15",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/46 - November 22nd 1997.mp4": {
+            "date": "1997-11-22",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/47 - November 29th 1997.mp4": {
+            "date": "1997-11-29",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/48 - December 6th 1997.mp4": {
+            "date": "1997-12-06",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/49 - December 13th 1997.mp4": {
+            "date": "1997-12-13",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/50 - December 20th 1997.mp4": {
+            "date": "1997-12-20",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Hardcore TV/51 - December 27th 1997.mp4": {
+            "date": "1997-12-27",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1997/Super Cards\uf022PPVs/01 - ECW Crossing The Line Again (1997).mp4": {
+            "date": "1997-02-01",
+            "show": "PPV",
+            "title": "Crossing the Line Again"
+          },
+          "1997/Super Cards\uf022PPVs/02 - ECW Cyber Slam (1997).mp4": {
+            "date": "1997-02-21",
+            "show": "PPV",
+            "title": "CyberSlam"
+          },
+          "1997/Super Cards\uf022PPVs/03 - ECW Mountain Top Madness (1997).mp4": {
+            "date": "1997-02-28",
+            "show": "PPV",
+            "title": "Mountain Top Madness"
+          },
+          "1997/Super Cards\uf022PPVs/04 - ECW Barley Legal (1997).mp4": {
+            "date": "1997-04-13",
+            "show": "PPV",
+            "title": "Barely Legal"
+          },
+          "1997/Super Cards\uf022PPVs/05 - ECW Wrestlepalooza (1997).mp4": {
+            "date": "1997-06-07",
+            "show": "PPV",
+            "title": "Wrestlepalooza"
+          },
+          "1997/Super Cards\uf022PPVs/06 - ECW Born To Be Wired (1997).mp4": {
+            "date": "1997-08-09",
+            "show": "PPV",
+            "title": "Born to be Wired"
+          },
+          "1997/Super Cards\uf022PPVs/07 - ECW Hardcore Heaven(1997).mp4": {
+            "date": "1997-08-17",
+            "show": "PPV",
+            "title": "Hardcore Heaven"
+          },
+          "1997/Super Cards\uf022PPVs/08 - ECW November to Remember (1997).mp4": {
+            "date": "1997-11-30",
+            "show": "PPV",
+            "title": "November to Remember"
+          }
+        },
+        "year": 1997
+      },
+      {
+        "id": "re-c-dub-1998-complete",
+        "name": "Hardcore TV 1998",
+        "enabled": true,
+        "showHint": "Hardcore TV",
+        "dateOrder": "MDY",
+        "overrides": {
+          "1998/Hardcore TV/01 - January 10th 1998.mp4": {
+            "date": "1998-01-10",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/02 - January 17th 1998.mp4": {
+            "date": "1998-01-17",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/03 - January 24th 1998.mp4": {
+            "date": "1998-01-24",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/04 - January 31st 1998.mp4": {
+            "date": "1998-01-31",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/05 - February 7th 1998.mp4": {
+            "date": "1998-02-07",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/06 - February 14th 1998.mp4": {
+            "date": "1998-02-14",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/07 - February 21st 1998.mp4": {
+            "date": "1998-02-21",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/08 - February 28th 1998.mp4": {
+            "date": "1998-02-28",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/09 - March 7th 1998.mp4": {
+            "date": "1998-03-07",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/10 - March 14th 1998 .mp4": {
+            "date": "1998-03-14",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/11 - March 21st 1998.mp4": {
+            "date": "1998-03-21",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/12 - March 28th 1998.mp4": {
+            "date": "1998-03-28",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/13- April 4th 1998.mp4": {
+            "date": "1998-04-04",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/14 - April 11th 1998.mp4": {
+            "date": "1998-04-11",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/15 - April 18th 1998.mp4": {
+            "date": "1998-04-18",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/16 - April 25th 1998.mp4": {
+            "date": "1998-04-25",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/17 - May 2nd 1998.mp4": {
+            "date": "1998-05-02",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/18 - May 9th 1998.mp4": {
+            "date": "1998-05-09",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/19 - May 16th 1998.mp4": {
+            "date": "1998-05-16",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/20 - May 23rd 1998.mp4": {
+            "date": "1998-05-23",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/21 - May 30th 1998.mp4": {
+            "date": "1998-05-30",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/22 - June 6th 1998.mp4": {
+            "date": "1998-06-06",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/23 - June 13th 1998.mp4": {
+            "date": "1998-06-13",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/24 - June 20th 1998.mp4": {
+            "date": "1998-06-20",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/25 - June 27th 1998.mp4": {
+            "date": "1998-06-27",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/26 - July 4th 1998.mp4": {
+            "date": "1998-07-04",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/27 - July 11th 1998.mp4": {
+            "date": "1998-07-11",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/28 - July 18th 1998.mp4": {
+            "date": "1998-07-18",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/29 - July 25th 1998 .mp4": {
+            "date": "1998-07-25",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/30 - August 1st 1998.mp4": {
+            "date": "1998-08-01",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/31 - August 8th 1998.mp4": {
+            "date": "1998-08-08",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/32 - August 15th 1998.mp4": {
+            "date": "1998-08-15",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/33 - August 22nd 1998.mp4": {
+            "date": "1998-08-22",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/34 - August 29th 1998.mp4": {
+            "date": "1998-08-29",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/35 - September 5th 1998.mp4": {
+            "date": "1998-09-05",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/36 - September 12th 1998.mp4": {
+            "date": "1998-09-12",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/37 - September 19th 1998.mp4": {
+            "date": "1998-09-19",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/38 - September 26th 1998.mp4": {
+            "date": "1998-09-26",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/39 - October 3rd 1998.mp4": {
+            "date": "1998-10-03",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/40 - October 10th 1998.mp4": {
+            "date": "1998-10-10",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/41 - October 17th 1998.mp4": {
+            "date": "1998-10-17",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/42 - October 24th 1998.mp4": {
+            "date": "1998-10-24",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/43 - October 31st 1998.mp4": {
+            "date": "1998-10-31",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/44 - November 7th 1998.mp4": {
+            "date": "1998-11-07",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/45 - November 14th 1998.mp4": {
+            "date": "1998-11-14",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/46 - November 21st 1998.mp4": {
+            "date": "1998-11-21",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/47 - November 28th 1998.mp4": {
+            "date": "1998-11-28",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/48 - December 5th 1998.mp4": {
+            "date": "1998-12-05",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/49 - December 12th 1998.mp4": {
+            "date": "1998-12-12",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/50 - December 19th 1998.mp4": {
+            "date": "1998-12-19",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Hardcore TV/51 - December 26th 1998.mp4": {
+            "date": "1998-12-26",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1998/Super Cards\uf022PPVs/01 - ECW Living Dangerously (1998).mp4": {
+            "date": "1998-03-01",
+            "show": "PPV",
+            "title": "Living Dangerously"
+          },
+          "1998/Super Cards\uf022PPVs/02  - ECW WrestlePalooza(1998).mp4": {
+            "date": "1998-05-03",
+            "show": "PPV",
+            "title": "Wrestlepalooza"
+          },
+          "1998/Super Cards\uf022PPVs/03 - ECW Heat Wave (1998) .mp4": {
+            "date": "1998-08-02",
+            "show": "PPV",
+            "title": "Heat Wave"
+          },
+          "1998/Super Cards\uf022PPVs/04 - ECW November to Remember (1998).mp4": {
+            "date": "1998-11-01",
+            "show": "PPV",
+            "title": "November to Remember"
+          }
+        },
+        "year": 1998
+      },
+      {
+        "id": "re-c-dub-1999-complete",
+        "name": "Hardcore TV 1999",
+        "enabled": true,
+        "showHint": "Hardcore TV",
+        "dateOrder": "MDY",
+        "overrides": {
+          "1999/Hardcore TV/01  - January 2nd 1999.mp4": {
+            "date": "1999-01-02",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/02 - January 9th 1999.mp4": {
+            "date": "1999-01-09",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/03 - January 16th 1999.mp4": {
+            "date": "1999-01-16",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/04 - January 24th 1999.mp4": {
+            "date": "1999-01-24",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/05 - January 30th 1999.mp4": {
+            "date": "1999-01-30",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/06 - February 6th 1999.mp4": {
+            "date": "1999-02-06",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/07 - February 13th 1999.mp4": {
+            "date": "1999-02-13",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/08 - February 20th 1999.mp4": {
+            "date": "1999-02-20",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/09 - February  27 1999.mp4": {
+            "date": "1999-02-27",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/10 - March 6th 1999.mp4": {
+            "date": "1999-03-06",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/11 - March 13th 1999.mp4": {
+            "date": "1999-03-13",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/12 - March 20th 1999.mp4": {
+            "date": "1999-03-20",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/13 - March 27th 1999.mp4": {
+            "date": "1999-03-27",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/14 - April 3rd 1999.mp4": {
+            "date": "1999-04-03",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/15 - April 10th 1999.mp4": {
+            "date": "1999-04-10",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/16 - April 17th 1999.mp4": {
+            "date": "1999-04-17",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/17 - April 24th 1999.mp4": {
+            "date": "1999-04-24",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/18 - May 1st 1999.mp4": {
+            "date": "1999-05-01",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/19 - May 8th 1999.mp4": {
+            "date": "1999-05-08",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/20 - May 15th 1999.mp4": {
+            "date": "1999-05-15",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/21 - May 22nd 1999.mp4": {
+            "date": "1999-05-22",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/22 - May 29th 1999.mp4": {
+            "date": "1999-05-29",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/23 - June 5th 1999.mp4": {
+            "date": "1999-06-05",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/24 - June 12th 1999.mp4": {
+            "date": "1999-06-12",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/25 - June 19th 1999.mp4": {
+            "date": "1999-06-19",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/26 - June 26th 1999.mp4": {
+            "date": "1999-06-26",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/27 - July 3rd 1999.mp4": {
+            "date": "1999-07-03",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/28 - July 10th 1999.mp4": {
+            "date": "1999-07-10",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/29 - July 17th 1999.mp4": {
+            "date": "1999-07-17",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/30 - July 24th 1999.mp4": {
+            "date": "1999-07-24",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/31 - July 31st 1999.mp4": {
+            "date": "1999-07-31",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/32 - August 7th 1999.mp4": {
+            "date": "1999-08-07",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/33 - August 14th 1999.mp4": {
+            "date": "1999-08-14",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/34 - August 21st 1999.mp4": {
+            "date": "1999-08-21",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/35 - August 28th 1999.mp4": {
+            "date": "1999-08-28",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/36 - September 4th 1999.mp4": {
+            "date": "1999-09-04",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/37 - September 11th 1999.mp4": {
+            "date": "1999-09-11",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/38 - September 18th 1999.mp4": {
+            "date": "1999-09-18",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/39 - September 25th 1999.mp4": {
+            "date": "1999-09-25",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/40 - October 2nd 1999.mp4": {
+            "date": "1999-10-02",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/41 - October 9th 1999.mp4": {
+            "date": "1999-10-09",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/42 - October 16th 1999.mp4": {
+            "date": "1999-10-16",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/43 - October 23rd 1999.mp4": {
+            "date": "1999-10-23",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/44 - October 30th 1999.mp4": {
+            "date": "1999-10-30",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/45 - November 6th 1999.mp4": {
+            "date": "1999-11-06",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/46 - November 13th 1999.mp4": {
+            "date": "1999-11-13",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/47 - November 20th 1999.mp4": {
+            "date": "1999-11-20",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/48 - November 27th 1999.mp4": {
+            "date": "1999-11-27",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/49 - December 4th 1999.mp4": {
+            "date": "1999-12-04",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/50 - December 11th 1999.mp4": {
+            "date": "1999-12-11",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/51 - December 18th 1999.mp4": {
+            "date": "1999-12-18",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/Hardcore TV/52 - December 25th 1999.mp4": {
+            "date": "1999-12-25",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "1999/TNN/01 - August 27th 1999.mp4": {
+            "date": "1999-08-27",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/02 - September 3rd 1999.mp4": {
+            "date": "1999-09-03",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/03 - September 10th 1999.mp4": {
+            "date": "1999-09-10",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/04 - September 17th 1999.mp4": {
+            "date": "1999-09-17",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/05 - September 24th 1999.mp4": {
+            "date": "1999-09-24",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/06 - October 1st 1999.mp4": {
+            "date": "1999-10-01",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/07 - October 8th  1999.mp4": {
+            "date": "1999-10-08",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/08 - October 15th 1999.mp4": {
+            "date": "1999-10-15",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/09 - October 22nd 1999.mp4": {
+            "date": "1999-10-22",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/10 - October 29th 1999.mp4": {
+            "date": "1999-10-29",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/11 - November 5th 1999.mp4": {
+            "date": "1999-11-05",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/12 - November 12th 1999.mp4": {
+            "date": "1999-11-12",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/13 - November 19th 1999.mp4": {
+            "date": "1999-11-19",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/14 - November 26th 1999.mp4": {
+            "date": "1999-11-26",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/15 - December 3rd  1999.mp4": {
+            "date": "1999-12-03",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/16 - December 10th 1999.mp4": {
+            "date": "1999-12-10",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/17 - December 17th 1999.mp4": {
+            "date": "1999-12-17",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/18 - December 24th 1999.mp4": {
+            "date": "1999-12-24",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/TNN/19 - December 31st 1999.mp4": {
+            "date": "1999-12-31",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "1999/Super Cards\uf022PPVs/01 - ECW Guilty As Charged (1999).mp4": {
+            "date": "1999-01-10",
+            "show": "PPV",
+            "title": "Guilty as Charged"
+          },
+          "1999/Super Cards\uf022PPVs/02 - ECW House Party (1999).mp4": {
+            "date": "1999-01-16",
+            "show": "PPV",
+            "title": "House Party"
+          },
+          "1999/Super Cards\uf022PPVs/03 - ECW Crossing The Line (1999).mp4": {
+            "date": "1999-02-12",
+            "show": "PPV",
+            "title": "Crossing the Line"
+          },
+          "1999/Super Cards\uf022PPVs/04 - ECW Living Dangerously (1999).mp4": {
+            "date": "1999-03-21",
+            "show": "PPV",
+            "title": "Living Dangerously"
+          },
+          "1999/Super Cards\uf022PPVs/05 - ECW Cyber Slam (1999).mp4": {
+            "date": "1999-04-03",
+            "show": "PPV",
+            "title": "CyberSlam"
+          },
+          "1999/Super Cards\uf022PPVs/06 - ECW Hardcore Heaven (1999).mp4": {
+            "date": "1999-05-16",
+            "show": "PPV",
+            "title": "Hardcore Heaven"
+          },
+          "1999/Super Cards\uf022PPVs/07 - ECW Heat Wave (1999) .mp4": {
+            "date": "1999-07-18",
+            "show": "PPV",
+            "title": "Heat Wave"
+          },
+          "1999/Super Cards\uf022PPVs/08 - ECW Anarchy Rulz (1999).mp4": {
+            "date": "1999-09-19",
+            "show": "PPV",
+            "title": "Anarchy Rulz"
+          },
+          "1999/Super Cards\uf022PPVs/09  - ECW November to Remember.mp4": {
+            "date": "1999-11-07",
+            "show": "PPV",
+            "title": "November to Remember"
+          }
+        },
+        "year": 1999
+      },
+      {
+        "id": "re-c-dub-2000-complete",
+        "name": "Hardcore TV 2000",
+        "enabled": true,
+        "showHint": "Hardcore TV",
+        "dateOrder": "MDY",
+        "overrides": {
+          "2000/Hardcore TV/01 - January 1st 2000.mp4": {
+            "date": "2000-01-01",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/02 - January 8th 2000.mp4": {
+            "date": "2000-01-08",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/03 - January 15th 2000.mp4": {
+            "date": "2000-01-15",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/04 - January 22nd 2000.mp4": {
+            "date": "2000-01-22",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/05 - January 29th 2000.mp4": {
+            "date": "2000-01-29",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/06 - February 6th 2000.mp4": {
+            "date": "2000-02-06",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/07 - February 12th 2000.mp4": {
+            "date": "2000-02-12",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/08 - February 19th 2000.mp4": {
+            "date": "2000-02-19",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/09 - February 26th 2000.mp4": {
+            "date": "2000-02-26",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/10 - March 4th 2000.mp4": {
+            "date": "2000-03-04",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/11 - March 11th 2000.mp4": {
+            "date": "2000-03-11",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/12 - March 18th 2000.mp4": {
+            "date": "2000-03-18",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/13 - March 25th 2000.mp4": {
+            "date": "2000-03-25",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/14 - April 1st 2000.mp4": {
+            "date": "2000-04-01",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/15 - April 8th 2000.mp4": {
+            "date": "2000-04-08",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/16 - April 15th 2000.mp4": {
+            "date": "2000-04-15",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/17 - April 22nd 2000.mp4": {
+            "date": "2000-04-22",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/18 - April 29th 2000.mp4": {
+            "date": "2000-04-29",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/19 - May 6th 2000.mp4": {
+            "date": "2000-05-06",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/20 - May 13th 2000.mp4": {
+            "date": "2000-05-13",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/21 - May 20th 2000.mp4": {
+            "date": "2000-05-20",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/22 - May 27th 2000.mp4": {
+            "date": "2000-05-27",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/23 - June 3rd 2000.mp4": {
+            "date": "2000-06-03",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/24 - June 10th 2000.mp4": {
+            "date": "2000-06-10",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/25 - June 17th 2000.mp4": {
+            "date": "2000-06-17",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/26 - June 24th 2000.mp4": {
+            "date": "2000-06-24",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/27 - July 1st 2000.mp4": {
+            "date": "2000-07-01",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/28 - July 8th 2000.mp4": {
+            "date": "2000-07-08",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/29 - July 15th 2000.mp4": {
+            "date": "2000-07-15",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/30 - July 22nd 2000.mp4": {
+            "date": "2000-07-22",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/31 - July 29th 2000.mp4": {
+            "date": "2000-07-29",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/32 - August 5th 2000.mp4": {
+            "date": "2000-08-05",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/33 - August 12th 2000.mp4": {
+            "date": "2000-08-12",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/34 - August 19th 2000.mp4": {
+            "date": "2000-08-19",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/35 - August 26th 2000.mp4": {
+            "date": "2000-08-26",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/36 - September 2nd 2000.mp4": {
+            "date": "2000-09-02",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/37 - September 9th 2000.mp4": {
+            "date": "2000-09-09",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/38 - September 16th 2000.mp4": {
+            "date": "2000-09-16",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/39 - September 23rd 2000.mp4": {
+            "date": "2000-09-23",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/40 - September 30th 2000.mp4": {
+            "date": "2000-09-30",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/41 - October 7th 2000.mp4": {
+            "date": "2000-10-07",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/42 - October 14th 2000.mp4": {
+            "date": "2000-10-14",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/43 - October 21st 2000.mp4": {
+            "date": "2000-10-21",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/44 - October 28th 2000.mp4": {
+            "date": "2000-10-28",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/45 - November 4th 2000.mp4": {
+            "date": "2000-11-04",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/46 - November 11th 2000.mp4": {
+            "date": "2000-11-11",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/47 - November 18th 2000.mp4": {
+            "date": "2000-11-18",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/48 - November 25th 2000.mp4": {
+            "date": "2000-11-25",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/49 - December 2nd 2000.mp4": {
+            "date": "2000-12-02",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/50 - December 9th 2000.mp4": {
+            "date": "2000-12-09",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/51 - December 16th 2000.mp4": {
+            "date": "2000-12-16",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/52 - December 23rd 2000.mp4": {
+            "date": "2000-12-23",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/Hardcore TV/53 - December 30th 2000.mp4": {
+            "date": "2000-12-30",
+            "show": "Hardcore TV",
+            "title": "Hardcore TV"
+          },
+          "2000/TNN/01 - January 7th 2000.mp4": {
+            "date": "2000-01-07",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/02 - January 14th 2000.mp4": {
+            "date": "2000-01-14",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/03 - January 21st  2000.mp4": {
+            "date": "2000-01-21",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/04 - January 28th 2000.mp4": {
+            "date": "2000-01-28",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/05 - February 4th 2000.mp4": {
+            "date": "2000-02-04",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/06 - February 11th 2000.mp4": {
+            "date": "2000-02-11",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/07 - February 18th 2000.mp4": {
+            "date": "2000-02-18",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/08 - February 25th 2000.mp4": {
+            "date": "2000-02-25",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/09 - March 3rd 2000.mp4": {
+            "date": "2000-03-03",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/10 - March 10th 2000.mp4": {
+            "date": "2000-03-10",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/11 - March 17th 2000.mp4": {
+            "date": "2000-03-17",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/12 - March 24th 2000.mp4": {
+            "date": "2000-03-24",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/13 - March 31st 2000.mp4": {
+            "date": "2000-03-31",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/14 - April 7th 2000.mp4": {
+            "date": "2000-04-07",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/15 - April  14th 2000.mp4": {
+            "date": "2000-04-14",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/16 - April 21t 2000.mp4": {
+            "date": "2000-04-21",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/17 - April 28th 2000.mp4": {
+            "date": "2000-04-28",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/18 - May 5th 2000.mp4": {
+            "date": "2000-05-05",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/19 - May 12th 2000.mp4": {
+            "date": "2000-05-12",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/20 - May 19th 2000.mp4": {
+            "date": "2000-05-19",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/21 - May 26th 2000.mp4": {
+            "date": "2000-05-26",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/22 - June 2nd 2000.mp4": {
+            "date": "2000-06-02",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/23 - June 9th 2000.mp4": {
+            "date": "2000-06-09",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/24 - June 16th 2000.mp4": {
+            "date": "2000-06-16",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/25 - June 23rd 2000.mp4": {
+            "date": "2000-06-23",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/26 - June 30th 2000.mp4": {
+            "date": "2000-06-30",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/27 - July 7th 2000.mp4": {
+            "date": "2000-07-07",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/28 - July 14th 2000.mp4": {
+            "date": "2000-07-14",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/29 - July 21st 2000.mp4": {
+            "date": "2000-07-21",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/30 - July 28th 2000.mp4": {
+            "date": "2000-07-28",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/31 - August 4th 2000.mp4": {
+            "date": "2000-08-04",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/32 - August 11th 2000.mp4": {
+            "date": "2000-08-11",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/33 - August 18th 2000.mp4": {
+            "date": "2000-08-18",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/34 - August 25th 2000.mp4": {
+            "date": "2000-08-25",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/35 -  September 1st 2000.mp4": {
+            "date": "2000-09-01",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/36 - September 8th 2000.mp4": {
+            "date": "2000-09-08",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/37 -  September 15th 2000.mp4": {
+            "date": "2000-09-15",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/38 - September 22nd 2000.mp4": {
+            "date": "2000-09-22",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/39 -  September 29th 2000.mp4": {
+            "date": "2000-09-29",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/TNN/40 - October 6th 2000.mp4": {
+            "date": "2000-10-06",
+            "show": "ECW on TNN",
+            "title": "ECW on TNN"
+          },
+          "2000/PPVs/01 - ECW Guilty As Charged (2000).mp4": {
+            "date": "2000-01-09",
+            "show": "PPV",
+            "title": "Guilty as Charged"
+          },
+          "2000/PPVs/02 - ECW Living Dangerously (2000).mp4": {
+            "date": "2000-03-12",
+            "show": "PPV",
+            "title": "Living Dangerously"
+          },
+          "2000/PPVs/03 ECW Hardcore Heaven (2000).mp4": {
+            "date": "2000-05-14",
+            "show": "PPV",
+            "title": "Hardcore Heaven"
+          },
+          "2000/PPVs/04 - ECW Heat Wave (2000).mp4": {
+            "date": "2000-07-16",
+            "show": "PPV",
+            "title": "Heat Wave"
+          },
+          "2000/PPVs/05 - ECW Anarchy Rulz (2000).mp4": {
+            "date": "2000-10-01",
+            "show": "PPV",
+            "title": "Anarchy Rulz"
+          },
+          "2000/PPVs/06 - ECW November to Remember (2000).mp4": {
+            "date": "2000-11-05",
+            "show": "PPV",
+            "title": "November to Remember"
+          },
+          "2000/PPVs/07 - ECW Massacre on 34th Street (2000).mp4": {
+            "date": "2000-12-03",
+            "show": "PPV",
+            "title": "Massacre on 34th Street"
+          }
+        },
+        "year": 2000
+      },
+      {
+        "id": "re-c-dub-2001-complete",
+        "name": "PPV 2001",
+        "enabled": true,
+        "showHint": "PPV",
+        "dateOrder": "MDY",
+        "overrides": {
+          "2001/01 - ECW Guilty As Charged (2001).mp4": {
+            "date": "2001-01-07",
+            "show": "PPV",
+            "title": "Guilty as Charged"
+          }
+        },
+        "year": 2001
+      },
+      {
+        "id": "re-c-dub-2005-complete",
+        "name": "PPV 2005",
+        "enabled": true,
+        "showHint": "PPV",
+        "dateOrder": "MDY",
+        "overrides": {
+          "2005/01 - One Night Stand (2005).mp4": {
+            "date": "2005-06-12",
+            "show": "PPV",
+            "title": "One Night Stand"
+          }
+        },
+        "year": 2005
+      }
+    ]
+  },
+  "retiredSources": [],
+  "$schema": "../sources.schema.json"
+}

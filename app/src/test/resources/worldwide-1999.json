@@ -1,0 +1,415 @@
+{
+  "metadata": {
+    "title": "WCW Worldwide - 1999 (Complete)"
+  },
+  "files": [
+    {
+      "name": "WCW.Worldwide.01.02.99.mp4",
+      "length": "2494.29",
+      "size": "239676197",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.01.09.99.mp4",
+      "length": "2478.66",
+      "size": "238689478",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.01.16.99.mp4",
+      "length": "2490.33",
+      "size": "241411385",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.01.23.99.mp4",
+      "length": "2438.88",
+      "size": "236061408",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.01.30.99.mp4",
+      "length": "2469.45",
+      "size": "241792569",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.02.06.99.mp4",
+      "length": "2525.86",
+      "size": "243560609",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.02.13.99.mp4",
+      "length": "2482.08",
+      "size": "244420128",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.02.20.99.mp4",
+      "length": "1733.46",
+      "size": "170562908",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.02.27.99.mp4",
+      "length": "2441.3",
+      "size": "238288737",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.03.06.99.mp4",
+      "length": "2440.72",
+      "size": "238393299",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.03.13.99.mp4",
+      "length": "2427.22",
+      "size": "234703065",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.03.20.99.mp4",
+      "length": "2319",
+      "size": "227504328",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.03.27.99.mp4",
+      "length": "2342.98",
+      "size": "226427698",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.04.03.99.mp4",
+      "length": "2004.44",
+      "size": "194127734",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.04.10.99.mp4",
+      "length": "2333.04",
+      "size": "226533144",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.04.17.99.mp4",
+      "length": "2448.89",
+      "size": "238349337",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.04.24.99.mp4",
+      "length": "2351.48",
+      "size": "229025940",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.05.01.99.mp4",
+      "length": "2444",
+      "size": "238473487",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.05.08.99.mp4",
+      "length": "2441.04",
+      "size": "235693104",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.05.15.99.mp4",
+      "length": "2464.08",
+      "size": "239822025",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.05.22.99.mp4",
+      "length": "2435.54",
+      "size": "237326798",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.05.29.99.mp4",
+      "length": "2436.62",
+      "size": "236967405",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.06.05.99.mp4",
+      "length": "2710.61",
+      "size": "263217711",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.06.12.99.mp4",
+      "length": "2440.22",
+      "size": "234969108",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.06.19.99.mp4",
+      "length": "2433.99",
+      "size": "237424814",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.06.26.99.mp4",
+      "length": "2480.21",
+      "size": "242758982",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.07.03.99.mp4",
+      "length": "2440.86",
+      "size": "237953947",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.07.10.99.mp4",
+      "length": "2250.1",
+      "size": "220448613",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.07.17.99.mp4",
+      "length": "2399.18",
+      "size": "235739190",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.07.24.99.mp4",
+      "length": "2405.69",
+      "size": "236154201",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.07.31.99.mp4",
+      "length": "2282.57",
+      "size": "223563159",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.08.07.99.mp4",
+      "length": "2359.22",
+      "size": "231265056",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.08.14.99.mp4",
+      "length": "2415.77",
+      "size": "235633471",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.08.21.99.mp4",
+      "length": "2365.01",
+      "size": "230582068",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.08.28.99.mp4",
+      "length": "2362.1",
+      "size": "231750945",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.09.04.99.mp4",
+      "length": "2412.78",
+      "size": "236787406",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.09.11.99.mp4",
+      "length": "2371.53",
+      "size": "231278955",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.09.18.99.mp4",
+      "length": "2400.26",
+      "size": "235985837",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.09.25.99.mp4",
+      "length": "2401.8",
+      "size": "236404166",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.10.02.99.mp4",
+      "length": "2414.69",
+      "size": "236590671",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.10.09.99.mp4",
+      "length": "2443.46",
+      "size": "240069413",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.10.16.99.mp4",
+      "length": "2230.55",
+      "size": "220865204",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.10.23.99.mp4",
+      "length": "2418.22",
+      "size": "235677676",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.10.30.99.mp4",
+      "length": "2347.01",
+      "size": "228619949",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.11.06.99.mp4",
+      "length": "2338.77",
+      "size": "227546120",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.11.13.99.mp4",
+      "length": "2339.42",
+      "size": "227846161",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.11.20.99.mp4",
+      "length": "2340.82",
+      "size": "227408985",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.12.04.99.mp4",
+      "length": "2360.73",
+      "size": "233765933",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.12.11.99.mp4",
+      "length": "2348.56",
+      "size": "229812276",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.12.18.99.mp4",
+      "length": "2360.19",
+      "size": "231985379",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    },
+    {
+      "name": "WCW.Worldwide.12.25.99.mp4",
+      "length": "2393.96",
+      "size": "235820836",
+      "height": "480",
+      "format": "h.264",
+      "source": "derivative"
+    }
+  ]
+}
