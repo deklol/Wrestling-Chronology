@@ -1,0 +1,27 @@
+[
+  {
+    "company": "wwe",
+    "file": "WWE SmackDown - S05E22 - May 29, 2002 - Peacock.mp4",
+    "reason": "Alternative edition has an inconsistent date"
+  },
+  {
+    "company": "wwe",
+    "file": "WWE SmackDown - S02E05 - February 02, 2000 - WWE Network.mp4",
+    "reason": "Alternative edition has an inconsistent date"
+  },
+  {
+    "company": "ecw",
+    "file": "1995/Super Cards/07 - ECW Enter The Sandman (1995).mp4",
+    "reason": "Event name/date not unambiguous"
+  },
+  {
+    "company": "ecw",
+    "file": "1995/Super Cards/10 - ECW Heat Wave (1995).mp4",
+    "reason": "Event name/date not unambiguous"
+  },
+  {
+    "company": "tna",
+    "file": "TNA Global Impact 2.avi",
+    "reason": "Undated/short or incomplete part set"
+  }
+]

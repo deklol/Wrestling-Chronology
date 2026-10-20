@@ -1,0 +1,1835 @@
+{
+  "schemaVersion": 1,
+  "description": "Public source configuration. Edit, refresh the JSON packs, then commit to GitHub. Source changes do not need an APK rebuild.",
+  "youtube": {
+    "enabled": true,
+    "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+    "playlists": [
+      {
+        "id": "UUOp8wkVqdrWbFYHjDv946QQ",
+        "name": "tnawrestling recent full-show uploads",
+        "show": "Auto",
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling",
+        "maxPages": 3,
+        "recentOnly": true
+      }
+    ],
+    "videos": [
+      {
+        "id": "16s9k0LV8mw",
+        "name": "Victory Road 2004",
+        "title": "Victory Road",
+        "date": "2004-11-07",
+        "show": "PPV",
+        "duration": 10574,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "W4wPsqswVUw",
+        "name": "Turning Point 2004",
+        "title": "Turning Point",
+        "date": "2004-12-05",
+        "show": "PPV",
+        "duration": 10314,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "NAn-rltqIvg",
+        "name": "Final Resolution 2005",
+        "title": "Final Resolution",
+        "date": "2005-01-16",
+        "show": "PPV",
+        "duration": 10505,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "FXDCKY8RkW0",
+        "name": "Against All Odds 2005",
+        "title": "Against All Odds",
+        "date": "2005-02-13",
+        "show": "PPV",
+        "duration": 10209,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "sjN7xYc1DDw",
+        "name": "Destination X 2005",
+        "title": "Destination X",
+        "date": "2005-03-13",
+        "show": "PPV",
+        "duration": 10492,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "67OQNJHrxRI",
+        "name": "Lockdown 2005",
+        "title": "Lockdown",
+        "date": "2005-04-24",
+        "show": "PPV",
+        "duration": 10399,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "tJm469NMB44",
+        "name": "No Surrender 2005",
+        "title": "No Surrender",
+        "date": "2005-07-17",
+        "show": "PPV",
+        "duration": 10400,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "uECe0LuZgFE",
+        "name": "Sacrifice 2005",
+        "title": "Sacrifice",
+        "date": "2005-08-14",
+        "show": "PPV",
+        "duration": 10393,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "mTm3IQBzKmI",
+        "name": "Unbreakable 2005",
+        "title": "Unbreakable",
+        "date": "2005-09-11",
+        "show": "PPV",
+        "duration": 10286,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "0kzB_13wC68",
+        "name": "Bound for Glory 2005",
+        "title": "Bound for Glory",
+        "date": "2005-10-23",
+        "show": "PPV",
+        "duration": 10496,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "QjQzKqF2_RQ",
+        "name": "Genesis 2005",
+        "title": "Genesis",
+        "date": "2005-11-13",
+        "show": "PPV",
+        "duration": 10510,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "9mu905oKSOg",
+        "name": "Turning Point 2005",
+        "title": "Turning Point",
+        "date": "2005-12-11",
+        "show": "PPV",
+        "duration": 10524,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "kLGj4p2FpV4",
+        "name": "Lockdown 2006",
+        "title": "Lockdown",
+        "date": "2006-04-23",
+        "show": "PPV",
+        "duration": 10245,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "7DT1FZFML8o",
+        "name": "Sacrifice 2006",
+        "title": "Sacrifice",
+        "date": "2006-05-14",
+        "show": "PPV",
+        "duration": 10314,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "cn8l9KW_1Bw",
+        "name": "Slammiversary 2006",
+        "title": "Slammiversary",
+        "date": "2006-06-18",
+        "show": "PPV",
+        "duration": 10606,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "M2F0uIRY7P8",
+        "name": "Victory Road 2006",
+        "title": "Victory Road",
+        "date": "2006-07-16",
+        "show": "PPV",
+        "duration": 10042,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "V1WH7KUuM2g",
+        "name": "Hard Justice 2006",
+        "title": "Hard Justice",
+        "date": "2006-08-13",
+        "show": "PPV",
+        "duration": 9770,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "nE7jcvHG7t0",
+        "name": "No Surrender 2006",
+        "title": "No Surrender",
+        "date": "2006-09-24",
+        "show": "PPV",
+        "duration": 10100,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "cnQpV1i1RIo",
+        "name": "Bound for Glory 2006",
+        "title": "Bound for Glory",
+        "date": "2006-10-22",
+        "show": "PPV",
+        "duration": 10484,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "JYIf3hjiq0Q",
+        "name": "Genesis 2006",
+        "title": "Genesis",
+        "date": "2006-11-19",
+        "show": "PPV",
+        "duration": 9725,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "1jJEyuTuQSA",
+        "name": "Turning Point 2006",
+        "title": "Turning Point",
+        "date": "2006-12-10",
+        "show": "PPV",
+        "duration": 10056,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "j9rpFQ0v2uY",
+        "name": "Final Resolution 2007",
+        "title": "Final Resolution",
+        "date": "2007-01-14",
+        "show": "PPV",
+        "duration": 10534,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "-oZD8yf289Y",
+        "name": "Against All Odds 2007",
+        "title": "Against All Odds",
+        "date": "2007-02-11",
+        "show": "PPV",
+        "duration": 10331,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "wAjizvNYqsY",
+        "name": "Destination X 2007",
+        "title": "Destination X",
+        "date": "2007-03-11",
+        "show": "PPV",
+        "duration": 10609,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "7Ndm8JuGvww",
+        "name": "Lockdown 2007",
+        "title": "Lockdown",
+        "date": "2007-04-15",
+        "show": "PPV",
+        "duration": 10394,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "_u6fXzz3seo",
+        "name": "Sacrifice 2007",
+        "title": "Sacrifice",
+        "date": "2007-05-13",
+        "show": "PPV",
+        "duration": 10117,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "r_Tyom8vtPw",
+        "name": "Victory Road 2007",
+        "title": "Victory Road",
+        "date": "2007-07-15",
+        "show": "PPV",
+        "duration": 10442,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "u9v5b9BkGC0",
+        "name": "Bound for Glory 2007",
+        "title": "Bound for Glory",
+        "date": "2007-10-14",
+        "show": "PPV",
+        "duration": 10617,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "usZG0Cxm5vI",
+        "name": "Genesis 2007",
+        "title": "Genesis",
+        "date": "2007-11-11",
+        "show": "PPV",
+        "duration": 10599,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "mOCj3kKTp0Y",
+        "name": "Turning Point 2007",
+        "title": "Turning Point",
+        "date": "2007-12-02",
+        "show": "PPV",
+        "duration": 10405,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "lt29zGonUFQ",
+        "name": "Final Resolution 2008",
+        "title": "Final Resolution",
+        "date": "2008-01-06",
+        "show": "PPV",
+        "duration": 10440,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "xw_3UgD1f1g",
+        "name": "Against All Odds 2008",
+        "title": "Against All Odds",
+        "date": "2008-02-10",
+        "show": "PPV",
+        "duration": 10609,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "szVZ97Bhufw",
+        "name": "Sacrifice 2008",
+        "title": "Sacrifice",
+        "date": "2008-05-11",
+        "show": "PPV",
+        "duration": 10521,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "9y8625mCfpQ",
+        "name": "Slammiversary 2008",
+        "title": "Slammiversary",
+        "date": "2008-06-08",
+        "show": "PPV",
+        "duration": 10483,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "0mas2mbvqiQ",
+        "name": "Hard Justice 2008",
+        "title": "Hard Justice",
+        "date": "2008-08-10",
+        "show": "PPV",
+        "duration": 10504,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "6WndJe07l4s",
+        "name": "No Surrender 2008",
+        "title": "No Surrender",
+        "date": "2008-09-14",
+        "show": "PPV",
+        "duration": 10147,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "oeK10i0T8pg",
+        "name": "Bound for Glory 2008",
+        "title": "Bound for Glory",
+        "date": "2008-10-12",
+        "show": "PPV",
+        "duration": 10518,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "q02HlXb0rm0",
+        "name": "Final Resolution 2008",
+        "title": "Final Resolution",
+        "date": "2008-12-07",
+        "show": "PPV",
+        "duration": 10058,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "7064qyW3JO8",
+        "name": "Genesis 2009",
+        "title": "Genesis",
+        "date": "2009-01-11",
+        "show": "PPV",
+        "duration": 10571,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "vhgphWAgJ1k",
+        "name": "Lockdown 2009",
+        "title": "Lockdown",
+        "date": "2009-04-19",
+        "show": "PPV",
+        "duration": 10467,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "2qm_eGsh5pE",
+        "name": "Sacrifice 2009",
+        "title": "Sacrifice",
+        "date": "2009-05-24",
+        "show": "PPV",
+        "duration": 10166,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "SEwaoQNnVxo",
+        "name": "Slammiversary 2009",
+        "title": "Slammiversary",
+        "date": "2009-06-21",
+        "show": "PPV",
+        "duration": 10459,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "znE9F6TKtXY",
+        "name": "Victory Road 2009",
+        "title": "Victory Road",
+        "date": "2009-07-19",
+        "show": "PPV",
+        "duration": 10502,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "YTrzR9xzgkg",
+        "name": "Hard Justice 2009",
+        "title": "Hard Justice",
+        "date": "2009-08-16",
+        "show": "PPV",
+        "duration": 10293,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "E1vyaN-eUvg",
+        "name": "Final Resolution 2009",
+        "title": "Final Resolution",
+        "date": "2009-12-20",
+        "show": "PPV",
+        "duration": 10154,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "9X_U_HMgvjM",
+        "name": "Genesis 2010",
+        "title": "Genesis",
+        "date": "2010-01-17",
+        "show": "PPV",
+        "duration": 10081,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "bEPql5k-PFo",
+        "name": "Against All Odds 2010",
+        "title": "Against All Odds",
+        "date": "2010-02-14",
+        "show": "PPV",
+        "duration": 10530,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "04Bck5ZXVXw",
+        "name": "Lockdown 2010",
+        "title": "Lockdown",
+        "date": "2010-04-18",
+        "show": "PPV",
+        "duration": 10418,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "MjNoOrNcp7c",
+        "name": "Sacrifice 2010",
+        "title": "Sacrifice",
+        "date": "2010-05-16",
+        "show": "PPV",
+        "duration": 10093,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "VZRYtYmprNY",
+        "name": "Slammiversary 2010",
+        "title": "Slammiversary",
+        "date": "2010-06-13",
+        "show": "PPV",
+        "duration": 10243,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "ZnIthMD6xkw",
+        "name": "Victory Road 2010",
+        "title": "Victory Road",
+        "date": "2010-07-11",
+        "show": "PPV",
+        "duration": 9977,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "zU-1fpjorYg",
+        "name": "Hardcore Justice 2010",
+        "title": "Hardcore Justice",
+        "date": "2010-08-08",
+        "show": "PPV",
+        "duration": 9790,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "H2dz6vmX3pw",
+        "name": "Turning Point 2010",
+        "title": "Turning Point",
+        "date": "2010-11-07",
+        "show": "PPV",
+        "duration": 10461,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "M0v2vf0efGg",
+        "name": "Final Resolution 2010",
+        "title": "Final Resolution",
+        "date": "2010-12-05",
+        "show": "PPV",
+        "duration": 10005,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "XoYnKC_L5N8",
+        "name": "Sacrifice 2011",
+        "title": "Sacrifice",
+        "date": "2011-05-15",
+        "show": "PPV",
+        "duration": 10421,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "UOKIk5BDqXw",
+        "name": "Slammiversary 2011",
+        "title": "Slammiversary",
+        "date": "2011-06-12",
+        "show": "PPV",
+        "duration": 10221,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "oiZFxvHk6pg",
+        "name": "Hardcore Justice 2011",
+        "title": "Hardcore Justice",
+        "date": "2011-08-07",
+        "show": "PPV",
+        "duration": 10075,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "xT1cd6MrU7Q",
+        "name": "No Surrender 2011",
+        "title": "No Surrender",
+        "date": "2011-09-11",
+        "show": "PPV",
+        "duration": 10208,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "ZSsQph0TlPM",
+        "name": "Bound for Glory 2011",
+        "title": "Bound for Glory",
+        "date": "2011-10-16",
+        "show": "PPV",
+        "duration": 9842,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "pmzMHXD-xZY",
+        "name": "Turning Point 2011",
+        "title": "Turning Point",
+        "date": "2011-11-13",
+        "show": "PPV",
+        "duration": 10338,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "zr3xdgDVUBA",
+        "name": "Final Resolution 2011",
+        "title": "Final Resolution",
+        "date": "2011-12-11",
+        "show": "PPV",
+        "duration": 10123,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "VY58LJdVci0",
+        "name": "Genesis 2012",
+        "title": "Genesis",
+        "date": "2012-01-08",
+        "show": "PPV",
+        "duration": 9777,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "jq3pRLtfZIs",
+        "name": "Against All Odds 2012",
+        "title": "Against All Odds",
+        "date": "2012-02-12",
+        "show": "PPV",
+        "duration": 10171,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "2Ub1m0HAPzQ",
+        "name": "Destination X 2012",
+        "title": "Destination X",
+        "date": "2012-07-08",
+        "show": "PPV",
+        "duration": 10131,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "mfYDO2kUnU0",
+        "name": "Lockdown 2012",
+        "title": "Lockdown",
+        "date": "2012-04-15",
+        "show": "PPV",
+        "duration": 10191,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "TLlxx7bwMzc",
+        "name": "Sacrifice 2012",
+        "title": "Sacrifice",
+        "date": "2012-05-13",
+        "show": "PPV",
+        "duration": 10072,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "J_qFiRq2Vdw",
+        "name": "Slammiversary 2012",
+        "title": "Slammiversary",
+        "date": "2012-06-10",
+        "show": "PPV",
+        "duration": 10243,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "KgS-kFpe1QM",
+        "name": "Victory Road 2012",
+        "title": "Victory Road",
+        "date": "2012-03-18",
+        "show": "PPV",
+        "duration": 10130,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "-qXtrRJqI8w",
+        "name": "No Surrender 2012",
+        "title": "No Surrender",
+        "date": "2012-09-09",
+        "show": "PPV",
+        "duration": 9837,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "ImQtBbxv4gg",
+        "name": "Bound for Glory 2012",
+        "title": "Bound for Glory",
+        "date": "2012-10-14",
+        "show": "PPV",
+        "duration": 10444,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "Fvd9Z6Qivuo",
+        "name": "Turning Point 2012",
+        "title": "Turning Point",
+        "date": "2012-11-11",
+        "show": "PPV",
+        "duration": 10097,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "YG4-mXh18dg",
+        "name": "Genesis 2013",
+        "title": "Genesis",
+        "date": "2013-01-13",
+        "show": "PPV",
+        "duration": 10128,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "wPNHXWJpr2c",
+        "name": "Lockdown 2013",
+        "title": "Lockdown",
+        "date": "2013-03-10",
+        "show": "PPV",
+        "duration": 10256,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "ki83L_Y_KhE",
+        "name": "Slammiversary 2013",
+        "title": "Slammiversary",
+        "date": "2013-06-02",
+        "show": "PPV",
+        "duration": 10327,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "N7ItKa7XlyQ",
+        "name": "Bound for Glory 2013",
+        "title": "Bound for Glory",
+        "date": "2013-10-20",
+        "show": "PPV",
+        "duration": 10520,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "4mdHhEyaK04",
+        "name": "Sacrifice 2014",
+        "title": "Sacrifice",
+        "date": "2014-04-27",
+        "show": "PPV",
+        "duration": 10404,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "6PohJ0wClDs",
+        "name": "Slammiversary 2014",
+        "title": "Slammiversary",
+        "date": "2014-06-15",
+        "show": "PPV",
+        "duration": 10530,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "vwYaw4xbTMo",
+        "name": "Bound for Glory 2014",
+        "title": "Bound for Glory",
+        "date": "2014-10-12",
+        "show": "PPV",
+        "duration": 9672,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "OV4tx2tNu2w",
+        "name": "Slammiversary 2015",
+        "title": "Slammiversary",
+        "date": "2015-06-28",
+        "show": "PPV",
+        "duration": 10348,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
+      },
+      {
+        "id": "w0zymGSgqUs",
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling",
+        "enabled": true,
+        "name": "One Night Only: X-Travaganza 2013",
+        "date": "2013-04-05",
+        "show": "PPV",
+        "title": "One Night Only: X-Travaganza",
+        "duration": 9823
+      }
+    ]
+  },
+  "archive": {
+    "enabled": true,
+    "collectionsPerScan": 12,
+    "collections": [
+      {
+        "id": "2002-08-28-nwa-tna-ppv-11",
+        "name": "Weekly PPV",
+        "enabled": true,
+        "showHint": "Weekly PPV",
+        "dateOrder": "MDY",
+        "overrides": {
+          "2002-06-19 NWA-TNA PPV #1.mp4": {
+            "date": "2002-06-19",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #1"
+          },
+          "2002-06-26 NWA-TNA PPV #2.mp4": {
+            "date": "2002-06-26",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #2"
+          },
+          "2002-07-03 NWA-TNA PPV #3.mp4": {
+            "date": "2002-07-03",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #3"
+          },
+          "2002-07-10 NWA-TNA PPV #4.mp4": {
+            "date": "2002-07-10",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #4"
+          },
+          "2002-07-17 NWA-TNA PPV #5.mp4": {
+            "date": "2002-07-17",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #5"
+          },
+          "2002-07-24 NWA-TNA PPV #6.mp4": {
+            "date": "2002-07-24",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #6"
+          },
+          "2002-07-31 NWA-TNA PPV #7.mp4": {
+            "date": "2002-07-31",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #7"
+          },
+          "2002-08-07 NWA-TNA PPV #8.mp4": {
+            "date": "2002-08-07",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #8"
+          },
+          "2002-08-14 NWA-TNA PPV #9.mp4": {
+            "date": "2002-08-14",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #9"
+          },
+          "2002-08-21 NWA-TNA PPV #10.mp4": {
+            "date": "2002-08-21",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #10"
+          },
+          "2002-08-28 NWA-TNA PPV #11.mp4": {
+            "date": "2002-08-28",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #11"
+          },
+          "2002-09-04 NWA-TNA PPV #12 (Best of X-Division).mp4": {
+            "date": "2002-09-04",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #12"
+          },
+          "2002-09-18 NWA-TNA PPV #13.mp4": {
+            "date": "2002-09-18",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #13"
+          },
+          "2002-09-25 NWA-TNA PPV #14.mp4": {
+            "date": "2002-09-25",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #14"
+          },
+          "2002-10-02 NWA-TNA PPV #15.mp4": {
+            "date": "2002-10-02",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #15"
+          },
+          "2002-10-09 NWA-TNA PPV #16.mp4": {
+            "date": "2002-10-09",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #16"
+          },
+          "2002-10-16 NWA-TNA PPV #17.mp4": {
+            "date": "2002-10-16",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #17"
+          },
+          "2002-10-23 NWA-TNA PPV #18.mp4": {
+            "date": "2002-10-23",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #18"
+          },
+          "2002-10-30 NWA-TNA PPV #19.mp4": {
+            "date": "2002-10-30",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #19"
+          },
+          "2002-11-06 NWA-TNA PPV #20.mp4": {
+            "date": "2002-11-06",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #20"
+          },
+          "2002-11-13 NWA-TNA PPV #21.mp4": {
+            "date": "2002-11-13",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #21"
+          },
+          "2002-11-20 NWA-TNA PPV #22.mp4": {
+            "date": "2002-11-20",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #22"
+          },
+          "2002-11-27 NWA-TNA PPV #23.mp4": {
+            "date": "2002-11-27",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #23"
+          },
+          "2002-12-04 NWA-TNA PPV #24.mp4": {
+            "date": "2002-12-04",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #24"
+          },
+          "2002-12-11 NWA-TNA PPV #25.mp4": {
+            "date": "2002-12-11",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #25"
+          },
+          "2002-12-18 NWA-TNA PPV #26.mp4": {
+            "date": "2002-12-18",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #26"
+          },
+          "2003-01-08 NWA-TNA PPV #27.mp4": {
+            "date": "2003-01-08",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #27"
+          },
+          "2003-01-15 NWA-TNA PPV #28.mp4": {
+            "date": "2003-01-15",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #28"
+          },
+          "2003-01-22 NWA-TNA PPV #29.mp4": {
+            "date": "2003-01-22",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #29"
+          },
+          "2003-01-29 NWA-TNA PPV #30.mp4": {
+            "date": "2003-01-29",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #30"
+          },
+          "2003-02-05 NWA-TNA PPV #31.mp4": {
+            "date": "2003-02-05",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #31"
+          },
+          "2003-02-12 NWA-TNA PPV #32.mp4": {
+            "date": "2003-02-12",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #32"
+          },
+          "2003-02-19 NWA-TNA PPV #33.mp4": {
+            "date": "2003-02-19",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #33"
+          },
+          "2003-02-26 NWA-TNA PPV #34.mp4": {
+            "date": "2003-02-26",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #34"
+          },
+          "2003-03-05 NWA-TNA PPV #35.mp4": {
+            "date": "2003-03-05",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #35"
+          },
+          "2003-03-12 NWA-TNA PPV #36.mp4": {
+            "date": "2003-03-12",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #36"
+          },
+          "2003-03-19 NWA-TNA PPV #37.mp4": {
+            "date": "2003-03-19",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #37"
+          },
+          "2003-03-26 NWA-TNA PPV #38.mp4": {
+            "date": "2003-03-26",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #38"
+          },
+          "2003-04-02 NWA-TNA PPV #39.mp4": {
+            "date": "2003-04-02",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #39"
+          },
+          "2003-04-09 NWA-TNA PPV #40.mp4": {
+            "date": "2003-04-09",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #40"
+          },
+          "2003-04-16 NWA-TNA PPV #41.mp4": {
+            "date": "2003-04-16",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #41"
+          },
+          "2003-04-23 NWA-TNA PPV #42.mp4": {
+            "date": "2003-04-23",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #42"
+          },
+          "2003-04-30 NWA-TNA PPV #43.mp4": {
+            "date": "2003-04-30",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #43"
+          },
+          "2003-05-07 NWA-TNA PPV #44.mp4": {
+            "date": "2003-05-07",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #44"
+          },
+          "2003-05-14 NWA-TNA PPV #45.mp4": {
+            "date": "2003-05-14",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #45"
+          },
+          "2003-05-21 NWA-TNA PPV #46.mp4": {
+            "date": "2003-05-21",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #46"
+          },
+          "2003-05-28 NWA-TNA PPV #47.mp4": {
+            "date": "2003-05-28",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #47"
+          },
+          "2003-06-04 NWA-TNA PPV #48.mp4": {
+            "date": "2003-06-04",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #48"
+          },
+          "2003-06-11 NWA-TNA PPV #49.mp4": {
+            "date": "2003-06-11",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #49"
+          },
+          "2003-06-18 NWA-TNA PPV #50 - 1st Anniversary Show.mp4": {
+            "date": "2003-06-18",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #50"
+          },
+          "2003-06-25 NWA-TNA PPV #51.mp4": {
+            "date": "2003-06-25",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #51"
+          },
+          "2003-07-02 NWA-TNA PPV #52.mp4": {
+            "date": "2003-07-02",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #52"
+          },
+          "2003-07-09 NWA-TNA PPV #53.mp4": {
+            "date": "2003-07-09",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #53"
+          },
+          "2003-07-16 NWA-TNA PPV #54.mp4": {
+            "date": "2003-07-16",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #54"
+          },
+          "2003-07-23 NWA-TNA PPV #55.mp4": {
+            "date": "2003-07-23",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #55"
+          },
+          "2003-07-30 NWA-TNA PPV #56.mp4": {
+            "date": "2003-07-30",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #56"
+          },
+          "2003-08-07 NWA-TNA PPV #57.mp4": {
+            "date": "2003-08-07",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #57"
+          },
+          "2003-08-13 NWA-TNA PPV #58.mp4": {
+            "date": "2003-08-13",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #58"
+          },
+          "2003-08-20 NWA-TNA PPV #59.mp4": {
+            "date": "2003-08-20",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #59"
+          },
+          "2003-08-27 NWA-TNA PPV #60.mp4": {
+            "date": "2003-08-27",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #60"
+          },
+          "2003-09-03 NWA-TNA PPV #61.mp4": {
+            "date": "2003-09-03",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #61"
+          },
+          "2003-09-17 NWA-TNA PPV #62.mp4": {
+            "date": "2003-09-17",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #62"
+          },
+          "2003-09-24 NWA-TNA PPV #63.mp4": {
+            "date": "2003-09-24",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #63"
+          },
+          "2003-10-01 NWA-TNA PPV #64.mp4": {
+            "date": "2003-10-01",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #64"
+          },
+          "2003-10-08 NWA-TNA PPV #65.mp4": {
+            "date": "2003-10-08",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #65"
+          },
+          "2003-10-15 NWA-TNA PPV #66.mp4": {
+            "date": "2003-10-15",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #66"
+          },
+          "2003-10-22 NWA-TNA PPV #67.mp4": {
+            "date": "2003-10-22",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #67"
+          },
+          "2003-10-29 NWA-TNA PPV #68.mp4": {
+            "date": "2003-10-29",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #68"
+          },
+          "2003-11-05 NWA-TNA PPV #69.mp4": {
+            "date": "2003-11-05",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #69"
+          },
+          "2003-11-12 NWA-TNA PPV #70.mp4": {
+            "date": "2003-11-12",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #70"
+          },
+          "2003-11-19 NWA-TNA PPV #71.mp4": {
+            "date": "2003-11-19",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #71"
+          },
+          "2003-11-26 NWA-TNA PPV #72.mp4": {
+            "date": "2003-11-26",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #72"
+          },
+          "2003-12-03 NWA-TNA PPV #73.mp4": {
+            "date": "2003-12-03",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #73"
+          },
+          "2003-12-10 NWA-TNA PPV #74.mp4": {
+            "date": "2003-12-10",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #74"
+          },
+          "2003-12-17 NWA-TNA PPV #75.mp4": {
+            "date": "2003-12-17",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #75"
+          },
+          "2004-01-07 NWA-TNA PPV #76.mp4": {
+            "date": "2004-01-07",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #76"
+          },
+          "2004-01-14 NWA-TNA PPV #77.mp4": {
+            "date": "2004-01-14",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #77"
+          },
+          "2004-01-21 NWA-TNA PPV #78.mp4": {
+            "date": "2004-01-21",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #78"
+          },
+          "2004-01-28 NWA-TNA PPV #79.mp4": {
+            "date": "2004-01-28",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #79"
+          },
+          "2004-02-04 NWA-TNA PPV #80.mp4": {
+            "date": "2004-02-04",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #80"
+          },
+          "2004-02-11 NWA-TNA PPV #81 - America's X Cup Part 1.mp4": {
+            "date": "2004-02-11",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #81"
+          },
+          "2004-02-18 NWA-TNA PPV #82.mp4": {
+            "date": "2004-02-18",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #82"
+          },
+          "2004-02-25 NWA-TNA PPV #83.mp4": {
+            "date": "2004-02-25",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #83"
+          },
+          "2004-03-03 NWA-TNA PPV #84.mp4": {
+            "date": "2004-03-03",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #84"
+          },
+          "2004-03-10 NWA-TNA PPV #85 - America's X Cup Part II.mp4": {
+            "date": "2004-03-10",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #85"
+          },
+          "2004-03-17 NWA-TNA PPV #86.mp4": {
+            "date": "2004-03-17",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #86"
+          },
+          "2004-03-24 NWA-TNA PPV #87.mp4": {
+            "date": "2004-03-24",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #87"
+          },
+          "2004-03-31 NWA-TNA PPV #88.mp4": {
+            "date": "2004-03-31",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #88"
+          },
+          "2004-04-07 NWA-TNA PPV #89 - America's X Cup Part III.mp4": {
+            "date": "2004-04-07",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #89"
+          },
+          "2004-04-14 NWA-TNA PPV #90.mp4": {
+            "date": "2004-04-14",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #90"
+          },
+          "2004-04-21 NWA-TNA PPV #91.mp4": {
+            "date": "2004-04-21",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #91"
+          },
+          "2004-04-28 NWA-TNA PPV #92.mp4": {
+            "date": "2004-04-28",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #92"
+          },
+          "2004-05-05 NWA-TNA PPV #93.mp4": {
+            "date": "2004-05-05",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #93"
+          },
+          "2004-05-12 NWA-TNA PPV #94.mp4": {
+            "date": "2004-05-12",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #94"
+          },
+          "2004-05-19 NWA-TNA PPV #95.mp4": {
+            "date": "2004-05-19",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #95"
+          },
+          "2004-05-26 NWA-TNA PPV #96 - World X Cup.mp4": {
+            "date": "2004-05-26",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #96"
+          },
+          "2004-06-02 NWA-TNA PPV #97.mp4": {
+            "date": "2004-06-02",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #97"
+          },
+          "2004-06-09 NWA-TNA PPV #98.mp4": {
+            "date": "2004-06-09",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #98"
+          },
+          "2004-06-16 NWA-TNA PPV #99.mp4": {
+            "date": "2004-06-16",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #99"
+          },
+          "2004-06-23 NWA-TNA PPV #100 - 2nd Anniversary Show.mp4": {
+            "date": "2004-06-23",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #100"
+          },
+          "2004-06-30 NWA-TNA PPV #101.mp4": {
+            "date": "2004-06-30",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #101"
+          },
+          "2004-07-07 NWA-TNA PPV #102.mp4": {
+            "date": "2004-07-07",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #102"
+          },
+          "2004-07-14 NWA-TNA PPV #103.mp4": {
+            "date": "2004-07-14",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #103"
+          },
+          "2004-07-21 NWA-TNA PPV #104.mp4": {
+            "date": "2004-07-21",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #104"
+          },
+          "2004-07-28 NWA-TNA PPV #105.mp4": {
+            "date": "2004-07-28",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #105"
+          },
+          "2004-08-04 NWA-TNA PPV #106.mp4": {
+            "date": "2004-08-04",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #106"
+          },
+          "2004-08-11 NWA-TNA PPV #107.mp4": {
+            "date": "2004-08-11",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #107"
+          },
+          "2004-08-18 NWA-TNA PPV #108.mp4": {
+            "date": "2004-08-18",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #108"
+          },
+          "2004-08-25 NWA-TNA PPV #109.mp4": {
+            "date": "2004-08-25",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #109"
+          },
+          "2004-09-01 NWA-TNA PPV #110.mp4": {
+            "date": "2004-09-01",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #110"
+          },
+          "2004-09-08 NWA-TNA PPV #111.mp4": {
+            "date": "2004-09-08",
+            "show": "Weekly PPV",
+            "title": "NWA-TNA Weekly PPV #111"
+          }
+        }
+      },
+      {
+        "id": "IW2015",
+        "name": "Impact 2015",
+        "enabled": true,
+        "showHint": "Impact",
+        "dateOrder": "MDY",
+        "overrides": {},
+        "year": 2015
+      },
+      {
+        "id": "iMPACT.Wrestling.2012.01.05.HDTV.x264-RUDOS",
+        "name": "Impact 2012",
+        "enabled": true,
+        "showHint": "Impact",
+        "dateOrder": "MDY",
+        "overrides": {},
+        "year": 2012
+      },
+      {
+        "id": "tna-i-mpact-2004.06.25",
+        "name": "Impact 2004",
+        "enabled": true,
+        "showHint": "Impact",
+        "dateOrder": "MDY",
+        "overrides": {},
+        "year": 2004
+      },
+      {
+        "id": "tna-i-mpact-2005.11.03",
+        "name": "Impact 2005",
+        "enabled": true,
+        "showHint": "Impact",
+        "dateOrder": "MDY",
+        "overrides": {},
+        "year": 2005
+      },
+      {
+        "id": "tna-i-mpact-2006.11.16",
+        "name": "Impact 2006",
+        "enabled": true,
+        "showHint": "Impact",
+        "dateOrder": "MDY",
+        "overrides": {},
+        "year": 2006
+      },
+      {
+        "id": "tna-i-mpact-2007.10.04",
+        "name": "Impact 2007",
+        "enabled": true,
+        "showHint": "Impact",
+        "dateOrder": "MDY",
+        "overrides": {},
+        "year": 2007
+      },
+      {
+        "id": "tna-i-mpact-2008.03.27",
+        "name": "Impact 2008",
+        "enabled": true,
+        "showHint": "Impact",
+        "dateOrder": "MDY",
+        "overrides": {},
+        "year": 2008
+      },
+      {
+        "id": "tna-i-mpact-2009.02.05",
+        "name": "Impact 2009",
+        "enabled": true,
+        "showHint": "Impact",
+        "dateOrder": "MDY",
+        "overrides": {},
+        "year": 2009
+      },
+      {
+        "id": "tna.-impact.-wrestling.-2013.1.31.-hd.x-264-dx",
+        "name": "Impact 2013",
+        "enabled": true,
+        "showHint": "Impact",
+        "dateOrder": "MDY",
+        "overrides": {},
+        "year": 2013
+      },
+      {
+        "id": "tna.-impact.-wrestling.-2014.1.9.-hdtv.x-264.-dx-tv",
+        "name": "Impact 2014",
+        "enabled": true,
+        "showHint": "Impact",
+        "dateOrder": "DMY",
+        "overrides": {},
+        "year": 2014
+      },
+      {
+        "id": "tna.i-mpact.-2010.01.04.-cd-2.-hdtv.-xvi-d-wb",
+        "name": "Impact 2010",
+        "enabled": true,
+        "showHint": "Impact",
+        "dateOrder": "MDY",
+        "overrides": {},
+        "year": 2010
+      },
+      {
+        "id": "tna.i-mpact.-2011.01.20.-hdtv.x-264-rudos",
+        "name": "Impact 2011",
+        "enabled": true,
+        "showHint": "Impact",
+        "dateOrder": "MDY",
+        "overrides": {},
+        "year": 2011
+      },
+      {
+        "id": "tna-against-all-odds-2006-full-event-jarrett-vs.-christian-styles-vs.-daniels-vs.-joe",
+        "name": "PPV 2006",
+        "enabled": true,
+        "showHint": "PPV",
+        "dateOrder": "MDY",
+        "overrides": {
+          "TNA Against All Odds 2006 (FULL EVENT) _ Jarrett vs. Christian, Styles vs. Daniels vs. Joe.mp4": {
+            "date": "2006-02-12",
+            "show": "PPV",
+            "title": "Against All Odds"
+          }
+        },
+        "year": 2006
+      }
+    ]
+  },
+  "retiredSources": [],
+  "dailymotion": {
+    "enabled": true,
+    "videos": [
+      {
+        "id": "x3fr3sb",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Impact 25.11.2015"
+      },
+      {
+        "id": "x3evxb2",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Impact 18.11.2015"
+      },
+      {
+        "id": "x3ig9s4",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Impact 16.12.2015"
+      },
+      {
+        "id": "x34m3ai",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Impact 02.09.2015"
+      },
+      {
+        "id": "x38d2k5",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Impact 30.09.2015"
+      },
+      {
+        "id": "x3ds3gi",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Impact 11.11.2015"
+      },
+      {
+        "id": "x2xpa1v",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Impact 08.07.2015"
+      },
+      {
+        "id": "x391wq8",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Impact 07.10.2015"
+      },
+      {
+        "id": "x3hqquc",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Impact 09.12.2015"
+      },
+      {
+        "id": "x3gpjw3",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Impact 02.12.2015"
+      },
+      {
+        "id": "x338dam",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Impact 19.08.2015"
+      },
+      {
+        "id": "x39u3kb",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Impact 14.10.2015"
+      },
+      {
+        "id": "x1g0wx8",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Lockdown 2014 Part 1"
+      },
+      {
+        "id": "x1g0xno",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Lockdown 2014 Part 2"
+      },
+      {
+        "id": "x1g0yca",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Lockdown 2014 Part 3"
+      },
+      {
+        "id": "x1g0yji",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA Lockdown 2014 Part 4"
+      },
+      {
+        "id": "xzlypp",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA One Night Only Jokers.Wild 2013. HD Part 1"
+      },
+      {
+        "id": "xzlzbc",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA One Night Only Jokers.Wild 2013. HD Part 2"
+      },
+      {
+        "id": "xzlzt8",
+        "owner": "wrestlingcity",
+        "enabled": true,
+        "name": "TNA One Night Only Jokers.Wild 2013. HD Part 3"
+      }
+    ],
+    "broadcasts": [
+      {
+        "date": "2015-11-25",
+        "show": "Impact",
+        "title": "Impact",
+        "videoIds": [
+          "x3fr3sb"
+        ]
+      },
+      {
+        "date": "2015-11-18",
+        "show": "Impact",
+        "title": "Impact",
+        "videoIds": [
+          "x3evxb2"
+        ]
+      },
+      {
+        "date": "2015-12-16",
+        "show": "Impact",
+        "title": "Impact",
+        "videoIds": [
+          "x3ig9s4"
+        ]
+      },
+      {
+        "date": "2015-09-02",
+        "show": "Impact",
+        "title": "Impact",
+        "videoIds": [
+          "x34m3ai"
+        ]
+      },
+      {
+        "date": "2015-09-30",
+        "show": "Impact",
+        "title": "Impact",
+        "videoIds": [
+          "x38d2k5"
+        ]
+      },
+      {
+        "date": "2015-11-11",
+        "show": "Impact",
+        "title": "Impact",
+        "videoIds": [
+          "x3ds3gi"
+        ]
+      },
+      {
+        "date": "2015-07-08",
+        "show": "Impact",
+        "title": "Impact",
+        "videoIds": [
+          "x2xpa1v"
+        ]
+      },
+      {
+        "date": "2015-10-07",
+        "show": "Impact",
+        "title": "Impact",
+        "videoIds": [
+          "x391wq8"
+        ]
+      },
+      {
+        "date": "2015-12-09",
+        "show": "Impact",
+        "title": "Impact",
+        "videoIds": [
+          "x3hqquc"
+        ]
+      },
+      {
+        "date": "2015-12-02",
+        "show": "Impact",
+        "title": "Impact",
+        "videoIds": [
+          "x3gpjw3"
+        ]
+      },
+      {
+        "date": "2015-08-19",
+        "show": "Impact",
+        "title": "Impact",
+        "videoIds": [
+          "x338dam"
+        ]
+      },
+      {
+        "date": "2015-10-14",
+        "show": "Impact",
+        "title": "Impact",
+        "videoIds": [
+          "x39u3kb"
+        ]
+      },
+      {
+        "date": "2014-03-09",
+        "show": "PPV",
+        "title": "Lockdown",
+        "videoIds": [
+          "x1g0wx8",
+          "x1g0xno",
+          "x1g0yca",
+          "x1g0yji"
+        ]
+      },
+      {
+        "date": "2013-05-03",
+        "show": "PPV",
+        "title": "One Night Only: Joker's Wild",
+        "videoIds": [
+          "xzlypp",
+          "xzlzbc",
+          "xzlzt8"
+        ]
+      }
+    ]
+  },
+  "$schema": "../sources.schema.json"
+}

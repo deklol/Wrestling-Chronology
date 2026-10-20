@@ -1,0 +1,33 @@
+[
+  {
+    "company": "wcw",
+    "source": "https://commons.wikimedia.org/wiki/File:Wcw_logo.svg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Wcw_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Wcw_logo.svg/960px-Wcw_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "bytes": 22791
+  },
+  {
+    "company": "tna",
+    "source": "https://commons.wikimedia.org/wiki/File:Total_Nonstop_Action_Wrestling_logo_2024.png",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Total_Nonstop_Action_Wrestling_logo_2024.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Total_Nonstop_Action_Wrestling_logo_2024.png/960px-Total_Nonstop_Action_Wrestling_logo_2024.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "bytes": 135050
+  },
+  {
+    "company": "ecw",
+    "source": "https://freebiesupply.com/logos/ecw-logo/",
+    "files": [
+      "https://cdn.freebiesupply.com/images/thumbs/2x/ecw-logo.png&amp;description=ECW",
+      "https://cdn.freebiesupply.com/logos/large/2x/ecw-logo-black-and-white.png",
+      "https://cdn.freebiesupply.com/logos/large/2x/ecw-logo-png-transparent.png",
+      "https://cdn.freebiesupply.com/logos/large/2x/ecw-logo-svg-vector.svg",
+      "https://cdn.freebiesupply.com/logos/thumbs/2x/ecw-logo.png"
+    ]
+  },
+  {
+    "company": "wwe",
+    "source": "https://commons.wikimedia.org/wiki/File:WWE_white_logo.svg",
+    "runtimeAsset": "drawable/logo_wwe.xml",
+    "note": "Original SVG paths rendered as an Android vector; the preview background rectangle is omitted."
+  }
+]

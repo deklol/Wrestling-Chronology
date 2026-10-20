@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="83.60833mm"
+   height="83.60833mm"
+   viewBox="0 0 83.60833 83.60833"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="WWE_white_logo.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="236.53574"
+     inkscape:cy="111.05572"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="70"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-64.436849,-73.351473)">
+    <g
+       id="g838"
+       transform="matrix(1.0048889,0,0,1.0061171,-85.892958,-337.09401)">
+      <rect
+         id="rect815"
+         x="149.60001"
+         y="407.95001"
+         width="83.099998"
+         height="83.099998"
+         style="fill:#232828;paint-order:fill markers stroke" />
+      <path
+         id="path817"
+         d="m 187.4,469.2 -2.6,6 c 4.9,-0.5 9.5,-0.8 13.6,-0.8 l -2.8,-6.3 c -2.7,0.4 -5.5,0.8 -8.2,1.1 z m 24.7,-2.1 c -1,2.6 -2.1,5.2 -3,7.6 10.1,0.8 16.1,2.4 16.1,2.4 l 4.7,-9.9 C 223.5,467 217.6,467 212.1,467.1 Z M 152.4,481 c -2.1,1.5 -2.7,2.2 -2.8,2.2 -0.1,0.1 4.6,-1.7 11.8,-3.6 6.8,-1.8 10.2,-2.4 13.9,-3 -0.6,-1.4 -1.1,-2.9 -1.8,-4.5 -11.6,3.1 -18,6.7 -21.1,8.9 z"
+         inkscape:connector-curvature="0"
+         style="fill:#d7182a" />
+      <g
+         id="g823"
+         style="fill:#ffffff">
+        <path
+           id="path819"
+           d="M 191.9,424.3 204.1,456 226.8,411.5 204.3,441 191.9,412.7 179.4,441 156.9,411.5 179.5,456"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path821"
+           d="m 212.1,467.1 c 2.4,-6.1 4.7,-12.1 5.9,-15.2 4.2,-10.9 14.8,-40.4 14.8,-40.4 l -28.9,59.1 C 200.7,462.5 192,441 192,441 c -0.6,1.5 -8.7,21.5 -11.9,29.6 l -29,-59.1 c 0,0 10.5,29.5 14.8,40.4 1.6,4 4.9,12.5 7.9,20.2 l 1.8,4.5 c 2.4,6.1 4.2,10.9 4.2,10.9 l 5.4,-12.1 2.6,-6 4.4,-10 3.9,8.9 2.8,6.2 5.6,13 c 0,0 2.2,-5.7 4.9,-12.6 0.6,-2.5 1.7,-5.1 2.7,-7.8 z"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+  </g>
+</svg>
