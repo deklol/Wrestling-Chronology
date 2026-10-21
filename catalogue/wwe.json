@@ -8630,6 +8630,16 @@
             "bytes": 258021454,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-03%20WWF%20Superstars.mp4",
+            "filename": "1999-01-03 WWF Superstars.mp4",
+            "duration": 2798,
+            "height": 384,
+            "bytes": 367162913,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -8664,6 +8674,16 @@
             "bytes": 5675033699,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-04%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-01-04 WWF RAW is WAR.mp4",
+            "duration": 5735,
+            "height": 540,
+            "bytes": 1694323172,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -8696,6 +8716,16 @@
             "duration": 2646,
             "height": 384,
             "bytes": 259404257,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-10%20WWF%20Superstars.mp4",
+            "filename": "1999-01-10 WWF Superstars.mp4",
+            "duration": 2799,
+            "height": 384,
+            "bytes": 367260110,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -8732,6 +8762,16 @@
             "bytes": 5715660939,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-11%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-01-11 WWF RAW is WAR.mp4",
+            "duration": 5773,
+            "height": 540,
+            "bytes": 1711000974,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -8764,6 +8804,16 @@
             "duration": 2675,
             "height": 384,
             "bytes": 261192350,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-17%20WWF%20Superstars.mp4",
+            "filename": "1999-01-17 WWF Superstars.mp4",
+            "duration": 2809,
+            "height": 384,
+            "bytes": 367166403,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -8799,6 +8849,16 @@
             "height": 1080,
             "bytes": 5572342548,
             "label": "Internet Archive \u00b7 1080p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-18%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-01-18 WWF RAW is WAR.mp4",
+            "duration": 5627,
+            "height": 540,
+            "bytes": 1656932372,
+            "label": "Internet Archive \u00b7 540p",
             "language": "en"
           }
         ],
@@ -8843,6 +8903,26 @@
             "height": 1080,
             "bytes": 1065319394,
             "label": "Internet Archive \u00b7 1080p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-24%20Royal%20Rumble.mp4",
+            "filename": "1999-01-24 Royal Rumble.mp4",
+            "duration": 9800,
+            "height": 540,
+            "bytes": 2817149082,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-24%20WWF%20Superstars.mp4",
+            "filename": "1999-01-24 WWF Superstars.mp4",
+            "duration": 2809,
+            "height": 384,
+            "bytes": 367221880,
+            "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
         ],
@@ -8902,6 +8982,16 @@
             "bytes": 5460262844,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-25%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-01-25 WWF RAW is WAR.mp4",
+            "duration": 5551,
+            "height": 540,
+            "bytes": 1650353585,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -8946,6 +9036,16 @@
             "bytes": 188362787,
             "label": "Internet Archive \u00b7 360p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-31%20WWF%20Superstars.mp4",
+            "filename": "1999-01-31 WWF Superstars.mp4",
+            "duration": 2818,
+            "height": 384,
+            "bytes": 366976266,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -8979,6 +9079,16 @@
             "height": 1080,
             "bytes": 5638187603,
             "label": "Internet Archive \u00b7 1080p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-02-01%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-02-01 WWF RAW is WAR.mp4",
+            "duration": 5699,
+            "height": 540,
+            "bytes": 1671283959,
+            "label": "Internet Archive \u00b7 540p",
             "language": "en"
           }
         ],
@@ -9033,6 +9143,16 @@
             "height": 240,
             "bytes": 103095858,
             "label": "Internet Archive \u00b7 240p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-02-07%20WWF%20Superstars.mp4",
+            "filename": "1999-02-07 WWF Superstars.mp4",
+            "duration": 2798,
+            "height": 384,
+            "bytes": 367075513,
+            "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
         ],
@@ -9102,6 +9222,26 @@
             "bytes": 266038655,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-02-14%20St%20Valentine%27s%20Day%20Massacre%20In%20Your%20House.mp4",
+            "filename": "1999-02-14 St Valentine's Day Massacre In Your House.mp4",
+            "duration": 10315,
+            "height": 540,
+            "bytes": 3060349442,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-02-14%20WWF%20Superstars.mp4",
+            "filename": "1999-02-14 WWF Superstars.mp4",
+            "duration": 2813,
+            "height": 384,
+            "bytes": 367168821,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -9160,6 +9300,16 @@
             "bytes": 5896497530,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-02-15%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-02-15 WWF RAW is WAR.mp4",
+            "duration": 5969,
+            "height": 540,
+            "bytes": 1755133774,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -9192,6 +9342,16 @@
             "duration": 2659,
             "height": 384,
             "bytes": 259365562,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-02-21%20WWF%20Superstars.mp4",
+            "filename": "1999-02-21 WWF Superstars.mp4",
+            "duration": 2798,
+            "height": 384,
+            "bytes": 367093879,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -9228,6 +9388,16 @@
             "bytes": 5505762289,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-02-22%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-02-22 WWF RAW is WAR.mp4",
+            "duration": 5594,
+            "height": 540,
+            "bytes": 1649720434,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -9251,6 +9421,16 @@
             "height": 1080,
             "bytes": 2506469303,
             "label": "Internet Archive \u00b7 1080p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-02-28%20WWF%20Superstars.mp4",
+            "filename": "1999-02-28 WWF Superstars.mp4",
+            "duration": 2800,
+            "height": 384,
+            "bytes": 366992832,
+            "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
         ],
@@ -9286,6 +9466,16 @@
             "bytes": 5706793694,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-03-01%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-03-01 WWF RAW is WAR.mp4",
+            "duration": 5785,
+            "height": 540,
+            "bytes": 1689280601,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -9318,6 +9508,16 @@
             "duration": 2533,
             "height": 384,
             "bytes": 247082632,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-03-07%20WWF%20Superstars.mp4",
+            "filename": "1999-03-07 WWF Superstars.mp4",
+            "duration": 2780,
+            "height": 384,
+            "bytes": 367217074,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -9354,6 +9554,16 @@
             "bytes": 5528093032,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-03-08%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-03-08 WWF RAW is WAR.mp4",
+            "duration": 5590,
+            "height": 540,
+            "bytes": 1663530281,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -9386,6 +9596,16 @@
             "duration": 2599,
             "height": 384,
             "bytes": 257120922,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-03-14%20WWF%20Superstars.mp4",
+            "filename": "1999-03-14 WWF Superstars.mp4",
+            "duration": 2789,
+            "height": 384,
+            "bytes": 367323181,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -9422,6 +9642,16 @@
             "bytes": 5630473860,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-03-15%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-03-15 WWF RAW is WAR.mp4",
+            "duration": 5703,
+            "height": 540,
+            "bytes": 1689560961,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -9454,6 +9684,16 @@
             "duration": 2542,
             "height": 384,
             "bytes": 250882126,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-03-21%20WWF%20Superstars.mp4",
+            "filename": "1999-03-21 WWF Superstars.mp4",
+            "duration": 2799,
+            "height": 384,
+            "bytes": 367274924,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -9490,6 +9730,16 @@
             "bytes": 5607362481,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-03-22%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-03-22 WWF RAW is WAR.mp4",
+            "duration": 5675,
+            "height": 540,
+            "bytes": 1656365398,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -9523,6 +9773,26 @@
             "height": 384,
             "bytes": 261264510,
             "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-03-28%20WWF%20Superstars.mp4",
+            "filename": "1999-03-28 WWF Superstars.mp4",
+            "duration": 2799,
+            "height": 384,
+            "bytes": 367244300,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-03-28%20WrestleMania%20XV.mp4",
+            "filename": "1999-03-28 WrestleMania XV.mp4",
+            "duration": 10018,
+            "height": 540,
+            "bytes": 2910550605,
+            "label": "Internet Archive \u00b7 540p",
             "language": "en"
           }
         ],
@@ -9582,6 +9852,16 @@
             "bytes": 5991437638,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-03-29%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-03-29 WWF RAW is WAR.mp4",
+            "duration": 6063,
+            "height": 540,
+            "bytes": 1784891584,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -9626,6 +9906,16 @@
             "bytes": 255664676,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-04%20WWF%20Superstars.mp4",
+            "filename": "1999-04-04 WWF Superstars.mp4",
+            "duration": 2800,
+            "height": 384,
+            "bytes": 367129168,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -9660,6 +9950,16 @@
             "bytes": 5659700948,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-05%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-04-05 WWF RAW is WAR.mp4",
+            "duration": 5728,
+            "height": 540,
+            "bytes": 1703302983,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -9692,6 +9992,16 @@
             "duration": 2651,
             "height": 384,
             "bytes": 268380214,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-11%20WWF%20Superstars.mp4",
+            "filename": "1999-04-11 WWF Superstars.mp4",
+            "duration": 2780,
+            "height": 384,
+            "bytes": 367075042,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -9728,6 +10038,16 @@
             "bytes": 5706992909,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-12%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-04-12 WWF RAW is WAR.mp4",
+            "duration": 5425,
+            "height": 540,
+            "bytes": 1608050133,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -9760,6 +10080,16 @@
             "duration": 2643,
             "height": 384,
             "bytes": 263476318,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-18%20WWF%20Superstars.mp4",
+            "filename": "1999-04-18 WWF Superstars.mp4",
+            "duration": 2798,
+            "height": 384,
+            "bytes": 366928054,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -9795,6 +10125,16 @@
             "height": 1080,
             "bytes": 5696279989,
             "label": "Internet Archive \u00b7 1080p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-19%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-04-19 WWF RAW is WAR.mp4",
+            "duration": 5755,
+            "height": 540,
+            "bytes": 1704134649,
+            "label": "Internet Archive \u00b7 540p",
             "language": "en"
           }
         ],
@@ -9839,6 +10179,26 @@
             "height": 1080,
             "bytes": 1202794016,
             "label": "Internet Archive \u00b7 1080p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-25%20Backlash%20In%20Your%20House.mp4",
+            "filename": "1999-04-25 Backlash In Your House.mp4",
+            "duration": 9563,
+            "height": 540,
+            "bytes": 2783355365,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-25%20WWF%20Superstars.mp4",
+            "filename": "1999-04-25 WWF Superstars.mp4",
+            "duration": 2797,
+            "height": 384,
+            "bytes": 367028351,
+            "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
         ],
@@ -9898,6 +10258,16 @@
             "bytes": 5623689434,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-26%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-04-26 WWF RAW is WAR.mp4",
+            "duration": 5647,
+            "height": 540,
+            "bytes": 1630848784,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -9932,6 +10302,16 @@
             "bytes": 5219336848,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-29%20WWF%20Smackdown.mp4",
+            "filename": "1999-04-29 WWF Smackdown.mp4",
+            "duration": 5323,
+            "height": 540,
+            "bytes": 1635820869,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -9964,6 +10344,16 @@
             "duration": 2626,
             "height": 384,
             "bytes": 261702445,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-05-02%20WWF%20Superstars.mp4",
+            "filename": "1999-05-02 WWF Superstars.mp4",
+            "duration": 2770,
+            "height": 384,
+            "bytes": 367018176,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -10000,6 +10390,16 @@
             "bytes": 5573461870,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-05-03%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-05-03 WWF RAW is WAR.mp4",
+            "duration": 5634,
+            "height": 540,
+            "bytes": 1658105188,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -10032,6 +10432,16 @@
             "duration": 2542,
             "height": 384,
             "bytes": 253152500,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-05-09%20WWF%20Superstars.mp4",
+            "filename": "1999-05-09 WWF Superstars.mp4",
+            "duration": 2797,
+            "height": 384,
+            "bytes": 367388257,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -10067,6 +10477,16 @@
             "height": 1080,
             "bytes": 5521634178,
             "label": "Internet Archive \u00b7 1080p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-05-10%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-05-10 WWF RAW is WAR.mp4",
+            "duration": 5582,
+            "height": 540,
+            "bytes": 1667063966,
+            "label": "Internet Archive \u00b7 540p",
             "language": "en"
           }
         ],
@@ -10111,6 +10531,16 @@
             "height": 1080,
             "bytes": 1392124312,
             "label": "Internet Archive \u00b7 1080p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-05-16%20WWF%20Superstars.mp4",
+            "filename": "1999-05-16 WWF Superstars.mp4",
+            "duration": 2771,
+            "height": 384,
+            "bytes": 367036523,
+            "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
         ],
@@ -10170,6 +10600,16 @@
             "bytes": 5561095364,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-05-17%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-05-17 WWF RAW is WAR.mp4",
+            "duration": 5629,
+            "height": 540,
+            "bytes": 1673194182,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -10202,6 +10642,26 @@
             "duration": 2608,
             "height": 384,
             "bytes": 259465894,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-05-23%20Over%20the%20Edge.mp4",
+            "filename": "1999-05-23 Over the Edge.mp4",
+            "duration": 8535,
+            "height": 540,
+            "bytes": 2497388399,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-05-23%20WWF%20Superstars.mp4",
+            "filename": "1999-05-23 WWF Superstars.mp4",
+            "duration": 2798,
+            "height": 384,
+            "bytes": 367073772,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -10262,6 +10722,16 @@
             "bytes": 5498763743,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-05-24%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-05-24 WWF RAW is WAR.mp4",
+            "duration": 5651,
+            "height": 540,
+            "bytes": 1658377051,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -10294,6 +10764,16 @@
             "duration": 2668,
             "height": 384,
             "bytes": 265569746,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-05-30%20WWF%20Superstars.mp4",
+            "filename": "1999-05-30 WWF Superstars.mp4",
+            "duration": 2782,
+            "height": 384,
+            "bytes": 366989691,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -10330,6 +10810,16 @@
             "bytes": 5604853546,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-05-31%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-05-31 WWF RAW is WAR.mp4",
+            "duration": 5659,
+            "height": 540,
+            "bytes": 1682075910,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -10362,6 +10852,16 @@
             "duration": 2613,
             "height": 384,
             "bytes": 259925289,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-06-06%20WWF%20Superstars.mp4",
+            "filename": "1999-06-06 WWF Superstars.mp4",
+            "duration": 2800,
+            "height": 384,
+            "bytes": 366876749,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -10398,6 +10898,16 @@
             "bytes": 5756790273,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-06-07%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-06-07 WWF RAW is WAR.mp4",
+            "duration": 5822,
+            "height": 540,
+            "bytes": 1723371828,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -10430,6 +10940,16 @@
             "duration": 2657,
             "height": 384,
             "bytes": 258401588,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-06-13%20WWF%20Superstars.mp4",
+            "filename": "1999-06-13 WWF Superstars.mp4",
+            "duration": 2799,
+            "height": 384,
+            "bytes": 367217571,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -10466,6 +10986,16 @@
             "bytes": 5748697578,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-06-14%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-06-14 WWF RAW is WAR.mp4",
+            "duration": 5811,
+            "height": 540,
+            "bytes": 1722428953,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -10498,6 +11028,16 @@
             "duration": 2619,
             "height": 384,
             "bytes": 260852406,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-06-20%20WWF%20Superstars.mp4",
+            "filename": "1999-06-20 WWF Superstars.mp4",
+            "duration": 2798,
+            "height": 384,
+            "bytes": 367124192,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -10534,6 +11074,16 @@
             "bytes": 5554922658,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-06-21%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-06-21 WWF RAW is WAR.mp4",
+            "duration": 5212,
+            "height": 540,
+            "bytes": 1545617813,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -10566,6 +11116,26 @@
             "duration": 2337,
             "height": 384,
             "bytes": 231534735,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-06-27%20King%20of%20the%20Ring.mp4",
+            "filename": "1999-06-27 King of the Ring.mp4",
+            "duration": 8772,
+            "height": 540,
+            "bytes": 2567494915,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-06-27%20WWF%20Superstars.mp4",
+            "filename": "1999-06-27 WWF Superstars.mp4",
+            "duration": 2736,
+            "height": 384,
+            "bytes": 367211299,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -10626,6 +11196,16 @@
             "bytes": 5526441183,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-06-28%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-06-28 WWF RAW is WAR.mp4",
+            "duration": 5597,
+            "height": 540,
+            "bytes": 1665275797,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -10670,6 +11250,16 @@
             "bytes": 263870129,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-07-04%20WWF%20Superstars.mp4",
+            "filename": "1999-07-04 WWF Superstars.mp4",
+            "duration": 2828,
+            "height": 384,
+            "bytes": 367073324,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -10704,6 +11294,16 @@
             "bytes": 5698307870,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-07-05%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-07-05 WWF RAW is WAR.mp4",
+            "duration": 5762,
+            "height": 540,
+            "bytes": 1699224520,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -10736,6 +11336,16 @@
             "duration": 2584,
             "height": 384,
             "bytes": 257242954,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-07-11%20WWF%20Superstars.mp4",
+            "filename": "1999-07-11 WWF Superstars.mp4",
+            "duration": 2798,
+            "height": 384,
+            "bytes": 367102177,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -10772,6 +11382,16 @@
             "bytes": 5843896015,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-07-12%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-07-12 WWF RAW is WAR.mp4",
+            "duration": 5907,
+            "height": 540,
+            "bytes": 1752629882,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -10804,6 +11424,16 @@
             "duration": 2621,
             "height": 384,
             "bytes": 254934661,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-07-18%20WWF%20Superstars.mp4",
+            "filename": "1999-07-18 WWF Superstars.mp4",
+            "duration": 2818,
+            "height": 384,
+            "bytes": 367212906,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -10840,6 +11470,16 @@
             "bytes": 5737668046,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-07-19%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-07-19 WWF RAW is WAR.mp4",
+            "duration": 5801,
+            "height": 540,
+            "bytes": 1701514821,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -10872,6 +11512,26 @@
             "duration": 2664,
             "height": 384,
             "bytes": 265261981,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-07-25%20Fully%20Loaded.mp4",
+            "filename": "1999-07-25 Fully Loaded.mp4",
+            "duration": 9866,
+            "height": 540,
+            "bytes": 2832554895,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-07-25%20WWF%20Superstars.mp4",
+            "filename": "1999-07-25 WWF Superstars.mp4",
+            "duration": 2680,
+            "height": 384,
+            "bytes": 366956375,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -10932,6 +11592,16 @@
             "bytes": 5881403205,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-07-26%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-07-26 WWF RAW is WAR.mp4",
+            "duration": 5949,
+            "height": 540,
+            "bytes": 1763016284,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -10954,6 +11624,16 @@
             "duration": 2627,
             "height": 384,
             "bytes": 261303490,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-01%20WWF%20Superstars.mp4",
+            "filename": "1999-08-01 WWF Superstars.mp4",
+            "duration": 2829,
+            "height": 384,
+            "bytes": 367247723,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -10990,6 +11670,16 @@
             "bytes": 5550330739,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-02%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-08-02 WWF RAW is WAR.mp4",
+            "duration": 5608,
+            "height": 540,
+            "bytes": 1653063496,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11012,6 +11702,16 @@
             "duration": 2580,
             "height": 384,
             "bytes": 251160545,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-08%20WWF%20Superstars.mp4",
+            "filename": "1999-08-08 WWF Superstars.mp4",
+            "duration": 2796,
+            "height": 384,
+            "bytes": 367138944,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -11048,6 +11748,16 @@
             "bytes": 5877494348,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-09%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-08-09 WWF RAW is WAR.mp4",
+            "duration": 5948,
+            "height": 540,
+            "bytes": 1745273884,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11070,6 +11780,16 @@
             "duration": 2738,
             "height": 384,
             "bytes": 272332083,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-15%20WWF%20Superstars.mp4",
+            "filename": "1999-08-15 WWF Superstars.mp4",
+            "duration": 2828,
+            "height": 384,
+            "bytes": 367187099,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -11106,6 +11826,16 @@
             "bytes": 5776421284,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-16%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-08-16 WWF RAW is WAR.mp4",
+            "duration": 5839,
+            "height": 540,
+            "bytes": 1739222071,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11128,6 +11858,36 @@
             "duration": 2605,
             "height": 384,
             "bytes": 255230641,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-22%20SummerSlam.mp4",
+            "filename": "1999-08-22 SummerSlam.mp4",
+            "duration": 9524,
+            "height": 540,
+            "bytes": 2794221946,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-22%20Summerslam%201999%20extras.mp4",
+            "filename": "1999-08-22 Summerslam 1999 extras.mp4",
+            "duration": 1782,
+            "height": 432,
+            "bytes": 312670600,
+            "label": "Internet Archive \u00b7 432p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-22%20WWF%20Superstars.mp4",
+            "filename": "1999-08-22 WWF Superstars.mp4",
+            "duration": 2690,
+            "height": 384,
+            "bytes": 366932760,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -11188,6 +11948,16 @@
             "bytes": 5886195130,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-23%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-08-23 WWF RAW is WAR.mp4",
+            "duration": 5966,
+            "height": 540,
+            "bytes": 1760905233,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11222,6 +11992,16 @@
             "bytes": 5203998615,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-26%20WWF%20Smackdown.mp4",
+            "filename": "1999-08-26 WWF Smackdown.mp4",
+            "duration": 5329,
+            "height": 540,
+            "bytes": 1572851039,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11244,6 +12024,16 @@
             "duration": 2595,
             "height": 384,
             "bytes": 254224625,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-29%20WWF%20Superstars.mp4",
+            "filename": "1999-08-29 WWF Superstars.mp4",
+            "duration": 2858,
+            "height": 384,
+            "bytes": 367076612,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -11280,6 +12070,16 @@
             "bytes": 5653696738,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-30%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-08-30 WWF RAW is WAR.mp4",
+            "duration": 5718,
+            "height": 540,
+            "bytes": 1692806925,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11314,6 +12114,16 @@
             "bytes": 5263302232,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-02%20WWF%20Smackdown.mp4",
+            "filename": "1999-09-02 WWF Smackdown.mp4",
+            "duration": 5358,
+            "height": 540,
+            "bytes": 1574470680,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11336,6 +12146,16 @@
             "duration": 2623,
             "height": 384,
             "bytes": 255832243,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-05%20WWF%20Superstars.mp4",
+            "filename": "1999-09-05 WWF Superstars.mp4",
+            "duration": 2799,
+            "height": 384,
+            "bytes": 367260751,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -11372,6 +12192,16 @@
             "bytes": 5659427291,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-06%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-09-06 WWF RAW is WAR.mp4",
+            "duration": 5734,
+            "height": 540,
+            "bytes": 1695377385,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11406,6 +12236,16 @@
             "bytes": 3488015246,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-09%20WWF%20Smackdown.mp4",
+            "filename": "1999-09-09 WWF Smackdown.mp4",
+            "duration": 5244,
+            "height": 540,
+            "bytes": 1522913742,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11428,6 +12268,16 @@
             "duration": 2654,
             "height": 384,
             "bytes": 258553377,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-12%20WWF%20Superstars.mp4",
+            "filename": "1999-09-12 WWF Superstars.mp4",
+            "duration": 2829,
+            "height": 384,
+            "bytes": 367191123,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -11464,6 +12314,16 @@
             "bytes": 5900789846,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-13%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-09-13 WWF RAW is WAR.mp4",
+            "duration": 5964,
+            "height": 540,
+            "bytes": 1770898426,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11498,6 +12358,16 @@
             "bytes": 3514221197,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-16%20WWF%20Smackdown.mp4",
+            "filename": "1999-09-16 WWF Smackdown.mp4",
+            "duration": 5346,
+            "height": 540,
+            "bytes": 1536617009,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11520,6 +12390,16 @@
             "duration": 2661,
             "height": 384,
             "bytes": 259387185,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-19%20WWF%20Superstars.mp4",
+            "filename": "1999-09-19 WWF Superstars.mp4",
+            "duration": 2829,
+            "height": 384,
+            "bytes": 366959925,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -11556,6 +12436,16 @@
             "bytes": 5622408185,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-20%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-09-20 WWF RAW is WAR.mp4",
+            "duration": 5688,
+            "height": 540,
+            "bytes": 1683891084,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11590,6 +12480,16 @@
             "bytes": 3395594591,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-23%20WWF%20Smackdown.mp4",
+            "filename": "1999-09-23 WWF Smackdown.mp4",
+            "duration": 5300,
+            "height": 540,
+            "bytes": 1532096490,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11612,6 +12512,26 @@
             "duration": 2651,
             "height": 384,
             "bytes": 264713554,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-26%20Unforgiven.mp4",
+            "filename": "1999-09-26 Unforgiven.mp4",
+            "duration": 9511,
+            "height": 540,
+            "bytes": 2801614399,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-26%20WWF%20Superstars.mp4",
+            "filename": "1999-09-26 WWF Superstars.mp4",
+            "duration": 2829,
+            "height": 384,
+            "bytes": 367254287,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -11672,6 +12592,16 @@
             "bytes": 5676973222,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-27%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-09-27 WWF RAW is WAR.mp4",
+            "duration": 5746,
+            "height": 540,
+            "bytes": 1683884907,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11706,6 +12636,16 @@
             "bytes": 2593765289,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-30%20WWF%20Smackdown.mp4",
+            "filename": "1999-09-30 WWF Smackdown.mp4",
+            "duration": 3956,
+            "height": 540,
+            "bytes": 1169363920,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11728,6 +12668,16 @@
             "duration": 2677,
             "height": 384,
             "bytes": 260665099,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-03%20WWF%20Superstars.mp4",
+            "filename": "1999-10-03 WWF Superstars.mp4",
+            "duration": 2829,
+            "height": 384,
+            "bytes": 367219344,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -11764,6 +12714,16 @@
             "bytes": 5821359354,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-04%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-10-04 WWF RAW is WAR.mp4",
+            "duration": 5894,
+            "height": 540,
+            "bytes": 1742388699,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11798,6 +12758,16 @@
             "bytes": 2925183763,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-07%20WWF%20Smackdown.mp4",
+            "filename": "1999-10-07 WWF Smackdown.mp4",
+            "duration": 4894,
+            "height": 540,
+            "bytes": 1420907587,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11830,6 +12800,16 @@
             "duration": 2697,
             "height": 384,
             "bytes": 281223874,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-10%20WWF%20Superstars.mp4",
+            "filename": "1999-10-10 WWF Superstars.mp4",
+            "duration": 2839,
+            "height": 384,
+            "bytes": 367183683,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -11866,6 +12846,16 @@
             "bytes": 6006927920,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-11%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-10-11 WWF RAW is WAR.mp4",
+            "duration": 6074,
+            "height": 540,
+            "bytes": 1807874609,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11900,6 +12890,16 @@
             "bytes": 3218214245,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-14%20WWF%20Smackdown.mp4",
+            "filename": "1999-10-14 WWF Smackdown.mp4",
+            "duration": 5272,
+            "height": 540,
+            "bytes": 1577631315,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -11922,6 +12922,16 @@
             "duration": 2631,
             "height": 384,
             "bytes": 262703963,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-17%20WWF%20Superstars.mp4",
+            "filename": "1999-10-17 WWF Superstars.mp4",
+            "duration": 2769,
+            "height": 384,
+            "bytes": 367127907,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -11982,6 +12992,16 @@
             "bytes": 6053740248,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-18%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-10-18 WWF RAW is WAR.mp4",
+            "duration": 6135,
+            "height": 540,
+            "bytes": 1806879754,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12016,6 +13036,16 @@
             "bytes": 3329507920,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-21%20WWF%20Smackdown.mp4",
+            "filename": "1999-10-21 WWF Smackdown.mp4",
+            "duration": 5183,
+            "height": 540,
+            "bytes": 1473000010,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12038,6 +13068,16 @@
             "duration": 2616,
             "height": 384,
             "bytes": 254785336,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-24%20WWF%20Superstars.mp4",
+            "filename": "1999-10-24 WWF Superstars.mp4",
+            "duration": 2797,
+            "height": 384,
+            "bytes": 367067127,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -12073,6 +13113,16 @@
             "height": 1080,
             "bytes": 5735077224,
             "label": "Internet Archive \u00b7 1080p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-25%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-10-25 WWF RAW is WAR.mp4",
+            "duration": 5801,
+            "height": 540,
+            "bytes": 1710587159,
+            "label": "Internet Archive \u00b7 540p",
             "language": "en"
           }
         ],
@@ -12132,6 +13182,16 @@
             "bytes": 249332031,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-31%20WWF%20Superstars.mp4",
+            "filename": "1999-10-31 WWF Superstars.mp4",
+            "duration": 2741,
+            "height": 384,
+            "bytes": 367303302,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12165,6 +13225,16 @@
             "height": 1080,
             "bytes": 6147397894,
             "label": "Internet Archive \u00b7 1080p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-01%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-11-01 WWF RAW is WAR.mp4",
+            "duration": 6211,
+            "height": 540,
+            "bytes": 1828929566,
+            "label": "Internet Archive \u00b7 540p",
             "language": "en"
           }
         ],
@@ -12200,6 +13270,16 @@
             "bytes": 3866812701,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-04%20WWF%20Smackdown.mp4",
+            "filename": "1999-11-04 WWF Smackdown.mp4",
+            "duration": 5236,
+            "height": 540,
+            "bytes": 1530187047,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12222,6 +13302,16 @@
             "duration": 2582,
             "height": 384,
             "bytes": 251211603,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-07%20WWF%20Superstars.mp4",
+            "filename": "1999-11-07 WWF Superstars.mp4",
+            "duration": 2799,
+            "height": 384,
+            "bytes": 367266065,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -12258,6 +13348,16 @@
             "bytes": 5601372315,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-08%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-11-08 WWF RAW is WAR.mp4",
+            "duration": 5659,
+            "height": 540,
+            "bytes": 1680261318,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12292,6 +13392,16 @@
             "bytes": 3435729315,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-11%20WWF%20Smackdown.mp4",
+            "filename": "1999-11-11 WWF Smackdown.mp4",
+            "duration": 5052,
+            "height": 540,
+            "bytes": 1509685323,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12314,6 +13424,26 @@
             "duration": 2604,
             "height": 384,
             "bytes": 259799300,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-14%20Survivor%20Series.mp4",
+            "filename": "1999-11-14 Survivor Series.mp4",
+            "duration": 9494,
+            "height": 540,
+            "bytes": 2802526110,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-14%20WWF%20Superstars.mp4",
+            "filename": "1999-11-14 WWF Superstars.mp4",
+            "duration": 2859,
+            "height": 384,
+            "bytes": 367252875,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -12374,6 +13504,16 @@
             "bytes": 5615707924,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-15%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-11-15 WWF RAW is WAR.mp4",
+            "duration": 5673,
+            "height": 540,
+            "bytes": 1674157974,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12408,6 +13548,16 @@
             "bytes": 3287462310,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-18%20WWF%20Smackdown.mp4",
+            "filename": "1999-11-18 WWF Smackdown.mp4",
+            "duration": 5292,
+            "height": 540,
+            "bytes": 1524029323,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12430,6 +13580,16 @@
             "duration": 2674,
             "height": 384,
             "bytes": 260281971,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-21%20WWF%20Superstars.mp4",
+            "filename": "1999-11-21 WWF Superstars.mp4",
+            "duration": 2799,
+            "height": 384,
+            "bytes": 367150370,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -12466,6 +13626,16 @@
             "bytes": 5598270057,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-22%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-11-22 WWF RAW is WAR.mp4",
+            "duration": 5656,
+            "height": 540,
+            "bytes": 1680032562,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12500,6 +13670,16 @@
             "bytes": 3672025817,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-25%20WWF%20Smackdown.mp4",
+            "filename": "1999-11-25 WWF Smackdown.mp4",
+            "duration": 5127,
+            "height": 540,
+            "bytes": 1515696966,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12522,6 +13702,16 @@
             "duration": 2644,
             "height": 384,
             "bytes": 257455480,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-28%20WWF%20Superstars.mp4",
+            "filename": "1999-11-28 WWF Superstars.mp4",
+            "duration": 2829,
+            "height": 384,
+            "bytes": 367035009,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -12558,6 +13748,16 @@
             "bytes": 6107619557,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-29%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-11-29 WWF RAW is WAR.mp4",
+            "duration": 6130,
+            "height": 540,
+            "bytes": 1821627514,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12592,6 +13792,16 @@
             "bytes": 3541782209,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-02%20WWF%20Smackdown.mp4",
+            "filename": "1999-12-02 WWF Smackdown.mp4",
+            "duration": 5349,
+            "height": 540,
+            "bytes": 1589104061,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12614,6 +13824,16 @@
             "duration": 2633,
             "height": 384,
             "bytes": 256314795,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-05%20WWF%20Superstars.mp4",
+            "filename": "1999-12-05 WWF Superstars.mp4",
+            "duration": 2798,
+            "height": 384,
+            "bytes": 367041256,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -12650,6 +13870,16 @@
             "bytes": 5651497669,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-06%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-12-06 WWF RAW is WAR.mp4",
+            "duration": 5716,
+            "height": 540,
+            "bytes": 1687394283,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12684,6 +13914,16 @@
             "bytes": 3326309284,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-09%20WWF%20Smackdown.mp4",
+            "filename": "1999-12-09 WWF Smackdown.mp4",
+            "duration": 4930,
+            "height": 540,
+            "bytes": 1403504648,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12706,6 +13946,26 @@
             "duration": 2640,
             "height": 384,
             "bytes": 263401466,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-12%20Armageddon.mp4",
+            "filename": "1999-12-12 Armageddon.mp4",
+            "duration": 10156,
+            "height": 540,
+            "bytes": 2972753325,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-12%20WWF%20Superstars.mp4",
+            "filename": "1999-12-12 WWF Superstars.mp4",
+            "duration": 2798,
+            "height": 384,
+            "bytes": 367079651,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -12766,6 +14026,16 @@
             "bytes": 5552270036,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-13%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-12-13 WWF RAW is WAR.mp4",
+            "duration": 5614,
+            "height": 540,
+            "bytes": 1649193842,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12800,6 +14070,16 @@
             "bytes": 3634403803,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-16%20WWF%20Smackdown.mp4",
+            "filename": "1999-12-16 WWF Smackdown.mp4",
+            "duration": 5329,
+            "height": 540,
+            "bytes": 1589343276,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12822,6 +14102,16 @@
             "duration": 2679,
             "height": 384,
             "bytes": 261108505,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-19%20WWF%20Superstars.mp4",
+            "filename": "1999-12-19 WWF Superstars.mp4",
+            "duration": 2798,
+            "height": 384,
+            "bytes": 367241875,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -12858,6 +14148,16 @@
             "bytes": 5758050906,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-20%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-12-20 WWF RAW is WAR.mp4",
+            "duration": 5816,
+            "height": 540,
+            "bytes": 1718786614,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12892,6 +14192,16 @@
             "bytes": 4063575912,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-23%20WWF%20Smackdown.mp4",
+            "filename": "1999-12-23 WWF Smackdown.mp4",
+            "duration": 5312,
+            "height": 540,
+            "bytes": 1538515942,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12914,6 +14224,16 @@
             "duration": 2367,
             "height": 384,
             "bytes": 233248660,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-26%20WWF%20Superstars.mp4",
+            "filename": "1999-12-26 WWF Superstars.mp4",
+            "duration": 2829,
+            "height": 384,
+            "bytes": 366929994,
             "label": "Internet Archive \u00b7 384p",
             "language": "en"
           }
@@ -12950,6 +14270,16 @@
             "bytes": 5778288262,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-27%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-12-27 WWF RAW is WAR.mp4",
+            "duration": 5837,
+            "height": 540,
+            "bytes": 1725341196,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -12983,6 +14313,16 @@
             "height": 1080,
             "bytes": 3751261383,
             "label": "Internet Archive \u00b7 1080p",
+            "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-30%20WWF%20Smackdown.mp4",
+            "filename": "1999-12-30 WWF Smackdown.mp4",
+            "duration": 5362,
+            "height": 540,
+            "bytes": 1511806797,
+            "label": "Internet Archive \u00b7 540p",
             "language": "en"
           }
         ],
@@ -37432,6 +38772,16 @@
             "bytes": 432315224,
             "label": "Internet Archive \u00b7 480p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/taeh-eww-2005/2005-06-26%20-%20WWE%20Sunday%20Night%20Heat%20%28International%29.mp4",
+            "filename": "2005-06-26 - WWE Sunday Night Heat (International).mp4",
+            "duration": 1548,
+            "height": 360,
+            "bytes": 105026075,
+            "label": "Internet Archive \u00b7 360p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -39789,6 +41139,1230 @@
             "height": 720,
             "bytes": 2903979769,
             "label": "Internet Archive \u00b7 720p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:2002-05-29:smackdown",
+        "date": "2002-05-29",
+        "year": 2002,
+        "show": "SmackDown",
+        "title": "SmackDown",
+        "description": "",
+        "duration": 5010,
+        "thumbnail": "https://archive.org/download/smckdwn-2003-pcck/smckdwn-2003-pcck.thumbs/WWE%20SmackDown%20-%20S05E22%20-%20May%2029%2C%202002%20-%20Peacock_001820.jpg",
+        "poster": "https://archive.org/download/smckdwn-2003-pcck/smckdwn-2003-pcck.thumbs/WWE%20SmackDown%20-%20S05E22%20-%20May%2029%2C%202002%20-%20Peacock_001820.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/smckdwn-2003-pcck/WWE%20SmackDown%20-%20S05E22%20-%20May%2029%2C%202002%20-%20Peacock.mp4",
+            "filename": "WWE SmackDown - S05E22 - May 29, 2002 - Peacock.mp4",
+            "duration": 5010,
+            "height": 1080,
+            "bytes": 4120036467,
+            "label": "Internet Archive \u00b7 1080p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:2000-02-02:smackdown",
+        "date": "2000-02-02",
+        "year": 2000,
+        "show": "SmackDown",
+        "title": "SmackDown",
+        "description": "",
+        "duration": 5715,
+        "thumbnail": "https://archive.org/download/smckdwn-2000-ntwrk/smckdwn-2000-ntwrk.thumbs/WWE%20SmackDown%20-%20S02E05%20-%20February%2002%2C%202000%20-%20WWE%20Network_002286.jpg",
+        "poster": "https://archive.org/download/smckdwn-2000-ntwrk/smckdwn-2000-ntwrk.thumbs/WWE%20SmackDown%20-%20S02E05%20-%20February%2002%2C%202000%20-%20WWE%20Network_002286.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/smckdwn-2000-ntwrk/WWE%20SmackDown%20-%20S02E05%20-%20February%2002%2C%202000%20-%20WWE%20Network.mp4",
+            "filename": "WWE SmackDown - S02E05 - February 02, 2000 - WWE Network.mp4",
+            "duration": 5715,
+            "height": 1080,
+            "bytes": 5694043095,
+            "label": "Internet Archive \u00b7 1080p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:2000-06-20:heat",
+        "date": "2000-06-20",
+        "year": 2000,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 4872,
+        "thumbnail": "https://archive.org/download/taeh-thgin-yadnus-fww-0002-enuj/taeh-thgin-yadnus-fww-0002-enuj.thumbs/06.WWF%20Heat%20June%202000/00.06.18_001682.jpg",
+        "poster": "https://archive.org/download/taeh-thgin-yadnus-fww-0002-enuj/taeh-thgin-yadnus-fww-0002-enuj.thumbs/06.WWF%20Heat%20June%202000/00.06.18_001682.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/taeh-thgin-yadnus-fww-0002-enuj/06.WWF%20Heat%20June%202000/00.06.18.mp4",
+            "filename": "06.WWF Heat June 2000/00.06.18.mp4",
+            "duration": 4872,
+            "height": 480,
+            "bytes": 1010900571,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-01-02:saturdaynight",
+        "date": "1999-01-02",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2496,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-01-02%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-01-02%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-02%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-01-02 WWF Shotgun Saturday Night.mp4",
+            "duration": 2496,
+            "height": 480,
+            "bytes": 648990522,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-01-09:saturdaynight",
+        "date": "1999-01-09",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2579,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-01-09%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-01-09%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-09%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-01-09 WWF Shotgun Saturday Night.mp4",
+            "duration": 2579,
+            "height": 480,
+            "bytes": 671501024,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-01-16:saturdaynight",
+        "date": "1999-01-16",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2498,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-01-16%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-01-16%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-16%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-01-16 WWF Shotgun Saturday Night.mp4",
+            "duration": 2498,
+            "height": 480,
+            "bytes": 648711698,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-01-23:saturdaynight",
+        "date": "1999-01-23",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2601,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-01-23%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-01-23%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-23%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-01-23 WWF Shotgun Saturday Night.mp4",
+            "duration": 2601,
+            "height": 480,
+            "bytes": 676227816,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-01-30:saturdaynight",
+        "date": "1999-01-30",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2577,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-01-30%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-01-30%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-01-30%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-01-30 WWF Shotgun Saturday Night.mp4",
+            "duration": 2577,
+            "height": 480,
+            "bytes": 670861047,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-02-06:saturdaynight",
+        "date": "1999-02-06",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2559,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-02-06%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-02-06%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-02-06%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-02-06 WWF Shotgun Saturday Night.mp4",
+            "duration": 2559,
+            "height": 480,
+            "bytes": 665580222,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-02-08:raw",
+        "date": "1999-02-08",
+        "year": 1999,
+        "show": "Raw",
+        "title": "Raw",
+        "description": "",
+        "duration": 5641,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-02-08%20WWF%20RAW%20is%20WAR_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-02-08%20WWF%20RAW%20is%20WAR_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-02-08%20WWF%20RAW%20is%20WAR.mp4",
+            "filename": "1999-02-08 WWF RAW is WAR.mp4",
+            "duration": 5641,
+            "height": 540,
+            "bytes": 1678533206,
+            "label": "Internet Archive \u00b7 540p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-02-13:saturdaynight",
+        "date": "1999-02-13",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 5141,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-02-13%20WWF%20RAW%20is%20WAR%20%28Raw%20Saturday%20Night%29_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-02-13%20WWF%20RAW%20is%20WAR%20%28Raw%20Saturday%20Night%29_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-02-13%20WWF%20RAW%20is%20WAR%20%28Raw%20Saturday%20Night%29.mp4",
+            "filename": "1999-02-13 WWF RAW is WAR (Raw Saturday Night).mp4",
+            "duration": 5141,
+            "height": 384,
+            "bytes": 525411736,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-02-20:saturdaynight",
+        "date": "1999-02-20",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2545,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-02-20%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-02-20%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-02-20%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-02-20 WWF Shotgun Saturday Night.mp4",
+            "duration": 2545,
+            "height": 480,
+            "bytes": 661966823,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-02-27:saturdaynight",
+        "date": "1999-02-27",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2505,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-02-27%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-02-27%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-02-27%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-02-27 WWF Shotgun Saturday Night.mp4",
+            "duration": 2505,
+            "height": 480,
+            "bytes": 652214426,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-03-06:saturdaynight",
+        "date": "1999-03-06",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2489,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-03-06%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-03-06%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-03-06%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-03-06 WWF Shotgun Saturday Night.mp4",
+            "duration": 2489,
+            "height": 480,
+            "bytes": 646865230,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-03-13:saturdaynight",
+        "date": "1999-03-13",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2541,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-03-13%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-03-13%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-03-13%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-03-13 WWF Shotgun Saturday Night.mp4",
+            "duration": 2541,
+            "height": 480,
+            "bytes": 660612325,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-03-20:saturdaynight",
+        "date": "1999-03-20",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2637,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-03-20%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-03-20%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-03-20%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-03-20 WWF Shotgun Saturday Night.mp4",
+            "duration": 2637,
+            "height": 480,
+            "bytes": 686096561,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-03-27:saturdaynight",
+        "date": "1999-03-27",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2661,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-03-27%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-03-27%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-03-27%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-03-27 WWF Shotgun Saturday Night.mp4",
+            "duration": 2661,
+            "height": 480,
+            "bytes": 690684878,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-04-03:saturdaynight",
+        "date": "1999-04-03",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2650,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-04-03%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-04-03%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-03%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-04-03 WWF Shotgun Saturday Night.mp4",
+            "duration": 2650,
+            "height": 480,
+            "bytes": 689872228,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-04-10:saturdaynight",
+        "date": "1999-04-10",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2647,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-04-10%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-04-10%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-10%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-04-10 WWF Shotgun Saturday Night.mp4",
+            "duration": 2647,
+            "height": 480,
+            "bytes": 689032641,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-04-17:saturdaynight",
+        "date": "1999-04-17",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2526,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-04-17%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-04-17%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-17%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-04-17 WWF Shotgun Saturday Night.mp4",
+            "duration": 2526,
+            "height": 480,
+            "bytes": 657086777,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-04-24:heat",
+        "date": "1999-04-24",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2992,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-04-24%20WWF%20Livewire_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-04-24%20WWF%20Livewire_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-24%20WWF%20Livewire.mp4",
+            "filename": "1999-04-24 WWF Livewire.mp4",
+            "duration": 2992,
+            "height": 720,
+            "bytes": 1796746326,
+            "label": "Internet Archive \u00b7 720p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-04-24:saturdaynight",
+        "date": "1999-04-24",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2553,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-04-24%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-04-24%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-04-24%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-04-24 WWF Shotgun Saturday Night.mp4",
+            "duration": 2553,
+            "height": 480,
+            "bytes": 664252880,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-05-08:saturdaynight",
+        "date": "1999-05-08",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2561,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-05-08%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-05-08%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-05-08%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-05-08 WWF Shotgun Saturday Night.mp4",
+            "duration": 2561,
+            "height": 480,
+            "bytes": 666242014,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-05-22:saturdaynight",
+        "date": "1999-05-22",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2477,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-05-22%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-05-22%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-05-22%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-05-22 WWF Shotgun Saturday Night.mp4",
+            "duration": 2477,
+            "height": 480,
+            "bytes": 643910088,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-05-29:saturdaynight",
+        "date": "1999-05-29",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2687,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-05-29%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-05-29%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-05-29%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-05-29 WWF Shotgun Saturday Night.mp4",
+            "duration": 2687,
+            "height": 480,
+            "bytes": 696117425,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-06-05:saturdaynight",
+        "date": "1999-06-05",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2657,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-06-05%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-06-05%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-06-05%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-06-05 WWF Shotgun Saturday Night.mp4",
+            "duration": 2657,
+            "height": 480,
+            "bytes": 691616639,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-06-12:saturdaynight",
+        "date": "1999-06-12",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2645,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-06-12%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-06-12%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-06-12%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-06-12 WWF Shotgun Saturday Night.mp4",
+            "duration": 2645,
+            "height": 480,
+            "bytes": 688493137,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-06-19:saturdaynight",
+        "date": "1999-06-19",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2635,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-06-19%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-06-19%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-06-19%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-06-19 WWF Shotgun Saturday Night.mp4",
+            "duration": 2635,
+            "height": 480,
+            "bytes": 685470637,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-06-26:saturdaynight",
+        "date": "1999-06-26",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2667,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-06-26%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-06-26%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-06-26%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-06-26 WWF Shotgun Saturday Night.mp4",
+            "duration": 2667,
+            "height": 480,
+            "bytes": 694387340,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-07-03:saturdaynight",
+        "date": "1999-07-03",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2691,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-07-03%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-07-03%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-07-03%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-07-03 WWF Shotgun Saturday Night.mp4",
+            "duration": 2691,
+            "height": 480,
+            "bytes": 697657982,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-07-10:saturdaynight",
+        "date": "1999-07-10",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2670,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-07-10%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-07-10%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-07-10%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-07-10 WWF Shotgun Saturday Night.mp4",
+            "duration": 2670,
+            "height": 480,
+            "bytes": 695402256,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-07-17:saturdaynight",
+        "date": "1999-07-17",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2650,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-07-17%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-07-17%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-07-17%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-07-17 WWF Shotgun Saturday Night.mp4",
+            "duration": 2650,
+            "height": 480,
+            "bytes": 689025622,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-07-24:saturdaynight",
+        "date": "1999-07-24",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2666,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-07-24%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-07-24%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-07-24%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-07-24 WWF Shotgun Saturday Night.mp4",
+            "duration": 2666,
+            "height": 480,
+            "bytes": 694238527,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-08-07:saturdaynight",
+        "date": "1999-08-07",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2665,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-08-07%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-08-07%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-07%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-08-07 WWF Shotgun Saturday Night.mp4",
+            "duration": 2665,
+            "height": 480,
+            "bytes": 691765717,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-08-14:saturdaynight",
+        "date": "1999-08-14",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2870,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-08-14%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-08-14%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-14%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-08-14 WWF Shotgun Saturday Night.mp4",
+            "duration": 2870,
+            "height": 480,
+            "bytes": 701544076,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-08-21:saturdaynight",
+        "date": "1999-08-21",
+        "year": 1999,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2661,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-08-21%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-08-21%20WWF%20Shotgun%20Saturday%20Night_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-21%20WWF%20Shotgun%20Saturday%20Night.mp4",
+            "filename": "1999-08-21 WWF Shotgun Saturday Night.mp4",
+            "duration": 2661,
+            "height": 480,
+            "bytes": 692985105,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-08-28:heat",
+        "date": "1999-08-28",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2521,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-08-28%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-08-28%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-08-28%20WWF%20Metal.mp4",
+            "filename": "1999-08-28 WWF Metal.mp4",
+            "duration": 2521,
+            "height": 480,
+            "bytes": 656366952,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-09-04:heat",
+        "date": "1999-09-04",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2712,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-09-04%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-09-04%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-04%20WWF%20Metal.mp4",
+            "filename": "1999-09-04 WWF Metal.mp4",
+            "duration": 2712,
+            "height": 480,
+            "bytes": 697749172,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-09-11:heat",
+        "date": "1999-09-11",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2728,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-09-11%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-09-11%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-11%20WWF%20Metal.mp4",
+            "filename": "1999-09-11 WWF Metal.mp4",
+            "duration": 2728,
+            "height": 480,
+            "bytes": 706487826,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-09-18:heat",
+        "date": "1999-09-18",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2677,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-09-18%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-09-18%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-18%20WWF%20Metal.mp4",
+            "filename": "1999-09-18 WWF Metal.mp4",
+            "duration": 2677,
+            "height": 480,
+            "bytes": 694532361,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-09-25:heat",
+        "date": "1999-09-25",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2620,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-09-25%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-09-25%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-09-25%20WWF%20Metal.mp4",
+            "filename": "1999-09-25 WWF Metal.mp4",
+            "duration": 2620,
+            "height": 480,
+            "bytes": 681742064,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-10-09:heat",
+        "date": "1999-10-09",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2559,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-10-09%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-10-09%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-09%20WWF%20Metal.mp4",
+            "filename": "1999-10-09 WWF Metal.mp4",
+            "duration": 2559,
+            "height": 384,
+            "bytes": 256323790,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-10-16:heat",
+        "date": "1999-10-16",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2651,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-10-16%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-10-16%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-16%20WWF%20Metal.mp4",
+            "filename": "1999-10-16 WWF Metal.mp4",
+            "duration": 2651,
+            "height": 480,
+            "bytes": 690399290,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-10-23:heat",
+        "date": "1999-10-23",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2726,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-10-23%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-10-23%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-10-23%20WWF%20Metal.mp4",
+            "filename": "1999-10-23 WWF Metal.mp4",
+            "duration": 2726,
+            "height": 480,
+            "bytes": 707951447,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-11-06:heat",
+        "date": "1999-11-06",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2717,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-11-06%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-11-06%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-06%20WWF%20Metal.mp4",
+            "filename": "1999-11-06 WWF Metal.mp4",
+            "duration": 2717,
+            "height": 480,
+            "bytes": 701331383,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-11-13:heat",
+        "date": "1999-11-13",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2690,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-11-13%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-11-13%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-13%20WWF%20Metal.mp4",
+            "filename": "1999-11-13 WWF Metal.mp4",
+            "duration": 2690,
+            "height": 480,
+            "bytes": 698661407,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-11-20:heat",
+        "date": "1999-11-20",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2501,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-11-20%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-11-20%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-20%20WWF%20Metal.mp4",
+            "filename": "1999-11-20 WWF Metal.mp4",
+            "duration": 2501,
+            "height": 384,
+            "bytes": 250210259,
+            "label": "Internet Archive \u00b7 384p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-11-27:heat",
+        "date": "1999-11-27",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2696,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-11-27%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-11-27%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-11-27%20WWF%20Metal.mp4",
+            "filename": "1999-11-27 WWF Metal.mp4",
+            "duration": 2696,
+            "height": 480,
+            "bytes": 699258665,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-12-04:heat",
+        "date": "1999-12-04",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2676,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-12-04%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-12-04%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-04%20WWF%20Metal.mp4",
+            "filename": "1999-12-04 WWF Metal.mp4",
+            "duration": 2676,
+            "height": 480,
+            "bytes": 697167375,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-12-11:heat",
+        "date": "1999-12-11",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2676,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-12-11%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-12-11%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-11%20WWF%20Metal.mp4",
+            "filename": "1999-12-11 WWF Metal.mp4",
+            "duration": 2676,
+            "height": 480,
+            "bytes": 697503594,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "en"
+          }
+        ],
+        "discoveredAt": 0
+      },
+      {
+        "id": "wwe:1999-12-18:heat",
+        "date": "1999-12-18",
+        "year": 1999,
+        "show": "Heat",
+        "title": "Heat",
+        "description": "",
+        "duration": 2729,
+        "thumbnail": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-12-18%20WWF%20Metal_000001.jpg",
+        "poster": "https://archive.org/download/wwf-1999-complete-collection/wwf-1999-complete-collection.thumbs/1999-12-18%20WWF%20Metal_000001.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/wwf-1999-complete-collection/1999-12-18%20WWF%20Metal.mp4",
+            "filename": "1999-12-18 WWF Metal.mp4",
+            "duration": 2729,
+            "height": 480,
+            "bytes": 704405147,
+            "label": "Internet Archive \u00b7 480p",
             "language": "en"
           }
         ],

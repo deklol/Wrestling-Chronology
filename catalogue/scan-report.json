@@ -1,0 +1,3779 @@
+[
+  {
+    "company": "wwe",
+    "source": "WAR-1995",
+    "status": "checked",
+    "recordings": 48,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "WAR-199six",
+    "status": "checked",
+    "recordings": 51,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "WAR-1997",
+    "status": "checked",
+    "recordings": 50,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "WAR-1998",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "WAR-1999",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "WAR-2000",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "WAR-2001",
+    "status": "checked",
+    "recordings": 53,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "2002.01.28",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "2003.12.29",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "2004.06.14",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "2005.10.03",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "nwodkcams-1999",
+    "status": "checked",
+    "recordings": 20,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "2000.02.03",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "2001.03.15",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "2002.02.07",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "2003.05.22",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "2004.06.24",
+    "status": "checked",
+    "recordings": 53,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "2005.11.18",
+    "status": "checked",
+    "recordings": 53,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "mndynghtrw-2004-ntwrk",
+    "status": "checked",
+    "recordings": 53,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "smckdwn-1999-ntwk",
+    "status": "checked",
+    "recordings": 20,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "mndynghtrw-1995-archive",
+    "status": "checked",
+    "recordings": 48,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "mndynghtrw-1997-various",
+    "status": "checked",
+    "recordings": 50,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "mndynghtrw-2001-archive",
+    "status": "checked",
+    "recordings": 53,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "mndynghtrw-2003-ntwrk",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "mndynghtrw-1996-archive",
+    "status": "checked",
+    "recordings": 51,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "mndynghtrw-2002-ntwrk",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "smckdwn-2001-ntwrk",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "mndynghtrw-1998-archive",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "smckdwn-2003-pcck",
+    "status": "checked",
+    "recordings": 31,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "smckdwn-2002-ntwrk",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "mndynghtrw-2000-ntwrk",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "mndynghtrw-2005-ntwrk",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "smckdwn-2000-ntwrk",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "mndynghtrw-1999-archive",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "april-2002-wwf-sunday-night-heat",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "august-2002-wwe-sunday-night-heat",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "december-2002-wwe-sunday-night-heat",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "february-2002-wwf-sunday-night-heat",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "heat-4-4-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "heat-april-4-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "heat-december-6th-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "january-2002-wwf-sunday-night-heat",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "july-2002-wwe-sunday-night-heat",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "june-2002-wwe-sunday-night-heat",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "march-2002-wwf-sunday-night-heat",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "may-2002-wwe-sunday-night-heat",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "november-2002-wwe-sunday-night-heat",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "october-2002-wwe-sunday-night-heat",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "september-2002-wwe-sunday-night-heat",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "sndynghtht-1998-ntwrk",
+    "status": "checked",
+    "recordings": 22,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "sndynghtht-1999-ntwrk",
+    "status": "checked",
+    "recordings": 30,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "sunday-night-heat-10-11-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "SundayNightHeatRandomEpisodes",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-eww-2005",
+    "status": "checked",
+    "recordings": 40,
+    "skipped": [
+      "2005-01-09 - WWE Sunday Night Heat (New Years Revolution Preview.No Matches).mp4",
+      "2005-01-30 - WWE Sunday Night Heat (Royal Rumble Preview).mp4",
+      "2005-02-20 - WWE Sunday Night Heat (No Way Out Preview).mp4",
+      "2005-05-01 - WWE Sunday Night Heat (Backlash Preview).mp4",
+      "2005-05-22 - WWE Sunday Night Heat (Judgment Day Preview).mp4",
+      "2005-06-12 - ECW Extreme Heat (ECW One Night Stand Preview).mp4",
+      "2005-06-26 - WWE Sunday Night Heat (Vengeance Preview).mp4",
+      "2005-07-24 - WWE Sunday Night Heat (Great American Bash Preview).mp4",
+      "2005-08-21 - WWE Sunday Night Heat (Summerslam Preview).mp4",
+      "2005-09-18 - WWE Sunday Night Heat (Unforgiven Preview).mp4",
+      "2005-10-09 - WWE Sunday Night Heat (No Mercy Preview).mp4",
+      "2005-11-01 - WWE Sunday Night Heat (Taboo Tuesday Preview).mp4",
+      "2005-11-27 - WWE Sunday Night Heat (Survivor Series Preview).mp4",
+      "2005-12-18 - WWE Sunday Night Heat (Armageddon Preview).mp4",
+      "2005-12-23 - WWE Sunday Night Heat (Year in Review. No Matches).mp4",
+      "2005-02-20 - WWE Sunday Night Heat (International. Chris Benoit vs Steven Richards).mp4",
+      "2005-06-12 - WWE Sunday Night Heat (International. Alex Shelley vs Simon Dean).mp4",
+      "2005-08-21 - WWE Sunday Night Heat (International. Kerwin White vs Rosey).mp4",
+      "2005-08-21 - WWE Sunday Night Heat (International. Victoria vs Stacy Keibler).mp4",
+      "2005-10-28 - WWE Sunday Night Heat (Kerwin White vs Val Venis).mp4"
+    ]
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fw-1002-tsugua",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-0002-enuj",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-0002-hcram",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-0002-lirpa",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-0002-rebmeced",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-0002-rebmetpes",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-0002-rebmevon",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-0002-rebotco",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-0002-tsugua",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-0002-yam",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-0002-yluj",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-0002-yraunaj",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-0002-yraurbef_202504",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-1002-enuj",
+    "status": "checked",
+    "recordings": 3,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-1002-hcram",
+    "status": "checked",
+    "recordings": 2,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-1002-lirpa",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-1002-yam",
+    "status": "checked",
+    "recordings": 3,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-1002-yluj",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-1002-yraunaj",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "taeh-thgin-yadnus-fww-1002-yraurbef",
+    "status": "checked",
+    "recordings": 2,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-1999-complete-collection",
+    "status": "checked",
+    "recordings": 234,
+    "skipped": [
+      "1999-02-13 WWF Shotgun Saturday Night.mp4",
+      "1999-05-01 WWF Shotgun Saturday Night.mp4",
+      "1999-05-15 WWF Shotgun Saturday Night.mp4",
+      "1999-06-27 King Of The Ring 1999 Extra.mp4",
+      "1999-06-27 King Of The Ring 1999 Extra2.mp4",
+      "1999-06-27 King Of The Ring 1999 Extra3.mp4"
+    ]
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-heat-april-25th-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-heat-february-7th-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-heat-may-16th-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-sunday-night-heat-01-31-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-sunday-night-heat-02-07-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-sunday-night-heat-09-17-2000-wwe-network-please-read-description-below",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-sunday-night-heat-09-24-2000-wwe-network-please-read-description-below",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-sunday-night-heat-11-22-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-sunday-night-heat-8-30-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-sunday-night-heat-december-2001",
+    "status": "checked",
+    "recordings": 3,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-sunday-night-heat-january-24th-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-sunday-night-heat-november-2001",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-sunday-night-heat-october-2001",
+    "status": "checked",
+    "recordings": 3,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-sunday-night-september-2001",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf.-sunday.-night.-heat.-10.10.1999-video-dailymoti",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "06-wwf-summer-slam-1995",
+    "status": "checked",
+    "recordings": 10,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "11-wwf-survivor-series-1996",
+    "status": "checked",
+    "recordings": 12,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "01-wwf-royal-rumble-1997_202607",
+    "status": "checked",
+    "recordings": 12,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "01-wwf-royal-rumble-1998",
+    "status": "checked",
+    "recordings": 12,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "02-wwf-in-your-house-st.-valentines-day-massacre-1999",
+    "status": "checked",
+    "recordings": 12,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "03-wwf-wrestle-mania-xvi-2000",
+    "status": "checked",
+    "recordings": 12,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "06-wwf-king-of-the-ring-2001",
+    "status": "checked",
+    "recordings": 12,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "03-wwf-wrestlemania-x-8-2002",
+    "status": "checked",
+    "recordings": 12,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "2002-12-15-noddegamr-a",
+    "status": "checked",
+    "recordings": 51,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-capital-carnage-uk-12-06-1998-sd",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwf-insurrextion-uk-2001-hd",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwe-rebellion-uk-2001-hd",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "insurrextion-uk-2002-hd",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "wwe-rebellion-uk-2002-hd",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "insurrextion-uk-2003-hd",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "YouTube recent uploads \u00b7 WWE recent full-show uploads",
+    "status": "checked recent uploads",
+    "new_recordings": 0,
+    "skipped": []
+  },
+  {
+    "company": "wwe",
+    "source": "YouTube recent uploads \u00b7 WWEVault recent full-show uploads",
+    "status": "checked recent uploads",
+    "new_recordings": 0,
+    "skipped": [
+      "FULL EVENT: Beast in the East | Lesnar comes to Japan; Owens vs. B\u00e1lor",
+      "FULL EVENT: WWE Money in the Bank 2014 | Two Ladder Matches; Usos vs. Wyatts and MORE!",
+      "FULL EVENT: WWE in Sun City, South Africa, Sept. 1996 | Hart vs. Austin and MORE!",
+      "FULL EVENT: Saturday Night\u2019s Main Event | Warrior vs. Rude; Rockers vs. Demolition and MORE!",
+      "FULL EVENT: Zbyszko vs. Wrestling II; Road Warriors, Iron Sheik and more at Atlanta\u2019s Omni",
+      "FULL EVENT: SummerSlam 2009 | Cena vs. Orton; Punk vs. Hardy, DX vs. Legacy and MORE!"
+    ]
+  },
+  {
+    "company": "ecw",
+    "source": "re-c-dub-1995-complete",
+    "status": "checked",
+    "recordings": 61,
+    "skipped": [
+      "1995/Super Cards/03 - ECW Extreme Warfare Volume One (1995).mp4",
+      "1995/Super Cards/04 - ECW Extreme Warfare Volume Two(1995).mp4",
+      "1995/Super Cards/07 - ECW Enter The Sandman (1995).mp4",
+      "1995/Super Cards/10 - ECW Heat Wave (1995).mp4"
+    ]
+  },
+  {
+    "company": "ecw",
+    "source": "re-c-dub-1996-complete",
+    "status": "checked",
+    "recordings": 65,
+    "skipped": [
+      "1996/Super Cards/12 - ECW vs. IWA vs. True FMW Total War (1996).mp4"
+    ]
+  },
+  {
+    "company": "ecw",
+    "source": "re-c-dub-1997-complete",
+    "status": "checked",
+    "recordings": 59,
+    "skipped": [
+      "1997/ECW Terry Funk Lifetime Achievment Banquet (1997).mp4"
+    ]
+  },
+  {
+    "company": "ecw",
+    "source": "re-c-dub-1998-complete",
+    "status": "checked",
+    "recordings": 55,
+    "skipped": []
+  },
+  {
+    "company": "ecw",
+    "source": "re-c-dub-1999-complete",
+    "status": "checked",
+    "recordings": 80,
+    "skipped": [
+      "1999/Shane Douglas Quits ECW (1999).mp4"
+    ]
+  },
+  {
+    "company": "ecw",
+    "source": "re-c-dub-2000-complete",
+    "status": "checked",
+    "recordings": 100,
+    "skipped": [
+      "2000/TNN/22 - June 2nd 2000 - Bonus.mp4",
+      "2000/TNN/24 - June 16th 2000 - Bonus.mp4"
+    ]
+  },
+  {
+    "company": "ecw",
+    "source": "re-c-dub-2001-complete",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "ecw",
+    "source": "re-c-dub-2005-complete",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "ecw",
+    "source": "YouTube recent uploads \u00b7 ECW recent full-show uploads",
+    "status": "checked recent uploads",
+    "new_recordings": 0,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "01-wcw-n-wo-souled-out-1999",
+    "status": "checked",
+    "recordings": 11,
+    "skipped": [
+      "04 wCw Spring Stampede 1999.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "01.03.01_202301",
+    "status": "checked",
+    "recordings": 12,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "03-w-cw-greed-2001",
+    "status": "checked",
+    "recordings": 3,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "06-wcw-n-wo-the-great-american-bash-1998",
+    "status": "checked",
+    "recordings": 11,
+    "skipped": [
+      "09 WCW nWo Fall Brawl 1998.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "06-wcw-the-great-american-bash-1997",
+    "status": "checked",
+    "recordings": 11,
+    "skipped": [
+      "09 WCW Fall Brawl 1997.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "11-w-cw-mayhem-2000",
+    "status": "checked",
+    "recordings": 11,
+    "skipped": [
+      "02 wCw SuperBrawl 2000.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "1997-09-01",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "1998-01-08",
+    "status": "checked",
+    "recordings": 44,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "1998-09-14",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "1999-01-07",
+    "status": "checked",
+    "recordings": 42,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "1999-09-27",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "2000-02-14",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "2000.11.15",
+    "status": "checked",
+    "recordings": 51,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "2001-01-23_202404",
+    "status": "checked",
+    "recordings": 13,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "Jan-01-2001-Mar-26-2001",
+    "status": "checked",
+    "recordings": 15,
+    "skipped": [
+      "01 03 2001 T.mp4",
+      "01 10 2001 T.mp4",
+      "01 17 2001 T.mp4",
+      "01 24 2001 T.mp4",
+      "01 31 2001 T.mp4",
+      "02 07 2001 T.mp4",
+      "02 14 2001 T.mp4",
+      "02 21 2001 T.mp4",
+      "02 28 2001 T.mp4",
+      "03 07 2001 T.mp4",
+      "03 14 2001 T.mp4",
+      "03 21 2001 T.mp4",
+      "03 26 2001 N Last.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "Jan-16-2000-Dec-17-2000",
+    "status": "checked",
+    "recordings": 13,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "Jan-17-1999-Dec-19-1999",
+    "status": "checked",
+    "recordings": 12,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "Jan-5-1998-Dec-28-1998-2",
+    "status": "checked",
+    "recordings": 12,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "ORTIN-1997",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "ORTIN-1998",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "ORTIN-1999",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "ORTIN-2000",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "ORTIN-2001",
+    "status": "checked",
+    "recordings": 13,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "REDNUHT-1998",
+    "status": "checked",
+    "recordings": 44,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "REDNUHT-1999",
+    "status": "checked",
+    "recordings": 49,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "WCW-Millennium-Final",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "apr.-06-1997",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "apr.-11-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "apr.-16-2000",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "apr.-19-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "apr.-2000",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "aug--2000",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "aug.-08-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "aug.-09-1997",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "aug.-13-2000",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "aug.-14-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "aug.-2000",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec--2000",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-17-2000",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-19-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-1997",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-2000",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-27-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-28-1997",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb--2001",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-18-2001",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-20-2000",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-2000",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-2001",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-21-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-22-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-23-1997",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jan--2001",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jan-06-1997-dec-29-1997",
+    "status": "checked",
+    "recordings": 6,
+    "skipped": [
+      "01 04 1997 SN.avi",
+      "01 06 1997 N.mp4",
+      "01 11 1997 SN.avi",
+      "01 13 1997 N.mp4",
+      "01 18 1997 SN.avi",
+      "01 20 1997 N.mp4",
+      "01 21 1997 COTC34.mp4",
+      "01 25 1997 SN.avi",
+      "01 27 1997 N.mp4",
+      "02 01 1997 SN.avi",
+      "02 03 1997 N.mp4",
+      "02 08 1997 SN.avi",
+      "02 10 1997 N.mp4",
+      "02 15 1997 SN.avi",
+      "02 17 1997 N.mp4",
+      "02 22 1997 SN.avi",
+      "02 24 1997 N.mp4",
+      "03 01 1997 SN.avi",
+      "03 03 1997 N.mp4",
+      "03 08 1997 SN.avi",
+      "03 10 1997 N.mp4",
+      "03 15 1997 SN.avi",
+      "03 16 1997 UC.mp4",
+      "03 17 1997 N.mp4",
+      "03 22 1997 SN.avi",
+      "03 24 1997 N.mp4",
+      "03 29 1997 SN.avi",
+      "03 31 1997 N.mp4",
+      "04 05 1997 SN.avi",
+      "04 06 1997 SST.mp4",
+      "04 07 1997 N.mp4",
+      "04 12 1997 SN.avi",
+      "04 14 1997 N.mp4",
+      "04 19 1997 SN.avi",
+      "04 21 1997 N.mp4",
+      "04 26 1997 SN.avi",
+      "04 28 1997 N.mp4",
+      "05 05 1997 N.mp4",
+      "05 10 1997 SN.avi",
+      "05 12 1997 N.mp4",
+      "05 17 1997 SN.avi",
+      "05 18 1997 SL.mp4",
+      "05 19 1997 N.mp4",
+      "05 24 1997 SN.avi",
+      "05 26 1997 N.mp4",
+      "05 31 1997 SN.avi",
+      "06 02 1997 N.mp4",
+      "06 07 1997 SN.avi",
+      "06 09 1997 N.mp4",
+      "06 14 1997 SN.avi",
+      "06 15 1997 GAB.mp4",
+      "06 16 1997 N.mp4",
+      "06 21 1997 SN.avi",
+      "06 23 1997 N.mp4",
+      "06 28 1997 SN.avi",
+      "06 30 1997 N.mp4",
+      "07 05 1997 SN.avi",
+      "07 07 1997 N.mp4",
+      "07 12 1997 SN.avi",
+      "07 13 1997 BATB.mp4",
+      "07 14 1997 N.mp4",
+      "07 19 1997 SN.avi",
+      "07 22 1997 N.mp4",
+      "07 26 1997 SN.avi",
+      "07 28 1997 N.mp4",
+      "08 02 1997 SN.avi",
+      "08 04 1997 N.mp4",
+      "08 09 1997 RW.mp4",
+      "08 09 1997 SN.avi",
+      "08 11 1997 N.mp4",
+      "08 16 1997 SN.avi",
+      "08 18 1997 N.mp4",
+      "08 21 1997 COTC35.mp4",
+      "08 23 1997 SN.avi",
+      "08 25 1997 N.mp4",
+      "08 30 1997 SN.avi",
+      "09 01 1997 N.mp4",
+      "09 06 1997 SN.avi",
+      "09 08 1997 N.mp4",
+      "09 13 1997 SN.avi",
+      "09 15 1997 N.mp4",
+      "09 20 1997 SN.avi",
+      "09 22 1997 N.mp4",
+      "09 27 1997 SN.avi",
+      "09 29 1997 N.mp4",
+      "10 04 1997 SN.avi",
+      "10 06 1997 N.mp4",
+      "10 11 1997 SN.avi",
+      "10 13 1997 N.mp4",
+      "10 18 1997 SN.avi",
+      "10 20 1997 N.mp4",
+      "10 25 1997 SN.avi",
+      "10 27 1997 N.mp4",
+      "11 01 1997 SN.avi",
+      "11 03 1997 N.mp4",
+      "11 08 1997 SN.avi",
+      "11 10 1997 N.mp4",
+      "11 15 1997 SN.avi",
+      "11 17 1997 N.mp4",
+      "11 22 1997 SN.avi",
+      "11 24 1997 N.mp4",
+      "11 29 1997 SN.avi",
+      "12 01 1997 N.mp4",
+      "12 06 1997 SN.avi",
+      "12 08 1997 N.mp4",
+      "12 13 1997 SN.avi",
+      "12 15 1997 N.mp4",
+      "12 20 1997 SN.avi",
+      "12 22 1997 N.mp4",
+      "12 27 1997 SN.avi",
+      "12 29 1997 N.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "jan-3-2000-dec-27-2000",
+    "status": "checked",
+    "recordings": 42,
+    "skipped": [
+      "01 03 2000 N.mp4",
+      "01 06 2000 T.mp4",
+      "01 10 2000 N.mp4",
+      "01 12 2000 T.mp4",
+      "01 19 2000 T.mp4",
+      "01 26 2000 T.mp4",
+      "01 31 2000 N.mp4",
+      "02 02 2000 T.mp4",
+      "02 07 2000 N.mp4",
+      "02 09 2000 T.mp4",
+      "02 14 2000 N.mp4",
+      "02 16 2000 T.mp4",
+      "02 21 2000 N.mp4",
+      "02 23 2000 T.mp4",
+      "03 01 2000 T.mp4",
+      "03 06 2000 N.mp4",
+      "03 08 2000 T.mp4",
+      "03 15 2000 T.mp4",
+      "03 22 2000 T.mp4",
+      "03 27 2000 N.mp4",
+      "03 29 2000 T.mp4",
+      "04 03 2000 N.mp4",
+      "04 05 2000 T.mp4",
+      "04 12 2000 T.mp4",
+      "04 26 2000 T.mp4",
+      "05 03 2000 T.mp4",
+      "05 10 2000 T.mp4",
+      "05 17 2000 T.mp4",
+      "05 24 2000 T.mp4",
+      "05 31 2000 T.mp4",
+      "06 07 2000 T.mp4",
+      "06 14 2000 T.mp4",
+      "06 19 2000 N.mp4",
+      "06 21 2000 T.mp4",
+      "06 28 2000 T.mp4",
+      "07 05 2000 T.mp4",
+      "07 12 2000 T.mp4",
+      "07 19 2000 T.mp4",
+      "07 26 2000 T.mp4",
+      "08 02 2000 T.mp4",
+      "08 09 2000 T.mp4",
+      "08 16 2000 T.mp4",
+      "08 22 2000 T.mp4",
+      "08 30 2000 T.mp4",
+      "09 06 2000 T.mp4",
+      "09 13 2000 T.mp4",
+      "09 20 2000 T.mp4",
+      "09 27 2000 T.mp4",
+      "10 04 2000 T.mp4",
+      "10 11 2000 T.mp4",
+      "10 18 2000 T.mp4",
+      "10 25 2000 T.mp4",
+      "11 01 2000 T.mp4",
+      "11 08 2000 T.mp4",
+      "11 15 2000 T.mp4",
+      "11 22 2000 T.mp4",
+      "11 29 2000 T.mp4",
+      "12 06 2000 T.mp4",
+      "12 13 2000 T.mp4",
+      "12 20 2000 T.mp4",
+      "12 27 2000 T.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "jan.-14-2001",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jan.-16-2000",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jan.-17-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jan.-1997",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jan.-1998",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jan.-2000",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jan.-2001",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jan.-24-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jan.-25-1997",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul-2000",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul.-09-2000",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul.-11-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul.-12-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul.-13-1997",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul.-2000",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jun.-11-2000",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jun.-13-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jun.-14-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jun.-15-1997",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jun.-1997",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jun.-2000",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "mar-2001",
+    "status": "checked",
+    "recordings": 3,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "mar.-14-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "mar.-15-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "mar.-16-1997",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "mar.-18-2001",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "mar.-19-2000",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "mar.-1997",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "mar.-2000",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "mar.-2001",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "may-07-2000",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "may-09-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "may-17-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "may-18-1997",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "may.-2000",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nov--2000",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nov.-2000",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nov.-21-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nov.-22-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nov.-23-1997",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nov.-26-2000",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "oct--2000",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "oct.-2000",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "oct.-24-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "oct.-25-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "oct.-26-1997",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "oct.-29-2000",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "sep--2000",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "sep.-12-1999",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "sep.-13-1998",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "sep.-14-1997",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "sep.-17-2000",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "sep.-2000",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-1997-reupload-wwearchives",
+    "status": "checked",
+    "recordings": 62,
+    "skipped": [
+      "004. Clash of the Champions_S01E34_Clash of the Champions 34.mkv",
+      "010. SuperBrawl_S07E01_SUPERBRAWL 7.mkv",
+      "043. Clash of the Champions_S01E35_Clash of the Champions 35.mkv",
+      "047. WCW Fall Brawl_S05E05_WCW Fall Brawl 1997.mkv"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-payperview-preshows",
+    "status": "checked",
+    "recordings": 9,
+    "skipped": [
+      "WCW Souled Out 2000 Countdown Show.mp4",
+      "nWo Souled Out 1997 Countdown Show.mp4",
+      "02 12 1995 Main Event (SUPERBRAWL).mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-worldwide-complete_202406",
+    "status": "checked",
+    "recordings": 47,
+    "skipped": [
+      "WCW Worldwide - April 1997.mp4",
+      "WCW Worldwide - August 1997.mp4",
+      "WCW Worldwide - December 1997.mp4",
+      "WCW Worldwide - February 1997.mp4",
+      "WCW Worldwide - January 1997.mp4",
+      "WCW Worldwide - July 1997.mp4",
+      "WCW Worldwide - June 1997.mp4",
+      "WCW Worldwide - March 1997.mp4",
+      "WCW Worldwide - May 1997.mp4",
+      "WCW Worldwide - November 1997.mp4",
+      "WCW Worldwide - September 1997.mp4",
+      "WCW.Worldwide.03.02.97.VHSRip.x264-o77XWT.mp4",
+      "WCW.Worldwide.08.17.97.VHSRip.x264-o77XWT.mp4",
+      "WCW.Worldwide.08.31.97.VHSRip.x264-o77XWT.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-pro.-wrestling.-complete_20240612",
+    "status": "checked",
+    "recordings": 10,
+    "skipped": [
+      "WCW.Pro.Wrestling.01.05.97.mp4",
+      "WCW.Pro.Wrestling.02.09.97.mp4",
+      "WCW.Pro.Wrestling.02.23.97.mp4",
+      "WCW.Pro.Wrestling.03.02.97(1).mp4",
+      "WCW.Pro.Wrestling.03.02.97.mp4",
+      "WCW.Pro.Wrestling.03.09.97.mp4",
+      "WCW.Pro.Wrestling.04.06.97.mp4",
+      "WCW.Pro.Wrestling.05.04.97.mp4",
+      "WCW.Pro.Wrestling.05.11.97.mp4",
+      "WCW.Pro.Wrestling.06.01.97.mp4",
+      "WCW.Pro.Wrestling.06.08.97.mp4",
+      "WCW.Pro.Wrestling.07.06.97.mp4",
+      "WCW.Pro.Wrestling.08.10.97.mp4",
+      "WCW.Pro.Wrestling.10.05.97.mp4",
+      "WCW.Pro.Wrestling.10.12.97.mp4",
+      "WCW.Pro.Wrestling.11.02.97.mp4",
+      "WCW.Pro.Wrestling.11.09.97.mp4",
+      "WCW.Pro.Wrestling.01.19.97.mp4",
+      "WCW.Pro.Wrestling.03.16.97.mp4",
+      "WCW.Pro.Wrestling.03.23.97.mp4",
+      "WCW.Pro.Wrestling.03.30.97.mp4",
+      "WCW.Pro.Wrestling.04.27.97.mp4",
+      "WCW.Pro.Wrestling.06.15.97.mp4",
+      "WCW.Pro.Wrestling.07.13.97.mp4",
+      "WCW.Pro.Wrestling.07.27.97.mp4",
+      "WCW.Pro.Wrestling.08.17.97.mp4",
+      "WCW.Pro.Wrestling.08.24.97.mp4",
+      "WCW.Pro.Wrestling.08.31.97.mp4",
+      "WCW.Pro.Wrestling.09.21.97.mp4",
+      "WCW.Pro.Wrestling.09.28.97.mp4",
+      "WCW.Pro.Wrestling.10.19.97.mp4",
+      "WCW.Pro.Wrestling.10.26.97.mp4",
+      "WCW.Pro.Wrestling.11.16.97.mp4",
+      "WCW.Pro.Wrestling.11.23.97.mp4",
+      "WCW.Pro.Wrestling.12.28.97.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-saturday.-night.-complete_20240612",
+    "status": "checked",
+    "recordings": 41,
+    "skipped": [
+      "WCW.Saturday.Night.01.11.97.avi",
+      "WCW.Saturday.Night.02.08.97.avi",
+      "WCW.Saturday.Night.08.02.97.avi",
+      "WCW.Saturday.Night.11.01.97.avi",
+      "WCW.Saturday.Night.04.05.97.mp4",
+      "WCW.Saturday.Night.04.26.97.mp4",
+      "WCW.Saturday.Night.05.10.97.mp4",
+      "WCW.Saturday.Night.05.31.97.mp4",
+      "WCW.Saturday.Night.06.21.97.mp4",
+      "WCW.Saturday.Night.09.20.97.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-saturday.-night.-complete_20240614",
+    "status": "checked",
+    "recordings": 42,
+    "skipped": [
+      "WCW.Saturday.Night.07.11.98.avi",
+      "WCW.Saturday.Night.09.05.98.avi",
+      "WCW.Saturday.Night.11.07.98.avi",
+      "WCW.Saturday.Night.04.11.98.mp4",
+      "WCW.Saturday.Night.05.23.98.mp4",
+      "WCW.Saturday.Night.06.13.98.mp4",
+      "WCW.Saturday.Night.06.20.98.mp4",
+      "WCW.Saturday.Night.06.27.98.mp4",
+      "WCW.Saturday.Night.07.04.98.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-saturday.-night.-incomplete_202406",
+    "status": "checked",
+    "recordings": 13,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-worldwide.-complete_202406",
+    "status": "checked",
+    "recordings": 36,
+    "skipped": [
+      "WCW.Worldwide.04.10.99.avi",
+      "WCW.Worldwide.05.01.99.avi",
+      "WCW.Worldwide.05.08.99.avi",
+      "WCW.Worldwide.06.05.99.avi",
+      "WCW.Worldwide.06.12.99.avi",
+      "WCW.Worldwide.07.03.99.avi",
+      "WCW.Worldwide.07.10.99.avi",
+      "WCW.Worldwide.08.07.99.avi",
+      "WCW.Worldwide.09.11.99.avi",
+      "WCW.Worldwide.10.02.99.avi",
+      "WCW.Worldwide.12.04.99.avi",
+      "WCW.Worldwide.02.20.99.mp4",
+      "WCW.Worldwide.04.03.99.mp4",
+      "WCW.Worldwide.07.31.99.mp4",
+      "WCW.Worldwide.10.16.99.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wrestling-bios-reliving-the-war-youtube-1Xf_9r8pquE",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "The Main Eventers get sent to WCW Thunder - Reliving The War - December 9th 1999 [1Xf_9r8pquE].mkv"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wrestling-bios-reliving-the-war-youtube-CU_ghTe_ygs",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "Reliving The War - The Final WCW Thunder - March 21st 2001 [CU_ghTe_ygs].mkv"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wrestling-bios-reliving-the-war-youtube-GXgI7yXZH-I",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "Reliving The War Episode 190.5 - WCW Thunder (July 1st 1999) [GXgI7yXZH-I].mkv"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wrestling-bios-reliving-the-war-youtube-LE3ce79AbXk",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "Bret Hart RIPS Goldberg in Final WCW Appearance - Reliving The War Thunder - September 6th 2000 [LE3ce79AbXk].mkv"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wrestling-bios-reliving-the-war-youtube-MB5krxpFNfE",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "WCW SuperBrawl 2000 - The Reliving The War PPV [MB5krxpFNfE].mkv"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wrestling-bios-reliving-the-war-youtube-_b0LE90V-s4",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "Reliving The War - WCW Thunder - December 20th 2000 [_b0LE90V-s4].mkv"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wrestling-bios-reliving-the-war-youtube-dYfgIdrkZgQ",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "Reliving The War Episode 281 - The Final WCW Nitro - March 26th 2001 [dYfgIdrkZgQ].mkv"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wrestling-bios-reliving-the-war-youtube-uOYemNhgpyM",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "Reliving The War\uff1a (I am done with) WCW Thunder - January 3rd 2001 [uOYemNhgpyM].mkv"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wrestling-bios-reliving-the-war-youtube-wh-16Qvc6YQ",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "\uff02Reliving The War\uff02\uff1a Episode 185.5 - May 24th 1999 (WCW Nitro) [wh-16Qvc6YQ].mkv"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wrestling-bios-reliving-the-war-youtube-zMAe7J1tkmI",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "Reliving The War\uff1a WCW Thunder - December 6th 2000 [zMAe7J1tkmI].mkv"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "11-07-92.-wcw-worldwide-complete",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "01-04-92.World Wide Wrestling.avi",
+      "01-11-92.World Wide Wrestling.avi",
+      "01-18-92.World Wide Wrestling.avi",
+      "01-25-92.World Wide Wrestling.avi",
+      "02-01-92.World Wide Wrestling.avi",
+      "02-08-92.World Wide Wrestling.avi",
+      "02-15-92.World Wide Wrestling.avi",
+      "02-22-92.World Wide Wrestling.avi",
+      "02-29-92.World Wide Wrestling.avi",
+      "03-07-92.World Wide Wrestling.avi",
+      "03-14-92.World Wide Wrestling.avi",
+      "03-28-92.World Wide Wrestling.avi",
+      "04-04-92.World Wide Wrestling.avi",
+      "04-11-92.WCW Worldwide.avi",
+      "04-18-92.WCW Worldwide.avi",
+      "04-25-92.WCW Worldwide.avi",
+      "05-02-92.WCW Worldwide.avi",
+      "05-09-92.WCW Worldwide.avi",
+      "05-16-92.WCW Worldwide.avi",
+      "05-30-92.WCW Worldwide.avi",
+      "06-13-92.WCW Worldwide.avi",
+      "06-20-92.WCW Worldwide.avi",
+      "06-27-92.WCW Worldwide.avi",
+      "07-04-92.WCW Worldwide.avi",
+      "07-11-92.WCW Worldwide.avi",
+      "07-18-92.WCW Worldwide.avi",
+      "07-25-92.WCW Worldwide.avi",
+      "08-01-92.WCW Worldwide.avi",
+      "08-08-92.WCW Worldwide.avi",
+      "08-15-92.WCW Worldwide.avi",
+      "08-29-92.WCW Worldwide.avi",
+      "09-05-92.WCW Worldwide.avi",
+      "09-12-92.WCW Worldwide.avi",
+      "09-26-92.WCW Worldwide.avi",
+      "10-03-92.WCW Worldwide.avi",
+      "10-10-92.WCW Worldwide.avi",
+      "10-17-92.WCW Worldwide.avi",
+      "10-24-92.WCW Worldwide.avi",
+      "11-07-92.WCW Worldwide.avi",
+      "11-14-92.WCW Worldwide.avi",
+      "11-21-92.WCW Worldwide.avi",
+      "11-28-92.WCW Worldwide.avi",
+      "12-05-92.WCW Worldwide.avi",
+      "12-12-92.WCW Worldwide.avi",
+      "12-19-92.WCW Worldwide.avi",
+      "12-26-92.WCW Worldwide.avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "1984-vhs-wcw-pay-per-views",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "11.22 - Starrcade (The Million Dollar Challenge).avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "1985-vhs-wcw-pay-per-views",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "07.06 - The Great American Bash.avi",
+      "11.28 - Starrcade (The Gathering).avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "1987-vhs-wcw-pay-per-views",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "07.04 - The Great American Bash (WarGames - The Match Beyond).avi",
+      "11.26 - Starrcade (Chi-Town Heat).avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "1988-vhs-wcw-pay-per-views",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "03.27 - Clash of the Champions I.avi",
+      "06.08 - Clash of the Champions II (Miami Mayhem).avi",
+      "07.10 - The Great American Bash (The Price of Freedom).avi",
+      "09.07 - Clash of the Champions III (Fall Brawl).avi",
+      "12.07 - Clash of the Champions IV (Season's Beatings).avi",
+      "12.26 - Starrcade (True Gritt).avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "1989-vhs-wcw-pay-per-views",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "02.15 - Clash of the Champions V (St. Valentine's Day Massacre).avi",
+      "02.20 - Chi-Town Rumble.avi",
+      "04.02 - Clash of the Champions VI (Ragin' Cajun).avi",
+      "05.07 - WrestleWar (Music City Showdown).avi",
+      "06.14 - Clash of the Champions VII (Guts and Glory).avi",
+      "07.23 - The Great American Bash (Glory Days).avi",
+      "09.12 - Clash of the Champions VIII (Fall Brawl).avi",
+      "10.28 - Halloween Havoc (Settling the Score).avi",
+      "11.15 - Clash of the Champions IX (New York Knockout).avi",
+      "12.13 - Starrcade (Future Shock - Night of the Iron Men).avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "1990-vhs-wcw-pay-per-views",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "02.06 - Clash of the Champions X (Texas Shootout).avi",
+      "02.25 - WrestleWar (Wild Thing).avi",
+      "05.19 - Capital Combat (Return of RoboCop).avi",
+      "06.13 - Clash of the Champions XI (Coastal Crush).avi",
+      "07.07 - The Great American Bash (New Revolution).avi",
+      "09.05 - Clash of the Champions XII (Fall Brawl '90).avi",
+      "10.27 - Halloween Havoc (Terror Rules).avi",
+      "11.20 - Clash of the Champions XIII (Thanksgiving Thunder).avi",
+      "12.16 - Starrcade (Collision Course).avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "1991-vhs-wcw-pay-per-views",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "01.30 - Clash of the Champions XIV (Dixie Dynamite).avi",
+      "02.24 - WrestleWar (WarGames).avi",
+      "05.19 - SuperBrawl I.avi",
+      "06.14 - Clash of the Champions XV (Knocksville USA).avi",
+      "07.14 - The Great American Bash.avi",
+      "09.05 - Clash of the Champions XVI (Fall Brawl).avi",
+      "10.27 - Halloween Havoc (Chamber of Horrors).avi",
+      "11.19 - Clash of the Champions XVII.avi",
+      "12.29 - Starrcade (BattleBowl - The Lethal Lottery).avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "1992-vhs-wcw-pay-per-views",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "01.21 - Clash of the Champions XVIII.avi",
+      "02.29 - SuperBrawl II.avi",
+      "05.17 - WrestleWar (WarGames).avi",
+      "06.20 - Beach Blast.avi",
+      "06.22 - Clash of the Champions XIX.avi",
+      "07.12 - The Great American Bash.avi",
+      "09.02 - Clash of the Champions XX (20th Anniversary).avi",
+      "10.25 - Halloween Havoc (Spin the Wheel, Make the Deal).avi",
+      "11.18 - Clash of the Champions XXI.avi",
+      "12.28 - Starrcade (BattleBowl - The Lethal Lottery II).avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "1993-vhs-wcw-pay-per-views",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "01.13 - Clash of the Champions XXII.avi",
+      "02.21 - SuperBrawl III.avi",
+      "05.23 - Slamboree (A Legend's Reunion).avi",
+      "06.16 - Clash of the Champions XXIII.avi",
+      "07.18 - Beach Blast.avi",
+      "08.18 - Clash of the Champions XXIV.avi",
+      "09.19 - Fall Brawl (WarGames - One Will Rise, One Will Fall).avi",
+      "10.24 - Halloween Havoc (Spin the Wheel, Make the Deal).avi",
+      "11.19 - Clash of the Champions XXV.avi",
+      "11.20 - Battlebowl.avi",
+      "12.27 - Starrcade.avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "1994-vhs-wcw-pay-per-views",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "01.27 - Clash of the Champions XXVI.avi",
+      "02.20 - SuperBrawl IV.avi",
+      "04.17 - Spring Stampede.avi",
+      "05.22 - Slamboree (A Legend's Reunion).avi",
+      "06.23 - Clash of the Champions XXVII.avi",
+      "07.17 - Bash at the Beach.avi",
+      "08.28 - Clash of the Champions XXVIII.avi",
+      "09.18 - Fall Brawl (WarGames).avi",
+      "10.23 - Halloween Havoc (The Cage! Revenge!).avi",
+      "11.16 - Clash of the Champions XXIX.avi",
+      "12.27 - Starrcade (Triple Threat).avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "Dec-27-1994",
+    "status": "checked",
+    "recordings": 64,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "apr.-17-1994",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "apr.-1996",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "aug.-10-1996",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "aug.-1996",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-13-1989",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-16-1990",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-1995",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-1996",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-26-1988",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-27-1993",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-27-1994",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-27-1995",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-28-1992",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-29-1991",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "dec.-29-1996",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-11-1996",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-19-1995",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-1996",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-20-1989",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-20-1994",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-21-1993",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-24-1991",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-25-1990",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "feb.-29-1992",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jan-01-1996-dec-30-1996",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "01 01 1996 N.mp4",
+      "01 06 1996 SN.avi",
+      "01 08 1996 N.mp4",
+      "01 13 1996 SN.avi",
+      "01 15 1996 N.mp4",
+      "01 20 1996 SN.avi",
+      "01 22 1996 N.mp4",
+      "01 23 1996 COTC32.mp4",
+      "01 27 1996 SN.avi",
+      "01 29 1996 N.mp4",
+      "02 03 1996 SN.avi",
+      "02 05 1996 N.mp4",
+      "02 10 1996 SN.avi",
+      "02 11 1996 SB.mp4",
+      "02 12 1996 N.mp4",
+      "02 17 1996 SN.avi",
+      "02 19 1996 N.mp4",
+      "02 24 1996 SN.avi",
+      "02 26 1996 N.mp4",
+      "03 02 1996 SN.avi",
+      "03 09 1996 SN.avi",
+      "03 11 1996 N.mp4",
+      "03 16 1996 SN.avi",
+      "03 18 1996 N.mp4",
+      "03 23 1996 SN.avi",
+      "03 24 1996 UC.mp4",
+      "03 25 1996 N.mp4",
+      "03 30 1996 SN.avi",
+      "04 01 1996 N.mp4",
+      "04 06 1996 SN.avi",
+      "04 13 1996 SN.avi",
+      "04 15 1996 N.mp4",
+      "04 20 1996 SN.avi",
+      "04 22 1996 N.mp4",
+      "04 27 1996 SN.avi",
+      "04 29 1996 N.mp4",
+      "05 04 1996 SN.avi",
+      "05 06 1996 N.mp4",
+      "05 11 1996 SN.avi",
+      "05 13 1996 N.mp4",
+      "05 18 1996 SN.avi",
+      "05 19 1996 SL.mp4",
+      "05 20 1996 N.mp4",
+      "05 25 1996 SN.avi",
+      "05 27 1996 N.mp4",
+      "06 01 1996 SN.avi",
+      "06 03 1996 N.mp4",
+      "06 08 1996 SN.avi",
+      "06 10 1996 N.mp4",
+      "06 15 1996 SN.avi",
+      "06 16 1996 GAB.mp4",
+      "06 17 1996 N.mp4",
+      "06 22 1996 SN.avi",
+      "06 24 1996 N.mp4",
+      "06 29 1996 SN.avi",
+      "07 01 1996 N.mp4",
+      "07 06 1996 SN.avi",
+      "07 07 1996 BATB.mp4",
+      "07 08 1996 N.mp4",
+      "07 13 1996 SN.avi",
+      "07 15 1996 N.mp4",
+      "07 20 1996 SN.avi",
+      "07 22 1996 N.mp4",
+      "07 27 1996 SN.avi",
+      "07 29 1996 N.mp4",
+      "08 03 1996 SN.avi",
+      "08 05 1996 N.mp4",
+      "08 10 1996 HW.mp4",
+      "08 10 1996 SN.avi",
+      "08 12 1996 N.mp4",
+      "08 15 1996 COTC33.mp4",
+      "08 17 1996 SN.avi",
+      "08 19 1996 N.mp4",
+      "08 24 1996 SN.avi",
+      "08 26 1996 N.mp4",
+      "08 31 1996 SN.avi",
+      "09 02 1996 N.mp4",
+      "09 07 1996 SN.avi",
+      "09 09 1996 N.mp4",
+      "09 14 1996 SN.avi",
+      "09 15 1996 FB.mp4",
+      "09 16 1996 N.mp4",
+      "09 21 1996 SN.avi",
+      "09 23 1996 N.mp4",
+      "09 28 1996 SN.avi",
+      "09 30 1996 N.mp4",
+      "10 05 1996 SN.avi",
+      "10 07 1996 N.mp4",
+      "10 12 1996 SN.avi",
+      "10 14 1996 N.mp4",
+      "10 19 1996 SN.avi",
+      "10 21 1996 N.mp4",
+      "10 26 1996 SN.avi",
+      "10 27 1996 HH.mp4",
+      "10 28 1996 N.mp4",
+      "11 02 1996 SN.avi",
+      "11 04 1996 N.mp4",
+      "11 09 1996 SN.avi",
+      "11 11 1996 N.mp4",
+      "11 16 1996 SN.avi",
+      "11 18 1996 N.mp4",
+      "11 23 1996 SN.avi",
+      "11 24 1996 WW3.mp4",
+      "11 25 1996 N.mp4",
+      "11 30 1996 SN.avi",
+      "12 02 1996 N.mp4",
+      "12 07 1996 SN.avi",
+      "12 09 1996 N.mp4",
+      "12 14 1996 SN.avi",
+      "12 16 1996 N.mp4",
+      "12 21 1996 SN.avi",
+      "12 23 1996 N.mp4",
+      "12 28 1996 SN.avi",
+      "12 29 1996 SC.mp4",
+      "12 30 1996 N.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "jan.-1996",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jan.-24-1988",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul-07-1996",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul.-05-1986",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul.-06-1985",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul.-07-1990",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul.-16-1988",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul.-16-1995",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul.-17-1994",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul.-18-1993",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul.-1996",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jul.-26-1986",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jun.-16-1996",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jun.-18-1995",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "jun.-20-1992",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "main-event-93-complete",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "MAIN EVENT 1-10-93.avi",
+      "MAIN EVENT 1-17-93.avi",
+      "MAIN EVENT 1-3-93.avi",
+      "MAIN EVENT 10-10-93.avi",
+      "MAIN EVENT 10-17-93.avi",
+      "MAIN EVENT 10-24-93.avi",
+      "MAIN EVENT 10-3-93.avi",
+      "MAIN EVENT 10-31-93.avi",
+      "MAIN EVENT 11-14-93.avi",
+      "MAIN EVENT 11-21-93.avi",
+      "MAIN EVENT 11-28-93.avi",
+      "MAIN EVENT 11-7-93.avi",
+      "MAIN EVENT 12-12-93.avi",
+      "MAIN EVENT 12-26-93.avi",
+      "MAIN EVENT 2-14-93.avi",
+      "MAIN EVENT 2-21-93.avi",
+      "MAIN EVENT 2-28-93.avi",
+      "MAIN EVENT 2-7-93.avi",
+      "MAIN EVENT 3-14-93.avi",
+      "MAIN EVENT 3-21-93.avi",
+      "MAIN EVENT 3-28-93.avi",
+      "MAIN EVENT 3-7-93.avi",
+      "MAIN EVENT 4-11-93.avi",
+      "MAIN EVENT 4-25-93.avi",
+      "MAIN EVENT 4-3-93.avi",
+      "MAIN EVENT 5-16-93.avi",
+      "MAIN EVENT 5-2-93.avi",
+      "MAIN EVENT 5-23-93.avi",
+      "MAIN EVENT 6-13-93.avi",
+      "MAIN EVENT 6-20-93.avi",
+      "MAIN EVENT 6-27-93.avi",
+      "MAIN EVENT 7-18-93.avi",
+      "MAIN EVENT 7-25-93.avi",
+      "MAIN EVENT 7-4-93.avi",
+      "MAIN EVENT 8-1-93.avi",
+      "MAIN EVENT 8-15-93.avi",
+      "MAIN EVENT 8-22-93.avi",
+      "MAIN EVENT 8-29-93.avi",
+      "MAIN EVENT 8-8-93.avi",
+      "MAIN EVENT 9-19-93.avi",
+      "MAIN EVENT 9-26-93.avi",
+      "MAIN EVENT 9-5-93.avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "main-event-complete",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "main event 1-12-92.avi",
+      "main event 1-19-92.avi",
+      "main event 1-26-92.avi",
+      "main event 1-5-92.avi",
+      "main event 10-11-92.avi",
+      "main event 10-18-92.avi",
+      "main event 10-25-92.avi",
+      "main event 10-4-92.avi",
+      "main event 11-1-92.avi",
+      "main event 11-15-92.avi",
+      "main event 11-22-92.avi",
+      "main event 11-29-92.avi",
+      "main event 11-8-92.avi",
+      "main event 12-12-92.avi",
+      "main event 12-20-92.avi",
+      "main event 12-27-92.avi",
+      "main event 12-6-92.avi",
+      "main event 2-16-92.avi",
+      "main event 2-2-92.avi",
+      "main event 2-23-92.avi",
+      "main event 2-9-92.avi",
+      "main event 3-1-92.avi",
+      "main event 3-15-92.avi",
+      "main event 3-22-92.avi",
+      "main event 3-29-92.avi",
+      "main event 3-8-92.avi",
+      "main event 4-12-92.avi",
+      "main event 4-19-92.avi",
+      "main event 4-26-92.avi",
+      "main event 4-5-92.avi",
+      "main event 5-10-92.avi",
+      "main event 5-17-92.avi",
+      "main event 5-24-92.avi",
+      "main event 5-3-92.avi",
+      "main event 5-31-92.avi",
+      "main event 6-14-92.avi",
+      "main event 6-21-92.avi",
+      "main event 6-28-92.avi",
+      "main event 7-12-92.avi",
+      "main event 7-19-92.avi",
+      "main event 7-26-92.avi",
+      "main event 7-5-92.avi",
+      "main event 8-16-92.avi",
+      "main event 8-2-92.avi",
+      "main event 8-23-92.avi",
+      "main event 8-30-92.avi",
+      "main event 8-9-92.avi",
+      "main event 9-13-92.avi",
+      "main event 9-20-92.avi",
+      "main event 9-6-92.avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "mar.-19-1995",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "mar.-1996",
+    "status": "checked",
+    "recordings": 3,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "mar.-24-1996",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "may-17-1992",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "may-19-1990",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "may-19-1991",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "may-19-1996",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "may-1996",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "may-21-1995",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "may-22-1994",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "may-23-1993",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nov.-1995",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nov.-1996",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nov.-20-1993",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nov.-24-1983",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nov.-24-1996",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nov.-26-1987",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nov.-26-1995",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nov.-27-1986",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nwa-clash-of-the-champions-9-new-york-knock-out-15-11-1989",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nwa-crockett-cup-1986-19-04-1986",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "NWA Crockett Cup 1986 19-04-1986.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "nwa-wcw-power-hour-complete",
+    "status": "checked",
+    "recordings": 42,
+    "skipped": [
+      "NWA.Power.Hour.1990-07-22.mp4",
+      "NWA.Power.Hour.1990-09-21.mp4",
+      "NWA.Power.Hour.1990-09-28.mp4",
+      "NWA.Power.Hour.1990-10-05.mp4",
+      "NWA.Power.Hour.1990-11-24.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "nwa-wcwnjpw-wrestling-collision-in-korea-42895",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "nwa.-wcw-.worldwide_complete",
+    "status": "checked",
+    "recordings": 28,
+    "skipped": [
+      "1990.08.04.NWA.Worldwide_INC.mp4",
+      "1990.07.28.NWA.Worldwide(1).mp4",
+      "1990.07.28.NWA.Worldwide(2).mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "oct.-1995",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "oct.-1996",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "oct.-23-1994",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "oct.-24-1993",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "oct.-25-1992",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "oct.-27-1991",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "oct.-27-1996",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "oct.-28-1989",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "oct.-29-1995",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "prime-95-complete",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": [
+      "02-06-95-Prime.avi",
+      "02-13-95-Prime.avi",
+      "02-20-95-Prime.avi",
+      "02-27-95-Prime.avi",
+      "03-06-95-Prime.avi",
+      "03-13-95-Prime.avi",
+      "03-20-95-Prime.avi",
+      "04-03-95-Prime.avi",
+      "04-10-95-Prime.avi",
+      "04-17-95-Prime.avi",
+      "04-24-95-Prime.avi",
+      "05-01-95-Prime.avi",
+      "05-08-95-Prime.avi",
+      "05-15-95-Prime.avi",
+      "05-22-95-Prime.avi",
+      "05-29-95-Prime.avi",
+      "06-05-95-Prime.avi",
+      "06-12-95-Prime.avi",
+      "06-19-95-Prime.avi",
+      "06-26-95-Prime.avi",
+      "07-03-95-Prime.avi",
+      "07-10-95-Prime.avi",
+      "07-24-95-Prime.avi",
+      "07-31-95-Prime.avi",
+      "08-07-95-Prime.avi",
+      "08-14-95-Prime.avi",
+      "08-21-95-Prime.avi",
+      "08-28-95-Prime.avi",
+      "09-11-95-Prime.avi",
+      "09-18-95-Prime.avi",
+      "09-25-95-Prime.avi",
+      "10-09-95-Prime.avi",
+      "10-23-95-Prime.avi",
+      "10-30-95-Prime.avi",
+      "11-06-95-Prime.avi",
+      "11-13-95-Prime.avi",
+      "11-20-95-Prime.avi",
+      "12-04-95-Prime.mp4",
+      "12-11-95-Prime.avi",
+      "12-18-95-Prime.avi",
+      "12-25-95-Prime.avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "sep.-15-1996",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "sep.-17-1995",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "sep.-18-1994",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "sep.-1995",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "sep.-1996",
+    "status": "checked",
+    "recordings": 5,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-all-nighter-94",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "WCWAllNighter94.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-all-nighter-95",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "WCWAllNighter95.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-njpw-collision-in-korea-complete-edition",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-njpw-starrcade-1991-in-tokyo-dome-21-03-1991",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-powerhour-complete",
+    "status": "checked",
+    "recordings": 11,
+    "skipped": [
+      "10-16-005.mp4",
+      "10-30-004.mp4",
+      "10-7-93.avi",
+      "11-06-026.mp4",
+      "11-13-025.mp4",
+      "11-20-027.mp4",
+      "11-27-028.mp4",
+      "12-04-012.mp4",
+      "12-11-013.mp4",
+      "12-18-021.mp4",
+      "12-25-002.mp4",
+      "17-7-93.avi",
+      "24-7-31.avi",
+      "3-7-93.avi",
+      "31-7-93.avi",
+      "WCW Power Hour 6-12-93.avi",
+      "WCW Power Hour 6-19-93.avi",
+      "WCW Power Hour 6-5-93.avi",
+      "WCW Power Hour 9-11-94.avi",
+      "WCW Power Hour 9-18-94.avi",
+      "WCW Power Hour 9-25-93.avi",
+      "WCW Power Hour 9-4-93.avi",
+      "power hour 1-5-93.avi",
+      "power hour 10-4-93.avi",
+      "power hour 13-2-93.avi",
+      "power hour 13-3-93.avi",
+      "power hour 15-5-93.avi",
+      "power hour 17-4-93.avi",
+      "power hour 20-2-93.avi",
+      "power hour 20-3-93.avi",
+      "power hour 22-5-93.avi",
+      "power hour 24-4-93.avi",
+      "power hour 27-2-93.avi",
+      "power hour 27-3-93.avi",
+      "power hour 29-5-93.avi",
+      "power hour 3-4-93.avi",
+      "power hour 6-2-93.avi",
+      "power hour 6-3-93.avi",
+      "power hour 8-5-93.avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-powerhour-incomplete",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "01-01-94.avi",
+      "01-08-94.avi",
+      "01-15-94.avi",
+      "01-22-94.avi",
+      "01-29-94.avi",
+      "02-05-94.avi",
+      "02-12-94.avi",
+      "02-19-94.avi",
+      "02-26-94.avi",
+      "03-05-94.avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-pro-10-20-90_202404",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "WCW PRO  10-6-90.avi",
+      "WCW PRO 10-13-90.avi",
+      "WCW PRO 10-20-90.avi",
+      "WCW PRO 10-27-90.avi",
+      "WCW PRO 11-10-90.avi",
+      "WCW PRO 11-17-90.avi",
+      "WCW PRO 11-24-90.avi",
+      "WCW PRO 11-3-90.avi",
+      "WCW PRO 12-1-90.avi",
+      "WCW PRO 12-15-90.avi",
+      "WCW PRO 12-22-90.avi",
+      "WCW PRO 12-29-90.avi",
+      "WCW PRO 12-8-90.avi",
+      "WCW PRO 3-31-90.avi",
+      "WCW PRO 4-14-90.avi",
+      "WCW PRO 4-21-90.avi",
+      "WCW PRO 4-28-90.avi",
+      "WCW PRO 4-7-90.avi",
+      "WCW PRO 5-12-90.avi",
+      "WCW PRO 5-19-90.avi",
+      "WCW PRO 5-26-90.avi",
+      "WCW PRO 5-5-90.avi",
+      "WCW PRO 6-16-90.avi",
+      "WCW PRO 6-2-90.avi",
+      "WCW PRO 6-30-90.avi",
+      "WCW PRO 6-9-90.avi",
+      "WCW PRO 7-14-90.avi",
+      "WCW PRO 7-21-90.avi",
+      "WCW PRO 7-28-90.avi",
+      "WCW PRO 7-7-90.avi",
+      "WCW PRO 8-4-90.avi",
+      "WCW PRO 9-1-90.avi",
+      "WCW PRO 9-15-90.avi",
+      "WCW PRO 9-22-90.avi",
+      "WCW PRO 9-29-90.avi",
+      "WCW PRO 9-8-90.avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-pro-95-complete",
+    "status": "checked",
+    "recordings": 4,
+    "skipped": [
+      "01-07-95.avi",
+      "01-14-95.avi",
+      "01-21-95.avi",
+      "01-28-95.avi",
+      "02-04-95.avi",
+      "02-18-95.avi",
+      "02-25-95.avi",
+      "03-04-95.avi",
+      "03-11-95.avi",
+      "03-18-95.avi",
+      "03-25-95.avi",
+      "04-01-95.avi",
+      "04-08-95.avi",
+      "04-15-95.avi",
+      "04-22-95.avi",
+      "04-29-95.avi",
+      "05-06-95.avi",
+      "05-20-95.avi",
+      "05-27-95.avi",
+      "06-03-95.avi",
+      "06-10-95.avi",
+      "06-17-95.avi",
+      "06-24-95.avi",
+      "07-01-95.avi",
+      "07-08-95.avi",
+      "07-15-95.avi",
+      "07-22-95.avi",
+      "07-29-95.avi",
+      "08-05-95.avi",
+      "08-12-95.avi",
+      "08-19-95.avi",
+      "08-26-95.avi",
+      "09-02-95.avi",
+      "09-09-95.avi",
+      "09-16-95.avi",
+      "09-23-95.avi",
+      "09-30-95.avi",
+      "10-07-95.avi",
+      "10-14-95.avi",
+      "10-21-95.avi",
+      "10-28-95.avi",
+      "11-04-95.avi",
+      "11-11-95.avi",
+      "11-18-95.avi",
+      "11-25-95.avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-worldwide-1993-complete",
+    "status": "checked",
+    "recordings": 50,
+    "skipped": [
+      "WCW Worldwide 1993-03-13.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-worldwide-94-complete",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "01-01-94.avi",
+      "01-08-94.avi",
+      "01-15-94.avi",
+      "01-22-94.avi",
+      "01-29-94.avi",
+      "02-05-94.avi",
+      "02-12-94.avi",
+      "02-19-94.avi",
+      "02-26-94.avi",
+      "03-05-94.avi",
+      "03-12-94.avi",
+      "03-19-94.avi",
+      "03-26-94.avi",
+      "04-02-94.avi",
+      "04-09-94.avi",
+      "04-16-94.avi",
+      "04-23-94.avi",
+      "04-30-94.avi",
+      "05-07-94.avi",
+      "05-14-94.avi",
+      "05-21-94.avi",
+      "05-28-94.avi",
+      "06-04-94.avi",
+      "06-11-94.avi",
+      "06-18-94.avi",
+      "06-25-94.avi",
+      "07-16-94.avi",
+      "07-23-94.avi",
+      "07-30-94.avi",
+      "08-06-94.avi",
+      "08-13-94.avi",
+      "08-20-94.avi",
+      "08-27-94.avi",
+      "09-03-94.avi",
+      "09-10-94.avi",
+      "09-17-94.avi",
+      "09-24-94.avi",
+      "10-01-94.avi",
+      "10-08-94.avi",
+      "10-15-94.avi",
+      "10-22-94.avi",
+      "10-29-94.avi",
+      "11-05-94.avi",
+      "11-12-94.avi",
+      "11-19-94.avi",
+      "11-26-94.avi",
+      "12-03-94.avi",
+      "12-10-94.avi",
+      "12-17-94.avi",
+      "12-24-94.avi",
+      "12-31-94.avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-worldwide-95-incomplete",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "01-01-95.avi",
+      "01-08-95.avi",
+      "01-15-95.avi",
+      "01-22-95.avi",
+      "01-29-95.avi",
+      "04-02-95.avi",
+      "04-09-95.avi",
+      "04-16-95.avi",
+      "04-23-95.avi",
+      "04-30-95.avi",
+      "09-03-95.avi",
+      "09-10-95.avi",
+      "09-17-95.avi",
+      "09-24-95.avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw-x-njpw-collision-in-korea-2",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-1988.06.-clash-of-the-champions-03-restored-2021-ch",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "WCW.1988.06.Clash-of-the-Champions-03 restored-2021-ch.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-main.-event.-complete",
+    "status": "checked",
+    "recordings": 40,
+    "skipped": [
+      "NWA.Main.Event.1990-01-14.mp4",
+      "NWA.Main.Event.1990-02-11.mp4",
+      "NWA.Main.Event.1990-02-25.mp4",
+      "NWA.Main.Event.1990-03-11.mp4",
+      "NWA.Main.Event.1990-03-18.mp4",
+      "NWA.Main.Event.1990-06-24.mp4",
+      "NWA.Main.Event.1990-07-01.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-me.-complete",
+    "status": "checked",
+    "recordings": 34,
+    "skipped": [
+      "WCW.ME.1991.03.03.mp4",
+      "WCW.ME.1991.03.17.mp4",
+      "WCW.ME.1991.04.21.mp4",
+      "WCW.ME.1991.05.05.mp4",
+      "WCW.ME.1991.08.25.mp4",
+      "WCW.ME.1991.09.01.mp4",
+      "WCW.ME.1991.10.06.mp4",
+      "WCW.ME.1991.10.20.mp4",
+      "WCW.ME.1991.10.27.mp4",
+      "WCW.ME.1991.11.03.mp4",
+      "WCW.ME.1991.11.17.mp4",
+      "WCW.ME.1991.12.08.mp4",
+      "WCW.ME.1991.12.15.mp4",
+      "WCW.ME.1991.12.22.mp4",
+      "WCW.ME.1991.12.29.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-power.-hour-complete",
+    "status": "checked",
+    "recordings": 39,
+    "skipped": [
+      "1992.08.22.WCW.Power.Hour_INC.mp4",
+      "1992.09.05.WCW.Power.Hour_INC.mp4",
+      "1992.09.19.WCW.Power.Hour_INC.mp4",
+      "1992.10.03.WCW.Power.Hour_INC.mp4",
+      "1992.10.17.WCW.Power.Hour_INC.mp4",
+      "1992.11.28.WCW.Power.Hour_INC.mp4",
+      "1992.12.12.WCW.Power.Hour_INC.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-power.-hour.-complete",
+    "status": "checked",
+    "recordings": 49,
+    "skipped": [
+      "WCW.Power.Hour.1991.08.10.VHSRip.x264-RR.mp4",
+      "WCW.Power.Hour.1991.08.31.VHSRip.x264-RR.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-pro.-1991.complete",
+    "status": "checked",
+    "recordings": 51,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-pro.-wrestling.-complete",
+    "status": "checked",
+    "recordings": 34,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-pro.-wrestling.-complete_202406",
+    "status": "checked",
+    "recordings": 33,
+    "skipped": [
+      "WCW.Pro.Wrestling.09.01.96.mp4",
+      "WCW.Pro.Wrestling.11.10.96.mp4",
+      "WCW.Pro.Wrestling.06.22.96.mp4",
+      "WCW.Pro.Wrestling.08.25.96.mp4",
+      "WCW.Pro.Wrestling.09.08.96.mp4",
+      "WCW.Pro.Wrestling.09.15.96.mp4",
+      "WCW.Pro.Wrestling.09.22.96.mp4",
+      "WCW.Pro.Wrestling.09.29.96.mp4",
+      "WCW.Pro.Wrestling.10.05.96.mp4",
+      "WCW.Pro.Wrestling.10.12.96.mp4",
+      "WCW.Pro.Wrestling.10.19.96.mp4",
+      "WCW.Pro.Wrestling.10.27.96.mp4",
+      "WCW.Pro.Wrestling.11.03.96.mp4",
+      "WCW.Pro.Wrestling.11.17.96.mp4",
+      "WCW.Pro.Wrestling.11.24.96.mp4",
+      "WCW.Pro.Wrestling.12.01.96.mp4",
+      "WCW.Pro.Wrestling.12.08.96.mp4",
+      "WCW.Pro.Wrestling.12.29.96.mp4"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-saturday.-night.-1991.complete",
+    "status": "checked",
+    "recordings": 50,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-saturday.-night.-incomplete",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "WCW.Saturday.Night.06.12.93.XviD.avi",
+      "WCW.Saturday.Night.06.19.93.XviD.avi",
+      "WCW.Saturday.Night.06.26.93.XviD.avi",
+      "WCW.Saturday.Night.07.03.93.XviD.avi",
+      "WCW.Saturday.Night.07.10.93.XviD.avi",
+      "WCW.Saturday.Night.07.17.93.XviD.avi",
+      "WCW.Saturday.Night.09.04.93.XviD.avi",
+      "WCW.Saturday.Night.09.11.93.XviD.avi",
+      "WCW.Saturday.Night.11.06.93.XviD.avi",
+      "WCW.Saturday.Night.11.27.93.XviD.avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-world.-championship.-wrestling.-complete",
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "WCW.World.Championship.Wrestling.01.06.90.avi",
+      "WCW.World.Championship.Wrestling.01.13.90.avi",
+      "WCW.World.Championship.Wrestling.01.20.90.avi",
+      "WCW.World.Championship.Wrestling.01.27.90.avi",
+      "WCW.World.Championship.Wrestling.02.03.90.avi",
+      "WCW.World.Championship.Wrestling.02.10.90.avi",
+      "WCW.World.Championship.Wrestling.02.17.90.avi",
+      "WCW.World.Championship.Wrestling.02.24.90.VHSRip.XviD.avi",
+      "WCW.World.Championship.Wrestling.03.03.90.avi",
+      "WCW.World.Championship.Wrestling.03.10.90.avi",
+      "WCW.World.Championship.Wrestling.03.17.90.avi",
+      "WCW.World.Championship.Wrestling.03.24.90.avi",
+      "WCW.World.Championship.Wrestling.03.31.90.avi",
+      "WCW.World.Championship.Wrestling.04.07.90.avi",
+      "WCW.World.Championship.Wrestling.04.14.90.avi",
+      "WCW.World.Championship.Wrestling.04.28.90.avi",
+      "WCW.World.Championship.Wrestling.05.05.90.avi",
+      "WCW.World.Championship.Wrestling.05.12.90.avi",
+      "WCW.World.Championship.Wrestling.05.19.90.avi",
+      "WCW.World.Championship.Wrestling.05.26.90.avi",
+      "WCW.World.Championship.Wrestling.06.02.90.avi",
+      "WCW.World.Championship.Wrestling.06.09.90.avi",
+      "WCW.World.Championship.Wrestling.06.16.90.VHSRip.XviD.avi",
+      "WCW.World.Championship.Wrestling.06.30.90.avi",
+      "WCW.World.Championship.Wrestling.07.07.90.avi",
+      "WCW.World.Championship.Wrestling.07.14.90.avi",
+      "WCW.World.Championship.Wrestling.07.21.90.avi",
+      "WCW.World.Championship.Wrestling.07.28.90.avi",
+      "WCW.World.Championship.Wrestling.08.04.90.avi",
+      "WCW.World.Championship.Wrestling.08.11.90.avi",
+      "WCW.World.Championship.Wrestling.08.18.90.avi",
+      "WCW.World.Championship.Wrestling.08.25.90.avi",
+      "WCW.World.Championship.Wrestling.09.01.90.avi",
+      "WCW.World.Championship.Wrestling.09.08.90.avi",
+      "WCW.World.Championship.Wrestling.09.15.90.avi",
+      "WCW.World.Championship.Wrestling.09.22.90.avi",
+      "WCW.World.Championship.Wrestling.09.29.90.VHSRip.XviD.avi",
+      "WCW.World.Championship.Wrestling.10.06.90.avi",
+      "WCW.World.Championship.Wrestling.10.13.90.avi",
+      "WCW.World.Championship.Wrestling.10.20.90.avi",
+      "WCW.World.Championship.Wrestling.10.27.90.avi",
+      "WCW.World.Championship.Wrestling.11.03.90.avi",
+      "WCW.World.Championship.Wrestling.11.10.90.avi",
+      "WCW.World.Championship.Wrestling.11.17.90.VHSRip.XviD.avi",
+      "WCW.World.Championship.Wrestling.11.24.90.VHSRip.XviD.avi",
+      "WCW.World.Championship.Wrestling.12.01.90.VHSRip.XviD.avi",
+      "WCW.World.Championship.Wrestling.12.08.90.VHSRip.XviD.avi",
+      "WCW.World.Championship.Wrestling.12.15.90.VHSRip.XviD.avi",
+      "WCW.World.Championship.Wrestling.12.22.90.VHSRip.XviD.avi",
+      "WCW.World.Championship.Wrestling.12.29.90.VHSRip.XviD.avi"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "wcw.-worldwide.-complete",
+    "status": "checked",
+    "recordings": 46,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "when-worlds-collide-1994-aaa-ppv-los-angeles-ca",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "world.-championship.-wrestling.-partial",
+    "status": "checked",
+    "recordings": 12,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "04-20-1985-nwa-worldwide-wrestling",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "wcw",
+    "source": "YouTube \u00b7 Clash of the Champions Full Events",
+    "status": "checked",
+    "new_recordings": 0,
+    "skipped": [
+      "FULL EVENT: Clash of the Champions 35 | Hall & Savage vs. DDP & Luger"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "YouTube \u00b7 WCW Full Pay-Per-View Events",
+    "status": "checked",
+    "new_recordings": 0,
+    "skipped": [
+      "FULL EVENT: WCW SuperBrawl II | Sting vs. Luger; Rude vs. Steamboat",
+      "FULL EVENT: Great American Bash 1988 Greensboro | Flair and Luger lead teams into WarGames",
+      "FULL EVENT: Great American Bash 1986 Greensboro | Flair vs. Dusty",
+      "FULL EVENT: Great American Bash 1986 Charlotte | Flair vs. Morton in a Steel Cage",
+      "FULL EVENT: Great American Bash 1985 | Rhodes vs. Blanchard; Flair vs. Koloff",
+      "FULL EVENT: WCW SuperBrawl VI | Hogan vs. Giant, Savage vs. Flair in Steel Cage Matches",
+      "FULL EVENT: WCW SuperBrawl V | Hulk Hogan vs. Vader, Sting & Savage vs. Big Bubba & Avalanche",
+      "FULL EVENT: WCW SuperBrawl IV \u2013 Flair vs. Vader inside Thundercage",
+      "FULL EVENT: WCW SuperBrawl \u2013 Flair vs. Fujinami, Sting & Luger vs. Steiner Brothers"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "YouTube \u00b7 WCW Thunder Full Episodes",
+    "status": "checked",
+    "new_recordings": 0,
+    "skipped": [
+      "FULL EPISODE: Sting vs. Jarrett; Nash & Steiner vs. Booker T & The Cat: WCW Thunder, Sept. 13, 200.."
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "YouTube \u00b7 WCW Monday Nitro Full Episodes",
+    "status": "checked",
+    "new_recordings": 2,
+    "skipped": [
+      "FULL EPISODE: Goldberg vs. Booker T; Tag Team Caged Heat: WCW Monday Nitro, July 24, 2020"
+    ]
+  },
+  {
+    "company": "wcw",
+    "source": "YouTube \u00b7 Full World Championship Wrestling Episodes",
+    "status": "checked",
+    "new_recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "tna",
+    "source": "2002-08-28-nwa-tna-ppv-11",
+    "status": "checked",
+    "recordings": 110,
+    "skipped": [
+      "2004-02-11 NWA-TNA PPV #81 - America's X Cup Part 1.mp4"
+    ]
+  },
+  {
+    "company": "tna",
+    "source": "IW2015",
+    "status": "checked",
+    "recordings": 25,
+    "skipped": []
+  },
+  {
+    "company": "tna",
+    "source": "iMPACT.Wrestling.2012.01.05.HDTV.x264-RUDOS",
+    "status": "checked",
+    "recordings": 48,
+    "skipped": []
+  },
+  {
+    "company": "tna",
+    "source": "tna-i-mpact-2004.06.25",
+    "status": "checked",
+    "recordings": 27,
+    "skipped": []
+  },
+  {
+    "company": "tna",
+    "source": "tna-i-mpact-2005.11.03",
+    "status": "checked",
+    "recordings": 48,
+    "skipped": []
+  },
+  {
+    "company": "tna",
+    "source": "tna-i-mpact-2006.11.16",
+    "status": "checked",
+    "recordings": 54,
+    "skipped": []
+  },
+  {
+    "company": "tna",
+    "source": "tna-i-mpact-2007.10.04",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "tna",
+    "source": "tna-i-mpact-2008.03.27",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "tna",
+    "source": "tna-i-mpact-2009.02.05",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": [
+      "TNA Global Impact 2.avi"
+    ]
+  },
+  {
+    "company": "tna",
+    "source": "tna.-impact.-wrestling.-2013.1.31.-hd.x-264-dx",
+    "status": "checked",
+    "recordings": 52,
+    "skipped": []
+  },
+  {
+    "company": "tna",
+    "source": "tna.-impact.-wrestling.-2014.1.9.-hdtv.x-264.-dx-tv",
+    "status": "checked",
+    "recordings": 44,
+    "skipped": []
+  },
+  {
+    "company": "tna",
+    "source": "tna.i-mpact.-2010.01.04.-cd-2.-hdtv.-xvi-d-wb",
+    "status": "checked",
+    "recordings": 51,
+    "skipped": []
+  },
+  {
+    "company": "tna",
+    "source": "tna.i-mpact.-2011.01.20.-hdtv.x-264-rudos",
+    "status": "checked",
+    "recordings": 43,
+    "skipped": []
+  },
+  {
+    "company": "tna",
+    "source": "tna-against-all-odds-2006-full-event-jarrett-vs.-christian-styles-vs.-daniels-vs.-joe",
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
+  },
+  {
+    "company": "tna",
+    "source": "YouTube recent uploads \u00b7 tnawrestling recent full-show uploads",
+    "status": "checked recent uploads",
+    "new_recordings": 0,
+    "skipped": [
+      "Bound For Glory 2022 (FULL EVENT) | Edwards vs. Alexander, Mickie vs. Mia",
+      "TNA Bound For Glory 2023 (FULL EVENT) | Trinity vs. Mickie, Alexander vs. Shelley",
+      "TNA Slammiversary 2026 (FULL EVENT) | Nemeth vs. Santana, Ultimate X, Brookside vs. Lee"
+    ]
+  }
+]
