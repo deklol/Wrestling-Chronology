@@ -1418,6 +1418,16 @@
             "bytes": 542522698,
             "label": "Internet Archive \u00b7 360p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/2002-08-28-nwa-tna-ppv-11/2003-08-20%20NWA-TNA%20PPV%20%2361%20-%20Super%20X%20Cup.mp4",
+            "filename": "2003-08-20 NWA-TNA PPV #61 - Super X Cup.mp4",
+            "duration": 6614,
+            "height": 360,
+            "bytes": 525970560,
+            "label": "Internet Archive \u00b7 360p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
