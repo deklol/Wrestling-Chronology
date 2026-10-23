@@ -961,8 +961,9 @@
   {
     "company": "wcw",
     "source": "2001-01-23_202404",
-    "status": "skipped",
-    "reason": "Empty metadata; previous recordings retained"
+    "status": "checked",
+    "recordings": 13,
+    "skipped": []
   },
   {
     "company": "wcw",
@@ -1652,8 +1653,9 @@
   {
     "company": "wcw",
     "source": "may-07-2000",
-    "status": "skipped",
-    "reason": "Empty metadata; previous recordings retained"
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
   },
   {
     "company": "wcw",
@@ -1665,8 +1667,9 @@
   {
     "company": "wcw",
     "source": "may-17-1998",
-    "status": "skipped",
-    "reason": "Empty metadata; previous recordings retained"
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
   },
   {
     "company": "wcw",
@@ -2364,8 +2367,9 @@
   {
     "company": "wcw",
     "source": "dec.-29-1996",
-    "status": "skipped",
-    "reason": "Empty metadata; previous recordings retained"
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
   },
   {
     "company": "wcw",
@@ -2654,8 +2658,9 @@
   {
     "company": "wcw",
     "source": "jun.-20-1992",
-    "status": "skipped",
-    "reason": "Empty metadata; previous recordings retained"
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
   },
   {
     "company": "wcw",
@@ -2859,8 +2864,9 @@
   {
     "company": "wcw",
     "source": "nov.-20-1993",
-    "status": "skipped",
-    "reason": "Empty metadata; previous recordings retained"
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
   },
   {
     "company": "wcw",
@@ -3660,10 +3666,8 @@
     "company": "tna",
     "source": "2002-08-28-nwa-tna-ppv-11",
     "status": "checked",
-    "recordings": 110,
-    "skipped": [
-      "2004-02-11 NWA-TNA PPV #81 - America's X Cup Part 1.mp4"
-    ]
+    "recordings": 101,
+    "skipped": []
   },
   {
     "company": "tna",
