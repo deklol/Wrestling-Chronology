@@ -737,9 +737,8 @@
   {
     "company": "wwe",
     "source": "wwe-rebellion-uk-2001-hd",
-    "status": "checked",
-    "recordings": 1,
-    "skipped": []
+    "status": "skipped",
+    "reason": "Empty metadata; previous recordings retained"
   },
   {
     "company": "wwe",
@@ -815,9 +814,8 @@
   {
     "company": "ecw",
     "source": "re-c-dub-1998-complete",
-    "status": "checked",
-    "recordings": 55,
-    "skipped": []
+    "status": "skipped",
+    "reason": "Empty metadata; previous recordings retained"
   },
   {
     "company": "ecw",
@@ -862,11 +860,8 @@
   {
     "company": "wcw",
     "source": "01-wcw-n-wo-souled-out-1999",
-    "status": "checked",
-    "recordings": 11,
-    "skipped": [
-      "04 wCw Spring Stampede 1999.mp4"
-    ]
+    "status": "skipped",
+    "reason": "Empty metadata; previous recordings retained"
   },
   {
     "company": "wcw",
@@ -2120,12 +2115,8 @@
   {
     "company": "wcw",
     "source": "1985-vhs-wcw-pay-per-views",
-    "status": "checked",
-    "recordings": 0,
-    "skipped": [
-      "07.06 - The Great American Bash.avi",
-      "11.28 - Starrcade (The Gathering).avi"
-    ]
+    "status": "skipped",
+    "reason": "Empty metadata; previous recordings retained"
   },
   {
     "company": "wcw",
@@ -3666,7 +3657,7 @@
     "company": "tna",
     "source": "2002-08-28-nwa-tna-ppv-11",
     "status": "checked",
-    "recordings": 101,
+    "recordings": 111,
     "skipped": []
   },
   {
