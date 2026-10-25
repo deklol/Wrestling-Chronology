@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "wcw",
-  "revision": 1792577734,
+  "revision": 1792921938,
   "catalogue": {
     "schemaVersion": 1,
     "generatedAt": "2026-10-19T22:06:23.287590+00:00",
@@ -68137,6 +68137,29 @@
           }
         ],
         "discoveredAt": 0
+      },
+      {
+        "id": "wcw:1987-09-26:saturdaynight",
+        "date": "1987-09-26",
+        "year": 1987,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 3287,
+        "thumbnail": "https://i.ytimg.com/vi/mqw-fgtJ7Bc/hqdefault.jpg",
+        "poster": "https://i.ytimg.com/vi/mqw-fgtJ7Bc/hqdefault.jpg",
+        "sources": [
+          {
+            "type": "youtube",
+            "videoId": "mqw-fgtJ7Bc",
+            "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+            "direct": true,
+            "title": "FULL EPISODE: Flair vs. Garvin for NWA World Title in a Cage | WCW, Sept. 26, 1987",
+            "duration": 3287,
+            "label": "Official YouTube"
+          }
+        ],
+        "discoveredAt": 0
       }
     ],
     "historyMigrations": {
@@ -68288,6 +68311,17 @@
           "date": "1996-05-27",
           "show": "Saturday Night",
           "duration": 5528,
+          "enabled": true,
+          "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+          "authorUrl": "https://www.youtube.com/@WCW"
+        },
+        {
+          "id": "mqw-fgtJ7Bc",
+          "name": "FULL EPISODE: Flair vs. Garvin for NWA World Title in a Cage | WCW, Sept. 26, 1987",
+          "title": "FULL EPISODE: Flair vs. Garvin for NWA World Title in a Cage | WCW, Sept. 26, 1987",
+          "date": "1987-09-26",
+          "show": "Saturday Night",
+          "duration": 3287,
           "enabled": true,
           "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
           "authorUrl": "https://www.youtube.com/@WCW"
