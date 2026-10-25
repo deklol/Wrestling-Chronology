@@ -241,6 +241,49 @@ final class Catalog {
     return prefs(context).getBoolean("watched:" + item.id, false);
   }
 
+  static Episode continueWatching(Context context) {
+    return continueWatching(episodes, prefs(context).getAll());
+  }
+
+  /** History belongs to the selected company; a failed new selection must not hide progress. */
+  static Episode continueWatching(List<Episode> library, Map<String, ?> history) {
+    Episode latest = null;
+    long latestTime = -1;
+    String last = (String) history.get("last");
+    for (Episode item : library) {
+      if (Boolean.TRUE.equals(history.get("watched:" + item.id))) continue;
+      if (savedNumber(history, "pos:" + item.id) <= 0
+          && savedNumber(history, "part:" + item.id) <= 0
+          && savedNumber(history, "seen:" + item.id) <= 0) continue;
+      long time = savedNumber(history, "played:" + item.id);
+      if (latest == null
+          || time > latestTime
+          || (time == latestTime
+              && (item.id.equals(last)
+                  || (!latest.id.equals(last) && item.date.compareTo(latest.date) > 0)))) {
+        latest = item;
+        latestTime = time;
+      }
+    }
+    return latest;
+  }
+
+  private static long savedNumber(Map<String, ?> history, String key) {
+    Object value = history.get(key);
+    return value instanceof Number ? ((Number) value).longValue() : 0;
+  }
+
+  /** Index into the current, filtered timeline; jumping never changes the playback queue. */
+  static int firstInMonth(List<Episode> items, int month) {
+    if (month < 1 || month > 12) return -1;
+    String marker = String.format(Locale.ROOT, "-%02d-", month);
+    for (int i = 0; i < items.size(); i++) {
+      String date = items.get(i).date;
+      if (date.length() == 10 && date.substring(4, 8).equals(marker)) return i;
+    }
+    return -1;
+  }
+
   static long displayPosition(Context context, Episode item) {
     return prefs(context)
         .getLong(
@@ -265,6 +308,7 @@ final class Catalog {
         .putBoolean("watched:" + item.id, watched)
         .putString("last:" + item.year, item.id)
         .putString("last", item.id)
+        .putLong("played:" + item.id, System.currentTimeMillis())
         .apply();
   }
 

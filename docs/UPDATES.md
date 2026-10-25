@@ -4,7 +4,7 @@ The default feed is:
 
 `https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/manifest.json`
 
-The feed is hosted in this public GitHub repository; no PC needs to remain on. The app retains its bundled or last known good library if the feed is unavailable.
+When the feed is unavailable or fails validation, the app keeps its bundled or last verified library. Publish the prepared catalogue files at that URL to provide source updates; no PC needs to remain on.
 
 The app first requests a small HTTPS manifest. ETag checks avoid downloading unchanged manifests. Each company has a separate pack with its byte count, SHA-256 and revision. Only the selected company's changed pack downloads. Normal checks are spaced six hours apart; Settings also provides manual refresh.
 

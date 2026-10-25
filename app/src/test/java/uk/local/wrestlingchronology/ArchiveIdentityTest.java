@@ -168,11 +168,13 @@ public class ArchiveIdentityTest {
     saved.put("pos:2000-01-19:nitro", 123000L);
     saved.put("watched:2000-01-19:nitro", false);
     saved.put("choice:2000-01-19:nitro", "source-key");
+    saved.put("played:2000-01-19:nitro", 5000L);
     saved.put("last", "2000-01-19:nitro");
     Map<String, String> moves = Collections.singletonMap("2000-01-19:nitro", "2000-01-19:thunder");
     Map<String, Object> changes = ArchiveIdentity.historyChanges(saved, moves);
     assertEquals(123000L, changes.get("pos:2000-01-19:thunder"));
     assertEquals("source-key", changes.get("choice:2000-01-19:thunder"));
+    assertEquals(5000L, changes.get("played:2000-01-19:thunder"));
     assertEquals("2000-01-19:thunder", changes.get("last"));
     saved.put("pos:2000-01-19:thunder", 456000L);
     assertFalse(ArchiveIdentity.historyChanges(saved, moves).containsKey("pos:2000-01-19:thunder"));

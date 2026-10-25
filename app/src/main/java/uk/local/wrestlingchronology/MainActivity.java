@@ -390,11 +390,7 @@ public final class MainActivity extends Activity {
     root.addView(pageScroll, new LinearLayout.LayoutParams(-1, 0, 1));
     LinearLayout body = Ui.vertical(this);
     pageScroll.addView(body);
-    Catalog.Episode current = Catalog.find(Catalog.prefs(this).getString("last", ""));
-    if (current != null
-        && (Catalog.watched(this, current)
-            || (Catalog.position(this, current) <= 0
-                && Catalog.prefs(this).getInt("part:" + current.id, 0) == 0))) current = null;
+    Catalog.Episode current = Catalog.continueWatching(this);
     FrameLayout hero = new FrameLayout(this);
     body.addView(hero, Ui.lp(this, -1, current == null ? 260 : 300));
     ImageView backdrop = new ImageView(this);
@@ -507,7 +503,11 @@ public final class MainActivity extends Activity {
               this,
               "▶  Continue watching",
               true,
-              () -> launch(resume, Catalog.forYear(resume.year, "All", extras()), null)));
+              () ->
+                  launch(
+                      resume,
+                      Catalog.forYear(resume.year, "All", extras() || !resume.main()),
+                      null)));
     } else actions.addView(Ui.button(this, "Explore years  ›", true, this::openYears));
     Ui.gap(actions, 10);
     actions.addView(Ui.button(this, "Refresh library", false, () -> refresh(false)));
@@ -521,7 +521,7 @@ public final class MainActivity extends Activity {
     Ui.gap(body, 10);
     body.addView(Ui.button(this, "Browse all years  ›", false, this::openYears));
     Ui.gap(body, 10);
-    body.addView(text("STREAMING ONLY   ·   Archive.org + official YouTube", 10, Ui.MUTED));
+    body.addView(text("STREAMING ONLY   ·   YouTube + Archive.org + Dailymotion", 10, Ui.MUTED));
     Ui.gap(body, 22);
     TextView credit = text("x.com/digitalm1nd", 12, Ui.MUTED);
     credit.setGravity(Gravity.CENTER);
@@ -737,6 +737,15 @@ public final class MainActivity extends Activity {
         Ui.gap(years, 8);
       }
     }
+    HorizontalScrollView months = null;
+    LinearLayout monthButtons = null;
+    if (page.equals("year")) {
+      months = new HorizontalScrollView(this);
+      months.setHorizontalScrollBarEnabled(false);
+      monthButtons = Ui.horizontal(this);
+      months.addView(monthButtons);
+      root.addView(months, Ui.lp(this, -1, 44));
+    }
     Ui.gap(root, 10);
     RecyclerView grid = new RecyclerView(this);
     grid.setLayoutManager(new GridLayoutManager(this, 4));
@@ -744,8 +753,50 @@ public final class MainActivity extends Activity {
     grid.setPadding(0, d(3), 0, d(20));
     root.addView(grid, new LinearLayout.LayoutParams(-1, 0, 1));
     grid.setAdapter(new EpisodeAdapter(items, false, page.equals("ppv")));
+    if (monthButtons != null) {
+      String[] names = {
+        "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+      };
+      for (int month = 1; month <= 12; month++) {
+        int position = Catalog.firstInMonth(items, month);
+        TextView button =
+            Ui.button(this, names[month - 1], false, () -> jumpToEpisode(grid, position));
+        button.setEnabled(position >= 0);
+        button.setFocusable(position >= 0);
+        button.setAlpha(position >= 0 ? 1f : .3f);
+        button.setContentDescription(
+            names[month - 1] + (position < 0 ? ": no available shows" : ": jump to first show"));
+        monthButtons.addView(button);
+        Ui.gap(monthButtons, 5);
+      }
+    }
     if (items.isEmpty())
       root.addView(text("No sourced full shows match this selection.", 16, Ui.MUTED));
+  }
+
+  void jumpToEpisode(RecyclerView grid, int position) {
+    if (position < 0) return;
+    GridLayoutManager layout = (GridLayoutManager) grid.getLayoutManager();
+    if (layout == null) return;
+    grid.stopScroll();
+    grid.setPreserveFocusAfterLayout(false);
+    grid.clearFocus();
+    grid.getViewTreeObserver()
+        .addOnGlobalLayoutListener(
+            new android.view.ViewTreeObserver.OnGlobalLayoutListener() {
+              @Override
+              public void onGlobalLayout() {
+                RecyclerView.ViewHolder card = grid.findViewHolderForAdapterPosition(position);
+                if (card == null) return;
+                grid.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                card.itemView.setFocusableInTouchMode(true);
+                card.itemView.requestFocus();
+                grid.setPreserveFocusAfterLayout(true);
+              }
+            });
+    if (BuildConfig.DEBUG) android.util.Log.d("Chronology", "MONTH_JUMP position=" + position);
+    layout.scrollToPositionWithOffset(position, 0);
+    grid.requestLayout();
   }
 
   final class EpisodeAdapter extends RecyclerView.Adapter<EpisodeAdapter.Holder> {
@@ -895,7 +946,9 @@ public final class MainActivity extends Activity {
                 ? item.heading()
                     + " · Original broadcast: "
                     + Catalog.dateLabel(item.date)
-                    + ". Plays in the WCW timeline with automatic next episode."
+                    + ". Plays in the "
+                    + Company.current.name
+                    + " timeline with automatic next episode."
                 : item.description,
             14,
             Ui.MUTED);
@@ -1053,16 +1106,17 @@ public final class MainActivity extends Activity {
           dialog.dismiss();
           settings();
         });
-    setting(
-        options,
-        "Additional WCW shows",
-        extras() ? "Included" : "Hidden",
-        () -> {
-          prefs.edit().putBoolean("extras", !extras()).apply();
-          dialog.dismiss();
-          render();
-          settings();
-        });
+    if (Company.current == Company.WCW)
+      setting(
+          options,
+          "Additional WCW shows",
+          extras() ? "Included" : "Hidden",
+          () -> {
+            prefs.edit().putBoolean("extras", !extras()).apply();
+            dialog.dismiss();
+            render();
+            settings();
+          });
     setting(
         options,
         "Skip unavailable episodes",
@@ -1206,6 +1260,7 @@ public final class MainActivity extends Activity {
                       SharedPreferences.Editor edit = prefs.edit();
                       for (String key : prefs.getAll().keySet())
                         if (key.startsWith("pos:")
+                            || key.startsWith("played:")
                             || key.startsWith("watched:")
                             || key.startsWith("seen:")
                             || key.startsWith("length:")

@@ -1,13 +1,25 @@
 import unittest
 import json
+import tempfile
 from unittest.mock import patch
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from library import broadcast_date, episode_thumbnail, scan_archive, scan_youtube, add_record, programme
+from library import broadcast_date, episode_thumbnail, scan_archive, scan_youtube, add_record, programme, write
 
 
 class LibraryTests(unittest.TestCase):
+    def test_published_json_keeps_identical_bytes_after_git_normalization(self):
+        # This suite runs on Windows too, where a default text writer emits CRLF.
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / 'pack.json'
+            write(path, {'company': 'wcw', 'episodes': [{'title': 'Nitro', 'date': '1997-01-06'}]})
+            raw = path.read_bytes()
+            self.assertNotIn(b'\r\n', raw)
+            self.assertEqual(raw, raw.replace(b'\r\n', b'\n'))
+            self.assertTrue(raw.endswith(b'\n'))
+            self.assertEqual('Nitro', json.loads(raw)['episodes'][0]['title'])
+
     def test_upload_scan_checks_owner_and_merges_ppv_with_existing_card(self):
         library = {'episodes': [{'id': 'wwe:1995-01-22:ppv:royalrumble', 'date': '1995-01-22',
                                 'show': 'PPV', 'title': 'Royal Rumble', 'sources': [], 'thumbnail': ''}]}

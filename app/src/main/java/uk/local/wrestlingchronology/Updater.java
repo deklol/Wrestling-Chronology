@@ -162,7 +162,7 @@ final class Updater {
     HttpURLConnection connection = (HttpURLConnection) target.openConnection();
     connection.setConnectTimeout(12000);
     connection.setReadTimeout(20000);
-    connection.setRequestProperty("User-Agent", "WCW-Chronology/" + BuildConfig.VERSION_NAME);
+    connection.setRequestProperty("User-Agent", "Wrestling-Chronology/" + BuildConfig.VERSION_NAME);
     connection.setRequestProperty("Cache-Control", "no-cache");
     try {
       if (connection.getResponseCode() != 200)
@@ -345,7 +345,7 @@ final class Updater {
           new Intent(Intent.ACTION_INSTALL_PACKAGE)
               .setDataAndType(uri, "application/vnd.android.package-archive")
               .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-      install.setClipData(ClipData.newRawUri("WCW update", uri));
+      install.setClipData(ClipData.newRawUri("Wrestling Chronology update", uri));
       activity.startActivity(install);
     } catch (Exception error) {
       toast("Fire TV couldn't open its package installer. Your current app is unchanged.");
