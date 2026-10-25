@@ -737,8 +737,9 @@
   {
     "company": "wwe",
     "source": "wwe-rebellion-uk-2001-hd",
-    "status": "skipped",
-    "reason": "Empty metadata; previous recordings retained"
+    "status": "checked",
+    "recordings": 1,
+    "skipped": []
   },
   {
     "company": "wwe",
@@ -774,6 +775,7 @@
     "status": "checked recent uploads",
     "new_recordings": 0,
     "skipped": [
+      "FULL EVENT: The Last Battle of Atlanta | Rich & Sawyer clash in match that inspired Hell in a Cell",
       "FULL EVENT: Beast in the East | Lesnar comes to Japan; Owens vs. B\u00e1lor",
       "FULL EVENT: WWE Money in the Bank 2014 | Two Ladder Matches; Usos vs. Wyatts and MORE!",
       "FULL EVENT: WWE in Sun City, South Africa, Sept. 1996 | Hart vs. Austin and MORE!",
@@ -814,8 +816,9 @@
   {
     "company": "ecw",
     "source": "re-c-dub-1998-complete",
-    "status": "skipped",
-    "reason": "Empty metadata; previous recordings retained"
+    "status": "checked",
+    "recordings": 55,
+    "skipped": []
   },
   {
     "company": "ecw",
@@ -860,8 +863,11 @@
   {
     "company": "wcw",
     "source": "01-wcw-n-wo-souled-out-1999",
-    "status": "skipped",
-    "reason": "Empty metadata; previous recordings retained"
+    "status": "checked",
+    "recordings": 11,
+    "skipped": [
+      "04 wCw Spring Stampede 1999.mp4"
+    ]
   },
   {
     "company": "wcw",
@@ -2115,8 +2121,12 @@
   {
     "company": "wcw",
     "source": "1985-vhs-wcw-pay-per-views",
-    "status": "skipped",
-    "reason": "Empty metadata; previous recordings retained"
+    "status": "checked",
+    "recordings": 0,
+    "skipped": [
+      "07.06 - The Great American Bash.avi",
+      "11.28 - Starrcade (The Gathering).avi"
+    ]
   },
   {
     "company": "wcw",
@@ -3650,7 +3660,7 @@
     "company": "wcw",
     "source": "YouTube \u00b7 Full World Championship Wrestling Episodes",
     "status": "checked",
-    "new_recordings": 0,
+    "new_recordings": 1,
     "skipped": []
   },
   {
