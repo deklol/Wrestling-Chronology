@@ -666,6 +666,13 @@ public final class PlayerActivity extends Activity {
   }
 
   @Override
+  protected void onPause() {
+    // MainActivity resumes before this player's onStop: persist before its hero is rebuilt.
+    save(false);
+    super.onPause();
+  }
+
+  @Override
   protected void onStop() {
     save(false);
     active = false;

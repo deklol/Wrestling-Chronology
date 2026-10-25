@@ -33,7 +33,9 @@ def read(path):
 def write(path, value):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, ensure_ascii=True, indent=2) + "\n", "utf8")
+    # Hash the same bytes GitHub serves after Git's text normalization on every OS.
+    path.write_text(json.dumps(value, ensure_ascii=True, indent=2) + "\n",
+                    encoding="utf8", newline="\n")
 
 
 def key(value):

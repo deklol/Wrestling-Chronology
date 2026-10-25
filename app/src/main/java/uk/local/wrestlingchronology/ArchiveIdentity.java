@@ -31,7 +31,7 @@ final class ArchiveIdentity {
       if (!saved.containsKey("pos:" + to) && !saved.containsKey("watched:" + to)) {
         for (String prefix :
             new String[] {
-              "pos:", "watched:", "seen:", "length:", "part:", "provider:", "choice:"
+              "pos:", "watched:", "seen:", "length:", "part:", "provider:", "choice:", "played:"
             }) {
           if (saved.containsKey(prefix + from)) changes.put(prefix + to, saved.get(prefix + from));
         }
