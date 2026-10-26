@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "wcw",
-  "revision": 1792921938,
+  "revision": 1793013129,
   "catalogue": {
     "schemaVersion": 1,
     "generatedAt": "2026-10-19T22:06:23.287590+00:00",
@@ -63334,7 +63334,7 @@
         "part": 0,
         "listedParts": 0,
         "description": "Booker T defends the WCW World Heavyweight Championship against Scott Steiner. Goldberg battles KroniK in a Handicap Match. Jeff Jarrett faces Sting. Mike Awesome battles Vampiro. Plus, Rey Mysterio and more.",
-        "thumbnail": "https://archive.org/download/Jan-16-2000-Dec-17-2000/Jan-16-2000-Dec-17-2000.thumbs/10%2029%202000%20HH_003549.jpg",
+        "thumbnail": "https://i.ytimg.com/vi/-vWCmMTAszk/hqdefault.jpg",
         "sources": [
           {
             "type": "archive",
@@ -63372,6 +63372,15 @@
             "bytes": 4299501505,
             "duration": 10106.73,
             "height": 1080
+          },
+          {
+            "type": "youtube",
+            "videoId": "-vWCmMTAszk",
+            "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+            "direct": true,
+            "title": "FULL EVENT: WCW Halloween Havoc 2000 | Booker T vs. Steiner; Goldberg vs. KroniK |",
+            "duration": 10107,
+            "label": "Official YouTube"
           }
         ],
         "aliases": [
@@ -68322,6 +68331,17 @@
           "date": "1987-09-26",
           "show": "Saturday Night",
           "duration": 3287,
+          "enabled": true,
+          "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+          "authorUrl": "https://www.youtube.com/@WCW"
+        },
+        {
+          "id": "-vWCmMTAszk",
+          "name": "FULL EVENT: WCW Halloween Havoc 2000 | Booker T vs. Steiner; Goldberg vs. KroniK |",
+          "title": "WCW Halloween Havoc 2000",
+          "date": "2000-10-29",
+          "show": "PPV",
+          "duration": 10107,
           "enabled": true,
           "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
           "authorUrl": "https://www.youtube.com/@WCW"
