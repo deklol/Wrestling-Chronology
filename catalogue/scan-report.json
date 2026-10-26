@@ -775,6 +775,7 @@
     "status": "checked recent uploads",
     "new_recordings": 0,
     "skipped": [
+      "FULL EVENT: WWE In Your House: Buried Alive | Undertaker vs. Mankind; Sid vs. Vader and MORE!",
       "FULL EVENT: The Last Battle of Atlanta | Rich & Sawyer clash in match that inspired Hell in a Cell",
       "FULL EVENT: Beast in the East | Lesnar comes to Japan; Owens vs. B\u00e1lor",
       "FULL EVENT: WWE Money in the Bank 2014 | Two Ladder Matches; Usos vs. Wyatts and MORE!",
@@ -3625,7 +3626,7 @@
     "company": "wcw",
     "source": "YouTube \u00b7 WCW Full Pay-Per-View Events",
     "status": "checked",
-    "new_recordings": 0,
+    "new_recordings": 1,
     "skipped": [
       "FULL EVENT: WCW SuperBrawl II | Sting vs. Luger; Rude vs. Steamboat",
       "FULL EVENT: Great American Bash 1988 Greensboro | Flair and Luger lead teams into WarGames",
@@ -3660,7 +3661,7 @@
     "company": "wcw",
     "source": "YouTube \u00b7 Full World Championship Wrestling Episodes",
     "status": "checked",
-    "new_recordings": 1,
+    "new_recordings": 0,
     "skipped": []
   },
   {
