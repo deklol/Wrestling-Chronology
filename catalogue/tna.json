@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "tna",
-  "revision": 1792536625,
+  "revision": 1793186654,
   "catalogue": {
     "schemaVersion": 1,
     "sourceValidation": 5,
@@ -18026,6 +18026,29 @@
           }
         ],
         "discoveredAt": 0
+      },
+      {
+        "id": "tna:2010-03-21:ppv:destinationx",
+        "date": "2010-03-21",
+        "year": 2010,
+        "show": "PPV",
+        "title": "Destination X",
+        "description": "",
+        "duration": 10148,
+        "thumbnail": "https://i.ytimg.com/vi/vU-N9w8vScA/hqdefault.jpg",
+        "poster": "https://i.ytimg.com/vi/vU-N9w8vScA/hqdefault.jpg",
+        "sources": [
+          {
+            "type": "youtube",
+            "videoId": "vU-N9w8vScA",
+            "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+            "direct": true,
+            "title": "TNA Destination X 2010 (FULL EVENT) | Angle vs. Anderson, Styles vs. Abyss, Ultimate X",
+            "duration": 10148,
+            "label": "Official YouTube"
+          }
+        ],
+        "discoveredAt": 0
       }
     ],
     "eventCalendar": [],
@@ -18930,6 +18953,17 @@
           "show": "PPV",
           "title": "One Night Only: X-Travaganza",
           "duration": 9823
+        },
+        {
+          "id": "vU-N9w8vScA",
+          "name": "TNA Destination X 2010 (FULL EVENT) | Angle vs. Anderson, Styles vs. Abyss, Ultimate X",
+          "title": "Destination X",
+          "date": "2010-03-21",
+          "show": "PPV",
+          "duration": 10148,
+          "enabled": true,
+          "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+          "authorUrl": "https://www.youtube.com/@tnawrestling"
         }
       ]
     },
