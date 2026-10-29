@@ -47,7 +47,7 @@ def main():
         path = ROOT / "catalogue" / (company + ".json")
         raw = path.read_bytes()
         entry = manifest["companies"][company]
-        assert entry["bytes"] == len(raw) and len(raw) <= 48 * 1024 * 1024
+        assert entry["bytes"] == len(raw) and len(raw) <= 16 * 1024 * 1024
         assert entry["sha256"] == hashlib.sha256(raw).hexdigest()
         count = check_pack(json.loads(raw), company)
         print(company, count, "broadcasts; manifest hash verified")

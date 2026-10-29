@@ -68,7 +68,7 @@ public class Pre1997Test {
         if (row.getString("show").equals("Clash of the Champions")) clash++;
       }
     }
-    assertTrue(pre >= 1273);
+    assertEquals(1278, pre);
     assertEquals(68, nitro);
     assertEquals(33, clash);
     for (int i = 0; i < baseline.length(); i++) {
@@ -118,7 +118,7 @@ public class Pre1997Test {
         last = row.date;
       }
       assertTrue(shows.containsAll(Arrays.asList("Nitro", "Saturday Night", "PPV", "Pro")));
-      assertTrue(Catalog.forYear(1995, "All", false).size() >= 135);
+      assertEquals(135, Catalog.forYear(1995, "All", false).size());
       assertTrue(
           Catalog.forYear(1990, "All", false).stream().anyMatch(e -> e.show.equals("Power Hour")));
       assertTrue(
@@ -126,7 +126,7 @@ public class Pre1997Test {
       assertEquals(
           "World Championship Wrestling",
           Catalog.forYear(1985, "Saturday Night", false).get(0).heading());
-      assertTrue(Catalog.years().containsAll(Arrays.asList(1985, 1996, 1997, 2001)));
+      assertTrue(Catalog.years().containsAll(Arrays.asList(1983, 1985, 1996, 1997, 2001)));
     } finally {
       Catalog.episodes = saved;
       Catalog.raw = old;
@@ -185,7 +185,7 @@ public class Pre1997Test {
     Map<String, Object> changes = ArchiveIdentity.historyChanges(saved, moves);
     assertEquals(123000L, changes.get("pos:1990-11-20:clashofthechampions"));
     assertEquals("1990-11-20:clashofthechampions", changes.get("last"));
-    assertEquals(seed().getJSONArray("episodes").length(), data.getJSONArray("episodes").length());
+    assertEquals(1950, data.getJSONArray("episodes").length());
     assertTrue(Catalog.normalizeYoutube(data).isEmpty());
   }
 
