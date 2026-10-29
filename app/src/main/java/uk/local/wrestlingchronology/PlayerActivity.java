@@ -3,7 +3,12 @@ package uk.local.wrestlingchronology;
 import android.app.*;
 import android.content.*;
 import android.graphics.Color;
+import android.content.res.ColorStateList;
+import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
+import android.graphics.drawable.InsetDrawable;
+import android.graphics.drawable.StateListDrawable;
 import android.media.MediaMetadata;
 import android.media.session.*;
 import android.os.*;
@@ -31,8 +36,7 @@ public final class PlayerActivity extends Activity {
   ExoPlayer player;
   PlayerView view;
   MediaSession session;
-  TextView heading, status, nextLabel;
-  LinearLayout top;
+  TextView status, upNext, caption;
   int index, optionIndex, generation, failedEpisodes;
   boolean active, ended, clipping, verificationSession, controlsVisible, hasPlayed;
   long bufferingSince;
@@ -85,32 +89,95 @@ public final class PlayerActivity extends Activity {
     view.setKeepScreenOn(true);
     view.setShowNextButton(false);
     view.setShowPreviousButton(false);
+    View center = view.findViewById(androidx.media3.ui.R.id.exo_center_controls);
+    if (center != null) {
+      center.setLayoutParams(
+          new FrameLayout.LayoutParams(
+              -2,
+              getResources()
+                  .getDimensionPixelSize(androidx.media3.ui.R.dimen.exo_styled_bottom_bar_height),
+              Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL));
+    }
+    View bottomBar = view.findViewById(androidx.media3.ui.R.id.exo_bottom_bar);
+    if (bottomBar != null) {
+      bottomBar.setBackground(null);
+      bottomBar.setPadding(Ui.dp(this, 46), 0, Ui.dp(this, 46), 0);
+    }
+
+    View timeBar = view.findViewById(androidx.media3.ui.R.id.exo_progress);
+    if (timeBar != null) timeBar.setPadding(Ui.dp(this, 53), 0, Ui.dp(this, 53), 0);
+    view.setControllerAnimationEnabled(false);
+    View scrim = view.findViewById(androidx.media3.ui.R.id.exo_controls_background);
+    if (scrim != null)
+      scrim.setBackground(
+          new GradientDrawable(
+              GradientDrawable.Orientation.TOP_BOTTOM,
+              new int[] {0x00000000, 0x00000000, 0x40000000, 0xb3000000, 0xf2000000}));
+    for (int id :
+        new int[] {
+          androidx.media3.ui.R.id.exo_play_pause,
+          androidx.media3.ui.R.id.exo_rew_with_amount,
+          androidx.media3.ui.R.id.exo_ffwd_with_amount,
+          androidx.media3.ui.R.id.exo_settings
+        }) {
+      View button = view.findViewById(id);
+      if (button == null) continue;
+      int left = button.getPaddingLeft(), top = button.getPaddingTop();
+      int right = button.getPaddingRight(), bottom = button.getPaddingBottom();
+      button.setBackground(focusOnly(new InsetDrawable(disc(), Ui.dp(this, 4))));
+      button.setPadding(left, top, right, bottom);
+      if (button instanceof ImageView) ((ImageView) button).setImageTintList(focusInk());
+      if (button instanceof TextView) {
+        button.setForegroundTintList(focusInk());
+        ((TextView) button).setTextColor(focusInk());
+      }
+    }
+    View playPause = view.findViewById(androidx.media3.ui.R.id.exo_play_pause);
+    if (playPause != null) {
+      int inset = Ui.dp(this, 6);
+      playPause.setPadding(inset, inset, inset, inset);
+    }
+
+    status = Ui.text(this, "", 15, Ui.MUTED);
+    upNext = Ui.text(this, "", 15, Ui.MUTED);
+    upNext.setVisibility(View.INVISIBLE);
+    ViewGroup controller = view.findViewById(androidx.media3.ui.R.id.exo_controller);
+    if (controller != null) {
+      caption = Ui.text(this, "", 22, Ui.WHITE);
+      FrameLayout.LayoutParams params =
+          new FrameLayout.LayoutParams(-2, -2, Gravity.BOTTOM | Gravity.START);
+      params.leftMargin = Ui.dp(this, 60);
+      params.bottomMargin = Ui.dp(this, 96);
+      controller.addView(caption, params);
+      controller.addView(status, besideTitle());
+      controller.addView(upNext, besideTitle());
+    }
     root.addView(view, new FrameLayout.LayoutParams(-1, -1));
-    top = Ui.vertical(this);
-    top.setPadding(Ui.dp(this, 30), Ui.dp(this, 20), Ui.dp(this, 30), Ui.dp(this, 30));
-    top.setBackground(
-        new GradientDrawable(
-            GradientDrawable.Orientation.TOP_BOTTOM, new int[] {0xe6000000, 0x00000000}));
-    root.addView(top, new FrameLayout.LayoutParams(-1, -2, Gravity.TOP));
-    heading = Ui.text(this, "", 22, Ui.WHITE);
-    top.addView(heading);
-    Ui.gap(top, 7);
-    status = Ui.text(this, "", 12, Ui.MUTED);
-    top.addView(status);
-    LinearLayout actions = Ui.horizontal(this);
-    Ui.gap(top, 12);
-    top.addView(actions);
-    actions.addView(Ui.button(this, "‹  Library", false, this::finish));
-    Ui.gap(actions, 10);
-    actions.addView(Ui.button(this, "Next episode  ›", false, () -> advance(false)));
-    Ui.gap(actions, 14);
-    nextLabel = Ui.text(this, "", 12, Ui.MUTED);
-    actions.addView(nextLabel);
+    if (center instanceof LinearLayout) {
+      LinearLayout transport = (LinearLayout) center;
+      transport.setBaselineAligned(false);
+      LinearLayout.LayoutParams before = new LinearLayout.LayoutParams(-2, Ui.dp(this, 48));
+      before.rightMargin = Ui.dp(this, 24);
+      transport.addView(
+          transportButton("Library", androidx.media3.ui.R.drawable.exo_ic_chevron_left, this::finish),
+          0,
+          before);
+      LinearLayout.LayoutParams after = new LinearLayout.LayoutParams(-2, Ui.dp(this, 48));
+      after.leftMargin = Ui.dp(this, 24);
+      TextView next =
+          transportButton(
+              "Next episode", androidx.media3.ui.R.drawable.exo_ic_skip_next, () -> advance(false));
+      next.setOnFocusChangeListener(
+          (v, focused) -> {
+            upNext.setVisibility(focused ? View.VISIBLE : View.INVISIBLE);
+            status.setVisibility(focused ? View.INVISIBLE : View.VISIBLE);
+          });
+      transport.addView(next, after);
+    }
     view.setControllerVisibilityListener(
         (PlayerView.ControllerVisibilityListener)
             visibility -> {
               controlsVisible = visibility == View.VISIBLE;
-              top.setVisibility(visibility);
               if (controlsVisible) scheduleHide();
             });
     session = new MediaSession(this, "Wrestling Chronology");
@@ -175,10 +242,10 @@ public final class PlayerActivity extends Activity {
     }
     Catalog.Episode item = current();
     resumePosition = Catalog.position(this, item);
-    heading.setText(item.heading() + "  ·  " + Catalog.dateLabel(item.date));
+    if (caption != null) caption.setText(item.heading() + "  ·  " + Catalog.dateLabel(item.date));
     status.setText("Finding a stream…");
-    top.setVisibility(View.VISIBLE);
-    nextLabel.setText(
+    view.showController();
+    upNext.setText(
         index + 1 < queue.size()
             ? "Up next: "
                 + queue.get(index + 1).heading()
@@ -335,7 +402,7 @@ public final class PlayerActivity extends Activity {
           public void onPlaybackStateChanged(int state) {
             if (token != generation) return;
             if (state == Player.STATE_READY) {
-              status.setText(stream.label + "  ·  " + (index + 1) + " / " + queue.size());
+              status.setText(stream.label + " · " + (index + 1) + " of " + queue.size());
               failedEpisodes = 0;
               if (bufferingSince > 0)
                 Log.i(
@@ -494,7 +561,6 @@ public final class PlayerActivity extends Activity {
   void unavailable(int token) {
     Log.w(TAG, "UNAVAILABLE id=" + current().id);
     status.setText("This show is currently unavailable from its listed sources.");
-    top.setVisibility(View.VISIBLE);
     view.showController();
     if (Catalog.prefs(this).getBoolean("skip", true)
         && index + 1 < queue.size()
@@ -557,6 +623,7 @@ public final class PlayerActivity extends Activity {
               Log.i(TAG, "ARCHIVE_STALL action=" + action + " part=" + part + " pos=" + position);
               if (action == ArchiveRecovery.Action.RECONNECT) {
                 status.setText("Reconnecting to Internet Archive…");
+                view.showController();
                 // Reopen the transport at the exact current part/time; never skip ahead.
                 currentPlayer.stop();
                 currentPlayer.seekTo(part, position);
@@ -605,10 +672,55 @@ public final class PlayerActivity extends Activity {
       () -> {
         if (active && player != null && player.isPlaying()) {
           view.hideController();
-          top.setVisibility(View.GONE);
           controlsVisible = false;
         }
       };
+
+  FrameLayout.LayoutParams besideTitle() {
+    FrameLayout.LayoutParams result =
+        new FrameLayout.LayoutParams(-2, -2, Gravity.BOTTOM | Gravity.END);
+    result.rightMargin = Ui.dp(this, 60);
+    result.bottomMargin = Ui.dp(this, 99);
+    return result;
+  }
+
+  static ColorStateList focusInk() {
+    return new ColorStateList(
+        new int[][] {{android.R.attr.state_focused}, {}}, new int[] {Color.BLACK, Color.WHITE});
+  }
+
+  static GradientDrawable disc() {
+    GradientDrawable result = new GradientDrawable();
+    result.setShape(GradientDrawable.OVAL);
+    result.setColor(Color.WHITE);
+    return result;
+  }
+
+  static StateListDrawable focusOnly(Drawable focused) {
+    StateListDrawable result = new StateListDrawable();
+    result.addState(new int[] {android.R.attr.state_focused}, focused);
+    return result;
+  }
+
+  TextView transportButton(String label, int icon, Runnable action) {
+    TextView result = Ui.text(this, label, 15, Ui.WHITE);
+    result.setTypeface(null, Typeface.BOLD);
+    result.setGravity(Gravity.CENTER);
+    result.setTextColor(focusInk());
+    Drawable glyph = getDrawable(icon).mutate();
+    glyph.setTintList(focusInk());
+    glyph.setBounds(0, 0, Ui.dp(this, 24), Ui.dp(this, 24));
+    result.setCompoundDrawables(glyph, null, null, null);
+    result.setCompoundDrawablePadding(Ui.dp(this, 8));
+    GradientDrawable pill = Ui.shape(this, Ui.WHITE, 0);
+    pill.setCornerRadius(Ui.dp(this, 24));
+    result.setBackground(focusOnly(pill));
+    result.setPadding(Ui.dp(this, 14), 0, Ui.dp(this, 18), 0);
+    result.setFocusable(true);
+    result.setClickable(true);
+    result.setOnClickListener(v -> action.run());
+    return result;
+  }
 
   void scheduleHide() {
     handler.removeCallbacks(hideControls);
@@ -619,7 +731,6 @@ public final class PlayerActivity extends Activity {
   public void onBackPressed() {
     if (controlsVisible) {
       view.hideController();
-      top.setVisibility(View.GONE);
       controlsVisible = false;
       handler.removeCallbacks(hideControls);
     } else super.onBackPressed();

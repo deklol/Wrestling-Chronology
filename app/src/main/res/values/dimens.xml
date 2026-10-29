@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Taller Media3 bottom bar so the transport controls' focus discs fit on screen. -->
+    <dimen name="exo_styled_bottom_bar_height" tools:ignore="PrivateResource">80dp</dimen>
+    <dimen name="exo_styled_progress_margin_bottom" tools:ignore="PrivateResource,UnusedResources">56dp</dimen>
+</resources>

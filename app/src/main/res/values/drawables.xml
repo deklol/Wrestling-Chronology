@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Plain play/pause glyphs instead of Media3's filled circles; selection draws the circle. -->
+    <drawable name="exo_styled_controls_play" tools:ignore="PrivateResource">@drawable/exo_icon_play</drawable>
+    <drawable name="exo_styled_controls_pause" tools:ignore="PrivateResource">@drawable/exo_icon_pause</drawable>
+</resources>
