@@ -10,11 +10,21 @@ import org.json.*;
 final class Catalog {
   static volatile List<Episode> episodes = Collections.emptyList();
   static JSONObject raw;
+  static JSONObject loadedPack;
+  static volatile Set<String> hiddenShows = Collections.emptySet();
 
   static synchronized void load(Context context) throws Exception {
     if (!episodes.isEmpty()) return;
-    JSONObject pack = RemoteLibrary.cached(context);
-    if (pack == null) pack = RemoteLibrary.bundled(context);
+    hiddenShows = new HashSet<>(prefs(context).getStringSet("hidden_shows", Collections.emptySet()));
+    long started = android.os.SystemClock.elapsedRealtime();
+    JSONObject cached = RemoteLibrary.cached(context);
+    JSONObject pack;
+    if (cached != null && cached.optLong("revision") >= RemoteLibrary.bundledRevision(context)) {
+      pack = cached;
+    } else {
+      JSONObject seed = RemoteLibrary.bundled(context);
+      pack = cached == null ? seed : LibraryPack.merge(cached, seed);
+    }
     raw = pack.getJSONObject("catalogue");
     SourceConfig.apply(raw, pack.getJSONObject("sources"));
     Map<String, String> moves = new HashMap<>();
@@ -22,7 +32,9 @@ final class Catalog {
       moves.putAll(normalizeYoutube(raw));
       raw.put("sourceValidation", 5);
     }
-    moves.putAll(ArchiveIdentity.normalize(raw));
+    boolean needsIdentityCheck = raw.optInt("archiveIdentityVersion") != ArchiveIdentity.VERSION;
+    if (needsIdentityCheck) moves.putAll(ArchiveIdentity.normalize(raw));
+    raw.put("archiveIdentityVersion", ArchiveIdentity.VERSION);
     moves.putAll(ArchiveIdentity.configuredMoves(raw));
     if (!moves.isEmpty()) {
       SharedPreferences preferences = prefs(context);
@@ -38,7 +50,18 @@ final class Catalog {
       }
       editor.apply();
     }
-    replace(raw);
+    replace(raw, false);
+    boolean cacheFormatChanged = pack.optInt("runtimeCacheVersion") < 2;
+    pack.put("runtimeCacheVersion", 2);
+    loadedPack = pack;
+    if (pack != cached || needsIdentityCheck || cacheFormatChanged) {
+      try { RemoteLibrary.saveCached(context, pack); }
+      catch (Exception error) { android.util.Log.i("Chronology", "Library cache write deferred", error); }
+    }
+    android.util.Log.i("Chronology", "LIBRARY_READY " + Company.current.id + " episodes=" + episodes.size()
+        + " ms=" + (android.os.SystemClock.elapsedRealtime() - started));
+    if (!episodes.isEmpty()) context.getSharedPreferences("application", 0).edit()
+        .putInt("availableYear:" + Company.current.id, years().last()).apply();
   }
 
   static Map<String, String> normalizeYoutube(JSONObject data) throws Exception {
@@ -140,8 +163,10 @@ final class Catalog {
     return rows;
   }
 
-  static synchronized void replace(JSONObject data) throws Exception {
-    ArchiveIdentity.normalize(data);
+  static synchronized void replace(JSONObject data) throws Exception { replace(data, true); }
+
+  private static synchronized void replace(JSONObject data, boolean normalize) throws Exception {
+    if (normalize) ArchiveIdentity.normalize(data);
     ArrayList<Episode> next = new ArrayList<>();
     JSONArray rows = data.getJSONArray("episodes");
     for (int i = 0; i < rows.length(); i++) {
@@ -150,9 +175,11 @@ final class Catalog {
       for (int j = 0; j < sources.length(); j++)
         if (sources.getJSONObject(j).optString("type").equals("archive"))
           sources.getJSONObject(j).put("programme", row.getString("show"));
-      for (int j = sources.length() - 1; j >= 0; j--)
-        if (!SourcePolicy.eligible(sources.getJSONObject(j))) sources.remove(j);
       Episode item = new Episode(rows.getJSONObject(i));
+      // Eligibility changes the view, not the stored source catalogue. Removing
+      // the final source here produced invalid cached rows and forced reimports.
+      for (int j = item.sources.size() - 1; j >= 0; j--)
+        if (!SourcePolicy.eligible(item.sources.get(j))) item.sources.remove(j);
       if (item.date.compareTo(Company.current.firstDate) >= 0
           && item.date.compareTo(Company.current.lastDate) <= 0
           && !item.sources.isEmpty()) next.add(item);
@@ -192,6 +219,7 @@ final class Catalog {
     ArrayList<Episode> result = new ArrayList<>();
     for (Episode item : episodes)
       if (item.year == year
+          && (!filter.equals("All") || !hiddenShows.contains(item.show))
           && (!filter.equals("All") || year < 1997 || extras || item.main())
           && (filter.equals("All") || filter.equals(item.show))) result.add(item);
     return result;
@@ -204,7 +232,8 @@ final class Catalog {
   }
 
   static String showLabel(String show, int year) {
-    if (show.equals("Saturday Night")) {
+    if (show.equals("Saturday Night") && Company.current == Company.WWE) return "Saturday Night’s Main Event";
+    if (show.equals("Saturday Night") && Company.current == Company.WCW) {
       if (year > 0 && year < 1992) return "World Championship Wrestling";
       if (year == 1992) return "WCW TV / Saturday Night";
     }
@@ -223,7 +252,7 @@ final class Catalog {
       int count;
       while ((count = input.read(buffer)) >= 0) {
         output.write(buffer, 0, count);
-        if (output.size() > 18 * 1024 * 1024) throw new IOException("Response too large");
+        if (output.size() > 48 * 1024 * 1024) throw new IOException("Response too large");
       }
       return output.toString(StandardCharsets.UTF_8.name());
     }
@@ -369,9 +398,9 @@ final class Catalog {
     String heading() {
       return show.equals("PPV")
           ? title
-          : show.equals("Saturday Night") && date.compareTo("1992-04-04") < 0
+          : Company.current == Company.WCW && show.equals("Saturday Night") && date.compareTo("1992-04-04") < 0
               ? "World Championship Wrestling"
-              : show;
+              : show.equals("Saturday Night") && Company.current == Company.WWE ? "Saturday Night’s Main Event" : show;
     }
   }
 }

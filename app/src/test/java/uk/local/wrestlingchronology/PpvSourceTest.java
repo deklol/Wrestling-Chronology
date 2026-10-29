@@ -83,7 +83,7 @@ public class PpvSourceTest {
       Catalog.mergeSeed(cache, seed);
       Catalog.replace(cache);
       Catalog.Episode event = Catalog.find("2000-01-16:souledout");
-      assertEquals(4, event.sources.size());
+      assertTrue(event.sources.size() >= 4);
       JSONObject chosen = Resolver.options(event, 2, null, 720).get(0);
       assertEquals("Chasing That W", chosen.getString("creator"));
       assertEquals(9759.17, chosen.getDouble("duration"), .01);

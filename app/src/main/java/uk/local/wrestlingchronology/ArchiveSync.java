@@ -23,7 +23,7 @@ final class ArchiveSync {
     String value = title.replace('_', ' ').replace('.', ' ').toLowerCase(Locale.UK);
     // Anchored file markers, not letters occurring in a title or collection name.
     Matcher marker =
-        Pattern.compile(
+        Patterns.get(
                 "(?i)^\\d{2}[ ._-]\\d{2}[ ._-]\\d{4}["
                     + " ._-]+(N|T|SN|COTC\\d*)(?:\\.ia)?\\.(?:mp4|mkv|m4v)$")
             .matcher(title);
@@ -35,8 +35,8 @@ final class ArchiveSync {
       return "Clash of the Champions";
     }
     if (value.contains("clash of")) return "Clash of the Champions";
-    boolean nitro = Pattern.compile("\\b(?:nitro|ortin)\\b").matcher(value).find();
-    boolean thunder = Pattern.compile("\\b(?:thunder|rednuht)\\b").matcher(value).find();
+    boolean nitro = Patterns.get("\\b(?:nitro|ortin)\\b").matcher(value).find();
+    boolean thunder = Patterns.get("\\b(?:thunder|rednuht)\\b").matcher(value).find();
     if (nitro && thunder) return null; // Mixed collection: never inherit one show's identity.
     if (nitro) return "Nitro";
     if (thunder) return "Thunder";
@@ -45,7 +45,7 @@ final class ArchiveSync {
     if (value.matches(".*\\b(?:wcw pro|pro wrestling)\\b.*")) return "Pro";
     if (value.contains("power hour")) return "Power Hour";
     if (value.contains("main event")) return "Main Event";
-    if (Pattern.compile("\\bprime\\b").matcher(value).find()) return "Prime";
+    if (Patterns.get("\\bprime\\b").matcher(value).find()) return "Prime";
     if (value.contains("world championship wrestling")) return "Saturday Night";
     return null;
   }
@@ -53,14 +53,14 @@ final class ArchiveSync {
   static String fileDate(String name, JSONObject data) throws Exception {
     String clean = name.replace('_', ' ');
     Matcher iso =
-        Pattern.compile("\\b(19\\d{2}|20\\d{2})[ .-](\\d{2})[ .-](\\d{2})\\b").matcher(clean);
+        Patterns.get("\\b(19\\d{2}|20\\d{2})[ .-](\\d{2})[ .-](\\d{2})\\b").matcher(clean);
     if (iso.find())
       return CatalogSync.validDate(
           Integer.parseInt(iso.group(1)),
           Integer.parseInt(iso.group(2)),
           Integer.parseInt(iso.group(3)));
     Matcher numeric =
-        Pattern.compile("\\b(\\d{2})[ .-](\\d{2})[ .-](19\\d{2}|20\\d{2})\\b").matcher(clean);
+        Patterns.get("\\b(\\d{2})[ .-](\\d{2})[ .-](19\\d{2}|20\\d{2})\\b").matcher(clean);
     if (numeric.find()) {
       int a = Integer.parseInt(numeric.group(1)),
           b = Integer.parseInt(numeric.group(2)),
@@ -76,10 +76,10 @@ final class ArchiveSync {
   static String fileDate(String name, JSONObject data, String identifier) throws Exception {
     JSONObject orders = data.optJSONObject("archiveDateOrders");
     String order = orders == null ? "" : orders.optString(identifier);
-    if (Pattern.compile("\\b(?:19|20)\\d{2}[ ._-]\\d{2}[ ._-]\\d{2}\\b").matcher(name).find())
+    if (Patterns.get("\\b(?:19|20)\\d{2}[ ._-]\\d{2}[ ._-]\\d{2}\\b").matcher(name).find())
       return fileDate(name, data);
     Matcher date =
-        Pattern.compile("\\b(\\d{1,2})[ ._-](\\d{1,2})[ ._-](\\d{4}|\\d{2})\\b")
+        Patterns.get("\\b(\\d{1,2})[ ._-](\\d{1,2})[ ._-](\\d{4}|\\d{2})\\b")
             .matcher(name.replace('_', ' '));
     if ((order.equals("MDY") || order.equals("DMY")) && date.find()) {
       int first = Integer.parseInt(date.group(1)), second = Integer.parseInt(date.group(2));
@@ -176,17 +176,17 @@ final class ArchiveSync {
       if (!name.matches("(?i).+\\.(?:mp4|m4v)$")
           || file.optBoolean("private")
           || name.contains("../")
-          || Pattern.compile(
+          || Patterns.get(
                   "(?i)\\b(?:highlights?|trailer|preview|sample|compilation|clips?|full["
                       + " ._-]+match|part[ ._-]*\\d+)\\b")
               .matcher(name.replace('_', ' '))
               .find()) continue;
-      if (Pattern.compile("(?i)\\b(?:wwf|wwe|ecw|aew|roh)\\b")
+      if (Patterns.get("(?i)\\b(?:wwf|wwe|ecw|aew|roh)\\b")
           .matcher(name.replace('_', ' '))
           .find()) continue;
       // WCW/New Japan joint events belong in the library; unrelated NJPW recordings do not.
-      if (Pattern.compile("(?i)\\bnjpw\\b").matcher(name.replace('_', ' ')).find()
-          && !Pattern.compile("(?i)\\bwcw\\b").matcher(name.replace('_', ' ')).find()) continue;
+      if (Patterns.get("(?i)\\bnjpw\\b").matcher(name.replace('_', ' ')).find()
+          && !Patterns.get("(?i)\\bwcw\\b").matcher(name.replace('_', ' ')).find()) continue;
       double duration = file.optDouble("length", 0);
       if (duration < SourcePolicy.minimumSeconds(candidate.optString("programme"))) continue;
       String url =

@@ -31,10 +31,13 @@ public final class PlayerActivity extends Activity {
   ExoPlayer player;
   PlayerView view;
   MediaSession session;
-  TextView heading, status, nextLabel;
+  TextView heading, status, nextLabel, aspectButton;
   LinearLayout top;
+  SharedPreferences playbackPreferences;
   int index, optionIndex, generation, failedEpisodes;
   boolean active, ended, clipping, verificationSession, controlsVisible, hasPlayed;
+  boolean stretchPicture;
+  float videoAspectRatio;
   long bufferingSince;
   long resumePosition;
   ArrayList<JSONObject> options;
@@ -86,6 +89,21 @@ public final class PlayerActivity extends Activity {
     view.setShowNextButton(false);
     view.setShowPreviousButton(false);
     root.addView(view, new FrameLayout.LayoutParams(-1, -1));
+    playbackPreferences = getSharedPreferences("application", MODE_PRIVATE);
+    stretchPicture = playbackPreferences.getBoolean("stretch_picture", false);
+    ViewGroup contentFrame = view.findViewById(androidx.media3.ui.R.id.exo_content_frame);
+    // Let only the video surface widen beyond its fitted 4:3 frame. The player
+    // bounds still clip the unused side bars; controls and subtitles stay normal.
+    contentFrame.setClipChildren(false);
+    contentFrame.setClipToPadding(false);
+    view.setClipChildren(true);
+    View videoSurface = view.getVideoSurfaceView();
+    if (videoSurface != null)
+      videoSurface.addOnLayoutChangeListener(
+          (v, left, top, right, bottom, oldLeft, oldTop, oldRight, oldBottom) ->
+              applyPictureMode());
+    view.addOnLayoutChangeListener(
+        (v, left, top, right, bottom, oldLeft, oldTop, oldRight, oldBottom) -> applyPictureMode());
     top = Ui.vertical(this);
     top.setPadding(Ui.dp(this, 30), Ui.dp(this, 20), Ui.dp(this, 30), Ui.dp(this, 30));
     top.setBackground(
@@ -103,9 +121,25 @@ public final class PlayerActivity extends Activity {
     actions.addView(Ui.button(this, "‹  Library", false, this::finish));
     Ui.gap(actions, 10);
     actions.addView(Ui.button(this, "Next episode  ›", false, () -> advance(false)));
+    Ui.gap(actions, 10);
+    aspectButton =
+        Ui.button(
+            this,
+            "",
+            false,
+            () -> {
+              stretchPicture = !stretchPicture;
+              playbackPreferences.edit().putBoolean("stretch_picture", stretchPicture).apply();
+              applyPictureMode();
+              scheduleHide();
+            });
+    actions.addView(aspectButton);
+    applyPictureMode();
     Ui.gap(actions, 14);
     nextLabel = Ui.text(this, "", 12, Ui.MUTED);
-    actions.addView(nextLabel);
+    nextLabel.setSingleLine(true);
+    nextLabel.setEllipsize(android.text.TextUtils.TruncateAt.END);
+    actions.addView(nextLabel, new LinearLayout.LayoutParams(0, -2, 1f));
     view.setControllerVisibilityListener(
         (PlayerView.ControllerVisibilityListener)
             visibility -> {
@@ -168,6 +202,7 @@ public final class PlayerActivity extends Activity {
     resolved = null;
     hasPlayed = false;
     bufferingSince = 0;
+    videoAspectRatio = 0;
     if (player != null) {
       player.release();
       player = null;
@@ -331,6 +366,14 @@ public final class PlayerActivity extends Activity {
     player.setMediaSources(media, Math.max(0, part), clipping ? 0 : resumePosition);
     player.addListener(
         new Player.Listener() {
+          @Override
+          public void onVideoSizeChanged(VideoSize size) {
+            if (token != generation) return;
+            videoAspectRatio =
+                size.height > 0 ? size.width * size.pixelWidthHeightRatio / size.height : 0;
+            view.post(() -> applyPictureMode());
+          }
+
           @Override
           public void onPlaybackStateChanged(int state) {
             if (token != generation) return;
@@ -613,6 +656,29 @@ public final class PlayerActivity extends Activity {
   void scheduleHide() {
     handler.removeCallbacks(hideControls);
     if (player != null && player.isPlaying()) handler.postDelayed(hideControls, 3500);
+  }
+
+  void applyPictureMode() {
+    if (aspectButton != null) {
+      aspectButton.setText(stretchPicture ? "16:9 stretch" : "4:3 / Original");
+      aspectButton.setContentDescription(
+          stretchPicture
+              ? "Picture stretched horizontally. Select for original proportions."
+              : "Original proportions. Select to stretch the 4:3 picture to full width.");
+    }
+    View surface = view.getVideoSurfaceView();
+    if (surface == null || surface.getWidth() == 0 || view.getWidth() == 0) return;
+    float scale = 1f;
+    if (stretchPicture && videoAspectRatio > 0) {
+      // A 4:3 broadcast may be encoded inside a wider frame with black side
+      // bars. Widen its central picture, without increasing its height.
+      float pictureFraction = Math.min(1f, (4f / 3f) / videoAspectRatio);
+      float pictureWidth = surface.getWidth() * pictureFraction;
+      scale = Math.max(1f, view.getWidth() / pictureWidth);
+    }
+    surface.setPivotX(surface.getWidth() / 2f);
+    surface.setScaleX(scale);
+    surface.setScaleY(1f);
   }
 
   @Override

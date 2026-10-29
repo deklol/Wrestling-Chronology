@@ -10,8 +10,8 @@ android {
         applicationId 'uk.local.wrestlingchronology'
         minSdk 25
         targetSdk 28
-        versionCode 2
-        versionName '0.1.1'
+        versionCode 6
+        versionName '0.1.3'
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
@@ -59,3 +59,17 @@ dependencies {
     testImplementation 'org.json:json:20250517'
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs_nio:2.1.5'
 }
+
+tasks.register('prepareLibraryRevisions') {
+    inputs.file rootProject.file('catalogue/manifest.json')
+    def destination = layout.buildDirectory.file('generated/sourceConfigAssets/library-revisions.json')
+    outputs.file destination
+    doLast {
+        def feed = new groovy.json.JsonSlurper().parse(rootProject.file('catalogue/manifest.json'))
+        def revisions = feed.companies.collectEntries { id, entry -> [(id): entry.revision] }
+        def output = destination.get().asFile
+        output.parentFile.mkdirs()
+        output.setText(groovy.json.JsonOutput.toJson(revisions), 'UTF-8')
+    }
+}
+tasks.named('preBuild').configure { dependsOn 'prepareLibraryRevisions' }
