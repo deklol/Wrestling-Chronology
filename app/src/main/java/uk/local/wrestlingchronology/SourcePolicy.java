@@ -27,6 +27,12 @@ final class SourcePolicy {
   }
 
   static int minimumSeconds(String show) {
+    if (Arrays.asList("Dark", "Dark: Elevation", "NXT Level Up").contains(show)) return 300;
+    if (Arrays.asList("205 Live", "NXT UK", "Main Event", "The Deadly Draw").contains(show)) return 600;
+    if (Arrays.asList("NXT", "Rampage", "Battle of the Belts").contains(show)) return 1200;
+    if (Arrays.asList("Velocity", "Xplosion", "Metal", "Mania", "Action Zone", "All American Wrestling",
+        "All Star Wrestling", "Championship Wrestling", "Livewire", "Shotgun Saturday Night",
+        "Wrestling Spotlight", "Wrestling Challenge", "Evolve", "ECW", "Cruiserweight Classic", "Mae Young Classic").contains(show)) return 1200;
     if (show.equals("Heat")
         || show.equals("Hardcore TV")
         || show.equals("ECW on TNN")

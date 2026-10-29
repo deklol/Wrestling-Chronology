@@ -17,6 +17,12 @@ final class RemoteLibrary {
     AtomicFile file = new AtomicFile(Company.cache(context));
     try (InputStream input = file.openRead()) {
       JSONObject pack = new JSONObject(Catalog.read(input));
+      org.json.JSONArray rows = pack.getJSONObject("catalogue").getJSONArray("episodes");
+      for (int i = rows.length() - 1; i >= 0; i--)
+        if (rows.getJSONObject(i).getString("date").compareTo(Company.current.firstDate) < 0) rows.remove(i);
+      org.json.JSONArray videos = pack.getJSONObject("sources").getJSONObject("youtube").optJSONArray("videos");
+      if (videos != null) for (int i = videos.length() - 1; i >= 0; i--)
+        if (videos.getJSONObject(i).optString("date", Company.current.firstDate).compareTo(Company.current.firstDate) < 0) videos.remove(i);
       LibraryPack.validate(pack, Company.current);
       return pack;
     } catch (Exception ignored) {
@@ -28,7 +34,7 @@ final class RemoteLibrary {
     return new JSONObject()
         .put("schemaVersion", 1)
         .put("company", Company.current.id)
-        .put("revision", 1)
+        .put("revision", 1793232001L)
         .put(
             "catalogue",
             new JSONObject(
@@ -110,6 +116,7 @@ final class RemoteLibrary {
       JSONObject manifest = new JSONObject(new String(bytes, StandardCharsets.UTF_8));
       if (manifest.getInt("schemaVersion") != 1)
         throw new IOException("Unsupported source manifest");
+      if (!manifest.getJSONObject("companies").has(Company.current.id)) return success(context, now, 0, 0);
       JSONObject entry = manifest.getJSONObject("companies").getJSONObject(Company.current.id);
       String hash = entry.getString("sha256");
       int size = entry.getInt("bytes");
@@ -124,7 +131,8 @@ final class RemoteLibrary {
       bytes = download(entry.getString("url"), LibraryPack.MAX_BYTES, "", null);
       JSONObject incoming = LibraryPack.verified(bytes, size, hash, Company.current);
       JSONObject previous = cached(context);
-      if (previous == null) previous = bundled(context);
+      JSONObject seed = bundled(context);
+      previous = previous == null ? seed : LibraryPack.merge(previous, seed);
       if (incoming.getLong("revision") < previous.getLong("revision"))
         throw new IOException("Older source revision ignored");
       CatalogSync.progress(2, 3, "Checking broadcasts and preserving viewing history");
