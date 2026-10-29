@@ -20,3 +20,4 @@
 /.source-cache/
 __pycache__/
 *.pyc
+*.private.json

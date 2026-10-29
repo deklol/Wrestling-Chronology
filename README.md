@@ -20,6 +20,8 @@ A remote-friendly Fire TV app for watching full wrestling shows in chronological
 ![Company selector](docs/screenshots/companies.png)
 
 - Separate company libraries, colour schemes and artwork, including AEW.
+- Full episode pages with embedded and fullscreen playback, source selection, episode information and previous/next controls.
+- Shared community likes, views, comments and replies, plus community rankings on the homepage.
 - Year → All → Filter shows: select the programmes included in chronological autoplay.
 - Built-in streaming player for YouTube, Internet Archive and Dailymotion.
 - Optional 4:3-to-16:9 horizontal stretch, available in the player and global Settings.
