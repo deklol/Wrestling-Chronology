@@ -20,8 +20,8 @@ ROOT = Path(__file__).resolve().parents[1]
 MONTHS = {name.lower(): index for index, name in enumerate(calendar.month_name) if name}
 MONTHS.update({name.lower(): index for index, name in enumerate(calendar.month_abbr) if name})
 MONTHS["sept"] = 9
-LIMITS = {"aew": ("2019-01-01", "2028-12-31"), "wwe": ("1985-01-01", "2028-12-31"), "ecw": ("1995-01-01", "2005-12-31"),
-          "wcw": ("1985-01-01", "2001-03-26"), "tna": ("2002-01-01", "2028-12-31")}
+LIMITS = {"wwe": ("1995-01-01", "2005-12-31"), "ecw": ("1995-01-01", "2005-12-31"),
+          "wcw": ("1983-01-01", "2001-03-26"), "tna": ("2002-01-01", "2015-12-31")}
 CHANNELS = {"wwe": "UCJ5v_MCY6GNUBTO8-D3XoAg", "wcw": "UCbGG2hv4cWmIrBAIhGiCdSg",
             "ecw": "UCNSnSemXKDc9UEZ7m31wY9Q", "tna": "UCOp8wkVqdrWbFYHjDv946QQ"}
 
@@ -143,16 +143,8 @@ def add_record(library, company, when, show, title, source, description="", thum
 
 def programme(filename, hint=""):
     """Explicit programme words override collection hints; dates never imply a show."""
-    value = filename.replace('_', ' ').replace('.', ' ')
-    names = [(r'\bnxt[ ._-]*level[ ._-]*up\b', 'NXT Level Up'),
-             (r'\bnxt[ ._-]*uk\b', 'NXT UK'),
-             (r'\bnxt\b', 'NXT'),
-             (r'\b205[ ._-]*live\b', '205 Live'),
-             (r'\bdark[ ._-]*elevation\b', 'Dark: Elevation'),
-             (r'\bdynamite\b', 'Dynamite'), (r'\bcollision\b', 'Collision'),
-             (r'\brampage\b', 'Rampage'), (r'\bdark\b', 'Dark'),
-             (r'\bxplosion\b', 'Xplosion'),
-             (r'\b(?:thunder|rednuht)\b', 'Thunder'),
+    value = filename.replace('_', ' ')
+    names = [(r'\b(?:thunder|rednuht)\b', 'Thunder'),
              (r'\b(?:nitro|ortin)\b', 'Nitro'), (r'\bworld\s*wide\b', 'Worldwide'),
              (r'\bsaturday\s*night\b', 'Saturday Night'),
              (r'\bpower\s*hour\b', 'Power Hour'), (r'\bmain\s*event\b', 'Main Event'),
@@ -185,17 +177,7 @@ def scan_archive(library, company, config, metadata, events):
         if re.search(r"\b(?:partial|incomplete|inc|sample|highlights|clip|segment|recap|compilation|preview|review|full[ .-]+match|reliving[ .-]+the[ .-]+war)\b", filename.replace("_", " "), re.I):
             skipped.append(filename)
             continue
-        # Unreviewed files in mixed collections stay outside the published feed.
         override = config.get("overrides", {}).get(filename, {})
-        if not override and config.get("mappedOnly", False):
-            skipped.append(filename)
-            continue
-        if not override and config.get("requireIsoDates", False):
-            explicit_iso = re.search(r"(?<!\d)(?:19|20)\d{2}[ .-]\d{2}[ .-]\d{2}(?!\d)", filename)
-            extra = re.search(r"(?i)documentar|\bdvds?\b|best[ ._-]+of|pre[ ._-]*show|post[ ._-]*show|countdown|zero[ ._-]*hour|buy[ ._-]*in|promo|extras", filename)
-            if not explicit_iso or extra or programme(filename) != config.get("showHint"):
-                skipped.append(filename)
-                continue
         when = override.get("date") or broadcast_date(filename, config.get("year"), config.get("dateOrder", "MDY"))
         show = override.get('show') or programme(filename, config.get("showHint", ""))
         if not when or not show:

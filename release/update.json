@@ -1,7 +1,7 @@
 {
-  "versionCode": 4,
-  "versionName": "0.1.3",
-  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.3/Wrestling-Chronology.apk",
-  "sha256": "6176188216b80a27954db5137db7012198182ed34123f3f843df2afd59b4f585",
-  "notes": "Expanded wrestling libraries and alternative sources, AEW with episode artwork, show filters for chronological autoplay, and a centered company selector."
+  "versionCode": 2,
+  "versionName": "0.1.1",
+  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/latest/download/Wrestling-Chronology.apk",
+  "sha256": "93ad3df6cce017a7080f50b3f0dfa85bc6815247629bc3a510f4d765b764e00a",
+  "notes": "Company wording fixes, Continue Watching previews and Jan-Dec timeline shortcuts."
 }

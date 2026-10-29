@@ -1,5 +1,4 @@
 * text=auto
-*.json text eol=lf
 gradlew text eol=lf
 *.bat text eol=crlf
 *.png binary

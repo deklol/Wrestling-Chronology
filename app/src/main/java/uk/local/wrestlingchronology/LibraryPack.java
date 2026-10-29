@@ -9,7 +9,7 @@ import org.json.*;
 
 /** Data-only updates. Missing rows never mean delete; removals must be explicit. */
 final class LibraryPack {
-  static final int MAX_BYTES = 48 * 1024 * 1024;
+  static final int MAX_BYTES = 16 * 1024 * 1024;
 
   static String sha256(byte[] bytes) throws Exception {
     StringBuilder result = new StringBuilder();
@@ -141,16 +141,14 @@ final class LibraryPack {
     if (previous != null) {
       JSONArray old = previous.getJSONObject("catalogue").getJSONArray("episodes");
       for (int i = 0; i < old.length(); i++)
-        rows.put(old.getJSONObject(i).getString("date") + ":" + old.getJSONObject(i).getString("show"), old.getJSONObject(i));
+        rows.put(old.getJSONObject(i).getString("id"), old.getJSONObject(i));
     }
     JSONArray fresh = catalogue.getJSONArray("episodes");
     long now = System.currentTimeMillis();
     for (int i = 0; i < fresh.length(); i++) {
       JSONObject row = new JSONObject(fresh.getJSONObject(i).toString());
-      String identity = row.getString("date") + ":" + row.getString("show");
-      JSONObject old = rows.get(identity);
+      JSONObject old = rows.get(row.getString("id"));
       if (old != null) {
-        row.put("id", old.getString("id"));
         row.put("discoveredAt", old.optLong("discoveredAt"));
         LinkedHashMap<String, JSONObject> sources = new LinkedHashMap<>();
         for (JSONObject value : list(old.getJSONArray("sources")))
@@ -159,7 +157,7 @@ final class LibraryPack {
           sources.put(Catalog.sourceKey(value), value);
         row.put("sources", new JSONArray(sources.values()));
       } else row.put("discoveredAt", now);
-      rows.put(identity, row);
+      rows.put(row.getString("id"), row);
     }
     Set<String> retired = new HashSet<>();
     JSONArray removals = incoming.optJSONArray("retiredSources");
