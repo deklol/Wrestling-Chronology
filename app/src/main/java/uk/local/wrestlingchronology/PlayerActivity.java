@@ -32,6 +32,7 @@ public final class PlayerActivity extends Activity {
   CommunityViews communityViews;
   CommunityPanel discussion;
   ExoPlayer player;
+  boolean hidingPlayerControls;
   float playbackVolume = 1f, unmutedVolume = 1f;
   ImageButton volumeButton;
   SeekBar volumeSlider;
@@ -92,7 +93,15 @@ public final class PlayerActivity extends Activity {
     root.setBackgroundColor(Color.BLACK);
     setContentView(root);
     view = new PlayerView(this);
-    view.setControllerShowTimeoutMs(3500);
+    // One timer owns hiding, so losing a child control never removes the player
+    // itself from the remote's focus path.
+    view.setControllerShowTimeoutMs(0);
+    view.setId(View.generateViewId());
+    view.setFocusable(true);
+    view.setDescendantFocusability(ViewGroup.FOCUS_AFTER_DESCENDANTS);
+    view.setOnFocusChangeListener((focusedView, focused) -> {
+      if (focused && !hidingPlayerControls) focusPlayerControls();
+    });
     view.setControllerHideDuringAds(true);
     view.setControllerAutoShow(false);
     view.setKeepScreenOn(true);
@@ -362,7 +371,6 @@ public final class PlayerActivity extends Activity {
             .build(),
         true);
     view.setPlayer(player);
-    view.requestFocus();
     DefaultHttpDataSource.Factory http =
         new DefaultHttpDataSource.Factory()
             .setUserAgent(Resolver.USER_AGENT)
@@ -691,7 +699,12 @@ public final class PlayerActivity extends Activity {
   final Runnable hideControls =
       () -> {
         if (active && player != null && player.isPlaying()) {
-          view.hideController();
+          boolean hadPlayerFocus = view.hasFocus();
+          hidingPlayerControls = true;
+          androidx.media3.ui.PlayerControlView controller = view.findViewById(androidx.media3.ui.R.id.exo_controller);
+          controller.hideImmediately();
+          if (hadPlayerFocus) view.requestFocus();
+          hidingPlayerControls = false;
           top.setVisibility(View.GONE);
           controlsVisible = false;
         }
@@ -700,6 +713,13 @@ public final class PlayerActivity extends Activity {
   void scheduleHide() {
     handler.removeCallbacks(hideControls);
     if (player != null && player.isPlaying()) handler.postDelayed(hideControls, 3500);
+  }
+
+  void focusPlayerControls() {
+    view.showController();
+    View play = view.findViewById(androidx.media3.ui.R.id.exo_play_pause);
+    if (play != null && play.isShown()) play.requestFocus();
+    scheduleHide();
   }
 
   void applyPictureMode() {
@@ -744,6 +764,12 @@ public final class PlayerActivity extends Activity {
   public boolean dispatchKeyEvent(KeyEvent event) {
     int key = event.getKeyCode();
     boolean down = event.getAction() == KeyEvent.ACTION_DOWN;
+    boolean direction = key == KeyEvent.KEYCODE_DPAD_UP || key == KeyEvent.KEYCODE_DPAD_DOWN
+        || key == KeyEvent.KEYCODE_DPAD_LEFT || key == KeyEvent.KEYCODE_DPAD_RIGHT;
+    if (down && direction && view != null && view.hasFocus() && !controlsVisible) {
+      focusPlayerControls();
+      return true;
+    }
     if (key == KeyEvent.KEYCODE_BACK) {
       if (!down && event.getRepeatCount() == 0) onBackPressed();
       return true;
