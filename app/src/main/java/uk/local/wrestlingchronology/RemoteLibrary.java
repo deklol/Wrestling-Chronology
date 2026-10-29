@@ -13,10 +13,24 @@ final class RemoteLibrary {
   static final String DEFAULT_FEED =
       "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/manifest.json";
 
+  static final long BUNDLED_REVISION = 1793295550L;
+
+  private static JSONObject bundledRevisions;
+  static synchronized long bundledRevision(Context context) throws Exception {
+    if (bundledRevisions == null) bundledRevisions = JsonStreams.read(context.getAssets().open("library-revisions.json"));
+    return bundledRevisions.getLong(Company.current.id);
+  }
+
   static JSONObject cached(Context context) {
     AtomicFile file = new AtomicFile(Company.cache(context));
     try (InputStream input = file.openRead()) {
-      JSONObject pack = new JSONObject(Catalog.read(input));
+      JSONObject pack = JsonStreams.read(input);
+      org.json.JSONArray rows = pack.getJSONObject("catalogue").getJSONArray("episodes");
+      for (int i = rows.length() - 1; i >= 0; i--)
+        if (rows.getJSONObject(i).getString("date").compareTo(Company.current.firstDate) < 0) rows.remove(i);
+      org.json.JSONArray videos = pack.getJSONObject("sources").getJSONObject("youtube").optJSONArray("videos");
+      if (videos != null) for (int i = videos.length() - 1; i >= 0; i--)
+        if (videos.getJSONObject(i).optString("date", Company.current.firstDate).compareTo(Company.current.firstDate) < 0) videos.remove(i);
       LibraryPack.validate(pack, Company.current);
       return pack;
     } catch (Exception ignored) {
@@ -24,20 +38,28 @@ final class RemoteLibrary {
     }
   }
 
+  static void saveCached(Context context, JSONObject pack) throws Exception {
+    AtomicFile file = new AtomicFile(Company.cache(context));
+    FileOutputStream output = null;
+    try {
+      output = file.startWrite(); JsonStreams.write(output, pack); file.finishWrite(output);
+    } catch (Exception error) {
+      if (output != null) file.failWrite(output);
+      throw error;
+    }
+  }
+
   static JSONObject bundled(Context context) throws Exception {
     return new JSONObject()
         .put("schemaVersion", 1)
         .put("company", Company.current.id)
-        .put("revision", 1)
+        .put("revision", bundledRevision(context))
         .put(
             "catalogue",
-            new JSONObject(
-                Catalog.read(
-                    context.getAssets().open("libraries/" + Company.current.id + ".json"))))
+            JsonStreams.read(context.getAssets().open("libraries/" + Company.current.id + ".json")))
         .put(
             "sources",
-            new JSONObject(
-                Catalog.read(context.getAssets().open("sources/" + Company.current.id + ".json"))));
+            JsonStreams.read(context.getAssets().open("sources/" + Company.current.id + ".json")));
   }
 
   static byte[] download(String url, int limit, String etag, String[] response) throws Exception {
@@ -97,7 +119,7 @@ final class RemoteLibrary {
           context.getSharedPreferences("application", 0).getString("source_feed", DEFAULT_FEED);
       CatalogSync.progress(0, 3, "Checking GitHub source updates · " + Company.current.name);
       String[] headers = new String[1];
-      JSONObject saved = cached(context);
+      JSONObject saved = Catalog.loadedPack != null ? Catalog.loadedPack : cached(context);
       String oldTag =
           saved != null && preferences.getString("manifest_url", "").equals(feed)
               ? preferences.getString("manifest_etag", "")
@@ -110,6 +132,7 @@ final class RemoteLibrary {
       JSONObject manifest = new JSONObject(new String(bytes, StandardCharsets.UTF_8));
       if (manifest.getInt("schemaVersion") != 1)
         throw new IOException("Unsupported source manifest");
+      if (!manifest.getJSONObject("companies").has(Company.current.id)) return success(context, now, 0, 0);
       JSONObject entry = manifest.getJSONObject("companies").getJSONObject(Company.current.id);
       String hash = entry.getString("sha256");
       int size = entry.getInt("bytes");
@@ -122,9 +145,12 @@ final class RemoteLibrary {
       }
       CatalogSync.progress(1, 3, "Downloading " + Company.current.name + " source pack");
       bytes = download(entry.getString("url"), LibraryPack.MAX_BYTES, "", null);
-      JSONObject incoming = LibraryPack.verified(bytes, size, hash, Company.current);
-      JSONObject previous = cached(context);
-      if (previous == null) previous = bundled(context);
+      if (bytes.length != size || !LibraryPack.sha256(bytes).equals(hash))
+        throw new IOException("Source update checksum mismatch; current library kept");
+      JSONObject incoming = JsonStreams.read(new ByteArrayInputStream(bytes));
+      bytes = null;
+      LibraryPack.validate(incoming, Company.current);
+      JSONObject previous = saved != null ? saved : bundled(context);
       if (incoming.getLong("revision") < previous.getLong("revision"))
         throw new IOException("Older source revision ignored");
       CatalogSync.progress(2, 3, "Checking broadcasts and preserving viewing history");
@@ -140,13 +166,14 @@ final class RemoteLibrary {
       FileOutputStream stream = null;
       try {
         stream = file.startWrite();
-        stream.write(merged.toString().getBytes(StandardCharsets.UTF_8));
+        JsonStreams.write(stream, merged);
         file.finishWrite(stream);
       } catch (Exception error) {
         if (stream != null) file.failWrite(stream);
         throw error;
       }
       Catalog.replace(data);
+      Catalog.loadedPack = merged;
       int added = Math.max(0, Catalog.episodes.size() - oldCount);
       remember(preferences, feed, headers[0], hash);
       CatalogSync.checked("GitHub · " + Company.current.name, added, false);

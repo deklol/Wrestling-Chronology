@@ -6,6 +6,7 @@ import org.json.*;
 
 /** Repair source placement from explicit file evidence, never from weekday guesses. */
 final class ArchiveIdentity {
+  static final int VERSION = 1;
   static Map<String, String> configuredMoves(JSONObject data) throws Exception {
     Map<String, String> result = new HashMap<>();
     JSONObject configured = data.optJSONObject("historyMigrations");
@@ -68,6 +69,12 @@ final class ArchiveIdentity {
       JSONObject row = rows.getJSONObject(i);
       indexed.put(row.getString("date") + ":" + row.getString("show"), row);
     }
+    JSONArray ppvDates = new JSONArray();
+    for (int i = 0; i < rows.length(); i++)
+      if (rows.getJSONObject(i).optString("show").equals("PPV")) ppvDates.put(rows.getJSONObject(i));
+    JSONObject dateReference = new JSONObject().put("episodes", ppvDates);
+    if (data.has("eventCalendar")) dateReference.put("eventCalendar", data.get("eventCalendar"));
+    if (data.has("archiveDateOrders")) dateReference.put("archiveDateOrders", data.get("archiveDateOrders"));
     int originalCount = rows.length();
     for (int i = 0; i < originalCount; i++) {
       JSONObject row = rows.getJSONObject(i);
@@ -79,7 +86,7 @@ final class ArchiveIdentity {
         String name = filename(source), show = ArchiveSync.family(name);
         if (show == null) continue;
         String date =
-            ArchiveSync.fileDate(name, data, ArchiveSync.collection(source.optString("url")));
+            ArchiveSync.fileDate(name, dateReference, ArchiveSync.collection(source.optString("url")));
         if (date == null) date = row.getString("date");
         if (show.equals(row.optString("show")) && date.equals(row.optString("date"))) continue;
         String key = date + ":" + show;

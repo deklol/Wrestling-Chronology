@@ -34,6 +34,31 @@ final class Art {
     return "";
   }
 
+  static final java.util.Map<String, Bitmap> showCards = new java.util.HashMap<>();
+  static void loadEpisode(ImageView view, Catalog.Episode item, boolean portrait) {
+    String url = episodeUrl(item, portrait);
+    load(view, url);
+    if (Company.current != Company.AEW || cache.get(url) != null) return;
+    Bitmap card = showCards.get(item.show);
+    if (card == null) {
+      card = Bitmap.createBitmap(800, 450, Bitmap.Config.ARGB_8888);
+      Canvas canvas = new Canvas(card);
+      Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+      paint.setShader(new LinearGradient(0, 0, 800, 450, 0xff101010, 0xff353535, Shader.TileMode.CLAMP));
+      canvas.drawRect(0, 0, 800, 450, paint); paint.setShader(null);
+      paint.setColor(0xffd7b65d);canvas.drawRect(50, 375, 750, 380, paint);
+      Bitmap logo = BitmapFactory.decodeResource(view.getResources(), R.drawable.logo_aew);
+      if (logo != null) { canvas.drawBitmap(logo, null, new Rect(230, 70, 570, 195), paint); }
+      paint.setColor(Color.WHITE); paint.setTextAlign(Paint.Align.CENTER);
+      paint.setTypeface(Typeface.create("sans-serif-condensed", Typeface.BOLD));
+      paint.setTextSize(item.show.length() > 20 ? 42 : 56);
+      canvas.drawText(item.show.equals("PPV") ? "PAY-PER-VIEW" : item.show.toUpperCase(java.util.Locale.UK), 400, 300, paint);
+      showCards.put(item.show, card);
+    }
+    view.clearColorFilter();view.setPadding(0,0,0,0);
+    view.setScaleType(ImageView.ScaleType.CENTER_CROP);view.setImageBitmap(card);
+  }
+
   static boolean usable(String url) {
     // The add-on's explicit missing-image URLs contain the magnifying-glass graphic.
     // Archive item thumbnails are real artwork and must remain eligible.

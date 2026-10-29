@@ -8,6 +8,35 @@ import org.json.*;
 import org.junit.*;
 
 public class LibraryPackTest {
+
+  @Test public void shortSourcesStayInTheCacheWhenHiddenFromTheRuntimeView() throws Exception {
+    Company.current = Company.WWE;
+    JSONObject source = new JSONObject().put("type","archive").put("url","https://archive.org/download/example/full.mp4").put("duration",1);
+    JSONObject row = new JSONObject().put("id","example").put("date","2026-01-05").put("year",2026).put("show","Raw").put("title","Raw").put("sources",new JSONArray().put(source));
+    JSONObject data = new JSONObject().put("episodes",new JSONArray().put(row));
+    Catalog.replace(data);
+    assertTrue(Catalog.episodes.isEmpty());
+    assertEquals(1, data.getJSONArray("episodes").getJSONObject(0).getJSONArray("sources").length());
+  }
+
+
+  @Test
+  public void mergeOwnsContainersWithoutDuplicatingSourceMetadata() throws Exception {
+    JSONObject source = new JSONObject().put("type", "archive").put("url", "https://archive.org/download/example/full.mp4");
+    JSONObject row = new JSONObject().put("id", "wwe:2026-01-05:raw").put("date", "2026-01-05")
+        .put("show", "Raw").put("sources", new JSONArray().put(source));
+    JSONObject incoming = new JSONObject().put("catalogue", new JSONObject().put("episodes", new JSONArray().put(row)))
+        .put("sources", new JSONObject().put("archive", new JSONObject()).put("youtube", new JSONObject()));
+    JSONObject merged = LibraryPack.merge(null, incoming);
+    JSONObject result = merged.getJSONObject("catalogue").getJSONArray("episodes").getJSONObject(0);
+    assertNotSame(incoming, merged);
+    assertNotSame(incoming.getJSONObject("catalogue"), merged.getJSONObject("catalogue"));
+    assertNotSame(row, result);
+    assertNotSame(row.getJSONArray("sources"), result.getJSONArray("sources"));
+    assertSame(source, result.getJSONArray("sources").getJSONObject(0));
+    assertFalse(row.has("discoveredAt"));
+  }
+
   @Test
   public void downloadedPackMustMatchHashAndByteCountBeforeParsing() throws Exception {
     JSONObject pack = seed(Company.WWE);

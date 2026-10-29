@@ -1,0 +1,5168 @@
+{
+  "schemaVersion": 1,
+  "youtube": {
+    "enabled": false,
+    "channelId": "",
+    "videos": [],
+    "playlists": []
+  },
+  "archive": {
+    "enabled": true,
+    "collections": [
+      {
+        "id": "aewcollision2026",
+        "name": "aewcollision2026",
+        "enabled": true,
+        "dateOrder": "MDY",
+        "overrides": {
+          "2026/AEW.Collision.2026.02.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-02-28",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2026/AEW.Collision.2026.03.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-03-14",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2026/AEW.Collision.2026.03.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-03-28",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2026/AEW.Collision.2026.04.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-04-02",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2026/AEW.Collision.2026.04.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-04-11",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2026/AEW.Collision.2026.04.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-04-16",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2026/AEW.Collision.2026.05.20.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-05-20",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2026/AEW.Collision.2026.05.27.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-05-27",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2026/AEW.Collision.2026.05.30.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-05-30",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2026/AEW.Collision.2026.06.06.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-06-06",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2926/AEW.Collision.2026.02.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-02-28",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2926/AEW.Collision.2026.03.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-03-14",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2926/AEW.Collision.2026.03.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-03-28",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2926/AEW.Collision.2026.04.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-04-02",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.04.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-04-25",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.05.02.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-05-02",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.05.09.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-05-09",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.05.16.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-05-16",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.06.06.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-06-06",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.06.13.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-06-13",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.06.20.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-06-20",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.06.27.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-06-27",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.07.11.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-07-11",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.07.18.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-07-18",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.07.25.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-07-25",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.07.30.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-07-30",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.08.08.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-08-08",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.08.22.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-08-22",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.08.29.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-08-29",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.09.05.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-09-05",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.09.12.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-09-12",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.09.19.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-09-19",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW.Collision.2026.09.23.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-09-23",
+            "show": "Collision",
+            "title": "Collision"
+          }
+        },
+        "showHint": "Collision",
+        "requireIsoDates": true
+      },
+      {
+        "id": "aewdynamite01",
+        "name": "aewdynamite01",
+        "enabled": true,
+        "dateOrder": "MDY",
+        "overrides": {
+          "2019/10.02.19 Dynamite.mp4": {
+            "date": "2019-10-02",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2019/10.09.19 Dynamite.mp4": {
+            "date": "2019-10-09",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2019/10.16.19 Dynamite.mp4": {
+            "date": "2019-10-16",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2019/10.23.19 Dynamite.mp4": {
+            "date": "2019-10-23",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2019/10.30.19 Dynamite.mp4": {
+            "date": "2019-10-30",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2019/11.06.19 Dynamite.mp4": {
+            "date": "2019-11-06",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2019/11.13.19 Dynamite.mp4": {
+            "date": "2019-11-13",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2019/11.20.19 Dynamite.mp4": {
+            "date": "2019-11-20",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2019/11.27.19 Dynamite.mp4": {
+            "date": "2019-11-27",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2019/12.04.19 Dynamite.mp4": {
+            "date": "2019-12-04",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2019/12.11.19 Dynamite.mp4": {
+            "date": "2019-12-11",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2019/12.18.19 Dynamite.mp4": {
+            "date": "2019-12-18",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/01.01.20 Dynamite - Homecoming Edition.mp4": {
+            "date": "2020-01-01",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/01.08.20 Dynamite - Anniversary Edition.mp4": {
+            "date": "2020-01-08",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/01.15.20 Dynamite - Bash at the Beach.mp4": {
+            "date": "2020-01-15",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/01.22.20 Dynamite - Bash at the Beach.mp4": {
+            "date": "2020-01-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/01.29.20 Dynamite.mp4": {
+            "date": "2020-01-29",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/02.05.20 Dynamite.mp4": {
+            "date": "2020-02-05",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/02.12.20 Dynamite.mp4": {
+            "date": "2020-02-12",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/02.19.20 Dynamite.mp4": {
+            "date": "2020-02-19",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/02.26.20 Dynamite.mp4": {
+            "date": "2020-02-26",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/03.04.20 Dynamite.mp4": {
+            "date": "2020-03-04",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/03.11.20 Dynamite.mp4": {
+            "date": "2020-03-11",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/03.18.20 Dynamite.mp4": {
+            "date": "2020-03-18",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/03.25.20 Dynamite.mp4": {
+            "date": "2020-03-25",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/04.01.20 Dynamite.mp4": {
+            "date": "2020-04-01",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/04.08.20 Dynamite.mp4": {
+            "date": "2020-04-08",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/04.15.20 Dynamite.mp4": {
+            "date": "2020-04-15",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/04.22.20 Dynamite.mp4": {
+            "date": "2020-04-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/04.29.20 Dynamite.mp4": {
+            "date": "2020-04-29",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/05.06.20 Dynamite.mp4": {
+            "date": "2020-05-06",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/05.13.20 Dynamite.mp4": {
+            "date": "2020-05-13",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/05.20.20 Dynamite.mp4": {
+            "date": "2020-05-20",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/05.27.20 Dynamite.mp4": {
+            "date": "2020-05-27",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/06.03.20 Dynamite.mp4": {
+            "date": "2020-06-03",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/06.10.20 Dynamite.mp4": {
+            "date": "2020-06-10",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/06.17.20 Dynamite.mp4": {
+            "date": "2020-06-17",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/06.24.20 Dynamite.mp4": {
+            "date": "2020-06-24",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/07.15.20 Dynamite - Fight for the Fallen.mp4": {
+            "date": "2020-07-15",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/07.22.20 Dynamite.mp4": {
+            "date": "2020-07-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/07.29.20 Dynamite.mp4": {
+            "date": "2020-07-29",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/08.05.20 Dynamite.mp4": {
+            "date": "2020-08-05",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/08.12.20 Dynamite - Tag Team Appreciation Night.mp4": {
+            "date": "2020-08-12",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/08.22.20 Saturday Night Dynamite.mp4": {
+            "date": "2020-08-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/08.27.20 Thursday Night Dynamite.mp4": {
+            "date": "2020-08-27",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/09.02.20 Dynamite.mp4": {
+            "date": "2020-09-02",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/09.09.20 Dynamite.mp4": {
+            "date": "2020-09-09",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/09.16.20 Dynamite.mp4": {
+            "date": "2020-09-16",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/09.22.20 Late Night Dynamite.mp4": {
+            "date": "2020-09-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/09.23.20 Dynamite.mp4": {
+            "date": "2020-09-23",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/09.30.20 Dynamite.mp4": {
+            "date": "2020-09-30",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/10.07.20 Dynamite - Chris Jericho's 30th Anniversary Celebration.mp4": {
+            "date": "2020-10-07",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/10.14.20 Dynamite - Anniversary Show.mp4": {
+            "date": "2020-10-14",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/10.21.20 Dynamite.mp4": {
+            "date": "2020-10-21",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/10.28.20 Dynamite.mp4": {
+            "date": "2020-10-28",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/11.04.20 Dynamite.mp4": {
+            "date": "2020-11-04",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/11.11.20 Dynamite.mp4": {
+            "date": "2020-11-11",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/11.18.20 Dynamite.mp4": {
+            "date": "2020-11-18",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/11.25.20 Dynamite.mp4": {
+            "date": "2020-11-25",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/12.02.20 Dynamite - Winter is Coming.mp4": {
+            "date": "2020-12-02",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/12.09.20 Dynamite.mp4": {
+            "date": "2020-12-09",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/12.16.20 Dynamite.mp4": {
+            "date": "2020-12-16",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/12.23.20 Dynamite Holiday Bash.mp4": {
+            "date": "2020-12-23",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2020/12.30.20 Dynamite - Brodie Lee Celebration of Life.mp4": {
+            "date": "2020-12-30",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.01.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-01-06",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.01.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-01-13",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.01.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-01-20",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.01.20.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-01-20",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.01.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-01-27",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.01.27.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-01-27",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.02.10.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-02-10",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.02.17.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-02-17",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.02.24.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-02-24",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.03.03.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-03-03",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.03.10.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-03-10",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.03.17.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-03-17",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.03.24.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-03-24",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.03.31.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-03-31",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.04.07.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-04-07",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.04.14.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-04-14",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.04.21.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-04-21",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.04.28.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-04-28",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.05.05.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-05-05",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.05.12.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-05-12",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.05.19.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-05-19",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.05.28.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-05-28",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.06.04.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-06-04",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.06.11.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-06-11",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.06.18.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-06-18",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.06.26.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-06-26",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.06.30.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-06-30",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.07.07.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-07-07",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.07.14.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-07-14",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.07.21.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-07-21",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.07.28.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-07-28",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.08.04.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-08-04",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.08.11.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-08-11",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.08.18.TNT.REPACK.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-08-18",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.08.25.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-08-25",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.09.01.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-09-01",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.09.08.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-09-08",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.09.15.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-09-15",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.09.22.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-09-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.09.29.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-09-29",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.10.06.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-10-06",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.10.16.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-10-16",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.10.23.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-10-23",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.10.27.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-10-27",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.11.03.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-11-03",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.11.10.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-11-10",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.11.17.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-11-17",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.11.24.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-11-24",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.12.01.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-12-01",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.12.08.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-12-08",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.12.15.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-12-15",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.12.22.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-12-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2021/AEW.Dynamite.2021.12.29.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-12-29",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.01.05.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-01-05",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.01.12.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-01-12",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.01.19.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-01-19",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.01.26.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-01-26",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.02.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-02-02",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.02.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-02-09",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.02.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-02-16",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.02.23.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-02-23",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.03.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-03-02",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.03.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-03-09",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.03.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-03-16",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.03.23.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-03-23",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.03.30.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-03-30",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.04.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-04-06",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.04.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-04-13",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.04.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-04-20",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.04.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-04-27",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.05.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-05-04",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.05.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-05-11",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.05.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-05-18",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.05.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-05-25",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.06.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-06-01",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.06.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-06-08",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.06.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-06-15",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.06.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-06-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.06.29.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-06-29",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.07.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-07-06",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.07.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-07-13",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.07.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-07-20",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.07.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-07-27",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.08.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-08-03",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.08.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-08-10",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.08.17.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-08-17",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.08.24.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-08-24",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.08.31.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-08-31",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.09.07.REPACK.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-09-07",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.09.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-09-14",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.09.21.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-09-21",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.09.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-09-28",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.10.05.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-10-05",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.10.12.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-10-12",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.10.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-10-18",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.10.26.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-10-26",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.11.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-11-02",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.11.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-11-09",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.11.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-11-16",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.11.23.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-11-23",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.11.30.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-11-30",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.12.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-12-07",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.12.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-12-14",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.12.21.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-12-21",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2022/AEW.Dynamite.2022.12.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-12-28",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.01.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-01-04",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.01.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-01-11",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.01.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-01-18",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.01.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-01-25",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.02.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-02-01",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.02.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-02-08",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.02.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-02-15",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.02.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-02-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.03.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-03-01",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.03.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-03-08",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.03.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-03-15",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.03.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-03-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.03.29.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-03-29",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.04.05.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-04-05",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.04.12.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-04-12",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.04.19.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-04-19",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.04.26.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-04-26",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.05.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-05-03",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.05.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-05-10",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.05.17.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-05-17",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.05.24.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-05-24",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.06.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-06-07",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.06.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-06-14",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.06.21.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-06-21",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.06.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-06-28",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.07.05.FITE.HEVC-regs.mp4": {
+            "date": "2023-07-05",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.07.12.1080p.FITE.HEVC-regs.mp4": {
+            "date": "2023-07-12",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.07.19.1080p.FITE.HEVC-regs.mp4": {
+            "date": "2023-07-19",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.07.26.1080p.FITE.HEVC-regs.mp4": {
+            "date": "2023-07-26",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.07.26.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-07-26",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.08.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-08-02",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.08.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-08-09",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.08.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-08-16",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.08.23.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-08-23",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.08.30.1080p.FITE.HEVC-regs.mp4": {
+            "date": "2023-08-30",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.09.06.1080p.FITE.AV1-regs.mp4": {
+            "date": "2023-09-06",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.09.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-09-13",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.09.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-09-20",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.09.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-09-27",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.10.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-10-04",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.10.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-10-10",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.10.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-10-18",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.10.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-10-25",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.11.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-11-01",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.11.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-11-08",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.11.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-11-15",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.11.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-11-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.11.29.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-11-29",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.12.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-12-06",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.12.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-12-13",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.12.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-12-20",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2023/AEW.Dynamite.2023.12.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-12-27",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.01.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-01-03",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.01.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-01-10",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.01.17.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-01-17",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.01.24.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-01-24",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.02.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-02-07",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.02.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-02-14",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.02.21.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-02-21",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.02.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-02-28",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.03.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-03-06",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.03.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-03-13",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.03.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-03-20",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.03.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-03-27",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.04.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-04-03",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.04.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-04-10",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.04.17.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-04-17",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.04.24.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-04-24",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.05.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-05-01",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.05.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-05-08",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.05.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-05-15",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.05.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-05-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.05.29.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-05-29",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.06.05.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-06-05",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.06.12.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-06-12",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.06.19.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-06-19",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.06.26.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-06-26",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.07.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-07-03",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.07.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-07-10",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.07.17.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-07-17",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.07.24.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-07-24",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.07.31.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-07-31",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.08.07.REPACK.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-08-07",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.08.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-08-14",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.08.21.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-08-21",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.09.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-09-04",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.09.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-09-11",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.09.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-09-18",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.09.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-09-25",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.10.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-10-02",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.10.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-10-08",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.10.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-10-16",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.10.23.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-10-23",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.10.30.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-10-30",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.11.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-11-06",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.11.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-11-13",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.11.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-11-20",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.11.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-11-27",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.12.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-12-04",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.12.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-12-11",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.12.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-12-18",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2024/AEW.Dynamite.2024.12.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-12-25",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          }
+        },
+        "showHint": "Dynamite",
+        "requireIsoDates": true
+      },
+      {
+        "id": "aewdynamite02",
+        "name": "aewdynamite02",
+        "enabled": true,
+        "dateOrder": "MDY",
+        "overrides": {
+          "2025/AEW.Dynamite.2025.01.01.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-01-01",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.01.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-01-08",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.01.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-01-15",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.01.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-01-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.01.29.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-01-29",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.02.05.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-02-05",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.02.12.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-02-12",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.02.19.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-02-19",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.02.26.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-02-26",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.03.05.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-03-05",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.03.12.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-03-12",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.03.19.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-03-19",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.03.26.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-03-26",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.04.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-04-02",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.04.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-04-09",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.04.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-04-16",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.04.23.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-04-23",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.04.30.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-04-30",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.05.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-05-07",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.05.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-05-14",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.05.21.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-05-21",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.05.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-05-28",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.06.04.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-06-04",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.06.11.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-06-11",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.06.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-06-18",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.06.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-06-25",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.07.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-07-02",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.07.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-07-09",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.07.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-07-16",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.07.23.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-07-23",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.07.30.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-07-30",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.08.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-08-06",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.08.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-08-13",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.08.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-08-20",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.08.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-08-27",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.09.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-09-03",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.09.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-09-10",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.09.17.September.to.Remember.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-09-17",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.09.24.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-09-24",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.10.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-10-01",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.10.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-10-07",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.10.15.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-10-15",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.10.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-10-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.10.29.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-10-29",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.11.12.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-11-12",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.11.19.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-11-19",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.11.26.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-11-26",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.12.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-12-03",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.12.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-12-10",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.12.17.Repack.1080P.Web.H264-Heel.mp4": {
+            "date": "2025-12-17",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.12.24.1080P.Web.H264-Heel.mp4": {
+            "date": "2025-12-24",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.2025.12.31.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-12-31",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2025/AEW.Dynamite.Collision.3hr.Special.2025.10.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-10-15",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2025/AEW.Dynamite.Collision.3hr.Special.2025.11.19.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-11-19",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "2026/AEW.Dynamite.2026.01.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-01-07",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.01.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-01-14",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.01.21.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-01-21",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.01.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-01-28",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.02.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-02-04",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.02.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-02-11",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.02.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-02-18",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.02.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-02-25",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.03.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-03-04",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.03.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-03-11",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.03.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-03-25",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.04.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-04-01",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.04.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-04-08",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.04.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-04-15",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2021.02.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-02-03",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2024.08.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-08-28",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          }
+        },
+        "mappedOnly": true
+      },
+      {
+        "id": "aewdynamite2026",
+        "name": "aewdynamite2026",
+        "enabled": true,
+        "dateOrder": "MDY",
+        "overrides": {
+          "2026/AEW.Dynamite.2026.05.20.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-05-20",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.05.27.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-05-27",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "2026/AEW.Dynamite.2026.06.03.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-06-03",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.04.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-04-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.04.29.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-04-29",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.05.06.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-05-06",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.05.13.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-05-13",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.06.10.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-06-10",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.06.17.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-06-17",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.06.24.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-06-24",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.07.01.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-07-01",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.07.08.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-07-08",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.07.15.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-07-15",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.07.22.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-07-22",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.07.29.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-07-29",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.08.05.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-08-05",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.08.19.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-08-19",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.08.26.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-08-26",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.09.02.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-09-02",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.09.09.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-09-09",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.09.16.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-09-16",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.09.23.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-09-23",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "AEW.Dynamite.2026.09.30.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-09-30",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          }
+        },
+        "showHint": "Dynamite",
+        "requireIsoDates": true
+      },
+      {
+        "id": "aewppv",
+        "name": "aewppv",
+        "enabled": true,
+        "dateOrder": "MDY",
+        "overrides": {
+          "2026/AEW Dynasty 2026/AEW Dynasty 2026 PPV MULTi MyAEW 1080p x264-GITA.mp4": {
+            "date": "2026-04-12",
+            "show": "PPV",
+            "title": "Dynasty"
+          },
+          "2026/AEW Forbidden Door 2026/AEW Forbidden Door 2026 PPV MULTi AMZN 1080p x264-GITA.mp4": {
+            "date": "2026-06-28",
+            "show": "PPV",
+            "title": "Forbidden Door"
+          },
+          "2026/AEW.Forbidden.Door.2026.1080p.WEBRip.H264-Star.mp4": {
+            "date": "2026-06-28",
+            "show": "PPV",
+            "title": "Forbidden Door"
+          }
+        },
+        "mappedOnly": true
+      },
+      {
+        "id": "aewppv2026",
+        "name": "aewppv2026",
+        "enabled": true,
+        "dateOrder": "MDY",
+        "overrides": {
+          "2026/AEW Double or Nothing 2026/AEW.Double.Or.Nothing.2026.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-05-24",
+            "show": "PPV",
+            "title": "Double or Nothing"
+          },
+          "2026/AEW Revolution 2026/AEW.Revolution.2026.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-03-15",
+            "show": "PPV",
+            "title": "Revolution"
+          },
+          "AEW All In 2026/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT.mp4": {
+            "date": "2026-08-30",
+            "show": "PPV",
+            "title": "All In"
+          },
+          "AEW All Out 2026/AEW.All.Out.2026.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-09-26",
+            "show": "PPV",
+            "title": "All Out"
+          },
+          "MyAEW.Darby.Allins.Journey.to.the.AEW.World.Championship.1080p.WEB.h264-SpaZe.mp4": {
+            "date": "2026-08-30",
+            "show": "PPV",
+            "title": "All In"
+          }
+        },
+        "mappedOnly": true
+      },
+      {
+        "id": "aewshows01",
+        "name": "aewshows01",
+        "enabled": true,
+        "dateOrder": "MDY",
+        "overrides": {
+          "AEW Battle of the Belts/AEW.Battle.Of.The.Belts.2022.01.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-01-08",
+            "show": "Battle of the Belts",
+            "title": "Battle of the Belts"
+          },
+          "AEW Battle of the Belts/AEW.Battle.Of.The.Belts.II.2022.04.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-04-16",
+            "show": "Battle of the Belts",
+            "title": "Battle of the Belts"
+          },
+          "AEW Battle of the Belts/AEW.Battle.Of.The.Belts.III.2022.08.06.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-08-06",
+            "show": "Battle of the Belts",
+            "title": "Battle of the Belts"
+          },
+          "AEW Battle of the Belts/AEW.Battle.Of.The.Belts.IV.2022.10.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-10-07",
+            "show": "Battle of the Belts",
+            "title": "Battle of the Belts"
+          },
+          "AEW Battle of the Belts/AEW.Battle.Of.The.Belts.IX.2024.01.13.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-01-13",
+            "show": "Battle of the Belts",
+            "title": "Battle of the Belts"
+          },
+          "AEW Battle of the Belts/AEW.Battle.Of.The.Belts.V.2023.01.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-01-06",
+            "show": "Battle of the Belts",
+            "title": "Battle of the Belts"
+          },
+          "AEW Battle of the Belts/AEW.Battle.Of.The.Belts.VI.2023.04.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-04-07",
+            "show": "Battle of the Belts",
+            "title": "Battle of the Belts"
+          },
+          "AEW Battle of the Belts/AEW.Battle.Of.The.Belts.VII.2023.07.15.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-07-15",
+            "show": "Battle of the Belts",
+            "title": "Battle of the Belts"
+          },
+          "AEW Battle of the Belts/AEW.Battle.Of.The.Belts.VIII.2023.10.21.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-10-21",
+            "show": "Battle of the Belts",
+            "title": "Battle of the Belts"
+          },
+          "AEW Battle of the Belts/AEW.Battle.Of.The.Belts.X.2024.04.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-04-13",
+            "show": "Battle of the Belts",
+            "title": "Battle of the Belts"
+          },
+          "AEW Battle of the Belts/AEW.Battle.Of.The.Belts.XI.2024.07.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-07-27",
+            "show": "Battle of the Belts",
+            "title": "Battle of the Belts"
+          },
+          "AEW Battle of the Belts/AEW.Battle.Of.The.Belts.XII.2024.10.19.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-10-19",
+            "show": "Battle of the Belts",
+            "title": "Battle of the Belts"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.06.17.1080p.WEB.h265-HEEL.mp4": {
+            "date": "2023-06-17",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.06.24.1080p.WEB.h265-HEEL.mp4": {
+            "date": "2023-06-24",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.07.01.TNT.1080p.HEVC-regs.mp4": {
+            "date": "2023-07-01",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.07.08.1080p.WEB.h265-HEEL.mp4": {
+            "date": "2023-07-08",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.07.15.1080p.FITE.HEVC-regs.mp4": {
+            "date": "2023-07-15",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.07.22.1080p.WEB.h265-HEEL.mp4": {
+            "date": "2023-07-22",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.07.29.1080p.FITE.HEVC-regs.mp4": {
+            "date": "2023-07-29",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.08.05.1080p.WEB.h265-HEEL.mp4": {
+            "date": "2023-08-05",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.08.12.1080p.WEB.h265-HEEL.mp4": {
+            "date": "2023-08-12",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.08.19.1080p.WEB.h265-HEEL.mp4": {
+            "date": "2023-08-19",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.08.26.1080p.FITE.HEVC-regs.mp4": {
+            "date": "2023-08-26",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.09.02.1080p.FITE.HEVC-regs.mp4": {
+            "date": "2023-09-02",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.09.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-09-09",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.09.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-09-16",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.09.23.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-09-23",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.09.30.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-09-30",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.10.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-10-07",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.10.14.TNT.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-10-14",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.10.21.1080p.HDTV.x264-NWCHD.mp4": {
+            "date": "2023-10-21",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.10.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-10-28",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.11.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-11-04",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.11.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-11-11",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.11.17.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-11-17",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.11.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-11-25",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.12.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-12-02",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.12.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-12-09",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.12.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-12-16",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2023/AEW.Collision.2023.12.23.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-12-23",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.01.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-01-02",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.01.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-01-06",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.01.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-01-13",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.01.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-01-20",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.01.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-01-27",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.02.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-02-03",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.02.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-02-10",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.02.24.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-02-24",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.03.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-03-02",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.03.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-03-09",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.03.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-03-16",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.03.30.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-03-30",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.04.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-04-06",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.04.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-04-13",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.04.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-04-20",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.04.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-04-27",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.05.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-05-11",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.05.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-05-18",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.05.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-05-25",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.06.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-06-01",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.06.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-06-08",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.06.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-06-15",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.06.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-06-22",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.06.29.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-06-29",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.07.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-07-06",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.07.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-07-13",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.07.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-07-20",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.07.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-07-27",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.08.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-08-03",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.08.17.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-08-17",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.08.17.REPACK.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-08-17",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.08.24.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-08-24",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.08.31.1080p.WEB.h265-HEEL.mp4": {
+            "date": "2024-08-31",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.09.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-09-06",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.09.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-09-14",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.09.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-09-28",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.10.05.REPACK.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-10-05",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.10.19.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-10-19",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.10.26.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-10-26",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.11.02.REPACK.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-11-02",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.11.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-11-09",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.11.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-11-16",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.11.30.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-11-30",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.12.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-12-07",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.12.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-12-14",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.12.21.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-12-21",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2024/AEW.Collision.2024.12.31.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-12-31",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.01.04.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-01-04",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.01.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-01-11",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.01.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-01-18",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.01.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-01-25",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.02.01.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-02-01",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.02.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-02-08",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.02.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-02-15",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.02.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-02-22",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.03.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-03-01",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.03.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-03-08",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.03.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-03-15",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.03.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-03-22",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.03.29.1080p.WEBRip.H264-Star.mp4": {
+            "date": "2025-03-29",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.04.05.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-04-05",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.04.12.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-04-12",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.04.17.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-04-17",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.04.26.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-04-26",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.05.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-05-03",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.05.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-05-08",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.05.17.REPACK.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-05-17",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.05.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-05-22",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.05.31.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-05-31",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.06.04.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-06-04",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.06.11.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-06-11",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.06.21.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-06-21",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.06.26.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-06-26",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.07.05.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-07-05",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.07.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-07-10",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.07.19.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-07-19",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.07.26.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-07-26",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.07.31.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-07-31",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.08.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-08-09",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.08.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-08-16",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.08.23.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-08-23",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.08.30.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-08-30",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.09.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-09-06",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.09.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-09-13",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.09.17.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-09-17",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.09.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-09-20",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.09.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-09-27",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.10.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-10-04",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.10.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-10-11",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.10.15.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-10-15",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.10.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-10-25",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.11.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-11-01",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.11.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-11-08",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.11.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-11-15",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.11.19.MAX.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-11-19",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.11.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-11-27",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.12.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-12-06",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.12.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-12-13",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.12.17.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-12-17",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.12.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-12-20",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2025/AEW.Collision.2025.12.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-12-25",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2026/AEW.Collision.2026.01.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-01-03",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2026/AEW.Collision.2026.01.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-01-10",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2026/AEW.Collision.2026.01.24.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-01-24",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2026/AEW.Collision.2026.01.31.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-01-31",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2026/AEW.Collision.2026.02.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-02-07",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2026/AEW.Collision.2026.02.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-02-14",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Collision/2026/AEW.Collision.2026.02.21.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2026-02-21",
+            "show": "Collision",
+            "title": "Collision"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.03.15.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-03-15",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.03.22.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-03-22",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.03.29.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-03-29",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.04.05.720p.WEB.h264-HZK.mp4": {
+            "date": "2021-04-05",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.04.12.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-04-12",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.04.19.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-04-19",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.04.26.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-04-26",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.05.03.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-05-03",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.05.10.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-05-10",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.05.17.720p.WEB.h264-HZK.mp4": {
+            "date": "2021-05-17",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.05.24.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-05-24",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.05.31.720p.WEB.h264-HZK.mp4": {
+            "date": "2021-05-31",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.06.07.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-06-07",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.06.14.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-06-14",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.06.21.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-06-21",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.06.28.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-06-28",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.07.05.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-07-05",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.07.12.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-07-12",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.07.19.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-07-19",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.07.26.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-07-26",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.08.02.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-08-02",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.08.09.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-08-09",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.08.16.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-08-16",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.08.19.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-08-19",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.08.23.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-08-23",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.08.30.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-08-30",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.09.06.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-09-06",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.09.13.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-09-13",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.09.20.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-09-20",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.09.27.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-09-27",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.10.04.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-10-04",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.10.11.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-10-11",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.10.18.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-10-18",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.10.25.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-10-25",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.11.01.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-11-01",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.11.08.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-11-08",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.11.15.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-11-15",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.11.22.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-11-22",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.11.29.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-11-29",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.12.06.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-12-06",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.12.13.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-12-13",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.12.20.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-12-20",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2021/AEW.Dark.Elevation.2021.12.27.1080p.WEB.h264-HZK.mp4": {
+            "date": "2021-12-27",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.01.03.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-01-03",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.01.10.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-01-10",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.01.17.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-01-17",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.01.24.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-01-24",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.01.31.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-01-31",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.02.07.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-02-07",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.02.14.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-02-14",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.02.21.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-02-21",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.02.28.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-02-28",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.03.07.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-03-07",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.03.14.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-03-14",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.03.21.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-03-21",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.03.28.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-03-28",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.04.04.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-04-04",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.04.11.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-04-11",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.04.18.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-04-18",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.04.25.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-04-25",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.05.02.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-05-02",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.05.09.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-05-09",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.05.16.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-05-16",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.05.23.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-05-23",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.05.30.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-05-30",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.06.06.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-06-06",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.06.13.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-06-13",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.06.20.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-06-20",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.06.27.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-06-27",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.07.04.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-07-04",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.07.11.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-07-11",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.07.18.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-07-18",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.07.25.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-07-25",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.08.01.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-08-01",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.08.04.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-08-04",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.08.08.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-08-08",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.08.15.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-08-15",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.08.22.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-08-22",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.08.29.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-08-29",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.09.03.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-09-03",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.09.05.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-09-05",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.09.12.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-09-12",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.09.19.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-09-19",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.09.26.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-09-26",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.10.03.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-10-03",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.10.10.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-10-10",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.10.17.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-10-17",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.10.24.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-10-24",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.10.31.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-10-31",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.11.07.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-11-07",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.11.14.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-11-14",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.11.21.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-11-21",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.11.28.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-11-28",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.12.05.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-12-05",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.12.10.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-12-10",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.12.12.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-12-12",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.12.19.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-12-19",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2022/AEW.Dark.Elevation.2022.12.26.1080p.WEB.h264-HZK.mp4": {
+            "date": "2022-12-26",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.01.02.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-01-02",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.01.09.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-01-09",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.01.16.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-01-16",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.01.23.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-01-23",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.01.30.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-01-30",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.02.06.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-02-06",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.02.13.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-02-13",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.02.20.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-02-20",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.02.27.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-02-27",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.03.06.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-03-06",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.03.13.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-03-13",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.03.20.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-03-20",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.03.27.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-03-27",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.04.03.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-04-03",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.04.10.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-04-10",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.04.17.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-04-17",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark Elevation/2023/AEW.Dark.Elevation.2023.04.24.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-04-24",
+            "show": "Dark: Elevation",
+            "title": "Dark: Elevation"
+          },
+          "AEW Dark/2019/AEW Dark Episode 01.mp4": {
+            "date": "2019-10-08",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2019/AEW Dark Episode 02.mp4": {
+            "date": "2019-10-15",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2019/AEW Dark Episode 03.mp4": {
+            "date": "2019-10-22",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2019/AEW Dark Episode 04.mp4": {
+            "date": "2019-10-29",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2019/AEW Dark Episode 05.mp4": {
+            "date": "2019-11-05",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2019/AEW Dark Episode 06.mp4": {
+            "date": "2019-11-08",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2019/AEW Dark Episode 07.mp4": {
+            "date": "2019-11-19",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2019/AEW Dark Episode 08.mp4": {
+            "date": "2019-11-26",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2019/AEW Dark Episode 09.mp4": {
+            "date": "2019-12-03",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2019/AEW Dark Episode 10.mp4": {
+            "date": "2019-12-10",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2019/AEW Dark Episode 11.mp4": {
+            "date": "2019-12-17",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2019/AEW Dark Episode 12.mp4": {
+            "date": "2019-12-24",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2019/AEW Dark Episode 13.mp4": {
+            "date": "2019-12-31",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/01.07.20 Dark Episode 14.mp4": {
+            "date": "2020-01-07",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/01.14.20 Dark Episode 15.mp4": {
+            "date": "2020-01-14",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/01.21.20 Dark Episode 16.mp4": {
+            "date": "2020-01-21",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/01.28.20 Dark Episode 17.mp4": {
+            "date": "2020-01-28",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/02.04.20 Dark Episode 18.mp4": {
+            "date": "2020-02-04",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/02.11.20 Dark Episode 19.mp4": {
+            "date": "2020-02-11",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/02.18.20 Dark Episode 20.mp4": {
+            "date": "2020-02-18",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/02.25.20 Dark Episode 21.mp4": {
+            "date": "2020-02-25",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/02.28.20 Dark Episode 22.mp4": {
+            "date": "2020-02-28",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/03.03.20 Dark Episode 23.mp4": {
+            "date": "2020-03-03",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/03.10.20 Dark Episode 24.mp4": {
+            "date": "2020-03-10",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/03.17.20 Dark Episode 25.mp4": {
+            "date": "2020-03-17",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/03.24.20 Dark Episode 26.mp4": {
+            "date": "2020-03-24",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/03.31.20 Dark Episode 27.mp4": {
+            "date": "2020-03-31",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/04.07.20 Dark Episode 28.mp4": {
+            "date": "2020-04-07",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/04.14.20 Dark Episode 29.mp4": {
+            "date": "2020-04-14",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/04.21.20 Dark Episode 30.mp4": {
+            "date": "2020-04-21",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/04.28.20 Dark Episode 31.mp4": {
+            "date": "2020-04-28",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/05.05.20 Dark Episode 32.mp4": {
+            "date": "2020-05-05",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/05.12.20 Dark Episode 33.mp4": {
+            "date": "2020-05-12",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/05.19.20 Dark Episode 34.mp4": {
+            "date": "2020-05-19",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/05.26.20 Dark Episode 35.mp4": {
+            "date": "2020-05-26",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/06.02.20 Dark Episode 36.mp4": {
+            "date": "2020-06-02",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/06.09.20 Dark Episode 37.mp4": {
+            "date": "2020-06-09",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/06.16.20 Dark Episode 38.mp4": {
+            "date": "2020-06-16",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/06.23.20 Dark Episode 39.mp4": {
+            "date": "2020-06-23",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/06.30.20 Dark Episode 40.mp4": {
+            "date": "2020-06-30",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/07.07.20 Dark Episode 41.mp4": {
+            "date": "2020-07-07",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/07.14.20 Dark Episode 42.mp4": {
+            "date": "2020-07-14",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/07.21.20 Dark Episode 43.mp4": {
+            "date": "2020-07-21",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/07.28.20 Dark Episode 44.mp4": {
+            "date": "2020-07-28",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/08.04.20 Dark Episode 45.mp4": {
+            "date": "2020-08-04",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/08.11.20 Dark Episode 46.mp4": {
+            "date": "2020-08-11",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/08.18.20 Dark Episode 47.mp4": {
+            "date": "2020-08-18",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/08.25.20 Dark Episode 48.mp4": {
+            "date": "2020-08-25",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/09.01.20 Dark Episode 49.mp4": {
+            "date": "2020-09-01",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/09.04.20 Dark Episode 50.mp4": {
+            "date": "2020-12-08",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/09.08.20 Dark Episode 51.mp4": {
+            "date": "2020-09-08",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/09.15.20 Dark Episode 52.mp4": {
+            "date": "2020-09-15",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/09.22.20 Dark Episode 53.mp4": {
+            "date": "2020-09-22",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/09.29.20 Dark Episode 54.mp4": {
+            "date": "2020-09-29",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/10.06.20 Dark Episode 55.mp4": {
+            "date": "2020-10-06",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/10.13.20 Dark Episode 56.mp4": {
+            "date": "2020-10-13",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/10.20.20 Dark Episode 57.mp4": {
+            "date": "2020-10-20",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/10.27.20 Dark Episode 58.mp4": {
+            "date": "2020-10-27",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/11.03.20 Dark Episode 59.mp4": {
+            "date": "2020-11-03",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/11.06.20 Dark Episode 60.mp4": {
+            "date": "2020-11-06",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/11.10.20 Dark Episode 61.mp4": {
+            "date": "2020-11-10",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/11.17.20 Dark Episode 62.mp4": {
+            "date": "2020-11-17",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/11.24.20 Dark Episode 63.mp4": {
+            "date": "2020-11-24",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/12.01.20 Dark Episode 64.mp4": {
+            "date": "2020-12-01",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/12.08.20 Dark Episode 65.mp4": {
+            "date": "2020-12-08",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/12.15.20 Dark Episode 66.mp4": {
+            "date": "2020-12-15",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/12.22.20 Dark Episode 67.mp4": {
+            "date": "2020-12-22",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2020/12.29.20 Dark Episode 68.mp4": {
+            "date": "2020-12-29",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-01-04.mp4": {
+            "date": "2022-01-04",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-01-11.mp4": {
+            "date": "2022-01-11",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-01-18.mp4": {
+            "date": "2022-01-18",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-01-25.mp4": {
+            "date": "2022-01-25",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-02-01.mp4": {
+            "date": "2022-02-01",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-02-08.mp4": {
+            "date": "2022-02-08",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-02-10 (Special).mp4": {
+            "date": "2022-02-10",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-02-15.mp4": {
+            "date": "2022-02-15",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-02-22.mp4": {
+            "date": "2022-02-22",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-03-01.mp4": {
+            "date": "2022-03-01",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-03-08.mp4": {
+            "date": "2022-03-08",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-03-15.mp4": {
+            "date": "2022-03-15",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-03-22.mp4": {
+            "date": "2022-03-22",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-03-29.mp4": {
+            "date": "2022-03-29",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-04-05.mp4": {
+            "date": "2022-04-05",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-04-12.mp4": {
+            "date": "2022-04-12",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-04-19.mp4": {
+            "date": "2022-04-19",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-04-26.mp4": {
+            "date": "2022-04-26",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-05-03.mp4": {
+            "date": "2022-05-03",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-05-10.mp4": {
+            "date": "2022-05-10",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-05-17.mp4": {
+            "date": "2022-05-17",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-05-24.mp4": {
+            "date": "2022-05-24",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-05-28.mp4": {
+            "date": "2022-05-28",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-05-31.mp4": {
+            "date": "2022-05-31",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-06-07.mp4": {
+            "date": "2022-06-07",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-06-14.mp4": {
+            "date": "2022-06-14",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-06-21.mp4": {
+            "date": "2022-06-21",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-06-28.mp4": {
+            "date": "2022-06-28",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-07-05.mp4": {
+            "date": "2022-07-05",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-07-12.mp4": {
+            "date": "2022-07-12",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-07-19.mp4": {
+            "date": "2022-07-19",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-07-26.mp4": {
+            "date": "2022-07-26",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-08-02.mp4": {
+            "date": "2022-08-02",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-08-09.mp4": {
+            "date": "2022-08-09",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-08-16.mp4": {
+            "date": "2022-08-16",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-08-23.mp4": {
+            "date": "2022-08-23",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-08-30.mp4": {
+            "date": "2022-08-30",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-09-06.mp4": {
+            "date": "2022-09-06",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-09-13.mp4": {
+            "date": "2022-09-13",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-09-20.mp4": {
+            "date": "2022-09-20",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-09-27.mp4": {
+            "date": "2022-09-27",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-10-04.mp4": {
+            "date": "2022-10-04",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-10-11.mp4": {
+            "date": "2022-10-11",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-10-18.mp4": {
+            "date": "2022-10-18",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-10-25.mp4": {
+            "date": "2022-10-25",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-11-01.mp4": {
+            "date": "2022-11-01",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-11-08.mp4": {
+            "date": "2022-11-08",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-11-15.mp4": {
+            "date": "2022-11-15",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-11-22.mp4": {
+            "date": "2022-11-22",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-11-29.mp4": {
+            "date": "2022-11-29",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-12-06.mp4": {
+            "date": "2022-12-06",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-12-13.mp4": {
+            "date": "2022-12-13",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-12-20.mp4": {
+            "date": "2022-12-20",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2022/AEW Dark - 2022-12-27.mp4": {
+            "date": "2022-12-27",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.01.03.1080p.WEB.H264-HZK.mp4": {
+            "date": "2023-01-03",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.01.10.1080p.WEB.H264-HZK.mp4": {
+            "date": "2023-01-10",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.01.17.1080p.WEB.H264-HZK.mp4": {
+            "date": "2023-01-17",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.01.24.1080p.WEB.H264-HZK.mp4": {
+            "date": "2023-01-24",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.01.31.1080p.WEB.H264-HZK.mp4": {
+            "date": "2023-01-31",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.02.07.1080p.WEB.H264-HZK.mp4": {
+            "date": "2023-02-07",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.02.14.1080p.WEB.H264-HZK.mp4": {
+            "date": "2023-02-14",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.02.21.1080p.WEB.H264-HZK.mp4": {
+            "date": "2023-02-21",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.03.01.1080p.WEB.H264-HZK.mp4": {
+            "date": "2023-03-01",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.03.04.1080p.WEB.H264-HZK.mp4": {
+            "date": "2023-03-04",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.03.07.1080p.WEB.H264-HZK.mp4": {
+            "date": "2023-03-07",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.03.14.1080p.WEB.H264-HZK.mp4": {
+            "date": "2023-03-14",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.03.21.1080p.WEB.H264-HZK.mp4": {
+            "date": "2023-03-21",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.03.28.1080p.WEB.H264-HZK.mp4": {
+            "date": "2023-03-28",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.04.04.1080p.WEB.x264-Star.mp4": {
+            "date": "2023-04-04",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.04.11.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-04-11",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.04.18.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-04-18",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.04.25.1080p.WEB.h264-HZK.mp4": {
+            "date": "2023-04-25",
+            "show": "Dark",
+            "title": "Dark"
+          },
+          "AEW Dark/2023/AEW.Dark.2023.04.25.1080p.WEB.h264-Star.mp4": {
+            "date": "2023-04-25",
+            "show": "Dark",
+            "title": "Dark"
+          }
+        },
+        "mappedOnly": true
+      },
+      {
+        "id": "aewshows02",
+        "name": "aewshows02",
+        "enabled": true,
+        "dateOrder": "MDY",
+        "overrides": {
+          "AEW Rampage/2022/AEW.Rampage.2022.01.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-01-07",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.01.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-01-14",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.01.21.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-01-21",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.01.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-01-28",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.02.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-02-04",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.02.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-02-11",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.02.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-02-18",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.02.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-02-25",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.03.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-03-04",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.03.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-03-11",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.03.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-03-18",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.03.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-03-25",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.04.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-04-01",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.04.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-04-08",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.04.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-04-15",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.04.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-04-22",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.04.29.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-04-29",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.05.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-05-06",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.05.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-05-13",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.05.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-05-20",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.05.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-05-27",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.06.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-06-03",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.06.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-06-10",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.06.17.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-06-17",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.06.24.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-06-24",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.07.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-07-01",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.07.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-07-08",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.07.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-07-15",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.07.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-07-22",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.07.29.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-07-29",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.08.05.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-08-05",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.08.12.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-08-12",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.08.19.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-08-19",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.08.26.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-08-26",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.09.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-09-02",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.09.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-09-09",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.09.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-09-16",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.09.23.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-09-23",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.09.30.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-09-30",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.10.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-10-07",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.10.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-10-14",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.10.21.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-10-21",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.10.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-10-28",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.11.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-11-04",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.11.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-11-11",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.11.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-11-18",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.11.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-11-25",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.12.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-12-02",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.12.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-12-09",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.12.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-12-16",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.12.23.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-12-23",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2022/AEW.Rampage.2022.12.30.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-12-30",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.01.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-01-06",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.01.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-01-13",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.01.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-01-20",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.01.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-01-27",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.02.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-02-03",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.02.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-02-10",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.02.17.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-02-17",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.02.24.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-02-24",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.03.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-03-03",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.03.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-03-10",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.03.17.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-03-17",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.03.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-03-25",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.03.31.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-03-31",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.04.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-04-07",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.04.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-04-14",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.04.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-04-22",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.04.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-04-28",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.05.05.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-05-05",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.05.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-05-13",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.05.26.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-05-26",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.06.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-06-02",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.06.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-06-09",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.06.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-06-16",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.06.30.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-06-30",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.07.07.1080p.FITE.HEVC-regs.mp4": {
+            "date": "2023-07-07",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.07.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-07-14",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.07.21.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-07-21",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.07.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-07-28",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.08.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-08-04",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.08.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-08-11",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.08.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-08-18",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.08.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-08-25",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.09.01.1080p.FITE.HEVC-regs.mp4": {
+            "date": "2023-09-01",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.09.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-09-08",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.09.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-09-15",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.09.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-09-22",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.09.29.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-09-29",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.10.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-10-06",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.10.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-10-13",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.10.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-10-20",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.10.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-10-27",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.11.03.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-11-03",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.11.10.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-11-10",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.11.17.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-11-17",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.12.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-12-01",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.12.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-12-08",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.12.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-12-15",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.12.22.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-12-22",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2023/AEW.Rampage.2023.12.29.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-12-29",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.01.05.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-01-05",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.01.12.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-01-12",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.01.19.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-01-19",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.01.26.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-01-26",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.02.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-02-02",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.02.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-02-09",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.02.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-02-16",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.02.23.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-02-23",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.03.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-03-01",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.03.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-03-08",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.03.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-03-15",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.03.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-03-20",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.03.29.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-03-29",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.04.05.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-04-05",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.04.12.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-04-12",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.04.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-04-20",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.04.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-04-27",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.05.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-05-01",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.05.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-05-11",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.05.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-05-18",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.05.24.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-05-24",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.05.31.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-05-31",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.06.07.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-06-07",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.06.14.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-06-14",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.06.21.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-06-21",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.06.28.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-06-28",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.07.05.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-07-05",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.07.12.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-07-12",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.07.19.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-07-19",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.08.02.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-08-02",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.08.09.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-08-09",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.08.16.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-08-16",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.08.23.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-08-23",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.08.30.1080p.WEB.h265-HEEL.mp4": {
+            "date": "2024-08-30",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.09.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-09-06",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.09.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-09-13",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.09.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-09-20",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.09.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-09-27",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.10.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-10-04",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.10.11.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-10-11",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.10.18.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-10-18",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.10.25.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-10-25",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.11.01.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-11-01",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.11.08.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-11-08",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.11.15.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-11-15",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.11.22.REPACK.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-11-22",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.11.30.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-11-30",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.12.06.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-12-06",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.12.13.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-12-13",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.12.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-12-20",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "AEW Rampage/2024/AEW.Rampage.2024.12.27.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-12-27",
+            "show": "Rampage",
+            "title": "Rampage"
+          },
+          "PPV/2019/01 - AEW Double or Nothing 2019/AEW.2019.05.25.Double.or.Nothing.2019.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2019-05-25",
+            "show": "PPV",
+            "title": "Double or Nothing"
+          },
+          "PPV/2019/02 - AEW Fyter Fest 2019/AEW.2019.06.29.Fyter.Fest.2019.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2019-06-29",
+            "show": "PPV",
+            "title": "Fyter Fest"
+          },
+          "PPV/2019/03 - AEW Fight for the Fallen 2019/AEW.2019.07.13.Fight.For.The.Fallen.2019.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2019-07-13",
+            "show": "PPV",
+            "title": "Fight for the Fallen"
+          },
+          "PPV/2019/04 - AEW All Out 2019/AEW.2019.08.31.All.Out.2019.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2019-08-31",
+            "show": "PPV",
+            "title": "All Out"
+          },
+          "PPV/2019/05 - AEW Full Gear 2019/AEW.2019.11.09.Full.Gear.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2019-11-09",
+            "show": "PPV",
+            "title": "Full Gear"
+          },
+          "PPV/2020/01 - AEW Revolution 2020/AEW.2020.02.09.Revolution.1080p.WEB.H264-XWT.mp4": {
+            "date": "2020-02-29",
+            "show": "PPV",
+            "title": "Revolution"
+          },
+          "PPV/2020/02 - AEW Double or Nothing 2020/AEW.2020.05.23.Double.Or.Nothing..1080p.web.h264-levitate.mp4": {
+            "date": "2020-05-23",
+            "show": "PPV",
+            "title": "Double or Nothing"
+          },
+          "PPV/2020/03 - AEW All Out 2020/AEW.2020.09.05.All.Out.1080p.WEB.x264-DaShield.mp4": {
+            "date": "2020-09-05",
+            "show": "PPV",
+            "title": "All Out"
+          },
+          "PPV/2020/04 - AEW Full Gear 2020/AEW.2020.11.07.Full.Gear.2020.1080p.WEB.h264-DaShield.mp4": {
+            "date": "2020-11-07",
+            "show": "PPV",
+            "title": "Full Gear"
+          },
+          "PPV/2021/01 - AEW Revolution 2021/AEW.2021.03.07.Revolution.PPV.1080p.WEB.h264-DaShield.mp4": {
+            "date": "2021-03-07",
+            "show": "PPV",
+            "title": "Revolution"
+          },
+          "PPV/2021/02 - AEW Double or Nothing 2021/AEW.2021.05.30.Double.Or.Nothing.1080p.WEBRip.h264-TJ.mp4": {
+            "date": "2021-05-30",
+            "show": "PPV",
+            "title": "Double or Nothing"
+          },
+          "PPV/2021/03 - AEW All Out 2021/AEW.2021.09.05.All.Out.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-09-05",
+            "show": "PPV",
+            "title": "All Out"
+          },
+          "PPV/2021/04 - AEW Full Gear 2021/AEW.Full.Gear.2021.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2021-11-13",
+            "show": "PPV",
+            "title": "Full Gear"
+          },
+          "PPV/2022/01 - AEW Revolution 2022/AEW.Revolution.2022.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-03-06",
+            "show": "PPV",
+            "title": "Revolution"
+          },
+          "PPV/2022/02 - AEW Double or Nothing 2022/AEW.Double.Or.Nothing.2022.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-05-29",
+            "show": "PPV",
+            "title": "Double or Nothing"
+          },
+          "PPV/2022/03 - AEW-NJPW Forbidden Door/AEW.NJPW.Forbidden.Door.2022.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-06-26",
+            "show": "PPV",
+            "title": "Forbidden Door"
+          },
+          "PPV/2022/04 - AEW All Out 2022/AEW.All.Out.2022.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-09-04",
+            "show": "PPV",
+            "title": "All Out"
+          },
+          "PPV/2022/05 - AEW Full Gear/AEW.Full.Gear.2022.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2022-11-19",
+            "show": "PPV",
+            "title": "Full Gear"
+          },
+          "PPV/2023/01 - AEW Revolution 2023/AEW.Revolution.2023.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-03-05",
+            "show": "PPV",
+            "title": "Revolution"
+          },
+          "PPV/2023/02 - AEW Double or Nothing 2023/AEW.Double.or.Nothing.2023.1080p.HEVC.regs.mp4": {
+            "date": "2023-05-28",
+            "show": "PPV",
+            "title": "Double or Nothing"
+          },
+          "PPV/2023/03 - AEW-NJPW Forbidden Door/AEW.NJPW.Forbidden.Door.2023-1080p-HEVC-regs.mp4": {
+            "date": "2023-06-25",
+            "show": "PPV",
+            "title": "Forbidden Door"
+          },
+          "PPV/2023/04 - AEW All In 2023/AEW - All In (2023) 1080p Web-DL AAC.mp4": {
+            "date": "2023-08-27",
+            "show": "PPV",
+            "title": "All In"
+          },
+          "PPV/2023/05 - AEW All Out 2023/AEW - All Out (2023) 1080p Web-DL AAC.mp4": {
+            "date": "2023-09-03",
+            "show": "PPV",
+            "title": "All Out"
+          },
+          "PPV/2023/06 - AEW WrestleDream/AEW.WrestleDream.2023.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-10-01",
+            "show": "PPV",
+            "title": "WrestleDream"
+          },
+          "PPV/2023/07 - AEW Full Gear 2023/AEW.Full.Gear.2023.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-11-18",
+            "show": "PPV",
+            "title": "Full Gear"
+          },
+          "PPV/2023/08 - AEW World's End/AEW.Worlds.End.2023.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2023-12-30",
+            "show": "PPV",
+            "title": "Worlds End"
+          },
+          "PPV/2024/AEW All-In London/AEW.All.In.2024.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-08-25",
+            "show": "PPV",
+            "title": "All In"
+          },
+          "PPV/2024/AEW All-Out/AEW.All.Out.2024.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-09-07",
+            "show": "PPV",
+            "title": "All Out"
+          },
+          "PPV/2024/AEW Double or Nothing/AEW.Double.Or.Nothing.2024.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-05-26",
+            "show": "PPV",
+            "title": "Double or Nothing"
+          },
+          "PPV/2024/AEW Dynasty/2024 AEW Dynasty Pack/FTW! From Brian Cage to HOOK! The History of the FTW Title in AEW.   AEW Timelines.mp4": {
+            "date": "2024-04-21",
+            "show": "PPV",
+            "title": "Dynasty"
+          },
+          "PPV/2024/AEW Dynasty/2024 AEW Dynasty Pack/The KING of the WORLD AEW World Champion, SAMOA JOE!   AEW Timelines.mp4": {
+            "date": "2024-04-21",
+            "show": "PPV",
+            "title": "Dynasty"
+          },
+          "PPV/2024/AEW Dynasty/AEW.Dynasty.2024.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-04-21",
+            "show": "PPV",
+            "title": "Dynasty"
+          },
+          "PPV/2024/AEW Forbidden Door/AEW.NJPW.Forbidden.Door.2024.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-06-30",
+            "show": "PPV",
+            "title": "Forbidden Door"
+          },
+          "PPV/2024/AEW Full Gear/AEW.Full.Gear.2024.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-11-23",
+            "show": "PPV",
+            "title": "Full Gear"
+          },
+          "PPV/2024/AEW Revolution/AEW.Revolution.2024.PPV.1080p.Fitetv.FHD.mp4": {
+            "date": "2024-03-03",
+            "show": "PPV",
+            "title": "Revolution"
+          },
+          "PPV/2024/AEW Revolution/AEW.Revolution.2024.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-03-03",
+            "show": "PPV",
+            "title": "Revolution"
+          },
+          "PPV/2024/AEW World's End/AEW.Worlds.End.2024.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-12-28",
+            "show": "PPV",
+            "title": "Worlds End"
+          },
+          "PPV/2024/AEW WrestleDream 2024/AEW.WrestleDream.2024.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2024-10-12",
+            "show": "PPV",
+            "title": "WrestleDream"
+          },
+          "PPV/2025/AEW All In 2025/AEW.All.In.2025.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-07-12",
+            "show": "PPV",
+            "title": "All In"
+          },
+          "PPV/2025/AEW All Out 2025/AEW.All.Out.2025.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-09-20",
+            "show": "PPV",
+            "title": "All Out"
+          },
+          "PPV/2025/AEW All Out 2025/AEW.Saturday.Tailgate.Brawl.All.Out.2025.09.20.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-09-20",
+            "show": "PPV",
+            "title": "All Out"
+          },
+          "PPV/2025/AEW Double or Nothing 2025/AEW.Double.Or.Nothing.2025.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-05-25",
+            "show": "PPV",
+            "title": "Double or Nothing"
+          },
+          "PPV/2025/AEW Dynasty 2025/AEW.Dynasty.2025.1080p.WEB-DL.H264-NWCHD.mp4": {
+            "date": "2025-04-06",
+            "show": "PPV",
+            "title": "Dynasty"
+          },
+          "PPV/2025/AEW Forbidden Door/AEW.NJPW.Forbidden.Door.2025.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-08-24",
+            "show": "PPV",
+            "title": "Forbidden Door"
+          },
+          "PPV/2025/AEW Full Gear 2025/AEW.Full.Gear.2025.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-11-22",
+            "show": "PPV",
+            "title": "Full Gear"
+          },
+          "PPV/2025/AEW Fyter Fest 2025/AEW.Fyter.Fest.2025.06.04.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-06-04",
+            "show": "Dynamite",
+            "title": "Dynamite"
+          },
+          "PPV/2025/AEW Revolution 2025/AEW.Revolution.2025.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-03-09",
+            "show": "PPV",
+            "title": "Revolution"
+          },
+          "PPV/2025/AEW World's End 2025/AEW.Worlds.End.2025.Ppv.1080P.Web.H264-Heel.mp4": {
+            "date": "2025-12-27",
+            "show": "PPV",
+            "title": "Worlds End"
+          },
+          "PPV/2025/AEW WrestleDream 2025/AEW.WrestleDream.2025.PPV.1080p.WEB.h264-HEEL.mp4": {
+            "date": "2025-10-18",
+            "show": "PPV",
+            "title": "WrestleDream"
+          },
+          "The Deadly Draw Women's Tag Team Tournament/08.03.20 The Deadly Draw Night 1.mp4": {
+            "date": "2020-08-03",
+            "show": "The Deadly Draw",
+            "title": "The Deadly Draw"
+          },
+          "The Deadly Draw Women's Tag Team Tournament/08.10.20 The Deadly Draw Night 2.mp4": {
+            "date": "2020-08-10",
+            "show": "The Deadly Draw",
+            "title": "The Deadly Draw"
+          },
+          "The Deadly Draw Women's Tag Team Tournament/08.17.20 The Deadly Draw Night 3.mp4": {
+            "date": "2020-08-17",
+            "show": "The Deadly Draw",
+            "title": "The Deadly Draw"
+          }
+        },
+        "mappedOnly": true
+      },
+      {
+        "id": "all-in-2018.09",
+        "name": "All In (2018)",
+        "enabled": true,
+        "showHint": "PPV",
+        "mappedOnly": true,
+        "overrides": {
+          "\u3010All In\u30112018.09.mp4": {
+            "date": "2018-09-01",
+            "show": "PPV",
+            "title": "All In (2018)"
+          }
+        }
+      }
+    ]
+  }
+}

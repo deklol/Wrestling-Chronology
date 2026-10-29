@@ -65,9 +65,9 @@ final class CatalogSync {
 
   static final long INTERVAL = 6 * 60 * 60 * 1000L;
   static final String CHANNEL = "UCbGG2hv4cWmIrBAIhGiCdSg";
-  static final Pattern ALIAS = Pattern.compile("fall brawl\\s*[-:]?\\s*war\\s*games"),
-      NOISE = Pattern.compile("full (?:episode|event)|wcw|nwo|nwa|\\bthe\\b|\\b(?:19|20)\\d{2}\\b"),
-      NON_KEY = Pattern.compile("[^a-z0-9]");
+  static final Pattern ALIAS = Patterns.get("fall brawl\\s*[-:]?\\s*war\\s*games"),
+      NOISE = Patterns.get("full (?:episode|event)|wcw|nwo|nwa|\\bthe\\b|\\b(?:19|20)\\d{2}\\b"),
+      NON_KEY = Patterns.get("[^a-z0-9]");
   static final Map<String, String> keyCache =
       new LinkedHashMap<String, String>(1024, .75f, true) {
         @Override
@@ -209,7 +209,7 @@ final class CatalogSync {
 
   static String date(String title, JSONObject catalogue) throws Exception {
     Matcher clash =
-        Pattern.compile("(?i)clash of (?:the )?champions[ ._-]+([IVX]+|\\d{1,2})\\b")
+        Patterns.get("(?i)clash of (?:the )?champions[ ._-]+([IVX]+|\\d{1,2})\\b")
             .matcher(title);
     if (clash.find()) {
       String number = clash.group(1).toUpperCase(Locale.UK);
@@ -231,14 +231,14 @@ final class CatalogSync {
             return events.getJSONObject(i).optString("date");
     }
     Matcher numeric =
-        Pattern.compile("\\b(19\\d{2}|20\\d{2})[-.](\\d{2})[-.](\\d{2})\\b").matcher(title);
+        Patterns.get("\\b(19\\d{2}|20\\d{2})[-.](\\d{2})[-.](\\d{2})\\b").matcher(title);
     if (numeric.find())
       return validDate(
           Integer.parseInt(numeric.group(1)),
           Integer.parseInt(numeric.group(2)),
           Integer.parseInt(numeric.group(3)));
     Matcher named =
-        Pattern.compile(
+        Patterns.get(
                 "\\b(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\\.?\\s+(\\d{1,2})(?:st|nd|rd|th)?[,]?\\s+(19\\d{2}|20\\d{2})",
                 Pattern.CASE_INSENSITIVE)
             .matcher(title);
@@ -251,7 +251,7 @@ final class CatalogSync {
               + 1;
       return validDate(Integer.parseInt(named.group(3)), month, Integer.parseInt(named.group(2)));
     }
-    Matcher yearMatch = Pattern.compile("\\b(19\\d{2}|20\\d{2})\\b").matcher(title);
+    Matcher yearMatch = Patterns.get("\\b(19\\d{2}|20\\d{2})\\b").matcher(title);
     String year = yearMatch.find() ? yearMatch.group(1) : null;
     JSONArray calendar = catalogue.optJSONArray("eventCalendar");
     String best = null, needle = key(title);
@@ -327,10 +327,10 @@ final class CatalogSync {
       length = richText(node.optJSONObject("lengthText"));
     }
     if (!id.matches("[A-Za-z0-9_-]{11}")) return 0;
-    if (!Pattern.compile("\\bFULL (?:EPISODE|EVENT)\\b", Pattern.CASE_INSENSITIVE)
+    if (!Patterns.get("\\bFULL (?:EPISODE|EVENT)\\b", Pattern.CASE_INSENSITIVE)
             .matcher(title)
             .find()
-        || Pattern.compile("FULL MATCH|watch party|compilation|^LIVE:", Pattern.CASE_INSENSITIVE)
+        || Patterns.get("FULL MATCH|watch party|compilation|^LIVE:", Pattern.CASE_INSENSITIVE)
             .matcher(title)
             .find()) return 0;
     int duration = 0;
@@ -448,11 +448,11 @@ final class CatalogSync {
               MetadataCache.get(
                   context, "https://www.youtube.com/playlist?list=" + playlistId + "&hl=en&gl=GB");
           progress(i, total, "YouTube · " + playlistName);
-          Matcher marker = Pattern.compile("(?:var\\s+)?ytInitialData\\s*=\\s*").matcher(html);
+          Matcher marker = Patterns.get("(?:var\\s+)?ytInitialData\\s*=\\s*").matcher(html);
           if (!marker.find()) throw new IOException("No playlist data");
           JSONObject page = (JSONObject) new JSONTokener(html.substring(marker.end())).nextValue();
           Matcher client =
-              Pattern.compile("\\\"INNERTUBE_CLIENT_VERSION\\\"\\s*:\\s*\\\"([^\\\"]+)\\\"")
+              Patterns.get("\\\"INNERTUBE_CLIENT_VERSION\\\"\\s*:\\s*\\\"([^\\\"]+)\\\"")
                   .matcher(html);
           String version = client.find() ? client.group(1) : null;
           Set<String> tokens = new HashSet<>();

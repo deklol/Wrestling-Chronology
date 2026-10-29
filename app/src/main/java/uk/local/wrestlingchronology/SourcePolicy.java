@@ -7,7 +7,7 @@ import org.json.JSONObject;
 /** Full-show eligibility is checked before resolution or file-size preferences. */
 final class SourcePolicy {
   private static final Pattern EXTRA =
-      Pattern.compile(
+      Patterns.get(
           "(?i)\\b(?:countdown|pre[ ._-]*shows?|preshows?|highlights?|trailer|preview|sample|"
               + "compilation|clips?|segments?|recap|review|reliving[ ._-]+the[ ._-]+war|"
               + "full[ ._-]+match)\\b");
@@ -16,7 +16,7 @@ final class SourcePolicy {
     if (!"archive".equals(source.optString("type"))) return true;
     // An incomplete year collection can contain complete episodes: inspect the file only.
     String filename = ArchiveIdentity.filename(source).replace('_', ' ');
-    if (Pattern.compile("(?i)\\b(?:inc|incomplete|partial)\\b").matcher(filename).find())
+    if (Patterns.get("(?i)\\b(?:inc|incomplete|partial)\\b").matcher(filename).find())
       return false;
     String name = source.optString("filename") + " " + source.optString("url");
     if (EXTRA.matcher(name.replace("%20", " ").replace('_', ' ')).find()) return false;
@@ -27,6 +27,12 @@ final class SourcePolicy {
   }
 
   static int minimumSeconds(String show) {
+    if (Arrays.asList("Dark", "Dark: Elevation", "NXT Level Up").contains(show)) return 300;
+    if (Arrays.asList("205 Live", "NXT UK", "Main Event", "The Deadly Draw").contains(show)) return 600;
+    if (Arrays.asList("NXT", "Rampage", "Battle of the Belts").contains(show)) return 1200;
+    if (Arrays.asList("Velocity", "Xplosion", "Metal", "Mania", "Action Zone", "All American Wrestling",
+        "All Star Wrestling", "Championship Wrestling", "Livewire", "Shotgun Saturday Night",
+        "Wrestling Spotlight", "Wrestling Challenge", "Evolve", "ECW", "Cruiserweight Classic", "Mae Young Classic").contains(show)) return 1200;
     if (show.equals("Heat")
         || show.equals("Hardcore TV")
         || show.equals("ECW on TNN")
@@ -49,13 +55,13 @@ final class SourcePolicy {
         source.optString("audioLanguage", source.optString("language")).toLowerCase(Locale.UK);
     String description =
         (source.optString("filename") + " " + source.optString("label")).replace('_', ' ');
-    if (Pattern.compile("(?:^|[^a-z])(?:en|eng|english)(?:$|[^a-z])").matcher(language).find()
-        || Pattern.compile("(?i)\\bEnglish\\b").matcher(description).find()) return 0;
-    if (Pattern.compile(
+    if (Patterns.get("(?:^|[^a-z])(?:en|eng|english)(?:$|[^a-z])").matcher(language).find()
+        || Patterns.get("(?i)\\bEnglish\\b").matcher(description).find()) return 0;
+    if (Patterns.get(
                 "(?:^|[^a-z])(?:de|deu|ger|german|deutsch|fr|fra|fre|french|es|spa|spanish|ja|jpn|japanese|it|ita|italian|mul)(?:$|[^a-z])")
             .matcher(language)
             .find()
-        || Pattern.compile(
+        || Patterns.get(
                 "(?i)\\b(?:german|deutsch|french|fran[cç]ais|spanish|espa[nñ]ol|japanese|italian|italiano)\\s*(?:commentary|audio|dub(?:bed)?|version)?\\b")
             .matcher(description)
             .find()) return 2;

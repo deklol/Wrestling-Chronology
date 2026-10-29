@@ -9,7 +9,7 @@ import org.json.*;
 
 /** Data-only updates. Missing rows never mean delete; removals must be explicit. */
 final class LibraryPack {
-  static final int MAX_BYTES = 16 * 1024 * 1024;
+  static final int MAX_BYTES = 48 * 1024 * 1024;
 
   static String sha256(byte[] bytes) throws Exception {
     StringBuilder result = new StringBuilder();
@@ -83,7 +83,8 @@ final class LibraryPack {
     for (int i = 0; i < rows.length(); i++) {
       JSONObject row = rows.getJSONObject(i);
       String date = row.getString("date");
-      if (!LocalDate.parse(date).toString().equals(date)
+      if (!Patterns.get("\\d{4}-\\d{2}-\\d{2}").matcher(date).matches()
+          || !LocalDate.of(Integer.parseInt(date.substring(0,4)), Integer.parseInt(date.substring(5,7)), Integer.parseInt(date.substring(8,10))).toString().equals(date)
           || date.compareTo(company.firstDate) < 0
           || date.compareTo(company.lastDate) > 0
           || row.getInt("year") != Integer.parseInt(date.substring(0, 4))
@@ -126,29 +127,39 @@ final class LibraryPack {
 
   private static void archiveUrl(String value, Set<String> items) throws Exception {
     URI uri = new URI(value);
-    if (!https(value)
-        || !"archive.org".equals(uri.getHost())
-        || uri.getPort() != -1
-        || !uri.getPath().startsWith("/download/")
-        || !items.contains(ArchiveSync.collection(value)))
+    String path = uri.getPath();
+    String item = "";
+    if (path != null && path.startsWith("/download/")) {
+      int end = path.indexOf('/', 10);
+      item = end < 0 ? path.substring(10) : path.substring(10, end);
+    }
+    if (!"https".equals(uri.getScheme()) || uri.getUserInfo() != null || uri.getFragment() != null
+        || !"archive.org".equals(uri.getHost()) || uri.getPort() != -1 || !items.contains(item))
       throw new JSONException("Source is outside its configured Archive item");
   }
 
   static JSONObject merge(JSONObject previous, JSONObject incoming) throws Exception {
-    JSONObject result = new JSONObject(incoming.toString());
+    JSONObject result = shallow(incoming);
+    JSONObject configCopy = shallow(incoming.getJSONObject("sources"));
+    for (String field : new String[] {"archive", "youtube", "dailymotion"})
+      if (configCopy.has(field)) configCopy.put(field, shallow(configCopy.getJSONObject(field)));
+    result.put("sources", configCopy);
+    result.put("catalogue", shallow(incoming.getJSONObject("catalogue")));
     JSONObject catalogue = result.getJSONObject("catalogue");
     LinkedHashMap<String, JSONObject> rows = new LinkedHashMap<>();
     if (previous != null) {
       JSONArray old = previous.getJSONObject("catalogue").getJSONArray("episodes");
       for (int i = 0; i < old.length(); i++)
-        rows.put(old.getJSONObject(i).getString("id"), old.getJSONObject(i));
+        rows.put(old.getJSONObject(i).getString("date") + ":" + old.getJSONObject(i).getString("show"), old.getJSONObject(i));
     }
     JSONArray fresh = catalogue.getJSONArray("episodes");
     long now = System.currentTimeMillis();
     for (int i = 0; i < fresh.length(); i++) {
-      JSONObject row = new JSONObject(fresh.getJSONObject(i).toString());
-      JSONObject old = rows.get(row.getString("id"));
+      JSONObject row = shallow(fresh.getJSONObject(i));
+      String identity = row.getString("date") + ":" + row.getString("show");
+      JSONObject old = rows.get(identity);
       if (old != null) {
+        row.put("id", old.getString("id"));
         row.put("discoveredAt", old.optLong("discoveredAt"));
         LinkedHashMap<String, JSONObject> sources = new LinkedHashMap<>();
         for (JSONObject value : list(old.getJSONArray("sources")))
@@ -157,7 +168,7 @@ final class LibraryPack {
           sources.put(Catalog.sourceKey(value), value);
         row.put("sources", new JSONArray(sources.values()));
       } else row.put("discoveredAt", now);
-      rows.put(row.getString("id"), row);
+      rows.put(identity, row);
     }
     Set<String> retired = new HashSet<>();
     JSONArray removals = incoming.optJSONArray("retiredSources");
@@ -165,7 +176,7 @@ final class LibraryPack {
       for (int i = 0; i < removals.length(); i++) retired.add(removals.getString(i));
     JSONArray accepted = new JSONArray();
     for (JSONObject row : rows.values()) {
-      JSONObject copy = new JSONObject(row.toString());
+      JSONObject copy = shallow(row);
       JSONArray sources = new JSONArray();
       for (JSONObject source : list(copy.getJSONArray("sources")))
         if (!retired.contains(Catalog.sourceKey(source))) sources.put(source);
@@ -188,6 +199,16 @@ final class LibraryPack {
       }
     }
     return result;
+  }
+
+  // Copy containers only. Source metadata is read-only during a merge; retaining
+  // its strings avoids several full-library JSON serializations on a 128 MB TV.
+  private static JSONObject shallow(JSONObject value) throws Exception {
+    JSONObject copy = new JSONObject();
+    for (Iterator<String> keys = value.keys(); keys.hasNext();) {
+      String key = keys.next(); copy.put(key, value.get(key));
+    }
+    return copy;
   }
 
   private static void mergeConfig(JSONObject current, JSONObject old, String field)
