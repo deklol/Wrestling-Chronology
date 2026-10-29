@@ -10,11 +10,15 @@ import org.json.*;
 final class Catalog {
   static volatile List<Episode> episodes = Collections.emptyList();
   static JSONObject raw;
+  static volatile Set<String> hiddenShows = Collections.emptySet();
 
   static synchronized void load(Context context) throws Exception {
     if (!episodes.isEmpty()) return;
-    JSONObject pack = RemoteLibrary.cached(context);
-    if (pack == null) pack = RemoteLibrary.bundled(context);
+    hiddenShows = new HashSet<>(prefs(context).getStringSet("hidden_shows", Collections.emptySet()));
+    JSONObject seed = RemoteLibrary.bundled(context);
+    JSONObject cached = RemoteLibrary.cached(context);
+    JSONObject pack = cached == null ? seed : cached.optLong("revision") > seed.optLong("revision")
+        ? LibraryPack.merge(seed, cached) : LibraryPack.merge(cached, seed);
     raw = pack.getJSONObject("catalogue");
     SourceConfig.apply(raw, pack.getJSONObject("sources"));
     Map<String, String> moves = new HashMap<>();
@@ -39,6 +43,8 @@ final class Catalog {
       editor.apply();
     }
     replace(raw);
+    if (!episodes.isEmpty()) context.getSharedPreferences("application", 0).edit()
+        .putInt("availableYear:" + Company.current.id, years().last()).apply();
   }
 
   static Map<String, String> normalizeYoutube(JSONObject data) throws Exception {
@@ -192,6 +198,7 @@ final class Catalog {
     ArrayList<Episode> result = new ArrayList<>();
     for (Episode item : episodes)
       if (item.year == year
+          && (!filter.equals("All") || !hiddenShows.contains(item.show))
           && (!filter.equals("All") || year < 1997 || extras || item.main())
           && (filter.equals("All") || filter.equals(item.show))) result.add(item);
     return result;
@@ -204,7 +211,8 @@ final class Catalog {
   }
 
   static String showLabel(String show, int year) {
-    if (show.equals("Saturday Night")) {
+    if (show.equals("Saturday Night") && Company.current == Company.WWE) return "Saturday Night’s Main Event";
+    if (show.equals("Saturday Night") && Company.current == Company.WCW) {
       if (year > 0 && year < 1992) return "World Championship Wrestling";
       if (year == 1992) return "WCW TV / Saturday Night";
     }
@@ -223,7 +231,7 @@ final class Catalog {
       int count;
       while ((count = input.read(buffer)) >= 0) {
         output.write(buffer, 0, count);
-        if (output.size() > 18 * 1024 * 1024) throw new IOException("Response too large");
+        if (output.size() > 48 * 1024 * 1024) throw new IOException("Response too large");
       }
       return output.toString(StandardCharsets.UTF_8.name());
     }
@@ -369,9 +377,9 @@ final class Catalog {
     String heading() {
       return show.equals("PPV")
           ? title
-          : show.equals("Saturday Night") && date.compareTo("1992-04-04") < 0
+          : Company.current == Company.WCW && show.equals("Saturday Night") && date.compareTo("1992-04-04") < 0
               ? "World Championship Wrestling"
-              : show;
+              : show.equals("Saturday Night") && Company.current == Company.WWE ? "Saturday Night’s Main Event" : show;
     }
   }
 }

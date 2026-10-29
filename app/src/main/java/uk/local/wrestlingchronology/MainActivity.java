@@ -140,26 +140,39 @@ public final class MainActivity extends Activity {
     background.setAlpha(.32f);
     screen.addView(background, new FrameLayout.LayoutParams(-1, -1));
     LinearLayout content = Ui.vertical(this);
-    content.setPadding(d(40), d(34), d(40), d(24));
-    content.setGravity(Gravity.CENTER_VERTICAL);
+    content.setPadding(d(40), d(16), d(40), d(16));
+    content.setGravity(Gravity.CENTER);
     screen.addView(content, new FrameLayout.LayoutParams(-1, -1));
-    TextView title = text("WRESTLING CHRONOLOGY", 34, Ui.WHITE);
+    TextView title = text("WRESTLING CHRONOLOGY", 28, Ui.WHITE);
     title.setTypeface(Typeface.create("sans-serif-black", Typeface.BOLD));
+    title.setGravity(Gravity.CENTER);
     content.addView(title);
-    Ui.gap(content, 10);
-    content.addView(text("Choose your company. Pick a year. Press play.", 16, Ui.MUTED));
-    Ui.gap(content, 32);
-    LinearLayout cards = Ui.horizontal(this);
-    content.addView(cards, Ui.lp(this, -1, 200));
+    Ui.gap(content, 6);
+    TextView subtitle = text("Choose your company. Pick a year. Press play.", 14, Ui.MUTED);
+    subtitle.setGravity(Gravity.CENTER);
+    content.addView(subtitle);
+    Ui.gap(content, 14);
+    LinearLayout grid = Ui.vertical(this);
+    grid.setGravity(Gravity.CENTER);
+    content.addView(grid, Ui.lp(this, -1, 296));
+    LinearLayout cards = null;
+    int cardIndex = 0;
+    int cardWidth = (int) ((getResources().getDisplayMetrics().widthPixels / getResources().getDisplayMetrics().density - 80) / 3) - 10;
     View first = null;
     for (Company company : Company.ALL) {
+      if (cardIndex == 0 || cardIndex == 3) {
+        cards = Ui.horizontal(this);
+        cards.setGravity(Gravity.CENTER);
+        grid.addView(cards, Ui.lp(this, -1, 148));
+      }
+      cardIndex++;
       LinearLayout card = Ui.vertical(this);
       card.setGravity(Gravity.CENTER);
-      card.setPadding(d(16), d(20), d(16), d(20));
+      card.setPadding(d(12), d(10), d(12), d(10));
       card.setBackground(Ui.focus(this, false, company));
       card.setFocusable(true);
       card.setClickable(true);
-      card.setContentDescription(company.name + " " + company.period);
+      card.setContentDescription(company.name + " " + company.displayPeriod(this));
       card.setOnClickListener(view -> openCompany(company, true));
       ImageView logo = new ImageView(this);
       company.setLogo(logo);
@@ -168,19 +181,19 @@ public final class MainActivity extends Activity {
         logo.setScaleY(2.05f);
       }
       logo.setScaleType(ImageView.ScaleType.FIT_CENTER);
-      card.addView(logo, Ui.lp(this, -1, 85));
-      Ui.gap(card, 18);
-      TextView name = text(company.name, 19, Ui.WHITE);
+      card.addView(logo, Ui.lp(this, -1, 56));
+      Ui.gap(card, 8);
+      TextView name = text(company.name, 17, Ui.WHITE);
       name.setTypeface(null, Typeface.BOLD);
       card.addView(name);
-      Ui.gap(card, 8);
-      card.addView(text(company.period, 12, Ui.MUTED));
-      LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(0, -1, 1);
+      Ui.gap(card, 4);
+      card.addView(text(company.displayPeriod(this), 12, Ui.MUTED));
+      LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(d(cardWidth), -1);
       params.setMargins(d(5), d(4), d(5), d(4));
       cards.addView(card, params);
       if (first == null) first = card;
     }
-    Ui.gap(content, 26);
+    Ui.gap(content, 12);
     TextView credit =
         text(
             "Videos are hosted externally on YouTube, Internet Archive or Dailymotion.\n"
@@ -655,7 +668,8 @@ public final class MainActivity extends Activity {
     ArrayList<Catalog.Episode> result = new ArrayList<>();
     String needle = query.toLowerCase(Locale.UK);
     for (Catalog.Episode item : Catalog.episodes)
-      if ((item.year < 1997 || extras() || item.main())
+      if (!Catalog.hiddenShows.contains(item.show)
+          && (item.year < 1997 || extras() || item.main())
           && (item.title + " " + item.show + " " + item.date)
               .toLowerCase(Locale.UK)
               .contains(needle)) result.add(item);
@@ -664,6 +678,7 @@ public final class MainActivity extends Activity {
 
   void library() {
     ArrayList<Catalog.Episode> items = selected();
+    if (page.equals("year") && filter.equals("All")) root.addView(Ui.button(this, "Filter shows", false, this::showVisibility));
     LinearLayout heading = Ui.horizontal(this);
     root.addView(heading, Ui.lp(this, -1, 56));
     TextView title =
@@ -876,7 +891,7 @@ public final class MainActivity extends Activity {
     @Override
     public void onBindViewHolder(Holder holder, int position) {
       Catalog.Episode item = items.get(position);
-      Art.load(holder.image, Art.episodeUrl(item, portrait));
+      Art.loadEpisode(holder.image, item, portrait);
       boolean watched = Catalog.watched(MainActivity.this, item);
       long viewed = Catalog.displayPosition(MainActivity.this, item);
       long duration = Catalog.displayDuration(MainActivity.this, item);
@@ -923,7 +938,7 @@ public final class MainActivity extends Activity {
     ImageView image = new ImageView(this);
     image.setScaleType(ImageView.ScaleType.CENTER_CROP);
     top.addView(image, Ui.lp(this, 310, 177));
-    Art.load(image, Art.episodeUrl(item, false));
+    Art.loadEpisode(image, item, false);
     Ui.gap(top, 22);
     LinearLayout info = Ui.vertical(this);
     top.addView(info, new LinearLayout.LayoutParams(0, -2, 1));
@@ -1064,8 +1079,29 @@ public final class MainActivity extends Activity {
     Ui.gap(content, 5);
   }
 
+  void showVisibility() {
+    SharedPreferences prefs = Catalog.prefs(this);
+    java.util.TreeSet<String> names = new java.util.TreeSet<>();
+    for (Catalog.Episode item : Catalog.episodes)
+      if (!page.equals("year") || item.year == year) names.add(item.show);
+    String[] shows = names.toArray(new String[0]);
+    boolean[] checked = new boolean[shows.length];
+    java.util.Set<String> hidden = new java.util.HashSet<>(Catalog.hiddenShows);
+    for (int i = 0; i < shows.length; i++) checked[i] = !hidden.contains(shows[i]);
+    new AlertDialog.Builder(this).setTitle("Shows in All · select to include")
+        .setMultiChoiceItems(shows, checked, (choice, index, visible) -> {
+          if (visible) hidden.remove(shows[index]); else hidden.add(shows[index]);
+        }).setPositiveButton("Apply", (choice, which) -> {
+          Catalog.hiddenShows = new java.util.HashSet<>(hidden);
+          prefs.edit().putStringSet("hidden_shows", hidden).apply();
+          if (page.equals("year")) filter = "All";
+          render();
+        }).setNegativeButton("Cancel", null).show();
+  }
+
   void settings() {
     SharedPreferences prefs = Catalog.prefs(this);
+    SharedPreferences playbackPreferences = getSharedPreferences("application", MODE_PRIVATE);
     LinearLayout content = Ui.vertical(this);
     TextView title = text("Settings", 27, Ui.WHITE);
     title.setTypeface(null, Typeface.BOLD);
@@ -1076,12 +1112,28 @@ public final class MainActivity extends Activity {
     scroll.addView(options);
     content.addView(scroll, Ui.lp(this, -1, 330));
     Dialog dialog = panel(content, 680);
+    setting(options, "Shows in chronology", Catalog.hiddenShows.size() + " hidden", () -> { dialog.dismiss(); showVisibility(); });
     setting(
         options,
         "Autoplay next episode",
         prefs.getBoolean("autoplay", true) ? "On" : "Off",
         () -> {
           prefs.edit().putBoolean("autoplay", !prefs.getBoolean("autoplay", true)).apply();
+          dialog.dismiss();
+          settings();
+        });
+    setting(
+        options,
+        "Picture size (all companies)",
+        playbackPreferences.getBoolean("stretch_picture", false)
+            ? "16:9 horizontal stretch"
+            : "Original proportions",
+        () -> {
+          playbackPreferences
+              .edit()
+              .putBoolean(
+                  "stretch_picture", !playbackPreferences.getBoolean("stretch_picture", false))
+              .apply();
           dialog.dismiss();
           settings();
         });

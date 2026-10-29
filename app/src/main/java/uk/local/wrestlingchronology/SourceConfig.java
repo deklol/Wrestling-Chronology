@@ -22,7 +22,7 @@ final class SourceConfig {
       throw new JSONException("Unsupported sources.json version");
     JSONObject youtube = config.getJSONObject("youtube"), archive = config.getJSONObject("archive");
     channelId = youtube.getString("channelId");
-    if (!channelId.matches("UC[A-Za-z0-9_-]{22}"))
+    if (youtube.optBoolean("enabled", true) && !channelId.matches("UC[A-Za-z0-9_-]{22}"))
       throw new JSONException("Invalid YouTube channel ID");
     collectionsPerScan = Math.max(1, Math.min(50, archive.optInt("collectionsPerScan", 12)));
     JSONArray playlists = new JSONArray(), identifiers = new JSONArray(), videos = new JSONArray();
