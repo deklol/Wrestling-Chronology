@@ -24,7 +24,12 @@ final class EpisodePage {
     page = Ui.vertical(activity); page.setPadding(dp(30), dp(16), dp(30), dp(20)); root.addView(page, new FrameLayout.LayoutParams(-1, -1));
     LinearLayout nav = Ui.horizontal(activity); page.addView(nav, Ui.lp(activity, -1, 48));
     ImageView logo = new ImageView(activity); Company.current.setLogo(logo); logo.setScaleType(ImageView.ScaleType.FIT_CENTER); nav.addView(logo, Ui.lp(activity, 70, 42));
-    Ui.gap(nav, 14); nav.addView(Ui.button(activity, "Back to library", false, activity::finish)); Ui.weight(nav);
+    Ui.gap(nav, 14);
+    TextView back = Ui.button(activity, "Back to library", false, activity::finish);
+    back.setId(View.generateViewId());
+    back.setNextFocusDownId(activity.view.getId());
+    activity.view.setNextFocusUpId(back.getId());
+    nav.addView(back); Ui.weight(nav);
     Ui.gap(page, 16); scroll = new ScrollView(activity); scroll.setFillViewport(true); page.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1));
     LinearLayout columns = Ui.horizontal(activity); columns.setGravity(Gravity.TOP); scroll.addView(columns);
     main = Ui.vertical(activity); columns.addView(main, new LinearLayout.LayoutParams(0, -2, 1));
@@ -69,6 +74,7 @@ final class EpisodePage {
       discussionHost.removeAllViews(); activity.discussion = CommunityPanel.embed(activity, discussionHost, Company.current.id, item);
       final String companyId = Company.current.id;
       activity.discussion.onSummary = data -> { if (activity.communityViews != null) activity.communityViews.acceptSummary(companyId, item.id, data); };
+      activity.discussion.like.setNextFocusUpId(activity.view.getId());
       scroll.scrollTo(0, 0);
     }
     details.removeAllViews();
@@ -113,6 +119,14 @@ final class EpisodePage {
     TextView watched = Ui.button(activity, Catalog.watched(activity, item) ? "Mark unwatched" : "Mark watched", false, () -> {});
     watched.setOnClickListener(v -> { boolean value = !Catalog.watched(activity, item); Catalog.progress(activity, item, Catalog.position(activity, item), value); watched.setText(value ? "Mark unwatched" : "Mark watched"); }); details.addView(watched);
     Ui.gap(details, 12); details.addView(Ui.text(activity, activity.queue.size() + " shows in this timeline", 11, Ui.MUTED));
+    linkPlayerFocus(details);
+  }
+  void linkPlayerFocus(View node) {
+    if (node.isFocusable()) node.setNextFocusLeftId(activity.view.getId());
+    if (node instanceof ViewGroup) {
+      ViewGroup group = (ViewGroup) node;
+      for (int i = 0; i < group.getChildCount(); i++) linkPlayerFocus(group.getChildAt(i));
+    }
   }
   void source(String provider) { activity.save(false); activity.override = provider; activity.open(); }
 }

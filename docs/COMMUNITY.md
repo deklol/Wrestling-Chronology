@@ -38,5 +38,5 @@ suppression. The Android app obtains a fresh ticket for each new watch and reuse
 it only for that watch's network retry. Until that server change is deployed, the
 original server deduplication still applies. No website files are changed here.
 
-Version name is 0.1.4; version code is 8 so existing 0.1.3 installations can
+Version name is 0.1.4; version code is 9 so existing installations can
 receive this build. Update the release APK and update.json together when publishing.

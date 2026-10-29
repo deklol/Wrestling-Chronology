@@ -1,7 +1,7 @@
 {
-  "versionCode": 8,
+  "versionCode": 9,
   "versionName": "0.1.4",
   "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.4/Wrestling-Chronology.apk",
-  "sha256": "9a5f979b2b24a9044d5ef56a8933ca2c5aae71d83ca331b1518ada05a21cd8d5",
+  "sha256": "e04b836cba63a30cf0f45b9a4c170040278a95b39928844d6da6000ba57ecad0",
   "notes": "Full episode pages with embedded and full-screen playback, source selectors, website community likes, comments, replies, views and homepage rankings. Separate guest identity per installation. Includes all five expanded libraries."
 }
