@@ -28,10 +28,16 @@ public final class PlayerActivity extends Activity {
   final ExecutorService work = Executors.newSingleThreadExecutor();
   final ArrayList<Catalog.Episode> queue = new ArrayList<>();
   final ArchiveRecovery archiveRecovery = new ArchiveRecovery();
+  EpisodePage episodePage;
+  CommunityViews communityViews;
+  CommunityPanel discussion;
   ExoPlayer player;
+  float playbackVolume = 1f, unmutedVolume = 1f;
+  ImageButton volumeButton;
+  SeekBar volumeSlider;
   PlayerView view;
   MediaSession session;
-  TextView heading, status, nextLabel, aspectButton;
+  TextView heading, status, aspectButton;
   LinearLayout top;
   SharedPreferences playbackPreferences;
   int index, optionIndex, generation, failedEpisodes;
@@ -78,6 +84,10 @@ public final class PlayerActivity extends Activity {
     override = getIntent().getStringExtra("provider");
     clipping = BuildConfig.DEBUG && getIntent().getBooleanExtra("verify_autoplay", false);
     verificationSession = clipping;
+    if (!verificationSession) {
+      communityViews = new CommunityViews(this);
+      communityViews.onViews = count -> { if (discussion != null && discussion.current()) discussion.showViews(count); };
+    }
     FrameLayout root = new FrameLayout(this);
     root.setBackgroundColor(Color.BLACK);
     setContentView(root);
@@ -115,31 +125,57 @@ public final class PlayerActivity extends Activity {
     Ui.gap(top, 7);
     status = Ui.text(this, "", 12, Ui.MUTED);
     top.addView(status);
-    LinearLayout actions = Ui.horizontal(this);
-    Ui.gap(top, 12);
-    top.addView(actions);
-    actions.addView(Ui.button(this, "‹  Library", false, this::finish));
-    Ui.gap(actions, 10);
-    actions.addView(Ui.button(this, "Next episode  ›", false, () -> advance(false)));
-    Ui.gap(actions, 10);
-    aspectButton =
-        Ui.button(
-            this,
-            "",
-            false,
-            () -> {
-              stretchPicture = !stretchPicture;
-              playbackPreferences.edit().putBoolean("stretch_picture", stretchPicture).apply();
-              applyPictureMode();
-              scheduleHide();
-            });
-    actions.addView(aspectButton);
+    // Keep picture controls in Media3's transport bar beside its settings cog.
+    view.setFullscreenButtonClickListener(fullscreen -> {
+      if (episodePage != null) episodePage.setFullscreen(fullscreen);
+    });
+    View settingsControl = view.findViewById(androidx.media3.ui.R.id.exo_settings);
+    ViewGroup bottomControls = (ViewGroup) settingsControl.getParent();
+    LinearLayout volumeControls = Ui.horizontal(this);
+    volumeButton = new ImageButton(this);
+    volumeButton.setImageResource(R.drawable.volume_on);
+    volumeButton.setBackground(Ui.focus(this, false));
+    volumeButton.setPadding(Ui.dp(this, 9), Ui.dp(this, 9), Ui.dp(this, 9), Ui.dp(this, 9));
+    volumeButton.setContentDescription("Mute");
+    volumeControls.addView(volumeButton, Ui.lp(this, 40, 40));
+    volumeSlider = new SeekBar(this);
+    volumeSlider.setMax(100); volumeSlider.setProgress(100);
+    volumeSlider.setContentDescription("Playback volume: 100 percent");
+    volumeSlider.setProgressTintList(android.content.res.ColorStateList.valueOf(Ui.accent()));
+    volumeSlider.setThumbTintList(android.content.res.ColorStateList.valueOf(Ui.WHITE));
+    volumeControls.addView(volumeSlider, Ui.lp(this, 86, 40));
+    volumeSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+      public void onProgressChanged(SeekBar bar, int progress, boolean fromUser) {
+        playbackVolume = progress / 100f;
+        if (playbackVolume > 0) unmutedVolume = playbackVolume;
+        if (player != null) player.setVolume(playbackVolume);
+        volumeButton.setImageResource(progress == 0 ? R.drawable.volume_off : R.drawable.volume_on);
+        volumeButton.setContentDescription(progress == 0 ? "Unmute" : "Mute");
+        volumeSlider.setContentDescription("Playback volume: " + progress + " percent");
+        if (fromUser) scheduleHide();
+      }
+      public void onStartTrackingTouch(SeekBar bar) { handler.removeCallbacks(hideControls); }
+      public void onStopTrackingTouch(SeekBar bar) { scheduleHide(); }
+    });
+    volumeButton.setOnClickListener(v -> { volumeSlider.setProgress(playbackVolume > 0 ? 0 : Math.round(unmutedVolume * 100)); scheduleHide(); });
+    bottomControls.addView(volumeControls, bottomControls.indexOfChild(settingsControl));
+    aspectButton = Ui.text(this, "4:3", 12, Ui.WHITE);
+    aspectButton.setGravity(Gravity.CENTER);
+    aspectButton.setTypeface(null, android.graphics.Typeface.BOLD);
+    aspectButton.setBackground(Ui.focus(this, false));
+    aspectButton.setFocusable(true);
+    aspectButton.setClickable(true);
+    aspectButton.setOnClickListener(v -> {
+      stretchPicture = !stretchPicture;
+      playbackPreferences.edit().putBoolean("stretch_picture", stretchPicture).apply();
+      applyPictureMode();
+      scheduleHide();
+    });
+    bottomControls.addView(aspectButton, bottomControls.indexOfChild(settingsControl),
+        new ViewGroup.LayoutParams(Ui.dp(this, 48), Ui.dp(this, 40)));
+    View fullscreenControl = view.findViewById(androidx.media3.ui.R.id.exo_fullscreen);
+    fullscreenControl.setBackground(Ui.focus(this, false));
     applyPictureMode();
-    Ui.gap(actions, 14);
-    nextLabel = Ui.text(this, "", 12, Ui.MUTED);
-    nextLabel.setSingleLine(true);
-    nextLabel.setEllipsize(android.text.TextUtils.TruncateAt.END);
-    actions.addView(nextLabel, new LinearLayout.LayoutParams(0, -2, 1f));
     view.setControllerVisibilityListener(
         (PlayerView.ControllerVisibilityListener)
             visibility -> {
@@ -147,6 +183,15 @@ public final class PlayerActivity extends Activity {
               top.setVisibility(visibility);
               if (controlsVisible) scheduleHide();
             });
+    episodePage = new EpisodePage(this, root);
+    setContentView(episodePage.root);
+    heading.setVisibility(View.GONE);
+    status.addTextChangedListener(new android.text.TextWatcher() {
+      public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+      public void onTextChanged(CharSequence s, int start, int before, int count) { episodePage.sourceInfo.setText(s); }
+      public void afterTextChanged(android.text.Editable s) {}
+    });
+    if (verificationSession) episodePage.setFullscreen(true);
     session = new MediaSession(this, "Wrestling Chronology");
     session.setFlags(
         MediaSession.FLAG_HANDLES_MEDIA_BUTTONS | MediaSession.FLAG_HANDLES_TRANSPORT_CONTROLS);
@@ -196,6 +241,7 @@ public final class PlayerActivity extends Activity {
   }
 
   void open() {
+    if (communityViews != null) communityViews.playing(false);
     generation++;
     ended = false;
     optionIndex = 0;
@@ -209,17 +255,12 @@ public final class PlayerActivity extends Activity {
       view.setPlayer(null);
     }
     Catalog.Episode item = current();
+    if (communityViews != null) communityViews.open(Company.current.id, item.id);
+    if (episodePage != null) episodePage.episode(item);
     resumePosition = Catalog.position(this, item);
     heading.setText(item.heading() + "  ·  " + Catalog.dateLabel(item.date));
     status.setText("Finding a stream…");
     top.setVisibility(View.VISIBLE);
-    nextLabel.setText(
-        index + 1 < queue.size()
-            ? "Up next: "
-                + queue.get(index + 1).heading()
-                + " · "
-                + Catalog.dateLabel(queue.get(index + 1).date)
-            : "Last show in this queue");
     options =
         Resolver.options(
             item,
@@ -313,6 +354,7 @@ public final class PlayerActivity extends Activity {
             .setPrioritizeTimeOverSizeThresholds(false)
             .build();
     player = new ExoPlayer.Builder(this).setTrackSelector(selector).setLoadControl(load).build();
+    player.setVolume(playbackVolume);
     player.setAudioAttributes(
         new androidx.media3.common.AudioAttributes.Builder()
             .setUsage(C.USAGE_MEDIA)
@@ -416,6 +458,8 @@ public final class PlayerActivity extends Activity {
 
           @Override
           public void onIsPlayingChanged(boolean playing) {
+            if (token != generation) return;
+            if (communityViews != null) communityViews.playing(playing && active && player.getPlaybackState() == Player.STATE_READY);
             if (playing) {
               hasPlayed = true;
               scheduleHide();
@@ -660,7 +704,7 @@ public final class PlayerActivity extends Activity {
 
   void applyPictureMode() {
     if (aspectButton != null) {
-      aspectButton.setText(stretchPicture ? "16:9 stretch" : "4:3 / Original");
+      aspectButton.setText(stretchPicture ? "16:9" : "4:3");
       aspectButton.setContentDescription(
           stretchPicture
               ? "Picture stretched horizontally. Select for original proportions."
@@ -683,6 +727,11 @@ public final class PlayerActivity extends Activity {
 
   @Override
   public void onBackPressed() {
+    if (episodePage != null && episodePage.fullscreen) {
+      episodePage.setFullscreen(false);
+      return;
+    }
+    if (episodePage != null) { finish(); return; }
     if (controlsVisible) {
       view.hideController();
       top.setVisibility(View.GONE);
@@ -733,6 +782,7 @@ public final class PlayerActivity extends Activity {
 
   @Override
   protected void onPause() {
+    if (communityViews != null) communityViews.playing(false);
     // MainActivity resumes before this player's onStop: persist before its hero is rebuilt.
     save(false);
     super.onPause();
@@ -742,6 +792,7 @@ public final class PlayerActivity extends Activity {
   protected void onStop() {
     save(false);
     active = false;
+    if (communityViews != null) communityViews.playing(false);
     playbackActive = false;
     generation++;
     handler.removeCallbacksAndMessages(null);
@@ -757,6 +808,8 @@ public final class PlayerActivity extends Activity {
 
   @Override
   protected void onDestroy() {
+    if (discussion != null) discussion.close();
+    if (communityViews != null) communityViews.dispose();
     work.shutdownNow();
     if (session != null) session.release();
     super.onDestroy();

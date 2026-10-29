@@ -540,6 +540,7 @@ public final class MainActivity extends Activity {
     } else actions.addView(Ui.button(this, "Explore years  ›", true, this::openYears));
     Ui.gap(actions, 10);
     actions.addView(Ui.button(this, "Refresh library", false, () -> refresh(false)));
+    CommunityPanel.highlights(this, body);
     for (String show : Company.current.shows)
       recentRail(body, "LATEST FOUND " + show.toUpperCase(Locale.UK), show);
     recentRail(body, "LATEST FOUND PPVs", "PPV");
@@ -836,6 +837,7 @@ public final class MainActivity extends Activity {
   final class EpisodeAdapter extends RecyclerView.Adapter<EpisodeAdapter.Holder> {
     final ArrayList<Catalog.Episode> items;
     final boolean horizontal, portrait;
+    final Map<String, org.json.JSONObject> communityStats = new HashMap<>();
 
     EpisodeAdapter(ArrayList<Catalog.Episode> values) {
       this(values, false);
@@ -929,6 +931,15 @@ public final class MainActivity extends Activity {
       holder.source.setText(progressText.isEmpty() ? item.sourceLabel() : progressText);
       holder.itemView.setContentDescription(
           item.heading() + ", " + Catalog.dateLabel(item.date) + ", " + progressText);
+      FrameLayout artwork = (FrameLayout) ((LinearLayout) holder.itemView).getChildAt(0);
+      while (artwork.getChildCount() > 2) artwork.removeViewAt(2);
+      org.json.JSONObject stats = communityStats.get(item.id);
+      if (stats != null) {
+        LinearLayout badge = CommunityPanel.badges(MainActivity.this, stats);
+        FrameLayout.LayoutParams badgePosition = new FrameLayout.LayoutParams(-2, -2, Gravity.BOTTOM | Gravity.LEFT);
+        badgePosition.setMargins(d(7), 0, d(7), d(9));
+        artwork.addView(badge, badgePosition);
+      }
       holder.itemView.setOnClickListener(
           view -> details(item, horizontal ? Catalog.forYear(item.year, "All", extras()) : items));
     }
@@ -952,102 +963,7 @@ public final class MainActivity extends Activity {
   }
 
   void details(Catalog.Episode item, ArrayList<Catalog.Episode> queue) {
-    LinearLayout content = Ui.vertical(this), top = Ui.horizontal(this);
-    content.addView(top);
-    ImageView image = new ImageView(this);
-    image.setScaleType(ImageView.ScaleType.CENTER_CROP);
-    top.addView(image, Ui.lp(this, 310, 177));
-    Art.loadEpisode(image, item, false);
-    Ui.gap(top, 22);
-    LinearLayout info = Ui.vertical(this);
-    top.addView(info, new LinearLayout.LayoutParams(0, -2, 1));
-    TextView title = text(item.heading(), 26, Ui.WHITE);
-    title.setTypeface(null, Typeface.BOLD);
-    info.addView(title);
-    Ui.gap(info, 12);
-    info.addView(
-        text(
-            Catalog.dateLabel(item.date)
-                + (item.duration > 0 ? "  ·  " + item.duration / 60 + " min" : ""),
-            14,
-            Ui.MUTED));
-    Ui.gap(info, 9);
-    info.addView(text(item.sourceLabel(), 12, Ui.accent()));
-    Ui.gap(content, 18);
-    TextView synopsis =
-        text(
-            item.description.isEmpty()
-                ? item.heading()
-                    + " · Original broadcast: "
-                    + Catalog.dateLabel(item.date)
-                    + ". Plays in the "
-                    + Company.current.name
-                    + " timeline with automatic next episode."
-                : item.description,
-            14,
-            Ui.MUTED);
-    synopsis.setMaxLines(5);
-    synopsis.setEllipsize(TextUtils.TruncateAt.END);
-    content.addView(synopsis);
-    Ui.gap(content, 20);
-    LinearLayout actions = Ui.horizontal(this);
-    content.addView(actions);
-    Dialog dialog = panel(content, 780);
-    actions.addView(
-        Ui.button(
-            this,
-            Catalog.position(this, item) > 0 ? "▶  Resume" : "▶  Play from here",
-            true,
-            () -> {
-              dialog.dismiss();
-              launch(item, queue, null);
-            }));
-    Ui.gap(actions, 10);
-    actions.addView(
-        Ui.button(
-            this,
-            "Choose source",
-            false,
-            () -> {
-              ArrayList<String> names = new ArrayList<>(), providers = new ArrayList<>();
-              names.add("Automatic");
-              providers.add(null);
-              for (String provider : new String[] {"archive", "youtube", "dailymotion"})
-                if (item.sources.stream()
-                    .anyMatch(source -> source.optString("type").equals(provider))) {
-                  names.add(
-                      provider.equals("archive")
-                          ? "Archive.org"
-                          : provider.equals("youtube") ? "Official YouTube" : "Dailymotion");
-                  providers.add(provider);
-                }
-              new AlertDialog.Builder(this)
-                  .setTitle("Playback source")
-                  .setItems(
-                      names.toArray(new String[0]),
-                      (choice, index) -> {
-                        dialog.dismiss();
-                        launch(item, queue, providers.get(index));
-                      })
-                  .show();
-            }));
-    Ui.gap(actions, 10);
-    actions.addView(
-        Ui.button(
-            this,
-            Catalog.watched(this, item) ? "Mark unwatched" : "Mark watched",
-            false,
-            () -> {
-              boolean watched = !Catalog.watched(this, item);
-              Catalog.progress(this, item, 0, watched);
-              Catalog.prefs(this)
-                  .edit()
-                  .remove("seen:" + item.id)
-                  .remove("part:" + item.id)
-                  .apply();
-              dialog.dismiss();
-              render();
-            }));
+    launch(item, queue, null);
   }
 
   void launch(Catalog.Episode item, ArrayList<Catalog.Episode> queue, String provider) {
