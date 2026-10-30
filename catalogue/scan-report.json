@@ -15207,7 +15207,7 @@
     "company": "wwe",
     "source": "YouTube recent uploads \u00b7 WWEVault recent full-show uploads",
     "status": "checked recent uploads",
-    "new_recordings": 2,
+    "new_recordings": 0,
     "skipped": [
       "FULL EVENT: WWE In Your House: Buried Alive | Undertaker vs. Mankind; Sid vs. Vader and MORE!",
       "FULL EVENT: The Last Battle of Atlanta | Rich & Sawyer clash in match that inspired Hell in a Cell",
@@ -18925,7 +18925,7 @@
     "company": "wcw",
     "source": "YouTube \u00b7 WCW Full Pay-Per-View Events",
     "status": "checked",
-    "new_recordings": 1,
+    "new_recordings": 0,
     "skipped": [
       "FULL EVENT: WCW SuperBrawl II | Sting vs. Luger; Rude vs. Steamboat",
       "FULL EVENT: Great American Bash 1988 Greensboro | Flair and Luger lead teams into WarGames",
@@ -18951,7 +18951,7 @@
     "company": "wcw",
     "source": "YouTube \u00b7 WCW Monday Nitro Full Episodes",
     "status": "checked",
-    "new_recordings": 2,
+    "new_recordings": 0,
     "skipped": [
       "FULL EPISODE: Goldberg vs. Booker T; Tag Team Caged Heat: WCW Monday Nitro, July 24, 2020"
     ]
@@ -18960,7 +18960,7 @@
     "company": "wcw",
     "source": "YouTube \u00b7 Full World Championship Wrestling Episodes",
     "status": "checked",
-    "new_recordings": 2,
+    "new_recordings": 0,
     "skipped": []
   },
   {
@@ -20726,7 +20726,7 @@
     "company": "tna",
     "source": "YouTube recent uploads \u00b7 tnawrestling recent full-show uploads",
     "status": "checked recent uploads",
-    "new_recordings": 1,
+    "new_recordings": 0,
     "skipped": [
       "Bound For Glory 2022 (FULL EVENT) | Edwards vs. Alexander, Mickie vs. Mia",
       "TNA Bound For Glory 2023 (FULL EVENT) | Trinity vs. Mickie, Alexander vs. Shelley",
