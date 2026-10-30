@@ -14,6 +14,9 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -27,11 +30,43 @@ jobs:
       - name: Validate source pack output
         run: python scripts/check_catalogue.py
       - name: Commit changed source data
+        env:
+          CATALOGUE_BRANCH: ${{ github.event.repository.default_branch }}
+          CATALOGUE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.event.repository.default_branch }}/catalogue
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalogue
-          if ! git diff --cached --quiet; then
+          for attempt in 1 2 3; do
+            git add -- catalogue
+            if git diff --cached --quiet; then
+              echo "Source catalogue is already up to date."
+              exit 0
+            fi
             git commit -m "Refresh public wrestling source libraries"
-            git push
-          fi
+            if git push origin "HEAD:refs/heads/$CATALOGUE_BRANCH"; then
+              exit 0
+            fi
+            git fetch origin "$CATALOGUE_BRANCH"
+            if git merge-base --is-ancestor HEAD FETCH_HEAD; then
+              echo "The generated commit is already published."
+              exit 0
+            fi
+            if [ "$(git rev-parse FETCH_HEAD)" = "$(git rev-parse HEAD^)" ]; then
+              echo "::error::Push failed without a newer remote commit; check repository permissions or connectivity."
+              exit 1
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo "::error::The branch kept changing. No remote work was overwritten; start a fresh workflow run."
+              exit 1
+            fi
+            if [ -n "$(git status --porcelain)" ]; then
+              echo "::error::Unexpected working-tree changes; refusing to discard them."
+              exit 1
+            fi
+            echo "Remote branch advanced; regenerating and validating against its latest catalogue (attempt $((attempt + 1)))."
+            # Only this disposable Actions checkout is reset; remote commits are preserved.
+            git reset --hard FETCH_HEAD
+            python scripts/publish_catalogue.py --refresh --base-url "$CATALOGUE_BASE_URL"
+            python scripts/check_catalogue.py
+          done
+
