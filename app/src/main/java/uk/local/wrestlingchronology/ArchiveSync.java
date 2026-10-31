@@ -34,6 +34,8 @@ final class ArchiveSync {
       if (code.equals("SN")) return "Saturday Night";
       return "Clash of the Champions";
     }
+    // Main Event recordings can name the upcoming Clash in their subtitle.
+    if (Pattern.compile("\\bmain event\\b").matcher(value).find()) return "Main Event";
     if (value.contains("clash of")) return "Clash of the Champions";
     boolean nitro = Patterns.get("\\b(?:nitro|ortin)\\b").matcher(value).find();
     boolean thunder = Patterns.get("\\b(?:thunder|rednuht)\\b").matcher(value).find();
@@ -44,7 +46,6 @@ final class ArchiveSync {
     if (value.matches(".*world[ ._-]*wide.*")) return "Worldwide";
     if (value.matches(".*\\b(?:wcw pro|pro wrestling)\\b.*")) return "Pro";
     if (value.contains("power hour")) return "Power Hour";
-    if (value.contains("main event")) return "Main Event";
     if (Patterns.get("\\bprime\\b").matcher(value).find()) return "Prime";
     if (value.contains("world championship wrestling")) return "Saturday Night";
     return null;

@@ -106,13 +106,14 @@ final class Catalog {
     Map<String, JSONObject> known = new HashMap<>();
     for (int i = 0; i < rows.length(); i++) {
       JSONObject row = rows.getJSONObject(i);
-      known.put(row.getString("date") + ":" + row.getString("show"), row);
+      known.put(seedIdentity(row), row);
     }
     for (int i = 0; i < bundled.length(); i++) {
       JSONObject row = bundled.getJSONObject(i),
-          existing = known.get(row.getString("date") + ":" + row.getString("show"));
+          existing = known.get(seedIdentity(row));
       if (existing == null) {
         rows.put(row);
+        known.put(seedIdentity(row), row);
         continue;
       }
       for (String key : new String[] {"poster", "description", "title"})
@@ -152,6 +153,13 @@ final class Catalog {
         + source.optString("videoId", source.optString("url", source.optString("urls")));
   }
 
+  private static String seedIdentity(JSONObject row) throws JSONException {
+    // Separate broadcasts can share a date, particularly a PPV and its pre-show.
+    return "PPV".equals(row.getString("show"))
+        ? row.getString("id")
+        : row.getString("date") + ":" + row.getString("show");
+  }
+
   static ArrayList<Episode> recent(String show) {
     ArrayList<Episode> rows = new ArrayList<>();
     for (Episode item : episodes) if (item.show.equals(show)) rows.add(item);
@@ -187,6 +195,7 @@ final class Catalog {
     next.sort(
         Comparator.comparing((Episode item) -> item.date)
             .thenComparingInt(item -> showOrder(item.show))
+            .thenComparingInt(item -> item.json.optInt("eventOrder", 0))
             .thenComparing(item -> item.title));
     episodes = Collections.unmodifiableList(next);
     raw = data;
@@ -277,6 +286,19 @@ final class Catalog {
 
   static Episode continueWatching(Context context) {
     return continueWatching(episodes, prefs(context).getAll());
+  }
+
+  static ArrayList<Episode> watchHistory(List<Episode> items, Map<String, ?> history) {
+    ArrayList<Episode> result = new ArrayList<>();
+    for (Episode item : items) {
+      if (Boolean.TRUE.equals(history.get("watched:" + item.id))
+          || savedNumber(history, "pos:" + item.id) > 0
+          || savedNumber(history, "seen:" + item.id) > 0)
+        result.add(item);
+    }
+    result.sort(Comparator.<Episode>comparingLong(item -> savedNumber(history, "played:" + item.id))
+        .reversed().thenComparing(item -> item.id));
+    return result;
   }
 
   /** History belongs to the selected company; a failed new selection must not hide progress. */
@@ -388,11 +410,20 @@ final class Catalog {
     }
 
     String sourceLabel() {
-      boolean archive = false, youtube = false, daily = false;
+      boolean archive = false, youtube = false, daily = false, okru = false;
       for (JSONObject source : sources) {
         archive |= source.optString("type").equals("archive");
         daily |= source.optString("type").equals("dailymotion");
+        okru |= source.optString("type").equals("okru");
         youtube |= source.optString("type").equals("youtube");
+      }
+      if (okru) {
+        ArrayList<String> labels = new ArrayList<>();
+        if (archive) labels.add("Archive");
+        if (youtube) labels.add("YouTube");
+        if (daily) labels.add("Dailymotion");
+        labels.add("OK.ru");
+        return android.text.TextUtils.join(" + ", labels);
       }
       if (daily && !archive && !youtube) return "Dailymotion";
       return archive && youtube

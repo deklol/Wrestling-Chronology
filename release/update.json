@@ -1,7 +1,7 @@
 {
-  "versionCode": 11,
-  "versionName": "0.1.5",
-  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.5/Wrestling-Chronology.apk",
-  "sha256": "e7e9eae535767a12ba8b759a549271518e318d7f9bfb4576672e76b70773069a",
-  "notes": "Adds Ring of Honor, consistent company menus, filtered Weeklies and separate Trending grids. Restores 1983\u201384 WCW shows and improves Fire TV comment navigation. Corrects Up navigation from Trending back to the top menu."
+  "versionCode": 12,
+  "versionName": "0.1.6",
+  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.6/Wrestling-Chronology.apk",
+  "sha256": "8573d67ba90b9d6172b5bbacde4410e1a2b6f2971d2180535dbb69e96ea70866",
+  "notes": "Adds OK.ru playback and sources, more ECW and AEW broadcasts, local History with Continue/Rewatch and 25-show pages, and a darker full-width home hero."
 }

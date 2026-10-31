@@ -16,6 +16,7 @@ def check_pack(pack, company):
     archive = {entry["id"] for entry in config["archive"]["collections"]}
     youtube = {entry["id"]: entry["channelId"] for entry in config["youtube"].get("videos", [])}
     daily = {entry["id"]: entry["owner"] for entry in config.get("dailymotion", {}).get("videos", [])}
+    okru = {entry['id']: entry['owner'] for entry in config.get('okru', {}).get('videos', [])}
     identifiers = set()
     for row in pack["catalogue"]["episodes"]:
         assert row["id"] not in identifiers, "Duplicate broadcast ID: " + row["id"]
@@ -34,6 +35,9 @@ def check_pack(pack, company):
                 assert source["channelId"] == config["youtube"]["channelId"] or youtube.get(source["videoId"]) == source["channelId"]
             elif source["type"] == "dailymotion":
                 assert all(daily.get(identifier) == source["owner"] for identifier in source.get("videoIds", [source["videoId"]]))
+            elif source['type'] == 'okru':
+                assert re.fullmatch(r'\d{5,20}',source['videoId'])
+                assert okru.get(source['videoId']) == source['owner'], 'Unconfigured OK.ru recording'
             else:
                 raise AssertionError("Unsupported media provider")
     assert identifiers, "Refusing an empty library"

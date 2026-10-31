@@ -87,7 +87,7 @@
       },
       {
         "id": "m8sXxm05j_g",
-        "name": "FULL EPISODE: Zbyszko finds \u201cfair\u201d official; Garvin vs. Sawyer: WCW, June 25, 1983",
+        "name": "FULL EPISODE: Zbyszko finds “fair” official; Garvin vs. Sawyer: WCW, June 25, 1983",
         "enabled": true,
         "channelId": "UCNSnSemXKDc9UEZ7m31wY9Q",
         "authorUrl": "https://www.youtube.com/@WWEVault",
@@ -98,7 +98,7 @@
       },
       {
         "id": "WtaXKcZSCpg",
-        "name": "FULL EPISODE: Rich and Sawyer get heated; Irwin calls \u201cWildfire\u201d out: WCW, July 2, 1983",
+        "name": "FULL EPISODE: Rich and Sawyer get heated; Irwin calls “Wildfire” out: WCW, July 2, 1983",
         "enabled": true,
         "channelId": "UCNSnSemXKDc9UEZ7m31wY9Q",
         "authorUrl": "https://www.youtube.com/@WWEVault",
@@ -106,6 +106,61 @@
         "show": "Saturday Night",
         "title": "World Championship Wrestling",
         "duration": 2842
+      },
+      {
+        "id": "-vWCmMTAszk",
+        "name": "FULL EVENT: WCW Halloween Havoc 2000 | Booker T vs. Steiner; Goldberg vs. KroniK |",
+        "title": "WCW Halloween Havoc 2000",
+        "date": "2000-10-29",
+        "show": "PPV",
+        "duration": 10107,
+        "enabled": true,
+        "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+        "authorUrl": "https://www.youtube.com/@WCW"
+      },
+      {
+        "id": "d3V9L9BGHKU",
+        "name": "FULL EPISODE: Eric Bischoff calls out Sting; Malenko vs. Mongo: WCW Monday Nitro, May 12, 1997",
+        "title": "FULL EPISODE: Eric Bischoff calls out Sting; Malenko vs. Mongo: WCW Monday Nitro, May 12, 1997",
+        "date": "1997-05-12",
+        "show": "Nitro",
+        "duration": 2690,
+        "enabled": true,
+        "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+        "authorUrl": "https://www.youtube.com/@WCW"
+      },
+      {
+        "id": "K6D9QHnIRTs",
+        "name": "FULL EPISODE: The nWo takes over; Rey Mysterio vs. Syxx: WCW Monday Nitro, May 5, 1997",
+        "title": "FULL EPISODE: The nWo takes over; Rey Mysterio vs. Syxx: WCW Monday Nitro, May 5, 1997",
+        "date": "1997-05-05",
+        "show": "Nitro",
+        "duration": 2682,
+        "enabled": true,
+        "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+        "authorUrl": "https://www.youtube.com/@WCW"
+      },
+      {
+        "id": "mqw-fgtJ7Bc",
+        "name": "FULL EPISODE: Flair vs. Garvin for NWA World Title in a Cage | WCW, Sept. 26, 1987",
+        "title": "FULL EPISODE: Flair vs. Garvin for NWA World Title in a Cage | WCW, Sept. 26, 1987",
+        "date": "1987-09-26",
+        "show": "Saturday Night",
+        "duration": 3287,
+        "enabled": true,
+        "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+        "authorUrl": "https://www.youtube.com/@WCW"
+      },
+      {
+        "id": "fSqqpe7BzNk",
+        "name": "FULL EPISODE: Scott Hall declares war on WCW: WCW Monday Nitro, May 27, 1996",
+        "title": "Nitro",
+        "date": "1996-05-27",
+        "show": "Nitro",
+        "duration": 5528,
+        "enabled": true,
+        "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+        "authorUrl": "https://www.youtube.com/@WCW"
       }
     ]
   },
@@ -9398,7 +9453,54 @@
         "id": "wcw-payperview-preshows",
         "name": "PPV 2000",
         "enabled": true,
-        "showHint": "PPV"
+        "showHint": "PPV",
+        "overrides": {
+          "02 19 1995 Main Event (SUPERBRAWL).mp4": {
+            "date": "1995-02-19",
+            "show": "Main Event",
+            "title": "Main Event"
+          },
+          "03 19 1995 Main Event (UNCENSORED).mp4": {
+            "date": "1995-03-19",
+            "show": "Main Event",
+            "title": "Main Event"
+          },
+          "05 21 1995 Main Event (SLAMBOREE).mp4": {
+            "date": "1995-05-21",
+            "show": "Main Event",
+            "title": "Main Event"
+          },
+          "08 06 1995 Main Event (CLASH OF THE CHAMPIONS).mp4": {
+            "date": "1995-08-06",
+            "show": "Main Event",
+            "title": "Main Event"
+          },
+          "09 17 1995 Main Event (FALL BRAWL).mp4": {
+            "date": "1995-09-17",
+            "show": "Main Event",
+            "title": "Main Event"
+          },
+          "10 29 1995 Main Event (HALLOWEEN HAVOC).mp4": {
+            "date": "1995-10-29",
+            "show": "Main Event",
+            "title": "Main Event"
+          },
+          "02 11 1996 Main Event SUPERBRAWL.mp4": {
+            "date": "1996-02-11",
+            "show": "Main Event",
+            "title": "Main Event"
+          },
+          "03 24 1996 Main Event (UNCENSORED).mp4": {
+            "date": "1996-03-24",
+            "show": "Main Event",
+            "title": "Main Event"
+          },
+          "06 16 1996 Main Event GREAT AMERICAN BASH.mp4": {
+            "date": "1996-06-16",
+            "show": "Main Event",
+            "title": "Main Event"
+          }
+        }
       },
       {
         "id": "wcw-worldwide-complete_202406",
@@ -11490,7 +11592,7 @@
         "enabled": true,
         "showHint": "Thunder",
         "overrides": {
-          "Reliving The War\uff1a (I am done with) WCW Thunder - January 3rd 2001 [uOYemNhgpyM].mkv": {
+          "Reliving The War： (I am done with) WCW Thunder - January 3rd 2001 [uOYemNhgpyM].mkv": {
             "date": "2001-01-03",
             "show": "Thunder",
             "title": "Thunder"
@@ -11503,12 +11605,12 @@
         "enabled": true,
         "showHint": "Nitro",
         "overrides": {
-          "\uff02Reliving The War\uff02\uff1a Episode 185.5 - May 24th 1999 (WCW Nitro) [wh-16Qvc6YQ].mkv": {
+          "＂Reliving The War＂： Episode 185.5 - May 24th 1999 (WCW Nitro) [wh-16Qvc6YQ].mkv": {
             "date": "1999-05-24",
             "show": "Nitro",
             "title": "Monday Nitro"
           },
-          "\uff02Reliving The War\uff02\uff1a Episode 185.5 - May 24th 1999 (WCW Nitro) [wh-16Qvc6YQ].mp4": {
+          "＂Reliving The War＂： Episode 185.5 - May 24th 1999 (WCW Nitro) [wh-16Qvc6YQ].mp4": {
             "date": "1999-05-24",
             "show": "Nitro",
             "title": "Monday Nitro"
@@ -11521,12 +11623,12 @@
         "enabled": true,
         "showHint": "Thunder",
         "overrides": {
-          "Reliving The War\uff1a WCW Thunder - December 6th 2000 [zMAe7J1tkmI].mkv": {
+          "Reliving The War： WCW Thunder - December 6th 2000 [zMAe7J1tkmI].mkv": {
             "date": "2000-12-06",
             "show": "Thunder",
             "title": "Thunder"
           },
-          "Reliving The War\uff1a WCW Thunder - December 6th 2000 [zMAe7J1tkmI].mp4": {
+          "Reliving The War： WCW Thunder - December 6th 2000 [zMAe7J1tkmI].mp4": {
             "date": "2000-12-06",
             "show": "Thunder",
             "title": "Thunder"
@@ -11535,7 +11637,7 @@
       },
       {
         "id": "11-07-92.-wcw-worldwide-complete",
-        "name": "Worldwide \u00b7 11-07-92.-wcw-worldwide-complete",
+        "name": "Worldwide · 11-07-92.-wcw-worldwide-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Worldwide",
@@ -11774,7 +11876,7 @@
       },
       {
         "id": "1984-vhs-wcw-pay-per-views",
-        "name": "PPV \u00b7 1984-vhs-wcw-pay-per-views",
+        "name": "PPV · 1984-vhs-wcw-pay-per-views",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -11788,7 +11890,7 @@
       },
       {
         "id": "1985-vhs-wcw-pay-per-views",
-        "name": "PPV \u00b7 1985-vhs-wcw-pay-per-views",
+        "name": "PPV · 1985-vhs-wcw-pay-per-views",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -11802,7 +11904,7 @@
       },
       {
         "id": "1987-vhs-wcw-pay-per-views",
-        "name": "PPV \u00b7 1987-vhs-wcw-pay-per-views",
+        "name": "PPV · 1987-vhs-wcw-pay-per-views",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -11816,7 +11918,7 @@
       },
       {
         "id": "1988-vhs-wcw-pay-per-views",
-        "name": "Clash of the Champions / PPV \u00b7 1988-vhs-wcw-pay-per-views",
+        "name": "Clash of the Champions / PPV · 1988-vhs-wcw-pay-per-views",
         "enabled": true,
         "dateOrder": "MDY",
         "overrides": {
@@ -11844,7 +11946,7 @@
       },
       {
         "id": "1989-vhs-wcw-pay-per-views",
-        "name": "Clash of the Champions / PPV \u00b7 1989-vhs-wcw-pay-per-views",
+        "name": "Clash of the Champions / PPV · 1989-vhs-wcw-pay-per-views",
         "enabled": true,
         "dateOrder": "MDY",
         "overrides": {
@@ -11882,7 +11984,7 @@
       },
       {
         "id": "1990-vhs-wcw-pay-per-views",
-        "name": "Clash of the Champions / PPV \u00b7 1990-vhs-wcw-pay-per-views",
+        "name": "Clash of the Champions / PPV · 1990-vhs-wcw-pay-per-views",
         "enabled": true,
         "dateOrder": "MDY",
         "overrides": {
@@ -11915,7 +12017,7 @@
       },
       {
         "id": "1991-vhs-wcw-pay-per-views",
-        "name": "Clash of the Champions / PPV \u00b7 1991-vhs-wcw-pay-per-views",
+        "name": "Clash of the Champions / PPV · 1991-vhs-wcw-pay-per-views",
         "enabled": true,
         "dateOrder": "MDY",
         "overrides": {
@@ -11948,7 +12050,7 @@
       },
       {
         "id": "1992-vhs-wcw-pay-per-views",
-        "name": "Clash of the Champions / PPV \u00b7 1992-vhs-wcw-pay-per-views",
+        "name": "Clash of the Champions / PPV · 1992-vhs-wcw-pay-per-views",
         "enabled": true,
         "dateOrder": "MDY",
         "overrides": {
@@ -11981,7 +12083,7 @@
       },
       {
         "id": "1993-vhs-wcw-pay-per-views",
-        "name": "Clash of the Champions / PPV \u00b7 1993-vhs-wcw-pay-per-views",
+        "name": "Clash of the Champions / PPV · 1993-vhs-wcw-pay-per-views",
         "enabled": true,
         "dateOrder": "MDY",
         "overrides": {
@@ -12014,7 +12116,7 @@
       },
       {
         "id": "1994-vhs-wcw-pay-per-views",
-        "name": "Clash of the Champions \u00b7 1994-vhs-wcw-pay-per-views",
+        "name": "Clash of the Champions · 1994-vhs-wcw-pay-per-views",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Clash of the Champions",
@@ -12043,7 +12145,7 @@
       },
       {
         "id": "Dec-27-1994",
-        "name": "Saturday Night \u00b7 Dec-27-1994",
+        "name": "Saturday Night · Dec-27-1994",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Saturday Night",
@@ -12312,12 +12414,32 @@
             "date": "1994-12-31",
             "show": "Saturday Night",
             "title": "Saturday Night"
+          },
+          "01 27 1994 COTC26.mp4": {
+            "date": "1994-01-27",
+            "show": "Clash of the Champions",
+            "title": "Clash of the Champions 26"
+          },
+          "06 23 1994 COTC27.mp4": {
+            "date": "1994-06-23",
+            "show": "Clash of the Champions",
+            "title": "Clash of the Champions 27"
+          },
+          "08 24 1994 COTC28.mp4": {
+            "date": "1994-08-24",
+            "show": "Clash of the Champions",
+            "title": "Clash of the Champions 28"
+          },
+          "11 16 1994 COTC29.mp4": {
+            "date": "1994-11-16",
+            "show": "Clash of the Champions",
+            "title": "Clash of the Champions 29"
           }
         }
       },
       {
         "id": "apr.-17-1994",
-        "name": "PPV \u00b7 apr.-17-1994",
+        "name": "PPV · apr.-17-1994",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12331,7 +12453,7 @@
       },
       {
         "id": "apr.-1996",
-        "name": "Nitro \u00b7 apr.-1996",
+        "name": "Nitro · apr.-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -12360,7 +12482,7 @@
       },
       {
         "id": "aug.-10-1996",
-        "name": "PPV \u00b7 aug.-10-1996",
+        "name": "PPV · aug.-10-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12374,7 +12496,7 @@
       },
       {
         "id": "aug.-1996",
-        "name": "Nitro \u00b7 aug.-1996",
+        "name": "Nitro · aug.-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -12403,7 +12525,7 @@
       },
       {
         "id": "dec.-13-1989",
-        "name": "PPV \u00b7 dec.-13-1989",
+        "name": "PPV · dec.-13-1989",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12417,7 +12539,7 @@
       },
       {
         "id": "dec.-16-1990",
-        "name": "PPV \u00b7 dec.-16-1990",
+        "name": "PPV · dec.-16-1990",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12431,7 +12553,7 @@
       },
       {
         "id": "dec.-1995",
-        "name": "Nitro \u00b7 dec.-1995",
+        "name": "Nitro · dec.-1995",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -12460,7 +12582,7 @@
       },
       {
         "id": "dec.-1996",
-        "name": "Nitro \u00b7 dec.-1996",
+        "name": "Nitro · dec.-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -12494,7 +12616,7 @@
       },
       {
         "id": "dec.-26-1988",
-        "name": "PPV \u00b7 dec.-26-1988",
+        "name": "PPV · dec.-26-1988",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12508,7 +12630,7 @@
       },
       {
         "id": "dec.-27-1993",
-        "name": "PPV \u00b7 dec.-27-1993",
+        "name": "PPV · dec.-27-1993",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12522,7 +12644,7 @@
       },
       {
         "id": "dec.-27-1994",
-        "name": "PPV \u00b7 dec.-27-1994",
+        "name": "PPV · dec.-27-1994",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12536,7 +12658,7 @@
       },
       {
         "id": "dec.-27-1995",
-        "name": "PPV \u00b7 dec.-27-1995",
+        "name": "PPV · dec.-27-1995",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12550,7 +12672,7 @@
       },
       {
         "id": "dec.-28-1992",
-        "name": "PPV \u00b7 dec.-28-1992",
+        "name": "PPV · dec.-28-1992",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12558,13 +12680,13 @@
           "DEC. 28, 1992.mp4": {
             "date": "1992-12-28",
             "show": "PPV",
-            "title": "Starrcade '92: Battlebowl \u2013 The Lethal Lottery II"
+            "title": "Starrcade '92: Battlebowl – The Lethal Lottery II"
           }
         }
       },
       {
         "id": "dec.-29-1991",
-        "name": "PPV \u00b7 dec.-29-1991",
+        "name": "PPV · dec.-29-1991",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12572,13 +12694,13 @@
           "DEC. 29, 1991.mp4": {
             "date": "1991-12-29",
             "show": "PPV",
-            "title": "Starrcade '91: Battlebowl \u2013 The Lethal Lottery"
+            "title": "Starrcade '91: Battlebowl – The Lethal Lottery"
           }
         }
       },
       {
         "id": "dec.-29-1996",
-        "name": "PPV \u00b7 dec.-29-1996",
+        "name": "PPV · dec.-29-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12592,7 +12714,7 @@
       },
       {
         "id": "feb.-11-1996",
-        "name": "PPV \u00b7 feb.-11-1996",
+        "name": "PPV · feb.-11-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12606,7 +12728,7 @@
       },
       {
         "id": "feb.-19-1995",
-        "name": "PPV \u00b7 feb.-19-1995",
+        "name": "PPV · feb.-19-1995",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12620,7 +12742,7 @@
       },
       {
         "id": "feb.-1996",
-        "name": "Nitro \u00b7 feb.-1996",
+        "name": "Nitro · feb.-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -12649,7 +12771,7 @@
       },
       {
         "id": "feb.-20-1989",
-        "name": "PPV \u00b7 feb.-20-1989",
+        "name": "PPV · feb.-20-1989",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12663,7 +12785,7 @@
       },
       {
         "id": "feb.-20-1994",
-        "name": "PPV \u00b7 feb.-20-1994",
+        "name": "PPV · feb.-20-1994",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12677,7 +12799,7 @@
       },
       {
         "id": "feb.-21-1993",
-        "name": "PPV \u00b7 feb.-21-1993",
+        "name": "PPV · feb.-21-1993",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12691,7 +12813,7 @@
       },
       {
         "id": "feb.-24-1991",
-        "name": "PPV \u00b7 feb.-24-1991",
+        "name": "PPV · feb.-24-1991",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12705,7 +12827,7 @@
       },
       {
         "id": "feb.-25-1990",
-        "name": "PPV \u00b7 feb.-25-1990",
+        "name": "PPV · feb.-25-1990",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12719,7 +12841,7 @@
       },
       {
         "id": "feb.-29-1992",
-        "name": "PPV \u00b7 feb.-29-1992",
+        "name": "PPV · feb.-29-1992",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -12733,7 +12855,7 @@
       },
       {
         "id": "jan-01-1996-dec-30-1996",
-        "name": "Clash of the Champions / Nitro / Saturday Night \u00b7 jan-01-1996-dec-30-1996",
+        "name": "Clash of the Champions / Nitro / Saturday Night · jan-01-1996-dec-30-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "overrides": {
@@ -12991,7 +13113,7 @@
       },
       {
         "id": "jan.-1996",
-        "name": "Nitro \u00b7 jan.-1996",
+        "name": "Nitro · jan.-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -13025,7 +13147,7 @@
       },
       {
         "id": "jan.-24-1988",
-        "name": "PPV \u00b7 jan.-24-1988",
+        "name": "PPV · jan.-24-1988",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13039,7 +13161,7 @@
       },
       {
         "id": "jul-07-1996",
-        "name": "PPV \u00b7 jul-07-1996",
+        "name": "PPV · jul-07-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13053,7 +13175,7 @@
       },
       {
         "id": "jul.-05-1986",
-        "name": "PPV \u00b7 jul.-05-1986",
+        "name": "PPV · jul.-05-1986",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13067,7 +13189,7 @@
       },
       {
         "id": "jul.-06-1985",
-        "name": "PPV \u00b7 jul.-06-1985",
+        "name": "PPV · jul.-06-1985",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13081,7 +13203,7 @@
       },
       {
         "id": "jul.-07-1990",
-        "name": "PPV \u00b7 jul.-07-1990",
+        "name": "PPV · jul.-07-1990",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13095,7 +13217,7 @@
       },
       {
         "id": "jul.-16-1988",
-        "name": "PPV \u00b7 jul.-16-1988",
+        "name": "PPV · jul.-16-1988",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13109,7 +13231,7 @@
       },
       {
         "id": "jul.-16-1995",
-        "name": "PPV \u00b7 jul.-16-1995",
+        "name": "PPV · jul.-16-1995",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13123,7 +13245,7 @@
       },
       {
         "id": "jul.-17-1994",
-        "name": "PPV \u00b7 jul.-17-1994",
+        "name": "PPV · jul.-17-1994",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13137,7 +13259,7 @@
       },
       {
         "id": "jul.-18-1993",
-        "name": "PPV \u00b7 jul.-18-1993",
+        "name": "PPV · jul.-18-1993",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13151,7 +13273,7 @@
       },
       {
         "id": "jul.-1996",
-        "name": "Nitro \u00b7 jul.-1996",
+        "name": "Nitro · jul.-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -13185,7 +13307,7 @@
       },
       {
         "id": "jul.-26-1986",
-        "name": "PPV \u00b7 jul.-26-1986",
+        "name": "PPV · jul.-26-1986",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13199,7 +13321,7 @@
       },
       {
         "id": "jun.-16-1996",
-        "name": "PPV \u00b7 jun.-16-1996",
+        "name": "PPV · jun.-16-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13213,7 +13335,7 @@
       },
       {
         "id": "jun.-18-1995",
-        "name": "PPV \u00b7 jun.-18-1995",
+        "name": "PPV · jun.-18-1995",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13227,7 +13349,7 @@
       },
       {
         "id": "jun.-20-1992",
-        "name": "PPV \u00b7 jun.-20-1992",
+        "name": "PPV · jun.-20-1992",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13241,7 +13363,7 @@
       },
       {
         "id": "main-event-93-complete",
-        "name": "Main Event \u00b7 main-event-93-complete",
+        "name": "Main Event · main-event-93-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Main Event",
@@ -13460,7 +13582,7 @@
       },
       {
         "id": "main-event-complete",
-        "name": "Main Event \u00b7 main-event-complete",
+        "name": "Main Event · main-event-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Main Event",
@@ -13719,7 +13841,7 @@
       },
       {
         "id": "mar.-19-1995",
-        "name": "PPV \u00b7 mar.-19-1995",
+        "name": "PPV · mar.-19-1995",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13733,7 +13855,7 @@
       },
       {
         "id": "mar.-1996",
-        "name": "Nitro \u00b7 mar.-1996",
+        "name": "Nitro · mar.-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -13757,7 +13879,7 @@
       },
       {
         "id": "mar.-24-1996",
-        "name": "PPV \u00b7 mar.-24-1996",
+        "name": "PPV · mar.-24-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13771,7 +13893,7 @@
       },
       {
         "id": "may-17-1992",
-        "name": "PPV \u00b7 may-17-1992",
+        "name": "PPV · may-17-1992",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13785,7 +13907,7 @@
       },
       {
         "id": "may-19-1990",
-        "name": "PPV \u00b7 may-19-1990",
+        "name": "PPV · may-19-1990",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13799,7 +13921,7 @@
       },
       {
         "id": "may-19-1991",
-        "name": "PPV \u00b7 may-19-1991",
+        "name": "PPV · may-19-1991",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13813,7 +13935,7 @@
       },
       {
         "id": "may-19-1996",
-        "name": "PPV \u00b7 may-19-1996",
+        "name": "PPV · may-19-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13827,7 +13949,7 @@
       },
       {
         "id": "may-1996",
-        "name": "Nitro \u00b7 may-1996",
+        "name": "Nitro · may-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -13846,12 +13968,17 @@
             "date": "1996-05-20",
             "show": "Nitro",
             "title": "Nitro"
+          },
+          "MAY 27, 1996.mp4": {
+            "date": "1996-05-27",
+            "show": "Nitro",
+            "title": "Nitro"
           }
         }
       },
       {
         "id": "may-21-1995",
-        "name": "PPV \u00b7 may-21-1995",
+        "name": "PPV · may-21-1995",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13865,7 +13992,7 @@
       },
       {
         "id": "may-22-1994",
-        "name": "PPV \u00b7 may-22-1994",
+        "name": "PPV · may-22-1994",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13879,7 +14006,7 @@
       },
       {
         "id": "may-23-1993",
-        "name": "PPV \u00b7 may-23-1993",
+        "name": "PPV · may-23-1993",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13893,7 +14020,7 @@
       },
       {
         "id": "nov.-1995",
-        "name": "Nitro \u00b7 nov.-1995",
+        "name": "Nitro · nov.-1995",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -13922,7 +14049,7 @@
       },
       {
         "id": "nov.-1996",
-        "name": "Nitro \u00b7 nov.-1996",
+        "name": "Nitro · nov.-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -13951,7 +14078,7 @@
       },
       {
         "id": "nov.-20-1993",
-        "name": "PPV \u00b7 nov.-20-1993",
+        "name": "PPV · nov.-20-1993",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13965,7 +14092,7 @@
       },
       {
         "id": "nov.-24-1983",
-        "name": "PPV \u00b7 nov.-24-1983",
+        "name": "PPV · nov.-24-1983",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13979,7 +14106,7 @@
       },
       {
         "id": "nov.-24-1996",
-        "name": "PPV \u00b7 nov.-24-1996",
+        "name": "PPV · nov.-24-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -13993,7 +14120,7 @@
       },
       {
         "id": "nov.-26-1987",
-        "name": "PPV \u00b7 nov.-26-1987",
+        "name": "PPV · nov.-26-1987",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14007,7 +14134,7 @@
       },
       {
         "id": "nov.-26-1995",
-        "name": "PPV \u00b7 nov.-26-1995",
+        "name": "PPV · nov.-26-1995",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14021,7 +14148,7 @@
       },
       {
         "id": "nov.-27-1986",
-        "name": "PPV \u00b7 nov.-27-1986",
+        "name": "PPV · nov.-27-1986",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14035,7 +14162,7 @@
       },
       {
         "id": "nwa-clash-of-the-champions-9-new-york-knock-out-15-11-1989",
-        "name": "Clash of the Champions \u00b7 nwa-clash-of-the-champions-9-new-york-knock-out-15-11-1989",
+        "name": "Clash of the Champions · nwa-clash-of-the-champions-9-new-york-knock-out-15-11-1989",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Clash of the Champions",
@@ -14049,7 +14176,7 @@
       },
       {
         "id": "nwa-crockett-cup-1986-19-04-1986",
-        "name": "PPV \u00b7 nwa-crockett-cup-1986-19-04-1986",
+        "name": "PPV · nwa-crockett-cup-1986-19-04-1986",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14063,7 +14190,7 @@
       },
       {
         "id": "nwa-wcw-power-hour-complete",
-        "name": "Power Hour \u00b7 nwa-wcw-power-hour-complete",
+        "name": "Power Hour · nwa-wcw-power-hour-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Power Hour",
@@ -14307,7 +14434,7 @@
       },
       {
         "id": "nwa-wcwnjpw-wrestling-collision-in-korea-42895",
-        "name": "PPV \u00b7 nwa-wcwnjpw-wrestling-collision-in-korea-42895",
+        "name": "PPV · nwa-wcwnjpw-wrestling-collision-in-korea-42895",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14321,7 +14448,7 @@
       },
       {
         "id": "nwa.-wcw-.worldwide_complete",
-        "name": "Worldwide \u00b7 nwa.-wcw-.worldwide_complete",
+        "name": "Worldwide · nwa.-wcw-.worldwide_complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Worldwide",
@@ -14470,7 +14597,7 @@
       },
       {
         "id": "oct.-1995",
-        "name": "Nitro \u00b7 oct.-1995",
+        "name": "Nitro · oct.-1995",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -14504,7 +14631,7 @@
       },
       {
         "id": "oct.-1996",
-        "name": "Nitro \u00b7 oct.-1996",
+        "name": "Nitro · oct.-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -14533,7 +14660,7 @@
       },
       {
         "id": "oct.-23-1994",
-        "name": "PPV \u00b7 oct.-23-1994",
+        "name": "PPV · oct.-23-1994",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14547,7 +14674,7 @@
       },
       {
         "id": "oct.-24-1993",
-        "name": "PPV \u00b7 oct.-24-1993",
+        "name": "PPV · oct.-24-1993",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14561,7 +14688,7 @@
       },
       {
         "id": "oct.-25-1992",
-        "name": "PPV \u00b7 oct.-25-1992",
+        "name": "PPV · oct.-25-1992",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14575,7 +14702,7 @@
       },
       {
         "id": "oct.-27-1991",
-        "name": "PPV \u00b7 oct.-27-1991",
+        "name": "PPV · oct.-27-1991",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14589,7 +14716,7 @@
       },
       {
         "id": "oct.-27-1996",
-        "name": "PPV \u00b7 oct.-27-1996",
+        "name": "PPV · oct.-27-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14603,7 +14730,7 @@
       },
       {
         "id": "oct.-28-1989",
-        "name": "PPV \u00b7 oct.-28-1989",
+        "name": "PPV · oct.-28-1989",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14617,7 +14744,7 @@
       },
       {
         "id": "oct.-29-1995",
-        "name": "PPV \u00b7 oct.-29-1995",
+        "name": "PPV · oct.-29-1995",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14631,7 +14758,7 @@
       },
       {
         "id": "prime-95-complete",
-        "name": "Prime \u00b7 prime-95-complete",
+        "name": "Prime · prime-95-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Prime",
@@ -14850,7 +14977,7 @@
       },
       {
         "id": "sep.-15-1996",
-        "name": "PPV \u00b7 sep.-15-1996",
+        "name": "PPV · sep.-15-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14864,7 +14991,7 @@
       },
       {
         "id": "sep.-17-1995",
-        "name": "PPV \u00b7 sep.-17-1995",
+        "name": "PPV · sep.-17-1995",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14878,7 +15005,7 @@
       },
       {
         "id": "sep.-18-1994",
-        "name": "PPV \u00b7 sep.-18-1994",
+        "name": "PPV · sep.-18-1994",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14892,7 +15019,7 @@
       },
       {
         "id": "sep.-1995",
-        "name": "Nitro \u00b7 sep.-1995",
+        "name": "Nitro · sep.-1995",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -14921,7 +15048,7 @@
       },
       {
         "id": "sep.-1996",
-        "name": "Nitro \u00b7 sep.-1996",
+        "name": "Nitro · sep.-1996",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Nitro",
@@ -14955,7 +15082,7 @@
       },
       {
         "id": "wcw-all-nighter-94",
-        "name": "All Nighter \u00b7 wcw-all-nighter-94",
+        "name": "All Nighter · wcw-all-nighter-94",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "All Nighter",
@@ -14969,7 +15096,7 @@
       },
       {
         "id": "wcw-all-nighter-95",
-        "name": "All Nighter \u00b7 wcw-all-nighter-95",
+        "name": "All Nighter · wcw-all-nighter-95",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "All Nighter",
@@ -14983,7 +15110,7 @@
       },
       {
         "id": "wcw-njpw-collision-in-korea-complete-edition",
-        "name": "PPV \u00b7 wcw-njpw-collision-in-korea-complete-edition",
+        "name": "PPV · wcw-njpw-collision-in-korea-complete-edition",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -14997,7 +15124,7 @@
       },
       {
         "id": "wcw-njpw-starrcade-1991-in-tokyo-dome-21-03-1991",
-        "name": "PPV \u00b7 wcw-njpw-starrcade-1991-in-tokyo-dome-21-03-1991",
+        "name": "PPV · wcw-njpw-starrcade-1991-in-tokyo-dome-21-03-1991",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -15006,12 +15133,17 @@
             "date": "1991-03-21",
             "show": "PPV",
             "title": "WCW/New Japan Supershow I"
+          },
+          "WCW & NJPW Starrcade 1991 In Tokyo Dome 21-03-1991.mp4": {
+            "date": "1991-03-21",
+            "show": "PPV",
+            "title": "WCW/New Japan Supershow I"
           }
         }
       },
       {
         "id": "wcw-powerhour-complete",
-        "name": "Power Hour \u00b7 wcw-powerhour-complete",
+        "name": "Power Hour · wcw-powerhour-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Power Hour",
@@ -15230,7 +15362,7 @@
       },
       {
         "id": "wcw-powerhour-incomplete",
-        "name": "Power Hour \u00b7 wcw-powerhour-incomplete",
+        "name": "Power Hour · wcw-powerhour-incomplete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Power Hour",
@@ -15289,7 +15421,7 @@
       },
       {
         "id": "wcw-pro-10-20-90_202404",
-        "name": "Pro \u00b7 wcw-pro-10-20-90_202404",
+        "name": "Pro · wcw-pro-10-20-90_202404",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Pro",
@@ -15478,7 +15610,7 @@
       },
       {
         "id": "wcw-pro-95-complete",
-        "name": "Pro \u00b7 wcw-pro-95-complete",
+        "name": "Pro · wcw-pro-95-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Pro",
@@ -15732,7 +15864,7 @@
       },
       {
         "id": "wcw-worldwide-1993-complete",
-        "name": "Worldwide \u00b7 wcw-worldwide-1993-complete",
+        "name": "Worldwide · wcw-worldwide-1993-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Worldwide",
@@ -15781,7 +15913,7 @@
       },
       {
         "id": "wcw-worldwide-94-complete",
-        "name": "Worldwide \u00b7 wcw-worldwide-94-complete",
+        "name": "Worldwide · wcw-worldwide-94-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Worldwide",
@@ -16040,7 +16172,7 @@
       },
       {
         "id": "wcw-worldwide-95-incomplete",
-        "name": "Worldwide \u00b7 wcw-worldwide-95-incomplete",
+        "name": "Worldwide · wcw-worldwide-95-incomplete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Worldwide",
@@ -16119,7 +16251,7 @@
       },
       {
         "id": "wcw-x-njpw-collision-in-korea-2",
-        "name": "PPV \u00b7 wcw-x-njpw-collision-in-korea-2",
+        "name": "PPV · wcw-x-njpw-collision-in-korea-2",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -16133,7 +16265,7 @@
       },
       {
         "id": "wcw.-1988.06.-clash-of-the-champions-03-restored-2021-ch",
-        "name": "Clash of the Champions \u00b7 wcw.-1988.06.-clash-of-the-champions-03-restored-2021-ch",
+        "name": "Clash of the Champions · wcw.-1988.06.-clash-of-the-champions-03-restored-2021-ch",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Clash of the Champions",
@@ -16147,7 +16279,7 @@
       },
       {
         "id": "wcw.-main.-event.-complete",
-        "name": "Main Event \u00b7 wcw.-main.-event.-complete",
+        "name": "Main Event · wcw.-main.-event.-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Main Event",
@@ -16386,7 +16518,7 @@
       },
       {
         "id": "wcw.-me.-complete",
-        "name": "Main Event \u00b7 wcw.-me.-complete",
+        "name": "Main Event · wcw.-me.-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Main Event",
@@ -16635,7 +16767,7 @@
       },
       {
         "id": "wcw.-power.-hour-complete",
-        "name": "Power Hour \u00b7 wcw.-power.-hour-complete",
+        "name": "Power Hour · wcw.-power.-hour-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Power Hour",
@@ -16839,7 +16971,7 @@
       },
       {
         "id": "wcw.-power.-hour.-complete",
-        "name": "Power Hour \u00b7 wcw.-power.-hour.-complete",
+        "name": "Power Hour · wcw.-power.-hour.-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Power Hour",
@@ -17103,7 +17235,7 @@
       },
       {
         "id": "wcw.-pro.-1991.complete",
-        "name": "Pro \u00b7 wcw.-pro.-1991.complete",
+        "name": "Pro · wcw.-pro.-1991.complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Pro",
@@ -17367,7 +17499,7 @@
       },
       {
         "id": "wcw.-pro.-wrestling.-complete",
-        "name": "Pro \u00b7 wcw.-pro.-wrestling.-complete",
+        "name": "Pro · wcw.-pro.-wrestling.-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Pro",
@@ -17546,7 +17678,7 @@
       },
       {
         "id": "wcw.-pro.-wrestling.-complete_202406",
-        "name": "Pro \u00b7 wcw.-pro.-wrestling.-complete_202406",
+        "name": "Pro · wcw.-pro.-wrestling.-complete_202406",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Pro",
@@ -17800,7 +17932,7 @@
       },
       {
         "id": "wcw.-saturday.-night.-1991.complete",
-        "name": "Saturday Night \u00b7 wcw.-saturday.-night.-1991.complete",
+        "name": "Saturday Night · wcw.-saturday.-night.-1991.complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Saturday Night",
@@ -18004,7 +18136,7 @@
       },
       {
         "id": "wcw.-saturday.-night.-incomplete",
-        "name": "Saturday Night \u00b7 wcw.-saturday.-night.-incomplete",
+        "name": "Saturday Night · wcw.-saturday.-night.-incomplete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Saturday Night",
@@ -18028,7 +18160,7 @@
       },
       {
         "id": "wcw.-world.-championship.-wrestling.-complete",
-        "name": "Saturday Night \u00b7 wcw.-world.-championship.-wrestling.-complete",
+        "name": "Saturday Night · wcw.-world.-championship.-wrestling.-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Saturday Night",
@@ -18222,7 +18354,7 @@
       },
       {
         "id": "wcw.-worldwide.-complete",
-        "name": "Worldwide \u00b7 wcw.-worldwide.-complete",
+        "name": "Worldwide · wcw.-worldwide.-complete",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Worldwide",
@@ -18461,7 +18593,7 @@
       },
       {
         "id": "when-worlds-collide-1994-aaa-ppv-los-angeles-ca",
-        "name": "PPV \u00b7 when-worlds-collide-1994-aaa-ppv-los-angeles-ca",
+        "name": "PPV · when-worlds-collide-1994-aaa-ppv-los-angeles-ca",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "PPV",
@@ -18475,7 +18607,7 @@
       },
       {
         "id": "world.-championship.-wrestling.-partial",
-        "name": "Saturday Night \u00b7 world.-championship.-wrestling.-partial",
+        "name": "Saturday Night · world.-championship.-wrestling.-partial",
         "enabled": true,
         "dateOrder": "MDY",
         "showHint": "Saturday Night",
@@ -21988,6 +22120,4100 @@
           }
         },
         "mappedOnly": true
+      }
+    ]
+  },
+  "okru": {
+    "enabled": true,
+    "videos": [
+      {
+        "id": "7187486935695",
+        "owner": "589703611535",
+        "name": "NWA/WCW The Great American Bash: The New Revolution 07/07/1990",
+        "episodeId": "1990-07-07:thegreatamericanbash",
+        "date": "1990-07-07",
+        "show": "PPV",
+        "title": "The Great American Bash",
+        "duration": 10188,
+        "enabled": true
+      },
+      {
+        "id": "15313292167686",
+        "owner": "910449455878",
+        "name": "1995-09-04",
+        "episodeId": "1995-09-04:nitro",
+        "date": "1995-09-04",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 2704,
+        "enabled": true
+      },
+      {
+        "id": "15328869485062",
+        "owner": "910449455878",
+        "name": "1995-09-11",
+        "episodeId": "1995-09-11:nitro",
+        "date": "1995-09-11",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 2730,
+        "enabled": true
+      },
+      {
+        "id": "15328869091846",
+        "owner": "910449455878",
+        "name": "1995-09-18",
+        "episodeId": "1995-09-18:nitro",
+        "date": "1995-09-18",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 2669,
+        "enabled": true
+      },
+      {
+        "id": "15328869550598",
+        "owner": "910449455878",
+        "name": "1995-09-25",
+        "episodeId": "1995-09-25:nitro",
+        "date": "1995-09-25",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 2699,
+        "enabled": true
+      },
+      {
+        "id": "15328870730246",
+        "owner": "910449455878",
+        "name": "1995-10-02",
+        "episodeId": "1995-10-02:nitro",
+        "date": "1995-10-02",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 2718,
+        "enabled": true
+      },
+      {
+        "id": "15328869026310",
+        "owner": "910449455878",
+        "name": "1995-10-09",
+        "episodeId": "1995-10-09:nitro",
+        "date": "1995-10-09",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 2717,
+        "enabled": true
+      },
+      {
+        "id": "15328869419526",
+        "owner": "910449455878",
+        "name": "1995-10-16",
+        "episodeId": "1995-10-16:nitro",
+        "date": "1995-10-16",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 2702,
+        "enabled": true
+      },
+      {
+        "id": "15328870468102",
+        "owner": "910449455878",
+        "name": "1995-10-23",
+        "episodeId": "1995-10-23:nitro",
+        "date": "1995-10-23",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 2745,
+        "enabled": true
+      },
+      {
+        "id": "15328870271494",
+        "owner": "910449455878",
+        "name": "1995-10-30",
+        "episodeId": "1995-10-30:nitro",
+        "date": "1995-10-30",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 2667,
+        "enabled": true
+      },
+      {
+        "id": "15328868960774",
+        "owner": "910449455878",
+        "name": "1995-11-06",
+        "episodeId": "1995-11-06:nitro",
+        "date": "1995-11-06",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 2944,
+        "enabled": true
+      },
+      {
+        "id": "15328869943814",
+        "owner": "910449455878",
+        "name": "1995-11-13",
+        "episodeId": "1995-11-13:nitro",
+        "date": "1995-11-13",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 2730,
+        "enabled": true
+      },
+      {
+        "id": "15328868895238",
+        "owner": "910449455878",
+        "name": "1995-11-20",
+        "episodeId": "1995-11-20:nitro",
+        "date": "1995-11-20",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 2854,
+        "enabled": true
+      },
+      {
+        "id": "15328870074886",
+        "owner": "910449455878",
+        "name": "1995-11-27",
+        "episodeId": "1995-11-27:nitro",
+        "date": "1995-11-27",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 2850,
+        "enabled": true
+      },
+      {
+        "id": "15328870992390",
+        "owner": "910449455878",
+        "name": "1995-12-04",
+        "episodeId": "1995-12-04:nitro",
+        "date": "1995-12-04",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 3326,
+        "enabled": true
+      },
+      {
+        "id": "15328869681670",
+        "owner": "910449455878",
+        "name": "1995-12-11",
+        "episodeId": "1995-12-11:nitro",
+        "date": "1995-12-11",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 3304,
+        "enabled": true
+      },
+      {
+        "id": "15328870861318",
+        "owner": "910449455878",
+        "name": "1995-12-18",
+        "episodeId": "1995-12-18:nitro",
+        "date": "1995-12-18",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 3147,
+        "enabled": true
+      },
+      {
+        "id": "15328869222918",
+        "owner": "910449455878",
+        "name": "1995-12-25",
+        "episodeId": "1995-12-25:nitro",
+        "date": "1995-12-25",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 3157,
+        "enabled": true
+      },
+      {
+        "id": "15328936593926",
+        "owner": "910449455878",
+        "name": "1996-01-01",
+        "episodeId": "1996-01-01:nitro",
+        "date": "1996-01-01",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 3111,
+        "enabled": true
+      },
+      {
+        "id": "15328937052678",
+        "owner": "910449455878",
+        "name": "1996-01-08",
+        "episodeId": "1996-01-08:nitro",
+        "date": "1996-01-08",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 3224,
+        "enabled": true
+      },
+      {
+        "id": "15328936921606",
+        "owner": "910449455878",
+        "name": "1996-01-15",
+        "episodeId": "1996-01-15:nitro",
+        "date": "1996-01-15",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 3138,
+        "enabled": true
+      },
+      {
+        "id": "15328936659462",
+        "owner": "910449455878",
+        "name": "1996-03-11",
+        "episodeId": "1996-03-11:nitro",
+        "date": "1996-03-11",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 3092,
+        "enabled": true
+      },
+      {
+        "id": "15328937380358",
+        "owner": "910449455878",
+        "name": "1996-03-18",
+        "episodeId": "1996-03-18:nitro",
+        "date": "1996-03-18",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 3379,
+        "enabled": true
+      },
+      {
+        "id": "15328937511430",
+        "owner": "910449455878",
+        "name": "1996-07-22",
+        "episodeId": "1996-07-22:nitro",
+        "date": "1996-07-22",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 5377,
+        "enabled": true
+      },
+      {
+        "id": "15328937708038",
+        "owner": "910449455878",
+        "name": "1996-08-05",
+        "episodeId": "1996-08-05:nitro",
+        "date": "1996-08-05",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 5974,
+        "enabled": true
+      },
+      {
+        "id": "15328937904646",
+        "owner": "910449455878",
+        "name": "1996-09-09",
+        "episodeId": "1996-09-09:nitro",
+        "date": "1996-09-09",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 5592,
+        "enabled": true
+      },
+      {
+        "id": "15328937970182",
+        "owner": "910449455878",
+        "name": "1996-11-04",
+        "episodeId": "1996-11-04:nitro",
+        "date": "1996-11-04",
+        "show": "Nitro",
+        "title": "Nitro",
+        "duration": 6003,
+        "enabled": true
+      },
+      {
+        "id": "15376436365830",
+        "owner": "910449455878",
+        "name": "1997-01-13",
+        "episodeId": "1997-01-13:nitro",
+        "date": "1997-01-13",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 6030,
+        "enabled": true
+      },
+      {
+        "id": "15376436562438",
+        "owner": "910449455878",
+        "name": "1997-01-20",
+        "episodeId": "1997-01-20:nitro",
+        "date": "1997-01-20",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5904,
+        "enabled": true
+      },
+      {
+        "id": "15376436759046",
+        "owner": "910449455878",
+        "name": "1997-02-03",
+        "episodeId": "1997-02-03:nitro",
+        "date": "1997-02-03",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 6089,
+        "enabled": true
+      },
+      {
+        "id": "15376437021190",
+        "owner": "910449455878",
+        "name": "1997-02-24",
+        "episodeId": "1997-02-24:nitro",
+        "date": "1997-02-24",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5832,
+        "enabled": true
+      },
+      {
+        "id": "15376437086726",
+        "owner": "910449455878",
+        "name": "1997-03-17",
+        "episodeId": "1997-03-17:nitro",
+        "date": "1997-03-17",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5801,
+        "enabled": true
+      },
+      {
+        "id": "15376437348870",
+        "owner": "910449455878",
+        "name": "1997-04-28",
+        "episodeId": "1997-04-28:nitro",
+        "date": "1997-04-28",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 2640,
+        "enabled": true
+      },
+      {
+        "id": "15376436234758",
+        "owner": "910449455878",
+        "name": "1997-10-27",
+        "episodeId": "1997-10-27:nitro",
+        "date": "1997-10-27",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7952,
+        "enabled": true
+      },
+      {
+        "id": "15376436300294",
+        "owner": "910449455878",
+        "name": "1997-12-22",
+        "episodeId": "1997-12-22:nitro",
+        "date": "1997-12-22",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8290,
+        "enabled": true
+      },
+      {
+        "id": "7180317428367",
+        "owner": "589703611535",
+        "name": "JCP Crockett Cup 04/10/1987-04/11/1987",
+        "episodeId": "wcw:1987-04-10:ppv:jcpcrockettcup",
+        "date": "1987-04-10",
+        "show": "PPV",
+        "title": "JCP Crockett Cup",
+        "duration": 11226,
+        "enabled": true
+      },
+      {
+        "id": "7181539740303",
+        "owner": "589703611535",
+        "name": "JCP/NWA Clash of the Champions 03/27/1988",
+        "episodeId": "1988-03-27:clashofthechampions",
+        "date": "1988-03-27",
+        "show": "PPV",
+        "title": "Clash of the Champions I ",
+        "duration": 6848,
+        "enabled": true
+      },
+      {
+        "id": "7183151205007",
+        "owner": "589703611535",
+        "name": "JCP/NWA Clash of the Champions: Fall Brawl 09/07/1988",
+        "episodeId": "1988-09-07:clashofthechampions",
+        "date": "1988-09-07",
+        "show": "PPV",
+        "title": "Clash of the Champions III",
+        "duration": 6379,
+        "enabled": true
+      },
+      {
+        "id": "7181539805839",
+        "owner": "589703611535",
+        "name": "JCP/NWA Clash of the Champions: Miami Mayhem 06/07/1988",
+        "episodeId": "1988-06-08:clashofthechampions",
+        "date": "1988-06-08",
+        "show": "PPV",
+        "title": "WCW Clash of the Champions 2",
+        "duration": 6666,
+        "enabled": true
+      },
+      {
+        "id": "7179385637519",
+        "owner": "589703611535",
+        "name": "JCP/NWA Mid-Atlantic Championship Wrestling: Race to Starrcade 09/07/1983",
+        "episodeId": "wcw:1983-09-07:ppv:jcpnwamidatlanticchampionshipwrestlingracetostarrcade",
+        "date": "1983-09-07",
+        "show": "PPV",
+        "title": "JCP/NWA Mid-Atlantic Championship Wrestling: Race to Starrcade",
+        "duration": 3698,
+        "enabled": true
+      },
+      {
+        "id": "7179385703055",
+        "owner": "589703611535",
+        "name": "JCP/NWA Starrcade: A Flare for the Gold! 11/24/1983",
+        "episodeId": "1983-11-24:starrcade83aflareforthegold",
+        "date": "1983-11-24",
+        "show": "PPV",
+        "title": "Starrcade '83: A Flare for the Gold",
+        "duration": 11865,
+        "enabled": true
+      },
+      {
+        "id": "7181167102607",
+        "owner": "589703611535",
+        "name": "JCP/NWA Starrcade: Chi-Town Heat-Glory Bound 11/26/1987",
+        "episodeId": "1987-11-26:starrcade87chitownheat",
+        "date": "1987-11-26",
+        "show": "PPV",
+        "title": "Starrcade '87: Chi-Town Heat",
+        "duration": 9163,
+        "enabled": true
+      },
+      {
+        "id": "7179385768591",
+        "owner": "589703611535",
+        "name": "JCP/NWA Starrcade: The Million Dollar Challenge 11/22/1984",
+        "episodeId": "1984-11-22:starrcade84themilliondollarchallenge",
+        "date": "1984-11-22",
+        "show": "PPV",
+        "title": "Starrcade '84: The Million Dollar Challenge",
+        "duration": 11609,
+        "enabled": true
+      },
+      {
+        "id": "7179999054479",
+        "owner": "589703611535",
+        "name": "JCP/NWA Superstars on the Superstation 02/07/1986",
+        "episodeId": "wcw:1986-02-07:ppv:jcpnwasuperstarsonthesuperstation",
+        "date": "1986-02-07",
+        "show": "PPV",
+        "title": "JCP/NWA Superstars on the Superstation",
+        "duration": 6339,
+        "enabled": true
+      },
+      {
+        "id": "7181093767823",
+        "owner": "589703611535",
+        "name": "JCP/NWA Supertowns On Superstations 02/07/1987",
+        "episodeId": "wcw:1987-02-07:ppv:jcpnwasupertownsonsuperstations",
+        "date": "1987-02-07",
+        "show": "PPV",
+        "title": "JCP/NWA Supertowns On Superstations",
+        "duration": 6783,
+        "enabled": true
+      },
+      {
+        "id": "7181539609231",
+        "owner": "589703611535",
+        "name": "JCP/NWA The Bunkhouse Stampede Finals 01/24/1988",
+        "episodeId": "1988-01-24:thebunkhousestampedefinals",
+        "date": "1988-01-24",
+        "show": "PPV",
+        "title": "The Bunkhouse Stampede Finals",
+        "duration": 7142,
+        "enabled": true
+      },
+      {
+        "id": "7181094226575",
+        "owner": "589703611535",
+        "name": "JCP/NWA The Great American Bash Tour 07/01/1987-07/04/1987",
+        "episodeId": "1987-07-04:thegreatamericanbash1987",
+        "date": "1987-07-04",
+        "show": "PPV",
+        "title": "The Great American Bash 1987",
+        "duration": 8429,
+        "enabled": true
+      },
+      {
+        "id": "7181094161039",
+        "owner": "589703611535",
+        "name": "JCP/NWA The Great American Bash Tour 07/10/1987",
+        "episodeId": "1987-07-04:thegreatamericanbash1987",
+        "date": "1987-07-04",
+        "show": "PPV",
+        "title": "The Great American Bash 1987",
+        "duration": 8366,
+        "enabled": true
+      },
+      {
+        "id": "7181167233679",
+        "owner": "589703611535",
+        "name": "JCP/NWA The Great American Bash Tour 07/11/1987-07/31/1987",
+        "episodeId": "1987-07-04:thegreatamericanbash1987",
+        "date": "1987-07-04",
+        "show": "PPV",
+        "title": "The Great American Bash 1987",
+        "duration": 19161,
+        "enabled": true
+      },
+      {
+        "id": "7181539674767",
+        "owner": "589703611535",
+        "name": "JCP/NWA The Great American Bash Tour 07/16/1988",
+        "episodeId": "1988-07-10:thegreatamericanbash",
+        "date": "1988-07-10",
+        "show": "PPV",
+        "title": "The Great American Bash",
+        "duration": 7662,
+        "enabled": true
+      },
+      {
+        "id": "7181539478159",
+        "owner": "589703611535",
+        "name": "JCP/NWA The Great American Bash: The Price of Freedom 07/10/1988",
+        "episodeId": "1988-07-10:thegreatamericanbash",
+        "date": "1988-07-10",
+        "show": "PPV",
+        "title": "The Great American Bash",
+        "duration": 8897,
+        "enabled": true
+      },
+      {
+        "id": "7180241799823",
+        "owner": "589703611535",
+        "name": "JCP/UWF Crockett Cup 04/19/1986",
+        "episodeId": "1986-04-19:thecrockettcup1986",
+        "date": "1986-04-19",
+        "show": "PPV",
+        "title": "The Crockett Cup 1986",
+        "duration": 16226,
+        "enabled": true
+      },
+      {
+        "id": "4032795839087",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-01-05",
+        "episodeId": "1998-01-05:nitro",
+        "date": "1998-01-05",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 6523,
+        "enabled": true
+      },
+      {
+        "id": "4032795642479",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-01-12",
+        "episodeId": "1998-01-12:nitro",
+        "date": "1998-01-12",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 6223,
+        "enabled": true
+      },
+      {
+        "id": "4032795576943",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-01-19",
+        "episodeId": "1998-01-19:nitro",
+        "date": "1998-01-19",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 6460,
+        "enabled": true
+      },
+      {
+        "id": "4032795380335",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-01-26",
+        "episodeId": "1998-01-26:nitro",
+        "date": "1998-01-26",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8156,
+        "enabled": true
+      },
+      {
+        "id": "4032795314799",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-02-02",
+        "episodeId": "1998-02-02:nitro",
+        "date": "1998-02-02",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8071,
+        "enabled": true
+      },
+      {
+        "id": "4032795183727",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-02-09",
+        "episodeId": "1998-02-09:nitro",
+        "date": "1998-02-09",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8085,
+        "enabled": true
+      },
+      {
+        "id": "4032795118191",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-02-16",
+        "episodeId": "1998-02-16:nitro",
+        "date": "1998-02-16",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8179,
+        "enabled": true
+      },
+      {
+        "id": "4032794987119",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-02-23",
+        "episodeId": "1998-02-23:nitro",
+        "date": "1998-02-23",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8240,
+        "enabled": true
+      },
+      {
+        "id": "4018216700527",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-03-02",
+        "episodeId": "1998-03-02:nitro",
+        "date": "1998-03-02",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8213,
+        "enabled": true
+      },
+      {
+        "id": "4018216503919",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-03-09",
+        "episodeId": "1998-03-09:nitro",
+        "date": "1998-03-09",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8234,
+        "enabled": true
+      },
+      {
+        "id": "4018216241775",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-03-16",
+        "episodeId": "1998-03-16:nitro",
+        "date": "1998-03-16",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8258,
+        "enabled": true
+      },
+      {
+        "id": "4018216110703",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-03-23",
+        "episodeId": "1998-03-23:nitro",
+        "date": "1998-03-23",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7943,
+        "enabled": true
+      },
+      {
+        "id": "4018215979631",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-03-30",
+        "episodeId": "1998-03-30:nitro",
+        "date": "1998-03-30",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8173,
+        "enabled": true
+      },
+      {
+        "id": "4018215848559",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-04-06",
+        "episodeId": "1998-04-06:nitro",
+        "date": "1998-04-06",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8203,
+        "enabled": true
+      },
+      {
+        "id": "4018215520879",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-04-13",
+        "episodeId": "1998-04-13:nitro",
+        "date": "1998-04-13",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8322,
+        "enabled": true
+      },
+      {
+        "id": "4018215389807",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-04-20",
+        "episodeId": "1998-04-20:nitro",
+        "date": "1998-04-20",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8236,
+        "enabled": true
+      },
+      {
+        "id": "4018215324271",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-04-27",
+        "episodeId": "1998-04-27:nitro",
+        "date": "1998-04-27",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7868,
+        "enabled": true
+      },
+      {
+        "id": "4018215193199",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-05-04",
+        "episodeId": "1998-05-04:nitro",
+        "date": "1998-05-04",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5292,
+        "enabled": true
+      },
+      {
+        "id": "4018215127663",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-05-11",
+        "episodeId": "1998-05-11:nitro",
+        "date": "1998-05-11",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8278,
+        "enabled": true
+      },
+      {
+        "id": "4018214996591",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-05-18",
+        "episodeId": "1998-05-18:nitro",
+        "date": "1998-05-18",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 2798,
+        "enabled": true
+      },
+      {
+        "id": "4018214668911",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-05-25",
+        "episodeId": "1998-05-25:nitro",
+        "date": "1998-05-25",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8385,
+        "enabled": true
+      },
+      {
+        "id": "4018214341231",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-06-01",
+        "episodeId": "1998-06-01:nitro",
+        "date": "1998-06-01",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8319,
+        "enabled": true
+      },
+      {
+        "id": "4018214210159",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-06-08",
+        "episodeId": "1998-06-08:nitro",
+        "date": "1998-06-08",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7619,
+        "enabled": true
+      },
+      {
+        "id": "4018214013551",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-06-15",
+        "episodeId": "1998-06-15:nitro",
+        "date": "1998-06-15",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8291,
+        "enabled": true
+      },
+      {
+        "id": "4018213882479",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-06-22",
+        "episodeId": "1998-06-22:nitro",
+        "date": "1998-06-22",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7948,
+        "enabled": true
+      },
+      {
+        "id": "4018213816943",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-06-29",
+        "episodeId": "1998-06-29:nitro",
+        "date": "1998-06-29",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8146,
+        "enabled": true
+      },
+      {
+        "id": "4018213423727",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-07-06",
+        "episodeId": "1998-07-06:nitro",
+        "date": "1998-07-06",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8358,
+        "enabled": true
+      },
+      {
+        "id": "4018213227119",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-07-13",
+        "episodeId": "1998-07-13:nitro",
+        "date": "1998-07-13",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8359,
+        "enabled": true
+      },
+      {
+        "id": "4018213030511",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-07-20",
+        "episodeId": "1998-07-20:nitro",
+        "date": "1998-07-20",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7870,
+        "enabled": true
+      },
+      {
+        "id": "4018212899439",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-07-27",
+        "episodeId": "1998-07-27:nitro",
+        "date": "1998-07-27",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7762,
+        "enabled": true
+      },
+      {
+        "id": "4011407903343",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-11-02",
+        "episodeId": "1998-11-02:nitro",
+        "date": "1998-11-02",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8426,
+        "enabled": true
+      },
+      {
+        "id": "4011407772271",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-11-09",
+        "episodeId": "1998-11-09:nitro",
+        "date": "1998-11-09",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8479,
+        "enabled": true
+      },
+      {
+        "id": "4011407641199",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-11-16",
+        "episodeId": "1998-11-16:nitro",
+        "date": "1998-11-16",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8277,
+        "enabled": true
+      },
+      {
+        "id": "4011407444591",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-11-23",
+        "episodeId": "1998-11-23:nitro",
+        "date": "1998-11-23",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8445,
+        "enabled": true
+      },
+      {
+        "id": "4011407247983",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-11-30",
+        "episodeId": "1998-11-30:nitro",
+        "date": "1998-11-30",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7751,
+        "enabled": true
+      },
+      {
+        "id": "4011407116911",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-12-07",
+        "episodeId": "1998-12-07:nitro",
+        "date": "1998-12-07",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7645,
+        "enabled": true
+      },
+      {
+        "id": "4011406985839",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-12-14",
+        "episodeId": "1998-12-14:nitro",
+        "date": "1998-12-14",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8385,
+        "enabled": true
+      },
+      {
+        "id": "4011406854767",
+        "owner": "579391530351",
+        "name": "Monday Nitro 1998-12-21",
+        "episodeId": "1998-12-21:nitro",
+        "date": "1998-12-21",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8557,
+        "enabled": true
+      },
+      {
+        "id": "3856854551151",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-01-04",
+        "episodeId": "1999-01-04:nitro",
+        "date": "1999-01-04",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8533,
+        "enabled": true
+      },
+      {
+        "id": "3856854092399",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-01-11",
+        "episodeId": "1999-01-11:nitro",
+        "date": "1999-01-11",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8593,
+        "enabled": true
+      },
+      {
+        "id": "3856853568111",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-01-18",
+        "episodeId": "1999-01-18:nitro",
+        "date": "1999-01-18",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8350,
+        "enabled": true
+      },
+      {
+        "id": "3856853305967",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-01-25",
+        "episodeId": "1999-01-25:nitro",
+        "date": "1999-01-25",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8409,
+        "enabled": true
+      },
+      {
+        "id": "3856853174895",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-02-01",
+        "episodeId": "1999-02-01:nitro",
+        "date": "1999-02-01",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8353,
+        "enabled": true
+      },
+      {
+        "id": "3856852978287",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-02-08",
+        "episodeId": "1999-02-08:nitro",
+        "date": "1999-02-08",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8284,
+        "enabled": true
+      },
+      {
+        "id": "3856852847215",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-02-15",
+        "episodeId": "1999-02-15:nitro",
+        "date": "1999-02-15",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7021,
+        "enabled": true
+      },
+      {
+        "id": "3856852650607",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-02-22",
+        "episodeId": "1999-02-22:nitro",
+        "date": "1999-02-22",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8145,
+        "enabled": true
+      },
+      {
+        "id": "3856852519535",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-03-01",
+        "episodeId": "1999-03-01:nitro",
+        "date": "1999-03-01",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8202,
+        "enabled": true
+      },
+      {
+        "id": "3856852257391",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-03-08",
+        "episodeId": "1999-03-08:nitro",
+        "date": "1999-03-08",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8087,
+        "enabled": true
+      },
+      {
+        "id": "3856852060783",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-03-15",
+        "episodeId": "1999-03-15:nitro",
+        "date": "1999-03-15",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8169,
+        "enabled": true
+      },
+      {
+        "id": "3856851864175",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-03-22",
+        "episodeId": "1999-03-22:nitro",
+        "date": "1999-03-22",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8277,
+        "enabled": true
+      },
+      {
+        "id": "3853482658415",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-03-29",
+        "episodeId": "1999-03-29:nitro",
+        "date": "1999-03-29",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8306,
+        "enabled": true
+      },
+      {
+        "id": "3853482592879",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-04-05",
+        "episodeId": "1999-04-05:nitro",
+        "date": "1999-04-05",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8218,
+        "enabled": true
+      },
+      {
+        "id": "3853482527343",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-04-12",
+        "episodeId": "1999-04-12:nitro",
+        "date": "1999-04-12",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7833,
+        "enabled": true
+      },
+      {
+        "id": "3853482396271",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-04-19",
+        "episodeId": "1999-04-19:nitro",
+        "date": "1999-04-19",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8133,
+        "enabled": true
+      },
+      {
+        "id": "3853482330735",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-04-26",
+        "episodeId": "1999-04-26:nitro",
+        "date": "1999-04-26",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8163,
+        "enabled": true
+      },
+      {
+        "id": "3852768971375",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-05-03",
+        "episodeId": "1999-05-03:nitro",
+        "date": "1999-05-03",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8558,
+        "enabled": true
+      },
+      {
+        "id": "3852768184943",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-05-17",
+        "episodeId": "1999-05-17:nitro",
+        "date": "1999-05-17",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8360,
+        "enabled": true
+      },
+      {
+        "id": "3852767791727",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-05-24",
+        "episodeId": "1999-05-24:nitro",
+        "date": "1999-05-24",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8300,
+        "enabled": true
+      },
+      {
+        "id": "3852767464047",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-05-31",
+        "episodeId": "1999-05-31:nitro",
+        "date": "1999-05-31",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8184,
+        "enabled": true
+      },
+      {
+        "id": "3852767136367",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-06-07",
+        "episodeId": "1999-06-07:nitro",
+        "date": "1999-06-07",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8183,
+        "enabled": true
+      },
+      {
+        "id": "3852767005295",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-06-14",
+        "episodeId": "1999-06-14:nitro",
+        "date": "1999-06-14",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8108,
+        "enabled": true
+      },
+      {
+        "id": "3852766874223",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-06-21",
+        "episodeId": "1999-06-21:nitro",
+        "date": "1999-06-21",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7779,
+        "enabled": true
+      },
+      {
+        "id": "3852766546543",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-06-28",
+        "episodeId": "1999-06-28:nitro",
+        "date": "1999-06-28",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7797,
+        "enabled": true
+      },
+      {
+        "id": "3852766415471",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-07-05",
+        "episodeId": "1999-07-05:nitro",
+        "date": "1999-07-05",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7647,
+        "enabled": true
+      },
+      {
+        "id": "3852766022255",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-07-12",
+        "episodeId": "1999-07-12:nitro",
+        "date": "1999-07-12",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8375,
+        "enabled": true
+      },
+      {
+        "id": "3852765891183",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-07-19",
+        "episodeId": "1999-07-19:nitro",
+        "date": "1999-07-19",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8146,
+        "enabled": true
+      },
+      {
+        "id": "3848212843119",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-08-02",
+        "episodeId": "1999-08-02:nitro",
+        "date": "1999-08-02",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8063,
+        "enabled": true
+      },
+      {
+        "id": "3848212777583",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-08-09",
+        "episodeId": "1999-08-09:nitro",
+        "date": "1999-08-09",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7916,
+        "enabled": true
+      },
+      {
+        "id": "3848212712047",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-08-16",
+        "episodeId": "1999-08-16:nitro",
+        "date": "1999-08-16",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8111,
+        "enabled": true
+      },
+      {
+        "id": "3848212515439",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-08-23",
+        "episodeId": "1999-08-23:nitro",
+        "date": "1999-08-23",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7656,
+        "enabled": true
+      },
+      {
+        "id": "3847861176943",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-09-06",
+        "episodeId": "1999-09-06:nitro",
+        "date": "1999-09-06",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8151,
+        "enabled": true
+      },
+      {
+        "id": "3847860783727",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-09-13",
+        "episodeId": "1999-09-13:nitro",
+        "date": "1999-09-13",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8235,
+        "enabled": true
+      },
+      {
+        "id": "3847860521583",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-09-20",
+        "episodeId": "1999-09-20:nitro",
+        "date": "1999-09-20",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8104,
+        "enabled": true
+      },
+      {
+        "id": "3847860259439",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-09-27",
+        "episodeId": "1999-09-27:nitro",
+        "date": "1999-09-27",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8672,
+        "enabled": true
+      },
+      {
+        "id": "3847860062831",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-10-04",
+        "episodeId": "1999-10-04:nitro",
+        "date": "1999-10-04",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8318,
+        "enabled": true
+      },
+      {
+        "id": "3847859931759",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-10-11",
+        "episodeId": "1999-10-11:nitro",
+        "date": "1999-10-11",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8495,
+        "enabled": true
+      },
+      {
+        "id": "3847859669615",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-10-18",
+        "episodeId": "1999-10-18:nitro",
+        "date": "1999-10-18",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8422,
+        "enabled": true
+      },
+      {
+        "id": "3846967069295",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-11-01",
+        "episodeId": "1999-11-01:nitro",
+        "date": "1999-11-01",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8260,
+        "enabled": true
+      },
+      {
+        "id": "3846963792495",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-11-08",
+        "episodeId": "1999-11-08:nitro",
+        "date": "1999-11-08",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7999,
+        "enabled": true
+      },
+      {
+        "id": "3846966086255",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-11-15",
+        "episodeId": "1999-11-15:nitro",
+        "date": "1999-11-15",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8213,
+        "enabled": true
+      },
+      {
+        "id": "3846965693039",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-11-22",
+        "episodeId": "1999-11-22:nitro",
+        "date": "1999-11-22",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8300,
+        "enabled": true
+      },
+      {
+        "id": "3846965561967",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-11-29",
+        "episodeId": "1999-11-29:nitro",
+        "date": "1999-11-29",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8374,
+        "enabled": true
+      },
+      {
+        "id": "3846965430895",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-12-06",
+        "episodeId": "1999-12-06:nitro",
+        "date": "1999-12-06",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8144,
+        "enabled": true
+      },
+      {
+        "id": "3846965365359",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-12-13",
+        "episodeId": "1999-12-13:nitro",
+        "date": "1999-12-13",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8121,
+        "enabled": true
+      },
+      {
+        "id": "3846965103215",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-12-20",
+        "episodeId": "1999-12-20:nitro",
+        "date": "1999-12-20",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 8603,
+        "enabled": true
+      },
+      {
+        "id": "3846965037679",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.1999-12-27",
+        "episodeId": "1999-12-27:nitro",
+        "date": "1999-12-27",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 6889,
+        "enabled": true
+      },
+      {
+        "id": "3973935008367",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-01-03",
+        "episodeId": "2000-01-03:nitro",
+        "date": "2000-01-03",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5792,
+        "enabled": true
+      },
+      {
+        "id": "3973934680687",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-01-10",
+        "episodeId": "2000-01-10:nitro",
+        "date": "2000-01-10",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5735,
+        "enabled": true
+      },
+      {
+        "id": "3973934549615",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-01-17",
+        "episodeId": "2000-01-17:nitro",
+        "date": "2000-01-17",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5785,
+        "enabled": true
+      },
+      {
+        "id": "3973933894255",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-01-24",
+        "episodeId": "2000-01-24:nitro",
+        "date": "2000-01-24",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5741,
+        "enabled": true
+      },
+      {
+        "id": "3973933435503",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-01-31",
+        "episodeId": "2000-01-31:nitro",
+        "date": "2000-01-31",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5518,
+        "enabled": true
+      },
+      {
+        "id": "3973933042287",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-02-07",
+        "episodeId": "2000-02-07:nitro",
+        "date": "2000-02-07",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5455,
+        "enabled": true
+      },
+      {
+        "id": "3973932649071",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-02-14",
+        "episodeId": "2000-02-14:nitro",
+        "date": "2000-02-14",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 7403,
+        "enabled": true
+      },
+      {
+        "id": "3973932517999",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-02-21",
+        "episodeId": "2000-02-21:nitro",
+        "date": "2000-02-21",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5420,
+        "enabled": true
+      },
+      {
+        "id": "3973932386927",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-02-28",
+        "episodeId": "2000-02-28:nitro",
+        "date": "2000-02-28",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5697,
+        "enabled": true
+      },
+      {
+        "id": "3973932190319",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-03-06",
+        "episodeId": "2000-03-06:nitro",
+        "date": "2000-03-06",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5514,
+        "enabled": true
+      },
+      {
+        "id": "3973931862639",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-03-13",
+        "episodeId": "2000-03-13:nitro",
+        "date": "2000-03-13",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5985,
+        "enabled": true
+      },
+      {
+        "id": "3973931403887",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-03-20",
+        "episodeId": "2000-03-20:nitro",
+        "date": "2000-03-20",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5799,
+        "enabled": true
+      },
+      {
+        "id": "3973931338351",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-03-27",
+        "episodeId": "2000-03-27:nitro",
+        "date": "2000-03-27",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5456,
+        "enabled": true
+      },
+      {
+        "id": "3941342186095",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-04-03",
+        "episodeId": "2000-04-03:nitro",
+        "date": "2000-04-03",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5087,
+        "enabled": true
+      },
+      {
+        "id": "3941341989487",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-04-10",
+        "episodeId": "2000-04-10:nitro",
+        "date": "2000-04-10",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 6168,
+        "enabled": true
+      },
+      {
+        "id": "3941341661807",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-04-17",
+        "episodeId": "2000-04-17:nitro",
+        "date": "2000-04-17",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5557,
+        "enabled": true
+      },
+      {
+        "id": "3941341268591",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-04-24",
+        "episodeId": "2000-04-24:nitro",
+        "date": "2000-04-24",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5447,
+        "enabled": true
+      },
+      {
+        "id": "3941236214383",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-05-01",
+        "episodeId": "2000-05-01:nitro",
+        "date": "2000-05-01",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5104,
+        "enabled": true
+      },
+      {
+        "id": "3941235821167",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-05-08",
+        "episodeId": "2000-05-08:nitro",
+        "date": "2000-05-08",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 6403,
+        "enabled": true
+      },
+      {
+        "id": "3941235624559",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-05-15",
+        "episodeId": "2000-05-15:nitro",
+        "date": "2000-05-15",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 6151,
+        "enabled": true
+      },
+      {
+        "id": "3941235231343",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-05-22",
+        "episodeId": "2000-05-22:nitro",
+        "date": "2000-05-22",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5433,
+        "enabled": true
+      },
+      {
+        "id": "3941234903663",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-05-29",
+        "episodeId": "2000-05-29:nitro",
+        "date": "2000-05-29",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5993,
+        "enabled": true
+      },
+      {
+        "id": "3941234641519",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-06-05",
+        "episodeId": "2000-06-05:nitro",
+        "date": "2000-06-05",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 6095,
+        "enabled": true
+      },
+      {
+        "id": "3941234313839",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-06-12",
+        "episodeId": "2000-06-12:nitro",
+        "date": "2000-06-12",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 6178,
+        "enabled": true
+      },
+      {
+        "id": "3941234051695",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-06-19",
+        "episodeId": "2000-06-19:nitro",
+        "date": "2000-06-19",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5748,
+        "enabled": true
+      },
+      {
+        "id": "3940582820463",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-07-03",
+        "episodeId": "2000-07-03:nitro",
+        "date": "2000-07-03",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5587,
+        "enabled": true
+      },
+      {
+        "id": "3940582296175",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-07-10",
+        "episodeId": "2000-07-10:nitro",
+        "date": "2000-07-10",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5747,
+        "enabled": true
+      },
+      {
+        "id": "3940582034031",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-07-18",
+        "episodeId": "2000-07-18:nitro",
+        "date": "2000-07-18",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5580,
+        "enabled": true
+      },
+      {
+        "id": "3940581575279",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-07-24",
+        "episodeId": "2000-07-24:nitro",
+        "date": "2000-07-24",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5617,
+        "enabled": true
+      },
+      {
+        "id": "3940581378671",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-07-31",
+        "episodeId": "2000-07-31:nitro",
+        "date": "2000-07-31",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5749,
+        "enabled": true
+      },
+      {
+        "id": "3940581182063",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-08-07",
+        "episodeId": "2000-08-07:nitro",
+        "date": "2000-08-07",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5377,
+        "enabled": true
+      },
+      {
+        "id": "3940580985455",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-08-14",
+        "episodeId": "2000-08-14:nitro",
+        "date": "2000-08-14",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5369,
+        "enabled": true
+      },
+      {
+        "id": "3940580723311",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-08-21",
+        "episodeId": "2000-08-21:nitro",
+        "date": "2000-08-21",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5290,
+        "enabled": true
+      },
+      {
+        "id": "3940580461167",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-08-28",
+        "episodeId": "2000-08-28:nitro",
+        "date": "2000-08-28",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5322,
+        "enabled": true
+      },
+      {
+        "id": "3940579871343",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-09-04",
+        "episodeId": "2000-09-04:nitro",
+        "date": "2000-09-04",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5220,
+        "enabled": true
+      },
+      {
+        "id": "3940579478127",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-09-11",
+        "episodeId": "2000-09-11:nitro",
+        "date": "2000-09-11",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5376,
+        "enabled": true
+      },
+      {
+        "id": "3940579215983",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-09-18",
+        "episodeId": "2000-09-18:nitro",
+        "date": "2000-09-18",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5422,
+        "enabled": true
+      },
+      {
+        "id": "3940578691695",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-09-25",
+        "episodeId": "2000-09-25:nitro",
+        "date": "2000-09-25",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5293,
+        "enabled": true
+      },
+      {
+        "id": "3939740879471",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-10-02",
+        "episodeId": "2000-10-02:nitro",
+        "date": "2000-10-02",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5421,
+        "enabled": true
+      },
+      {
+        "id": "3939740617327",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-10-09",
+        "episodeId": "2000-10-09:nitro",
+        "date": "2000-10-09",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5487,
+        "enabled": true
+      },
+      {
+        "id": "3939740420719",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-10-16",
+        "episodeId": "2000-10-16:nitro",
+        "date": "2000-10-16",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5180,
+        "enabled": true
+      },
+      {
+        "id": "3939740093039",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-10-23",
+        "episodeId": "2000-10-23:nitro",
+        "date": "2000-10-23",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5384,
+        "enabled": true
+      },
+      {
+        "id": "3939739896431",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-10-30",
+        "episodeId": "2000-10-30:nitro",
+        "date": "2000-10-30",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5355,
+        "enabled": true
+      },
+      {
+        "id": "3939739634287",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-11-06",
+        "episodeId": "2000-11-06:nitro",
+        "date": "2000-11-06",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5269,
+        "enabled": true
+      },
+      {
+        "id": "3939739503215",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-11-13",
+        "episodeId": "2000-11-13:nitro",
+        "date": "2000-11-13",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5415,
+        "enabled": true
+      },
+      {
+        "id": "3939739372143",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-11-20",
+        "episodeId": "2000-11-20:nitro",
+        "date": "2000-11-20",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5388,
+        "enabled": true
+      },
+      {
+        "id": "3939739044463",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-11-27",
+        "episodeId": "2000-11-27:nitro",
+        "date": "2000-11-27",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5366,
+        "enabled": true
+      },
+      {
+        "id": "3939738913391",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-12-04",
+        "episodeId": "2000-12-04:nitro",
+        "date": "2000-12-04",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5269,
+        "enabled": true
+      },
+      {
+        "id": "3939738782319",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-12-12",
+        "episodeId": "2000-12-12:nitro",
+        "date": "2000-12-12",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5293,
+        "enabled": true
+      },
+      {
+        "id": "3939738651247",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2000-12-18",
+        "episodeId": "2000-12-18:nitro",
+        "date": "2000-12-18",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5185,
+        "enabled": true
+      },
+      {
+        "id": "3844751297135",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2001-01-08",
+        "episodeId": "2001-01-08:nitro",
+        "date": "2001-01-08",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5180,
+        "enabled": true
+      },
+      {
+        "id": "3844751100527",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2001-01-15",
+        "episodeId": "2001-01-15:nitro",
+        "date": "2001-01-15",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 4967,
+        "enabled": true
+      },
+      {
+        "id": "3844750903919",
+        "owner": "579391530351",
+        "name": "Monday.Nitro.2001-01-23",
+        "episodeId": "2001-01-23:nitro",
+        "date": "2001-01-23",
+        "show": "Nitro",
+        "title": "Monday Nitro",
+        "duration": 5372,
+        "enabled": true
+      },
+      {
+        "id": "7186102946447",
+        "owner": "589703611535",
+        "name": "NWA/WCW Chi-Town Rumble 02/20/1989",
+        "episodeId": "1989-02-20:chitownrumble",
+        "date": "1989-02-20",
+        "show": "PPV",
+        "title": "Chi-Town Rumble",
+        "duration": 10090,
+        "enabled": true
+      },
+      {
+        "id": "7183164705423",
+        "owner": "589703611535",
+        "name": "NWA/WCW Clash of the Champions: St Valentine's Massacre 02/15/1989",
+        "episodeId": "1989-02-15:clashofthechampions",
+        "date": "1989-02-15",
+        "show": "PPV",
+        "title": "Clash of the Champions V",
+        "duration": 7066,
+        "enabled": true
+      },
+      {
+        "id": "7186595121807",
+        "owner": "589703611535",
+        "name": "NWA/WCW The Great American Bash: Glory Days 07/23/1989",
+        "episodeId": "1989-07-23:thegreatamericanbash",
+        "date": "1989-07-23",
+        "show": "PPV",
+        "title": "The Great American Bash",
+        "duration": 10195,
+        "enabled": true
+      },
+      {
+        "id": "3861963016815",
+        "owner": "579391530351",
+        "name": "Thunder.1998-01-08",
+        "episodeId": "1998-01-08:thunder",
+        "date": "1998-01-08",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 8479,
+        "enabled": true
+      },
+      {
+        "id": "3861962492527",
+        "owner": "579391530351",
+        "name": "Thunder.1998-01-15",
+        "episodeId": "1998-01-15:thunder",
+        "date": "1998-01-15",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5258,
+        "enabled": true
+      },
+      {
+        "id": "3861962230383",
+        "owner": "579391530351",
+        "name": "Thunder.1998-01-22",
+        "episodeId": "1998-01-22:thunder",
+        "date": "1998-01-22",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5229,
+        "enabled": true
+      },
+      {
+        "id": "3861962033775",
+        "owner": "579391530351",
+        "name": "Thunder.1998-01-29",
+        "episodeId": "1998-01-29:thunder",
+        "date": "1998-01-29",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5147,
+        "enabled": true
+      },
+      {
+        "id": "3861961771631",
+        "owner": "579391530351",
+        "name": "Thunder.1998-02-05",
+        "episodeId": "1998-02-05:thunder",
+        "date": "1998-02-05",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5008,
+        "enabled": true
+      },
+      {
+        "id": "3861961575023",
+        "owner": "579391530351",
+        "name": "Thunder.1998-02-12",
+        "episodeId": "1998-02-12:thunder",
+        "date": "1998-02-12",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5226,
+        "enabled": true
+      },
+      {
+        "id": "3861961509487",
+        "owner": "579391530351",
+        "name": "Thunder.1998-02-19",
+        "episodeId": "1998-02-19:thunder",
+        "date": "1998-02-19",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5665,
+        "enabled": true
+      },
+      {
+        "id": "3861961050735",
+        "owner": "579391530351",
+        "name": "Thunder.1998-02-26",
+        "episodeId": "1998-02-26:thunder",
+        "date": "1998-02-26",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4901,
+        "enabled": true
+      },
+      {
+        "id": "3861960788591",
+        "owner": "579391530351",
+        "name": "Thunder.1998-03-05",
+        "episodeId": "1998-03-05:thunder",
+        "date": "1998-03-05",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5007,
+        "enabled": true
+      },
+      {
+        "id": "3861960657519",
+        "owner": "579391530351",
+        "name": "Thunder.1998-03-12",
+        "episodeId": "1998-03-12:thunder",
+        "date": "1998-03-12",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4749,
+        "enabled": true
+      },
+      {
+        "id": "3861960460911",
+        "owner": "579391530351",
+        "name": "Thunder.1998-03-19",
+        "episodeId": "1998-03-19:thunder",
+        "date": "1998-03-19",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5138,
+        "enabled": true
+      },
+      {
+        "id": "3861960133231",
+        "owner": "579391530351",
+        "name": "Thunder.1998-03-26",
+        "episodeId": "1998-03-26:thunder",
+        "date": "1998-03-26",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5175,
+        "enabled": true
+      },
+      {
+        "id": "3861959936623",
+        "owner": "579391530351",
+        "name": "Thunder.1998-04-09",
+        "episodeId": "1998-04-09:thunder",
+        "date": "1998-04-09",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5198,
+        "enabled": true
+      },
+      {
+        "id": "3861959674479",
+        "owner": "579391530351",
+        "name": "Thunder.1998-04-16",
+        "episodeId": "1998-04-16:thunder",
+        "date": "1998-04-16",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5734,
+        "enabled": true
+      },
+      {
+        "id": "3861959281263",
+        "owner": "579391530351",
+        "name": "Thunder.1998-04-22",
+        "episodeId": "1998-04-22:thunder",
+        "date": "1998-04-22",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5301,
+        "enabled": true
+      },
+      {
+        "id": "3861211384431",
+        "owner": "579391530351",
+        "name": "Thunder.1998-05-14",
+        "episodeId": "1998-05-14:thunder",
+        "date": "1998-05-14",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4893,
+        "enabled": true
+      },
+      {
+        "id": "3861211056751",
+        "owner": "579391530351",
+        "name": "Thunder.1998-05-21",
+        "episodeId": "1998-05-21:thunder",
+        "date": "1998-05-21",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5445,
+        "enabled": true
+      },
+      {
+        "id": "3861210860143",
+        "owner": "579391530351",
+        "name": "Thunder.1998-05-28",
+        "episodeId": "1998-05-28:thunder",
+        "date": "1998-05-28",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5054,
+        "enabled": true
+      },
+      {
+        "id": "3861203913327",
+        "owner": "579391530351",
+        "name": "Thunder.1998-06-04",
+        "episodeId": "1998-06-04:thunder",
+        "date": "1998-06-04",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5550,
+        "enabled": true
+      },
+      {
+        "id": "3861203651183",
+        "owner": "579391530351",
+        "name": "Thunder.1998-06-11",
+        "episodeId": "1998-06-11:thunder",
+        "date": "1998-06-11",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5514,
+        "enabled": true
+      },
+      {
+        "id": "3861202340463",
+        "owner": "579391530351",
+        "name": "Thunder.1998-06-18",
+        "episodeId": "1998-06-18:thunder",
+        "date": "1998-06-18",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5427,
+        "enabled": true
+      },
+      {
+        "id": "3861202078319",
+        "owner": "579391530351",
+        "name": "Thunder.1998-06-24",
+        "episodeId": "1998-06-24:thunder",
+        "date": "1998-06-24",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5580,
+        "enabled": true
+      },
+      {
+        "id": "3861201881711",
+        "owner": "579391530351",
+        "name": "Thunder.1998-07-02",
+        "episodeId": "1998-07-02:thunder",
+        "date": "1998-07-02",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5724,
+        "enabled": true
+      },
+      {
+        "id": "3861201816175",
+        "owner": "579391530351",
+        "name": "Thunder.1998-07-08",
+        "episodeId": "1998-07-08:thunder",
+        "date": "1998-07-08",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5345,
+        "enabled": true
+      },
+      {
+        "id": "3861201160815",
+        "owner": "579391530351",
+        "name": "Thunder.1998-07-16",
+        "episodeId": "1998-07-16:thunder",
+        "date": "1998-07-16",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 8132,
+        "enabled": true
+      },
+      {
+        "id": "3861201029743",
+        "owner": "579391530351",
+        "name": "Thunder.1998-08-05",
+        "episodeId": "1998-08-05:thunder",
+        "date": "1998-08-05",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5234,
+        "enabled": true
+      },
+      {
+        "id": "3861200767599",
+        "owner": "579391530351",
+        "name": "Thunder.1998-08-13",
+        "episodeId": "1998-08-13:thunder",
+        "date": "1998-08-13",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5364,
+        "enabled": true
+      },
+      {
+        "id": "3861200636527",
+        "owner": "579391530351",
+        "name": "Thunder.1998-08-20",
+        "episodeId": "1998-08-20:thunder",
+        "date": "1998-08-20",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4859,
+        "enabled": true
+      },
+      {
+        "id": "3861199915631",
+        "owner": "579391530351",
+        "name": "Thunder.1998-08-26",
+        "episodeId": "1998-08-26:thunder",
+        "date": "1998-08-26",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5397,
+        "enabled": true
+      },
+      {
+        "id": "3859367922287",
+        "owner": "579391530351",
+        "name": "Thunder.1998-09-03",
+        "episodeId": "1998-09-03:thunder",
+        "date": "1998-09-03",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5165,
+        "enabled": true
+      },
+      {
+        "id": "3859367725679",
+        "owner": "579391530351",
+        "name": "Thunder.1998-09-10",
+        "episodeId": "1998-09-10:thunder",
+        "date": "1998-09-10",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5569,
+        "enabled": true
+      },
+      {
+        "id": "3859367529071",
+        "owner": "579391530351",
+        "name": "Thunder.1998-09-17",
+        "episodeId": "1998-09-17:thunder",
+        "date": "1998-09-17",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4795,
+        "enabled": true
+      },
+      {
+        "id": "3859367463535",
+        "owner": "579391530351",
+        "name": "Thunder.1998-09-24",
+        "episodeId": "1998-09-24:thunder",
+        "date": "1998-09-24",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5300,
+        "enabled": true
+      },
+      {
+        "id": "3859367266927",
+        "owner": "579391530351",
+        "name": "Thunder.1998-10-01",
+        "episodeId": "1998-10-01:thunder",
+        "date": "1998-10-01",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5121,
+        "enabled": true
+      },
+      {
+        "id": "3859366873711",
+        "owner": "579391530351",
+        "name": "Thunder.1998-10-08",
+        "episodeId": "1998-10-08:thunder",
+        "date": "1998-10-08",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5572,
+        "enabled": true
+      },
+      {
+        "id": "3859366677103",
+        "owner": "579391530351",
+        "name": "Thunder.1998-10-15",
+        "episodeId": "1998-10-15:thunder",
+        "date": "1998-10-15",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5029,
+        "enabled": true
+      },
+      {
+        "id": "3859366546031",
+        "owner": "579391530351",
+        "name": "Thunder.1998-10-22",
+        "episodeId": "1998-10-22:thunder",
+        "date": "1998-10-22",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5546,
+        "enabled": true
+      },
+      {
+        "id": "3859366480495",
+        "owner": "579391530351",
+        "name": "Thunder.1998-10-29",
+        "episodeId": "1998-10-29:thunder",
+        "date": "1998-10-29",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5459,
+        "enabled": true
+      },
+      {
+        "id": "3859366414959",
+        "owner": "579391530351",
+        "name": "Thunder.1998-11-05",
+        "episodeId": "1998-11-05:thunder",
+        "date": "1998-11-05",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5445,
+        "enabled": true
+      },
+      {
+        "id": "3859366152815",
+        "owner": "579391530351",
+        "name": "Thunder.1998-11-12",
+        "episodeId": "1998-11-12:thunder",
+        "date": "1998-11-12",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4839,
+        "enabled": true
+      },
+      {
+        "id": "3859366021743",
+        "owner": "579391530351",
+        "name": "Thunder.1998-11-19",
+        "episodeId": "1998-11-19:thunder",
+        "date": "1998-11-19",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5366,
+        "enabled": true
+      },
+      {
+        "id": "3859365759599",
+        "owner": "579391530351",
+        "name": "Thunder.1998-12-03",
+        "episodeId": "1998-12-03:thunder",
+        "date": "1998-12-03",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5764,
+        "enabled": true
+      },
+      {
+        "id": "3859365366383",
+        "owner": "579391530351",
+        "name": "Thunder.1998-12-10",
+        "episodeId": "1998-12-10:thunder",
+        "date": "1998-12-10",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5224,
+        "enabled": true
+      },
+      {
+        "id": "3859364776559",
+        "owner": "579391530351",
+        "name": "Thunder.1998-12-17",
+        "episodeId": "1998-12-17:thunder",
+        "date": "1998-12-17",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5217,
+        "enabled": true
+      },
+      {
+        "id": "3875790522991",
+        "owner": "579391530351",
+        "name": "Thunder.1999.01.07",
+        "episodeId": "1999-01-07:thunder",
+        "date": "1999-01-07",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5731,
+        "enabled": true
+      },
+      {
+        "id": "3875790260847",
+        "owner": "579391530351",
+        "name": "Thunder.1999.01.14",
+        "episodeId": "1999-01-14:thunder",
+        "date": "1999-01-14",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5206,
+        "enabled": true
+      },
+      {
+        "id": "3875789933167",
+        "owner": "579391530351",
+        "name": "Thunder.1999.01.21",
+        "episodeId": "1999-01-21:thunder",
+        "date": "1999-01-21",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5527,
+        "enabled": true
+      },
+      {
+        "id": "3875789802095",
+        "owner": "579391530351",
+        "name": "Thunder.1999.02.04",
+        "episodeId": "1999-02-04:thunder",
+        "date": "1999-02-04",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5192,
+        "enabled": true
+      },
+      {
+        "id": "3875789736559",
+        "owner": "579391530351",
+        "name": "Thunder.1999.02.11",
+        "episodeId": "1999-02-11:thunder",
+        "date": "1999-02-11",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5552,
+        "enabled": true
+      },
+      {
+        "id": "3875789605487",
+        "owner": "579391530351",
+        "name": "Thunder.1999.02.18",
+        "episodeId": "1999-02-18:thunder",
+        "date": "1999-02-18",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5106,
+        "enabled": true
+      },
+      {
+        "id": "3875789474415",
+        "owner": "579391530351",
+        "name": "Thunder.1999.02.25",
+        "episodeId": "1999-02-25:thunder",
+        "date": "1999-02-25",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5644,
+        "enabled": true
+      },
+      {
+        "id": "3874680605295",
+        "owner": "579391530351",
+        "name": "Thunder.1999.03.04",
+        "episodeId": "1999-03-04:thunder",
+        "date": "1999-03-04",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5202,
+        "enabled": true
+      },
+      {
+        "id": "3874680277615",
+        "owner": "579391530351",
+        "name": "Thunder.1999.03.11",
+        "episodeId": "1999-03-11:thunder",
+        "date": "1999-03-11",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5217,
+        "enabled": true
+      },
+      {
+        "id": "3874680212079",
+        "owner": "579391530351",
+        "name": "Thunder.1999.03.18",
+        "episodeId": "1999-03-18:thunder",
+        "date": "1999-03-18",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5588,
+        "enabled": true
+      },
+      {
+        "id": "3874679884399",
+        "owner": "579391530351",
+        "name": "Thunder.1999.03.25",
+        "episodeId": "1999-03-25:thunder",
+        "date": "1999-03-25",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5339,
+        "enabled": true
+      },
+      {
+        "id": "3874679687791",
+        "owner": "579391530351",
+        "name": "Thunder.1999.04.01",
+        "episodeId": "1999-04-01:thunder",
+        "date": "1999-04-01",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5245,
+        "enabled": true
+      },
+      {
+        "id": "3874679360111",
+        "owner": "579391530351",
+        "name": "Thunder.1999.04.07",
+        "episodeId": "1999-04-07:thunder",
+        "date": "1999-04-07",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5648,
+        "enabled": true
+      },
+      {
+        "id": "3874679097967",
+        "owner": "579391530351",
+        "name": "Thunder.1999.04.15",
+        "episodeId": "1999-04-15:thunder",
+        "date": "1999-04-15",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5183,
+        "enabled": true
+      },
+      {
+        "id": "3874678966895",
+        "owner": "579391530351",
+        "name": "Thunder.1999.04.22",
+        "episodeId": "1999-04-22:thunder",
+        "date": "1999-04-22",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5417,
+        "enabled": true
+      },
+      {
+        "id": "3874678835823",
+        "owner": "579391530351",
+        "name": "Thunder.1999.04.29",
+        "episodeId": "1999-04-29:thunder",
+        "date": "1999-04-29",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4963,
+        "enabled": true
+      },
+      {
+        "id": "3874678639215",
+        "owner": "579391530351",
+        "name": "Thunder.1999.05.06",
+        "episodeId": "1999-05-06:thunder",
+        "date": "1999-05-06",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5563,
+        "enabled": true
+      },
+      {
+        "id": "3874678508143",
+        "owner": "579391530351",
+        "name": "Thunder.1999.05.20",
+        "episodeId": "1999-05-20:thunder",
+        "date": "1999-05-20",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5474,
+        "enabled": true
+      },
+      {
+        "id": "3874678180463",
+        "owner": "579391530351",
+        "name": "Thunder.1999.05.27",
+        "episodeId": "1999-05-27:thunder",
+        "date": "1999-05-27",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5141,
+        "enabled": true
+      },
+      {
+        "id": "3874266483311",
+        "owner": "579391530351",
+        "name": "Thunder.1999.06.03",
+        "episodeId": "1999-06-03:thunder",
+        "date": "1999-06-03",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5502,
+        "enabled": true
+      },
+      {
+        "id": "3874266090095",
+        "owner": "579391530351",
+        "name": "Thunder.1999.06.10",
+        "episodeId": "1999-06-10:thunder",
+        "date": "1999-06-10",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5098,
+        "enabled": true
+      },
+      {
+        "id": "3874265827951",
+        "owner": "579391530351",
+        "name": "Thunder.1999.06.17",
+        "episodeId": "1999-06-17:thunder",
+        "date": "1999-06-17",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5151,
+        "enabled": true
+      },
+      {
+        "id": "3874265434735",
+        "owner": "579391530351",
+        "name": "Thunder.1999.06.24",
+        "episodeId": "1999-06-24:thunder",
+        "date": "1999-06-24",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5181,
+        "enabled": true
+      },
+      {
+        "id": "3874135804527",
+        "owner": "579391530351",
+        "name": "Thunder.1999.07.01",
+        "episodeId": "1999-07-01:thunder",
+        "date": "1999-07-01",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5530,
+        "enabled": true
+      },
+      {
+        "id": "3874135476847",
+        "owner": "579391530351",
+        "name": "Thunder.1999.07.08",
+        "episodeId": "1999-07-08:thunder",
+        "date": "1999-07-08",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4917,
+        "enabled": true
+      },
+      {
+        "id": "3874135214703",
+        "owner": "579391530351",
+        "name": "Thunder.1999.07.14",
+        "episodeId": "1999-07-14:thunder",
+        "date": "1999-07-14",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4947,
+        "enabled": true
+      },
+      {
+        "id": "3874135083631",
+        "owner": "579391530351",
+        "name": "Thunder.1999.07.22",
+        "episodeId": "1999-07-22:thunder",
+        "date": "1999-07-22",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4939,
+        "enabled": true
+      },
+      {
+        "id": "3874135018095",
+        "owner": "579391530351",
+        "name": "Thunder.1999.07.29",
+        "episodeId": "1999-07-29:thunder",
+        "date": "1999-07-29",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4841,
+        "enabled": true
+      },
+      {
+        "id": "3874132593263",
+        "owner": "579391530351",
+        "name": "Thunder.1999.08.04",
+        "episodeId": "1999-08-04:thunder",
+        "date": "1999-08-04",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4990,
+        "enabled": true
+      },
+      {
+        "id": "3874132462191",
+        "owner": "579391530351",
+        "name": "Thunder.1999.08.12",
+        "episodeId": "1999-08-12:thunder",
+        "date": "1999-08-12",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4762,
+        "enabled": true
+      },
+      {
+        "id": "3874132200047",
+        "owner": "579391530351",
+        "name": "Thunder.1999.08.19",
+        "episodeId": "1999-08-19:thunder",
+        "date": "1999-08-19",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4589,
+        "enabled": true
+      },
+      {
+        "id": "3874132003439",
+        "owner": "579391530351",
+        "name": "Thunder.1999.08.26",
+        "episodeId": "1999-08-26:thunder",
+        "date": "1999-08-26",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5036,
+        "enabled": true
+      },
+      {
+        "id": "3874131872367",
+        "owner": "579391530351",
+        "name": "Thunder.1999.09.02",
+        "episodeId": "1999-09-02:thunder",
+        "date": "1999-09-02",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4651,
+        "enabled": true
+      },
+      {
+        "id": "3874131675759",
+        "owner": "579391530351",
+        "name": "Thunder.1999.09.09",
+        "episodeId": "1999-09-09:thunder",
+        "date": "1999-09-09",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4666,
+        "enabled": true
+      },
+      {
+        "id": "3874131610223",
+        "owner": "579391530351",
+        "name": "Thunder.1999.09.16",
+        "episodeId": "1999-09-16:thunder",
+        "date": "1999-09-16",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4751,
+        "enabled": true
+      },
+      {
+        "id": "3874131348079",
+        "owner": "579391530351",
+        "name": "Thunder.1999.09.23",
+        "episodeId": "1999-09-23:thunder",
+        "date": "1999-09-23",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5100,
+        "enabled": true
+      },
+      {
+        "id": "3874131085935",
+        "owner": "579391530351",
+        "name": "Thunder.1999.09.30",
+        "episodeId": "1999-09-30:thunder",
+        "date": "1999-09-30",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4728,
+        "enabled": true
+      },
+      {
+        "id": "3874007485039",
+        "owner": "579391530351",
+        "name": "Thunder.1999.10.07",
+        "episodeId": "1999-10-07:thunder",
+        "date": "1999-10-07",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5238,
+        "enabled": true
+      },
+      {
+        "id": "3874007353967",
+        "owner": "579391530351",
+        "name": "Thunder.1999.10.14",
+        "episodeId": "1999-10-14:thunder",
+        "date": "1999-10-14",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4903,
+        "enabled": true
+      },
+      {
+        "id": "3874007288431",
+        "owner": "579391530351",
+        "name": "Thunder.1999.10.21",
+        "episodeId": "1999-10-21:thunder",
+        "date": "1999-10-21",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5066,
+        "enabled": true
+      },
+      {
+        "id": "3874007026287",
+        "owner": "579391530351",
+        "name": "Thunder.1999.10.28",
+        "episodeId": "1999-10-28:thunder",
+        "date": "1999-10-28",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5196,
+        "enabled": true
+      },
+      {
+        "id": "3874006829679",
+        "owner": "579391530351",
+        "name": "Thunder.1999.11.04",
+        "episodeId": "1999-11-04:thunder",
+        "date": "1999-11-04",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5158,
+        "enabled": true
+      },
+      {
+        "id": "3874006501999",
+        "owner": "579391530351",
+        "name": "Thunder.1999.11.11",
+        "episodeId": "1999-11-11:thunder",
+        "date": "1999-11-11",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4995,
+        "enabled": true
+      },
+      {
+        "id": "3874006370927",
+        "owner": "579391530351",
+        "name": "Thunder.1999.11.18",
+        "episodeId": "1999-11-18:thunder",
+        "date": "1999-11-18",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5167,
+        "enabled": true
+      },
+      {
+        "id": "3874006174319",
+        "owner": "579391530351",
+        "name": "Thunder.1999.12.02",
+        "episodeId": "1999-12-02:thunder",
+        "date": "1999-12-02",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5218,
+        "enabled": true
+      },
+      {
+        "id": "3874006043247",
+        "owner": "579391530351",
+        "name": "Thunder.1999.12.09",
+        "episodeId": "1999-12-09:thunder",
+        "date": "1999-12-09",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5021,
+        "enabled": true
+      },
+      {
+        "id": "3874005977711",
+        "owner": "579391530351",
+        "name": "Thunder.1999.12.16",
+        "episodeId": "1999-12-16:thunder",
+        "date": "1999-12-16",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5085,
+        "enabled": true
+      },
+      {
+        "id": "3874005781103",
+        "owner": "579391530351",
+        "name": "Thunder.1999.12.23",
+        "episodeId": "1999-12-23:thunder",
+        "date": "1999-12-23",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5439,
+        "enabled": true
+      },
+      {
+        "id": "3870287465071",
+        "owner": "579391530351",
+        "name": "Thunder.2000.01.06",
+        "episodeId": "2000-01-06:thunder",
+        "date": "2000-01-06",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5152,
+        "enabled": true
+      },
+      {
+        "id": "3870287333999",
+        "owner": "579391530351",
+        "name": "Thunder.2000.01.12",
+        "episodeId": "2000-01-12:thunder",
+        "date": "2000-01-12",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5073,
+        "enabled": true
+      },
+      {
+        "id": "3870287006319",
+        "owner": "579391530351",
+        "name": "Thunder.2000.01.19",
+        "episodeId": "2000-01-19:thunder",
+        "date": "2000-01-19",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5152,
+        "enabled": true
+      },
+      {
+        "id": "3870286875247",
+        "owner": "579391530351",
+        "name": "Thunder.2000.01.26",
+        "episodeId": "2000-01-26:thunder",
+        "date": "2000-01-26",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5035,
+        "enabled": true
+      },
+      {
+        "id": "3870286547567",
+        "owner": "579391530351",
+        "name": "Thunder.2000.02.02",
+        "episodeId": "2000-02-02:thunder",
+        "date": "2000-02-02",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4621,
+        "enabled": true
+      },
+      {
+        "id": "3870286416495",
+        "owner": "579391530351",
+        "name": "Thunder.2000.02.09",
+        "episodeId": "2000-02-09:thunder",
+        "date": "2000-02-09",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5140,
+        "enabled": true
+      },
+      {
+        "id": "3870286154351",
+        "owner": "579391530351",
+        "name": "Thunder.2000.02.16",
+        "episodeId": "2000-02-16:thunder",
+        "date": "2000-02-16",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4945,
+        "enabled": true
+      },
+      {
+        "id": "3870285761135",
+        "owner": "579391530351",
+        "name": "Thunder.2000.02.23",
+        "episodeId": "2000-02-23:thunder",
+        "date": "2000-02-23",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4841,
+        "enabled": true
+      },
+      {
+        "id": "3870113860207",
+        "owner": "579391530351",
+        "name": "Thunder.2000.03.01",
+        "episodeId": "2000-03-01:thunder",
+        "date": "2000-03-01",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4934,
+        "enabled": true
+      },
+      {
+        "id": "3870113598063",
+        "owner": "579391530351",
+        "name": "Thunder.2000.03.08",
+        "episodeId": "2000-03-08:thunder",
+        "date": "2000-03-08",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4772,
+        "enabled": true
+      },
+      {
+        "id": "3870113466991",
+        "owner": "579391530351",
+        "name": "Thunder.2000.03.15",
+        "episodeId": "2000-03-15:thunder",
+        "date": "2000-03-15",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4905,
+        "enabled": true
+      },
+      {
+        "id": "3870113139311",
+        "owner": "579391530351",
+        "name": "Thunder.2000.03.22",
+        "episodeId": "2000-03-22:thunder",
+        "date": "2000-03-22",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5044,
+        "enabled": true
+      },
+      {
+        "id": "3870113008239",
+        "owner": "579391530351",
+        "name": "Thunder.2000.03.29",
+        "episodeId": "2000-03-29:thunder",
+        "date": "2000-03-29",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4829,
+        "enabled": true
+      },
+      {
+        "id": "3870112746095",
+        "owner": "579391530351",
+        "name": "Thunder.2000.04.05",
+        "episodeId": "2000-04-05:thunder",
+        "date": "2000-04-05",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5052,
+        "enabled": true
+      },
+      {
+        "id": "3870112615023",
+        "owner": "579391530351",
+        "name": "Thunder.2000.04.12",
+        "episodeId": "2000-04-12:thunder",
+        "date": "2000-04-12",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5221,
+        "enabled": true
+      },
+      {
+        "id": "3870112483951",
+        "owner": "579391530351",
+        "name": "Thunder.2000.04.26",
+        "episodeId": "2000-04-26:thunder",
+        "date": "2000-04-26",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5402,
+        "enabled": true
+      },
+      {
+        "id": "3870108027503",
+        "owner": "579391530351",
+        "name": "Thunder.2000.05.03",
+        "episodeId": "2000-05-03:thunder",
+        "date": "2000-05-03",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5150,
+        "enabled": true
+      },
+      {
+        "id": "3870107961967",
+        "owner": "579391530351",
+        "name": "Thunder.2000.05.10",
+        "episodeId": "2000-05-10:thunder",
+        "date": "2000-05-10",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5503,
+        "enabled": true
+      },
+      {
+        "id": "3870107896431",
+        "owner": "579391530351",
+        "name": "Thunder.2000.05.17",
+        "episodeId": "2000-05-17:thunder",
+        "date": "2000-05-17",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5113,
+        "enabled": true
+      },
+      {
+        "id": "3870107634287",
+        "owner": "579391530351",
+        "name": "Thunder.2000.05.24",
+        "episodeId": "2000-05-24:thunder",
+        "date": "2000-05-24",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5668,
+        "enabled": true
+      },
+      {
+        "id": "3870107306607",
+        "owner": "579391530351",
+        "name": "Thunder.2000.05.31",
+        "episodeId": "2000-05-31:thunder",
+        "date": "2000-05-31",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5557,
+        "enabled": true
+      },
+      {
+        "id": "3870107044463",
+        "owner": "579391530351",
+        "name": "Thunder.2000.06.07",
+        "episodeId": "2000-06-07:thunder",
+        "date": "2000-06-07",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5266,
+        "enabled": true
+      },
+      {
+        "id": "3870106847855",
+        "owner": "579391530351",
+        "name": "Thunder.2000.06.14",
+        "episodeId": "2000-06-14:thunder",
+        "date": "2000-06-14",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5199,
+        "enabled": true
+      },
+      {
+        "id": "3870106454639",
+        "owner": "579391530351",
+        "name": "Thunder.2000.06.21",
+        "episodeId": "2000-06-21:thunder",
+        "date": "2000-06-21",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5810,
+        "enabled": true
+      },
+      {
+        "id": "3870106061423",
+        "owner": "579391530351",
+        "name": "Thunder.2000.06.28",
+        "episodeId": "2000-06-28:thunder",
+        "date": "2000-06-28",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5287,
+        "enabled": true
+      },
+      {
+        "id": "3870105995887",
+        "owner": "579391530351",
+        "name": "Thunder.2000.07.05",
+        "episodeId": "2000-07-05:thunder",
+        "date": "2000-07-05",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5296,
+        "enabled": true
+      },
+      {
+        "id": "3870105602671",
+        "owner": "579391530351",
+        "name": "Thunder.2000.07.12",
+        "episodeId": "2000-07-12:thunder",
+        "date": "2000-07-12",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5398,
+        "enabled": true
+      },
+      {
+        "id": "3870105274991",
+        "owner": "579391530351",
+        "name": "Thunder.2000.07.19",
+        "episodeId": "2000-07-19:thunder",
+        "date": "2000-07-19",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5157,
+        "enabled": true
+      },
+      {
+        "id": "3870104881775",
+        "owner": "579391530351",
+        "name": "Thunder.2000.07.26",
+        "episodeId": "2000-07-26:thunder",
+        "date": "2000-07-26",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5157,
+        "enabled": true
+      },
+      {
+        "id": "3869196618351",
+        "owner": "579391530351",
+        "name": "Thunder.2000.08.02",
+        "episodeId": "2000-08-02:thunder",
+        "date": "2000-08-02",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4771,
+        "enabled": true
+      },
+      {
+        "id": "3869196487279",
+        "owner": "579391530351",
+        "name": "Thunder.2000.08.09",
+        "episodeId": "2000-08-09:thunder",
+        "date": "2000-08-09",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5181,
+        "enabled": true
+      },
+      {
+        "id": "3869196356207",
+        "owner": "579391530351",
+        "name": "Thunder.2000.08.16",
+        "episodeId": "2000-08-16:thunder",
+        "date": "2000-08-16",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5381,
+        "enabled": true
+      },
+      {
+        "id": "3869195962991",
+        "owner": "579391530351",
+        "name": "Thunder.2000.08.22",
+        "episodeId": "2000-08-22:thunder",
+        "date": "2000-08-22",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5311,
+        "enabled": true
+      },
+      {
+        "id": "3869195831919",
+        "owner": "579391530351",
+        "name": "Thunder.2000.08.30",
+        "episodeId": "2000-08-30:thunder",
+        "date": "2000-08-30",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4993,
+        "enabled": true
+      },
+      {
+        "id": "3869195700847",
+        "owner": "579391530351",
+        "name": "Thunder.2000.09.06",
+        "episodeId": "2000-09-06:thunder",
+        "date": "2000-09-06",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5049,
+        "enabled": true
+      },
+      {
+        "id": "3869195569775",
+        "owner": "579391530351",
+        "name": "Thunder.2000.09.13",
+        "episodeId": "2000-09-13:thunder",
+        "date": "2000-09-13",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5049,
+        "enabled": true
+      },
+      {
+        "id": "3869195373167",
+        "owner": "579391530351",
+        "name": "Thunder.2000.09.20",
+        "episodeId": "2000-09-20:thunder",
+        "date": "2000-09-20",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5075,
+        "enabled": true
+      },
+      {
+        "id": "3869195111023",
+        "owner": "579391530351",
+        "name": "Thunder.2000.09.27",
+        "episodeId": "2000-09-27:thunder",
+        "date": "2000-09-27",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5183,
+        "enabled": true
+      },
+      {
+        "id": "3868781382255",
+        "owner": "579391530351",
+        "name": "Thunder.2000.10.04",
+        "episodeId": "2000-10-04:thunder",
+        "date": "2000-10-04",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5195,
+        "enabled": true
+      },
+      {
+        "id": "3868780923503",
+        "owner": "579391530351",
+        "name": "Thunder.2000.10.11",
+        "episodeId": "2000-10-11:thunder",
+        "date": "2000-10-11",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5208,
+        "enabled": true
+      },
+      {
+        "id": "3868780661359",
+        "owner": "579391530351",
+        "name": "Thunder.2000.10.18",
+        "episodeId": "2000-10-18:thunder",
+        "date": "2000-10-18",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5200,
+        "enabled": true
+      },
+      {
+        "id": "3868780464751",
+        "owner": "579391530351",
+        "name": "Thunder.2000.10.25",
+        "episodeId": "2000-10-25:thunder",
+        "date": "2000-10-25",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4644,
+        "enabled": true
+      },
+      {
+        "id": "3868780137071",
+        "owner": "579391530351",
+        "name": "Thunder.2000.11.01",
+        "episodeId": "2000-11-01:thunder",
+        "date": "2000-11-01",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4396,
+        "enabled": true
+      },
+      {
+        "id": "3868779350639",
+        "owner": "579391530351",
+        "name": "Thunder.2000.11.08",
+        "episodeId": "2000-11-08:thunder",
+        "date": "2000-11-08",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4251,
+        "enabled": true
+      },
+      {
+        "id": "3868779088495",
+        "owner": "579391530351",
+        "name": "Thunder.2000.11.15",
+        "episodeId": "2000-11-15:thunder",
+        "date": "2000-11-15",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5537,
+        "enabled": true
+      },
+      {
+        "id": "3868778498671",
+        "owner": "579391530351",
+        "name": "Thunder.2000.11.22",
+        "episodeId": "2000-11-22:thunder",
+        "date": "2000-11-22",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4672,
+        "enabled": true
+      },
+      {
+        "id": "3868778302063",
+        "owner": "579391530351",
+        "name": "Thunder.2000.11.29",
+        "episodeId": "2000-11-29:thunder",
+        "date": "2000-11-29",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4417,
+        "enabled": true
+      },
+      {
+        "id": "3868778039919",
+        "owner": "579391530351",
+        "name": "Thunder.2000.12.06",
+        "episodeId": "2000-12-06:thunder",
+        "date": "2000-12-06",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4271,
+        "enabled": true
+      },
+      {
+        "id": "3868777712239",
+        "owner": "579391530351",
+        "name": "Thunder.2000.12.13",
+        "episodeId": "2000-12-13:thunder",
+        "date": "2000-12-13",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4188,
+        "enabled": true
+      },
+      {
+        "id": "3868777450095",
+        "owner": "579391530351",
+        "name": "Thunder.2000.12.20",
+        "episodeId": "2000-12-20:thunder",
+        "date": "2000-12-20",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4443,
+        "enabled": true
+      },
+      {
+        "id": "3868777253487",
+        "owner": "579391530351",
+        "name": "Thunder.2000.12.27",
+        "episodeId": "2000-12-27:thunder",
+        "date": "2000-12-27",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5380,
+        "enabled": true
+      },
+      {
+        "id": "3871500143215",
+        "owner": "579391530351",
+        "name": "Thunder.2001-01-03",
+        "episodeId": "2001-01-03:thunder",
+        "date": "2001-01-03",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4755,
+        "enabled": true
+      },
+      {
+        "id": "3871499749999",
+        "owner": "579391530351",
+        "name": "Thunder.2001-01-10",
+        "episodeId": "2001-01-10:thunder",
+        "date": "2001-01-10",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4543,
+        "enabled": true
+      },
+      {
+        "id": "3871499422319",
+        "owner": "579391530351",
+        "name": "Thunder.2001-01-17",
+        "episodeId": "2001-01-17:thunder",
+        "date": "2001-01-17",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4896,
+        "enabled": true
+      },
+      {
+        "id": "3871499291247",
+        "owner": "579391530351",
+        "name": "Thunder.2001-01-24",
+        "episodeId": "2001-01-24:thunder",
+        "date": "2001-01-24",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4701,
+        "enabled": true
+      },
+      {
+        "id": "3871499029103",
+        "owner": "579391530351",
+        "name": "Thunder.2001-01-31",
+        "episodeId": "2001-01-31:thunder",
+        "date": "2001-01-31",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4788,
+        "enabled": true
+      },
+      {
+        "id": "3871498832495",
+        "owner": "579391530351",
+        "name": "Thunder.2001-02-07",
+        "episodeId": "2001-02-07:thunder",
+        "date": "2001-02-07",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5251,
+        "enabled": true
+      },
+      {
+        "id": "3871498373743",
+        "owner": "579391530351",
+        "name": "Thunder.2001-02-14",
+        "episodeId": "2001-02-14:thunder",
+        "date": "2001-02-14",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 4558,
+        "enabled": true
+      },
+      {
+        "id": "3871498177135",
+        "owner": "579391530351",
+        "name": "Thunder.2001-02-21",
+        "episodeId": "2001-02-21:thunder",
+        "date": "2001-02-21",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5271,
+        "enabled": true
+      },
+      {
+        "id": "3871497849455",
+        "owner": "579391530351",
+        "name": "Thunder.2001-02-28",
+        "episodeId": "2001-02-28:thunder",
+        "date": "2001-02-28",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5376,
+        "enabled": true
+      },
+      {
+        "id": "3871497325167",
+        "owner": "579391530351",
+        "name": "Thunder.2001-03-14",
+        "episodeId": "2001-03-14:thunder",
+        "date": "2001-03-14",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5346,
+        "enabled": true
+      },
+      {
+        "id": "3871496866415",
+        "owner": "579391530351",
+        "name": "Thunder.2001-03-21",
+        "episodeId": "2001-03-21:thunder",
+        "date": "2001-03-21",
+        "show": "Thunder",
+        "title": "Thunder",
+        "duration": 5427,
+        "enabled": true
+      },
+      {
+        "id": "3786034776687",
+        "owner": "579391530351",
+        "name": "WCW Mayhem 2000.11.26",
+        "episodeId": "2000-11-26:mayhem",
+        "date": "2000-11-26",
+        "show": "PPV",
+        "title": "WCW Mayhem 2000",
+        "duration": 10426,
+        "enabled": true
+      },
+      {
+        "id": "3786034383471",
+        "owner": "579391530351",
+        "name": "WCW Starrcade 2000.12.17",
+        "episodeId": "2000-12-17:starrcade",
+        "date": "2000-12-17",
+        "show": "PPV",
+        "title": "WCW Starrcade 2000",
+        "duration": 10160,
+        "enabled": true
+      },
+      {
+        "id": "3786034449007",
+        "owner": "579391530351",
+        "name": "WCW The Great American Bash 2000.06.11",
+        "episodeId": "2000-06-11:thegreatamericanbash",
+        "date": "2000-06-11",
+        "show": "PPV",
+        "title": "WCW The Great American Bash 2000",
+        "duration": 9826,
+        "enabled": true
+      },
+      {
+        "id": "7221265566351",
+        "owner": "589703611535",
+        "name": "WCW.1987.NWA.The.Great.American.Bash.1987.VHSRip.x264-RUDOS.mp4",
+        "episodeId": "1987-07-04:thegreatamericanbash1987",
+        "date": "1987-07-04",
+        "show": "PPV",
+        "title": "The Great American Bash 1987",
+        "duration": 7208,
+        "enabled": true
+      },
+      {
+        "id": "7223118989967",
+        "owner": "589703611535",
+        "name": "WCW.1988.NWA.The.Great.American.Bash.1988.VHSRip.x264-RUDOS.mp4",
+        "episodeId": "1988-07-10:thegreatamericanbash",
+        "date": "1988-07-10",
+        "show": "PPV",
+        "title": "The Great American Bash",
+        "duration": 8891,
+        "enabled": true
+      },
+      {
+        "id": "7223232694927",
+        "owner": "589703611535",
+        "name": "WCW.1989.Halloween.Havoc.1989.VHSRip.x264-RUDOS.mp4",
+        "episodeId": "1989-10-28:halloweenhavoc",
+        "date": "1989-10-28",
+        "show": "PPV",
+        "title": "Halloween Havoc",
+        "duration": 10199,
+        "enabled": true
+      },
+      {
+        "id": "7187781257871",
+        "owner": "589703611535",
+        "name": "WCW.1990.08.Clash-of-the-Champions-13 restored 2021-ch.mp4",
+        "episodeId": "1990-11-20:clashofthechampions",
+        "date": "1990-11-20",
+        "show": "PPV",
+        "title": "Clash of the Champions 13",
+        "duration": 6883,
+        "enabled": true
+      },
+      {
+        "id": "7187781126799",
+        "owner": "589703611535",
+        "name": "WCW.1991.02.WrestleWar-1991 restored-ch.mp4",
+        "episodeId": "1991-02-24:wrestlewar91",
+        "date": "1991-02-24",
+        "show": "PPV",
+        "title": "WrestleWar '91",
+        "duration": 10185,
+        "enabled": true
+      },
+      {
+        "id": "7188295781007",
+        "owner": "589703611535",
+        "name": "WCW.1991.04.Clash-of-the-Champions-15 restored 2021-ch.mp4",
+        "episodeId": "1991-06-12:clashofthechampions",
+        "date": "1991-06-12",
+        "show": "PPV",
+        "title": "Clash of the Champions 15",
+        "duration": 6792,
+        "enabled": true
+      },
+      {
+        "id": "7188295846543",
+        "owner": "589703611535",
+        "name": "WCW.1991.06.Clash-of-the-Champions-16 restored 2021-ch.mp4",
+        "episodeId": "1991-09-05:clashofthechampions",
+        "date": "1991-09-05",
+        "show": "PPV",
+        "title": "Clash of the Champions 16",
+        "duration": 6806,
+        "enabled": true
+      },
+      {
+        "id": "7188296501903",
+        "owner": "589703611535",
+        "name": "WCW.1991.07.Halloween-Havoc-1991 restored-ch.mp4",
+        "episodeId": "1991-10-27:halloweenhavoc",
+        "date": "1991-10-27",
+        "show": "PPV",
+        "title": "Halloween Havoc",
+        "duration": 10063,
+        "enabled": true
+      },
+      {
+        "id": "7188295715471",
+        "owner": "589703611535",
+        "name": "WCW.1991.08.Clash-of-the-Champions-17 restored 2021-ch.mp4",
+        "episodeId": "1991-11-19:clashofthechampions",
+        "date": "1991-11-19",
+        "show": "PPV",
+        "title": "Clash of the Champions 17",
+        "duration": 6597,
+        "enabled": true
+      },
+      {
+        "id": "7190036875919",
+        "owner": "589703611535",
+        "name": "WCW.1992.01.Clash-of-the-Champions-18 restored 2021-ch.mp4",
+        "episodeId": "1992-01-21:clashofthechampions",
+        "date": "1992-01-21",
+        "show": "PPV",
+        "title": "WCW Clash of the Champions 18",
+        "duration": 6706,
+        "enabled": true
+      },
+      {
+        "id": "7190036679311",
+        "owner": "589703611535",
+        "name": "WCW.1992.03.WrestleWar-1992 restored-ch.mp4",
+        "episodeId": "1992-05-17:wrestlewar92",
+        "date": "1992-05-17",
+        "show": "PPV",
+        "title": "WrestleWar '92",
+        "duration": 9885,
+        "enabled": true
+      },
+      {
+        "id": "7190036548239",
+        "owner": "589703611535",
+        "name": "WCW.1992.04.Clash-of-the-Champions-19 restored 2021-ch.mp4",
+        "episodeId": "1992-06-16:clashofthechampions",
+        "date": "1992-06-16",
+        "show": "PPV",
+        "title": "Clash of the Champions 19",
+        "duration": 6861,
+        "enabled": true
+      },
+      {
+        "id": "7190037727887",
+        "owner": "589703611535",
+        "name": "WCW.1992.08.Halloween-Havoc-1992 restored-ch.mp4",
+        "episodeId": "1992-10-25:halloweenhavoc",
+        "date": "1992-10-25",
+        "show": "PPV",
+        "title": "Halloween Havoc",
+        "duration": 10190,
+        "enabled": true
+      },
+      {
+        "id": "7190312192655",
+        "owner": "589703611535",
+        "name": "WCW.1992.09.Clash-of-the-Champions-21 restored 2021-ch.mp4",
+        "episodeId": "1992-11-18:clashofthechampions",
+        "date": "1992-11-18",
+        "show": "PPV",
+        "title": "Clash of the Champions 21",
+        "duration": 6738,
+        "enabled": true
+      },
+      {
+        "id": "7190311799439",
+        "owner": "589703611535",
+        "name": "WCW.1993.06.Clash-of-the-Champions-24 restored 2021-ch.mp4",
+        "episodeId": "1993-08-18:clashofthechampions",
+        "date": "1993-08-18",
+        "show": "PPV",
+        "title": "Clash of the Champions 24",
+        "duration": 5598,
+        "enabled": true
+      },
+      {
+        "id": "7223245081231",
+        "owner": "589703611535",
+        "name": "WCW.1993.Battlebowl.1993.VHSRip.x264-RUDOS.mp4",
+        "episodeId": "1993-11-20:battlebowl",
+        "date": "1993-11-20",
+        "show": "PPV",
+        "title": "Battlebowl",
+        "duration": 9702,
+        "enabled": true
+      },
+      {
+        "id": "7190311864975",
+        "owner": "589703611535",
+        "name": "WCW.1994.07.Clash-of-the-Champions-28 restored-ch-2021.mp4",
+        "episodeId": "1994-08-24:clashofthechampions",
+        "date": "1994-08-24",
+        "show": "PPV",
+        "title": "Clash of the Champions 28",
+        "duration": 6863,
+        "enabled": true
+      },
+      {
+        "id": "7190312127119",
+        "owner": "589703611535",
+        "name": "WCW.1994.09.Halloween-Havoc-1994-restored 2022-ch.mp4",
+        "episodeId": "1994-10-23:halloweenhavoc",
+        "date": "1994-10-23",
+        "show": "PPV",
+        "title": "Halloween Havoc",
+        "duration": 9881,
+        "enabled": true
+      },
+      {
+        "id": "7190311996047",
+        "owner": "589703611535",
+        "name": "WCW.1995.03.Uncensored-1995-restored 2022-ch.mp4",
+        "episodeId": "1995-03-19:uncensored",
+        "date": "1995-03-19",
+        "show": "PPV",
+        "title": "Uncensored",
+        "duration": 9012,
+        "enabled": true
+      },
+      {
+        "id": "7190311930511",
+        "owner": "589703611535",
+        "name": "WCW.1995.06.Bash-at-the-Beach-1995-restored 2022-ch.mp4",
+        "episodeId": "1995-07-16:bashatthebeach",
+        "date": "1995-07-16",
+        "show": "PPV",
+        "title": "Bash at the Beach",
+        "duration": 9265,
+        "enabled": true
+      }
+    ],
+    "collections": [
+      {
+        "name": "WCW collection",
+        "owner": "589703611535",
+        "url": "https://ok.ru/profile/589703611535/video/all",
+        "enabled": true
       }
     ]
   }

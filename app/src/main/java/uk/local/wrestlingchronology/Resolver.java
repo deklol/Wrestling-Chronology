@@ -99,6 +99,7 @@ final class Resolver {
     Resolved result = new Resolved();
     result.provider = source.getString("type");
     result.label = source.optString("label");
+    if (result.provider.equals("okru")) return Okru.resolve(source);
     if (result.provider.equals("dailymotion")) return Dailymotion.resolve(source);
     if (result.provider.equals("archive")) {
       JSONArray parts = source.optJSONArray("urls");

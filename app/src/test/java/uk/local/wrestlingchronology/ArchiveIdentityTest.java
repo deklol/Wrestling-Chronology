@@ -64,6 +64,12 @@ public class ArchiveIdentityTest {
   }
 
   @Test
+  public void mainEventSubtitlesDoNotOverrideTheProgramme() {
+    assertEquals("Main Event", ArchiveSync.family("08 06 1995 Main Event (CLASH OF THE CHAMPIONS).mp4"));
+    assertEquals("Thunder", ArchiveSync.family("The Main Eventers get sent to WCW Thunder.mp4"));
+  }
+
+  @Test
   public void cachedDuplicatesMoveWithoutLosingAnyPlayableSource() throws Exception {
     JSONObject data = data();
     addWrong(data, "19");

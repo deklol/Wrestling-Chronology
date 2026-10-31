@@ -6438,5 +6438,425 @@
       ]
     }
   },
-  "retiredSources": []
+  "retiredSources": [],
+  "okru": {
+    "enabled": true,
+    "videos": [
+      {
+        "id": "9788786543215",
+        "owner": "579391530351",
+        "name": "HonorClub.099.2025.01.16.",
+        "episodeId": "roh:2025-01-16:honorclub",
+        "date": "2025-01-16",
+        "show": "HonorClub",
+        "title": "HonorClub #99",
+        "duration": 4301,
+        "enabled": true
+      },
+      {
+        "id": "9787637041775",
+        "owner": "579391530351",
+        "name": "HonorClub.100.2025.01.23.",
+        "episodeId": "roh:2025-01-23:honorclub",
+        "date": "2025-01-23",
+        "show": "HonorClub",
+        "title": "HonorClub #100",
+        "duration": 5616,
+        "enabled": true
+      },
+      {
+        "id": "9787515406959",
+        "owner": "579391530351",
+        "name": "HonorClub.101.2025.01.30.",
+        "episodeId": "roh:2025-01-30:honorclub",
+        "date": "2025-01-30",
+        "show": "HonorClub",
+        "title": "HonorClub #101",
+        "duration": 4325,
+        "enabled": true
+      },
+      {
+        "id": "9784488233583",
+        "owner": "579391530351",
+        "name": "HonorClub.103.2025.02.13.",
+        "episodeId": "roh:2025-02-13:honorclub",
+        "date": "2025-02-13",
+        "show": "HonorClub",
+        "title": "HonorClub #103",
+        "duration": 4447,
+        "enabled": true
+      },
+      {
+        "id": "9807367572079",
+        "owner": "579391530351",
+        "name": "HonorClub.104.2025.02.20.",
+        "episodeId": "roh:2025-02-20:honorclub",
+        "date": "2025-02-20",
+        "show": "HonorClub",
+        "title": "HonorClub #104",
+        "duration": 4873,
+        "enabled": true
+      },
+      {
+        "id": "9839069563503",
+        "owner": "579391530351",
+        "name": "HonorClub.105.2025.02.27.",
+        "episodeId": "roh:2025-02-27:honorclub",
+        "date": "2025-02-27",
+        "show": "HonorClub",
+        "title": "HonorClub #105",
+        "duration": 4259,
+        "enabled": true
+      },
+      {
+        "id": "9864214153839",
+        "owner": "579391530351",
+        "name": "HonorClub.106.2025.03.06.",
+        "episodeId": "roh:2025-03-06:honorclub",
+        "date": "2025-03-06",
+        "show": "HonorClub",
+        "title": "HonorClub #106",
+        "duration": 5250,
+        "enabled": true
+      },
+      {
+        "id": "9946362153583",
+        "owner": "579391530351",
+        "name": "HonorClub.107.2025.03.13.",
+        "episodeId": "roh:2025-03-13:honorclub",
+        "date": "2025-03-13",
+        "show": "HonorClub",
+        "title": "HonorClub #107",
+        "duration": 4740,
+        "enabled": true
+      },
+      {
+        "id": "9952161041007",
+        "owner": "579391530351",
+        "name": "HonorClub.108.2025.03.20.",
+        "episodeId": "roh:2025-03-20:honorclub",
+        "date": "2025-03-20",
+        "show": "HonorClub",
+        "title": "HonorClub #108",
+        "duration": 4888,
+        "enabled": true
+      },
+      {
+        "id": "9952162941551",
+        "owner": "579391530351",
+        "name": "HonorClub.110.2025.04.03.",
+        "episodeId": "roh:2025-04-03:honorclub",
+        "date": "2025-04-03",
+        "show": "HonorClub",
+        "title": "HonorClub #110",
+        "duration": 3431,
+        "enabled": true
+      },
+      {
+        "id": "9990975130223",
+        "owner": "579391530351",
+        "name": "HonorClub.111.2025.04.10.",
+        "episodeId": "roh:2025-04-10:honorclub",
+        "date": "2025-04-10",
+        "show": "HonorClub",
+        "title": "HonorClub #111",
+        "duration": 2775,
+        "enabled": true
+      },
+      {
+        "id": "9807367047791",
+        "owner": "579391530351",
+        "name": "HonorClub.2025.02.17.",
+        "episodeId": "roh:2025-02-17:honorclub",
+        "date": "2025-02-17",
+        "show": "HonorClub",
+        "title": "HonorClub",
+        "duration": 5039,
+        "enabled": true
+      },
+      {
+        "id": "10955073522287",
+        "owner": "579391530351",
+        "name": "HonorClub.2025.12.02.",
+        "episodeId": "roh:2025-12-02:honorclub",
+        "date": "2025-12-02",
+        "show": "HonorClub",
+        "title": "HonorClub",
+        "duration": 2719,
+        "enabled": true
+      },
+      {
+        "id": "9952161958511",
+        "owner": "579391530351",
+        "name": "HonorClub.E109.2025.03.27.",
+        "episodeId": "roh:2025-03-27:honorclub",
+        "date": "2025-03-27",
+        "show": "HonorClub",
+        "title": "HonorClub #109",
+        "duration": 4307,
+        "enabled": true
+      },
+      {
+        "id": "10961564797551",
+        "owner": "579391530351",
+        "name": "HonorClub.E144.2025.11.06.",
+        "episodeId": "roh:2025-11-06:honorclub",
+        "date": "2025-11-06",
+        "show": "HonorClub",
+        "title": "HonorClub #140",
+        "duration": 5695,
+        "enabled": true
+      },
+      {
+        "id": "10961564207727",
+        "owner": "579391530351",
+        "name": "HonorClub.E144.2025.11.13.",
+        "episodeId": "roh:2025-11-13:honorclub",
+        "date": "2025-11-13",
+        "show": "HonorClub",
+        "title": "HonorClub #141",
+        "duration": 4164,
+        "enabled": true
+      },
+      {
+        "id": "10961563290223",
+        "owner": "579391530351",
+        "name": "HonorClub.E144.2025.11.20.",
+        "episodeId": "roh:2025-11-20:honorclub",
+        "date": "2025-11-20",
+        "show": "HonorClub",
+        "title": "HonorClub #142",
+        "duration": 4087,
+        "enabled": true
+      },
+      {
+        "id": "10961562634863",
+        "owner": "579391530351",
+        "name": "HonorClub.E144.2025.11.28.",
+        "episodeId": "roh:2025-11-28:honorclub",
+        "date": "2025-11-28",
+        "show": "HonorClub",
+        "title": "Black Friday Special",
+        "duration": 4447,
+        "enabled": true
+      },
+      {
+        "id": "10955016505967",
+        "owner": "579391530351",
+        "name": "HonorClub.E144.2025.12.04.",
+        "episodeId": "roh:2025-12-04:honorclub",
+        "date": "2025-12-04",
+        "show": "HonorClub",
+        "title": "HonorClub #144",
+        "duration": 3733,
+        "enabled": true
+      },
+      {
+        "id": "11051523443311",
+        "owner": "579391530351",
+        "name": "HonorClub.E145.2025.12.11.",
+        "episodeId": "roh:2025-12-11:honorclub",
+        "date": "2025-12-11",
+        "show": "HonorClub",
+        "title": "HonorClub #145",
+        "duration": 6163,
+        "enabled": true
+      },
+      {
+        "id": "11400890550895",
+        "owner": "579391530351",
+        "name": "ROH.E148.2026.01.01.",
+        "episodeId": "roh:2026-01-01:honorclub",
+        "date": "2026-01-01",
+        "show": "HonorClub",
+        "title": "HonorClub #148",
+        "duration": 4405,
+        "enabled": true
+      },
+      {
+        "id": "11412346964591",
+        "owner": "579391530351",
+        "name": "ROH.E149.2026.01.08.",
+        "episodeId": "roh:2026-01-08:honorclub",
+        "date": "2026-01-08",
+        "show": "HonorClub",
+        "title": "HonorClub #149",
+        "duration": 5249,
+        "enabled": true
+      },
+      {
+        "id": "11549202188911",
+        "owner": "579391530351",
+        "name": "ROH.E150.2026.01.15.",
+        "episodeId": "roh:2026-01-15:honorclub",
+        "date": "2026-01-15",
+        "show": "HonorClub",
+        "title": "HonorClub #150",
+        "duration": 4132,
+        "enabled": true
+      },
+      {
+        "id": "11634360388207",
+        "owner": "579391530351",
+        "name": "ROH.E151.2026.01.22.",
+        "episodeId": "roh:2026-01-22:honorclub",
+        "date": "2026-01-22",
+        "show": "HonorClub",
+        "title": "HonorClub #151",
+        "duration": 4339,
+        "enabled": true
+      },
+      {
+        "id": "11814593432175",
+        "owner": "579391530351",
+        "name": "ROH.E152.2026.01.29.",
+        "episodeId": "roh:2026-01-29:honorclub",
+        "date": "2026-01-29",
+        "show": "HonorClub",
+        "title": "HonorClub #152",
+        "duration": 3759,
+        "enabled": true
+      },
+      {
+        "id": "11929088625263",
+        "owner": "579391530351",
+        "name": "ROH.E153.2026.02.05.",
+        "episodeId": "roh:2026-02-05:honorclub",
+        "date": "2026-02-05",
+        "show": "HonorClub",
+        "title": "HonorClub #153",
+        "duration": 4596,
+        "enabled": true
+      },
+      {
+        "id": "12085850212975",
+        "owner": "579391530351",
+        "name": "ROH.E154.2026.02.12.",
+        "episodeId": "roh:2026-02-12:honorclub",
+        "date": "2026-02-12",
+        "show": "HonorClub",
+        "title": "HonorClub #154",
+        "duration": 3674,
+        "enabled": true
+      },
+      {
+        "id": "12215116499567",
+        "owner": "579391530351",
+        "name": "ROH.E155.2026.02.19.",
+        "episodeId": "roh:2026-02-19:honorclub",
+        "date": "2026-02-19",
+        "show": "HonorClub",
+        "title": "HonorClub #155",
+        "duration": 3813,
+        "enabled": true
+      },
+      {
+        "id": "10974057204335",
+        "owner": "579391530351",
+        "name": "ROH.Final.Battle.2025.",
+        "episodeId": "roh:2025-12-05:ppv:finalbattle",
+        "date": "2025-12-05",
+        "show": "PPV",
+        "title": "Final Battle",
+        "duration": 18006,
+        "enabled": true
+      },
+      {
+        "id": "12705101122159",
+        "owner": "579391530351",
+        "name": "ROH.On.HonorClub.E156.2026.02.26.",
+        "episodeId": "roh:2026-02-26:honorclub",
+        "date": "2026-02-26",
+        "show": "HonorClub",
+        "title": "HonorClub #156",
+        "duration": 6156,
+        "enabled": true
+      },
+      {
+        "id": "12705102301807",
+        "owner": "579391530351",
+        "name": "ROH.On.HonorClub.E157.2026.03.05.",
+        "episodeId": "roh:2026-03-05:honorclub",
+        "date": "2026-03-05",
+        "show": "HonorClub",
+        "title": "HonorClub #157",
+        "duration": 7202,
+        "enabled": true
+      },
+      {
+        "id": "12705103678063",
+        "owner": "579391530351",
+        "name": "ROH.On.HonorClub.E158.2026.03.12.",
+        "episodeId": "roh:2026-03-12:honorclub",
+        "date": "2026-03-12",
+        "show": "HonorClub",
+        "title": "HonorClub #158",
+        "duration": 5127,
+        "enabled": true
+      },
+      {
+        "id": "14304007555695",
+        "owner": "579391530351",
+        "name": "ROH.On.HonorClub.E159.19th.March.2026.1080p.WEBRip.h264-TJ",
+        "episodeId": "roh:2026-03-19:honorclub",
+        "date": "2026-03-19",
+        "show": "HonorClub",
+        "title": "HonorClub #159",
+        "duration": 5429,
+        "enabled": true
+      },
+      {
+        "id": "14304007883375",
+        "owner": "579391530351",
+        "name": "ROH.On.HonorClub.E160.26th.March.2026.1080p.WEBRip.h264-TJ",
+        "episodeId": "roh:2026-03-26:honorclub",
+        "date": "2026-03-26",
+        "show": "HonorClub",
+        "title": "HonorClub #160",
+        "duration": 6397,
+        "enabled": true
+      },
+      {
+        "id": "14304008538735",
+        "owner": "579391530351",
+        "name": "ROH.On.HonorClub.E162.2026.04.17.WEB.H264-1080P-Shawn",
+        "episodeId": "roh:2026-04-17:honorclub",
+        "date": "2026-04-17",
+        "show": "HonorClub",
+        "title": "HonorClub #162",
+        "duration": 7417,
+        "enabled": true
+      },
+      {
+        "id": "12705105119855",
+        "owner": "579391530351",
+        "name": "ROH.Special.2026.03.13",
+        "episodeId": "roh:2026-03-13:specials",
+        "date": "2026-03-13",
+        "show": "Specials",
+        "title": "ROH Special 2026 03 13",
+        "duration": 3824,
+        "enabled": true
+      },
+      {
+        "id": "14304020466287",
+        "owner": "579391530351",
+        "name": "ROH.on.MyAEW.165.2026.05.07.720p.WEB.h264-SpaZe",
+        "episodeId": "roh:2026-05-07:honorclub",
+        "date": "2026-05-07",
+        "show": "HonorClub",
+        "title": "HonorClub #165",
+        "duration": 6438,
+        "enabled": true
+      }
+    ],
+    "collections": [
+      {
+        "name": "Professional Wrestling uploads",
+        "owner": "579391530351",
+        "url": "https://ok.ru/profile/579391530351/video/all",
+        "enabled": true
+      }
+    ]
+  }
 }

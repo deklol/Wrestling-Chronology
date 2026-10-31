@@ -192,7 +192,7 @@ public final class MainActivity extends Activity {
     Ui.gap(content, 12);
     TextView credit =
         text(
-            "Videos are hosted externally on YouTube, Internet Archive or Dailymotion.\n"
+            "Videos are hosted externally on YouTube, Internet Archive, Dailymotion or OK.ru.\n"
                 + "The app creator does not upload or host these videos.",
             11,
             Ui.MUTED);
@@ -335,14 +335,16 @@ public final class MainActivity extends Activity {
       return;
     }
     root = Ui.vertical(this);
-    root.setPadding(d(30), d(18), d(30), d(16));
+    root.setPadding(page.equals("home") ? 0 : d(30), d(18), page.equals("home") ? 0 : d(30), d(16));
     root.setBackground(
         new GradientDrawable(
             GradientDrawable.Orientation.TL_BR,
             new int[] {Company.current.surface(), Company.current.background(), Ui.BG}));
     setContentView(root);
     LinearLayout nav = Ui.horizontal(this);
-    root.addView(nav, Ui.lp(this, -1, 48));
+    LinearLayout.LayoutParams navLayout = Ui.lp(this, -1, 48);
+    if (page.equals("home")) navLayout.setMargins(d(30), 0, d(30), 0);
+    root.addView(nav, navLayout);
     ImageView logo = new ImageView(this);
     Company.current.setLogo(logo);
     logo.setScaleType(ImageView.ScaleType.FIT_CENTER);
@@ -388,18 +390,24 @@ public final class MainActivity extends Activity {
     trendingButton.setId(View.generateViewId());
     nav.addView(trendingButton);
     Ui.gap(nav, 10);
+    TextView historyButton = Ui.button(this, "History", page.equals("history"), () -> {
+      page = "history"; render();
+    });
+    historyButton.setId(View.generateViewId());
+    nav.addView(historyButton);
+    Ui.gap(nav, 6);
     nav.addView(Ui.button(this, "Search", false, this::search));
     Ui.gap(nav, 10);
     nav.addView(Ui.button(this, "Settings", false, this::settings));
     for (int i = 0; i < nav.getChildCount(); i++) {
       View child = nav.getChildAt(i);
       if (child.isClickable()) {
-        child.setPadding(d(9), d(12), d(9), d(12));
-        if (child instanceof TextView) ((TextView) child).setTextSize(12);
+        child.setPadding(d(7), d(12), d(7), d(12));
+        if (child instanceof TextView) ((TextView) child).setTextSize(11);
       }
     }
     refreshStrip = Ui.vertical(this);
-    refreshStrip.setPadding(d(6), d(7), d(6), d(4));
+    refreshStrip.setPadding(d(page.equals("home") ? 36 : 6), d(7), d(page.equals("home") ? 36 : 6), d(4));
     refreshText = text("", 11, Ui.MUTED);
     refreshStrip.addView(refreshText);
     refreshBar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
@@ -411,7 +419,66 @@ public final class MainActivity extends Activity {
     if (page.equals("home")) home();
     else if (page.equals("years")) years();
     else if (page.equals("trending")) CommunityPanel.trending(this, root, trendingButton);
+    else if (page.equals("history")) history(historyButton);
     else library();
+  }
+
+  int historyPage = 0;
+
+  void history(View menuButton) {
+    root.addView(text("History · " + Company.current.name, 24, Ui.WHITE));
+    root.addView(text("Recently watched · saved on this device", 13, Ui.MUTED));
+    Ui.gap(root, 12);
+    ArrayList<Catalog.Episode> all = Catalog.watchHistory(Catalog.episodes, Catalog.prefs(this).getAll());
+    if (all.isEmpty()) {
+      root.addView(text("Shows you watch will appear here.", 16, Ui.MUTED));
+      return;
+    }
+    int pages = (all.size() + 24) / 25;
+    historyPage = Math.max(0, Math.min(historyPage, pages - 1));
+    int start = historyPage * 25;
+    ArrayList<Catalog.Episode> items = new ArrayList<>(all.subList(start, Math.min(start + 25, all.size())));
+    RecyclerView grid = new RecyclerView(this);
+    grid.setLayoutManager(new GridLayoutManager(this, 4));
+    grid.setClipToPadding(false);
+    grid.setPadding(0, d(4), 0, d(20));
+    root.addView(grid, new LinearLayout.LayoutParams(-1, 0, 1));
+    LinearLayout pagination = Ui.horizontal(this);
+    pagination.setGravity(Gravity.CENTER);
+    TextView previous = Ui.button(this, "‹ Previous", false, () -> { historyPage--; render(); });
+    TextView next = Ui.button(this, "Next ›", false, () -> { historyPage++; render(); });
+    previous.setId(View.generateViewId());
+    next.setId(View.generateViewId());
+    previous.setEnabled(historyPage > 0);
+    previous.setFocusable(historyPage > 0);
+    next.setEnabled(historyPage + 1 < pages);
+    next.setFocusable(historyPage + 1 < pages);
+    previous.setAlpha(historyPage > 0 ? 1f : .35f);
+    next.setAlpha(historyPage + 1 < pages ? 1f : .35f);
+    pagination.addView(previous);
+    TextView count = text("Page " + (historyPage + 1) + " of " + pages + " · " + all.size() + " shows", 12, Ui.MUTED);
+    count.setPadding(d(20), 0, d(20), 0);
+    pagination.addView(count);
+    pagination.addView(next);
+    root.addView(pagination, Ui.lp(this, -1, 48));
+    grid.setAdapter(new EpisodeAdapter(items) {
+      @Override public void onBindViewHolder(Holder holder, int position) {
+        super.onBindViewHolder(holder, position);
+        holder.itemView.setNextFocusUpId(position < 4 ? menuButton.getId() : View.NO_ID);
+        holder.itemView.setNextFocusDownId(position / 4 == (items.size() - 1) / 4
+            ? (next.isEnabled() ? next.getId() : previous.isEnabled() ? previous.getId() : View.NO_ID)
+            : View.NO_ID);
+        holder.source.setText(Catalog.watched(MainActivity.this, items.get(position))
+            ? "▶ Rewatch" : "▶ Continue");
+        holder.source.setTextColor(Ui.accent());
+        holder.itemView.setOnClickListener(view -> {
+          int index = holder.getBindingAdapterPosition();
+          if (index == RecyclerView.NO_POSITION) return;
+          Catalog.Episode item = items.get(index);
+          launch(item, Catalog.forYear(item.year, "All", extras()), null);
+        });
+      }
+    });
   }
 
   boolean extras() {
@@ -424,10 +491,20 @@ public final class MainActivity extends Activity {
     pageScroll.setFillViewport(true);
     root.addView(pageScroll, new LinearLayout.LayoutParams(-1, 0, 1));
     LinearLayout body = Ui.vertical(this);
+    body.setPadding(d(30), 0, d(30), 0);
     pageScroll.addView(body);
     Catalog.Episode current = Catalog.continueWatching(this);
     FrameLayout hero = new FrameLayout(this);
-    body.addView(hero, Ui.lp(this, -1, current == null ? 260 : 300));
+    int heroBackground = Color.rgb(
+        Color.red(Company.current.background()) / 2,
+        Color.green(Company.current.background()) / 2,
+        Color.blue(Company.current.background()) / 2);
+    hero.setBackgroundColor(heroBackground);
+    body.setClipChildren(false);
+    body.setClipToPadding(false);
+    LinearLayout.LayoutParams heroLayout = Ui.lp(this, -1, current == null ? 260 : 300);
+    heroLayout.setMargins(-d(30), 0, -d(30), 0);
+    body.addView(hero, heroLayout);
     ImageView backdrop = new ImageView(this);
     backdrop.setScaleType(ImageView.ScaleType.CENTER_CROP);
     backdrop.setImageResource(Company.current.hero());
@@ -442,15 +519,15 @@ public final class MainActivity extends Activity {
         new GradientDrawable(
             GradientDrawable.Orientation.LEFT_RIGHT,
             new int[] {
-              Company.current.background(),
-              (Company.current.background() & 0x00ffffff) | 0xe0000000,
-              (Company.current.background() & 0x00ffffff) | 0x18000000
+              heroBackground,
+              (heroBackground & 0x00ffffff) | 0xe0000000,
+              (heroBackground & 0x00ffffff) | 0x18000000
             }));
     hero.addView(shade, new FrameLayout.LayoutParams(-1, -1));
     LinearLayout copy = Ui.vertical(this);
     copy.setGravity(Gravity.CENTER_VERTICAL);
-    copy.setPadding(d(10), d(12), 0, d(16));
-    hero.addView(copy, new FrameLayout.LayoutParams(d(510), -1));
+    copy.setPadding(d(40), d(12), 0, d(16));
+    hero.addView(copy, new FrameLayout.LayoutParams(d(540), -1));
     TextView kicker =
         text(
             current == null
@@ -557,7 +634,7 @@ public final class MainActivity extends Activity {
     Ui.gap(body, 10);
     body.addView(Ui.button(this, "Browse all years  ›", false, this::openYears));
     Ui.gap(body, 10);
-    body.addView(text("STREAMING ONLY   ·   YouTube + Archive.org + Dailymotion", 10, Ui.MUTED));
+    body.addView(text("STREAMING ONLY   ·   YouTube + Archive.org + Dailymotion + OK.ru", 10, Ui.MUTED));
     Ui.gap(body, 22);
     TextView credit = text("x.com/digitalm1nd", 12, Ui.MUTED);
     credit.setGravity(Gravity.CENTER);
@@ -842,7 +919,7 @@ public final class MainActivity extends Activity {
     grid.requestLayout();
   }
 
-  final class EpisodeAdapter extends RecyclerView.Adapter<EpisodeAdapter.Holder> {
+  class EpisodeAdapter extends RecyclerView.Adapter<EpisodeAdapter.Holder> {
     final ArrayList<Catalog.Episode> items;
     final boolean horizontal, portrait;
     final Map<String, org.json.JSONObject> communityStats = new HashMap<>();

@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MONTHS = {name.lower(): index for index, name in enumerate(calendar.month_name) if name}
 MONTHS.update({name.lower(): index for index, name in enumerate(calendar.month_abbr) if name})
 MONTHS["sept"] = 9
-LIMITS = {"aew": ("2018-01-01", "2028-12-31"), "wwe": ("1985-01-01", "2028-12-31"), "ecw": ("1995-01-01", "2005-12-31"),
+LIMITS = {"aew": ("2018-01-01", "2028-12-31"), "wwe": ("1985-01-01", "2028-12-31"), "ecw": ("1992-01-01", "2006-12-31"),
           "wcw": ("1983-01-01", "2001-03-26"), "tna": ("2002-01-01", "2028-12-31"),
           "roh": ("2002-02-23", "2028-12-31")}
 CHANNELS = {"wwe": "UCJ5v_MCY6GNUBTO8-D3XoAg", "wcw": "UCbGG2hv4cWmIrBAIhGiCdSg",
@@ -132,6 +132,13 @@ def add_record(library, company, when, show, title, source, description="", thum
         if len(matches) == 1:
             existing = matches[0]
     if existing is None:
+        if company == 'aew' and source.get('eventPart') == 'preshow':
+            matches = [row for row in rows if row['date'] == when and row['show'] == 'PPV'
+                       and (row.get('eventPart') == 'preshow'
+                            or re.search(r'(?i)zero[ ._-]*hour|buy[ ._-]*in|pre[ ._-]*show', row['title']))]
+            if len(matches) == 1:
+                existing = matches[0]
+    if existing is None:
         existing = {"id": identity, "date": when, "year": int(when[:4]), "show": show,
                     "title": title, "description": description, "duration": source.get("duration", 0),
                     "thumbnail": thumbnail, "poster": thumbnail, "sources": [], "discoveredAt": 0}
@@ -140,6 +147,8 @@ def add_record(library, company, when, show, title, source, description="", thum
         existing["sources"].append(source)
     if thumbnail and (source["type"] == "youtube" or not existing.get("thumbnail")):
         existing["thumbnail"] = thumbnail
+    if company == 'aew' and source.get('eventPart') == 'preshow':
+        existing.update(eventPart='preshow', eventOrder=-1)
     return True
 
 
@@ -320,13 +329,15 @@ def scan_youtube(library, company, config, playlist):
             if identifier in known or not re.fullmatch(r"[A-Za-z0-9_-]{11}", identifier):
                 continue
             title = text(video.get("title", {}))
+            from aew_sources import candidate as aew_candidate, identity as aew_identity, video_metadata
+            aew_preshow = company == 'aew' and aew_candidate(title)
             roh_identity = None
             if company == 'roh':
                 from roh_sources import youtube_identity
                 roh_identity = youtube_identity(title, events)
                 if not roh_identity:
                     continue
-            if company != 'roh' and not re.search(r"\bFULL(?:[ -]LENGTH)?[ :|-]+(?:EPISODE|EVENT|SHOW|PPV|PAY.PER.VIEW)\b", title, re.I):
+            if company != 'roh' and not aew_preshow and not re.search(r"\bFULL(?:[ -]LENGTH)?[ :|-]+(?:EPISODE|EVENT|SHOW|PPV|PAY.PER.VIEW)\b", title, re.I):
                 continue
             if re.search(r"FULL MATCH|compilation|tournament|watch party|best of", title, re.I):
                 continue
@@ -336,8 +347,14 @@ def scan_youtube(library, company, config, playlist):
                     duration = duration * 60 + int(part)
             except ValueError:
                 continue
+            pre_identity = aew_identity(title, duration, video_metadata(identifier, public_request), events) if aew_preshow else None
+            if aew_preshow and not pre_identity:
+                skipped.append(title)
+                continue
             when = roh_identity['date'] if roh_identity else broadcast_date(title)
             show = roh_identity['show'] if roh_identity else playlist.get("show", "PPV")
+            if pre_identity:
+                when, show = pre_identity['date'], 'PPV'
             if show == 'Auto':
                 # Upload feeds can mix companies and programme types.
                 if company == 'ecw' and not re.search(r'\bECW\b', title, re.I):
@@ -369,13 +386,22 @@ def scan_youtube(library, company, config, playlist):
             canonical = same_day[0].get('name', same_day[0].get('title')) if show == 'PPV' and len(same_day) == 1 else title
             if roh_identity:
                 canonical = roh_identity['title']
+            if pre_identity:
+                canonical = pre_identity['title']
             approved = {"id": identifier, "name": title, "title": canonical, "date": when, "show": show,
                         "duration": duration, "enabled": True, "channelId": channel, "authorUrl": owner}
             config["youtube"].setdefault("videos", []).append(approved)
             source = {"type": "youtube", "videoId": identifier, "channelId": channel, "direct": True,
                       "title": title, "duration": duration, "label": "Official YouTube"}
+            if pre_identity:
+                approved.update(eventPart='preshow', eventOrder=-1)
+                source.update(eventPart='preshow', company='aew')
             found += bool(add_record(library, company, when, show, canonical if show == "PPV" else show, source,
                                      thumbnail="https://i.ytimg.com/vi/" + identifier + "/hqdefault.jpg"))
+            if pre_identity:
+                for row in library['episodes']:
+                    if any(s.get('type') == 'youtube' and s.get('videoId') == identifier for s in row['sources']):
+                        row.update(eventPart='preshow', eventOrder=-1)
             known.add(identifier)
         command = next((node.get("continuationEndpoint", {}) for node in walk(data, "continuationItemRenderer")
                         if node.get("continuationEndpoint", {}).get("continuationCommand", {}).get("token")), None)
@@ -414,12 +440,21 @@ def publish_packs(base_url, refresh=False):
             discovered = {entry["id"]: entry for entry in old["sources"]["youtube"].get("videos", [])}
             discovered.update({entry["id"]: entry for entry in config["youtube"].get("videos", [])})
             config["youtube"]["videos"] = list(discovered.values())
+            if old['sources'].get('okru'):
+                current = config.setdefault('okru', {'enabled': True})
+                for field in ('videos', 'collections'):
+                    key_field = 'id' if field == 'videos' else 'url'
+                    entries = {entry[key_field]: entry for entry in old['sources']['okru'].get(field, [])}
+                    entries.update({entry[key_field]: entry for entry in current.get(field, [])})
+                    current[field] = list(entries.values())
             if company == 'roh':
                 collections = {entry['id']: entry for entry in old['sources']['archive']['collections']}
                 collections.update({entry['id']: entry for entry in config['archive']['collections']})
                 config['archive']['collections'] = list(collections.values())
         library = old["catalogue"] if old else seed
         if refresh:
+            from okru_sources import refresh_okru
+            report.extend(refresh_okru(library, company, config))
             if company == 'roh':
                 from roh_sources import refresh_roh
                 report.extend(refresh_roh(library, config))

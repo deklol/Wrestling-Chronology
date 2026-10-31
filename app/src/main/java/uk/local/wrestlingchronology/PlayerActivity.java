@@ -304,7 +304,7 @@ public final class PlayerActivity extends Activity {
                 ? "official YouTube"
                 : option.optString("type").equals("dailymotion")
                     ? "Dailymotion"
-                    : "Internet Archive")
+                    : option.optString("type").equals("okru") ? "OK.ru" : "Internet Archive")
             + "…");
     work.execute(
         () -> {
@@ -389,6 +389,12 @@ public final class PlayerActivity extends Activity {
       headers.put("Origin", "https://www.dailymotion.com");
       http.setDefaultRequestProperties(headers);
     }
+    if (stream.provider.equals("okru")) {
+      Map<String, String> headers = new HashMap<>();
+      headers.put("Referer", "https://ok.ru/");
+      headers.put("User-Agent", Resolver.USER_AGENT);
+      http.setDefaultRequestProperties(headers);
+    }
     DataSource.Factory data = youtube ? () -> new YoutubeDataSource(http.createDataSource()) : http;
     if (stream.provider.equals("dailymotion")) data = StreamingNetwork.dailymotion(this);
     DefaultMediaSourceFactory factory =
@@ -396,7 +402,7 @@ public final class PlayerActivity extends Activity {
     ArrayList<MediaSource> media = new ArrayList<>();
     for (String url : stream.videos) {
       MediaItem.Builder item = new MediaItem.Builder().setUri(url).setMediaId(current().id);
-      if (stream.provider.equals("dailymotion")) item.setMimeType(MimeTypes.APPLICATION_M3U8);
+      if (stream.provider.equals("dailymotion") || stream.provider.equals("okru")) item.setMimeType(MimeTypes.APPLICATION_M3U8);
       if (clipping)
         item.setClippingConfiguration(
             new MediaItem.ClippingConfiguration.Builder().setEndPositionMs(8000).build());
