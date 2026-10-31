@@ -6,6 +6,7 @@ import java.net.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.regex.*;
+import java.util.concurrent.*;
 import org.json.*;
 
 /** Public OK.ru metadata is resolved on the viewing device; no account is distributed. */
@@ -57,7 +58,66 @@ final class Okru {
     } finally { connection.disconnect(); }
   }
 
-  static Resolver.Resolved resolve(JSONObject source) throws Exception {
+  static String progressive(JSONObject metadata, int quality) throws JSONException {
+    JSONArray videos = metadata.optJSONArray("videos");
+    String selected = null;
+    int best = 0;
+    if (videos == null) return null;
+    for (int i = 0; i < videos.length(); i++) {
+      JSONObject video = videos.getJSONObject(i);
+      String name = video.optString("name");
+      int height = name.equals("mobile") ? 144 : name.equals("lowest") ? 240
+          : name.equals("low") ? 360 : name.equals("sd") ? 480
+          : name.equals("hd") ? 720 : name.equals("full") ? 1080 : 0;
+      if (height > best && height <= quality && mediaUrl(video.optString("url"))) {
+        best = height; selected = video.getString("url");
+      }
+    }
+    return selected;
+  }
+
+  /** Race small range reads, not whole recordings; use only the provider's listed hosts. */
+  static String responsiveUrl(String original, JSONArray hosts) throws Exception {
+    LinkedHashSet<String> urls = new LinkedHashSet<>();
+    URI uri = new URI(original);
+    if (hosts != null) for (int i = 0; i < Math.min(2, hosts.length()); i++) {
+      String host = hosts.optString(i);
+      if (!host.matches("[A-Za-z0-9.-]+") || !mediaUrl("https://" + host + "/")) continue;
+      urls.add(original.replace("https://" + uri.getRawAuthority() + "/", "https://" + host + "/"));
+    }
+    urls.add(original);
+    ExecutorService pool = Executors.newFixedThreadPool(urls.size());
+    CompletionService<String> finished = new ExecutorCompletionService<>(pool);
+    for (String url : urls) finished.submit(() -> {
+      HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+      connection.setConnectTimeout(3000); connection.setReadTimeout(3000);
+      connection.setRequestProperty("User-Agent", Resolver.USER_AGENT);
+      connection.setRequestProperty("Referer", "https://ok.ru/");
+      connection.setRequestProperty("Range", "bytes=0-262143");
+      try {
+        if (connection.getResponseCode() != 206) return null;
+        try (InputStream input = connection.getInputStream()) {
+          byte[] buffer = new byte[16384]; int total = 0, count;
+          while (total < 262144 && (count = input.read(buffer, 0, Math.min(buffer.length, 262144-total))) > 0) total += count;
+          return total == 262144 ? url : null;
+        }
+      } finally { connection.disconnect(); }
+    });
+    long deadline = System.nanoTime() + TimeUnit.SECONDS.toNanos(5);
+    try {
+      for (int i = 0; i < urls.size(); i++) {
+        long remaining = deadline-System.nanoTime();
+        if (remaining <= 0) break;
+        Future<String> result = finished.poll(remaining, TimeUnit.NANOSECONDS);
+        if (result == null) break;
+        try { String url = result.get(); if (url != null) return url; }
+        catch (ExecutionException ignored) { }
+      }
+      return null;
+    } finally { pool.shutdownNow(); }
+  }
+
+  static Resolver.Resolved resolve(JSONObject source, int quality) throws Exception {
     String id = source.getString("videoId"), owner = source.getString("owner");
     if (!owner.equals(owners.get(id))) throw new IOException("OK.ru source is not configured");
     String html = page(id);
@@ -77,10 +137,15 @@ final class Okru {
       if (metadata == null || !"UPLOADED_ODKL".equals(metadata.optString("provider"))) continue;
       JSONObject movie = metadata.optJSONObject("movie");
       if (movie == null || !id.equals(movie.optString("movieId", movie.optString("id")))) continue;
+      String mp4 = progressive(metadata, quality);
+      String selected = mp4 == null ? null : responsiveUrl(mp4, metadata.optJSONArray("failoverHosts"));
       String url = metadata.optString("hlsManifestUrl", metadata.optString("ondemandHls"));
       if (!mediaUrl(url)) throw new IOException("No compatible public OK.ru stream");
       Resolver.Resolved result = new Resolver.Resolved();
       result.provider = "okru"; result.label = "OK.ru"; result.videos.add(url);
+      result.hls = true;
+      result.originHost = new URI(url).getHost();
+      result.deliveryHost = selected == null ? result.originHost : new URI(selected).getHost();
       return result;
     }
     throw new IOException("OK.ru video is unavailable or requires provider login");

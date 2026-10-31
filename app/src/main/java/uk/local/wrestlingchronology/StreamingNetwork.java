@@ -14,6 +14,17 @@ final class StreamingNetwork {
   private static CronetEngine engine;
 
   static synchronized DataSource.Factory dailymotion(Context context) {
+    return factory(context);
+  }
+
+  static synchronized DataSource.Factory okru(Context context) {
+    java.util.Map<String, String> headers = new java.util.HashMap<>();
+    headers.put("User-Agent", Resolver.USER_AGENT);
+    headers.put("Referer", "https://ok.ru/");
+    return factory(context).setDefaultRequestProperties(headers);
+  }
+
+  private static CronetDataSource.Factory factory(Context context) {
     if (engine == null) {
       engine =
           new org.chromium.net.impl.NativeCronetProvider(context.getApplicationContext())

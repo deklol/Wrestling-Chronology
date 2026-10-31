@@ -358,11 +358,18 @@ public final class PlayerActivity extends Activity {
     DefaultLoadControl load =
         new DefaultLoadControl.Builder()
             .setBufferDurationsMs(
-                15000, 45000, 1800, stream.provider.equals("archive") ? 2000 : 5000)
-            .setTargetBufferBytes(16 * 1024 * 1024)
+                stream.provider.equals("okru") ? 30000 : 15000,
+                stream.provider.equals("okru") ? 60000 : 45000,
+                stream.provider.equals("okru") ? 2500 : 1800,
+                stream.provider.equals("archive") ? 2000 : 5000)
+            .setTargetBufferBytes((stream.provider.equals("okru") ? 24 : 16) * 1024 * 1024)
             .setPrioritizeTimeOverSizeThresholds(false)
             .build();
-    player = new ExoPlayer.Builder(this).setTrackSelector(selector).setLoadControl(load).build();
+    ExoPlayer.Builder builder = new ExoPlayer.Builder(this).setTrackSelector(selector).setLoadControl(load);
+    if (stream.provider.equals("okru")) builder.setBandwidthMeter(
+        new androidx.media3.exoplayer.upstream.DefaultBandwidthMeter.Builder(this)
+            .setInitialBitrateEstimate(450000L).build());
+    player = builder.build();
     player.setVolume(playbackVolume);
     player.setAudioAttributes(
         new androidx.media3.common.AudioAttributes.Builder()
@@ -397,12 +404,19 @@ public final class PlayerActivity extends Activity {
     }
     DataSource.Factory data = youtube ? () -> new YoutubeDataSource(http.createDataSource()) : http;
     if (stream.provider.equals("dailymotion")) data = StreamingNetwork.dailymotion(this);
+    if (stream.provider.equals("okru")) data = new ResolvingDataSource.Factory(
+        StreamingNetwork.okru(this), spec -> {
+          if (stream.originHost != null && stream.originHost.equals(spec.uri.getHost()))
+            return spec.withUri(spec.uri.buildUpon().authority(stream.deliveryHost).build());
+          return spec;
+        });
     DefaultMediaSourceFactory factory =
         new DefaultMediaSourceFactory(new DefaultDataSource.Factory(this, data));
     ArrayList<MediaSource> media = new ArrayList<>();
     for (String url : stream.videos) {
       MediaItem.Builder item = new MediaItem.Builder().setUri(url).setMediaId(current().id);
-      if (stream.provider.equals("dailymotion") || stream.provider.equals("okru")) item.setMimeType(MimeTypes.APPLICATION_M3U8);
+      if (stream.provider.equals("dailymotion") || (stream.provider.equals("okru") && stream.hls)) item.setMimeType(MimeTypes.APPLICATION_M3U8);
+      else if (stream.provider.equals("okru")) item.setMimeType(MimeTypes.VIDEO_MP4);
       if (clipping)
         item.setClippingConfiguration(
             new MediaItem.ClippingConfiguration.Builder().setEndPositionMs(8000).build());

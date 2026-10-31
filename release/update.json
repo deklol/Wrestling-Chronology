@@ -1,7 +1,7 @@
 {
-  "versionCode": 12,
-  "versionName": "0.1.6",
-  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.6/Wrestling-Chronology.apk",
-  "sha256": "8573d67ba90b9d6172b5bbacde4410e1a2b6f2971d2180535dbb69e96ea70866",
-  "notes": "Adds OK.ru playback and sources, more ECW and AEW broadcasts, local History with Continue/Rewatch and 25-show pages, and a darker full-width home hero."
+  "versionCode": 13,
+  "versionName": "0.1.7",
+  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.7/Wrestling-Chronology.apk",
+  "sha256": "555abfc9f85887503dba4702bb61eb5f802592d6f2af544eeb317c26e0ca65ed",
+  "notes": "Improves OK.ru playback with responsive provider servers, adaptive quality and bounded buffering. Adds installation instructions and contact details in Settings > About."
 }
