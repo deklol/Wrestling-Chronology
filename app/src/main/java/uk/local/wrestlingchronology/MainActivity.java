@@ -382,9 +382,11 @@ public final class MainActivity extends Activity {
               render();
             }));
     Ui.gap(nav, 10);
-    nav.addView(Ui.button(this, "Trending", page.equals("trending"), () -> {
+    TextView trendingButton = Ui.button(this, "Trending", page.equals("trending"), () -> {
       page = "trending"; render();
-    }));
+    });
+    trendingButton.setId(View.generateViewId());
+    nav.addView(trendingButton);
     Ui.gap(nav, 10);
     nav.addView(Ui.button(this, "Search", false, this::search));
     Ui.gap(nav, 10);
@@ -408,7 +410,7 @@ public final class MainActivity extends Activity {
     Ui.gap(root, 14);
     if (page.equals("home")) home();
     else if (page.equals("years")) years();
-    else if (page.equals("trending")) CommunityPanel.trending(this, root);
+    else if (page.equals("trending")) CommunityPanel.trending(this, root, trendingButton);
     else library();
   }
 
