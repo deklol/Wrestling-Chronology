@@ -367,21 +367,24 @@ public final class MainActivity extends Activity {
     nav.addView(
         Ui.button(this, "Years", page.equals("years") || page.equals("year"), this::openYears));
     Ui.gap(nav, 10);
-    for (String show : Company.current.shows) {
-      nav.addView(
-          Ui.button(this, show, page.equals("show") && filter.equals(show), () -> openShow(show)));
-      Ui.gap(nav, 10);
-    }
+    nav.addView(Ui.button(this, "Weeklies", page.equals("weeklies") || page.equals("show"), () -> {
+      page = "weeklies"; filter = "All"; year = 0; render();
+    }));
+    Ui.gap(nav, 10);
     nav.addView(
         Ui.button(
             this,
-            "PPV",
+            "PPVs",
             page.equals("ppv"),
             () -> {
               page = "ppv";
               year = 0;
               render();
             }));
+    Ui.gap(nav, 10);
+    nav.addView(Ui.button(this, "Trending", page.equals("trending"), () -> {
+      page = "trending"; render();
+    }));
     Ui.gap(nav, 10);
     nav.addView(Ui.button(this, "Search", false, this::search));
     Ui.gap(nav, 10);
@@ -405,6 +408,7 @@ public final class MainActivity extends Activity {
     Ui.gap(root, 14);
     if (page.equals("home")) home();
     else if (page.equals("years")) years();
+    else if (page.equals("trending")) CommunityPanel.trending(this, root);
     else library();
   }
 
@@ -677,10 +681,11 @@ public final class MainActivity extends Activity {
   }
 
   ArrayList<Catalog.Episode> selected() {
-    if (page.equals("ppv") || page.equals("show")) {
+    if (page.equals("ppv") || page.equals("show") || page.equals("weeklies")) {
       ArrayList<Catalog.Episode> result = new ArrayList<>();
       for (Catalog.Episode item : Catalog.episodes)
-        if (item.show.equals(page.equals("ppv") ? "PPV" : filter)
+        if ((page.equals("weeklies") ? Catalog.weeklyShow(item.show) && (filter.equals("All") || item.show.equals(filter))
+                : item.show.equals(page.equals("ppv") ? "PPV" : filter))
             && (year == 0 || item.year == year)) result.add(item);
       return result;
     }
@@ -707,7 +712,7 @@ public final class MainActivity extends Activity {
                 ? "Search: " + query
                 : page.equals("ppv")
                     ? "Pay-per-views"
-                    : page.equals("show") ? filter : Company.current.name + " " + year,
+                    : page.equals("weeklies") ? "Weeklies" : page.equals("show") ? filter : Company.current.name + " " + year,
             29,
             Ui.WHITE);
     title.setTypeface(null, Typeface.BOLD);
@@ -725,7 +730,7 @@ public final class MainActivity extends Activity {
         heading.addView(Ui.button(this, "Resume", false, () -> launch(resume, items, null)));
       }
     }
-    if (page.equals("year")) {
+    if (page.equals("year") || page.equals("weeklies")) {
       HorizontalScrollView filterScroll = new HorizontalScrollView(this);
       filterScroll.setHorizontalScrollBarEnabled(false);
       root.addView(filterScroll, Ui.lp(this, -1, 52));
@@ -733,8 +738,8 @@ public final class MainActivity extends Activity {
       filterScroll.addView(chips);
       ArrayList<String> labels = new ArrayList<>();
       labels.add("All");
-      for (Catalog.Episode item : Catalog.forYear(year, "All", true))
-        if (!labels.contains(item.show)) labels.add(item.show);
+      for (Catalog.Episode item : page.equals("weeklies") ? Catalog.episodes : Catalog.forYear(year, "All", true))
+        if ((!page.equals("weeklies") || Catalog.weeklyShow(item.show)) && !labels.contains(item.show)) labels.add(item.show);
       for (String choice : labels) {
         TextView chip =
             Ui.button(
@@ -749,7 +754,7 @@ public final class MainActivity extends Activity {
         Ui.gap(chips, 8);
       }
     }
-    if (page.equals("ppv") || page.equals("show")) {
+    if (page.equals("ppv") || page.equals("show") || page.equals("weeklies")) {
       HorizontalScrollView yearScroll = new HorizontalScrollView(this);
       yearScroll.setHorizontalScrollBarEnabled(false);
       LinearLayout years = Ui.horizontal(this);
@@ -758,7 +763,8 @@ public final class MainActivity extends Activity {
       TreeSet<Integer> availableYears = new TreeSet<>();
       availableYears.add(0);
       for (Catalog.Episode item : Catalog.episodes)
-        if (item.show.equals(page.equals("ppv") ? "PPV" : filter)) availableYears.add(item.year);
+        if (page.equals("weeklies") ? Catalog.weeklyShow(item.show) && (filter.equals("All") || item.show.equals(filter))
+            : item.show.equals(page.equals("ppv") ? "PPV" : filter)) availableYears.add(item.year);
       for (int value : availableYears) {
         years.addView(
             Ui.button(

@@ -69,4 +69,3 @@ jobs:
             python scripts/publish_catalogue.py --refresh --base-url "$CATALOGUE_BASE_URL"
             python scripts/check_catalogue.py
           done
-

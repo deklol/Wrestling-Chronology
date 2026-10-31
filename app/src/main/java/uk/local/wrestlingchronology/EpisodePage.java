@@ -7,6 +7,7 @@ import java.util.*;
 import org.json.JSONObject;
 
 /** Website watch layout with the existing native player, not a second player or WebView. */
+@androidx.annotation.OptIn(markerClass = androidx.media3.common.util.UnstableApi.class)
 final class EpisodePage {
   final PlayerActivity activity;
   final FrameLayout root, video;
@@ -29,7 +30,8 @@ final class EpisodePage {
     back.setId(View.generateViewId());
     back.setNextFocusDownId(activity.view.getId());
     activity.view.setNextFocusUpId(back.getId());
-    nav.addView(back); Ui.weight(nav);
+    nav.addView(back); Ui.gap(nav, 12);
+    nav.addView(Ui.button(activity, "Comments", false, this::discussion)); Ui.weight(nav);
     Ui.gap(page, 16); scroll = new ScrollView(activity); scroll.setFillViewport(true); page.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1));
     LinearLayout columns = Ui.horizontal(activity); columns.setGravity(Gravity.TOP); scroll.addView(columns);
     main = Ui.vertical(activity); columns.addView(main, new LinearLayout.LayoutParams(0, -2, 1));
@@ -65,7 +67,10 @@ final class EpisodePage {
   }
   void discussion() {
     if (fullscreen) setFullscreen(false);
-    discussionHost.post(() -> { scroll.smoothScrollTo(0, discussionHost.getTop()); if (activity.discussion != null) activity.discussion.like.requestFocus(); });
+    discussionHost.post(() -> {
+      scroll.smoothScrollTo(0, discussionHost.getTop());
+      if (activity.discussion != null) activity.discussion.name.requestFocus();
+    });
   }
   void episode(Catalog.Episode item) {
     if (!shownEpisode.equals(item.id)) {
@@ -87,6 +92,8 @@ final class EpisodePage {
     details.addView(sourceInfo); sourceInfo.setText("Source: finding a stream…");
     Ui.gap(details, 12); details.addView(Ui.text(activity, item.description.isEmpty() ? item.title : item.description, 13, Ui.MUTED));
     Ui.gap(details, 16);
+    details.addView(Ui.button(activity, "Comments & replies", false, this::discussion));
+    Ui.gap(details, 12);
     LinearLayout navigation = Ui.horizontal(activity); details.addView(navigation);
     TextView previous = Ui.button(activity, "← Previous", false, () -> {
       if (activity.index > 0) { activity.save(false); activity.index--; activity.override = null; activity.open(); }

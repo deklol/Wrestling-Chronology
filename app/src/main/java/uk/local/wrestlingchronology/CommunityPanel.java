@@ -73,6 +73,37 @@ final class CommunityPanel {
     load(false);
   }
 
+  // Explicit document order avoids geometric focus jumps across the watch-page columns.
+  void focusOrder(View node, ArrayList<View> controls) {
+    if (node.getVisibility() != View.VISIBLE || !node.isEnabled()) return;
+    if (node.isFocusable()) controls.add(node);
+    if (node instanceof ViewGroup) {
+      ViewGroup group = (ViewGroup) node;
+      for (int i = 0; i < group.getChildCount(); i++) focusOrder(group.getChildAt(i), controls);
+    }
+  }
+
+  boolean navigate(KeyEvent event) {
+    View focused = activity.getCurrentFocus();
+    ArrayList<View> controls = new ArrayList<>();
+    focusOrder(body, controls);
+    int index = controls.indexOf(focused);
+    int key = event.getKeyCode();
+    if (index < 0 || (key != KeyEvent.KEYCODE_DPAD_UP && key != KeyEvent.KEYCODE_DPAD_DOWN)) return false;
+    // While the keyboard is open, let the editor and IME own cursor navigation.
+    if (focused instanceof EditText && keyboardVisible()) return false;
+    int next = index + (key == KeyEvent.KEYCODE_DPAD_DOWN ? 1 : -1);
+    if (next < 0) return false;
+    if (event.getAction() == KeyEvent.ACTION_DOWN && next < controls.size()) controls.get(next).requestFocus();
+    return true;
+  }
+
+  boolean keyboardVisible() {
+    android.graphics.Rect visible = new android.graphics.Rect();
+    body.getWindowVisibleDisplayFrame(visible);
+    return body.getRootView().getHeight() - visible.bottom > Ui.dp(activity, 120);
+  }
+
   boolean current() { return !closed && !activity.isDestroyed() && !activity.isFinishing() && Company.current.id.equals(company); }
   void close() { closed = true; }
   void run(View button, Task task, Result done) {
@@ -111,6 +142,7 @@ final class CommunityPanel {
     like.setCompoundDrawables(icon, null, null, null); like.setCompoundDrawablePadding(Ui.dp(activity, 7));
   }
   void load(boolean append) {
+    final boolean restoreMore = append && more.hasFocus();
     run(more, () -> api.read(company, episode, append ? "&cursor=" + next : ""), data -> {
       summary(data); status.setText(""); status.setVisibility(View.GONE);
       if (onSummary != null) onSummary.accept(data);
@@ -119,6 +151,10 @@ final class CommunityPanel {
       if (rows != null) for (int i = 0; i < rows.length(); i++) comment(comments, rows.getJSONObject(i));
       if (comments.getChildCount() == 0) comments.addView(Ui.text(activity, "Be the first to leave a comment.", 14, Ui.MUTED));
       next = data.optLong("next", 0); more.setVisibility(next > 0 ? View.VISIBLE : View.GONE);
+      if (restoreMore) {
+        if (next > 0) more.requestFocus();
+        else message.requestFocus();
+      }
     });
   }
   void like() {
@@ -144,7 +180,7 @@ final class CommunityPanel {
       JSONObject action = new JSONObject().put("action", "comment").put("name", displayName).put("body", text);
       if (parent > 0) action.put("parent", parent);
       return api.write(company, episode, action);
-    }, data -> { input.setText(""); if (composer != null) composer.removeAllViews(); load(false); });
+    }, data -> { input.setText(""); if (composer != null) composer.removeAllViews(); message.requestFocus(); load(false); });
   }
   void comment(LinearLayout into, JSONObject row) {
     LinearLayout rowLayout = Ui.horizontal(activity); rowLayout.setGravity(Gravity.TOP);
@@ -161,7 +197,9 @@ final class CommunityPanel {
     long id = row.optLong("id"), parent = row.optLong("parent", 0);
     LinearLayout actions = Ui.horizontal(activity), composer = Ui.vertical(activity);
     Ui.gap(card, 12); card.addView(actions); card.addView(composer);
-    actions.addView(Ui.button(activity, "Reply", false, () -> {
+    TextView replyButton = Ui.button(activity, "Reply", false, () -> {});
+    actions.addView(replyButton);
+    replyButton.setOnClickListener(v -> {
       composer.removeAllViews();
       Ui.gap(composer, 16);
       composer.addView(Ui.text(activity, "Replying to " + displayName, 13, Ui.MUTED));
@@ -169,12 +207,12 @@ final class CommunityPanel {
       EditText reply = field(composer, "Write a reply…", 1000, true);
       Ui.gap(composer, 12);
       LinearLayout replyActions = Ui.horizontal(activity); replyActions.setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL); composer.addView(replyActions);
-      replyActions.addView(Ui.button(activity, "Cancel", false, composer::removeAllViews));
+      replyActions.addView(Ui.button(activity, "Cancel", false, () -> { composer.removeAllViews(); replyButton.requestFocus(); }));
       Ui.gap(replyActions, 10);
       TextView send = Ui.button(activity, "Post reply", true, () -> {});
-      send.setOnClickListener(v -> post(parent > 0 ? parent : id, reply, send, composer)); replyActions.addView(send);
+      send.setOnClickListener(button -> post(parent > 0 ? parent : id, reply, send, composer)); replyActions.addView(send);
       reply.requestFocus();
-    }));
+    });
     if (row.optBoolean("canDelete")) {
       TextView delete = Ui.button(activity, "Delete", false, () -> {});
       delete.setOnClickListener(v -> new AlertDialog.Builder(activity).setTitle("Delete comment?")
@@ -192,6 +230,9 @@ final class CommunityPanel {
         for (int i = 0; i < rows.length(); i++) comment(replies, rows.getJSONObject(i));
         cursor[0] = data.optLong("next", 0);
         expand.setText("More replies"); expand.setVisibility(cursor[0] > 0 ? View.VISIBLE : View.GONE);
+        ArrayList<View> replyControls = new ArrayList<>();
+        focusOrder(replies, replyControls);
+        if (!replyControls.isEmpty()) replyControls.get(0).requestFocus();
       })); card.addView(expand);
     }
   }
@@ -212,6 +253,71 @@ final class CommunityPanel {
       value.setContentDescription(count + " " + keys[i]); row.addView(value);
     }
     return row;
+  }
+
+  static void trending(MainActivity activity, LinearLayout into) {
+    String company = Company.current.id;
+    TextView title = Ui.text(activity, "Trending · " + Company.current.name, 27, Ui.WHITE);
+    title.setTypeface(null, Typeface.BOLD); into.addView(title);
+    TextView status = Ui.text(activity, "Loading community rankings…", 13, Ui.MUTED);
+    into.addView(status); Ui.gap(into, 10);
+    androidx.recyclerview.widget.RecyclerView grid = new androidx.recyclerview.widget.RecyclerView(activity);
+    androidx.recyclerview.widget.GridLayoutManager layout = new androidx.recyclerview.widget.GridLayoutManager(activity, 4);
+    grid.setLayoutManager(layout); grid.setClipToPadding(false);
+    into.addView(grid, new LinearLayout.LayoutParams(-1, 0, 1));
+    CommunityApi.IO.execute(() -> {
+      try {
+        JSONObject rankings = new CommunityApi(activity).request("/api/app/community/highlights?company="
+            + CommunityApi.encode(company) + "&rankings=1", null).getJSONObject("rankings");
+        activity.runOnUiThread(() -> {
+          if (!grid.isAttachedToWindow() || !Company.current.id.equals(company) || activity.isDestroyed()) return;
+          status.setText("Most viewed, liked and discussed by this company’s viewers");
+          ArrayList<Catalog.Episode> items = new ArrayList<>();
+          ArrayList<Object> cells = new ArrayList<>();
+          MainActivity.EpisodeAdapter cards = activity.new EpisodeAdapter(items, false);
+          String[] keys = {"views", "likes", "comments"};
+          String[] headings = {"Most viewed", "Most liked", "Most discussed"};
+          for (int group = 0; group < keys.length; group++) {
+            cells.add(headings[group]); int before = items.size();
+            JSONArray rows = rankings.optJSONArray(keys[group]);
+            if (rows != null) for (int i = 0; i < rows.length(); i++) {
+              JSONObject row = rows.optJSONObject(i); if (row == null) continue;
+              Catalog.Episode episode = Catalog.find(row.optString("id")); if (episode == null) continue;
+              cells.add(items.size()); items.add(episode); cards.communityStats.put(episode.id, row);
+            }
+            if (items.size() == before) cells.add("No activity yet — watch, like or discuss a show to get it started.");
+          }
+          layout.setSpanSizeLookup(new androidx.recyclerview.widget.GridLayoutManager.SpanSizeLookup() {
+            @Override public int getSpanSize(int position) { return cells.get(position) instanceof String ? 4 : 1; }
+          });
+          grid.setAdapter(new androidx.recyclerview.widget.RecyclerView.Adapter<androidx.recyclerview.widget.RecyclerView.ViewHolder>() {
+            @Override public int getItemViewType(int position) { return cells.get(position) instanceof String ? 0 : 1; }
+            @Override public int getItemCount() { return cells.size(); }
+            @Override public androidx.recyclerview.widget.RecyclerView.ViewHolder onCreateViewHolder(android.view.ViewGroup parent, int type) {
+              if (type == 1) return cards.onCreateViewHolder(parent, 0);
+              TextView heading = Ui.text(activity, "", 18, Ui.WHITE);
+              heading.setPadding(Ui.dp(activity, 6), Ui.dp(activity, 22), 0, Ui.dp(activity, 12));
+              heading.setTypeface(null, Typeface.BOLD);
+              heading.setLayoutParams(new androidx.recyclerview.widget.RecyclerView.LayoutParams(-1, -2));
+              return new androidx.recyclerview.widget.RecyclerView.ViewHolder(heading) {};
+            }
+            @Override public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView.ViewHolder holder, int position) {
+              Object cell = cells.get(position);
+              if (cell instanceof String) { ((TextView) holder.itemView).setText((String) cell); return; }
+              int index = (Integer) cell;
+              cards.onBindViewHolder((MainActivity.EpisodeAdapter.Holder) holder, index);
+              Catalog.Episode episode = items.get(index);
+              holder.itemView.setOnClickListener(view -> activity.details(episode, Catalog.forYear(episode.year, "All", activity.extras())));
+            }
+          });
+        });
+      } catch (Exception error) {
+        activity.runOnUiThread(() -> { if (grid.isAttachedToWindow()) {
+          status.setText("Rankings are temporarily unavailable.");
+          into.addView(Ui.button(activity, "Retry", false, activity::render), 2);
+        }});
+      }
+    });
   }
 
   static void highlights(MainActivity activity, LinearLayout into) {

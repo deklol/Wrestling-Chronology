@@ -1,9 +1,9 @@
 # Native website community
 
-The Fire TV app uses the deployed, community-only API at https://wc.dek.cx.
+The Fire TV app uses an owner-configured, community-only API.
 Source discovery, thumbnails and playback continue to use the existing sources.
 
-Set `WC_COMMUNITY_APP_KEY` in the build process environment before running Gradle.
+Set `WC_COMMUNITY_APP_KEY` and `WC_COMMUNITY_BASE_URL` in the private build process environment before running Gradle.
 The owner has the grant in `app-community-key.private.json` outside this repository.
 Never commit that file, access tokens or server configuration. The generated APK
 contains the limited registration grant. It does not contain website credentials.
@@ -38,5 +38,5 @@ suppression. The Android app obtains a fresh ticket for each new watch and reuse
 it only for that watch's network retry. Until that server change is deployed, the
 original server deduplication still applies. No website files are changed here.
 
-Version name is 0.1.4; version code is 9 so existing installations can
+Version name is 0.1.5; version code is 10 so existing installations can
 receive this build. Update the release APK and update.json together when publishing.

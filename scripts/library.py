@@ -21,9 +21,11 @@ MONTHS = {name.lower(): index for index, name in enumerate(calendar.month_name) 
 MONTHS.update({name.lower(): index for index, name in enumerate(calendar.month_abbr) if name})
 MONTHS["sept"] = 9
 LIMITS = {"aew": ("2018-01-01", "2028-12-31"), "wwe": ("1985-01-01", "2028-12-31"), "ecw": ("1995-01-01", "2005-12-31"),
-          "wcw": ("1985-01-01", "2001-03-26"), "tna": ("2002-01-01", "2028-12-31")}
+          "wcw": ("1983-01-01", "2001-03-26"), "tna": ("2002-01-01", "2028-12-31"),
+          "roh": ("2002-02-23", "2028-12-31")}
 CHANNELS = {"wwe": "UCJ5v_MCY6GNUBTO8-D3XoAg", "wcw": "UCbGG2hv4cWmIrBAIhGiCdSg",
-            "ecw": "UCNSnSemXKDc9UEZ7m31wY9Q", "tna": "UCOp8wkVqdrWbFYHjDv946QQ"}
+            "ecw": "UCNSnSemXKDc9UEZ7m31wY9Q", "tna": "UCOp8wkVqdrWbFYHjDv946QQ",
+            "roh": "UC4_uDa6w1kOyzsikIzReCKQ"}
 
 
 def read(path):
@@ -205,8 +207,12 @@ def scan_archive(library, company, config, metadata, events):
         when = override.get("date", when)
         title = override.get("title", show)
         show = override.get("show", show)
+        part_number = override.get('part')
         part = re.search(r"(?:part|cd)[ ._-]*(\d+)", filename, re.I)
-        grouped[(when, show, title)].append((int(part[1]) if part else 0, file))
+        if company == 'roh' and part_number is None:
+            # Historical event titles can contain 'Part 1' without being a split file.
+            part = None
+        grouped[(when, show, title)].append((part_number or (int(part[1]) if part else 0), file))
     added = 0
     for (when, show, title), parts in grouped.items():
         numbered = [number for number, _ in parts if number]
@@ -314,7 +320,13 @@ def scan_youtube(library, company, config, playlist):
             if identifier in known or not re.fullmatch(r"[A-Za-z0-9_-]{11}", identifier):
                 continue
             title = text(video.get("title", {}))
-            if not re.search(r"\bFULL(?:[ -]LENGTH)?[ :|-]+(?:EPISODE|EVENT|SHOW|PPV|PAY.PER.VIEW)\b", title, re.I):
+            roh_identity = None
+            if company == 'roh':
+                from roh_sources import youtube_identity
+                roh_identity = youtube_identity(title, events)
+                if not roh_identity:
+                    continue
+            if company != 'roh' and not re.search(r"\bFULL(?:[ -]LENGTH)?[ :|-]+(?:EPISODE|EVENT|SHOW|PPV|PAY.PER.VIEW)\b", title, re.I):
                 continue
             if re.search(r"FULL MATCH|compilation|tournament|watch party|best of", title, re.I):
                 continue
@@ -324,8 +336,8 @@ def scan_youtube(library, company, config, playlist):
                     duration = duration * 60 + int(part)
             except ValueError:
                 continue
-            when = broadcast_date(title)
-            show = playlist.get("show", "PPV")
+            when = roh_identity['date'] if roh_identity else broadcast_date(title)
+            show = roh_identity['show'] if roh_identity else playlist.get("show", "PPV")
             if show == 'Auto':
                 # Upload feeds can mix companies and programme types.
                 if company == 'ecw' and not re.search(r'\bECW\b', title, re.I):
@@ -345,7 +357,7 @@ def scan_youtube(library, company, config, playlist):
             if not when or not LIMITS[company][0] <= when <= LIMITS[company][1] or duration < 1200:
                 skipped.append(title)
                 continue
-            owner = playlist.get("authorUrl", {"wcw": "https://www.youtube.com/@WCW", "wwe": "https://www.youtube.com/@WWEVault", "ecw": "https://www.youtube.com/@WWEVault", "tna": "https://www.youtube.com/@tnawrestling"}[company])
+            owner = playlist.get("authorUrl") or {"wcw": "https://www.youtube.com/@WCW", "wwe": "https://www.youtube.com/@WWEVault", "ecw": "https://www.youtube.com/@WWEVault", "tna": "https://www.youtube.com/@tnawrestling", "roh": "https://www.youtube.com/@ringofhonor"}.get(company, '')
             oembed = json.loads(public_request("https://www.youtube.com/oembed?" + urllib.parse.urlencode({"url": "https://www.youtube.com/watch?v=" + identifier, "format": "json"})))
             if oembed.get("author_url", "").lower() != owner.lower():
                 skipped.append(title + ": unexpected uploader")
@@ -355,6 +367,8 @@ def scan_youtube(library, company, config, playlist):
                         and key(event.get('name', event.get('title', '')))
                         and key(event.get('name', event.get('title', ''))) in key(title)]
             canonical = same_day[0].get('name', same_day[0].get('title')) if show == 'PPV' and len(same_day) == 1 else title
+            if roh_identity:
+                canonical = roh_identity['title']
             approved = {"id": identifier, "name": title, "title": canonical, "date": when, "show": show,
                         "duration": duration, "enabled": True, "channelId": channel, "authorUrl": owner}
             config["youtube"].setdefault("videos", []).append(approved)
@@ -400,8 +414,15 @@ def publish_packs(base_url, refresh=False):
             discovered = {entry["id"]: entry for entry in old["sources"]["youtube"].get("videos", [])}
             discovered.update({entry["id"]: entry for entry in config["youtube"].get("videos", [])})
             config["youtube"]["videos"] = list(discovered.values())
+            if company == 'roh':
+                collections = {entry['id']: entry for entry in old['sources']['archive']['collections']}
+                collections.update({entry['id']: entry for entry in config['archive']['collections']})
+                config['archive']['collections'] = list(collections.values())
         library = old["catalogue"] if old else seed
         if refresh:
+            if company == 'roh':
+                from roh_sources import refresh_roh
+                report.extend(refresh_roh(library, config))
             def scan(entry):
                 try:
                     data = fetch_metadata(entry["id"], ROOT / ".source-cache")
