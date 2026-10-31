@@ -420,6 +420,7 @@ public final class MainActivity extends Activity {
     else if (page.equals("years")) years();
     else if (page.equals("trending")) CommunityPanel.trending(this, root, trendingButton);
     else if (page.equals("history")) history(historyButton);
+    else if (page.equals("about")) about();
     else library();
   }
 
@@ -1364,6 +1365,50 @@ public final class MainActivity extends Activity {
                 .setNeutralButton("Licences", (box, which) -> licences())
                 .setPositiveButton("OK", null)
                 .show());
+    setting(options, "About", "Install instructions and contact", () -> {
+      dialog.dismiss(); page = "about"; render();
+    });
+  }
+
+  void about() {
+    ScrollView scroll = new ScrollView(this);
+    root.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1));
+    LinearLayout body = Ui.vertical(this);
+    body.setPadding(d(20), d(16), d(20), d(20));
+    body.setBackground(Ui.shape(this, Company.current.surface(), 16));
+    scroll.addView(body);
+    body.addView(text("About Wrestling Chronology", 26, Ui.WHITE));
+    Ui.gap(body, 12);
+    body.addView(text("Install on Fire TV", 19, Ui.accent()));
+    Ui.gap(body, 8);
+    body.addView(text("1. Install Downloader by AFTVnews from the Amazon Appstore.\n"
+        + "2. Open Downloader and enter code 2909774.\n"
+        + "3. Download the APK and choose Install. If prompted, allow Downloader to install unknown apps in Fire TV settings.\n"
+        + "4. Open Wrestling Chronology. Install future updates over the existing app to retain your history.", 14, Ui.WHITE));
+    Ui.gap(body, 12);
+    body.addView(Ui.button(this, "Open GitHub · source and downloads", false,
+        () -> openAboutLink("https://github.com/deklol/Wrestling-Chronology")));
+    Ui.gap(body, 20);
+    body.addView(text("Website access · $4.99", 19, Ui.accent()));
+    Ui.gap(body, 8);
+    body.addView(text("A website version is also available to watch on devices with an internet connection and a supported browser. For access, contact u/dekkytsh on Reddit or @digitalm1nd on X.", 14, Ui.WHITE));
+    Ui.gap(body, 12);
+    body.addView(Ui.button(this, "Reddit · u/dekkytsh", false,
+        () -> openAboutLink("https://www.reddit.com/user/dekkytsh/")));
+    Ui.gap(body, 8);
+    body.addView(Ui.button(this, "X · @digitalm1nd", false,
+        () -> openAboutLink("https://x.com/digitalm1nd")));
+    Ui.gap(body, 18);
+    body.addView(text("v" + BuildConfig.VERSION_NAME + " · Videos remain hosted by their original providers.", 12, Ui.MUTED));
+    Ui.gap(body, 12);
+    body.addView(Ui.button(this, "Back to Settings", false, this::settings));
+  }
+
+  void openAboutLink(String url) {
+    try { startActivity(new Intent(Intent.ACTION_VIEW, android.net.Uri.parse(url))); }
+    catch (ActivityNotFoundException error) {
+      Toast.makeText(this, "Open this address on your phone or computer: " + url, Toast.LENGTH_LONG).show();
+    }
   }
 
   void refresh(boolean silent) {
