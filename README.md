@@ -23,24 +23,25 @@ A remote-friendly Fire TV app for watching full wrestling shows in chronological
 - Full episode pages with embedded and fullscreen playback, source selection, episode information and previous/next controls.
 - Shared community likes, views, comments and replies, plus community rankings on the homepage.
 - Year → All → Filter shows: select the programmes included in chronological autoplay.
-- Built-in streaming player for YouTube, Internet Archive and Dailymotion.
+- Built-in streaming player for YouTube, Internet Archive, Dailymotion and OK.ru.
 - Optional 4:3-to-16:9 horizontal stretch, available in the player and global Settings.
+- Local History with 25 shows per page, progress bars, Continue and Rewatch; includes manually marked watched shows.
 - Chronological autoplay, multipart recordings, resume and watched progress.
 - Company home previews with saved episode details, artwork and viewing progress.
 - Jan–Dec shortcuts inside each year to jump through its chronological timeline.
-- Home, Years, Weeklies, PPVs, Trending, Search and Settings for every company.
+- Home, Years, Weeklies, PPVs, Trending, History, Search and Settings for every company.
 - Trending grids for most viewed, most liked and most discussed shows.
 - Weeklies include programme and year filters.
 - Small source checks against GitHub; changed JSON libraries download independently of app updates.
 
 | Company | Years | Bundled broadcasts |
 |---|---|---:|
-| WWF / WWE | 1985–2026 | 8,467 |
-| WCW | 1983–2001 | 2,049 |
-| ECW | 1995–2005 | 422 |
-| TNA / Impact | 2002–2026 | 1,855 |
-| AEW | 2018–2026 | 994 |
-| Ring of Honor | 2002–2026 | 482 |
+| WWF / WWE | 1985–2026 | 8,539 |
+| WCW | 1983–2001 | 2,122 |
+| ECW | 1992–2006 | 434 |
+| TNA / Impact | 2002–2026 | 1,856 |
+| AEW | 2018–2026 | 1,058 |
+| Ring of Honor | 2002–2026 | 485 |
 
 Ring of Honor has its own red-and-black library, with sourced PPVs, HonorClub,
 ROH TV, HDNet, High Impact TV and full-show specials. Coverage is incomplete:

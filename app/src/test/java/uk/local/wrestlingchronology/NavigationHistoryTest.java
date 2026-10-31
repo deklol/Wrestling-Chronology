@@ -18,6 +18,22 @@ public class NavigationHistoryTest {
   }
 
   @Test
+  public void historyIncludesFinishedAndPartialShowsInLastPlayedOrder() throws Exception {
+    Catalog.Episode finished = episode("finished", "1995-01-02");
+    Catalog.Episode partial = episode("partial", "2005-01-03");
+    Catalog.Episode failed = episode("failed", "2001-01-01");
+    Map<String, Object> saved = new HashMap<>();
+    saved.put("watched:finished", true);
+    saved.put("played:finished", 300L);
+    saved.put("pos:partial", 60000L);
+    saved.put("played:partial", 200L);
+    saved.put("played:failed", 400L);
+    assertEquals(Arrays.asList(finished, partial), Catalog.watchHistory(Arrays.asList(partial, failed, finished), saved));
+    assertTrue(Catalog.watchHistory(Collections.singletonList(failed), saved).isEmpty());
+    assertTrue(Catalog.watchHistory(Arrays.asList(finished, partial), Collections.emptyMap()).isEmpty());
+  }
+
+  @Test
   public void failedNewSelectionDoesNotHideAnUnfinishedShow() throws Exception {
     Catalog.Episode unfinished = episode("unfinished", "2000-01-03");
     Catalog.Episode failed = episode("failed", "2000-01-10");

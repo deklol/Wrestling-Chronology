@@ -111,7 +111,7 @@ final class EpisodePage {
     for (JSONObject option : item.sources) providers.add(option.optString("type"));
     for (String provider : providers) {
       Ui.gap(details, 6);
-      String label = provider.equals("archive") ? "Internet Archive" : provider.equals("youtube") ? "YouTube" : provider.equals("dailymotion") ? "Dailymotion" : provider;
+      String label = provider.equals("archive") ? "Internet Archive" : provider.equals("youtube") ? "YouTube" : provider.equals("dailymotion") ? "Dailymotion" : provider.equals("okru") ? "OK.ru" : provider;
       details.addView(Ui.button(activity, label, provider.equals(activity.override), () -> source(provider)));
     }
     Ui.gap(details, 12);

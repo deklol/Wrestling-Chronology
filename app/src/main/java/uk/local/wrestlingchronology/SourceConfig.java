@@ -18,6 +18,7 @@ final class SourceConfig {
 
   static void apply(JSONObject catalogue, JSONObject config) throws Exception {
     Dailymotion.configure(config);
+    Okru.configure(config);
     if (config.getInt("schemaVersion") != 1)
       throw new JSONException("Unsupported sources.json version");
     JSONObject youtube = config.getJSONObject("youtube"), archive = config.getJSONObject("archive");
@@ -105,6 +106,8 @@ final class SourceConfig {
               keep &= activeItems.contains(ArchiveSync.collection(parts.getString(k)));
         } else if (source.optString("type").equals("dailymotion")) {
           keep = Dailymotion.allowed(source);
+        } else if (source.optString("type").equals("okru")) {
+          keep = source.optString("owner").equals(Okru.owners.get(source.optString("videoId")));
         }
         if (!keep) sources.remove(j);
       }

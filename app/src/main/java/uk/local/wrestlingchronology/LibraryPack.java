@@ -50,6 +50,17 @@ final class LibraryPack {
     JSONObject config = pack.getJSONObject("sources");
     if (config.getInt("schemaVersion") != 1) throw new JSONException("Unknown source format");
     Set<String> archive = new HashSet<>(), videos = new HashSet<>(), daily = new HashSet<>();
+    Set<String> okVideos = new HashSet<>();
+    JSONObject okru = config.optJSONObject("okru");
+    if (okru != null) {
+      JSONArray listed = okru.getJSONArray("videos");
+      for (int i = 0; i < listed.length(); i++) {
+        JSONObject value = listed.getJSONObject(i);
+        if (!value.getString("id").matches("\\d{5,20}") || !value.getString("owner").matches("\\d{5,20}"))
+          throw new JSONException("Invalid OK.ru identity");
+        okVideos.add(value.getString("id") + ":" + value.getString("owner"));
+      }
+    }
     JSONObject dailymotion = config.optJSONObject("dailymotion");
     if (dailymotion != null) {
       JSONArray listed = dailymotion.getJSONArray("videos");
@@ -112,6 +123,9 @@ final class LibraryPack {
               && !videos.contains(
                   source.getString("videoId") + ":" + source.getString("channelId")))
             throw new JSONException("Unlisted uploader");
+        } else if (source.getString("type").equals("okru")) {
+          if (!okVideos.contains(source.getString("videoId") + ":" + source.getString("owner")))
+            throw new JSONException("Unlisted OK.ru source");
         } else if (source.getString("type").equals("dailymotion")) {
           JSONArray parts = source.optJSONArray("videoIds");
           if (parts == null) parts = new JSONArray().put(source.getString("videoId"));
@@ -141,7 +155,7 @@ final class LibraryPack {
   static JSONObject merge(JSONObject previous, JSONObject incoming) throws Exception {
     JSONObject result = shallow(incoming);
     JSONObject configCopy = shallow(incoming.getJSONObject("sources"));
-    for (String field : new String[] {"archive", "youtube", "dailymotion"})
+    for (String field : new String[] {"archive", "youtube", "dailymotion", "okru"})
       if (configCopy.has(field)) configCopy.put(field, shallow(configCopy.getJSONObject(field)));
     result.put("sources", configCopy);
     result.put("catalogue", shallow(incoming.getJSONObject("catalogue")));
@@ -150,13 +164,13 @@ final class LibraryPack {
     if (previous != null) {
       JSONArray old = previous.getJSONObject("catalogue").getJSONArray("episodes");
       for (int i = 0; i < old.length(); i++)
-        rows.put(old.getJSONObject(i).getString("date") + ":" + old.getJSONObject(i).getString("show"), old.getJSONObject(i));
+        rows.put(broadcastIdentity(old.getJSONObject(i)), old.getJSONObject(i));
     }
     JSONArray fresh = catalogue.getJSONArray("episodes");
     long now = System.currentTimeMillis();
     for (int i = 0; i < fresh.length(); i++) {
       JSONObject row = shallow(fresh.getJSONObject(i));
-      String identity = row.getString("date") + ":" + row.getString("show");
+      String identity = broadcastIdentity(row);
       JSONObject old = rows.get(identity);
       if (old != null) {
         row.put("id", old.getString("id"));
@@ -191,6 +205,10 @@ final class LibraryPack {
       mergeConfig(config.getJSONObject("archive"), old.getJSONObject("archive"), "collections");
       mergeConfig(config.getJSONObject("youtube"), old.getJSONObject("youtube"), "videos");
       mergeConfig(config.getJSONObject("youtube"), old.getJSONObject("youtube"), "playlists");
+      if (old.has("okru")) {
+        if (!config.has("okru")) config.put("okru", new JSONObject().put("enabled", true));
+        mergeConfig(config.getJSONObject("okru"), old.getJSONObject("okru"), "videos");
+      }
       if (old.has("dailymotion")) {
         if (!config.has("dailymotion"))
           config.put("dailymotion", new JSONObject().put("enabled", true));
@@ -199,6 +217,13 @@ final class LibraryPack {
       }
     }
     return result;
+  }
+
+  private static String broadcastIdentity(JSONObject row) throws Exception {
+    // IDs distinguish complete cards on one date, including pre-shows and ROH doubleheaders.
+    String show = row.getString("show");
+    return Arrays.asList("PPV", "Live event", "One Night Only").contains(show)
+        ? row.getString("id") : row.getString("date") + ":" + show;
   }
 
   // Copy containers only. Source metadata is read-only during a merge; retaining

@@ -896,6 +896,17 @@
         "show": "PPV",
         "title": "One Night Only: X-Travaganza",
         "duration": 9823
+      },
+      {
+        "id": "vU-N9w8vScA",
+        "name": "TNA Destination X 2010 (FULL EVENT) | Angle vs. Anderson, Styles vs. Abyss, Ultimate X",
+        "title": "Destination X",
+        "date": "2010-03-21",
+        "show": "PPV",
+        "duration": 10148,
+        "enabled": true,
+        "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+        "authorUrl": "https://www.youtube.com/@tnawrestling"
       }
     ]
   },
@@ -11294,5 +11305,194 @@
       }
     ]
   },
-  "$schema": "../sources.schema.json"
+  "$schema": "../sources.schema.json",
+  "okru": {
+    "enabled": true,
+    "videos": [
+      {
+        "id": "11572810812015",
+        "owner": "579391530351",
+        "name": "TNA.Genesis.2026.01.18.",
+        "episodeId": "tna:2026-01-17:ppv",
+        "date": "2026-01-17",
+        "show": "PPV",
+        "title": "Genesis",
+        "duration": 10912,
+        "enabled": true
+      },
+      {
+        "id": "12083980274287",
+        "owner": "579391530351",
+        "name": "TNA.No.Surrender.2026.",
+        "episodeId": "tna:2026-02-13:ppv",
+        "date": "2026-02-13",
+        "show": "PPV",
+        "title": "No Surrender",
+        "duration": 10238,
+        "enabled": true
+      },
+      {
+        "id": "11416720968303",
+        "owner": "579391530351",
+        "name": "TNA.iMPACT.2026.01.01.",
+        "episodeId": "tna:2026-01-01:impact",
+        "date": "2026-01-01",
+        "show": "Impact",
+        "title": "Impact",
+        "duration": 5733,
+        "enabled": true
+      },
+      {
+        "id": "11416721295983",
+        "owner": "579391530351",
+        "name": "TNA.iMPACT.2026.01.08.",
+        "episodeId": "tna:2026-01-08:impact",
+        "date": "2026-01-08",
+        "show": "Impact",
+        "title": "Impact",
+        "duration": 5738,
+        "enabled": true
+      },
+      {
+        "id": "11686850071151",
+        "owner": "579391530351",
+        "name": "TNA.iMPACT.2026.01.22.",
+        "episodeId": "tna:2026-01-22:impact",
+        "date": "2026-01-22",
+        "show": "Impact",
+        "title": "Impact",
+        "duration": 7203,
+        "enabled": true
+      },
+      {
+        "id": "11929097472623",
+        "owner": "579391530351",
+        "name": "TNA.iMPACT.2026.02.05.",
+        "episodeId": "tna:2026-02-05:impact",
+        "date": "2026-02-05",
+        "show": "Impact",
+        "title": "Impact",
+        "duration": 5582,
+        "enabled": true
+      },
+      {
+        "id": "12083974965871",
+        "owner": "579391530351",
+        "name": "TNA.iMPACT.2026.02.12.",
+        "episodeId": "tna:2026-02-12:impact",
+        "date": "2026-02-12",
+        "show": "Impact",
+        "title": "Impact",
+        "duration": 5582,
+        "enabled": true
+      },
+      {
+        "id": "12215123053167",
+        "owner": "579391530351",
+        "name": "TNA.iMPACT.2026.02.19.",
+        "episodeId": "tna:2026-02-19:impact",
+        "date": "2026-02-19",
+        "show": "Impact",
+        "title": "Impact",
+        "duration": 5595,
+        "enabled": true
+      },
+      {
+        "id": "12675821996655",
+        "owner": "579391530351",
+        "name": "TNA.iMPACT.2026.02.26.",
+        "episodeId": "tna:2026-02-26:impact",
+        "date": "2026-02-26",
+        "show": "Impact",
+        "title": "Impact",
+        "duration": 5594,
+        "enabled": true
+      },
+      {
+        "id": "12675823438447",
+        "owner": "579391530351",
+        "name": "TNA.iMPACT.2026.03.05.",
+        "episodeId": "tna:2026-03-05:impact",
+        "date": "2026-03-05",
+        "show": "Impact",
+        "title": "Impact",
+        "duration": 7201,
+        "enabled": true
+      },
+      {
+        "id": "12851535743599",
+        "owner": "579391530351",
+        "name": "TNA.iMPACT.2026.03.12.",
+        "episodeId": "tna:2026-03-12:impact",
+        "date": "2026-03-12",
+        "show": "Impact",
+        "title": "Impact",
+        "duration": 5595,
+        "enabled": true
+      },
+      {
+        "id": "12851537119855",
+        "owner": "579391530351",
+        "name": "TNA.iMPACT.2026.03.19.",
+        "episodeId": "tna:2026-03-19:impact",
+        "date": "2026-03-19",
+        "show": "Impact",
+        "title": "Impact",
+        "duration": 5594,
+        "enabled": true
+      },
+      {
+        "id": "9807906212463",
+        "owner": "579391530351",
+        "name": "Total.Nonstop.Action.Genesis.2025.",
+        "episodeId": "tna:2025-01-19:ppv",
+        "date": "2025-01-19",
+        "show": "PPV",
+        "title": "Genesis",
+        "duration": 11587,
+        "enabled": true
+      },
+      {
+        "id": "10955019324015",
+        "owner": "579391530351",
+        "name": "iMPACT.2025.12.04.",
+        "episodeId": "tna:2025-12-04:impact",
+        "date": "2025-12-04",
+        "show": "Impact",
+        "title": "Impact",
+        "duration": 5739,
+        "enabled": true
+      },
+      {
+        "id": "11050984868463",
+        "owner": "579391530351",
+        "name": "iMPACT.2025.12.11.",
+        "episodeId": "tna:2025-12-11:impact",
+        "date": "2025-12-11",
+        "show": "Impact",
+        "title": "Impact",
+        "duration": 5733,
+        "enabled": true
+      },
+      {
+        "id": "11133012609647",
+        "owner": "579391530351",
+        "name": "iMPACT.2025.12.18.",
+        "episodeId": "tna:2025-12-18:impact",
+        "date": "2025-12-18",
+        "show": "Impact",
+        "title": "Impact",
+        "duration": 5735,
+        "enabled": true
+      }
+    ],
+    "collections": [
+      {
+        "name": "TNA PPVs",
+        "owner": "579391530351",
+        "url": "https://ok.ru/profile/579391530351/video/c8573039",
+        "enabled": true
+      }
+    ]
+  }
 }

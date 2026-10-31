@@ -50,7 +50,7 @@ public class DirectYoutubeTest {
       JSONObject entry = videos.getJSONObject(i);
       assertTrue(DirectYoutube.present(data, entry.getString("id")));
       assertTrue(DirectYoutube.allowed(entry.getString("id"), entry.getString("channelId")));
-      assertFalse(DirectYoutube.allowed(entry.getString("id"), "UCbGG2hv4cWmIrBAIhGiCdSg"));
+      assertFalse(DirectYoutube.allowed(entry.getString("id"), "UC0000000000000000000000"));
     }
     assertFalse(DirectYoutube.allowed("AAAAAAAAAAA", "UCNSnSemXKDc9UEZ7m31wY9Q"));
   }

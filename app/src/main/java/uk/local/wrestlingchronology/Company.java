@@ -31,10 +31,10 @@ final class Company {
       new Company(
           "ecw",
           "ECW",
-          "1995–2005",
+          "1992–2006",
           R.drawable.logo_ecw,
-          "1995-01-01",
-          "2005-12-31",
+          "1992-01-01",
+          "2006-12-31",
           new String[] {"Hardcore TV", "ECW on TNN"});
   static final Company TNA =
       new Company(

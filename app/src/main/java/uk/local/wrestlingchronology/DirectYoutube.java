@@ -15,6 +15,12 @@ final class DirectYoutube {
     return channel.equals(channels.get(video));
   }
 
+  static boolean preshow(JSONObject entry) {
+    return "preshow".equals(entry.optString("eventPart"))
+        && "PPV".equals(entry.optString("show"))
+        && "UCFN4JkGP_bVhAdBsoV9xftA".equals(entry.optString("channelId"));
+  }
+
   static int count(JSONObject data) {
     JSONArray videos = data.optJSONArray("youtubeVideos");
     return videos == null ? 0 : videos.length();
@@ -47,7 +53,7 @@ final class DirectYoutube {
       throw new JSONException("Invalid direct YouTube source identity");
     LocalDate date = LocalDate.parse(entry.getString("date"));
     if (CatalogSync.validDate(date.getYear(), date.getMonthValue(), date.getDayOfMonth()) == null
-        || entry.getInt("duration") < (entry.getString("show").equals("PPV") ? 2700 : 1200)
+        || entry.getInt("duration") < (entry.getString("show").equals("PPV") && !preshow(entry) ? 2700 : 1200)
         || entry.getString("title").isEmpty()
         || entry.getString("name").isEmpty())
       throw new JSONException("Invalid direct YouTube broadcast metadata");
@@ -69,7 +75,9 @@ final class DirectYoutube {
     if (!author.equalsIgnoreCase(entry.getString("authorUrl")))
       throw new IOException("Video uploader does not match its configured source");
     String title = metadata.getString("title");
-    if (!title.matches("(?is).*\\bFULL (?:EPISODE|EVENT)\\b.*")
+    boolean pre = preshow(entry);
+    if ((!title.matches("(?is).*\\bFULL (?:EPISODE|EVENT)\\b.*")
+            && !(pre && title.matches("(?is).*\\b(?:zero[ ._-]*hour|buy[ ._-]*in|pre[ ._-]*show)\\b.*")))
         || title.matches("(?is).*(?:FULL MATCH|watch party|compilation).*"))
       throw new IOException("Upload is not labelled as a full show or event");
     String when = entry.getString("date"),
@@ -79,7 +87,10 @@ final class DirectYoutube {
     JSONObject selected = null;
     for (int i = 0; i < rows.length(); i++) {
       JSONObject row = rows.getJSONObject(i);
-      if (when.equals(row.optString("date")) && show.equals(row.optString("show"))) {
+      boolean rowPre = "preshow".equals(row.optString("eventPart"));
+      if (when.equals(row.optString("date")) && show.equals(row.optString("show"))
+          && pre == rowPre
+          && (!show.equals("PPV") || pre || CatalogSync.key(entry.getString("title")).equals(CatalogSync.key(row.optString("title"))))) {
         selected = row;
         break;
       }
@@ -102,6 +113,7 @@ final class DirectYoutube {
       if (show.equals("PPV")) selected.put("poster", selected.getString("thumbnail"));
       rows.put(selected);
     }
+    if (pre) selected.put("eventPart", "preshow").put("eventOrder", -1);
     JSONArray sources = selected.getJSONArray("sources");
     for (int i = 0; i < sources.length(); i++)
       if (id.equals(sources.getJSONObject(i).optString("videoId"))) return 0;

@@ -3,39 +3,39 @@
   "companies": {
     "aew": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/aew.json",
-      "sha256": "ee36b883f70a969710f505fc65f969ebb2d7d46831462655716c2c32f4969986",
-      "bytes": 1311645,
-      "revision": 1793297725
+      "sha256": "d94f252a648c7c27e8a95f1c77b417c4ce32e7a9d7f4c9ec422848d04336edee",
+      "bytes": 1029559,
+      "revision": 1793411321
     },
     "wwe": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/wwe.json",
-      "sha256": "363e29e52ef4c1396875c07e3bef9e897479f10368c839ccb10b52e187f80c37",
-      "bytes": 17197546,
-      "revision": 1793326149
+      "sha256": "b26707666b1da3e24abcd6e4826d2ef95867abd41a30482620df478602dd6acd",
+      "bytes": 11853843,
+      "revision": 1793411321
     },
     "ecw": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/ecw.json",
-      "sha256": "474efe048170a8eb7be7a6cebc75700f76278964784e45187fdc1bc61fc80759",
-      "bytes": 792752,
-      "revision": 1793298201
+      "sha256": "9872edf129fdd8a9c048d89e6d5553758aeee4908ba1705046dc3509f29ba8e1",
+      "bytes": 609837,
+      "revision": 1793411321
     },
     "wcw": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/wcw.json",
-      "sha256": "95b07942c962fd266acd351f20c2daff9b47d8da14be187c7677064dbb06ea87",
-      "bytes": 4170445,
-      "revision": 1793405307
+      "sha256": "bc3b48ce29d89c646a6b92561404068aa202406cb07dd6056f4246ef31225f59",
+      "bytes": 2964787,
+      "revision": 1793411321
     },
     "tna": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/tna.json",
-      "sha256": "1aaf40b0742c534e9682a8a98a4027a7e41da0b56cad7e3a81c888eae3ca13b7",
-      "bytes": 3128047,
-      "revision": 1793326218
+      "sha256": "50eb0ed49330390dc97c0c3995745e5a1bbfa7e0144d5d1f6db95e14dc9f617e",
+      "bytes": 2222873,
+      "revision": 1793411321
     },
     "roh": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/roh.json",
-      "sha256": "8dd01bf2e2fed990ff473c05fa616d180074d72473a541ff88cde4a6d96afabe",
-      "bytes": 746078,
-      "revision": 1793403392
+      "sha256": "414a7f23a5e6c4369c7f2be52f24061e7dc50d79ae322a4b4dfe66fe25b5976a",
+      "bytes": 542547,
+      "revision": 1793411321
     }
   }
 }

@@ -32,6 +32,8 @@ public class ExpansionTest {
         // separate complete cards, not duplicate copies of one weekly episode.
         if (co == Company.ROH && e.getString("show").equals("PPV"))
           identity += ":" + e.getString("title");
+        if (co == Company.AEW && !e.optString("eventPart").isEmpty())
+          identity += ":" + e.getString("eventPart");
         assertTrue(e.getString("id"), keys.add(identity));
         assertTrue(e.getString("date").compareTo(co.firstDate) >= 0);
         assertTrue(e.getString("date").compareTo("2026-10-29") <= 0);
