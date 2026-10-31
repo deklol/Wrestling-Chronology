@@ -17,6 +17,7 @@ final class SourceConfig {
   }
 
   static void apply(JSONObject catalogue, JSONObject config) throws Exception {
+    SourceCorrections.apply(catalogue, config);
     Dailymotion.configure(config);
     Okru.configure(config);
     if (config.getInt("schemaVersion") != 1)

@@ -145,6 +145,9 @@ final class Catalog {
     cache.put("archiveItems", seed.getJSONArray("archiveItems"));
     if (seed.has("historyMigrations"))
       cache.put("historyMigrations", seed.getJSONObject("historyMigrations"));
+    if (seed.has("sourceAssignments"))
+      cache.put("sourceAssignments", seed.getJSONObject("sourceAssignments"));
+    SourceCorrections.apply(cache, null);
   }
 
   static String sourceKey(JSONObject source) {

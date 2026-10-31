@@ -200,6 +200,7 @@ final class LibraryPack {
       }
     }
     catalogue.put("episodes", accepted);
+    SourceCorrections.apply(catalogue, configCopy);
     if (previous != null) {
       JSONObject config = result.getJSONObject("sources"), old = previous.getJSONObject("sources");
       mergeConfig(config.getJSONObject("archive"), old.getJSONObject("archive"), "collections");

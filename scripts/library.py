@@ -117,25 +117,29 @@ def episode_thumbnail(identifier, file, metadata):
 
 
 def add_record(library, company, when, show, title, source, description="", thumbnail=""):
+    from event_identity import event_part, row_part
     if not when or not LIMITS[company][0] <= when <= LIMITS[company][1]:
         return False
     identity = company + ":" + when + ":" + key(show)
     if show in ("PPV", "Live event", "One Night Only"):
         identity += ":" + key(title)
     rows = library["episodes"]
+    part = source.get('eventPart', event_part(title))
     existing = next((row for row in rows if row["id"] == identity
                      or any(source_key(value) == source_key(source) for value in row['sources'])), None)
+    if existing is not None and show == 'PPV' and row_part(existing) != part:
+        raise ValueError('Recording is already mapped to a different event part; review required')
     if existing is None:
         # Keep imported IDs (and watch history) when another source finds the same broadcast.
         matches = [row for row in rows if row['date'] == when and row['show'] == show
-                   and (show not in ('PPV', 'Live event', 'One Night Only') or key(row['title']) == key(title))]
+                   and (show not in ('PPV', 'Live event', 'One Night Only')
+                        or (key(row['title']) == key(title) and row_part(row) == part))]
         if len(matches) == 1:
             existing = matches[0]
     if existing is None:
-        if company == 'aew' and source.get('eventPart') == 'preshow':
+        if company == 'aew' and part in ('preshow', 'tailgate'):
             matches = [row for row in rows if row['date'] == when and row['show'] == 'PPV'
-                       and (row.get('eventPart') == 'preshow'
-                            or re.search(r'(?i)zero[ ._-]*hour|buy[ ._-]*in|pre[ ._-]*show', row['title']))]
+                       and row_part(row) == part]
             if len(matches) == 1:
                 existing = matches[0]
     if existing is None:
@@ -147,8 +151,8 @@ def add_record(library, company, when, show, title, source, description="", thum
         existing["sources"].append(source)
     if thumbnail and (source["type"] == "youtube" or not existing.get("thumbnail")):
         existing["thumbnail"] = thumbnail
-    if company == 'aew' and source.get('eventPart') == 'preshow':
-        existing.update(eventPart='preshow', eventOrder=-1)
+    if company == 'aew' and part in ('preshow', 'tailgate'):
+        existing.update(eventPart=part, eventOrder=-2 if part == 'tailgate' else -1)
     return True
 
 
@@ -193,7 +197,7 @@ def scan_archive(library, company, config, metadata, events):
     skipped = []
     for file in files:
         filename = file["name"]
-        if re.search(r"\b(?:partial|incomplete|inc|sample|highlights|clip|segment|recap|compilation|preview|review|full[ .-]+match|reliving[ .-]+the[ .-]+war)\b", filename.replace("_", " "), re.I):
+        if re.search(r"\b(?:partial|incomplete|inc|sample|highlights|clip|segment|recap|compilation|preview|review|press[ .-]+(?:event|conference)|full[ .-]+match|reliving[ .-]+the[ .-]+war)\b", filename.replace("_", " "), re.I):
             skipped.append(filename)
             continue
         # Unreviewed files in mixed collections stay outside the published feed.
@@ -240,6 +244,10 @@ def scan_archive(library, company, config, metadata, events):
             source["bytes"] = sum(value["bytes"] for value in sources)
             sources = [source]
         for source in sources:
+            from event_identity import event_part, row_part
+            if show == 'PPV' and event_part(source.get('filename', '')) != event_part(title):
+                skipped.append(source['filename'] + ': event part does not match configured title')
+                continue
             minimum = 1200 if show in ("Heat", "Impact", "Hardcore TV", "ECW on TNN") else 2300
             if source["duration"] < minimum:
                 skipped.append(source["filename"])
@@ -483,6 +491,8 @@ def publish_packs(base_url, refresh=False):
                     report.append({"company": company, **scan_youtube(library, company, config, playlist)})
                 except Exception as error:
                     report.append({"company": company, "source": "YouTube · " + playlist.get("name", playlist["id"]), "status": "skipped", "reason": str(error)})
+        from event_identity import apply_source_corrections
+        apply_source_corrections(library, config)
         pack = {"schemaVersion": 1, "company": company, "revision": 1,
                 "catalogue": library, "sources": config, "retiredSources": config.get("retiredSources", [])}
         if old:

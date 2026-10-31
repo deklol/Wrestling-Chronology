@@ -37,6 +37,10 @@ Archive multipart recordings require a complete consecutive part set. Durations 
 
 Episode artwork comes from the corresponding YouTube video or Archive per-file still. Collection covers must not replace episode thumbnails. The company logo is the fallback when episode artwork is unavailable.
 
+Main PPVs, pre-shows and Saturday Tailgate Brawl are separate broadcasts, even on the same date. Set `eventPart` to `preshow` or `tailgate` on those entries. A recording that includes the full PPV plus a pre-show remains a main-event source. Match dated recordings to the actual event; a subtitle mentioning another event is not an alternative source for it.
+
+Reviewed corrections use `catalogue.sourceAssignments`, mapping a stable source key (`okru:VIDEO_ID` or `archive:FULL_URL`) to the correct existing episode ID. The destination must already contain that source. App versions 0.1.8 and newer remove its old association when merging cached libraries, preserving unrelated discoveries and episode IDs. Keep corrections in future packs so installations that skipped releases still receive them. `retiredSources` in the company source configuration explicitly excludes non-show recordings, with reasons in `excludedRecordings`; missing entries alone never mean deletion.
+
 After editing:
 
 ```sh

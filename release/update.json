@@ -1,7 +1,7 @@
 {
-  "versionCode": 13,
-  "versionName": "0.1.7",
-  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.7/Wrestling-Chronology.apk",
-  "sha256": "555abfc9f85887503dba4702bb61eb5f802592d6f2af544eeb317c26e0ca65ed",
-  "notes": "Improves OK.ru playback with responsive provider servers, adaptive quality and bounded buffering. Adds installation instructions and contact details in Settings > About."
+  "versionCode": 14,
+  "versionName": "0.1.8",
+  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.8/Wrestling-Chronology.apk",
+  "sha256": "5cfe1df553c40ff28d29ced657452d7a9ba84c6f35759630352df95c92762ba7",
+  "notes": "Sorry for all the updates. I keep finding inconsistencies, and I want it to be perfect. Fixes full PPVs incorrectly grouped with pre-shows or other events, cleans up titles, and repairs cached source mappings."
 }

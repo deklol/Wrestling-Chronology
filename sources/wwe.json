@@ -10985,7 +10985,7 @@
           "02 WWF In Your House 6 1996.mp4": {
             "date": "1996-02-18",
             "show": "PPV",
-            "title": "In Your House"
+            "title": "In Your House 6: Rage in the Cage"
           },
           "03 WWF WrestleMania XII 1996.mp4": {
             "date": "1996-03-31",
@@ -17395,9 +17395,9 @@
             "title": "Royal Rumble"
           },
           "1996-10-20 - In Your House 11 - Buried Alive.mp4": {
-            "date": "1996-02-18",
+            "date": "1996-10-20",
             "show": "PPV",
-            "title": "In Your House"
+            "title": "In Your House: Buried Alive"
           },
           "1996-11-17 - Survivor Series.mp4": {
             "date": "1996-11-17",
@@ -17405,14 +17405,14 @@
             "title": "Survivor Series"
           },
           "1996-12-15 - In Your House 12 - It's Time.mp4": {
-            "date": "1996-02-18",
+            "date": "1996-12-15",
             "show": "PPV",
-            "title": "In Your House"
+            "title": "In Your House: It's Time"
           },
           "1996-2-18 - In Your House 6 - Rage In The Cage.mp4": {
             "date": "1996-02-18",
             "show": "PPV",
-            "title": "In Your House"
+            "title": "In Your House 6: Rage in the Cage"
           },
           "1996-3-31 - Wrestlemania 12.mp4": {
             "date": "1996-03-31",
@@ -17420,14 +17420,14 @@
             "title": "WrestleMania XII"
           },
           "1996-4-28 - In Your House 07 - Good Friends Better Enemies.mp4": {
-            "date": "1996-02-18",
+            "date": "1996-04-28",
             "show": "PPV",
-            "title": "In Your House"
+            "title": "In Your House: Good Friends, Better Enemies"
           },
           "1996-5-26 - In Your House 08 - Beware Of God.mp4": {
-            "date": "1996-02-18",
+            "date": "1996-05-26",
             "show": "PPV",
-            "title": "In Your House"
+            "title": "In Your House: Beware of Dog"
           },
           "1996-6-23 - King Of The Ring.mp4": {
             "date": "1996-06-23",
@@ -17435,9 +17435,9 @@
             "title": "King of the Ring"
           },
           "1996-7-21 - In Your House 09 - International Incident.mp4": {
-            "date": "1996-02-18",
+            "date": "1996-07-21",
             "show": "PPV",
-            "title": "In Your House"
+            "title": "In Your House: International Incident"
           },
           "1996-8-18 - Summerslam.mp4": {
             "date": "1996-08-18",
@@ -17445,9 +17445,9 @@
             "title": "SummerSlam"
           },
           "1996-9-22 - In Your House 01 - Mind Games.mp4": {
-            "date": "1996-02-18",
+            "date": "1996-09-22",
             "show": "PPV",
-            "title": "In Your House"
+            "title": "In Your House: Mind Games"
           },
           "1997-1-19 - Royal Rumble.mp4": {
             "date": "1997-01-19",
@@ -69042,7 +69042,7 @@
           "1996/002.2 WWF In Your House #6 1996.mp4": {
             "date": "1996-02-18",
             "show": "PPV",
-            "title": "In Your House"
+            "title": "In Your House 6: Rage in the Cage"
           },
           "1996/003.2 WWF WrestleMania 12 1996.mp4": {
             "date": "1996-03-31",
@@ -85970,7 +85970,9 @@
       }
     ]
   },
-  "retiredSources": [],
+  "retiredSources": [
+    "archive:https://archive.org/download/wweppv03/2024/02%20-%20Elimination%20Chamber/WWE.Elimination.Chamber.2024.Press.Event.2024.02.22.1080p.WEB.h264-HEEL.mp4"
+  ],
   "$schema": "../sources.schema.json",
   "okru": {
     "enabled": true,
@@ -86474,10 +86476,10 @@
         "id": "7240011876944",
         "owner": "586215877968",
         "name": "WWF In Your House 10 ~ Mind Games 09-22-1996.mp4",
-        "episodeId": "wwe:1996-02-18:ppv:inyourhouse",
-        "date": "1996-02-18",
+        "episodeId": "wwe:1996-09-22:ppv:inyourhousemindgames",
+        "date": "1996-09-22",
         "show": "PPV",
-        "title": "In Your House",
+        "title": "In Your House: Mind Games",
         "duration": 6919,
         "enabled": true
       },
@@ -86485,10 +86487,10 @@
         "id": "7240025180752",
         "owner": "586215877968",
         "name": "WWF In Your House 11 ~ Buried Alive ~ Death, Darkness And The Destruction Of Mankind 10-20-1996.mp4",
-        "episodeId": "wwe:1996-02-18:ppv:inyourhouse",
-        "date": "1996-02-18",
+        "episodeId": "wwe:1996-10-20:ppv:inyourhouseburiedalive",
+        "date": "1996-10-20",
         "show": "PPV",
-        "title": "In Your House",
+        "title": "In Your House: Buried Alive",
         "duration": 6639,
         "enabled": true
       },
@@ -86496,10 +86498,10 @@
         "id": "7240011680336",
         "owner": "586215877968",
         "name": "WWF In Your House 12 ~ It's Time 12-15-1996.mp4",
-        "episodeId": "wwe:1996-02-18:ppv:inyourhouse",
-        "date": "1996-02-18",
+        "episodeId": "wwe:1996-12-15:ppv:inyourhouseitstime",
+        "date": "1996-12-15",
         "show": "PPV",
-        "title": "In Your House",
+        "title": "In Your House: It's Time",
         "duration": 6481,
         "enabled": true
       },
@@ -86598,7 +86600,7 @@
         "episodeId": "wwe:1996-02-18:ppv:inyourhouse",
         "date": "1996-02-18",
         "show": "PPV",
-        "title": "In Your House",
+        "title": "In Your House 6: Rage in the Cage",
         "duration": 6603,
         "enabled": true
       },
@@ -86606,10 +86608,10 @@
         "id": "7238126275152",
         "owner": "586215877968",
         "name": "WWF In Your House 7 ~ Good Friends, Better Enemies 04-28-1996.mp4",
-        "episodeId": "wwe:1996-02-18:ppv:inyourhouse",
-        "date": "1996-02-18",
+        "episodeId": "wwe:1996-04-28:ppv:inyourhousegoodfriendsbetterenemies",
+        "date": "1996-04-28",
         "show": "PPV",
-        "title": "In Your House",
+        "title": "In Your House: Good Friends, Better Enemies",
         "duration": 6110,
         "enabled": true
       },
@@ -86617,10 +86619,10 @@
         "id": "7238126078544",
         "owner": "586215877968",
         "name": "WWF In Your House 8 ~ Beware Of Dog 2 ~ It's Vader Time 05-28-1996.mp4",
-        "episodeId": "wwe:1996-02-18:ppv:inyourhouse",
-        "date": "1996-02-18",
+        "episodeId": "wwe:1996-05-26:ppv:inyourhousebewareofdog",
+        "date": "1996-05-26",
         "show": "PPV",
-        "title": "In Your House",
+        "title": "In Your House: Beware of Dog",
         "duration": 6648,
         "enabled": true
       },
@@ -86628,10 +86630,10 @@
         "id": "7238126209616",
         "owner": "586215877968",
         "name": "WWF In Your House 9 ~ International Incident ~ Two Hours Of Hard Hitting, High Flying, Heart Stopping, Piledriving Action!! 07-21-1996.mp4",
-        "episodeId": "wwe:1996-02-18:ppv:inyourhouse",
-        "date": "1996-02-18",
+        "episodeId": "wwe:1996-07-21:ppv:inyourhouseinternationalincident",
+        "date": "1996-07-21",
         "show": "PPV",
-        "title": "In Your House",
+        "title": "In Your House: International Incident",
         "duration": 6844,
         "enabled": true
       },
@@ -87442,10 +87444,10 @@
         "id": "7169965558415",
         "owner": "589703611535",
         "name": "WWF Survivor Series: The Biggest Event Since WrestleMania III! 11/26/1987",
-        "episodeId": "wwe:1987-03-29:ppv",
-        "date": "1987-03-29",
+        "episodeId": "wwe:1987-11-26:ppv",
+        "date": "1987-11-26",
         "show": "PPV",
-        "title": "WrestleMania III",
+        "title": "Survivor Series",
         "duration": 10123,
         "enabled": true
       },
@@ -87656,5 +87658,11 @@
         "enabled": true
       }
     ]
-  }
+  },
+  "excludedRecordings": [
+    {
+      "source": "archive:https://archive.org/download/wweppv03/2024/02%20-%20Elimination%20Chamber/WWE.Elimination.Chamber.2024.Press.Event.2024.02.22.1080p.WEB.h264-HEEL.mp4",
+      "reason": "Press conference, not the full Elimination Chamber event."
+    }
+  ]
 }
