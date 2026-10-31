@@ -5,6 +5,11 @@ import org.json.*;
 import org.junit.Test;
 
 public class OkruTest {
+  @Test public void initialEstimateStartsSharperAndUsesMeasuredFastDelivery() {
+    assertEquals(3000000L, Okru.initialBitrate(262144, 2000));
+    assertEquals(8388608L, Okru.initialBitrate(262144, 250));
+    assertEquals(20000000L, Okru.initialBitrate(262144, 1));
+  }
   @Test public void qualityProbeRespectsCeilingAndRejectsForeignHosts() throws Exception {
     JSONObject metadata = new JSONObject().put("videos", new JSONArray()
         .put(new JSONObject().put("name", "full").put("url", "https://a.okcdn.ru/full"))

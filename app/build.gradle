@@ -10,8 +10,8 @@ android {
         applicationId 'uk.local.wrestlingchronology'
         minSdk 25
         targetSdk 28
-        versionCode 14
-        versionName '0.1.8'
+        versionCode 15
+        versionName '0.1.9'
         buildConfigField 'String', 'COMMUNITY_BASE_URL', groovy.json.JsonOutput.toJson(System.getenv('WC_COMMUNITY_BASE_URL') ?: '')
         buildConfigField 'String', 'COMMUNITY_APP_KEY', groovy.json.JsonOutput.toJson(System.getenv('WC_COMMUNITY_APP_KEY') ?: '')
     }

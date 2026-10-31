@@ -32,6 +32,8 @@ public final class PlayerActivity extends Activity {
   CommunityViews communityViews;
   CommunityPanel discussion;
   ExoPlayer player;
+  DefaultTrackSelector trackSelector;
+  volatile int selectedQuality, qualityCeiling = 720;
   boolean hidingPlayerControls;
   float playbackVolume = 1f, unmutedVolume = 1f;
   ImageButton volumeButton;
@@ -46,6 +48,7 @@ public final class PlayerActivity extends Activity {
   boolean stretchPicture;
   float videoAspectRatio;
   long bufferingSince;
+  long lastHlsRecovery;
   long resumePosition;
   ArrayList<JSONObject> options;
   Resolver.Resolved resolved;
@@ -139,6 +142,7 @@ public final class PlayerActivity extends Activity {
       if (episodePage != null) episodePage.setFullscreen(fullscreen);
     });
     View settingsControl = view.findViewById(androidx.media3.ui.R.id.exo_settings);
+    settingsControl.setOnClickListener(v -> playerSettings());
     ViewGroup bottomControls = (ViewGroup) settingsControl.getParent();
     LinearLayout volumeControls = Ui.horizontal(this);
     volumeButton = new ImageButton(this);
@@ -184,6 +188,14 @@ public final class PlayerActivity extends Activity {
         new ViewGroup.LayoutParams(Ui.dp(this, 48), Ui.dp(this, 40)));
     View fullscreenControl = view.findViewById(androidx.media3.ui.R.id.exo_fullscreen);
     fullscreenControl.setBackground(Ui.focus(this, false));
+    for (int id : new int[] {androidx.media3.ui.R.id.exo_play_pause,
+        androidx.media3.ui.R.id.exo_rew_with_amount, androidx.media3.ui.R.id.exo_ffwd_with_amount,
+        androidx.media3.ui.R.id.exo_settings, androidx.media3.ui.R.id.exo_fullscreen})
+      stylePlayerButton(view.findViewById(id));
+    stylePlayerButton(volumeButton);
+    stylePlayerButton(aspectButton);
+    volumeControls.setGravity(Gravity.CENTER_VERTICAL);
+    volumeSlider.getLayoutParams().height = Ui.dp(this, 44);
     applyPictureMode();
     view.setControllerVisibilityListener(
         (PlayerView.ControllerVisibilityListener)
@@ -250,6 +262,7 @@ public final class PlayerActivity extends Activity {
   }
 
   void open() {
+    selectedQuality = 0;
     if (communityViews != null) communityViews.playing(false);
     generation++;
     ended = false;
@@ -340,6 +353,114 @@ public final class PlayerActivity extends Activity {
         });
   }
 
+  void playerSettings() {
+    if (player == null) return;
+    new AlertDialog.Builder(this).setTitle("Player settings")
+        .setItems(new String[] {"Quality", "Playback speed", "Audio track"}, (dialog, which) -> {
+          if (which == 0) qualityMenu();
+          else if (which == 1) {
+            float[] speeds = {.5f, .75f, 1f, 1.25f, 1.5f, 2f};
+            new AlertDialog.Builder(this).setTitle("Playback speed")
+                .setItems(new String[] {"0.5×", "0.75×", "Normal", "1.25×", "1.5×", "2×"},
+                    (d, index) -> { if (player != null) player.setPlaybackSpeed(speeds[index]); }).show();
+          } else audioMenu();
+        }).show();
+  }
+
+  void audioMenu() {
+    if (player == null) return;
+    ArrayList<TrackSelectionOverride> tracks = new ArrayList<>();
+    ArrayList<String> labels = new ArrayList<>();
+    for (Tracks.Group group : player.getCurrentTracks().getGroups()) {
+      if (group.getType() != C.TRACK_TYPE_AUDIO) continue;
+      for (int i = 0; i < group.length; i++) if (group.isTrackSupported(i)) {
+        Format format = group.getTrackFormat(i);
+        tracks.add(new TrackSelectionOverride(group.getMediaTrackGroup(), i));
+        labels.add(format.label != null ? format.label : format.language != null ? format.language : "Original audio");
+      }
+    }
+    new AlertDialog.Builder(this).setTitle("Audio track")
+        .setItems(labels.toArray(new String[0]), (d, index) -> {
+          if (trackSelector != null) trackSelector.setParameters(trackSelector.buildUponParameters().setOverrideForType(tracks.get(index)));
+        }).setNegativeButton("Close", null).show();
+  }
+
+  void qualityMenu() {
+    if (player == null || resolved == null) return;
+    TreeSet<Integer> heights = new TreeSet<>(Collections.reverseOrder());
+    heights.addAll(resolved.qualityUrls.keySet());
+    for (Tracks.Group group : player.getCurrentTracks().getGroups()) {
+      if (group.getType() != C.TRACK_TYPE_VIDEO) continue;
+      for (int i = 0; i < group.length; i++)
+        if (group.isTrackSupported(i) && group.getTrackFormat(i).height > 0)
+          heights.add(group.getTrackFormat(i).height);
+    }
+    int current = player.getVideoFormat() == null ? 0 : player.getVideoFormat().height;
+    ArrayList<Integer> choices = new ArrayList<>(); choices.add(0);
+    ArrayList<String> labels = new ArrayList<>();
+    labels.add("Auto" + (current > 0 ? " · " + current + "p" : ""));
+    for (int height : heights) { choices.add(height); labels.add(height + "p" + (heights.size() == 1 ? " · Original" : "")); }
+    AlertDialog dialog = new AlertDialog.Builder(this).setTitle("Quality")
+        .setSingleChoiceItems(labels.toArray(new String[0]), Math.max(0, choices.indexOf(selectedQuality)), (d, index) -> {
+          d.dismiss();
+          if (player == null) return;
+          selectedQuality = choices.get(index);
+          updateQualityInfo();
+          Log.i(TAG, "QUALITY_REQUEST provider=" + resolved.provider + " height=" + selectedQuality
+              + " pos=" + player.getCurrentPosition() + " buffered=" + player.getTotalBufferedDuration());
+          if (!resolved.qualityUrls.isEmpty()) {
+            int limit = selectedQuality == 0 ? Catalog.prefs(this).getInt("quality", 720) : selectedQuality;
+            int height = resolved.qualityUrls.firstKey();
+            for (int available : resolved.qualityUrls.keySet()) if (available <= limit) height = available;
+            changeProgressiveQuality(height);
+          } else {
+            qualityCeiling = Catalog.prefs(this).getInt("quality", 720);
+            Toast.makeText(this, selectedQuality == 0 ? "Automatic quality enabled" : "Switching to " + selectedQuality + "p", Toast.LENGTH_SHORT).show();
+          }
+        }).setNegativeButton("Close", null).create();
+    dialog.show();
+  }
+
+  void stylePlayerButton(View button) {
+    if (button == null) return;
+    ViewGroup.LayoutParams params = button.getLayoutParams();
+    params.width = params.height = Ui.dp(this, 44);
+    if (params instanceof ViewGroup.MarginLayoutParams) {
+      ViewGroup.MarginLayoutParams margins = (ViewGroup.MarginLayoutParams) params;
+      margins.setMargins(Ui.dp(this, 3), 0, Ui.dp(this, 3), 0);
+    }
+    button.setLayoutParams(params);
+    button.setBackground(Ui.focus(this, false));
+    button.setFocusable(true);
+    if (button instanceof ImageButton) {
+      int padding = Ui.dp(this, 10);
+      button.setPadding(padding, padding, padding, padding);
+      ((ImageButton) button).setScaleType(ImageView.ScaleType.FIT_CENTER);
+    }
+  }
+
+  void updateQualityInfo() {
+    if (episodePage == null || player == null) return;
+    Format format = player.getVideoFormat();
+    int height = format == null ? 0 : format.height;
+    String text = height > 0 ? (selectedQuality == 0 ? "Auto · " : "") + height + "p" : "Loading…";
+    if (selectedQuality > 0 && height > 0 && height != selectedQuality) text += " → " + selectedQuality + "p";
+    episodePage.qualityInfo.setText("Quality: " + text);
+  }
+
+  void changeProgressiveQuality(int height) {
+    if (player == null || resolved == null || height == resolved.selectedHeight || !resolved.qualityUrls.containsKey(height)) return;
+    boolean playing = player.getPlayWhenReady();
+    float speed = player.getPlaybackParameters().speed;
+    save(false);
+    resumePosition = player.getCurrentPosition();
+    resolved.videos.set(0, resolved.qualityUrls.get(height));
+    resolved.selectedHeight = height;
+    prepare(resolved, ++generation);
+    player.setPlayWhenReady(playing);
+    player.setPlaybackSpeed(speed);
+  }
+
   void prepare(Resolver.Resolved stream, int token) {
     archiveRecovery.reset();
     if (player != null) {
@@ -347,28 +468,30 @@ public final class PlayerActivity extends Activity {
       player = null;
     }
     resolved = stream;
-    DefaultTrackSelector selector = new DefaultTrackSelector(this);
-    int max = Catalog.prefs(this).getInt("quality", 720);
+    qualityCeiling = Catalog.prefs(this).getInt("quality", 720);
+    DefaultTrackSelector selector = new DefaultTrackSelector(this,
+        new BufferedQualitySelection(() -> selectedQuality, () -> qualityCeiling));
+    trackSelector = selector;
     selector.setParameters(
         selector
             .buildUponParameters()
-            .setMaxVideoSize(max == 720 ? 1280 : 1920, max)
+            .setMaxVideoSize(1920, 1080)
             .setPreferredVideoMimeTypes(MimeTypes.VIDEO_H264)
             .setPreferredAudioLanguage("en"));
     DefaultLoadControl load =
         new DefaultLoadControl.Builder()
             .setBufferDurationsMs(
-                stream.provider.equals("okru") ? 30000 : 15000,
-                stream.provider.equals("okru") ? 60000 : 45000,
+                stream.provider.equals("okru") ? 60000 : 15000,
+                stream.provider.equals("okru") ? 120000 : 45000,
                 stream.provider.equals("okru") ? 2500 : 1800,
-                stream.provider.equals("archive") ? 2000 : 5000)
-            .setTargetBufferBytes((stream.provider.equals("okru") ? 24 : 16) * 1024 * 1024)
+                stream.provider.equals("archive") || stream.provider.equals("okru") ? 2000 : 5000)
+            .setTargetBufferBytes((stream.provider.equals("okru") ? 48 : 16) * 1024 * 1024)
             .setPrioritizeTimeOverSizeThresholds(false)
             .build();
     ExoPlayer.Builder builder = new ExoPlayer.Builder(this).setTrackSelector(selector).setLoadControl(load);
     if (stream.provider.equals("okru")) builder.setBandwidthMeter(
         new androidx.media3.exoplayer.upstream.DefaultBandwidthMeter.Builder(this)
-            .setInitialBitrateEstimate(450000L).build());
+            .setInitialBitrateEstimate(stream.initialBitrate).build());
     player = builder.build();
     player.setVolume(playbackVolume);
     player.setAudioAttributes(
@@ -442,6 +565,8 @@ public final class PlayerActivity extends Activity {
             videoAspectRatio =
                 size.height > 0 ? size.width * size.pixelWidthHeightRatio / size.height : 0;
             view.post(() -> applyPictureMode());
+            Log.i(TAG, "VIDEO_QUALITY provider=" + stream.provider + " height=" + size.height);
+            updateQualityInfo();
           }
 
           @Override
@@ -472,6 +597,34 @@ public final class PlayerActivity extends Activity {
                       + hasPlayed
                       + " pos="
                       + player.getCurrentPosition());
+              if (stream.hls || stream.provider.equals("dailymotion")) handler.postDelayed(() -> {
+                if (token != generation || player == null || player.getPlaybackState() != Player.STATE_BUFFERING
+                    || !hasPlayed || !player.getPlayWhenReady() || SystemClock.elapsedRealtime() - bufferingSince < 5500) return;
+                // Allow a restarted connection to fill instead of cancelling it again six seconds later.
+                if (SystemClock.elapsedRealtime() - lastHlsRecovery < 15000) return;
+                lastHlsRecovery = SystemClock.elapsedRealtime();
+                selectedQuality = 0;
+                qualityCeiling = 360;
+                updateQualityInfo();
+                long position = player.getCurrentPosition();
+                int part = player.getCurrentMediaItemIndex();
+                Log.i(TAG, "HLS_RECOVER provider=" + stream.provider + " pos=" + position);
+                // Restart a stuck request at the same time; changing a ceiling alone cannot unblock it.
+                player.stop();
+                player.seekTo(part, position);
+                player.prepare();
+                Toast.makeText(PlayerActivity.this, "Switched to Auto to keep playback moving", Toast.LENGTH_SHORT).show();
+                handler.postDelayed(() -> {
+                  if (token == generation && player != null && selectedQuality == 0)
+                    qualityCeiling = Catalog.prefs(PlayerActivity.this).getInt("quality", 720);
+                }, 20000);
+              }, 6000);
+              if (selectedQuality == 0 && !stream.qualityUrls.isEmpty()) handler.postDelayed(() -> {
+                if (token != generation || player == null || player.getPlaybackState() != Player.STATE_BUFFERING) return;
+                int lower = 0;
+                for (int height : stream.qualityUrls.keySet()) if (height < stream.selectedHeight) lower = height;
+                if (lower > 0) changeProgressiveQuality(lower);
+              }, 6000);
             }
             if (state == Player.STATE_ENDED && !ended) {
               ended = true;
@@ -697,6 +850,7 @@ public final class PlayerActivity extends Activity {
     if (session == null || player == null) return;
     session.setPlaybackState(
         new PlaybackState.Builder()
+            .setBufferedPosition(player.getBufferedPosition())
             .setActions(
                 PlaybackState.ACTION_PLAY
                     | PlaybackState.ACTION_PAUSE
