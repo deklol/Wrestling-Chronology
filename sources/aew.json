@@ -5593,7 +5593,7 @@
           "PPV/2025/AEW All Out 2025/AEW.Saturday.Tailgate.Brawl.All.Out.2025.09.20.1080p.WEB.h264-HEEL.mp4": {
             "date": "2025-09-20",
             "show": "PPV",
-            "title": "All Out"
+            "title": "All Out \u2014 Saturday Tailgate Brawl"
           },
           "PPV/2025/AEW Double or Nothing 2025/AEW.Double.Or.Nothing.2025.PPV.1080p.WEB.h264-HEEL.mp4": {
             "date": "2025-05-25",
@@ -7241,7 +7241,7 @@
         "episodeId": "aew:2026-10-17:ppv:saturdaytailgatebrawlwrestledream1017saturdaytailgatebrawl",
         "date": "2026-10-17",
         "show": "PPV",
-        "title": "Saturday Tailgate Brawl WrestleDream  10 17 \u2014 Saturday Tailgate Brawl",
+        "title": "WrestleDream \u2014 Saturday Tailgate Brawl",
         "duration": 2690,
         "enabled": true
       },
@@ -7282,10 +7282,10 @@
         "id": "16404582173295",
         "owner": "579391530351",
         "name": "WrestleDream.PPV.2026.",
-        "episodeId": "aew:2026-10-17:ppv:saturdaytailgatebrawlwrestledream1017saturdaytailgatebrawl",
+        "episodeId": "aew:2026-10-17:ppv",
         "date": "2026-10-17",
         "show": "PPV",
-        "title": "Saturday Tailgate Brawl WrestleDream  10 17 \u2014 Saturday Tailgate Brawl",
+        "title": "WrestleDream",
         "duration": 15288,
         "enabled": true
       }

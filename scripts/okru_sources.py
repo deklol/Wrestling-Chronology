@@ -2,6 +2,7 @@
 from html.parser import HTMLParser
 import json
 import re
+from event_identity import event_part, event_title
 
 _pages = {}
 
@@ -90,21 +91,23 @@ def refresh_okru(library, company, config):
                     if not (metadata.get('hlsManifestUrl') or metadata.get('ondemandHls')):
                         raise ValueError('Public stream unavailable')
                     when = broadcast_date(title)
-                    pre = company == 'aew' and bool(re.search(r'(?i)zero.hour|buy.in|pre.show',title))
-                    if re.search(r'(?i)with.Zero.Hour|with.Buy.In',title):
-                        pre = False
+                    part = event_part(title)
+                    pre = part != 'main'
+                    if pre and company != 'aew':
+                        raise ValueError('Separate pre-show needs an explicit mapping')
                     if len(events) == 1:
+                        if when and when != events[0]['date']:
+                            raise ValueError('Recording date conflicts with event reference; review required')
                         show, when, canonical = 'PPV', events[0]['date'], events[0]['name']
                     else:
                         canonical = show
                     if not when or duration < (1200 if pre else 3600 if show == 'PPV' else 1800):
                         raise ValueError('Ambiguous date or insufficient runtime')
-                    if pre:
-                        canonical += ' — ' + ('Zero Hour' if re.search(r'(?i)zero.hour',title) else 'Buy In')
+                    canonical = event_title(canonical, part, title)
                     source = {'type':'okru','videoId':identifier,'owner':details.owner,'title':title,
                               'duration':duration,'programme':show,'label':'OK.ru','thumbnail':movie.get('poster','')}
                     if pre:
-                        source.update(eventPart='preshow',company=company)
+                        source.update(eventPart=part,company=company)
                     if not add_record(library,company,when,show,canonical,source,thumbnail=movie.get('poster','')):
                         raise ValueError('Outside company date range')
                     row = next(r for r in library['episodes'] if any(s.get('videoId')==identifier and s['type']=='okru' for s in r['sources']))
