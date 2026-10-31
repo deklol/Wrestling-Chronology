@@ -255,7 +255,7 @@ final class CommunityPanel {
     return row;
   }
 
-  static void trending(MainActivity activity, LinearLayout into) {
+  static void trending(MainActivity activity, LinearLayout into, View menuButton) {
     String company = Company.current.id;
     TextView title = Ui.text(activity, "Trending · " + Company.current.name, 27, Ui.WHITE);
     title.setTypeface(null, Typeface.BOLD); into.addView(title);
@@ -290,6 +290,10 @@ final class CommunityPanel {
           layout.setSpanSizeLookup(new androidx.recyclerview.widget.GridLayoutManager.SpanSizeLookup() {
             @Override public int getSpanSize(int position) { return cells.get(position) instanceof String ? 4 : 1; }
           });
+          int firstCard = 0;
+          while (firstCard < cells.size() && cells.get(firstCard) instanceof String) firstCard++;
+          final int firstRow = firstCard < cells.size()
+              ? layout.getSpanSizeLookup().getSpanGroupIndex(firstCard, 4) : -1;
           grid.setAdapter(new androidx.recyclerview.widget.RecyclerView.Adapter<androidx.recyclerview.widget.RecyclerView.ViewHolder>() {
             @Override public int getItemViewType(int position) { return cells.get(position) instanceof String ? 0 : 1; }
             @Override public int getItemCount() { return cells.size(); }
@@ -306,6 +310,15 @@ final class CommunityPanel {
               if (cell instanceof String) { ((TextView) holder.itemView).setText((String) cell); return; }
               int index = (Integer) cell;
               cards.onBindViewHolder((MainActivity.EpisodeAdapter.Holder) holder, index);
+              boolean topRow = layout.getSpanSizeLookup().getSpanGroupIndex(position, 4) == firstRow;
+              holder.itemView.setNextFocusUpId(topRow ? menuButton.getId() : View.NO_ID);
+              // RecyclerView can retain focus at its upper edge instead of leaving for the menu.
+              // Use the actual first card row, including when earlier ranking sections are empty.
+              holder.itemView.setOnKeyListener((view, key, event) -> {
+                if (!topRow || key != KeyEvent.KEYCODE_DPAD_UP) return false;
+                if (event.getAction() == KeyEvent.ACTION_DOWN) menuButton.requestFocus();
+                return true;
+              });
               Catalog.Episode episode = items.get(index);
               holder.itemView.setOnClickListener(view -> activity.details(episode, Catalog.forYear(episode.year, "All", activity.extras())));
             }
