@@ -231,6 +231,11 @@ final class Catalog {
     return result;
   }
 
+  static boolean weeklyShow(String show) {
+    return !show.equals("PPV") && !show.equals("Specials")
+        && !show.equals("Live event") && !show.equals("One Night Only");
+  }
+
   static String showLabel(String show, int year) {
     if (show.equals("Saturday Night") && Company.current == Company.WWE) return "Saturday Night’s Main Event";
     if (show.equals("Saturday Night") && Company.current == Company.WCW) {

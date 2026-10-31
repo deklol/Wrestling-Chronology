@@ -73,6 +73,39 @@
         "title": "Saturday Night",
         "duration": 5312,
         "description": "Steve Austin, Lord Steven Regal, Vader and Harlem Heat feature in this Saturday Night broadcast."
+      },
+      {
+        "id": "oTJaQ0PVMz8",
+        "name": "FULL EPISODE: Sawyer and Rich ready for war; Rude vs. Zbyszko | WCW, June 18, 1983",
+        "enabled": true,
+        "channelId": "UCNSnSemXKDc9UEZ7m31wY9Q",
+        "authorUrl": "https://www.youtube.com/@WWEVault",
+        "date": "1983-06-18",
+        "show": "Saturday Night",
+        "title": "World Championship Wrestling",
+        "duration": 4274
+      },
+      {
+        "id": "m8sXxm05j_g",
+        "name": "FULL EPISODE: Zbyszko finds \u201cfair\u201d official; Garvin vs. Sawyer: WCW, June 25, 1983",
+        "enabled": true,
+        "channelId": "UCNSnSemXKDc9UEZ7m31wY9Q",
+        "authorUrl": "https://www.youtube.com/@WWEVault",
+        "date": "1983-06-25",
+        "show": "Saturday Night",
+        "title": "World Championship Wrestling",
+        "duration": 2828
+      },
+      {
+        "id": "WtaXKcZSCpg",
+        "name": "FULL EPISODE: Rich and Sawyer get heated; Irwin calls \u201cWildfire\u201d out: WCW, July 2, 1983",
+        "enabled": true,
+        "channelId": "UCNSnSemXKDc9UEZ7m31wY9Q",
+        "authorUrl": "https://www.youtube.com/@WWEVault",
+        "date": "1983-07-02",
+        "show": "Saturday Night",
+        "title": "World Championship Wrestling",
+        "duration": 2842
       }
     ]
   },

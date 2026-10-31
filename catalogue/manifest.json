@@ -21,15 +21,21 @@
     },
     "wcw": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/wcw.json",
-      "sha256": "eb2c8adf55a275cb7eda923eb5d85a29453bcca983cee4fe02fefd5c6d8f1fab",
-      "bytes": 4071863,
-      "revision": 1793326203
+      "sha256": "95b07942c962fd266acd351f20c2daff9b47d8da14be187c7677064dbb06ea87",
+      "bytes": 4170445,
+      "revision": 1793405307
     },
     "tna": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/tna.json",
       "sha256": "1aaf40b0742c534e9682a8a98a4027a7e41da0b56cad7e3a81c888eae3ca13b7",
       "bytes": 3128047,
       "revision": 1793326218
+    },
+    "roh": {
+      "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/roh.json",
+      "sha256": "8dd01bf2e2fed990ff473c05fa616d180074d72473a541ff88cde4a6d96afabe",
+      "bytes": 746078,
+      "revision": 1793403392
     }
   }
 }

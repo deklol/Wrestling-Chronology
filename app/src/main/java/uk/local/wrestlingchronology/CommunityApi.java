@@ -36,7 +36,7 @@ final class CommunityApi {
           && (!renew || !saved.equals(rejected))) return saved;
       if (android.os.SystemClock.elapsedRealtime() < registrationBackoff)
         throw new IOException("Community is temporarily unavailable. Please try again shortly.");
-      if (BuildConfig.COMMUNITY_APP_KEY.isEmpty())
+      if (BuildConfig.COMMUNITY_APP_KEY.isEmpty() || BuildConfig.COMMUNITY_BASE_URL.isEmpty())
         throw new IOException("Community is unavailable in this build.");
       String identity = prefs.getString("installationId", "");
       if (identity.isEmpty()) {

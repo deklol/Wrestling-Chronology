@@ -764,6 +764,11 @@ public final class PlayerActivity extends Activity {
   public boolean dispatchKeyEvent(KeyEvent event) {
     int key = event.getKeyCode();
     boolean down = event.getAction() == KeyEvent.ACTION_DOWN;
+    if (key == KeyEvent.KEYCODE_MENU && episodePage != null) {
+      if (down && event.getRepeatCount() == 0) episodePage.discussion();
+      return true;
+    }
+    if (discussion != null && discussion.navigate(event)) return true;
     boolean direction = key == KeyEvent.KEYCODE_DPAD_UP || key == KeyEvent.KEYCODE_DPAD_DOWN
         || key == KeyEvent.KEYCODE_DPAD_LEFT || key == KeyEvent.KEYCODE_DPAD_RIGHT;
     if (down && direction && view != null && view.hasFocus() && !controlsVisible) {

@@ -5,6 +5,15 @@ import org.json.*;
 import java.nio.file.*;
 import java.util.*;
 public class ExpansionTest {
+  @Test public void weeklyFiltersExcludeStandaloneEventsButKeepWeeklyPpvSeries() {
+    assertFalse(Catalog.weeklyShow("PPV"));
+    assertFalse(Catalog.weeklyShow("Specials"));
+    assertFalse(Catalog.weeklyShow("Live event"));
+    assertFalse(Catalog.weeklyShow("One Night Only"));
+    assertTrue(Catalog.weeklyShow("Weekly PPV"));
+    assertTrue(Catalog.weeklyShow("HonorClub"));
+    assertTrue(Catalog.weeklyShow("Saturday Night"));
+  }
   JSONObject read(String p) throws Exception { return new JSONObject(new String(Files.readAllBytes(Paths.get(p)), java.nio.charset.StandardCharsets.UTF_8)); }
   @Test public void everyCompanyHasValidUniqueDatedBroadcasts() throws Exception {
     Company saved = Company.current;
@@ -18,8 +27,13 @@ public class ExpansionTest {
       Set<String> keys = new HashSet<>();
       for (int i=0;i<data.getJSONArray("episodes").length();i++) {
         JSONObject e=data.getJSONArray("episodes").getJSONObject(i);
-        assertTrue(keys.add(e.getString("show") + ":" + e.getString("date")));
-        assertTrue(e.getString("date").compareTo("1985-01-01") >= 0);
+        String identity = e.getString("show") + ":" + e.getString("date");
+        // ROH's Do or Die cards and evening events can share a date. They are
+        // separate complete cards, not duplicate copies of one weekly episode.
+        if (co == Company.ROH && e.getString("show").equals("PPV"))
+          identity += ":" + e.getString("title");
+        assertTrue(e.getString("id"), keys.add(identity));
+        assertTrue(e.getString("date").compareTo(co.firstDate) >= 0);
         assertTrue(e.getString("date").compareTo("2026-10-29") <= 0);
         assertFalse(e.getString("show").contains("Superstars"));
         assertFalse(e.getString("show").contains("Saturday Morning Slam"));

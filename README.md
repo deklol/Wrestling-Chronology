@@ -15,11 +15,11 @@
 
 For future updates, use the same Downloader code or check **Settings > Update app**. Install updates over the existing app to preserve viewing history.
 
-A remote-friendly Fire TV app for watching full wrestling shows in chronological order. Choose WWF/WWE, WCW, ECW, TNA or AEW, select a year, and play the available shows and events in one queue.
+A remote-friendly Fire TV app for watching full wrestling shows in chronological order. Choose WWF/WWE, WCW, ECW, TNA, AEW or Ring of Honor, select a year, and play the available shows and events in one queue.
 
 ![Company selector](docs/screenshots/companies.png)
 
-- Separate company libraries, colour schemes and artwork, including AEW.
+- Separate company libraries, colour schemes and artwork, including Ring of Honor.
 - Full episode pages with embedded and fullscreen playback, source selection, episode information and previous/next controls.
 - Shared community likes, views, comments and replies, plus community rankings on the homepage.
 - Year → All → Filter shows: select the programmes included in chronological autoplay.
@@ -28,16 +28,26 @@ A remote-friendly Fire TV app for watching full wrestling shows in chronological
 - Chronological autoplay, multipart recordings, resume and watched progress.
 - Company home previews with saved episode details, artwork and viewing progress.
 - Jan–Dec shortcuts inside each year to jump through its chronological timeline.
-- Latest discoveries, dedicated years, programme filters, PPVs and search.
+- Home, Years, Weeklies, PPVs, Trending, Search and Settings for every company.
+- Trending grids for most viewed, most liked and most discussed shows.
+- Weeklies include programme and year filters.
 - Small source checks against GitHub; changed JSON libraries download independently of app updates.
 
 | Company | Years | Bundled broadcasts |
 |---|---|---:|
 | WWF / WWE | 1985–2026 | 8,467 |
-| WCW | 1985–2001 | 2,044 |
+| WCW | 1983–2001 | 2,049 |
 | ECW | 1995–2005 | 422 |
 | TNA / Impact | 2002–2026 | 1,855 |
 | AEW | 2018–2026 | 994 |
+| Ring of Honor | 2002–2026 | 482 |
+
+Ring of Honor has its own red-and-black library, with sourced PPVs, HonorClub,
+ROH TV, HDNet, High Impact TV and full-show specials. Coverage is incomplete:
+the year range does not mean every year or broadcast is available. Its source
+collections and official channel are included in the scheduled catalogue refresh;
+newly identified full shows can arrive through source updates without reinstalling
+the APK. See [ROH sources and coverage](docs/ROH.md).
 
 These are sourced broadcasts, not a claim that every historical show exists or that every recording has been watched end to end. Provider availability can change. Videos are streamed from external hosts; this repository does not contain or upload video recordings.
 

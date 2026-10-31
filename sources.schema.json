@@ -1,85 +1,294 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Wrestling Chronology source configuration",
-  "type": "object",
-  "required": ["schemaVersion", "youtube", "archive"],
-  "properties": {
-    "schemaVersion": {"const": 1},
-    "description": {"type": "string"},
-    "retiredSources": {"type": "array", "items": {"type": "string"}},
-    "dailymotion": {
-      "type": "object",
-      "properties": {
-        "enabled": {"type": "boolean"},
-        "videos": {"type": "array", "items": {
-          "type": "object", "required": ["id", "owner"],
-          "properties": {"id": {"type": "string", "pattern": "^[A-Za-z0-9]{5,15}$"},
-            "owner": {"type": "string"}, "enabled": {"type": "boolean"}}
-        }},
-        "broadcasts": {"type": "array", "items": {"type": "object"}}
-      }
-    },
-    "youtube": {
-      "type": "object",
-      "required": ["channelId", "playlists"],
-      "properties": {
-        "enabled": {"type": "boolean"},
-        "channelId": {"type": "string", "pattern": "^UC[A-Za-z0-9_-]{22}$"},
-        "playlists": {"type": "array", "items": {"$ref": "#/$defs/playlist"}},
-        "videos": {"type": "array", "items": {"$ref": "#/$defs/video"}}
-      }
-    },
-    "archive": {
-      "type": "object",
-      "required": ["collections"],
-      "properties": {
-        "enabled": {"type": "boolean"},
-        "collectionsPerScan": {"type": "integer", "minimum": 1, "maximum": 50},
-        "collections": {"type": "array", "items": {"$ref": "#/$defs/collection"}}
-      }
-    }
-  },
-  "$defs": {
-    "video": {
-      "type": "object",
-      "required": ["id", "name", "channelId", "authorUrl", "date", "show", "title", "duration"],
-      "properties": {
-        "id": {"type": "string", "pattern": "^[A-Za-z0-9_-]{11}$"},
-        "name": {"type": "string"}, "enabled": {"type": "boolean"},
-        "channelId": {"type": "string", "pattern": "^UC[A-Za-z0-9_-]{22}$"},
-        "authorUrl": {"type": "string", "pattern": "^https://www\\.youtube\\.com/@[A-Za-z0-9_.-]+$"},
-        "date": {"type": "string", "format": "date"},
-        "show": {"$ref": "#/$defs/show"}, "title": {"type": "string"},
-        "duration": {"type": "integer", "minimum": 1200}, "description": {"type": "string"}
-      }
-    },
-    "show": {"enum": ["Raw", "SmackDown", "Heat", "Hardcore TV", "ECW on TNN", "Impact", "Weekly PPV", "Nitro", "Thunder", "PPV", "Clash of the Champions", "Saturday Night", "Worldwide", "Pro", "Power Hour", "Main Event", "Prime", "All Nighter"]},
-    "playlist": {
-      "type": "object", "required": ["id", "name", "show"],
-      "properties": {
-        "id": {"type": "string", "pattern": "^[A-Za-z0-9_-]{10,80}$"},
-        "name": {"type": "string"}, "enabled": {"type": "boolean"},
-        "show": {"anyOf": [{"$ref": "#/$defs/show"}, {"const": "Auto"}]},
-        "channelId": {"type": "string"}, "authorUrl": {"type": "string"},
-        "maxPages": {"type": "integer", "minimum": 1, "maximum": 60},
-        "recentOnly": {"type": "boolean"}
-      }
-    },
-    "collection": {
-      "type": "object", "required": ["id", "name"],
-      "properties": {
-        "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,199}$"},
-        "name": {"type": "string"}, "enabled": {"type": "boolean"}, "showHint": {"$ref": "#/$defs/show"},
-        "dateOrder": {"enum": ["MDY", "DMY"]},
-        "year": {"type": "integer", "minimum": 1983, "maximum": 2015},
-        "frozen": {"type": "boolean"},
-        "overrides": {"type": "object", "additionalProperties": {
-          "type": "object", "properties": {
-            "date": {"type": "string", "format": "date"},
-            "show": {"$ref": "#/$defs/show"}, "title": {"type": "string"}
-          }
-        }}
-      }
-    }
-  }
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "title":  "Wrestling Chronology source configuration",
+    "type":  "object",
+    "required":  [
+                     "schemaVersion",
+                     "youtube",
+                     "archive"
+                 ],
+    "properties":  {
+                       "schemaVersion":  {
+                                             "const":  1
+                                         },
+                       "description":  {
+                                           "type":  "string"
+                                       },
+                       "retiredSources":  {
+                                              "type":  "array",
+                                              "items":  {
+                                                            "type":  "string"
+                                                        }
+                                          },
+                       "dailymotion":  {
+                                           "type":  "object",
+                                           "properties":  {
+                                                              "enabled":  {
+                                                                              "type":  "boolean"
+                                                                          },
+                                                              "videos":  {
+                                                                             "type":  "array",
+                                                                             "items":  {
+                                                                                           "type":  "object",
+                                                                                           "required":  [
+                                                                                                            "id",
+                                                                                                            "owner"
+                                                                                                        ],
+                                                                                           "properties":  {
+                                                                                                              "id":  {
+                                                                                                                         "type":  "string",
+                                                                                                                         "pattern":  "^[A-Za-z0-9]{5,15}$"
+                                                                                                                     },
+                                                                                                              "owner":  {
+                                                                                                                            "type":  "string"
+                                                                                                                        },
+                                                                                                              "enabled":  {
+                                                                                                                              "type":  "boolean"
+                                                                                                                          }
+                                                                                                          }
+                                                                                       }
+                                                                         },
+                                                              "broadcasts":  {
+                                                                                 "type":  "array",
+                                                                                 "items":  {
+                                                                                               "type":  "object"
+                                                                                           }
+                                                                             }
+                                                          }
+                                       },
+                       "youtube":  {
+                                       "type":  "object",
+                                       "required":  [
+                                                        "channelId",
+                                                        "playlists"
+                                                    ],
+                                       "properties":  {
+                                                          "enabled":  {
+                                                                          "type":  "boolean"
+                                                                      },
+                                                          "channelId":  {
+                                                                            "type":  "string",
+                                                                            "pattern":  "^UC[A-Za-z0-9_-]{22}$"
+                                                                        },
+                                                          "playlists":  {
+                                                                            "type":  "array",
+                                                                            "items":  {
+                                                                                          "$ref":  "#/$defs/playlist"
+                                                                                      }
+                                                                        },
+                                                          "videos":  {
+                                                                         "type":  "array",
+                                                                         "items":  {
+                                                                                       "$ref":  "#/$defs/video"
+                                                                                   }
+                                                                     }
+                                                      }
+                                   },
+                       "archive":  {
+                                       "type":  "object",
+                                       "required":  [
+                                                        "collections"
+                                                    ],
+                                       "properties":  {
+                                                          "enabled":  {
+                                                                          "type":  "boolean"
+                                                                      },
+                                                          "collectionsPerScan":  {
+                                                                                     "type":  "integer",
+                                                                                     "minimum":  1,
+                                                                                     "maximum":  50
+                                                                                 },
+                                                          "collections":  {
+                                                                              "type":  "array",
+                                                                              "items":  {
+                                                                                            "$ref":  "#/$defs/collection"
+                                                                                        }
+                                                                          }
+                                                      }
+                                   }
+                   },
+    "$defs":  {
+                  "video":  {
+                                "type":  "object",
+                                "required":  [
+                                                 "id",
+                                                 "name",
+                                                 "channelId",
+                                                 "authorUrl",
+                                                 "date",
+                                                 "show",
+                                                 "title",
+                                                 "duration"
+                                             ],
+                                "properties":  {
+                                                   "id":  {
+                                                              "type":  "string",
+                                                              "pattern":  "^[A-Za-z0-9_-]{11}$"
+                                                          },
+                                                   "name":  {
+                                                                "type":  "string"
+                                                            },
+                                                   "enabled":  {
+                                                                   "type":  "boolean"
+                                                               },
+                                                   "channelId":  {
+                                                                     "type":  "string",
+                                                                     "pattern":  "^UC[A-Za-z0-9_-]{22}$"
+                                                                 },
+                                                   "authorUrl":  {
+                                                                     "type":  "string",
+                                                                     "pattern":  "^https://www\\.youtube\\.com/@[A-Za-z0-9_.-]+$"
+                                                                 },
+                                                   "date":  {
+                                                                "type":  "string",
+                                                                "format":  "date"
+                                                            },
+                                                   "show":  {
+                                                                "$ref":  "#/$defs/show"
+                                                            },
+                                                   "title":  {
+                                                                 "type":  "string"
+                                                             },
+                                                   "duration":  {
+                                                                    "type":  "integer",
+                                                                    "minimum":  1200
+                                                                },
+                                                   "description":  {
+                                                                       "type":  "string"
+                                                                   }
+                                               }
+                            },
+                  "show":  {
+                               "enum":  [
+                                            "Raw",
+                                            "SmackDown",
+                                            "Heat",
+                                            "Hardcore TV",
+                                            "ECW on TNN",
+                                            "Impact",
+                                            "Weekly PPV",
+                                            "Nitro",
+                                            "Thunder",
+                                            "PPV",
+                                            "Clash of the Champions",
+                                            "Saturday Night",
+                                            "Worldwide",
+                                            "Pro",
+                                            "Power Hour",
+                                            "Main Event",
+                                            "Prime",
+                                            "All Nighter",
+                                            "HonorClub",
+                                            "ROH TV",
+                                            "HDNet",
+                                            "High Impact TV",
+                                            "Specials"
+                                        ]
+                           },
+                  "playlist":  {
+                                   "type":  "object",
+                                   "required":  [
+                                                    "id",
+                                                    "name",
+                                                    "show"
+                                                ],
+                                   "properties":  {
+                                                      "id":  {
+                                                                 "type":  "string",
+                                                                 "pattern":  "^[A-Za-z0-9_-]{10,80}$"
+                                                             },
+                                                      "name":  {
+                                                                   "type":  "string"
+                                                               },
+                                                      "enabled":  {
+                                                                      "type":  "boolean"
+                                                                  },
+                                                      "show":  {
+                                                                   "anyOf":  [
+                                                                                 {
+                                                                                     "$ref":  "#/$defs/show"
+                                                                                 },
+                                                                                 {
+                                                                                     "const":  "Auto"
+                                                                                 }
+                                                                             ]
+                                                               },
+                                                      "channelId":  {
+                                                                        "type":  "string"
+                                                                    },
+                                                      "authorUrl":  {
+                                                                        "type":  "string"
+                                                                    },
+                                                      "maxPages":  {
+                                                                       "type":  "integer",
+                                                                       "minimum":  1,
+                                                                       "maximum":  60
+                                                                   },
+                                                      "recentOnly":  {
+                                                                         "type":  "boolean"
+                                                                     }
+                                                  }
+                               },
+                  "collection":  {
+                                     "type":  "object",
+                                     "required":  [
+                                                      "id",
+                                                      "name"
+                                                  ],
+                                     "properties":  {
+                                                        "id":  {
+                                                                   "type":  "string",
+                                                                   "pattern":  "^[A-Za-z0-9][A-Za-z0-9_.-]{0,199}$"
+                                                               },
+                                                        "name":  {
+                                                                     "type":  "string"
+                                                                 },
+                                                        "enabled":  {
+                                                                        "type":  "boolean"
+                                                                    },
+                                                        "showHint":  {
+                                                                         "$ref":  "#/$defs/show"
+                                                                     },
+                                                        "dateOrder":  {
+                                                                          "enum":  [
+                                                                                       "MDY",
+                                                                                       "DMY"
+                                                                                   ]
+                                                                      },
+                                                        "year":  {
+                                                                     "type":  "integer",
+                                                                     "minimum":  1983,
+                                                                     "maximum":  2028
+                                                                 },
+                                                        "frozen":  {
+                                                                       "type":  "boolean"
+                                                                   },
+                                                        "overrides":  {
+                                                                          "type":  "object",
+                                                                          "additionalProperties":  {
+                                                                                                       "type":  "object",
+                                                                                                       "properties":  {
+                                                                                                                          "date":  {
+                                                                                                                                       "type":  "string",
+                                                                                                                                       "format":  "date"
+                                                                                                                                   },
+                                                                                                                          "show":  {
+                                                                                                                                       "$ref":  "#/$defs/show"
+                                                                                                                                   },
+                                                                                                                          "title":  {
+                                                                                                                                        "type":  "string"
+                                                                                                                                    },
+                                                                                                                          "part":  {
+                                                                                                                                       "type":  "integer",
+                                                                                                                                       "minimum":  1
+                                                                                                                                   }
+                                                                                                                      }
+                                                                                                   }
+                                                                      },
+                                                        "mappedOnly":  {
+                                                                           "type":  "boolean"
+                                                                       }
+                                                    }
+                                 }
+              }
 }
