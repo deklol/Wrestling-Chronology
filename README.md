@@ -24,6 +24,7 @@ A remote-friendly Fire TV app for watching full wrestling shows in chronological
 - Shared community likes, views, comments and replies, plus community rankings on the homepage.
 - Year → All → Filter shows: select the programmes included in chronological autoplay.
 - Built-in streaming player for YouTube, Internet Archive, Dailymotion and OK.ru.
+- Automatic quality by default, with available resolutions in the player settings and current quality in the episode sidebar. Recordings with one resolution show Original quality.
 - Optional 4:3-to-16:9 horizontal stretch, available in the player and global Settings.
 - Local History with 25 shows per page, progress bars, Continue and Rewatch; includes manually marked watched shows.
 - Chronological autoplay, multipart recordings, resume and watched progress.

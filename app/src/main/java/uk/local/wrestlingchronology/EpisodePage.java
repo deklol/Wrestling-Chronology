@@ -13,7 +13,7 @@ final class EpisodePage {
   final FrameLayout root, video;
   final LinearLayout page, main, details, discussionHost;
   final ScrollView scroll;
-  final TextView sourceInfo;
+  final TextView sourceInfo, qualityInfo;
   boolean fullscreen;
   String shownEpisode = "";
   final int videoHeight;
@@ -47,6 +47,8 @@ final class EpisodePage {
     Ui.gap(main, 16); main.addView(Ui.text(activity, "Your position is saved automatically. Full shows play in chronological order.", 11, Ui.MUTED));
     sourceInfo = Ui.text(activity, "Source: finding a stream…", 12, Ui.accent());
     sourceInfo.setPadding(dp(12), dp(10), dp(12), dp(10)); sourceInfo.setBackground(Ui.shape(activity, Company.current.surface(), 0));
+    qualityInfo = Ui.text(activity, "Quality: loading…", 12, Ui.MUTED);
+    qualityInfo.setPadding(dp(12), 0, dp(12), dp(6));
   }
   int dp(float n) { return Ui.dp(activity, n); }
   void setFullscreen(boolean value) {
@@ -90,6 +92,8 @@ final class EpisodePage {
     Ui.gap(details, 12);
     if (sourceInfo.getParent() != null) ((ViewGroup) sourceInfo.getParent()).removeView(sourceInfo);
     details.addView(sourceInfo); sourceInfo.setText("Source: finding a stream…");
+    if (qualityInfo.getParent() != null) ((ViewGroup) qualityInfo.getParent()).removeView(qualityInfo);
+    details.addView(qualityInfo); qualityInfo.setText("Quality: loading…");
     Ui.gap(details, 12); details.addView(Ui.text(activity, item.description.isEmpty() ? item.title : item.description, 13, Ui.MUTED));
     Ui.gap(details, 16);
     details.addView(Ui.button(activity, "Comments & replies", false, this::discussion));

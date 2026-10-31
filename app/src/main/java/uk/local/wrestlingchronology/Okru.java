@@ -77,7 +77,17 @@ final class Okru {
   }
 
   /** Race small range reads, not whole recordings; use only the provider's listed hosts. */
-  static String responsiveUrl(String original, JSONArray hosts) throws Exception {
+  static final class Probe {
+    final String url;
+    final long bitrate;
+    Probe(String url, long bitrate) { this.url = url; this.bitrate = bitrate; }
+  }
+
+  static long initialBitrate(long bytes, long elapsedMs) {
+    return Math.max(3000000L, Math.min(20000000L, bytes * 8000L / Math.max(1L, elapsedMs)));
+  }
+
+  static Probe responsiveUrl(String original, JSONArray hosts) throws Exception {
     LinkedHashSet<String> urls = new LinkedHashSet<>();
     URI uri = new URI(original);
     if (hosts != null) for (int i = 0; i < Math.min(2, hosts.length()); i++) {
@@ -87,8 +97,9 @@ final class Okru {
     }
     urls.add(original);
     ExecutorService pool = Executors.newFixedThreadPool(urls.size());
-    CompletionService<String> finished = new ExecutorCompletionService<>(pool);
+    CompletionService<Probe> finished = new ExecutorCompletionService<>(pool);
     for (String url : urls) finished.submit(() -> {
+      long started = System.nanoTime();
       HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
       connection.setConnectTimeout(3000); connection.setReadTimeout(3000);
       connection.setRequestProperty("User-Agent", Resolver.USER_AGENT);
@@ -99,7 +110,8 @@ final class Okru {
         try (InputStream input = connection.getInputStream()) {
           byte[] buffer = new byte[16384]; int total = 0, count;
           while (total < 262144 && (count = input.read(buffer, 0, Math.min(buffer.length, 262144-total))) > 0) total += count;
-          return total == 262144 ? url : null;
+          return total == 262144 ? new Probe(url, initialBitrate(total,
+              TimeUnit.NANOSECONDS.toMillis(System.nanoTime() - started))) : null;
         }
       } finally { connection.disconnect(); }
     });
@@ -108,9 +120,9 @@ final class Okru {
       for (int i = 0; i < urls.size(); i++) {
         long remaining = deadline-System.nanoTime();
         if (remaining <= 0) break;
-        Future<String> result = finished.poll(remaining, TimeUnit.NANOSECONDS);
+        Future<Probe> result = finished.poll(remaining, TimeUnit.NANOSECONDS);
         if (result == null) break;
-        try { String url = result.get(); if (url != null) return url; }
+        try { Probe probe = result.get(); if (probe != null) return probe; }
         catch (ExecutionException ignored) { }
       }
       return null;
@@ -138,14 +150,15 @@ final class Okru {
       JSONObject movie = metadata.optJSONObject("movie");
       if (movie == null || !id.equals(movie.optString("movieId", movie.optString("id")))) continue;
       String mp4 = progressive(metadata, quality);
-      String selected = mp4 == null ? null : responsiveUrl(mp4, metadata.optJSONArray("failoverHosts"));
+      Probe selected = mp4 == null ? null : responsiveUrl(mp4, metadata.optJSONArray("failoverHosts"));
       String url = metadata.optString("hlsManifestUrl", metadata.optString("ondemandHls"));
       if (!mediaUrl(url)) throw new IOException("No compatible public OK.ru stream");
       Resolver.Resolved result = new Resolver.Resolved();
       result.provider = "okru"; result.label = "OK.ru"; result.videos.add(url);
       result.hls = true;
       result.originHost = new URI(url).getHost();
-      result.deliveryHost = selected == null ? result.originHost : new URI(selected).getHost();
+      result.deliveryHost = selected == null ? result.originHost : new URI(selected.url).getHost();
+      result.initialBitrate = selected == null ? 5000000L : selected.bitrate;
       return result;
     }
     throw new IOException("OK.ru video is unavailable or requires provider login");

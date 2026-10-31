@@ -61,6 +61,9 @@ final class Resolver {
     String audio, provider, label;
     boolean hls;
     String originHost, deliveryHost;
+    long initialBitrate = 5000000L;
+    final SortedMap<Integer, String> qualityUrls = new TreeMap<>();
+    int selectedHeight;
   }
 
   static int height(VideoStream stream) {
@@ -135,7 +138,7 @@ final class Resolver {
     videos.removeIf(
         stream ->
             !stream.isUrl()
-                || height(stream) > quality
+                || height(stream) > 1080
                 || stream.getFormat() == null
                 || !stream.getFormat().getMimeType().contains("mp4")
                 || (stream.getCodec() != null
@@ -147,7 +150,11 @@ final class Resolver {
             .reversed()
             .thenComparing(VideoStream::isVideoOnly));
     if (videos.isEmpty()) throw new IOException("No compatible YouTube video stream");
-    VideoStream video = videos.get(0);
+    for (VideoStream candidate : videos)
+      result.qualityUrls.putIfAbsent(height(candidate), candidate.getContent());
+    VideoStream video = videos.stream().filter(candidate -> height(candidate) <= quality)
+        .findFirst().orElse(videos.get(videos.size() - 1));
+    result.selectedHeight = height(video);
     result.videos.add(video.getContent());
     if (video.isVideoOnly()) {
       AudioStream selected = audio.get(0);

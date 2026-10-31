@@ -1,7 +1,7 @@
 {
-  "versionCode": 14,
-  "versionName": "0.1.8",
-  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.8/Wrestling-Chronology.apk",
-  "sha256": "5cfe1df553c40ff28d29ced657452d7a9ba84c6f35759630352df95c92762ba7",
-  "notes": "Sorry for all the updates. I keep finding inconsistencies, and I want it to be perfect. Fixes full PPVs incorrectly grouped with pre-shows or other events, cleans up titles, and repairs cached source mappings."
+  "versionCode": 15,
+  "versionName": "0.1.9",
+  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.9/Wrestling-Chronology.apk",
+  "sha256": "b2d34f14ec47086605f216da30ba4161ce7cb5ab32bb9d57501f4f5246f04f95",
+  "notes": "Sorry for all the updates. I keep finding inconsistencies, and I want it to be perfect. Adds Auto and manual playback quality, smoother HLS quality changes, recovery from stalled requests, current resolution in the sidebar, and aligned player controls."
 }
