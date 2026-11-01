@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "wcw",
-  "revision": 1793414990,
+  "revision": 1793534486,
   "catalogue": {
     "schemaVersion": 1,
     "generatedAt": "2026-10-19T22:06:23.287590+00:00",
@@ -86665,6 +86665,29 @@
         "id": "2001-03-26:nitro",
         "title": "Monday Nitro",
         "category": "weekly"
+      },
+      {
+        "id": "wcw:1987-10-03:saturdaynight",
+        "date": "1987-10-03",
+        "year": 1987,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2890,
+        "thumbnail": "https://i.ytimg.com/vi/qyRQF_3QdUs/hqdefault.jpg",
+        "poster": "https://i.ytimg.com/vi/qyRQF_3QdUs/hqdefault.jpg",
+        "sources": [
+          {
+            "type": "youtube",
+            "videoId": "qyRQF_3QdUs",
+            "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+            "direct": true,
+            "title": "FULL EPISODE: Ron Garvin celebrates World Title win; Taylor steals Koloff\u2019s title | WCW, Oct 3, 1987",
+            "duration": 2890,
+            "label": "Official YouTube"
+          }
+        ],
+        "discoveredAt": 0
       }
     ],
     "historyMigrations": {
@@ -86855,6 +86878,17 @@
           "date": "1996-05-27",
           "show": "Nitro",
           "duration": 5528,
+          "enabled": true,
+          "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+          "authorUrl": "https://www.youtube.com/@WCW"
+        },
+        {
+          "id": "qyRQF_3QdUs",
+          "name": "FULL EPISODE: Ron Garvin celebrates World Title win; Taylor steals Koloff\u2019s title | WCW, Oct 3, 1987",
+          "title": "FULL EPISODE: Ron Garvin celebrates World Title win; Taylor steals Koloff\u2019s title | WCW, Oct 3, 1987",
+          "date": "1987-10-03",
+          "show": "Saturday Night",
+          "duration": 2890,
           "enabled": true,
           "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
           "authorUrl": "https://www.youtube.com/@WCW"

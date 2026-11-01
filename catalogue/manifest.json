@@ -21,9 +21,9 @@
     },
     "wcw": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/wcw.json",
-      "sha256": "ddd61b30afdbd4d48c0ddedea8004d42607875e602fb83fcd754bc9785b1fcbd",
-      "bytes": 4372369,
-      "revision": 1793414990
+      "sha256": "2c3e4d140d57803c08c3fd3cbee03355754088435a3510586043c23203524cc3",
+      "bytes": 4373716,
+      "revision": 1793534486
     },
     "tna": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/tna.json",
