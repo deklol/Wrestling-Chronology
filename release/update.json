@@ -1,7 +1,7 @@
 {
-  "versionCode": 15,
-  "versionName": "0.1.9",
-  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.9/Wrestling-Chronology.apk",
-  "sha256": "b2d34f14ec47086605f216da30ba4161ce7cb5ab32bb9d57501f4f5246f04f95",
-  "notes": "Sorry for all the updates. I keep finding inconsistencies, and I want it to be perfect. Adds Auto and manual playback quality, smoother HLS quality changes, recovery from stalled requests, current resolution in the sidebar, and aligned player controls."
+  "versionCode": 16,
+  "versionName": "0.1.10",
+  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.10/Wrestling-Chronology.apk",
+  "sha256": "32ac4290be21117c127e7ef8c93b6a28476751d54006c00a6c0e6920b8b9f261",
+  "notes": "Adds WCtv with an automatic TV guide and remote controls, NJPW and NXT, shared Android view counts, Donate and icon search. Includes the latest source libraries. The Android app remains free."
 }

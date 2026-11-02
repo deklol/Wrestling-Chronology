@@ -6,7 +6,7 @@ import android.view.View;
 import java.util.Locale;
 /** A clipped, continuously moving line independent of remote focus. */
 final class SupportTicker extends View {
-  private static final String MESSAGE = "THANK YOU FOR YOUR SUPPORT! IF YOU WOULD LIKE ACCCESS TO THE WEBSITE LIBRARY FOR $4.99 (LIFETIME ACCESS) WORKS ON ALL DEVICES WITH INTERNET, INCLUDING OFFLINE DOWNLOAD FEATURES, CONTACT ME ON X.COM (x.com/digitalm1nd) OR REDDIT (u/dekkytsh)".toUpperCase(Locale.ROOT);
+  private static final String MESSAGE = "ANDROID WILL ALWAYS BE FREE. DONATIONS ARE NEVER REQUIRED, BUT ALWAYS WELCOME. PAYPAL: DEKKY@LIVE.CO.UK. DONATIONS OVER $4.99 INCLUDE LIFETIME PRIVATE WEB APP ACCESS. LEAVE YOUR EMAIL IN THE DONATION NOTE OR MESSAGE U/DEKKYTSH ON REDDIT OR @DIGITALM1ND ON X FOR YOUR CODE. SEE DONATE FOR DETAILS. THANK YOU FOR YOUR SUPPORT!";
   private final Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
   private final float width, gap, speed;
   private float offset;

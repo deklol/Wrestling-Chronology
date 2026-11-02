@@ -17,3 +17,11 @@ The included GitHub Action runs daily and can be started manually. It refreshes 
 The manifest hash checks integrity, not an independent signature. Trust comes from HTTPS and the repository owner. A custom HTTPS feed is configurable in Settings; it receives the same validation and cannot supply executable code.
 
 App updates are separate: GitHub releases carry the APK and require the normal Fire TV installer confirmation. Users can skip a version and check manually in Settings.
+
+
+NJPW and NXT use the reviewed discovery rules in `sources/discovery/` with their
+existing date and tournament parsers. `scripts/curated_sources.py` publishes the
+same validated company packs as the other libraries. A failed provider or
+unverified new uploader is reported and skipped without dropping existing shows.
+TV schedules are separate from source packs and are fetched automatically; users
+do not need to install an APK when the guide changes.

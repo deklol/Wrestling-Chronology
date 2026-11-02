@@ -72,6 +72,8 @@ final class Resolver {
   }
 
   static int audioRank(AudioStream stream) {
+    if (Company.current == Company.NJPW && stream.getAudioTrackType() == AudioTrackType.ORIGINAL
+        && stream.getAudioLocale() != null && "ja".equals(stream.getAudioLocale().getLanguage())) return 20;
     Locale language = stream.getAudioLocale();
     String id = String.valueOf(stream.getAudioTrackId()),
         name = String.valueOf(stream.getAudioTrackName()).toLowerCase(Locale.UK);

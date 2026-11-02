@@ -85,6 +85,18 @@ final class Ui {
     return result;
   }
 
+  static ImageButton searchButton(Context context, Runnable action) {
+    ImageButton button = new ImageButton(context);
+    button.setImageResource(R.drawable.ic_search);
+    button.setContentDescription("Search");
+    button.setBackground(focus(context, false));
+    button.setPadding(dp(context, 10), dp(context, 10), dp(context, 10), dp(context, 10));
+    button.setScaleType(ImageView.ScaleType.FIT_CENTER);
+    button.setFocusable(true);
+    button.setOnClickListener(v -> action.run());
+    return button;
+  }
+
   static LinearLayout horizontal(Context context) {
     LinearLayout result = new LinearLayout(context);
     result.setOrientation(LinearLayout.HORIZONTAL);

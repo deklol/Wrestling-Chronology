@@ -28,3 +28,9 @@ Keep the signing key private and use the same key for every update. Without thes
 For an app update, increment both version fields in `app/build.gradle`. Publish the signed APK as `Wrestling-Chronology.apk` in a GitHub release. The app checks `deklol/Wrestling-Chronology`; a fork must change the repository URL in `Updater.java` and the source feed in `RemoteLibrary.java`.
 
 Private keys, local SDK paths, build outputs and metadata caches are excluded from the public source bundle.
+
+Hosted community features and the shared TV guide require the operator-provided
+`WC_COMMUNITY_BASE_URL` and `WC_COMMUNITY_APP_KEY` build environment variables.
+These are separate from the public source packs. Keep private operator settings
+out of source archives. A build without them can still use the company libraries
+and their external video sources, but cannot register for hosted features.

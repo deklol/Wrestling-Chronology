@@ -153,10 +153,10 @@ public final class MainActivity extends Activity {
     content.addView(grid, Ui.lp(this, -1, 296));
     LinearLayout cards = null;
     int cardIndex = 0;
-    int cardWidth = (int) ((getResources().getDisplayMetrics().widthPixels / getResources().getDisplayMetrics().density - 80) / 3) - 10;
+    int cardWidth = (int) ((getResources().getDisplayMetrics().widthPixels / getResources().getDisplayMetrics().density - 80) / 4) - 10;
     View first = null;
     for (Company company : Company.ALL) {
-      if (cardIndex == 0 || cardIndex == 3) {
+      if (cardIndex % 4 == 0) {
         cards = Ui.horizontal(this);
         cards.setGravity(Gravity.CENTER);
         grid.addView(cards, Ui.lp(this, -1, 148));
@@ -209,6 +209,25 @@ public final class MainActivity extends Activity {
     getWindow().getDecorView().setSystemUiVisibility(5894);
   }
 
+  void openTv() {
+    Intent intent = new Intent(this, TvActivity.class);
+    if (BuildConfig.DEBUG) intent.putExtra("test_muted", getIntent().getBooleanExtra("test_muted", false));
+    startActivityForResult(intent, 71);
+  }
+
+  @Override protected void onActivityResult(int request, int result, Intent data) {
+    super.onActivityResult(request, result, data);
+    if (request != 71 || result != RESULT_OK || data == null) return;
+    String target = data.getStringExtra("tv_page");
+    if ("companies".equals(target)) { companies(); return; }
+    if ("settings".equals(target)) { settings(); return; }
+    if ("search".equals(target)) { search(); return; }
+    if ("years".equals(target)) { openYears(); return; }
+    if (Arrays.asList("home", "weeklies", "ppv", "trending", "history", "donate").contains(target)) {
+      page = target; filter = "All"; year = 0; render();
+    }
+  }
+
   @Override
   protected void onResume() {
     super.onResume();
@@ -250,6 +269,11 @@ public final class MainActivity extends Activity {
   }
 
   void handlePlayIntent() {
+    if (BuildConfig.DEBUG && getIntent().getBooleanExtra("verify_tv", false)) {
+      getIntent().removeExtra("verify_tv");
+      openTv();
+      return;
+    }
     if (BuildConfig.DEBUG && getIntent().getBooleanExtra("verify_memory_cache", false)) {
       getIntent().removeExtra("verify_memory_cache");
       work.execute(() -> {
@@ -384,6 +408,8 @@ public final class MainActivity extends Activity {
               render();
             }));
     Ui.gap(nav, 10);
+    nav.addView(Ui.button(this, "TV", false, this::openTv));
+    Ui.gap(nav, 7);
     TextView trendingButton = Ui.button(this, "Trending", page.equals("trending"), () -> {
       page = "trending"; render();
     });
@@ -396,9 +422,11 @@ public final class MainActivity extends Activity {
     historyButton.setId(View.generateViewId());
     nav.addView(historyButton);
     Ui.gap(nav, 6);
-    nav.addView(Ui.button(this, "Search", false, this::search));
+    nav.addView(Ui.button(this, "Donate", page.equals("donate"), () -> { page = "donate"; render(); }));
     Ui.gap(nav, 10);
     nav.addView(Ui.button(this, "Settings", false, this::settings));
+    Ui.gap(nav, 8);
+    nav.addView(Ui.searchButton(this, this::search), Ui.lp(this, 40, 40));
     for (int i = 0; i < nav.getChildCount(); i++) {
       View child = nav.getChildAt(i);
       if (child.isClickable()) {
@@ -421,6 +449,7 @@ public final class MainActivity extends Activity {
     else if (page.equals("trending")) CommunityPanel.trending(this, root, trendingButton);
     else if (page.equals("history")) history(historyButton);
     else if (page.equals("about")) about();
+    else if (page.equals("donate")) DonatePage.show(this, root);
     else library();
   }
 
@@ -506,6 +535,21 @@ public final class MainActivity extends Activity {
     LinearLayout.LayoutParams heroLayout = Ui.lp(this, -1, current == null ? 260 : 300);
     heroLayout.setMargins(-d(30), 0, -d(30), 0);
     body.addView(hero, heroLayout);
+    LinearLayout tvPromo = Ui.vertical(this);
+    tvPromo.setPadding(d(20), d(16), d(20), d(16));
+    tvPromo.setBackground(Ui.gradient(this, Company.current.surface(), Company.current.background(), 0));
+    LinearLayout.LayoutParams promoBounds = Ui.lp(this, -1, -2);
+    promoBounds.setMargins(0, d(16), 0, d(12));
+    body.addView(tvPromo, promoBounds);
+    tvPromo.addView(text("WCtv · Channels around the clock", 12, Company.current.accent()));
+    Ui.gap(tvPromo, 6);
+    TextView tvTitle = text("Your wrestling TV guide.", 22, Ui.WHITE);
+    tvTitle.setTypeface(null, Typeface.BOLD);
+    tvPromo.addView(tvTitle);
+    Ui.gap(tvPromo, 6);
+    tvPromo.addView(text("Dedicated wrestling channels, PPV specials and Monday Night Wars. Channel-hop, restart a programme or browse what’s next — plus CZW, JCW/ICP and wrestling documentaries, including Dark Side of the Ring.", 13, Ui.MUTED));
+    Ui.gap(tvPromo, 10);
+    tvPromo.addView(Ui.button(this, "Open TV guide →", true, this::openTv), Ui.lp(this, -2, -2));
     ImageView backdrop = new ImageView(this);
     backdrop.setScaleType(ImageView.ScaleType.CENTER_CROP);
     backdrop.setImageResource(Company.current.hero());
@@ -1389,9 +1433,9 @@ public final class MainActivity extends Activity {
     body.addView(Ui.button(this, "Open GitHub · source and downloads", false,
         () -> openAboutLink("https://github.com/deklol/Wrestling-Chronology")));
     Ui.gap(body, 20);
-    body.addView(text("Website access · $4.99", 19, Ui.accent()));
+    body.addView(text("Optional support & web access", 19, Ui.accent()));
     Ui.gap(body, 8);
-    body.addView(text("A website version is also available to watch on devices with an internet connection and a supported browser. For access, contact u/dekkytsh on Reddit or @digitalm1nd on X.", 14, Ui.WHITE));
+    body.addView(text("Android will always be free. Donations are never required. Donations over $4.99 include lifetime access to the private web app, with extra features on devices with a web browser and internet.\n\nPayPal: dekky@live.co.uk\n\nLeave your email in the donation note, or message u/dekkytsh on Reddit or @digitalm1nd on X for your access code. See Donate for the full details.", 14, Ui.WHITE));
     Ui.gap(body, 12);
     body.addView(Ui.button(this, "Reddit · u/dekkytsh", false,
         () -> openAboutLink("https://www.reddit.com/user/dekkytsh/")));

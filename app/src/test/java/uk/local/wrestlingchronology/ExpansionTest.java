@@ -30,13 +30,13 @@ public class ExpansionTest {
         String identity = e.getString("show") + ":" + e.getString("date");
         // ROH's Do or Die cards and evening events can share a date. They are
         // separate complete cards, not duplicate copies of one weekly episode.
-        if (co == Company.ROH && e.getString("show").equals("PPV"))
+        if ((co == Company.ROH || co == Company.NJPW) && e.getString("show").equals("PPV"))
           identity += ":" + e.getString("title");
         if (co == Company.AEW && !e.optString("eventPart").isEmpty())
           identity += ":" + e.getString("eventPart");
         assertTrue(e.getString("id"), keys.add(identity));
         assertTrue(e.getString("date").compareTo(co.firstDate) >= 0);
-        assertTrue(e.getString("date").compareTo("2026-10-29") <= 0);
+        assertTrue(e.getString("date").compareTo(java.time.LocalDate.now().toString()) <= 0);
         assertFalse(e.getString("show").contains("Superstars"));
         assertFalse(e.getString("show").contains("Saturday Morning Slam"));
       }

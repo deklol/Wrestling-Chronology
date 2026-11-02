@@ -124,7 +124,12 @@ final class EpisodePage {
     autoplay.setOnClickListener(v -> { Catalog.prefs(activity).edit().putBoolean("autoplay", !Catalog.prefs(activity).getBoolean("autoplay", true)).apply(); labelAutoplay.run(); }); details.addView(autoplay);
     Ui.gap(details, 6);
     details.addView(Ui.button(activity, "Restart episode", false, () -> {
-      if (activity.player != null) { activity.player.seekTo(0, 0); activity.player.play(); }
+      if (activity.player != null) {
+        if (activity.communityViews != null) activity.communityViews.restart();
+        activity.player.seekTo(0, 0);
+        activity.player.play();
+        if (activity.communityViews != null) activity.communityViews.playing(activity.player.isPlaying());
+      }
     }));
     Ui.gap(details, 6);
     TextView watched = Ui.button(activity, Catalog.watched(activity, item) ? "Mark unwatched" : "Mark watched", false, () -> {});

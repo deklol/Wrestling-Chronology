@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".PlayerActivity" android:exported="false" android:screenOrientation="landscape" />
+        <activity android:name=".TvActivity" android:exported="false" android:screenOrientation="landscape" />
         <service android:name=".LibraryJob" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true" />
         <provider android:name=".UpdateProvider" android:authorities="${applicationId}.updates"
             android:exported="false" android:grantUriPermissions="true" />

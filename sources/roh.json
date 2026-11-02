@@ -502,7 +502,7 @@
       },
       {
         "id": "nl8KX6AixjU",
-        "name": "ROH + CMLL Present: Global Wars M\u00e9xico 2025",
+        "name": "ROH + CMLL Present: Global Wars México 2025",
         "enabled": true,
         "channelId": "UC4_uDa6w1kOyzsikIzReCKQ",
         "authorUrl": "https://www.youtube.com/@ringofhonor",
@@ -6426,6 +6426,20 @@
             "date": "2026-06-11",
             "show": "HonorClub",
             "title": "HonorClub"
+          }
+        }
+      },
+      {
+        "id": "roh-on-honor-club-episode-190-29-10-26",
+        "name": "ROH on HonorClub Episode 190 29-10-26",
+        "enabled": true,
+        "mappedOnly": true,
+        "dateOrder": "DMY",
+        "overrides": {
+          "ROH on HonorClub Episode 190 29-10-26.mp4": {
+            "date": "2026-10-29",
+            "show": "HonorClub",
+            "title": "HonorClub #190"
           }
         }
       }

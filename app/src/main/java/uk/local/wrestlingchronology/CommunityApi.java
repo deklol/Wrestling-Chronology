@@ -9,7 +9,7 @@ import java.security.SecureRandom;
 import java.util.concurrent.*;
 import org.json.JSONObject;
 
-/** Community-only credentials. Never used for source or media requests. */
+/** Installation credentials. Website access remains separate from native API scopes. */
 final class CommunityApi {
   // Separate from source resolution: a slow discussion must not queue ahead of playback.
   static final ExecutorService IO = Executors.newFixedThreadPool(2);
@@ -67,6 +67,8 @@ final class CommunityApi {
       throw error;
     }
   }
+
+  String tvCredential() throws Exception { return token(false, ""); }
 
   JSONObject read(String company, String id, String extra) throws Exception {
     return request("/api/app/community?company=" + encode(company) + "&id=" + encode(id) + extra, null);

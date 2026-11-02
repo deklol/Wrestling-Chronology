@@ -49,7 +49,11 @@ final class Company {
       "2018-01-01", "2028-12-31", new String[] {"Dynamite", "Collision", "Rampage", "Dark", "Dark: Elevation"});
   static final Company ROH = new Company("roh", "Ring of Honor", "2002–2026", R.drawable.logo_roh,
       "2002-02-23", "2028-12-31", new String[] {"HonorClub", "ROH TV", "HDNet", "High Impact TV"});
-  static final List<Company> ALL = Arrays.asList(WWE, WCW, ECW, TNA, AEW, ROH);
+  static final Company NJPW = new Company("njpw", "New Japan", "2002–2026", R.drawable.logo_njpw,
+      "2002-01-01", "2028-12-31", new String[] {"NJPW STRONG", "STRONG On Demand", "NJPW on AXS"});
+  static final Company NXT = new Company("nxt", "NXT", "2010–2026", R.drawable.logo_nxt,
+      "2010-01-01", "2028-12-31", new String[] {"NXT", "NXT UK", "Level Up"});
+  static final List<Company> ALL = Arrays.asList(WCW, WWE, ECW, ROH, TNA, NJPW, NXT, AEW);
   // WCW is the default for the inherited parser tests; entry points select explicitly.
   static volatile Company current = WCW;
   final String id, name, period, firstDate, lastDate;
@@ -108,6 +112,8 @@ final class Company {
   }
 
   int hero() {
+    if (this == NJPW) return R.drawable.hero_njpw;
+    if (this == NXT) return R.drawable.hero_nxt;
     if (this == ROH) return R.drawable.hero_roh;
     if (this == AEW) return R.drawable.logo_aew;
     if (this == WWE) return R.drawable.hero_wwe;
@@ -117,6 +123,8 @@ final class Company {
   }
 
   int accent() {
+    if (this == NJPW) return 0xffeeeeee;
+    if (this == NXT) return 0xffefc354;
     if (this == ROH) return 0xffff6470;
     if (this == AEW) return 0xffd7b65d;
     if (this == WCW) return 0xff67aeef;
@@ -126,6 +134,8 @@ final class Company {
   }
 
   int primary() {
+    if (this == NJPW) return 0xff525252;
+    if (this == NXT) return 0xff80611a;
     if (this == ROH) return 0xff950c20;
     if (this == AEW) return 0xff82662a;
     if (this == WCW) return 0xff225b90;
@@ -135,6 +145,7 @@ final class Company {
   }
 
   int secondary() {
+    if (this == NJPW || this == NXT) return 0xff171717;
     if (this == ROH) return 0xff27070c;
     if (this == AEW) return 0xff343434;
     if (this == WCW) return 0xff142c45;
@@ -144,6 +155,7 @@ final class Company {
   }
 
   int background() {
+    if (this == NJPW || this == NXT) return 0xff090909;
     if (this == ROH) return 0xff090607;
     if (this == AEW) return 0xff090909;
     if (this == WCW) return 0xff080d14;
@@ -153,6 +165,8 @@ final class Company {
   }
 
   int surface() {
+    if (this == NJPW) return 0xff202020;
+    if (this == NXT) return 0xff292316;
     if (this == ROH) return 0xff231014;
     if (this == AEW) return 0xff202020;
     if (this == WCW) return 0xff142437;

@@ -52,8 +52,9 @@ final class DirectYoutube {
         || !entry.getString("authorUrl").matches("https://www\\.youtube\\.com/@[A-Za-z0-9_.-]+"))
       throw new JSONException("Invalid direct YouTube source identity");
     LocalDate date = LocalDate.parse(entry.getString("date"));
+    boolean reviewed = entry.optBoolean("reviewedFullShow") && (Company.current == Company.NJPW || Company.current == Company.NXT);
     if (CatalogSync.validDate(date.getYear(), date.getMonthValue(), date.getDayOfMonth()) == null
-        || entry.getInt("duration") < (entry.getString("show").equals("PPV") && !preshow(entry) ? 2700 : 1200)
+        || entry.getInt("duration") < (reviewed ? 1200 : entry.getString("show").equals("PPV") && !preshow(entry) ? 2700 : 1200)
         || entry.getString("title").isEmpty()
         || entry.getString("name").isEmpty())
       throw new JSONException("Invalid direct YouTube broadcast metadata");

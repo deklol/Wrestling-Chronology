@@ -22,7 +22,8 @@ MONTHS.update({name.lower(): index for index, name in enumerate(calendar.month_a
 MONTHS["sept"] = 9
 LIMITS = {"aew": ("2018-01-01", "2028-12-31"), "wwe": ("1985-01-01", "2028-12-31"), "ecw": ("1992-01-01", "2006-12-31"),
           "wcw": ("1983-01-01", "2001-03-26"), "tna": ("2002-01-01", "2028-12-31"),
-          "roh": ("2002-02-23", "2028-12-31")}
+          "roh": ("2002-02-23", "2028-12-31"), "njpw": ("2002-01-01", "2028-12-31"),
+          "nxt": ("2010-01-01", "2028-12-31")}
 CHANNELS = {"wwe": "UCJ5v_MCY6GNUBTO8-D3XoAg", "wcw": "UCbGG2hv4cWmIrBAIhGiCdSg",
             "ecw": "UCNSnSemXKDc9UEZ7m31wY9Q", "tna": "UCOp8wkVqdrWbFYHjDv946QQ",
             "roh": "UC4_uDa6w1kOyzsikIzReCKQ"}
@@ -460,7 +461,14 @@ def publish_packs(base_url, refresh=False):
                 collections.update({entry['id']: entry for entry in config['archive']['collections']})
                 config['archive']['collections'] = list(collections.values())
         library = old["catalogue"] if old else seed
-        if refresh:
+        if refresh and company in ('nxt', 'njpw'):
+            from curated_sources import refresh_curated
+            try:
+                library, config, notes = refresh_curated(ROOT, company, library, config)
+                report.extend(notes)
+            except Exception as error:
+                report.append({'company':company,'source':'Reviewed discovery','status':'skipped','reason':str(error)})
+        elif refresh:
             from okru_sources import refresh_okru
             report.extend(refresh_okru(library, company, config))
             if company == 'roh':

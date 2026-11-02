@@ -36,6 +36,18 @@
       "sha256": "093d1e56c40cea1fab4c5ed0d56ff679af510adba8908a25f685d9da30218481",
       "bytes": 777517,
       "revision": 1793444825
+    },
+    "njpw": {
+      "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/njpw.json",
+      "sha256": "b4543df37505656d640b7827ff65959efb77d7a07325b503473ac39c89c92896",
+      "bytes": 1171281,
+      "revision": 1793582984
+    },
+    "nxt": {
+      "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/nxt.json",
+      "sha256": "b976dd7cc29adf3384f3bceb2839cae62fb5864943903f33950623a605f73874",
+      "bytes": 2558803,
+      "revision": 1793582984
     }
   }
 }
