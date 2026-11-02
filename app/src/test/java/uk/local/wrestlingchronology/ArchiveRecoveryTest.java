@@ -29,6 +29,20 @@ public class ArchiveRecoveryTest {
   }
 
   @Test
+  public void incomingBytesPreventRestartBeforeDemuxedSamplesAppear() {
+    ArchiveRecovery recovery = new ArchiveRecovery();
+    for (int second = 0; second <= 30; second++) {
+      long now = second * 1000L;
+      assertEquals(ArchiveRecovery.Action.NONE,
+          recovery.sample(now, true, false, 0, 4000, 4000, now));
+    }
+    assertEquals(ArchiveRecovery.Action.NONE,
+        recovery.sample(35999, true, false, 0, 4000, 4000, 30000));
+    assertEquals(ArchiveRecovery.Action.RECONNECT,
+        recovery.sample(36000, true, false, 0, 4000, 4000, 30000));
+  }
+
+  @Test
   public void pauseOrAudioFocusLossCancelsStallTimer() {
     ArchiveRecovery recovery = new ArchiveRecovery();
     recovery.sample(0, true, false, 0, 4000, 4000);

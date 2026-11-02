@@ -72,6 +72,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
                       + playback.active.isPlaying()
                       + " audio="
                       + (playback.active.getAudioFormat() != null)
+                      + " height=" + playback.quality
                       + " dropped="
                       + (counters == null ? -1 : counters.droppedBufferCount));
             }
@@ -474,6 +475,12 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
                           + " · Select any programme to watch");
                   if (guideOpen && firstChannelButton != null) firstChannelButton.requestFocus();
                   if (autoplay) {
+                    String testProgramme = BuildConfig.DEBUG ? getIntent().getStringExtra("test_programme") : null;
+                    if (testProgramme != null) {
+                      for (TvGuide.Channel channel : guide.channels) for (TvGuide.Slot slot : channel.slots) {
+                        if (testProgramme.equals(slot.episode)) { tune(slot, false); return; }
+                      }
+                    }
                     double watchAt = playbackTime;
                     String requested = BuildConfig.DEBUG ? getIntent().getStringExtra("test_channel") : null;
                     TvGuide.Channel selected = guide.channel(requested == null

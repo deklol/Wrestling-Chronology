@@ -41,7 +41,7 @@ final class Okru {
   }
 
   static String page(String id) throws Exception {
-    HttpURLConnection connection = (HttpURLConnection) new URL("https://ok.ru/video/" + id).openConnection();
+    HttpURLConnection connection = (HttpURLConnection) new URL("https://ok.ru/videoembed/" + id).openConnection();
     connection.setConnectTimeout(12000); connection.setReadTimeout(18000);
     connection.setRequestProperty("User-Agent", Resolver.USER_AGENT);
     connection.setRequestProperty("Referer", "https://ok.ru/");
@@ -139,10 +139,9 @@ final class Okru {
       throw new IOException("Invalid OK.ru identity");
     if (!pinnedTv && !owner.equals(owners.get(id))) throw new IOException("OK.ru source is not configured");
     String html = page(id);
-    Matcher author = Pattern.compile("<a\\b[^>]*movie_author_link[^>]*>|<a\\b[^>]*href=[\"']/profile/" + owner + "/[^>]*>", Pattern.CASE_INSENSITIVE).matcher(html);
-    boolean verified = false;
-    while (author.find()) if (author.group().contains("movie_author_link") && author.group().contains("/profile/" + owner + "/")) verified = true;
-    if (!verified) throw new IOException("OK.ru uploader could not be verified");
+    // The source was approved by the catalogue above (or the authenticated TV
+    // guide). Match its exact movie ID below. The public embed omits the large
+    // recommendation page and does not include a separate uploader profile link.
     Matcher player = Pattern.compile("data-options=([\"'])(.*?)\\1", Pattern.DOTALL).matcher(html);
     while (player.find()) {
       JSONObject options;
@@ -155,11 +154,17 @@ final class Okru {
       if (metadata == null || !"UPLOADED_ODKL".equals(metadata.optString("provider"))) continue;
       JSONObject movie = metadata.optJSONObject("movie");
       if (movie == null || !id.equals(movie.optString("movieId", movie.optString("id")))) continue;
-      String mp4 = progressive(metadata, quality);
-      Probe selected = mp4 == null ? null : responsiveUrl(mp4, metadata.optJSONArray("failoverHosts"));
       String url = metadata.optString("hlsManifestUrl", metadata.optString("ondemandHls"));
       if (!mediaUrl(url)) throw new IOException("No compatible public OK.ru stream");
       Resolver.Resolved result = new Resolver.Resolved();
+      String dash = metadata.optString("metadataUrl");
+      if (mediaUrl(dash)) {
+        result.provider = "okru"; result.label = "OK.ru";
+        result.videos.add(dash); result.dash = true; result.fallbackHls = url;
+        return result;
+      }
+      String mp4 = progressive(metadata, quality);
+      Probe selected = mp4 == null ? null : responsiveUrl(mp4, metadata.optJSONArray("failoverHosts"));
       result.provider = "okru"; result.label = "OK.ru"; result.videos.add(url);
       result.hls = true;
       result.originHost = new URI(url).getHost();

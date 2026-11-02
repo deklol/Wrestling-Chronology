@@ -116,6 +116,10 @@ final class TvPlayback {
                        Resolver.Resolved direct) {
     try {
       boolean okru = "okru".equals(stream.optString("provider"));
+      boolean buffered = okru || "archive".equals(stream.optString("provider"));
+      if (BuildConfig.DEBUG) Log.i("ChronologyTV", "PREPARE channel=" + slot.channel.id
+          + " provider=" + stream.optString("provider") + " direct=" + (direct != null)
+          + " dash=" + (direct != null && direct.dash) + " offset=" + offset);
       DefaultTrackSelector selector = new DefaultTrackSelector(context,
           new BufferedQualitySelection(() -> 0,
               () -> Catalog.prefs(context).getInt("quality", 720)));
@@ -130,9 +134,9 @@ final class TvPlayback {
               .setTrackSelector(selector)
               .setLoadControl(
                   new DefaultLoadControl.Builder()
-                      .setBufferDurationsMs(okru ? 60000 : 15000, okru ? 120000 : 90000,
-                          okru ? 2500 : 1200, okru ? 4000 : 2500)
-                      .setTargetBufferBytes((okru ? 48 : 24) * 1024 * 1024)
+                      .setBufferDurationsMs(buffered ? 60000 : 15000, buffered ? 120000 : 90000,
+                          buffered ? 6000 : 1200, buffered ? 6000 : 2500)
+                      .setTargetBufferBytes((buffered ? 48 : 24) * 1024 * 1024)
                       .setPrioritizeTimeOverSizeThresholds(false)
                       .build())
               .setBandwidthMeter(
@@ -169,6 +173,7 @@ final class TvPlayback {
         } else if ("dailymotion".equals(direct.provider)) {
           delivery = StreamingNetwork.dailymotion(context);
         } else if ("okru".equals(direct.provider)) {
+          http.setDefaultRequestProperties(Collections.singletonMap("Referer", "https://ok.ru/"));
           delivery = new ResolvingDataSource.Factory(StreamingNetwork.okru(context), spec -> {
             if (direct.originHost != null && direct.originHost.equals(spec.uri.getHost()))
               return spec.withUri(spec.uri.buildUpon().authority(direct.deliveryHost).build());
@@ -176,6 +181,8 @@ final class TvPlayback {
           });
         }
       }
+      final DataSource.Factory fallbackDelivery = delivery;
+      delivery = StreamingNetwork.bufferedMedia(direct, delivery, http, () -> {});
       DataSource.Factory authenticated =
           new ResolvingDataSource.Factory(
               delivery,
@@ -201,7 +208,7 @@ final class TvPlayback {
         parts = new JSONArray();
         for (String url : direct.videos)
           parts.put(new JSONObject().put("url", url).put("type",
-              direct.hls || "dailymotion".equals(direct.provider) ? "hls" : "mp4"));
+              direct.dash ? "dash" : direct.hls || "dailymotion".equals(direct.provider) ? "hls" : "mp4"));
       }
       ArrayList<MediaSource> sources = new ArrayList<>();
       int partIndex = 0;
@@ -212,7 +219,7 @@ final class TvPlayback {
             new MediaItem.Builder()
                 .setUri(api.mediaUrl(part.getString("url")))
                 .setMimeType(
-                    "hls".equals(part.optString("type"))
+                    "dash".equals(part.optString("type")) ? MimeTypes.APPLICATION_MPD : "hls".equals(part.optString("type"))
                         ? MimeTypes.APPLICATION_M3U8
                         : MimeTypes.VIDEO_MP4)
                 .build();
@@ -319,6 +326,27 @@ final class TvPlayback {
 
             @Override
             public void onPlayerError(PlaybackException error) {
+              if (direct != null && direct.dash && direct.fallbackHls != null
+                  && token == generation && (next == pending || next == active)) {
+                // A recording may expose a DASH URL its CDN no longer serves.
+                // Try its published HLS alternative once, without dropping the
+                // outgoing channel or recreating the player and audio surface.
+                String hls = direct.fallbackHls;
+                direct.fallbackHls = null;
+                direct.dash = false;
+                direct.hls = true;
+                direct.videos.set(0, hls);
+                long resume = next.getCurrentPosition();
+                if (next == pending) firstFrame = false;
+                MediaItem fallback = new MediaItem.Builder().setUri(hls)
+                    .setMimeType(MimeTypes.APPLICATION_M3U8).build();
+                next.setMediaSource(new DefaultMediaSourceFactory(fallbackDelivery)
+                    .createMediaSource(fallback), resume);
+                next.prepare();
+                next.play();
+                Log.w("ChronologyTV", "DASH_FALLBACK channel=" + slot.channel.id);
+                return;
+              }
               Log.e(
                   "ChronologyTV",
                   "PLAYBACK_ERROR channel=" + slot.channel.id + " code=" + error.getErrorCodeName(),

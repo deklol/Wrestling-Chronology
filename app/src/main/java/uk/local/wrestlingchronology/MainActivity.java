@@ -51,6 +51,41 @@ public final class MainActivity extends Activity {
     return Ui.text(this, value, size, color);
   }
 
+  boolean compactScreen() {
+    android.content.res.Configuration config = getResources().getConfiguration();
+    return (BuildConfig.DEBUG && getIntent().getBooleanExtra("verify_compact_layout", false))
+        || ((config.uiMode & android.content.res.Configuration.UI_MODE_TYPE_MASK)
+            != android.content.res.Configuration.UI_MODE_TYPE_TELEVISION && config.screenHeightDp <= 480);
+  }
+
+  TextView compactMenu(LinearLayout nav) {
+    nav.removeAllViews();
+    ImageView logo = new ImageView(this);
+    Company.current.setLogo(logo);
+    logo.setScaleType(ImageView.ScaleType.FIT_CENTER);
+    nav.addView(logo, Ui.lp(this, 44, 40));
+    Ui.gap(nav, 8);
+    nav.addView(Ui.button(this, "Companies", false, this::companies));
+    Ui.gap(nav, 8);
+    String label = page.equals("year") ? "Years" : page.equals("show") ? "Weeklies"
+        : page.equals("ppv") ? "PPVs" : Character.toUpperCase(page.charAt(0)) + page.substring(1);
+    TextView menu = Ui.button(this, label + "  \u25be", true, () -> {});
+    menu.setId(View.generateViewId());
+    nav.addView(menu, new LinearLayout.LayoutParams(0, d(44), 1));
+    String[] labels = {"Home", "Years", "Weeklies", "PPVs", "TV", "Trending", "History", "Donate", "Settings"};
+    menu.setOnClickListener(v -> new AlertDialog.Builder(this).setTitle("Browse")
+        .setItems(labels, (dialog, index) -> {
+          if (index == 4) { openTv(); return; }
+          if (index == 8) { settings(); return; }
+          if (index == 1) { openYears(); return; }
+          page = new String[]{"home", "years", "weeklies", "ppv", "tv", "trending", "history", "donate"}[index];
+          filter = "All"; year = 0; render();
+        }).show());
+    Ui.gap(nav, 8);
+    nav.addView(Ui.searchButton(this, this::search), Ui.lp(this, 44, 44));
+    return menu;
+  }
+
   @Override
   public void onCreate(Bundle state) {
     super.onCreate(state);
@@ -215,6 +250,7 @@ public final class MainActivity extends Activity {
       intent.putExtra("test_muted", getIntent().getBooleanExtra("test_muted", false));
       intent.putExtra("test_diagnostics", getIntent().getBooleanExtra("test_diagnostics", false));
       intent.putExtra("test_channel", getIntent().getStringExtra("test_channel"));
+      intent.putExtra("test_programme", getIntent().getStringExtra("test_programme"));
     }
     startActivityForResult(intent, 71);
   }
@@ -302,6 +338,12 @@ public final class MainActivity extends Activity {
       refresh(false);
     }
     String id = getIntent().getStringExtra("play_id");
+    if (BuildConfig.DEBUG && getIntent().hasExtra("verify_year")) {
+      int requestedYear = getIntent().getIntExtra("verify_year", 2004);
+      getIntent().removeExtra("verify_year");
+      openYear(requestedYear);
+      return;
+    }
     if (id != null) {
       getIntent().removeExtra("play_id");
       Catalog.Episode item = Catalog.find(id);
@@ -363,12 +405,16 @@ public final class MainActivity extends Activity {
       return;
     }
     root = Ui.vertical(this);
-    root.setPadding(page.equals("home") ? 0 : d(30), d(18), page.equals("home") ? 0 : d(30), d(16));
+    boolean compact = compactScreen();
+    int side = compact ? 12 : 30;
+    root.setPadding(page.equals("home") ? 0 : d(side), d(compact ? 6 : 18), page.equals("home") ? 0 : d(side), d(compact ? 6 : 16));
     root.setBackground(
         new GradientDrawable(
             GradientDrawable.Orientation.TL_BR,
             new int[] {Company.current.surface(), Company.current.background(), Ui.BG}));
     setContentView(root);
+    if (BuildConfig.DEBUG && getIntent().getBooleanExtra("verify_compact_layout", false))
+      root.setLayoutParams(new FrameLayout.LayoutParams(d(720), d(360), Gravity.CENTER));
     LinearLayout nav = Ui.horizontal(this);
     LinearLayout.LayoutParams navLayout = Ui.lp(this, -1, 48);
     if (page.equals("home")) navLayout.setMargins(d(30), 0, d(30), 0);
@@ -438,6 +484,10 @@ public final class MainActivity extends Activity {
         if (child instanceof TextView) ((TextView) child).setTextSize(11);
       }
     }
+    if (compact) {
+      trendingButton = compactMenu(nav);
+      historyButton = trendingButton;
+    }
     refreshStrip = Ui.vertical(this);
     refreshStrip.setPadding(d(page.equals("home") ? 36 : 6), d(7), d(page.equals("home") ? 36 : 6), d(4));
     refreshText = text("", 11, Ui.MUTED);
@@ -447,7 +497,7 @@ public final class MainActivity extends Activity {
     refreshStrip.addView(refreshBar, Ui.lp(this, -1, 6));
     root.addView(refreshStrip);
     updateRefresh();
-    Ui.gap(root, 14);
+    Ui.gap(root, compact ? 4 : 14);
     if (page.equals("home")) home();
     else if (page.equals("years")) years();
     else if (page.equals("trending")) CommunityPanel.trending(this, root, trendingButton);
@@ -831,9 +881,10 @@ public final class MainActivity extends Activity {
 
   void library() {
     ArrayList<Catalog.Episode> items = selected();
-    if (page.equals("year") && filter.equals("All")) root.addView(Ui.button(this, "Filter shows", false, this::showVisibility));
+    boolean compact = compactScreen();
+    if (!compact && page.equals("year") && filter.equals("All")) root.addView(Ui.button(this, "Filter shows", false, this::showVisibility));
     LinearLayout heading = Ui.horizontal(this);
-    root.addView(heading, Ui.lp(this, -1, 56));
+    root.addView(heading, Ui.lp(this, -1, compact ? 48 : 56));
     TextView title =
         text(
             page.equals("search")
@@ -841,13 +892,19 @@ public final class MainActivity extends Activity {
                 : page.equals("ppv")
                     ? "Pay-per-views"
                     : page.equals("weeklies") ? "Weeklies" : page.equals("show") ? filter : Company.current.name + " " + year,
-            29,
+            compact ? 20 : 29,
             Ui.WHITE);
     title.setTypeface(null, Typeface.BOLD);
-    heading.addView(title);
-    Ui.gap(heading, 18);
-    heading.addView(text(items.size() + " full shows · in broadcast order", 12, Ui.MUTED));
-    Ui.weight(heading);
+    if (compact) {
+      title.setMaxLines(1);
+      title.setEllipsize(TextUtils.TruncateAt.END);
+      heading.addView(title, new LinearLayout.LayoutParams(0, -2, 1));
+    } else {
+      heading.addView(title);
+      Ui.gap(heading, 18);
+      heading.addView(text(items.size() + " full shows · in broadcast order", 12, Ui.MUTED));
+      Ui.weight(heading);
+    }
     if (!items.isEmpty()) {
       heading.addView(
           Ui.button(this, "▶  Play all", true, () -> launch(items.get(0), items, null)));
@@ -858,7 +915,7 @@ public final class MainActivity extends Activity {
         heading.addView(Ui.button(this, "Resume", false, () -> launch(resume, items, null)));
       }
     }
-    if (page.equals("year") || page.equals("weeklies")) {
+    if (!compact && (page.equals("year") || page.equals("weeklies"))) {
       HorizontalScrollView filterScroll = new HorizontalScrollView(this);
       filterScroll.setHorizontalScrollBarEnabled(false);
       root.addView(filterScroll, Ui.lp(this, -1, 52));
@@ -882,7 +939,7 @@ public final class MainActivity extends Activity {
         Ui.gap(chips, 8);
       }
     }
-    if (page.equals("ppv") || page.equals("show") || page.equals("weeklies")) {
+    if (!compact && (page.equals("ppv") || page.equals("show") || page.equals("weeklies"))) {
       HorizontalScrollView yearScroll = new HorizontalScrollView(this);
       yearScroll.setHorizontalScrollBarEnabled(false);
       LinearLayout years = Ui.horizontal(this);
@@ -908,20 +965,23 @@ public final class MainActivity extends Activity {
     }
     HorizontalScrollView months = null;
     LinearLayout monthButtons = null;
-    if (page.equals("year")) {
+    if (!compact && page.equals("year")) {
       months = new HorizontalScrollView(this);
       months.setHorizontalScrollBarEnabled(false);
       monthButtons = Ui.horizontal(this);
       months.addView(monthButtons);
       root.addView(months, Ui.lp(this, -1, 44));
     }
-    Ui.gap(root, 10);
+    LinearLayout selectors = compact ? Ui.horizontal(this) : null;
+    if (selectors != null) root.addView(selectors, Ui.lp(this, -1, 48));
+    Ui.gap(root, compact ? 4 : 10);
     RecyclerView grid = new RecyclerView(this);
-    grid.setLayoutManager(new GridLayoutManager(this, 4));
+    grid.setLayoutManager(new GridLayoutManager(this, compact ? 3 : 4));
     grid.setClipToPadding(false);
     grid.setPadding(0, d(3), 0, d(20));
     root.addView(grid, new LinearLayout.LayoutParams(-1, 0, 1));
     grid.setAdapter(new EpisodeAdapter(items, false, page.equals("ppv")));
+    if (selectors != null) compactFilters(selectors, items, grid);
     if (monthButtons != null) {
       String[] names = {
         "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
@@ -941,6 +1001,59 @@ public final class MainActivity extends Activity {
     }
     if (items.isEmpty())
       root.addView(text("No sourced full shows match this selection.", 16, Ui.MUTED));
+  }
+
+  void compactChoice(LinearLayout row, String label, Runnable action) {
+    if (row.getChildCount() > 0) Ui.gap(row, 6);
+    TextView button = Ui.button(this, label + "  \u25be", false, action);
+    button.setSingleLine(true);
+    button.setEllipsize(TextUtils.TruncateAt.END);
+    button.setPadding(d(10), d(10), d(10), d(10));
+    row.addView(button, new LinearLayout.LayoutParams(0, d(44), 1));
+  }
+
+  void compactFilters(LinearLayout row, ArrayList<Catalog.Episode> items, RecyclerView grid) {
+    if (page.equals("year") || page.equals("weeklies")) {
+      ArrayList<String> shows = new ArrayList<>();
+      shows.add("All");
+      for (Catalog.Episode item : page.equals("year") ? Catalog.forYear(year, "All", true) : Catalog.episodes)
+        if ((!page.equals("weeklies") || Catalog.weeklyShow(item.show)) && !shows.contains(item.show)) shows.add(item.show);
+      ArrayList<String> labels = new ArrayList<>();
+      for (String show : shows) labels.add(Catalog.showLabel(show, year));
+      labels.add("Choose included shows…");
+      compactChoice(row, filter.equals("All") ? "All shows" : Catalog.showLabel(filter, year), () ->
+          new AlertDialog.Builder(this).setTitle("Show").setItems(labels.toArray(new String[0]), (dialog, index) -> {
+            if (index == shows.size()) showVisibility();
+            else { filter = shows.get(index); render(); }
+          }).show());
+    }
+    if (!page.equals("search")) {
+      TreeSet<Integer> years = new TreeSet<>(Collections.reverseOrder());
+      for (Catalog.Episode item : Catalog.episodes)
+        if (page.equals("year") || (page.equals("weeklies") ? Catalog.weeklyShow(item.show)
+            && (filter.equals("All") || filter.equals(item.show)) : item.show.equals(page.equals("ppv") ? "PPV" : filter))) years.add(item.year);
+      ArrayList<Integer> values = new ArrayList<>(years);
+      if (!page.equals("year")) values.add(0, 0);
+      String[] labels = new String[values.size()];
+      for (int i = 0; i < labels.length; i++) labels[i] = values.get(i) == 0 ? "All years" : values.get(i).toString();
+      compactChoice(row, year == 0 ? "All years" : Integer.toString(year), () ->
+          new AlertDialog.Builder(this).setTitle("Year").setItems(labels, (dialog, index) -> {
+            if (page.equals("year")) openYear(values.get(index));
+            else { year = values.get(index); render(); }
+          }).show());
+    }
+    if (page.equals("year")) {
+      String[] names = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+      ArrayList<String> labels = new ArrayList<>();
+      ArrayList<Integer> positions = new ArrayList<>();
+      for (int month = 1; month <= 12; month++) {
+        int position = Catalog.firstInMonth(items, month);
+        if (position >= 0) { labels.add(names[month - 1]); positions.add(position); }
+      }
+      compactChoice(row, "Jump to month", () -> new AlertDialog.Builder(this).setTitle("Month")
+          .setItems(labels.toArray(new String[0]), (dialog, index) -> jumpToEpisode(grid, positions.get(index))).show());
+    }
+    if (row.getChildCount() == 0) row.setVisibility(View.GONE);
   }
 
   void jumpToEpisode(RecyclerView grid, int position) {
@@ -1108,6 +1221,12 @@ public final class MainActivity extends Activity {
     intent.putExtra("id", item.id);
     intent.putExtra("company", Company.current.id);
     if (provider != null) intent.putExtra("provider", provider);
+    if (BuildConfig.DEBUG && getIntent().getBooleanExtra("play_diagnostics", false)) {
+      intent.putExtra("play_diagnostics", true);
+      intent.putExtra("play_quality", getIntent().getIntExtra("play_quality", 0));
+      getIntent().removeExtra("play_diagnostics");
+      getIntent().removeExtra("play_quality");
+    }
     if (BuildConfig.DEBUG && getIntent().getBooleanExtra("verify_autoplay", false)) {
       intent.putExtra("verify_autoplay", true);
       getIntent().removeExtra("verify_autoplay");

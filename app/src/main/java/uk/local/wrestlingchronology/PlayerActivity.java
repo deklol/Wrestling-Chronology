@@ -44,12 +44,13 @@ public final class PlayerActivity extends Activity {
   LinearLayout top;
   SharedPreferences playbackPreferences;
   int index, optionIndex, generation, failedEpisodes;
-  boolean active, ended, clipping, verificationSession, controlsVisible, hasPlayed;
+  boolean active, ended, clipping, verificationSession, controlsVisible, hasPlayed, diagnostics;
   boolean stretchPicture;
   float videoAspectRatio;
   long bufferingSince;
   long lastHlsRecovery;
   long resumePosition;
+  java.util.concurrent.atomic.AtomicLong lastMediaBytes = new java.util.concurrent.atomic.AtomicLong();
   ArrayList<JSONObject> options;
   Resolver.Resolved resolved;
   String override;
@@ -87,7 +88,9 @@ public final class PlayerActivity extends Activity {
     if (state != null) index = Math.min(state.getInt("index", index), queue.size() - 1);
     override = getIntent().getStringExtra("provider");
     clipping = BuildConfig.DEBUG && getIntent().getBooleanExtra("verify_autoplay", false);
-    verificationSession = clipping;
+    diagnostics = BuildConfig.DEBUG && getIntent().getBooleanExtra("play_diagnostics", false);
+    verificationSession = clipping || diagnostics;
+    if (diagnostics) playbackVolume = 0;
     if (!verificationSession) {
       communityViews = new CommunityViews(this);
       communityViews.onViews = count -> { if (discussion != null && discussion.current()) discussion.showViews(count); };
@@ -262,7 +265,7 @@ public final class PlayerActivity extends Activity {
   }
 
   void open() {
-    selectedQuality = 0;
+    selectedQuality = diagnostics ? getIntent().getIntExtra("play_quality", 0) : 0;
     if (communityViews != null) communityViews.playing(false);
     generation++;
     ended = false;
@@ -468,6 +471,8 @@ public final class PlayerActivity extends Activity {
       player = null;
     }
     resolved = stream;
+    final java.util.concurrent.atomic.AtomicLong receivedAt = new java.util.concurrent.atomic.AtomicLong();
+    lastMediaBytes = receivedAt;
     qualityCeiling = Catalog.prefs(this).getInt("quality", 720);
     DefaultTrackSelector selector = new DefaultTrackSelector(this,
         new BufferedQualitySelection(() -> selectedQuality, () -> qualityCeiling));
@@ -481,11 +486,11 @@ public final class PlayerActivity extends Activity {
     DefaultLoadControl load =
         new DefaultLoadControl.Builder()
             .setBufferDurationsMs(
-                stream.provider.equals("okru") ? 60000 : 15000,
-                stream.provider.equals("okru") ? 120000 : 45000,
-                stream.provider.equals("okru") ? 2500 : 1800,
-                stream.provider.equals("archive") || stream.provider.equals("okru") ? 2000 : 5000)
-            .setTargetBufferBytes((stream.provider.equals("okru") ? 48 : 16) * 1024 * 1024)
+                stream.provider.equals("okru") || stream.provider.equals("archive") ? 60000 : 15000,
+                stream.provider.equals("okru") || stream.provider.equals("archive") ? 120000 : 45000,
+                stream.provider.equals("okru") || stream.provider.equals("archive") ? 6000 : 1800,
+                stream.provider.equals("okru") || stream.provider.equals("archive") ? 6000 : 5000)
+            .setTargetBufferBytes((stream.provider.equals("okru") || stream.provider.equals("archive") ? 48 : 16) * 1024 * 1024)
             .setPrioritizeTimeOverSizeThresholds(false)
             .build();
     ExoPlayer.Builder builder = new ExoPlayer.Builder(this).setTrackSelector(selector).setLoadControl(load);
@@ -493,6 +498,23 @@ public final class PlayerActivity extends Activity {
         new androidx.media3.exoplayer.upstream.DefaultBandwidthMeter.Builder(this)
             .setInitialBitrateEstimate(stream.initialBitrate).build());
     player = builder.build();
+    if (diagnostics) player.addAnalyticsListener(new androidx.media3.exoplayer.analytics.AnalyticsListener() {
+      @Override public void onLoadCompleted(EventTime time, LoadEventInfo info, MediaLoadData data) {
+        Log.i(TAG, "DELIVERY provider=" + stream.provider + " host=" + info.uri.getHost()
+            + " bytes=" + info.bytesLoaded + " ms=" + info.loadDurationMs
+            + " track=" + data.trackType + " height=" + (data.trackFormat == null ? 0 : data.trackFormat.height));
+      }
+      @Override public void onLoadCanceled(EventTime time, LoadEventInfo info, MediaLoadData data) {
+        Log.i(TAG, "LOAD_CANCEL provider=" + stream.provider + " bytes=" + info.bytesLoaded
+            + " ms=" + info.loadDurationMs);
+      }
+      @Override public void onDroppedVideoFrames(EventTime time, int count, long elapsed) {
+        Log.i(TAG, "DROPPED count=" + count + " ms=" + elapsed);
+      }
+      @Override public void onAudioUnderrun(EventTime time, int size, long bufferMs, long sinceFeed) {
+        Log.i(TAG, "AUDIO_UNDERRUN bufferMs=" + bufferMs + " sinceFeedMs=" + sinceFeed);
+      }
+    });
     player.setVolume(playbackVolume);
     player.setAudioAttributes(
         new androidx.media3.common.AudioAttributes.Builder()
@@ -527,18 +549,24 @@ public final class PlayerActivity extends Activity {
     }
     DataSource.Factory data = youtube ? () -> new YoutubeDataSource(http.createDataSource()) : http;
     if (stream.provider.equals("dailymotion")) data = StreamingNetwork.dailymotion(this);
-    if (stream.provider.equals("okru")) data = new ResolvingDataSource.Factory(
-        StreamingNetwork.okru(this), spec -> {
-          if (stream.originHost != null && stream.originHost.equals(spec.uri.getHost()))
-            return spec.withUri(spec.uri.buildUpon().authority(stream.deliveryHost).build());
-          return spec;
-        });
+    if (stream.provider.equals("okru")) {
+      ResolvingDataSource.Resolver route = spec -> {
+        if (stream.originHost != null && stream.originHost.equals(spec.uri.getHost()))
+          return spec.withUri(spec.uri.buildUpon().authority(stream.deliveryHost).build());
+        return spec;
+      };
+      DataSource.Factory routed = new ResolvingDataSource.Factory(StreamingNetwork.okru(this), route);
+      data = routed;
+    }
+    data = StreamingNetwork.bufferedMedia(stream, data, http,
+        () -> receivedAt.set(SystemClock.elapsedRealtime()));
     DefaultMediaSourceFactory factory =
         new DefaultMediaSourceFactory(new DefaultDataSource.Factory(this, data));
     ArrayList<MediaSource> media = new ArrayList<>();
     for (String url : stream.videos) {
       MediaItem.Builder item = new MediaItem.Builder().setUri(url).setMediaId(current().id);
-      if (stream.provider.equals("dailymotion") || (stream.provider.equals("okru") && stream.hls)) item.setMimeType(MimeTypes.APPLICATION_M3U8);
+      if (stream.dash) item.setMimeType(MimeTypes.APPLICATION_MPD);
+      else if (stream.provider.equals("dailymotion") || (stream.provider.equals("okru") && stream.hls)) item.setMimeType(MimeTypes.APPLICATION_M3U8);
       else if (stream.provider.equals("okru")) item.setMimeType(MimeTypes.VIDEO_MP4);
       if (clipping)
         item.setClippingConfiguration(
@@ -597,7 +625,9 @@ public final class PlayerActivity extends Activity {
                       + hasPlayed
                       + " pos="
                       + player.getCurrentPosition());
-              if (stream.hls || stream.provider.equals("dailymotion")) handler.postDelayed(() -> {
+              // OK.ru retries individual ranges. Restarting the entire HLS player here
+              // discards healthy buffered chunks and interrupts downloads still progressing.
+              if (!stream.provider.equals("okru") && (stream.hls || stream.provider.equals("dailymotion"))) handler.postDelayed(() -> {
                 if (token != generation || player == null || player.getPlaybackState() != Player.STATE_BUFFERING
                     || !hasPlayed || !player.getPlayWhenReady() || SystemClock.elapsedRealtime() - bufferingSince < 5500) return;
                 // Allow a restarted connection to fill instead of cancelling it again six seconds later.
@@ -664,6 +694,15 @@ public final class PlayerActivity extends Activity {
                     + stream.provider
                     + " code="
                     + error.getErrorCodeName());
+            if (stream.dash && stream.fallbackHls != null) {
+              resumePosition = Math.max(0, player.getCurrentPosition());
+              stream.videos.set(0, stream.fallbackHls);
+              stream.fallbackHls = null;
+              stream.dash = false;
+              stream.hls = true;
+              prepare(stream, ++generation);
+              return;
+            }
             if (player != null) {
               save(false);
               resumePosition = Math.max(0, player.getCurrentPosition());
@@ -789,6 +828,13 @@ public final class PlayerActivity extends Activity {
           if (active) {
             save(false);
             updateSession();
+            if (diagnostics && player != null) {
+              Format video = player.getVideoFormat();
+              Log.i(TAG, "SAMPLE provider=" + (resolved == null ? "" : resolved.provider)
+                  + " state=" + player.getPlaybackState() + " playing=" + player.isPlaying()
+                  + " position=" + player.getCurrentPosition() + " buffered=" + player.getTotalBufferedDuration()
+                  + " height=" + (video == null ? 0 : video.height) + " requested=" + selectedQuality);
+            }
             handler.postDelayed(this, 5000);
           }
         }
@@ -818,7 +864,8 @@ public final class PlayerActivity extends Activity {
                     currentPlayer.isPlaying(),
                     currentPlayer.getCurrentMediaItemIndex(),
                     currentPlayer.getCurrentPosition(),
-                    currentPlayer.getBufferedPosition());
+                    currentPlayer.getBufferedPosition(),
+                    lastMediaBytes.get());
             if (action != ArchiveRecovery.Action.NONE) {
               int part = currentPlayer.getCurrentMediaItemIndex();
               long position = currentPlayer.getCurrentPosition();

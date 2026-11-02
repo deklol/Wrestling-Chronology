@@ -23,6 +23,12 @@ final class ArchiveRecovery {
 
   Action sample(
       long now, boolean eligible, boolean playing, int part, long position, long buffered) {
+    return sample(now, eligible, playing, part, position, buffered, 0);
+  }
+
+  Action sample(
+      long now, boolean eligible, boolean playing, int part, long position, long buffered,
+      long receivedAt) {
     if (!eligible) {
       lastPart = -1;
       lastPosition = -1;
@@ -38,6 +44,9 @@ final class ArchiveRecovery {
       return Action.NONE;
     }
     boolean moved = Math.abs(position - lastPosition) >= 250;
+    // Bytes may be arriving before the demuxer can expose another complete sample.
+    // Keep those useful reads instead of restarting a connection that is progressing.
+    if (receivedAt > progressAt && receivedAt <= now) progressAt = receivedAt;
     boolean filling = buffered > bufferedHighWater + 250;
     if (moved || filling) {
       progressAt = now;

@@ -59,7 +59,8 @@ final class Resolver {
   static final class Resolved {
     final ArrayList<String> videos = new ArrayList<>();
     String audio, provider, label;
-    boolean hls;
+    boolean hls, dash;
+    String fallbackHls;
     String originHost, deliveryHost;
     long initialBitrate = 5000000L;
     final SortedMap<Integer, String> qualityUrls = new TreeMap<>();
