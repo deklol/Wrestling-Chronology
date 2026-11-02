@@ -35,7 +35,11 @@ final class Dailymotion {
   }
 
   static Resolver.Resolved resolve(JSONObject source) throws Exception {
-    if (!allowed(source)) throw new IOException("Dailymotion source is not configured");
+    return resolve(source, false);
+  }
+
+  static Resolver.Resolved resolve(JSONObject source, boolean pinnedTv) throws Exception {
+    if (!pinnedTv && !allowed(source)) throw new IOException("Dailymotion source is not configured");
     Resolver.Resolved result = new Resolver.Resolved();
     result.provider = "dailymotion";
     result.label = "Dailymotion";
@@ -43,12 +47,15 @@ final class Dailymotion {
     if (parts == null) parts = new JSONArray().put(source.getString("videoId"));
     for (int i = 0; i < parts.length(); i++) {
       String id = parts.getString(i);
+      if (!id.matches("[A-Za-z0-9]{5,15}")) throw new IOException("Invalid Dailymotion identity");
       JSONObject metadata =
           new JSONObject(
               CatalogSync.get("https://www.dailymotion.com/player/metadata/video/" + id));
       if (metadata.optJSONObject("error") != null || metadata.optJSONObject("qualities") == null)
         throw new IOException("Dailymotion video unavailable");
-      if (!source.getString("owner").equals(metadata.getJSONObject("owner").getString("username")))
+      String owner = source.optString("owner");
+      if ((!pinnedTv || !owner.isEmpty())
+          && !owner.equals(metadata.getJSONObject("owner").getString("username")))
         throw new IOException("Dailymotion uploader changed");
       JSONArray automatic = metadata.getJSONObject("qualities").optJSONArray("auto");
       String selected = null;

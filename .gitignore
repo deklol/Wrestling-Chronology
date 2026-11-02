@@ -21,3 +21,10 @@
 __pycache__/
 *.pyc
 *.private.json
+
+.env
+.env.*
+*.env
+/.state/
+/.release-work/
+/reports/

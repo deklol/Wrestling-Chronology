@@ -211,7 +211,11 @@ public final class MainActivity extends Activity {
 
   void openTv() {
     Intent intent = new Intent(this, TvActivity.class);
-    if (BuildConfig.DEBUG) intent.putExtra("test_muted", getIntent().getBooleanExtra("test_muted", false));
+    if (BuildConfig.DEBUG) {
+      intent.putExtra("test_muted", getIntent().getBooleanExtra("test_muted", false));
+      intent.putExtra("test_diagnostics", getIntent().getBooleanExtra("test_diagnostics", false));
+      intent.putExtra("test_channel", getIntent().getStringExtra("test_channel"));
+    }
     startActivityForResult(intent, 71);
   }
 

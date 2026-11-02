@@ -103,11 +103,19 @@ final class Resolver {
   }
 
   static Resolved resolve(JSONObject source, int quality) throws Exception {
+    return resolve(source, quality, false);
+  }
+
+  static Resolved resolveTv(JSONObject source, int quality) throws Exception {
+    return resolve(source, quality, true);
+  }
+
+  private static Resolved resolve(JSONObject source, int quality, boolean pinnedTv) throws Exception {
     Resolved result = new Resolved();
     result.provider = source.getString("type");
     result.label = source.optString("label");
-    if (result.provider.equals("okru")) return Okru.resolve(source, quality);
-    if (result.provider.equals("dailymotion")) return Dailymotion.resolve(source);
+    if (result.provider.equals("okru")) return Okru.resolve(source, quality, pinnedTv);
+    if (result.provider.equals("dailymotion")) return Dailymotion.resolve(source, pinnedTv);
     if (result.provider.equals("archive")) {
       JSONArray parts = source.optJSONArray("urls");
       if (parts != null)
@@ -118,14 +126,17 @@ final class Resolver {
           throw new IOException("Unexpected Archive source");
       return result;
     }
-    if (!source.optString("channelId").equals(SourceConfig.channelId)
+    if (!pinnedTv && !source.optString("channelId").equals(SourceConfig.channelId)
         && !DirectYoutube.allowed(source.optString("videoId"), source.optString("channelId")))
       throw new IOException("YouTube source is not in the configured official catalogue");
     init();
     String id = source.getString("videoId");
     if (!id.matches("[A-Za-z0-9_-]{11}")) throw new IOException("Invalid video identity");
     StreamInfo info = StreamInfo.getInfo("https://www.youtube.com/watch?v=" + id);
-    if (!info.getUploaderUrl().endsWith("/" + source.getString("channelId")))
+    String owner = source.optString("channelId");
+    // The authenticated TV guide pins its video ID. Research extras do not
+    // always include channel IDs; verify the owner whenever it was catalogued.
+    if ((!owner.isEmpty() || !pinnedTv) && !info.getUploaderUrl().endsWith("/" + owner))
       throw new IOException("YouTube uploader identity does not match the configured source");
     ArrayList<AudioStream> audio = new ArrayList<>(info.getAudioStreams());
     audio.removeIf(

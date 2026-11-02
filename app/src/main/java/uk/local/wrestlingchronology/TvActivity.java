@@ -46,16 +46,16 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
       new Runnable() {
         public void run() {
           if (destroyed) return;
-          if (preview != null) {
+          if (preview != null && overlay.getVisibility() == View.VISIBLE) {
             miniClock.setText(clock(api.now()));
           }
           if (playback.active != null && !seeking) {
             long duration = playback.active.getDuration();
-            if (duration > 0)
+            if (duration > 0 && overlay.getVisibility() == View.VISIBLE)
               seek.setProgress((int) (playback.active.getCurrentPosition() * 1000 / duration));
             if (SystemClock.elapsedRealtime() - lastSaved > 5000) savePosition();
             if (BuildConfig.DEBUG
-                && getIntent().getBooleanExtra("test_muted", false)
+                && getIntent().getBooleanExtra("test_diagnostics", false)
                 && SystemClock.elapsedRealtime() - lastDiagnostic > 5000) {
               lastDiagnostic = SystemClock.elapsedRealtime();
               androidx.media3.exoplayer.DecoderCounters counters =
@@ -392,7 +392,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
         });
     playerBox.addOnLayoutChangeListener(
         (v, l, t, r, b, ol, ot, or, ob) -> {
-          if (playback != null) playback.resize();
+          if (playback != null && (r-l != or-ol || b-t != ob-ot)) playback.resize();
         });
   }
 
@@ -475,7 +475,9 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
                   if (guideOpen && firstChannelButton != null) firstChannelButton.requestFocus();
                   if (autoplay) {
                     double watchAt = playbackTime;
-                    TvGuide.Channel selected = guide.channel(prefs().getString("channel", "wwe"));
+                    String requested = BuildConfig.DEBUG ? getIntent().getStringExtra("test_channel") : null;
+                    TvGuide.Channel selected = guide.channel(requested == null
+                        ? prefs().getString("channel", "wwe") : requested);
                     if (selected == null || selected.at(watchAt) == null)
                       for (TvGuide.Channel c : guide.channels)
                         if (c.at(watchAt) != null) {

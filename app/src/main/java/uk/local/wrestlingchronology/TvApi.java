@@ -11,12 +11,14 @@ import org.json.JSONObject;
 /** Small shared listings; streams are fetched only for the selected channel. */
 final class TvApi {
   final CommunityApi identity;
+  private final String origin;
   volatile String credential;
   private volatile double anchor = System.currentTimeMillis() / 1000.0;
   private volatile long tick = SystemClock.elapsedRealtime();
 
   TvApi(Context context) {
     identity = new CommunityApi(context);
+    origin = BuildConfig.COMMUNITY_BASE_URL + "/tv";
   }
 
   double now() {
@@ -27,7 +29,7 @@ final class TvApi {
     if (Thread.currentThread().isInterrupted()) throw new InterruptedIOException();
     credential = identity.tvCredential();
     HttpURLConnection connection =
-        (HttpURLConnection) new URL(BuildConfig.COMMUNITY_BASE_URL + "/tv" + path).openConnection();
+        (HttpURLConnection) new URL(origin + path).openConnection();
     connection.setConnectTimeout(7000);
     connection.setReadTimeout(10000);
     connection.setInstanceFollowRedirects(false);
@@ -73,6 +75,8 @@ final class TvApi {
   }
 
   String mediaUrl(String path) throws IOException {
+    if (path.matches("/(?:tv/)?archive-start/[a-f0-9]{24}"))
+      return origin + path.replaceFirst("^/tv", "");
     if (path.startsWith("/tv/")) return BuildConfig.COMMUNITY_BASE_URL + path;
     if (path.startsWith("https://")) return path;
     throw new IOException("Unsupported TV stream URL");

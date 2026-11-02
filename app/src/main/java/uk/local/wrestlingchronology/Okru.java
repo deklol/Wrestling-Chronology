@@ -130,8 +130,14 @@ final class Okru {
   }
 
   static Resolver.Resolved resolve(JSONObject source, int quality) throws Exception {
+    return resolve(source, quality, false);
+  }
+
+  static Resolver.Resolved resolve(JSONObject source, int quality, boolean pinnedTv) throws Exception {
     String id = source.getString("videoId"), owner = source.getString("owner");
-    if (!owner.equals(owners.get(id))) throw new IOException("OK.ru source is not configured");
+    if (!id.matches("\\d{5,20}") || !owner.matches("\\d{5,20}"))
+      throw new IOException("Invalid OK.ru identity");
+    if (!pinnedTv && !owner.equals(owners.get(id))) throw new IOException("OK.ru source is not configured");
     String html = page(id);
     Matcher author = Pattern.compile("<a\\b[^>]*movie_author_link[^>]*>|<a\\b[^>]*href=[\"']/profile/" + owner + "/[^>]*>", Pattern.CASE_INSENSITIVE).matcher(html);
     boolean verified = false;
