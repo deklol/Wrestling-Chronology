@@ -611,7 +611,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
     errorGeneration++;
     tuningChannel = slot.channel.id;
     preview = slot;
-    playback.tune(slot, live ? slot.offset(api.now()) : 0);
+    playback.tune(slot, live ? slot.offset(api.now()) : 0, live);
     showOverlay();
   }
 

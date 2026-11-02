@@ -1,7 +1,7 @@
 {
-  "versionCode": 18,
-  "versionName": "0.1.12",
-  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.12/Wrestling-Chronology.apk",
-  "sha256": "3610cbc6bc19bbb109d1fe4be8058b5e583765af46ad7bfb70a1b0af7d4f2b3b",
-  "notes": "Improves Archive and OK.ru buffering in both players. Adds compact phone landscape menus and filters while preserving the Fire TV layout, history and settings."
+  "versionCode": 19,
+  "versionName": "0.1.13",
+  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.13/Wrestling-Chronology.apk",
+  "sha256": "320946cd2519c5717f1c60ef715e14b6b4f4c8e3989ef46cfa85a63cc4db6f1a",
+  "notes": "Fixes TV connection recovery and memory use during channel changes. Reuses the player for the current programme and cancels retries when you change channels. History and settings are preserved."
 }

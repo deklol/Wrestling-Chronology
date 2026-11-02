@@ -251,6 +251,9 @@ public final class MainActivity extends Activity {
       intent.putExtra("test_diagnostics", getIntent().getBooleanExtra("test_diagnostics", false));
       intent.putExtra("test_channel", getIntent().getStringExtra("test_channel"));
       intent.putExtra("test_programme", getIntent().getStringExtra("test_programme"));
+      intent.putExtra("test_failures", getIntent().getIntExtra("test_failures", 0));
+      intent.putExtra("test_failure_kind", getIntent().getStringExtra("test_failure_kind"));
+      intent.putExtra("test_failure_channel", getIntent().getStringExtra("test_failure_channel"));
     }
     startActivityForResult(intent, 71);
   }

@@ -10,6 +10,13 @@ import org.json.JSONObject;
 
 /** Small shared listings; streams are fetched only for the selected channel. */
 final class TvApi {
+  static final class ResponseException extends IOException {
+    final int status;
+    ResponseException(int status) {
+      super("TV request failed (" + status + ").");
+      this.status = status;
+    }
+  }
   final CommunityApi identity;
   private final String origin;
   volatile String credential;
@@ -48,7 +55,7 @@ final class TvApi {
         }
       }
       int status = connection.getResponseCode();
-      if (status != 200) throw new IOException("TV is temporarily unavailable (" + status + ").");
+      if (status != 200) throw new ResponseException(status);
       InputStream stream = connection.getInputStream();
       if ("gzip".equalsIgnoreCase(connection.getContentEncoding()))
         stream = new GZIPInputStream(stream);

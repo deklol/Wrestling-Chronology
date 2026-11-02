@@ -32,6 +32,7 @@ final class TvPlayback {
   final FrameLayout surface;
   final Listener listener;
   final CommunityViews views;
+  final TvPlaybackFaults faults;
   final Handler main = new Handler(Looper.getMainLooper());
   final ExecutorService io = Executors.newFixedThreadPool(2);
   ExoPlayer active, pending;
@@ -41,7 +42,9 @@ final class TvPlayback {
   int generation, quality;
   boolean stretched, muted, closed;
   long tuneStarted;
-  private Runnable timeout, slowNotice;
+  private Runnable timeout, slowNotice, retryTask;
+  private final TvRetry retry = new TvRetry();
+  private boolean joinLive;
   private int videoWidth = 16, videoHeight = 9;
 
   TvPlayback(Context context, TvApi api, FrameLayout surface, Listener listener) {
@@ -49,30 +52,56 @@ final class TvPlayback {
     this.api = api;
     this.surface = surface;
     this.listener = listener;
+    faults = new TvPlaybackFaults(context);
     boolean diagnostic = BuildConfig.DEBUG && context instanceof android.app.Activity
         && ((android.app.Activity) context).getIntent().getBooleanExtra("test_diagnostics", false);
     views = diagnostic ? null : new CommunityViews(context);
   }
 
   void tune(TvGuide.Slot slot, long offset) {
+    tune(slot, offset, false);
+  }
+
+  void tune(TvGuide.Slot slot, long offset, boolean live) {
+    retry.reset();
+    joinLive = live;
+    if (active != null && active.getPlayerError() == null && active.getMediaItemCount() == 1 && playing != null
+        && playing.programme.equals(slot.programme)) {
+      cancel();
+      requested = null;
+      playing = slot;
+      if (!live || Math.abs(active.getCurrentPosition() - offset) > 15000)
+        active.seekTo(offset);
+      active.play();
+      listener.notice("");
+      listener.playing(slot);
+      Log.i("ChronologyTV", "REUSE channel=" + slot.channel.id);
+      return;
+    }
+    begin(slot, offset, false);
+  }
+
+  private void begin(TvGuide.Slot slot, long offset, boolean retrying) {
     if (closed) return;
     cancel();
     final int token = generation;
     requested = slot;
     tuneStarted = SystemClock.elapsedRealtime();
-    listener.notice("Changing channel, please wait...");
+    listener.notice(retrying ? "Retrying channel, please wait..." : "Changing channel, please wait...");
     Log.i("ChronologyTV", "TUNE generation=" + token + " channel=" + slot.channel.id);
     slowNotice =
         () -> {
           if (token == generation) listener.notice("Still loading channel...");
         };
-    timeout = () -> fail(token, slot, "TV channel unavailable");
+    timeout = () -> recover(token, slot, offset, new java.net.SocketTimeoutException("Channel startup timed out"));
     main.postDelayed(slowNotice, 10000);
     main.postDelayed(timeout, 30000);
     resolution =
         io.submit(
             () -> {
               try {
+                if (faults.take("resolve", slot.channel.id))
+                  throw new java.net.SocketTimeoutException("Controlled resolver timeout");
                 JSONObject stream;
                 do {
                   if (Thread.currentThread().isInterrupted()) return;
@@ -100,13 +129,13 @@ final class TvPlayback {
                 final Resolver.Resolved direct = deviceStream;
                 main.post(
                     () -> {
-                      if (token == generation && !closed) prepare(token, slot, offset, resolved, direct);
+                  if (token == generation && !closed) prepare(token, slot, offset, resolved, direct);
                     });
               } catch (Exception error) {
                 if (!Thread.currentThread().isInterrupted()) {
                   Log.w("ChronologyTV", "RESOLVE_FAILED channel=" + slot.channel.id
                       + " error=" + error.getClass().getSimpleName());
-                  main.post(() -> fail(token, slot, "TV channel unavailable"));
+                  main.post(() -> recover(token, slot, offset, error));
                 }
               }
             });
@@ -117,6 +146,16 @@ final class TvPlayback {
     try {
       boolean okru = "okru".equals(stream.optString("provider"));
       boolean buffered = okru || "archive".equals(stream.optString("provider"));
+      Runtime runtime = Runtime.getRuntime();
+      long used = runtime.totalMemory() - runtime.freeMemory();
+      JSONObject index = stream.optJSONObject("archiveIndex");
+      boolean progressive = direct != null ? !direct.hls && !direct.dash
+          : "archive".equals(stream.optString("provider"));
+      if (active != null && TvMemory.needsSinglePlayer(runtime.maxMemory(), used,
+          index == null ? 0 : index.optLong("headerLength"), slot.end-slot.start, progressive)) {
+        retireActive();
+        Log.i("ChronologyTV", "SINGLE_PLAYER channel=" + slot.channel.id);
+      }
       if (BuildConfig.DEBUG) Log.i("ChronologyTV", "PREPARE channel=" + slot.channel.id
           + " provider=" + stream.optString("provider") + " direct=" + (direct != null)
           + " dash=" + (direct != null && direct.dash) + " offset=" + offset);
@@ -202,6 +241,12 @@ final class TvPlayback {
             + " headerBytes=" + layout.headerLength + " payload=direct");
       }
       DefaultMediaSourceFactory factory = new DefaultMediaSourceFactory(media);
+      if (faults.take("media", slot.channel.id))
+        factory = new DefaultMediaSourceFactory(TvPlaybackFaults.failedMedia());
+      if (faults.take("deadline", slot.channel.id)) {
+        main.removeCallbacks(timeout);
+        main.postDelayed(timeout, 250);
+      }
       JSONArray parts;
       if (direct == null) parts = stream.getJSONArray("parts");
       else {
@@ -284,6 +329,7 @@ final class TvPlayback {
               pendingView = null;
               playing = slot;
               requested = null;
+              retry.playing(SystemClock.elapsedRealtime());
               videoWidth = width;
               videoHeight = height;
               quality = height;
@@ -326,8 +372,9 @@ final class TvPlayback {
 
             @Override
             public void onPlayerError(PlaybackException error) {
+              int currentToken = next == active && requested == null ? generation : token;
               if (direct != null && direct.dash && direct.fallbackHls != null
-                  && token == generation && (next == pending || next == active)) {
+                  && currentToken == generation && (next == pending || next == active)) {
                 // A recording may expose a DASH URL its CDN no longer serves.
                 // Try its published HLS alternative once, without dropping the
                 // outgoing channel or recreating the player and audio surface.
@@ -351,11 +398,8 @@ final class TvPlayback {
                   "ChronologyTV",
                   "PLAYBACK_ERROR channel=" + slot.channel.id + " code=" + error.getErrorCodeName(),
                   error);
-              if (next == pending) fail(token, slot, "TV channel unavailable");
-              else if (next == active) {
-                listener.failed(
-                    slot, "This channel stopped responding. Choose another channel or retry.");
-              }
+              if (next == pending || (next == active && requested == null))
+                recover(currentToken, slot, next.getCurrentPosition(), error);
             }
 
             @Override
@@ -363,7 +407,7 @@ final class TvPlayback {
               if (BuildConfig.DEBUG) Log.i("ChronologyTV", "STATE channel=" + slot.channel.id
                   + " state=" + state + " position=" + next.getCurrentPosition()
                   + " buffered=" + next.getTotalBufferedDuration());
-              if (next == active && state == Player.STATE_ENDED) listener.ended(slot);
+              if (next == active && requested == null && state == Player.STATE_ENDED) listener.ended(playing);
             }
           });
       next.setMediaSources(sources, partIndex, position);
@@ -371,8 +415,56 @@ final class TvPlayback {
       next.play();
     } catch (Exception error) {
       Log.e("ChronologyTV", "PREPARE_ERROR", error);
-      fail(token, slot, "TV channel unavailable");
+      recover(token, slot, offset, error);
     }
+  }
+
+  private static boolean temporary(Throwable error) {
+    if (TvMemory.exhausted(error)) return false;
+    // Renew expired URLs and retry network failures, not unsupported codecs or
+    // a definite missing recording. No credentials or signed URLs go in logs.
+    for (Throwable cause = error; cause != null; cause = cause.getCause()) {
+      if (cause instanceof TvApi.ResponseException)
+        return TvRetry.retryHttp(((TvApi.ResponseException) cause).status);
+      if (cause instanceof HttpDataSource.InvalidResponseCodeException)
+        return TvRetry.retryHttp(((HttpDataSource.InvalidResponseCodeException) cause).responseCode);
+      if (cause instanceof androidx.media3.common.ParserException
+          || cause instanceof java.io.FileNotFoundException) return false;
+    }
+    for (Throwable cause = error; cause != null; cause = cause.getCause()) {
+      if (cause instanceof java.io.IOException) return true;
+    }
+    return false;
+  }
+
+  private void recover(int token, TvGuide.Slot slot, long offset, Throwable error) {
+    if (closed || token != generation) return;
+    if (TvMemory.exhausted(error) && active != null) {
+      // An unindexed source may exceed the estimate. Release the other decoder
+      // before one fresh attempt; retrying with both players repeats the OOM.
+      retireActive();
+      recover(token, slot, offset, new java.io.IOException("Retry with one player"));
+      return;
+    }
+    boolean transientFailure = temporary(error);
+    long delay = transientFailure ? retry.nextDelay(SystemClock.elapsedRealtime()) : -1;
+    if (delay < 0) {
+      fail(token, slot, transientFailure ? "Could not connect to this channel" : "TV channel unavailable");
+      return;
+    }
+    cancel();
+    final int scheduled = generation;
+    requested = slot;
+    listener.notice("Retrying channel, please wait...");
+    Log.w("ChronologyTV", "RETRY channel=" + slot.channel.id + " delayMs=" + delay
+        + " error=" + error.getClass().getSimpleName());
+    retryTask = () -> {
+      if (closed || scheduled != generation) return;
+      TvGuide.Slot current = joinLive ? slot.channel.at(api.now()) : slot;
+      if (current == null) { fail(scheduled, slot, "The guide needs refreshing"); return; }
+      begin(current, joinLive ? current.offset(api.now()) : offset, true);
+    };
+    main.postDelayed(retryTask, delay);
   }
 
   void fail(int token, TvGuide.Slot slot, String message) {
@@ -391,6 +483,7 @@ final class TvPlayback {
     }
     if (timeout != null) main.removeCallbacks(timeout);
     if (slowNotice != null) main.removeCallbacks(slowNotice);
+    if (retryTask != null) { main.removeCallbacks(retryTask); retryTask = null; }
     if (pending != null) {
       pending.release();
       pending = null;
@@ -399,6 +492,15 @@ final class TvPlayback {
       surface.removeView(pendingView);
       pendingView = null;
     }
+  }
+
+  private void retireActive() {
+    if (active == null) return;
+    ExoPlayer previous = active;
+    active = null;
+    if (views != null) views.playing(false);
+    previous.release();
+    // Keep the outgoing TextureView until the incoming frame replaces it.
   }
 
   void fit(TextureView view, int width, int height) {
@@ -433,10 +535,12 @@ final class TvPlayback {
   }
 
   void pause() {
+    joinLive = false;
     if (active != null) active.setPlayWhenReady(!active.getPlayWhenReady());
   }
 
   void seek(long delta) {
+    joinLive = false;
     if (active != null) active.seekTo(Math.max(0, active.getCurrentPosition() + delta));
   }
 
