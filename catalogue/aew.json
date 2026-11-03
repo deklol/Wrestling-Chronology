@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "aew",
-  "revision": 1793688892,
+  "revision": 1793727569,
   "catalogue": {
     "schemaVersion": 1,
     "sourceValidation": 5,
@@ -29689,34 +29689,30 @@
         "year": 2026,
         "show": "PPV",
         "title": "All In",
-        "description": "",
-        "duration": 4262.27,
-        "thumbnail": "https://archive.org/download/aewppv2026/aewppv2026.thumbs/AEW%20All%20In%202026/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT_000250.jpg",
-        "poster": "",
+        "description": "All In London 2026 \u2014 full main card. Kenny Omega vs. Will Ospreay headlines at Wembley Stadium.",
+        "duration": 15303.18,
+        "thumbnail": "https://archive.org/download/aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt/aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt.thumbs/AEW.All.In.2026.PPV.FEED.720p.HDTV.HFR.H264-Star_005610.jpg",
+        "poster": "https://archive.org/download/aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt/aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt.thumbs/AEW.All.In.2026.PPV.FEED.720p.HDTV.HFR.H264-Star_005610.jpg",
         "sources": [
           {
             "type": "archive",
-            "url": "https://archive.org/download/aewppv2026/AEW%20All%20In%202026/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT.mp4",
-            "filename": "AEW All In 2026/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT.mp4",
-            "duration": 4262.27,
-            "height": 1080,
-            "bytes": 4231807687,
-            "label": "Internet Archive \u00b7 aewppv2026",
-            "creator": "aewppv2026",
-            "md5": "690f5a58a1e4f6f147dddcbadd43e40d",
-            "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+            "url": "https://archive.org/download/aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt/AEW.All.In.2026.PPV.FEED.720p.HDTV.HFR.H264-Star.mp4",
+            "duration": 15303.18,
+            "filename": "AEW.All.In.2026.PPV.FEED.720p.HDTV.HFR.H264-Star.mp4",
+            "bytes": 9873449389,
+            "height": 720,
+            "label": "Internet Archive",
+            "language": "en"
           },
           {
             "type": "archive",
-            "url": "https://archive.org/download/aewppv2026/MyAEW.Darby.Allins.Journey.to.the.AEW.World.Championship.1080p.WEB.h264-SpaZe.mp4",
-            "filename": "MyAEW.Darby.Allins.Journey.to.the.AEW.World.Championship.1080p.WEB.h264-SpaZe.mp4",
-            "duration": 21239.96,
-            "height": 1080,
-            "bytes": 19448978540,
-            "label": "Internet Archive \u00b7 aewppv2026",
-            "creator": "aewppv2026",
-            "md5": "728d11177dc2ad06c3203fbe4cf0a94f",
-            "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+            "url": "https://archive.org/download/aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt/AEW_All_In_London_2026_HD.ia.mp4",
+            "duration": 15288.0,
+            "filename": "AEW_All_In_London_2026_HD.ia.mp4",
+            "bytes": 4896485483,
+            "height": 720,
+            "label": "Internet Archive",
+            "language": "en"
           }
         ],
         "discoveredAt": 1793232000000
@@ -33068,20 +33064,10 @@
               "show": "PPV",
               "title": "Revolution"
             },
-            "AEW All In 2026/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT.mp4": {
-              "date": "2026-08-30",
-              "show": "PPV",
-              "title": "All In"
-            },
             "AEW All Out 2026/AEW.All.Out.2026.PPV.1080p.WEB.h264-HEEL.mp4": {
               "date": "2026-09-26",
               "show": "PPV",
               "title": "All Out"
-            },
-            "MyAEW.Darby.Allins.Journey.to.the.AEW.World.Championship.1080p.WEB.h264-SpaZe.mp4": {
-              "date": "2026-08-30",
-              "show": "PPV",
-              "title": "All In"
             }
           },
           "mappedOnly": true
@@ -36157,6 +36143,25 @@
               "title": "All In (2018)"
             }
           }
+        },
+        {
+          "id": "aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt",
+          "name": "All In London 2026 \u2014 reviewed full main-card recordings",
+          "enabled": true,
+          "dateOrder": "MDY",
+          "mappedOnly": true,
+          "overrides": {
+            "AEW.All.In.2026.PPV.FEED.720p.HDTV.HFR.H264-Star.mp4": {
+              "date": "2026-08-30",
+              "show": "PPV",
+              "title": "All In"
+            },
+            "AEW_All_In_London_2026_HD.ia.mp4": {
+              "date": "2026-08-30",
+              "show": "PPV",
+              "title": "All In"
+            }
+          }
         }
       ]
     },
@@ -37795,7 +37800,14 @@
           "enabled": true
         }
       ]
-    }
+    },
+    "retiredSources": [
+      "archive:https://archive.org/download/aewppv2026/AEW%20All%20In%202026/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT.mp4",
+      "archive:https://archive.org/download/aewppv2026/MyAEW.Darby.Allins.Journey.to.the.AEW.World.Championship.1080p.WEB.h264-SpaZe.mp4"
+    ]
   },
-  "retiredSources": []
+  "retiredSources": [
+    "archive:https://archive.org/download/aewppv2026/AEW%20All%20In%202026/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT.mp4",
+    "archive:https://archive.org/download/aewppv2026/MyAEW.Darby.Allins.Journey.to.the.AEW.World.Championship.1080p.WEB.h264-SpaZe.mp4"
+  ]
 }

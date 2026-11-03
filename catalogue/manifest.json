@@ -3,9 +3,9 @@
   "companies": {
     "aew": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/aew.json",
-      "sha256": "fee15cf6e25fafd0773392971a1ef0f1f7f097907792af0075af4e445ea647c5",
-      "bytes": 1488548,
-      "revision": 1793688892
+      "sha256": "1b0ffb905762752ed2e0f67627c2c5657865fe1c7cfe746ed32b187eb1f94870",
+      "bytes": 1489355,
+      "revision": 1793727569
     },
     "wwe": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/wwe.json",
