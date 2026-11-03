@@ -3,15 +3,15 @@
   "companies": {
     "aew": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/aew.json",
-      "sha256": "1b0ffb905762752ed2e0f67627c2c5657865fe1c7cfe746ed32b187eb1f94870",
-      "bytes": 1489355,
-      "revision": 1793727569
+      "sha256": "603b3c9f487514b63943d8b2a388fab55a07f8ebb86e9ef9fa98415a426e1843",
+      "bytes": 1490678,
+      "revision": 1793734327
     },
     "wwe": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/wwe.json",
-      "sha256": "f00dac8e974d97bc46d07a4cd2048b4d6feca6e6a2fc525a7101a274bebce849",
-      "bytes": 17338630,
-      "revision": 1793690168
+      "sha256": "7777e186b672717e39c961c74b763478fe41057a15eabbd4364bf16dd540085a",
+      "bytes": 17339390,
+      "revision": 1793734375
     },
     "ecw": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/ecw.json",
@@ -27,9 +27,9 @@
     },
     "tna": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/tna.json",
-      "sha256": "184ad2a73488873f36f88e4492f23bfb85ad0c44e8170ba23bf621ba97ac2945",
-      "bytes": 3140994,
-      "revision": 1793688894
+      "sha256": "de17a86579a8608d82284f5da527a8eaf0528b10f5de7387f700dd2ef7f823a4",
+      "bytes": 3141741,
+      "revision": 1793734441
     },
     "roh": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/roh.json",
@@ -39,9 +39,9 @@
     },
     "njpw": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/njpw.json",
-      "sha256": "54561953acf2f4eb3bc9c42b44b0d6e60db36f68a60596564b4fc6461b6d6f80",
-      "bytes": 1175866,
-      "revision": 1793688894
+      "sha256": "8bd02eeb30203d4b634a2dbdc4dfd318f98ec412657250a5691deddd5de97418",
+      "bytes": 1176934,
+      "revision": 1793734548
     },
     "nxt": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/nxt.json",

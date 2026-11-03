@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "wwe",
-  "revision": 1793690168,
+  "revision": 1793734375,
   "catalogue": {
     "schemaVersion": 1,
     "sourceValidation": 5,
@@ -339047,6 +339047,16 @@
             "programme": "Raw",
             "label": "OK.ru",
             "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18725556259406&type=37&idx=3&scl=4&tkn=zix_GhGrN-CQm-LZnbca87ZSqQU&fn=external_8"
+          },
+          {
+            "type": "okru",
+            "videoId": "16275297405518",
+            "owner": "910148261710",
+            "title": "WWE.RAW.2026.11.02.NF.iNT.1080p.H.264",
+            "duration": 9333,
+            "programme": "Raw",
+            "label": "OK.ru",
+            "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18725802936910&type=37&idx=3&scl=4&tkn=GQXrxvn117_HoD59ouNwbeuK5qE&fn=external_8"
           }
         ],
         "discoveredAt": 1793688893000
@@ -426823,6 +426833,17 @@
           "title": "Raw",
           "name": "WWE.RAW.2026.10.19.NF.DEF.1080p",
           "duration": 8314,
+          "enabled": true
+        },
+        {
+          "id": "16275297405518",
+          "owner": "910148261710",
+          "episodeId": "wwe:2026-11-02:raw",
+          "date": "2026-11-02",
+          "show": "Raw",
+          "title": "Raw",
+          "name": "WWE.RAW.2026.11.02.NF.iNT.1080p.H.264",
+          "duration": 9333,
           "enabled": true
         }
       ],

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "njpw",
-  "revision": 1793688894,
+  "revision": 1793734548,
   "catalogue": {
     "company": "njpw",
     "episodes": [
@@ -20177,6 +20177,28 @@
           }
         ],
         "discoveredAt": 1793688745136
+      },
+      {
+        "id": "njpw:2026-11-03:ppv:powerstrugglesuperjuniortagleague2026",
+        "date": "2026-11-03",
+        "year": 2026,
+        "show": "PPV",
+        "title": "Power Struggle \u2014 Super Junior Tag League 2026",
+        "description": "Power Struggle \u2014 Super Junior Tag League 2026",
+        "duration": 15599,
+        "thumbnail": "",
+        "poster": "",
+        "sources": [
+          {
+            "type": "archive",
+            "label": "Internet Archive",
+            "duration": 15599,
+            "language": "und",
+            "url": "https://archive.org/download/njpw-power-struggle-super-junior-tag-league-2026-03-11-26/NJPW%20Power%20Struggle%20~%20Super%20Junior%20Tag%20League%202026%2003-11-26.mp4",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793734548377
       }
     ]
   },
@@ -27774,6 +27796,12 @@
         {
           "id": "njpw-super-junior-tag-league-2026-day-7-01-11-26",
           "name": "njpw-super-junior-tag-league-2026-day-7-01-11-26",
+          "enabled": true,
+          "frozen": true
+        },
+        {
+          "id": "njpw-power-struggle-super-junior-tag-league-2026-03-11-26",
+          "name": "njpw-power-struggle-super-junior-tag-league-2026-03-11-26",
           "enabled": true,
           "frozen": true
         }
