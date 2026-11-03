@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "wwe",
-  "revision": 1793688893,
+  "revision": 1793690168,
   "catalogue": {
     "schemaVersion": 1,
     "sourceValidation": 5,
@@ -339049,7 +339049,65 @@
             "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18725556259406&type=37&idx=3&scl=4&tkn=zix_GhGrN-CQm-LZnbca87ZSqQU&fn=external_8"
           }
         ],
-        "discoveredAt": 0
+        "discoveredAt": 1793688893000
+      },
+      {
+        "id": "wwe:2026-10-30:smackdown",
+        "date": "2026-10-30",
+        "year": 2026,
+        "show": "SmackDown",
+        "title": "SmackDown",
+        "description": "",
+        "duration": 7217,
+        "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18667378641486&type=37&idx=3&scl=4&tkn=3DY5h4OyEuAnHMeg11GxQd98UR4&fn=external_8",
+        "poster": "https://iv.okcdn.ru/videoPreview?id=18667378641486&type=37&idx=3&scl=4&tkn=3DY5h4OyEuAnHMeg11GxQd98UR4&fn=external_8",
+        "sources": [
+          {
+            "type": "okru",
+            "videoId": "16240760130126",
+            "owner": "910148261710",
+            "duration": 7217,
+            "title": "WWE.Friday.Night.SmackDown.2026.10.30.1080p.NF.MULTi",
+            "programme": "SmackDown",
+            "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18667378641486&type=37&idx=3&scl=4&tkn=3DY5h4OyEuAnHMeg11GxQd98UR4&fn=external_8",
+            "label": "OK.ru"
+          },
+          {
+            "type": "okru",
+            "videoId": "16240702523982",
+            "owner": "910148261710",
+            "duration": 7217,
+            "title": "WWE.Friday.Night.SmackDown.2026.10.30.1080p.NF.MULTi",
+            "programme": "SmackDown",
+            "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18667223386702&type=37&idx=3&scl=4&tkn=mpYEVbJLUkEul59HpBs69d0PqdQ&fn=external_8",
+            "label": "OK.ru"
+          }
+        ],
+        "discoveredAt": 1793690168031
+      },
+      {
+        "id": "wwe:2026-10-19:raw",
+        "date": "2026-10-19",
+        "year": 2026,
+        "show": "Raw",
+        "title": "Raw",
+        "description": "",
+        "duration": 8314,
+        "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18457643059790&type=37&idx=2&scl=4&tkn=sfD8GF4SAkwksjzmNyqKRdjLHDc&fn=external_8",
+        "poster": "https://iv.okcdn.ru/videoPreview?id=18457643059790&type=37&idx=2&scl=4&tkn=sfD8GF4SAkwksjzmNyqKRdjLHDc&fn=external_8",
+        "sources": [
+          {
+            "type": "okru",
+            "videoId": "16114255465038",
+            "owner": "910148261710",
+            "duration": 8314,
+            "title": "WWE.RAW.2026.10.19.NF.DEF.1080p",
+            "programme": "Raw",
+            "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18457643059790&type=37&idx=2&scl=4&tkn=sfD8GF4SAkwksjzmNyqKRdjLHDc&fn=external_8",
+            "label": "OK.ru"
+          }
+        ],
+        "discoveredAt": 1793690168192
       }
     ],
     "eventCalendar": [],
@@ -426732,6 +426790,39 @@
           "title": "Raw",
           "name": "WWE.RAW.2026.11.02.NF.iNT.720p",
           "duration": 9333,
+          "enabled": true
+        },
+        {
+          "id": "16240760130126",
+          "owner": "910148261710",
+          "episodeId": "wwe:2026-10-30:smackdown",
+          "date": "2026-10-30",
+          "show": "SmackDown",
+          "title": "SmackDown",
+          "name": "WWE.Friday.Night.SmackDown.2026.10.30.1080p.NF.MULTi",
+          "duration": 7217,
+          "enabled": true
+        },
+        {
+          "id": "16240702523982",
+          "owner": "910148261710",
+          "episodeId": "wwe:2026-10-30:smackdown",
+          "date": "2026-10-30",
+          "show": "SmackDown",
+          "title": "SmackDown",
+          "name": "WWE.Friday.Night.SmackDown.2026.10.30.1080p.NF.MULTi",
+          "duration": 7217,
+          "enabled": true
+        },
+        {
+          "id": "16114255465038",
+          "owner": "910148261710",
+          "episodeId": "wwe:2026-10-19:raw",
+          "date": "2026-10-19",
+          "show": "Raw",
+          "title": "Raw",
+          "name": "WWE.RAW.2026.10.19.NF.DEF.1080p",
+          "duration": 8314,
           "enabled": true
         }
       ],

@@ -8,6 +8,22 @@ import org.json.*;
 import org.junit.*;
 
 public class LibraryPackTest {
+  @Test public void sourceUpdateRepairsUndatedEntriesButKeepsKnownDiscoveryTimes() throws Exception {
+    JSONObject row = new JSONObject().put("id", "wwe:2026-11-02:raw").put("date", "2026-11-02")
+        .put("show", "Raw").put("sources", new JSONArray().put(new JSONObject()
+            .put("type", "okru").put("videoId", "123456"))).put("discoveredAt", 1793689200000L);
+    JSONObject config = new JSONObject().put("archive", new JSONObject()).put("youtube", new JSONObject());
+    JSONObject incoming = new JSONObject().put("catalogue", new JSONObject().put("episodes", new JSONArray().put(row)))
+        .put("sources", config);
+    for (long oldTime : new long[] {0L, 1793602800000L}) {
+      JSONObject oldRow = new JSONObject(row.toString()).put("discoveredAt", oldTime);
+      JSONObject previous = new JSONObject().put("catalogue", new JSONObject().put("episodes", new JSONArray().put(oldRow)))
+          .put("sources", config);
+      JSONObject merged = LibraryPack.merge(previous, incoming);
+      assertEquals(oldTime > 0 ? oldTime : 1793689200000L,
+          merged.getJSONObject("catalogue").getJSONArray("episodes").getJSONObject(0).getLong("discoveredAt"));
+    }
+  }
 
   @Test public void shortSourcesStayInTheCacheWhenHiddenFromTheRuntimeView() throws Exception {
     Company.current = Company.WWE;

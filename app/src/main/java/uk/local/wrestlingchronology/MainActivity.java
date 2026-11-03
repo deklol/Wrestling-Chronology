@@ -172,7 +172,6 @@ public final class MainActivity extends Activity {
     content.setPadding(d(40), d(16), d(40), d(16));
     content.setGravity(Gravity.CENTER);
     FrameLayout.LayoutParams contentBounds = new FrameLayout.LayoutParams(-1, -1);
-    contentBounds.bottomMargin = d(64);
     screen.addView(content, contentBounds);
     TextView title = text("WRESTLING CHRONOLOGY", 28, Ui.WHITE);
     title.setTypeface(Typeface.create("sans-serif-black", Typeface.BOLD));
@@ -234,8 +233,6 @@ public final class MainActivity extends Activity {
     credit.setGravity(Gravity.CENTER);
     credit.setLineSpacing(d(3), 1);
     content.addView(credit, Ui.lp(this, -1, 42));
-    SupportTicker ticker = new SupportTicker(this);
-    screen.addView(ticker, new FrameLayout.LayoutParams(-1, d(64), Gravity.BOTTOM));
     setContentView(screen);
     if (first != null) first.requestFocus();
   }
@@ -1559,15 +1556,12 @@ public final class MainActivity extends Activity {
     body.addView(Ui.button(this, "Open GitHub · source and downloads", false,
         () -> openAboutLink("https://github.com/deklol/Wrestling-Chronology")));
     Ui.gap(body, 20);
-    body.addView(text("Optional support & web access", 19, Ui.accent()));
+    body.addView(text("Support", 19, Ui.accent()));
     Ui.gap(body, 8);
-    body.addView(text("Android will always be free. Donations are never required. Donations over $4.99 include lifetime access to the private web app, with extra features on devices with a web browser and internet.\n\nPayPal: dekky@live.co.uk\n\nLeave your email in the donation note, or message u/dekkytsh on Reddit or @digitalm1nd on X for your access code. See Donate for the full details.", 14, Ui.WHITE));
+    body.addView(text("If you'd like to show support, join our Discord community for more information.", 14, Ui.WHITE));
     Ui.gap(body, 12);
-    body.addView(Ui.button(this, "Reddit · u/dekkytsh", false,
-        () -> openAboutLink("https://www.reddit.com/user/dekkytsh/")));
-    Ui.gap(body, 8);
-    body.addView(Ui.button(this, "X · @digitalm1nd", false,
-        () -> openAboutLink("https://x.com/digitalm1nd")));
+    body.addView(Ui.button(this, "Join Discord", false,
+        () -> openAboutLink(DonatePage.DISCORD)));
     Ui.gap(body, 18);
     body.addView(text("v" + BuildConfig.VERSION_NAME + " · Videos remain hosted by their original providers.", 12, Ui.MUTED));
     Ui.gap(body, 12);

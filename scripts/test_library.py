@@ -9,6 +9,19 @@ from library import broadcast_date, episode_thumbnail, scan_archive, scan_youtub
 
 
 class LibraryTests(unittest.TestCase):
+    def test_new_broadcast_gets_discovery_time_without_refreshing_existing_rows(self):
+        library = {'episodes': []}
+        source = {'type': 'okru', 'videoId': '123456', 'duration': 7200}
+        with patch('library.time.time', return_value=1793689200):
+            add_record(library, 'wwe', '2026-10-19', 'Raw', 'Raw', source)
+        first = library['episodes'][0]['discoveredAt']
+        self.assertEqual(1793689200000, first)
+        with patch('library.time.time', return_value=1793775600):
+            add_record(library, 'wwe', '2026-10-19', 'Raw', 'Raw', {**source, 'videoId': '654321'})
+        self.assertEqual(1, len(library['episodes']))
+        self.assertEqual(first, library['episodes'][0]['discoveredAt'])
+        self.assertEqual(2, len(library['episodes'][0]['sources']))
+
     def test_known_archive_recording_skips_repeated_merge_and_artwork_scan(self):
         url = 'https://archive.org/download/collection/Raw%202026-11-02.mp4'
         library = {'episodes': [{'id': 'existing', 'thumbnail': 'https://example.invalid/still.jpg',

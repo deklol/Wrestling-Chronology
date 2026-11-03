@@ -87659,6 +87659,39 @@
         "name": "WWE.RAW.2026.11.02.NF.iNT.720p",
         "duration": 9333,
         "enabled": true
+      },
+      {
+        "id": "16240760130126",
+        "owner": "910148261710",
+        "episodeId": "wwe:2026-10-30:smackdown",
+        "date": "2026-10-30",
+        "show": "SmackDown",
+        "title": "SmackDown",
+        "name": "WWE.Friday.Night.SmackDown.2026.10.30.1080p.NF.MULTi",
+        "duration": 7217,
+        "enabled": true
+      },
+      {
+        "id": "16240702523982",
+        "owner": "910148261710",
+        "episodeId": "wwe:2026-10-30:smackdown",
+        "date": "2026-10-30",
+        "show": "SmackDown",
+        "title": "SmackDown",
+        "name": "WWE.Friday.Night.SmackDown.2026.10.30.1080p.NF.MULTi",
+        "duration": 7217,
+        "enabled": true
+      },
+      {
+        "id": "16114255465038",
+        "owner": "910148261710",
+        "episodeId": "wwe:2026-10-19:raw",
+        "date": "2026-10-19",
+        "show": "Raw",
+        "title": "Raw",
+        "name": "WWE.RAW.2026.10.19.NF.DEF.1080p",
+        "duration": 8314,
+        "enabled": true
       }
     ],
     "collections": [

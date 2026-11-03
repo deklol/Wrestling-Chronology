@@ -9,6 +9,7 @@ import calendar
 import hashlib
 import json
 import re
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -146,7 +147,7 @@ def add_record(library, company, when, show, title, source, description="", thum
     if existing is None:
         existing = {"id": identity, "date": when, "year": int(when[:4]), "show": show,
                     "title": title, "description": description, "duration": source.get("duration", 0),
-                    "thumbnail": thumbnail, "poster": thumbnail, "sources": [], "discoveredAt": 0}
+                    "thumbnail": thumbnail, "poster": thumbnail, "sources": [], "discoveredAt": int(time.time() * 1000)}
         rows.append(existing)
     if not any(source_key(value) == source_key(source) for value in existing["sources"]):
         existing["sources"].append(source)

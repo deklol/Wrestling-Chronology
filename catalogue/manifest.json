@@ -9,9 +9,9 @@
     },
     "wwe": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/wwe.json",
-      "sha256": "c71289f086ad59d48ca061a16096c9e2ee7a7bbaeb86e3207c1bee9d23e2c1f8",
-      "bytes": 17335118,
-      "revision": 1793688893
+      "sha256": "f00dac8e974d97bc46d07a4cd2048b4d6feca6e6a2fc525a7101a274bebce849",
+      "bytes": 17338630,
+      "revision": 1793690168
     },
     "ecw": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/ecw.json",

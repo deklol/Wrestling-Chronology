@@ -174,7 +174,9 @@ final class LibraryPack {
       JSONObject old = rows.get(identity);
       if (old != null) {
         row.put("id", old.getString("id"));
-        row.put("discoveredAt", old.optLong("discoveredAt"));
+        long discoveredAt = old.optLong("discoveredAt");
+        // Preserve local discovery order, but accept repairs to undated seed entries.
+        row.put("discoveredAt", discoveredAt > 0 ? discoveredAt : row.optLong("discoveredAt"));
         LinkedHashMap<String, JSONObject> sources = new LinkedHashMap<>();
         for (JSONObject value : list(old.getJSONArray("sources")))
           sources.put(Catalog.sourceKey(value), value);
