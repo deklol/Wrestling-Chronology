@@ -42,6 +42,6 @@ The sources are public. See the [public source list on Pastebin](https://pastebi
 | NJPW | [Collections, playlists and recordings](docs/media-sources/njpw.md) |
 | NXT | [Collections, playlists and recordings](docs/media-sources/nxt.md) |
 | AEW | [Collections, playlists and recordings](docs/media-sources/aew.md) |
-| WCtv additional programmes | [Documentaries, films, specials and other promotions](docs/media-sources/tv.md) |
+| WCtv additional programmes | [Additional shows, specials and promotions](docs/media-sources/tv.md) |
 
 App/project credit: [digitalm1nd](https://x.com/digitalm1nd).
