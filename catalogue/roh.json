@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "roh",
-  "revision": 1793444825,
+  "revision": 1793688894,
   "catalogue": {
     "schemaVersion": 1,
     "sourceValidation": 5,
@@ -12060,6 +12060,16 @@
             "bytes": 4184963516,
             "label": "Internet Archive \u00b7 1080p",
             "language": "en"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/2026-06-18-roh-on-honorclub-171-global-wars-cincinnati/2026-06-18%20ROH%20on%20HonorClub%20%23171%20-%20Global%20Wars%20Cincinnati.mp4",
+            "filename": "2026-06-18 ROH on HonorClub #171 - Global Wars Cincinnati.mp4",
+            "duration": 7736,
+            "height": 1080,
+            "bytes": 4184963516,
+            "label": "Internet Archive \u00b7 1080p",
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -19245,6 +19255,20 @@
               "title": "HonorClub #190"
             }
           }
+        },
+        {
+          "id": "2026-06-18-roh-on-honorclub-171-global-wars-cincinnati",
+          "name": "2026.06.18 ROH On HonorClub #171 Global Wars Cincinnati - Night 1",
+          "enabled": true,
+          "mappedOnly": true,
+          "dateOrder": "DMY",
+          "overrides": {
+            "2026-06-18 ROH on HonorClub #171 - Global Wars Cincinnati.mp4": {
+              "date": "2026-06-18",
+              "show": "HonorClub",
+              "title": "HonorClub #171"
+            }
+          }
         }
       ],
       "discovery": {
@@ -19672,6 +19696,12 @@
           "name": "Professional Wrestling uploads",
           "owner": "579391530351",
           "url": "https://ok.ru/profile/579391530351/video/all",
+          "enabled": true
+        },
+        {
+          "name": "sileem salaeam \u00b7 recent full shows",
+          "url": "https://ok.ru/profile/910148261710/video/all",
+          "owner": "910148261710",
           "enabled": true
         }
       ]

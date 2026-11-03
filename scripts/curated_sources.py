@@ -48,7 +48,8 @@ def adapt(company,library,config=None):
                         'duration':int(source.get('duration') or row['duration'])}
     config['archive']['collections']=list(archive.values())
     config['youtube']['videos']=list(youtube.values())
-    config['okru']={'enabled':True,'videos':list(okru.values()),'collections':[]}
+    config['okru']={'enabled':config.get('okru', {}).get('enabled', True),
+                    'videos':list(okru.values()),'collections':config.get('okru', {}).get('collections', [])}
     config['dailymotion']={'enabled':True,'videos':list(daily.values())}
     return library,config
 

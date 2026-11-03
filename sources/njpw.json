@@ -7570,6 +7570,30 @@
         "name": "njpw-super-junior-tag-league-2026-day-6-31-10-26",
         "enabled": true,
         "frozen": true
+      },
+      {
+        "id": "njpw-rivals-episode-3-19-03-22",
+        "name": "njpw-rivals-episode-3-19-03-22",
+        "enabled": true,
+        "frozen": true
+      },
+      {
+        "id": "njpw-world-tag-league-2025-day-1-20-25",
+        "name": "njpw-world-tag-league-2025-day-1-20-25",
+        "enabled": true,
+        "frozen": true
+      },
+      {
+        "id": "njpw-taichi-school-pro-wrestling-2-17-210-26",
+        "name": "njpw-taichi-school-pro-wrestling-2-17-210-26",
+        "enabled": true,
+        "frozen": true
+      },
+      {
+        "id": "njpw-super-junior-tag-league-2026-day-7-01-11-26",
+        "name": "njpw-super-junior-tag-league-2026-day-7-01-11-26",
+        "enabled": true,
+        "frozen": true
       }
     ]
   },

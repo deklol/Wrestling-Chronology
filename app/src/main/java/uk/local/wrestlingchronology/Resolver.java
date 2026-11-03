@@ -59,7 +59,7 @@ final class Resolver {
   static final class Resolved {
     final ArrayList<String> videos = new ArrayList<>();
     String audio, provider, label;
-    boolean hls, dash;
+    boolean hls, dash, edge;
     String fallbackHls;
     String originHost, deliveryHost;
     long initialBitrate = 5000000L;
@@ -105,6 +105,16 @@ final class Resolver {
 
   static Resolved resolve(JSONObject source, int quality) throws Exception {
     return resolve(source, quality, false);
+  }
+
+  static Resolved resolveCollection(android.content.Context context, String company, String episode,
+      JSONObject source, int quality) throws Exception {
+    String provider = source.optString("type");
+    if (BuildConfig.COLLECTION_DELIVERY_ENABLED && (provider.equals("archive") || provider.equals("okru"))) {
+      Resolved delivered = CollectionApi.resolve(context, company, episode, source, quality);
+      if (delivered != null) return delivered;
+    }
+    return resolve(source, quality);
   }
 
   static Resolved resolveTv(JSONObject source, int quality) throws Exception {

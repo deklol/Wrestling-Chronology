@@ -20,6 +20,8 @@ class Page(HTMLParser):
         if tag == 'a':
             href = attrs.get('href', '')
             match = re.search(r'/video/(\d{5,20})(?:\?|$)', href)
+            if not match and 'video-card_n' in attrs.get('class', '').split():
+                match = re.search(r'OK\.VideoPlayer\.openMovie\([\"\'](\d{5,20})[\"\']', attrs.get('onclick', ''))
             if match and attrs.get('title'):
                 self.links[match[1]] = attrs['title']
             if 'movie_author_link' in attrs.get('class', ''):
@@ -52,6 +54,8 @@ def refresh_okru(library, company, config):
     if not settings.get('enabled', False):
         return []
     known = {v['id'] for v in settings.get('videos', [])}
+    known.update(source.get('videoId') for row in library.get('episodes', [])
+                 for source in row.get('sources', []) if source.get('type') == 'okru')
     references = read(ROOT / 'catalogue/event-reference.json').get(company, [])
     report = []
     budget = 20
@@ -72,7 +76,8 @@ def refresh_okru(library, company, config):
                 show = programme(listing_title)
                 allowed = {'aew': {'Dynamite', 'Collision', 'Rampage', 'Dark', 'Dark: Elevation'},
                            'wcw': {'Nitro', 'Thunder', 'Worldwide'}, 'wwe': {'Raw', 'SmackDown', 'Heat'},
-                           'ecw': {'Hardcore TV', 'ECW on TNN'}, 'tna': {'Impact'}, 'roh': {'HonorClub'}}[company]
+                           'ecw': {'Hardcore TV', 'ECW on TNN'}, 'tna': {'Impact'}, 'roh': {'HonorClub'},
+                           'nxt': {'NXT', 'NXT UK', 'NXT Level Up'}}[company]
                 if company == 'roh' and re.search(r'(?i)HonorClub|ROH[ .]E\d+', listing_title):
                     show = 'HonorClub'
                 if show not in allowed and len(events) != 1:
@@ -85,12 +90,24 @@ def refresh_okru(library, company, config):
                     metadata = details.metadata[0]
                     movie = metadata['movie']
                     title = movie['title']
-                    if movie.get('isClip') or movie.get('isLive') or re.search(r'(?i)highlights|full.match|compilation|countdown|trailer|partial|incomplete', title):
+                    if movie.get('isClip') or movie.get('isLive') or re.search(r'(?i)highlights|full.match|compilation|countdown|trailer|partial|incomplete|documentary|interview', title):
                         raise ValueError('Not an eligible full recording')
+                    actual_show = programme(title)
+                    if company == 'roh' and re.search(r'(?i)HonorClub|ROH[ .]E\d+', title):
+                        actual_show = 'HonorClub'
+                    events = [event for event in references if len(key(event.get('name', ''))) >= 6
+                              and key(event['name']) in key(title)
+                              and str(event.get('year', event['date'][:4])) in title]
+                    if len(events) != 1 and (actual_show not in allowed or actual_show != show):
+                        raise ValueError('Upload identity conflicts with listing; review required')
+                    show = actual_show
                     duration = int(movie['duration'])
                     if not (metadata.get('hlsManifestUrl') or metadata.get('ondemandHls')):
                         raise ValueError('Public stream unavailable')
                     when = broadcast_date(title)
+                    listing_date = broadcast_date(listing_title)
+                    if when and listing_date and when != listing_date:
+                        raise ValueError('Upload date conflicts with listing; review required')
                     part = event_part(title)
                     pre = part != 'main'
                     if pre and company != 'aew':

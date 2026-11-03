@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "wwe",
-  "revision": 1793414989,
+  "revision": 1793688893,
   "catalogue": {
     "schemaVersion": 1,
     "sourceValidation": 5,
@@ -339026,6 +339026,30 @@
           }
         ],
         "discoveredAt": 1793232000000
+      },
+      {
+        "id": "wwe:2026-11-02:raw",
+        "date": "2026-11-02",
+        "year": 2026,
+        "show": "Raw",
+        "title": "Raw",
+        "description": "",
+        "duration": 9333,
+        "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18725556259406&type=37&idx=3&scl=4&tkn=zix_GhGrN-CQm-LZnbca87ZSqQU&fn=external_8",
+        "poster": "https://iv.okcdn.ru/videoPreview?id=18725556259406&type=37&idx=3&scl=4&tkn=zix_GhGrN-CQm-LZnbca87ZSqQU&fn=external_8",
+        "sources": [
+          {
+            "type": "okru",
+            "videoId": "16275187173966",
+            "owner": "910148261710",
+            "title": "WWE.RAW.2026.11.02.NF.iNT.720p",
+            "duration": 9333,
+            "programme": "Raw",
+            "label": "OK.ru",
+            "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18725556259406&type=37&idx=3&scl=4&tkn=zix_GhGrN-CQm-LZnbca87ZSqQU&fn=external_8"
+          }
+        ],
+        "discoveredAt": 0
       }
     ],
     "eventCalendar": [],
@@ -426698,6 +426722,17 @@
           "title": "WrestleMania IV",
           "duration": 13530,
           "enabled": true
+        },
+        {
+          "id": "16275187173966",
+          "owner": "910148261710",
+          "episodeId": "wwe:2026-11-02:raw",
+          "date": "2026-11-02",
+          "show": "Raw",
+          "title": "Raw",
+          "name": "WWE.RAW.2026.11.02.NF.iNT.720p",
+          "duration": 9333,
+          "enabled": true
         }
       ],
       "collections": [
@@ -426705,6 +426740,12 @@
           "name": "WWF / WWE events",
           "owner": "586215877968",
           "url": "https://ok.ru/profile/586215877968/video/all",
+          "enabled": true
+        },
+        {
+          "name": "sileem salaeam \u00b7 recent full shows",
+          "url": "https://ok.ru/profile/910148261710/video/all",
+          "owner": "910148261710",
           "enabled": true
         }
       ]

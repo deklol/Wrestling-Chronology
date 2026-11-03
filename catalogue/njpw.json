@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "njpw",
-  "revision": 1793582984,
+  "revision": 1793688894,
   "catalogue": {
     "company": "njpw",
     "episodes": [
@@ -9608,6 +9608,14 @@
             "authorUrl": "https://www.youtube.com/@NJPWGLOBAL",
             "programme": "NJPW STRONG",
             "direct": true
+          },
+          {
+            "type": "archive",
+            "label": "Internet Archive",
+            "duration": 3423,
+            "language": "und",
+            "url": "https://archive.org/download/njpw-rivals-episode-3-19-03-22/NJPW%20Rivals%2C%20Episode%203%2019%2003%2022.mp4",
+            "programme": "NJPW STRONG"
           }
         ],
         "discoveredAt": 0
@@ -16848,6 +16856,28 @@
         "discoveredAt": 0
       },
       {
+        "id": "njpw:2025-11-20:ppv:worldtagleague2025day1",
+        "date": "2025-11-20",
+        "year": 2025,
+        "show": "PPV",
+        "title": "World Tag League 2025 \u2014 Day 1",
+        "description": "World Tag League 2025 \u2014 Day 1",
+        "duration": 9643,
+        "thumbnail": "https://archive.org/download/njpw-world-tag-league-2025-day-1-20-25/njpw-world-tag-league-2025-day-1-20-25.thumbs/NJPW%20World%20Tag%20League%202025%20Day%201%2020---25_003354.jpg",
+        "poster": "https://archive.org/download/njpw-world-tag-league-2025-day-1-20-25/njpw-world-tag-league-2025-day-1-20-25.thumbs/NJPW%20World%20Tag%20League%202025%20Day%201%2020---25_003354.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "label": "Internet Archive",
+            "duration": 9643,
+            "language": "und",
+            "url": "https://archive.org/download/njpw-world-tag-league-2025-day-1-20-25/NJPW%20World%20Tag%20League%202025%20Day%201%2020---25.mp4",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793688745136
+      },
+      {
         "id": "njpw:2025-11-22:ppv:worldtagleague2025day2",
         "date": "2025-11-22",
         "year": 2025,
@@ -19973,6 +20003,28 @@
         "discoveredAt": 0
       },
       {
+        "id": "njpw:2026-10-17:ppv:taichischoolprowrestling21721026",
+        "date": "2026-10-17",
+        "year": 2026,
+        "show": "PPV",
+        "title": "Taichi School Pro Wrestling 2 17-210-26",
+        "description": "Taichi School Pro Wrestling 2 17-210-26",
+        "duration": 10893,
+        "thumbnail": "https://archive.org/download/njpw-taichi-school-pro-wrestling-2-17-210-26/njpw-taichi-school-pro-wrestling-2-17-210-26.thumbs/NJPW%20Taichi%20School%20Pro%20Wrestling%202%2017-210-26_003840.jpg",
+        "poster": "https://archive.org/download/njpw-taichi-school-pro-wrestling-2-17-210-26/njpw-taichi-school-pro-wrestling-2-17-210-26.thumbs/NJPW%20Taichi%20School%20Pro%20Wrestling%202%2017-210-26_003840.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "label": "Internet Archive",
+            "duration": 10893,
+            "language": "und",
+            "url": "https://archive.org/download/njpw-taichi-school-pro-wrestling-2-17-210-26/NJPW%20Taichi%20School%20Pro%20Wrestling%202%2017-210-26.mp4",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793688745136
+      },
+      {
         "id": "njpw:2026-10-24:ppv:superjuniortagleague2026day1",
         "date": "2026-10-24",
         "year": 2026,
@@ -20103,6 +20155,28 @@
           }
         ],
         "discoveredAt": 0
+      },
+      {
+        "id": "njpw:2026-11-01:ppv:superjuniortagleague2026day7",
+        "date": "2026-11-01",
+        "year": 2026,
+        "show": "PPV",
+        "title": "Super Junior Tag League 2026 \u2014 Day 7",
+        "description": "Super Junior Tag League 2026 \u2014 Day 7",
+        "duration": 8772,
+        "thumbnail": "https://archive.org/download/njpw-super-junior-tag-league-2026-day-7-01-11-26/njpw-super-junior-tag-league-2026-day-7-01-11-26.thumbs/NJPW%20Super%20Junior%20Tag%20League%202026%20Day%207%2001-11-26_003060.jpg",
+        "poster": "https://archive.org/download/njpw-super-junior-tag-league-2026-day-7-01-11-26/njpw-super-junior-tag-league-2026-day-7-01-11-26.thumbs/NJPW%20Super%20Junior%20Tag%20League%202026%20Day%207%2001-11-26_003060.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "label": "Internet Archive",
+            "duration": 8772,
+            "language": "und",
+            "url": "https://archive.org/download/njpw-super-junior-tag-league-2026-day-7-01-11-26/NJPW%20Super%20Junior%20Tag%20League%202026%20Day%207%2001-11-26.mp4",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793688745136
       }
     ]
   },
@@ -27676,6 +27750,30 @@
         {
           "id": "njpw-super-junior-tag-league-2026-day-6-31-10-26",
           "name": "njpw-super-junior-tag-league-2026-day-6-31-10-26",
+          "enabled": true,
+          "frozen": true
+        },
+        {
+          "id": "njpw-rivals-episode-3-19-03-22",
+          "name": "njpw-rivals-episode-3-19-03-22",
+          "enabled": true,
+          "frozen": true
+        },
+        {
+          "id": "njpw-world-tag-league-2025-day-1-20-25",
+          "name": "njpw-world-tag-league-2025-day-1-20-25",
+          "enabled": true,
+          "frozen": true
+        },
+        {
+          "id": "njpw-taichi-school-pro-wrestling-2-17-210-26",
+          "name": "njpw-taichi-school-pro-wrestling-2-17-210-26",
+          "enabled": true,
+          "frozen": true
+        },
+        {
+          "id": "njpw-super-junior-tag-league-2026-day-7-01-11-26",
+          "name": "njpw-super-junior-tag-league-2026-day-7-01-11-26",
           "enabled": true,
           "frozen": true
         }

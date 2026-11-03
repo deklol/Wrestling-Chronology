@@ -43,6 +43,7 @@ final class TvApi {
     connection.setRequestProperty("Authorization", "Bearer " + credential);
     connection.setRequestProperty("Accept-Encoding", "gzip");
     connection.setRequestProperty("Accept", "application/json");
+    connection.setRequestProperty("User-Agent", Resolver.USER_AGENT);
     try {
       if (body != null) {
         byte[] bytes = body.toString().getBytes(StandardCharsets.UTF_8);

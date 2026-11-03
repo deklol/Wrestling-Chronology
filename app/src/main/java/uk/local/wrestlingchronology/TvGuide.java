@@ -8,6 +8,7 @@ final class TvGuide {
   static final class Channel {
     final String id, name, group;
     final int number;
+    final long startupTimeoutMs;
     final List<Slot> slots = new ArrayList<>();
 
     Channel(JSONObject value) throws JSONException {
@@ -15,6 +16,8 @@ final class TvGuide {
       name = value.getString("name");
       number = value.getInt("number");
       group = value.optString("group", "All");
+      int timeout = value.optInt("startupTimeoutSeconds", id.equals("darkside") ? 20 : 0);
+      startupTimeoutMs = timeout > 0 ? Math.max(5, Math.min(60, timeout)) * 1000L : 0;
     }
 
     Slot at(double time) {

@@ -9,6 +9,15 @@ import org.junit.Test;
 
 public class TvGuideTest {
   @Test
+  public void darkSideGetsItsOwnBoundedStartupWindow() throws Exception {
+    JSONObject value = new JSONObject().put("id", "darkside").put("name", "Dark Side TV").put("number", 304);
+    assertEquals(20000, new TvGuide.Channel(value).startupTimeoutMs);
+    assertEquals(25000, new TvGuide.Channel(value.put("startupTimeoutSeconds", 25)).startupTimeoutMs);
+    value.put("id", "wwe").remove("startupTimeoutSeconds");
+    assertEquals(0, new TvGuide.Channel(value).startupTimeoutMs);
+  }
+
+  @Test
   public void channelBoundariesDoNotOverlapOrSeekPastTheEnd() throws Exception {
     JSONObject data =
         new JSONObject(

@@ -9,12 +9,12 @@ The lists reflect the bundled company catalogues and configured source discovery
 
 | Library | Public page links |
 |---|---:|
-| [WCW](wcw.md) | 932 |
-| [WWF / WWE](wwe.md) | 399 |
-| [ECW](ecw.md) | 86 |
-| [Ring of Honor](roh.md) | 459 |
-| [TNA / Impact](tna.md) | 145 |
-| [NJPW](njpw.md) | 999 |
+| [WCW](wcw.md) | 935 |
+| [WWF / WWE](wwe.md) | 401 |
+| [ECW](ecw.md) | 87 |
+| [Ring of Honor](roh.md) | 461 |
+| [TNA / Impact](tna.md) | 146 |
+| [NJPW](njpw.md) | 1,003 |
 | [NXT](nxt.md) | 1,095 |
-| [AEW](aew.md) | 199 |
-| [WCtv additional programmes](tv.md) | 246 |
+| [AEW](aew.md) | 200 |
+| [WCtv additional programmes](tv.md) | 299 |

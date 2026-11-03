@@ -38,6 +38,7 @@ Public provider pages only. Individual files inside Archive collections are grou
 - [2026.06.09 ROH YouTube Special Episode #09 (2026.06.09-roh-you-tube-special-episode-009)](<https://archive.org/details/2026.06.09-roh-you-tube-special-episode-009>)
 - [2026.06.11 ROH On HonorClub #170 (roh-on-honor-club-170-2026-06-11)](<https://archive.org/details/roh-on-honor-club-170-2026-06-11>)
 - [2026.06.16 ROH YouTube Special Episode #010 (31-2026.06.16-roh-you-tube-special-episode-010)](<https://archive.org/details/31-2026.06.16-roh-you-tube-special-episode-010>)
+- [2026.06.18 ROH On HonorClub #171 Global Wars Cincinnati - Night 1 (2026-06-18-roh-on-honorclub-171-global-wars-cincinnati)](<https://archive.org/details/2026-06-18-roh-on-honorclub-171-global-wars-cincinnati>)
 - [2026.06.25 ROH On HonorClub #172 Global Wars Cincinnati - Night 2 (34-2026.06.25-roh-on-honor-club-172-global-wars-cincinnati-night-2)](<https://archive.org/details/34-2026.06.25-roh-on-honor-club-172-global-wars-cincinnati-night-2>)
 - [2026.07.09 ROH On HonorClub #174 (2026.07.09-roh-on-honor-club-174)](<https://archive.org/details/2026.07.09-roh-on-honor-club-174>)
 - [2026.07.16 ROH On HonorClub #175 (2026.07.16-roh-on-honor-club-175)](<https://archive.org/details/2026.07.16-roh-on-honor-club-175>)
@@ -372,6 +373,7 @@ Public provider pages only. Individual files inside Archive collections are grou
 ## OK.ru profiles and collections
 
 - [579391530351](<https://ok.ru/profile/579391530351/video/all>)
+- [sileem salaeam · recent full shows](<https://ok.ru/profile/910148261710/video/all>)
 
 ## OK.ru recordings
 

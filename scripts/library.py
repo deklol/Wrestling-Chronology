@@ -194,6 +194,8 @@ def scan_archive(library, company, config, metadata, events):
     if config.get("frozen", False):
         return {"source": identifier, "status": "curated source; explicit mappings kept"}
     files = original_videos(metadata)
+    known = {source_key(source): row for row in library['episodes']
+             for source in row.get('sources', []) if source.get('type') == 'archive'}
     grouped = defaultdict(list)
     skipped = []
     for file in files:
@@ -245,6 +247,9 @@ def scan_archive(library, company, config, metadata, events):
             source["bytes"] = sum(value["bytes"] for value in sources)
             sources = [source]
         for source in sources:
+            existing = known.get(source_key(source))
+            if existing is not None and existing.get('thumbnail'):
+                continue
             from event_identity import event_part, row_part
             if show == 'PPV' and event_part(source.get('filename', '')) != event_part(title):
                 skipped.append(source['filename'] + ': event part does not match configured title')
@@ -468,6 +473,9 @@ def publish_packs(base_url, refresh=False):
                 report.extend(notes)
             except Exception as error:
                 report.append({'company':company,'source':'Reviewed discovery','status':'skipped','reason':str(error)})
+            if company == 'nxt':
+                from okru_sources import refresh_okru
+                report.extend(refresh_okru(library, company, config))
         elif refresh:
             from okru_sources import refresh_okru
             report.extend(refresh_okru(library, company, config))

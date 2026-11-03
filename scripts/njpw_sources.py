@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 import re
 import time
-from urllib.parse import quote, urlencode
+from urllib.parse import quote, urlencode, urlsplit, unquote
 from urllib.request import Request, urlopen
 
 UA = 'WrestlingChronology source refresh/1.0'
@@ -256,16 +256,31 @@ def fetch_json(url):
     return json.loads(raw)
 
 
+def known_archive_items(rows):
+    result = set()
+    for row in rows:
+        for source in row.get('sources', []):
+            if source.get('type') != 'archive':
+                continue
+            for url in source.get('urls', [source.get('url', '')]):
+                parsed = urlsplit(url)
+                parts = parsed.path.split('/')
+                if parsed.hostname == 'archive.org' and len(parts) > 3 and parts[1] == 'download':
+                    result.add(unquote(parts[2]))
+    return result
+
+
 def refresh(root, previous, progress):
     config = json.loads((root / 'sources/njpw.json').read_bytes())
     path = root / 'data/njpw-source-state.json'
     state = json.loads(path.read_bytes()) if path.exists() else {'archiveSeen': []}
-    seen = set(state.get('archiveSeen', []))
+    known = known_archive_items(previous)
+    seen = set(state.get('archiveSeen', [])) | known
     fresh = []
     failures = []
     configured = set(config.get('archiveItems', []))
-    checked_configured = set(state.get('configuredArchiveItems', []))
-    for ident in sorted(configured - checked_configured):
+    checked_configured = set(state.get('configuredArchiveItems', [])) | (configured & known)
+    for ident in sorted(configured - checked_configured)[:30]:
         try:
             fresh.extend(archive_rows(fetch_json('https://archive.org/metadata/' + quote(ident, safe='')), config))
             checked_configured.add(ident)

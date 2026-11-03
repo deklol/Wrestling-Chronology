@@ -11754,7 +11754,14 @@
         "duration": 10667
       }
     ],
-    "collections": []
+    "collections": [
+      {
+        "name": "sileem salaeam \u00b7 recent full shows",
+        "url": "https://ok.ru/profile/910148261710/video/all",
+        "owner": "910148261710",
+        "enabled": true
+      }
+    ]
   },
   "dailymotion": {
     "enabled": true,

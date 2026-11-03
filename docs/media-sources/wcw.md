@@ -260,6 +260,7 @@ Public provider pages only. Individual files inside Archive collections are grou
 - [579391530351](<https://ok.ru/profile/579391530351/video/all>)
 - [589703611535](<https://ok.ru/profile/589703611535/video/all>)
 - [910449455878](<https://ok.ru/profile/910449455878/video/all>)
+- [sileem salaeam · recent full shows](<https://ok.ru/profile/910148261710/video/all>)
 
 ## OK.ru recordings
 
@@ -649,6 +650,7 @@ Public provider pages only. Individual files inside Archive collections are grou
 
 - [Bash at the Beach (1994-07-17)](<https://www.youtube.com/watch?v=3giA0qJ3DO8>)
 - [Bash at the Beach (1995-07-16)](<https://www.youtube.com/watch?v=jPRjP3ss1Zg>)
+- [Battlebowl](<https://www.youtube.com/watch?v=cAFE_tpdzJo>)
 - [Beach Blast (1992-06-20)](<https://www.youtube.com/watch?v=SByBWY0XJCk>)
 - [Beach Blast (1993-07-18)](<https://www.youtube.com/watch?v=toK5piVkqMo>)
 - [Capital Combat (1990-05-19)](<https://www.youtube.com/watch?v=8avlY_krovQ>)
@@ -682,6 +684,7 @@ Public provider pages only. Individual files inside Archive collections are grou
 - [Fall Brawl '95: War Games (1995-09-17)](<https://www.youtube.com/watch?v=d4mMN7zW8E0>)
 - [FULL EPISODE: Eric Bischoff calls out Sting; Malenko vs. Mongo: WCW Monday Nitro, May 12, 1997](<https://www.youtube.com/watch?v=d3V9L9BGHKU>)
 - [FULL EPISODE: Flair vs. Garvin for NWA World Title in a Cage | WCW, Sept. 26, 1987](<https://www.youtube.com/watch?v=mqw-fgtJ7Bc>)
+- [FULL EPISODE: Goldberg faces his trainer; Steiner vs. A-Wall | WCW Monday Nitro, Dec. 12, 2000](<https://www.youtube.com/watch?v=K9PBibXqcTo>)
 - [FULL EPISODE: Ron Garvin celebrates World Title win; Taylor steals Koloff’s title | WCW, Oct 3, 1987](<https://www.youtube.com/watch?v=qyRQF_3QdUs>)
 - [FULL EPISODE: The nWo takes over; Rey Mysterio vs. Syxx: WCW Monday Nitro, May 5, 1997](<https://www.youtube.com/watch?v=K6D9QHnIRTs>)
 - [Halloween Havoc (1989-10-28)](<https://www.youtube.com/watch?v=jeGj0Odz69k>)

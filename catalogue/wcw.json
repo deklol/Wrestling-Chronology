@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "wcw",
-  "revision": 1793534486,
+  "revision": 1793688894,
   "catalogue": {
     "schemaVersion": 1,
     "generatedAt": "2026-10-19T22:06:23.287590+00:00",
@@ -28024,7 +28024,7 @@
       {
         "date": "1993-11-20",
         "duration": 9908,
-        "thumbnail": "https://archive.org/services/img/nov.-20-1993",
+        "thumbnail": "https://i.ytimg.com/vi/cAFE_tpdzJo/hqdefault.jpg",
         "sources": [
           {
             "duration": 9908.67,
@@ -28059,6 +28059,15 @@
             "type": "okru",
             "title": "WCW.1993.Battlebowl.1993.VHSRip.x264-RUDOS.mp4",
             "programme": "PPV"
+          },
+          {
+            "type": "youtube",
+            "videoId": "cAFE_tpdzJo",
+            "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+            "direct": true,
+            "title": "FULL EVENT: WCW BattleBowl 1993 | Sting, Flair, Vader and more enter The Lethal Lottery",
+            "duration": 9909,
+            "label": "Official YouTube"
           }
         ],
         "year": 1993,
@@ -83550,7 +83559,7 @@
       },
       {
         "date": "2000-12-12",
-        "thumbnail": "https://artworks.thetvdb.com/banners/episodes/76962/222190.jpg",
+        "thumbnail": "https://i.ytimg.com/vi/K9PBibXqcTo/hqdefault.jpg",
         "listedParts": 0,
         "aliases": [
           "tt0185130:6:50"
@@ -83642,6 +83651,15 @@
             "type": "okru",
             "title": "Monday.Nitro.2000-12-12",
             "programme": "Nitro"
+          },
+          {
+            "type": "youtube",
+            "videoId": "K9PBibXqcTo",
+            "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+            "direct": true,
+            "title": "FULL EPISODE: Goldberg faces his trainer; Steiner vs. A-Wall | WCW Monday Nitro, Dec. 12, 2000",
+            "duration": 5294,
+            "label": "Official YouTube"
           }
         ],
         "year": 2000,
@@ -86889,6 +86907,28 @@
           "date": "1987-10-03",
           "show": "Saturday Night",
           "duration": 2890,
+          "enabled": true,
+          "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+          "authorUrl": "https://www.youtube.com/@WCW"
+        },
+        {
+          "id": "cAFE_tpdzJo",
+          "name": "FULL EVENT: WCW BattleBowl 1993 | Sting, Flair, Vader and more enter The Lethal Lottery",
+          "title": "Battlebowl",
+          "date": "1993-11-20",
+          "show": "PPV",
+          "duration": 9909,
+          "enabled": true,
+          "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+          "authorUrl": "https://www.youtube.com/@WCW"
+        },
+        {
+          "id": "K9PBibXqcTo",
+          "name": "FULL EPISODE: Goldberg faces his trainer; Steiner vs. A-Wall | WCW Monday Nitro, Dec. 12, 2000",
+          "title": "FULL EPISODE: Goldberg faces his trainer; Steiner vs. A-Wall | WCW Monday Nitro, Dec. 12, 2000",
+          "date": "2000-12-12",
+          "show": "Nitro",
+          "duration": 5294,
           "enabled": true,
           "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
           "authorUrl": "https://www.youtube.com/@WCW"
@@ -112944,6 +112984,12 @@
           "name": "WCW collection",
           "owner": "589703611535",
           "url": "https://ok.ru/profile/589703611535/video/all",
+          "enabled": true
+        },
+        {
+          "name": "sileem salaeam \u00b7 recent full shows",
+          "url": "https://ok.ru/profile/910148261710/video/all",
+          "owner": "910148261710",
           "enabled": true
         }
       ]

@@ -42,6 +42,7 @@ final class TvPlayback {
   int generation, quality;
   boolean stretched, muted, closed;
   long tuneStarted;
+  private long startupDeadline;
   private Runnable timeout, slowNotice, retryTask;
   private final TvRetry retry = new TvRetry();
   private boolean joinLive;
@@ -65,6 +66,8 @@ final class TvPlayback {
   void tune(TvGuide.Slot slot, long offset, boolean live) {
     retry.reset();
     joinLive = live;
+    startupDeadline = slot.channel.startupTimeoutMs > 0
+        ? SystemClock.elapsedRealtime() + slot.channel.startupTimeoutMs : 0;
     if (active != null && active.getPlayerError() == null && active.getMediaItemCount() == 1 && playing != null
         && playing.programme.equals(slot.programme)) {
       cancel();
@@ -86,16 +89,21 @@ final class TvPlayback {
     cancel();
     final int token = generation;
     requested = slot;
+    long remaining = startupDeadline > 0 ? startupDeadline - SystemClock.elapsedRealtime() : 30000;
+    if (remaining <= 0) { fail(token, slot, "TV channel unavailable"); return; }
     tuneStarted = SystemClock.elapsedRealtime();
     listener.notice(retrying ? "Retrying channel, please wait..." : "Changing channel, please wait...");
     Log.i("ChronologyTV", "TUNE generation=" + token + " channel=" + slot.channel.id);
     slowNotice =
         () -> {
-          if (token == generation) listener.notice("Still loading channel...");
+          if (token == generation) listener.notice("Still loading channel...\nLarger or higher-quality recordings can take a little longer to load.");
         };
-    timeout = () -> recover(token, slot, offset, new java.net.SocketTimeoutException("Channel startup timed out"));
-    main.postDelayed(slowNotice, 10000);
-    main.postDelayed(timeout, 30000);
+    timeout = () -> {
+      if (startupDeadline > 0) fail(token, slot, "TV channel unavailable");
+      else recover(token, slot, offset, new java.net.SocketTimeoutException("Channel startup timed out"));
+    };
+    main.postDelayed(slowNotice, 5000);
+    main.postDelayed(timeout, remaining);
     resolution =
         io.submit(
             () -> {
@@ -439,6 +447,9 @@ final class TvPlayback {
 
   private void recover(int token, TvGuide.Slot slot, long offset, Throwable error) {
     if (closed || token != generation) return;
+    // A later playback failure gets a fresh recovery window, not an expired tune deadline.
+    if (requested == null && slot.channel.startupTimeoutMs > 0)
+      startupDeadline = SystemClock.elapsedRealtime() + slot.channel.startupTimeoutMs;
     if (TvMemory.exhausted(error) && active != null) {
       // An unindexed source may exceed the estimate. Release the other decoder
       // before one fresh attempt; retrying with both players repeats the OOM.
@@ -448,6 +459,10 @@ final class TvPlayback {
     }
     boolean transientFailure = temporary(error);
     long delay = transientFailure ? retry.nextDelay(SystemClock.elapsedRealtime()) : -1;
+    if (startupDeadline > 0 && SystemClock.elapsedRealtime() + Math.max(0, delay) >= startupDeadline) {
+      fail(token, slot, "TV channel unavailable");
+      return;
+    }
     if (delay < 0) {
       fail(token, slot, transientFailure ? "Could not connect to this channel" : "TV channel unavailable");
       return;

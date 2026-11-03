@@ -23,7 +23,7 @@ WRESTLING_KEY_ALIAS=your-key-alias
 WRESTLING_KEY_PASSWORD=your-key-password
 ```
 
-Keep the signing key private and use the same key for every update. Without these variables, the release output is unsigned. The supplied 0.1.0 APK is a locally signed **test build**, not a production signing setup. Builds signed by a different key cannot replace it in place.
+Keep the signing key private and use the same key for every update. Without these variables, the release output is unsigned. Published APKs retain the original signing key so existing installations can update in place. A fork signed with a different key cannot replace them without uninstalling first.
 
 For an app update, increment both version fields in `app/build.gradle`. Publish the signed APK as `Wrestling-Chronology.apk` in a GitHub release. The app checks `deklol/Wrestling-Chronology`; a fork must change the repository URL in `Updater.java` and the source feed in `RemoteLibrary.java`.
 
@@ -31,6 +31,7 @@ Private keys, local SDK paths, build outputs and metadata caches are excluded fr
 
 Hosted community features and the shared TV guide require the operator-provided
 `WC_COMMUNITY_BASE_URL` and `WC_COMMUNITY_APP_KEY` build environment variables.
-These are separate from the public source packs. Keep private operator settings
-out of source archives. A build without them can still use the company libraries
-and their external video sources, but cannot register for hosted features.
+Set `WC_COLLECTION_DELIVERY=true` only when that API supports authenticated
+collection playback. Without hosted configuration, the app uses direct provider
+playback for company libraries; shared community features and TV are unavailable.
+The service configuration and signing secrets are not part of this repository.

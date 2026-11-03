@@ -51207,7 +51207,7 @@
             "show": "NXT",
             "title": "NXT"
           },
-          "2023/WWE NXT - S2023E02 - New Year’s Evil 2023 - 01-10-2023.mp4": {
+          "2023/WWE NXT - S2023E02 - New Year\u2019s Evil 2023 - 01-10-2023.mp4": {
             "date": "2023-01-10",
             "show": "NXT",
             "title": "NXT"
@@ -87648,6 +87648,17 @@
         "title": "WrestleMania IV",
         "duration": 13530,
         "enabled": true
+      },
+      {
+        "id": "16275187173966",
+        "owner": "910148261710",
+        "episodeId": "wwe:2026-11-02:raw",
+        "date": "2026-11-02",
+        "show": "Raw",
+        "title": "Raw",
+        "name": "WWE.RAW.2026.11.02.NF.iNT.720p",
+        "duration": 9333,
+        "enabled": true
       }
     ],
     "collections": [
@@ -87655,6 +87666,12 @@
         "name": "WWF / WWE events",
         "owner": "586215877968",
         "url": "https://ok.ru/profile/586215877968/video/all",
+        "enabled": true
+      },
+      {
+        "name": "sileem salaeam \u00b7 recent full shows",
+        "url": "https://ok.ru/profile/910148261710/video/all",
+        "owner": "910148261710",
         "enabled": true
       }
     ]

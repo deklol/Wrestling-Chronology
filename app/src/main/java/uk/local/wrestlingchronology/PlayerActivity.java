@@ -314,6 +314,7 @@ public final class PlayerActivity extends Activity {
       return;
     }
     JSONObject option = options.get(optionIndex);
+    final String selectedCompany = Company.current.id, selectedEpisode = current().id;
     status.setText(
         "Connecting to "
             + (option.optString("type").equals("youtube")
@@ -326,7 +327,8 @@ public final class PlayerActivity extends Activity {
         () -> {
           try {
             Resolver.Resolved stream =
-                Resolver.resolve(option, Catalog.prefs(this).getInt("quality", 720));
+                Resolver.resolveCollection(this, selectedCompany, selectedEpisode, option,
+                    Catalog.prefs(this).getInt("quality", 720));
             handler.post(
                 () -> {
                   if (token == generation && active) prepare(stream, token);
@@ -417,7 +419,7 @@ public final class PlayerActivity extends Activity {
             for (int available : resolved.qualityUrls.keySet()) if (available <= limit) height = available;
             changeProgressiveQuality(height);
           } else {
-            qualityCeiling = Catalog.prefs(this).getInt("quality", 720);
+            qualityCeiling = autoQualityCeiling();
             Toast.makeText(this, selectedQuality == 0 ? "Automatic quality enabled" : "Switching to " + selectedQuality + "p", Toast.LENGTH_SHORT).show();
           }
         }).setNegativeButton("Close", null).create();
@@ -464,6 +466,12 @@ public final class PlayerActivity extends Activity {
     player.setPlaybackSpeed(speed);
   }
 
+  int autoQualityCeiling() {
+    int preferred = Catalog.prefs(this).getInt("quality", 720);
+    return resolved != null && resolved.edge && "okru".equals(resolved.provider)
+        ? Math.min(720, preferred) : preferred;
+  }
+
   void prepare(Resolver.Resolved stream, int token) {
     archiveRecovery.reset();
     if (player != null) {
@@ -473,7 +481,7 @@ public final class PlayerActivity extends Activity {
     resolved = stream;
     final java.util.concurrent.atomic.AtomicLong receivedAt = new java.util.concurrent.atomic.AtomicLong();
     lastMediaBytes = receivedAt;
-    qualityCeiling = Catalog.prefs(this).getInt("quality", 720);
+    qualityCeiling = autoQualityCeiling();
     DefaultTrackSelector selector = new DefaultTrackSelector(this,
         new BufferedQualitySelection(() -> selectedQuality, () -> qualityCeiling));
     trackSelector = selector;
@@ -541,7 +549,7 @@ public final class PlayerActivity extends Activity {
       headers.put("Origin", "https://www.dailymotion.com");
       http.setDefaultRequestProperties(headers);
     }
-    if (stream.provider.equals("okru")) {
+    if (stream.provider.equals("okru") && !stream.edge) {
       Map<String, String> headers = new HashMap<>();
       headers.put("Referer", "https://ok.ru/");
       headers.put("User-Agent", Resolver.USER_AGENT);
@@ -549,7 +557,7 @@ public final class PlayerActivity extends Activity {
     }
     DataSource.Factory data = youtube ? () -> new YoutubeDataSource(http.createDataSource()) : http;
     if (stream.provider.equals("dailymotion")) data = StreamingNetwork.dailymotion(this);
-    if (stream.provider.equals("okru")) {
+    if (stream.provider.equals("okru") && !stream.edge) {
       ResolvingDataSource.Resolver route = spec -> {
         if (stream.originHost != null && stream.originHost.equals(spec.uri.getHost()))
           return spec.withUri(spec.uri.buildUpon().authority(stream.deliveryHost).build());
@@ -568,6 +576,7 @@ public final class PlayerActivity extends Activity {
       if (stream.dash) item.setMimeType(MimeTypes.APPLICATION_MPD);
       else if (stream.provider.equals("dailymotion") || (stream.provider.equals("okru") && stream.hls)) item.setMimeType(MimeTypes.APPLICATION_M3U8);
       else if (stream.provider.equals("okru")) item.setMimeType(MimeTypes.VIDEO_MP4);
+      else if (stream.edge && stream.provider.equals("archive")) item.setMimeType(MimeTypes.VIDEO_MP4);
       if (clipping)
         item.setClippingConfiguration(
             new MediaItem.ClippingConfiguration.Builder().setEndPositionMs(8000).build());
@@ -646,7 +655,7 @@ public final class PlayerActivity extends Activity {
                 Toast.makeText(PlayerActivity.this, "Switched to Auto to keep playback moving", Toast.LENGTH_SHORT).show();
                 handler.postDelayed(() -> {
                   if (token == generation && player != null && selectedQuality == 0)
-                    qualityCeiling = Catalog.prefs(PlayerActivity.this).getInt("quality", 720);
+                    qualityCeiling = autoQualityCeiling();
                 }, 20000);
               }, 6000);
               if (selectedQuality == 0 && !stream.qualityUrls.isEmpty()) handler.postDelayed(() -> {

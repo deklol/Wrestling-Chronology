@@ -502,7 +502,7 @@
       },
       {
         "id": "nl8KX6AixjU",
-        "name": "ROH + CMLL Present: Global Wars México 2025",
+        "name": "ROH + CMLL Present: Global Wars M\u00e9xico 2025",
         "enabled": true,
         "channelId": "UC4_uDa6w1kOyzsikIzReCKQ",
         "authorUrl": "https://www.youtube.com/@ringofhonor",
@@ -6442,6 +6442,20 @@
             "title": "HonorClub #190"
           }
         }
+      },
+      {
+        "id": "2026-06-18-roh-on-honorclub-171-global-wars-cincinnati",
+        "name": "2026.06.18 ROH On HonorClub #171 Global Wars Cincinnati - Night 1",
+        "enabled": true,
+        "mappedOnly": true,
+        "dateOrder": "DMY",
+        "overrides": {
+          "2026-06-18 ROH on HonorClub #171 - Global Wars Cincinnati.mp4": {
+            "date": "2026-06-18",
+            "show": "HonorClub",
+            "title": "HonorClub #171"
+          }
+        }
       }
     ],
     "discovery": {
@@ -6869,6 +6883,12 @@
         "name": "Professional Wrestling uploads",
         "owner": "579391530351",
         "url": "https://ok.ru/profile/579391530351/video/all",
+        "enabled": true
+      },
+      {
+        "name": "sileem salaeam \u00b7 recent full shows",
+        "url": "https://ok.ru/profile/910148261710/video/all",
+        "owner": "910148261710",
         "enabled": true
       }
     ]

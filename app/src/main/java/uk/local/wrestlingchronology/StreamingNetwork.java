@@ -16,7 +16,7 @@ final class StreamingNetwork {
   /** Shared by episode and TV playback; other providers keep their own transports. */
   static DataSource.Factory bufferedMedia(Resolver.Resolved stream,
       DataSource.Factory ordinary, DataSource.Factory ranges, Runnable received) {
-    if (stream == null) return ordinary;
+    if (stream == null || stream.edge) return ordinary;
     boolean archive = "archive".equals(stream.provider);
     boolean dash = "okru".equals(stream.provider) && stream.dash;
     if (!archive && !dash) return ordinary;

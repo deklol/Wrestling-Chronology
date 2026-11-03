@@ -90,10 +90,11 @@ final class CommunityApi {
   private static JSONObject http(String path, String token, JSONObject body) throws Exception {
     HttpURLConnection connection = (HttpURLConnection) new URL(BuildConfig.COMMUNITY_BASE_URL + path).openConnection();
     connection.setConnectTimeout(10000);
-    connection.setReadTimeout(12000);
+    connection.setReadTimeout(path.equals(CollectionApi.PATH) ? 25000 : 12000);
     connection.setInstanceFollowRedirects(false);
     connection.setRequestProperty("Authorization", "Bearer " + token);
     connection.setRequestProperty("Accept", "application/json");
+    connection.setRequestProperty("User-Agent", Resolver.USER_AGENT);
     try {
       if (body != null) {
         connection.setRequestMethod("POST");

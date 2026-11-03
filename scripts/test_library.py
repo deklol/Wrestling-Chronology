@@ -9,6 +9,18 @@ from library import broadcast_date, episode_thumbnail, scan_archive, scan_youtub
 
 
 class LibraryTests(unittest.TestCase):
+    def test_known_archive_recording_skips_repeated_merge_and_artwork_scan(self):
+        url = 'https://archive.org/download/collection/Raw%202026-11-02.mp4'
+        library = {'episodes': [{'id': 'existing', 'thumbnail': 'https://example.invalid/still.jpg',
+                                 'sources': [{'type': 'archive', 'url': url}]}]}
+        metadata = {'files': [{'name': 'Raw 2026-11-02.mp4', 'source': 'original',
+                               'length': 7200, 'size': 10000000}]}
+        with patch('library.add_record') as merge, patch('library.episode_thumbnail') as artwork:
+            report = scan_archive(library, 'wwe', {'id': 'collection'}, metadata, [])
+        merge.assert_not_called()
+        artwork.assert_not_called()
+        self.assertEqual(0, report['recordings'])
+
     def test_published_json_keeps_identical_bytes_after_git_normalization(self):
         # This suite runs on Windows too, where a default text writer emits CRLF.
         with tempfile.TemporaryDirectory() as folder:

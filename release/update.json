@@ -1,7 +1,7 @@
 {
-  "versionCode": 19,
-  "versionName": "0.1.13",
-  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.13/Wrestling-Chronology.apk",
-  "sha256": "320946cd2519c5717f1c60ef715e14b6b4f4c8e3989ef46cfa85a63cc4db6f1a",
-  "notes": "Fixes TV connection recovery and memory use during channel changes. Reuses the player for the current programme and cancels retries when you change channels. History and settings are preserved."
+  "versionCode": 20,
+  "versionName": "0.1.14",
+  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.14/Wrestling-Chronology.apk",
+  "sha256": "5bd1a323893248b3e3b17401a9403334015a0310929d17f34539ede99f0d7b22",
+  "notes": "Improved Archive and OK.ru playback, Lucha Underground in order, separate Dark Side TV, 50 full interviews, more documentaries and corrected TV schedules. Company sources refresh every six hours. History and settings are preserved."
 }
