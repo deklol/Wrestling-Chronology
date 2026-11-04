@@ -150,12 +150,14 @@ public final class PlayerActivity extends Activity {
     ViewGroup bottomControls = (ViewGroup) settingsControl.getParent();
     LinearLayout volumeControls = Ui.horizontal(this);
     volumeButton = new ImageButton(this);
+    volumeButton.setId(View.generateViewId());
     volumeButton.setImageResource(R.drawable.volume_on);
     volumeButton.setBackground(Ui.focus(this, false));
     volumeButton.setPadding(Ui.dp(this, 9), Ui.dp(this, 9), Ui.dp(this, 9), Ui.dp(this, 9));
     volumeButton.setContentDescription("Mute");
     volumeControls.addView(volumeButton, Ui.lp(this, 40, 40));
     volumeSlider = new SeekBar(this);
+    volumeSlider.setId(View.generateViewId());
     volumeSlider.setMax(100); volumeSlider.setProgress(100);
     volumeSlider.setContentDescription("Playback volume: 100 percent");
     volumeSlider.setProgressTintList(android.content.res.ColorStateList.valueOf(Ui.accent()));
@@ -175,7 +177,8 @@ public final class PlayerActivity extends Activity {
       public void onStopTrackingTouch(SeekBar bar) { scheduleHide(); }
     });
     volumeButton.setOnClickListener(v -> { volumeSlider.setProgress(playbackVolume > 0 ? 0 : Math.round(unmutedVolume * 100)); scheduleHide(); });
-    bottomControls.addView(volumeControls, bottomControls.indexOfChild(settingsControl));
+    View fullscreenControl = view.findViewById(androidx.media3.ui.R.id.exo_fullscreen);
+    bottomControls.addView(volumeControls, bottomControls.indexOfChild(fullscreenControl) + 1);
     aspectButton = Ui.text(this, "4:3", 12, Ui.WHITE);
     aspectButton.setGravity(Gravity.CENTER);
     aspectButton.setTypeface(null, android.graphics.Typeface.BOLD);
@@ -190,8 +193,11 @@ public final class PlayerActivity extends Activity {
     });
     bottomControls.addView(aspectButton, bottomControls.indexOfChild(settingsControl),
         new ViewGroup.LayoutParams(Ui.dp(this, 48), Ui.dp(this, 40)));
-    View fullscreenControl = view.findViewById(androidx.media3.ui.R.id.exo_fullscreen);
     fullscreenControl.setBackground(Ui.focus(this, false));
+    settingsControl.setNextFocusRightId(fullscreenControl.getId());
+    fullscreenControl.setNextFocusRightId(volumeButton.getId());
+    volumeButton.setNextFocusLeftId(fullscreenControl.getId());
+    volumeButton.setNextFocusRightId(volumeSlider.getId());
     for (int id : new int[] {androidx.media3.ui.R.id.exo_play_pause,
         androidx.media3.ui.R.id.exo_rew_with_amount, androidx.media3.ui.R.id.exo_ffwd_with_amount,
         androidx.media3.ui.R.id.exo_settings, androidx.media3.ui.R.id.exo_fullscreen})
@@ -569,6 +575,7 @@ public final class PlayerActivity extends Activity {
     }
     data = StreamingNetwork.bufferedMedia(stream, data, http,
         () -> receivedAt.set(SystemClock.elapsedRealtime()));
+    if (stream.provider.equals("archive")) data = StreamingNetwork.preparedArchive(this, data, http);
     DefaultMediaSourceFactory factory =
         new DefaultMediaSourceFactory(new DefaultDataSource.Factory(this, data));
     ArrayList<MediaSource> media = new ArrayList<>();

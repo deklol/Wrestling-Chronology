@@ -12,6 +12,38 @@ import org.chromium.net.CronetEngine;
 final class StreamingNetwork {
   private static final ExecutorService callbacks = Executors.newFixedThreadPool(2);
   private static CronetEngine engine;
+  private static java.util.Set<String> preparedRecordings;
+
+  static DataSource.Factory preparedArchive(Context context, DataSource.Factory ordinary,
+      androidx.media3.datasource.HttpDataSource.Factory ranges) {
+    boolean enabled = BuildConfig.ARCHIVE_BOUNDED_READS;
+    if (BuildConfig.DEBUG && context instanceof android.app.Activity) {
+      android.content.Intent intent = ((android.app.Activity) context).getIntent();
+      enabled = intent.getBooleanExtra("test_archive_ranges", enabled);
+    }
+    if (!enabled) return ordinary;
+    java.util.Set<String> recordings = preparedRecordings(context);
+    return recordings.isEmpty() ? ordinary
+        : () -> new PreparedArchiveDataSource(ordinary, ranges, recordings);
+  }
+
+  private static synchronized java.util.Set<String> preparedRecordings(Context context) {
+    if (preparedRecordings != null) return preparedRecordings;
+    java.util.Set<String> result = new java.util.HashSet<>();
+    try (java.io.InputStream input = context.getAssets().open("prepared-archive-ranges.json");
+         java.io.ByteArrayOutputStream bytes = new java.io.ByteArrayOutputStream()) {
+      byte[] buffer = new byte[4096];
+      int count;
+      while ((count = input.read(buffer)) != -1) {
+        bytes.write(buffer, 0, count);
+        if (bytes.size() > 65536) throw new java.io.IOException("Prepared recording list too large");
+      }
+      org.json.JSONArray list = new org.json.JSONArray(bytes.toString("UTF-8"));
+      for (int i = 0; i < list.length(); i++) result.add(list.getString(i));
+    } catch (java.io.IOException | org.json.JSONException error) { result.clear(); }
+    preparedRecordings = java.util.Collections.unmodifiableSet(result);
+    return preparedRecordings;
+  }
 
   /** Shared by episode and TV playback; other providers keep their own transports. */
   static DataSource.Factory bufferedMedia(Resolver.Resolved stream,

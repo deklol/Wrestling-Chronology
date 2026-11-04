@@ -10,11 +10,12 @@ android {
         applicationId 'uk.local.wrestlingchronology'
         minSdk 25
         targetSdk 28
-        versionCode 23
-        versionName '0.1.17'
+        versionCode 24
+        versionName '0.1.18'
         buildConfigField 'String', 'COMMUNITY_BASE_URL', groovy.json.JsonOutput.toJson(System.getenv('WC_COMMUNITY_BASE_URL') ?: '')
         buildConfigField 'String', 'COMMUNITY_APP_KEY', groovy.json.JsonOutput.toJson(System.getenv('WC_COMMUNITY_APP_KEY') ?: '')
         buildConfigField 'boolean', 'COLLECTION_DELIVERY_ENABLED', (System.getenv('WC_COLLECTION_DELIVERY') == 'true').toString()
+        buildConfigField 'boolean', 'ARCHIVE_BOUNDED_READS', (System.getenv('WC_ARCHIVE_BOUNDED_READS') == 'true').toString()
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11

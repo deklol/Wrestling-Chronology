@@ -47,6 +47,7 @@ final class TvPlayback {
   private final TvRetry retry = new TvRetry();
   private boolean joinLive, automaticTransition;
   private int videoWidth = 16, videoHeight = 9;
+  java.util.function.UnaryOperator<DataSource.Factory> diagnosticTransport;
 
   TvPlayback(Context context, TvApi api, FrameLayout surface, Listener listener) {
     this.context = context;
@@ -238,6 +239,8 @@ final class TvPlayback {
       }
       final DataSource.Factory fallbackDelivery = delivery;
       delivery = StreamingNetwork.bufferedMedia(direct, delivery, http, () -> {});
+      if ("archive".equals(stream.optString("provider")))
+        delivery = StreamingNetwork.preparedArchive(context, delivery, http);
       DataSource.Factory authenticated =
           new ResolvingDataSource.Factory(
               delivery,
@@ -256,6 +259,7 @@ final class TvPlayback {
         if (BuildConfig.DEBUG) Log.i("ChronologyTV", "ARCHIVE_INDEX channel=" + slot.channel.id
             + " headerBytes=" + layout.headerLength + " payload=direct");
       }
+      if (BuildConfig.DEBUG && diagnosticTransport != null) media = diagnosticTransport.apply(media);
       DefaultMediaSourceFactory factory = new DefaultMediaSourceFactory(media);
       if (faults.take("media", slot.channel.id))
         factory = new DefaultMediaSourceFactory(TvPlaybackFaults.failedMedia());
