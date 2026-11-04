@@ -29,6 +29,9 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
       aspect;
   ImageView miniArt;
   SeekBar seek;
+  final SeekScrub scrub = new SeekScrub();
+  final Map<TextView, TvGuide.Slot> guideBlocks = new LinkedHashMap<>();
+  double nextGuideBoundary;
   TvApi api;
   TvPlayback playback;
   TvGuide guide, liveGuide;
@@ -47,13 +50,14 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
       new Runnable() {
         public void run() {
           if (destroyed) return;
+          if (guideOpen) updateGuideNow();
           if (preview != null && overlay.getVisibility() == View.VISIBLE) {
             miniClock.setText(clock(api.now()));
           }
           if (playback.active != null && !seeking) {
             long duration = playback.active.getDuration();
             if (duration > 0 && overlay.getVisibility() == View.VISIBLE)
-              seek.setProgress((int) (playback.active.getCurrentPosition() * 1000 / duration));
+              seek.setProgress((int) (playback.active.getCurrentPosition() * 10000 / duration));
             if (SystemClock.elapsedRealtime() - lastSaved > 5000) savePosition();
             if (BuildConfig.DEBUG
                 && getIntent().getBooleanExtra("test_diagnostics", false)
@@ -127,6 +131,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
   @Override
   public void onCreate(Bundle state) {
     super.onCreate(state);
+    Ui.allowLandscapeRotation(this);
     getWindow().getDecorView().setSystemUiVisibility(5894);
     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     Company.restore(this);
@@ -329,27 +334,30 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
             }));
     Ui.gap(controls, 6);
     seek = new SeekBar(this);
-    seek.setMax(1000);
-    seek.setFocusable(false);
+    seek.setMax(10000);
+    seek.setFocusable(true);
+    seek.setContentDescription("Seek through programme. Hold left or right to move faster.");
+    seek.setOnFocusChangeListener((v, focused) -> {
+      if (!focused) finishScrub();
+      showOverlay();
+    });
     seek.setProgressTintList(android.content.res.ColorStateList.valueOf(origin.accent()));
     seek.setThumbTintList(android.content.res.ColorStateList.valueOf(origin.accent()));
     seek.setOnSeekBarChangeListener(
         new SeekBar.OnSeekBarChangeListener() {
           public void onStartTrackingTouch(SeekBar bar) {
-            seeking = true;
-            showOverlay();
+            beginScrub();
           }
 
           public void onStopTrackingTouch(SeekBar bar) {
-            seeking = false;
-            showOverlay();
+            finishScrub();
           }
 
           public void onProgressChanged(SeekBar bar, int position, boolean user) {
             if (user && playback.active != null) {
-              long duration = playback.active.getDuration();
-              if (duration > 0) playback.active.seekTo(duration * position / 1000);
-              showOverlay();
+              if (!seeking) beginScrub();
+              scrub.set(scrub.duration * position / 10000);
+              showScrubPosition();
             }
           }
         });
@@ -514,6 +522,8 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
   }
 
   void renderGuide() {
+    guideBlocks.clear();
+    nextGuideBoundary = 0;
     guideHost.removeAllViews();
     firstChannelButton = null;
     LinearLayout layout = Ui.vertical(this);
@@ -590,11 +600,14 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
         TextView block =
             button(
                 slot.title + "\n" + clock(slot.start) + " – " + clock(slot.end),
-                () -> {
-                  boolean live = slot.start <= api.now() && slot.end > api.now();
-                  setGuideOpen(false);
-                  tune(slot, live);
-                });
+                () -> {});
+        block.setOnClickListener(v -> {
+          TvGuide.Slot current = channel.at(api.now());
+          boolean live = block.isActivated() || current == slot;
+          setGuideOpen(false);
+          tune(live && current != null ? current : slot, live && current != null);
+        });
+        guideBlocks.put(block, slot);
         block.setTextSize(12);
         block.setGravity(Gravity.CENTER_VERTICAL);
         block.setMaxLines(2);
@@ -608,6 +621,62 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
       }
       firstRow = false;
     }
+    updateGuideNow();
+  }
+
+  void updateGuideNow() {
+    double now = api.now();
+    if (now < nextGuideBoundary) return;
+    nextGuideBoundary = Double.POSITIVE_INFINITY;
+    View focused = getCurrentFocus();
+    TvGuide.Slot follow = focused instanceof TextView && focused.isActivated()
+        ? guideBlocks.get(focused) : null;
+    List<TextView> liveBlocks = new ArrayList<>();
+    for (Map.Entry<TextView, TvGuide.Slot> entry : guideBlocks.entrySet()) {
+      TextView block = entry.getKey();
+      TvGuide.Slot slot = entry.getValue();
+      if (slot.start > now) nextGuideBoundary = Math.min(nextGuideBoundary, slot.start);
+      if (slot.end > now) nextGuideBoundary = Math.min(nextGuideBoundary, slot.end);
+      boolean live = slot.start <= now && now < slot.end;
+      block.setActivated(live);
+      block.setTextColor(live ? origin.accent() : Ui.WHITE);
+      block.setNextFocusUpId(View.NO_ID);
+      block.setNextFocusDownId(View.NO_ID);
+      if (live) {
+        liveBlocks.add(block);
+        if (follow != null && follow.channel == slot.channel && focused != block) block.requestFocus();
+      }
+    }
+    for (int i = 0; i < liveBlocks.size(); i++) {
+      if (i > 0) liveBlocks.get(i).setNextFocusUpId(liveBlocks.get(i - 1).getId());
+      if (i + 1 < liveBlocks.size()) liveBlocks.get(i).setNextFocusDownId(liveBlocks.get(i + 1).getId());
+    }
+  }
+
+  void beginScrub() {
+    if (playback.active == null || playback.active.getDuration() <= 0) return;
+    scrub.begin(playback.active.getCurrentPosition(), playback.active.getDuration());
+    playback.detachFromLive();
+    seeking = true;
+    showOverlay();
+  }
+
+  void showScrubPosition() {
+    seek.setProgress((int) (scrub.position * 10000 / Math.max(1, scrub.duration)));
+    showOverlay();
+    miniMeta.setText("Seek to " + elapsed(scrub.position) + " / " + elapsed(scrub.duration));
+  }
+
+  String elapsed(long millis) {
+    long seconds = Math.max(0, millis / 1000);
+    return String.format(Locale.getDefault(), "%d:%02d:%02d", seconds / 3600, seconds / 60 % 60, seconds % 60);
+  }
+
+  void finishScrub() {
+    if (!seeking) return;
+    seeking = false;
+    if (playback.active != null) playback.seek(scrub.position - playback.active.getCurrentPosition());
+    showOverlay();
   }
 
   void tune(TvGuide.Slot slot, boolean live) {
@@ -702,6 +771,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
   }
 
   void hideOverlay() {
+    if (seeking) return;
     ui.removeCallbacks(hideOverlay);
     if (inside(getCurrentFocus(), overlay)) playerBox.requestFocus();
     overlay
@@ -763,9 +833,11 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
   }
 
   void setGuideOpen(boolean value) {
+    finishScrub();
     guideOpen = value;
     page.setVisibility(value ? View.VISIBLE : View.GONE);
     if (value) {
+      updateGuideNow();
       overlay.animate().cancel();
       overlay.setVisibility(View.INVISIBLE);
       ui.removeCallbacks(hideOverlay);
@@ -782,6 +854,24 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
     if (playback == null) return super.dispatchKeyEvent(event);
     boolean inPlayer = !guideOpen;
     int key = event.getKeyCode();
+    if (inPlayer && seek.hasFocus()) {
+      if ((key == KeyEvent.KEYCODE_DPAD_UP || key == KeyEvent.KEYCODE_DPAD_DOWN)
+          && event.getAction() == KeyEvent.ACTION_DOWN) {
+        finishScrub();
+        controls.getChildAt(0).requestFocus();
+        return true;
+      }
+      if (key == KeyEvent.KEYCODE_DPAD_LEFT || key == KeyEvent.KEYCODE_DPAD_RIGHT) {
+        if (event.getAction() == KeyEvent.ACTION_DOWN) {
+          if (!seeking) beginScrub();
+          if (seeking) {
+            scrub.move(key == KeyEvent.KEYCODE_DPAD_RIGHT ? 1 : -1, event.getEventTime());
+            showScrubPosition();
+          }
+        } else if (event.getAction() == KeyEvent.ACTION_UP) finishScrub();
+        return true;
+      }
+    }
     if (event.getAction() == KeyEvent.ACTION_DOWN && key != KeyEvent.KEYCODE_BACK) lastBackAt = 0;
     if (key == KeyEvent.KEYCODE_MENU) {
       if (event.getAction() == KeyEvent.ACTION_DOWN && event.getRepeatCount() == 0) {
@@ -791,7 +881,8 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
       return true;
     }
     if (event.getAction() == KeyEvent.ACTION_DOWN && inPlayer) {
-      if (key == KeyEvent.KEYCODE_DPAD_UP || key == KeyEvent.KEYCODE_DPAD_DOWN) {
+      if ((key == KeyEvent.KEYCODE_DPAD_UP || key == KeyEvent.KEYCODE_DPAD_DOWN)
+          && !inside(getCurrentFocus(), controls) && getCurrentFocus() != seek) {
         if (event.getRepeatCount() == 0 || event.getRepeatCount() % 4 == 0)
           previewChannel(key == KeyEvent.KEYCODE_DPAD_UP ? -1 : 1);
         playerBox.requestFocus();
@@ -923,7 +1014,8 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
       "Earlier / Later move back or forward a day. Day jumps to a date; Now returns to today's schedule.",
       "While watching: Up / Down preview channels; Left / Right preview shows. Press OK to switch.",
       "Menu opens or closes the guide. Back hides it; press Back again to return home.",
-      "Press OK on the current show for player controls. Help reopens these tips."
+      "Press OK on the current show for player controls. Help reopens these tips.",
+      "Select the seek bar, then hold Left / Right to move faster. Release to play from that point; Up / Down returns to the buttons."
     };
     for (String instruction : lines) {
       TextView line = text(instruction, 14, Ui.WHITE);
@@ -998,6 +1090,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
   @Override
   protected void onPause() {
     super.onPause();
+    finishScrub();
     savePosition();
     if (playback != null) {
       playback.cancel();

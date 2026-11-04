@@ -8,6 +8,18 @@ import android.view.*;
 import android.widget.*;
 
 final class Ui {
+  static void allowLandscapeRotation(android.app.Activity activity) {
+    android.content.pm.PackageManager packages = activity.getPackageManager();
+    int mode = activity.getResources().getConfiguration().uiMode
+        & android.content.res.Configuration.UI_MODE_TYPE_MASK;
+    boolean television = mode == android.content.res.Configuration.UI_MODE_TYPE_TELEVISION
+        || packages.hasSystemFeature("android.software.leanback")
+        || packages.hasSystemFeature("android.hardware.type.television");
+    if (!television && packages.hasSystemFeature("android.hardware.touchscreen")) {
+      activity.setRequestedOrientation(android.content.pm.ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
+    }
+  }
+
   static final int BG = Color.rgb(10, 12, 18),
       PANEL = Color.rgb(23, 27, 38),
       WHITE = Color.rgb(245, 246, 250),

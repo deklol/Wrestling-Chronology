@@ -89,6 +89,7 @@ public final class MainActivity extends Activity {
   @Override
   public void onCreate(Bundle state) {
     super.onCreate(state);
+    Ui.allowLandscapeRotation(this);
     immersive();
     Company.restore(this);
     if (state != null && !state.getString("page", "companies").equals("companies")) {

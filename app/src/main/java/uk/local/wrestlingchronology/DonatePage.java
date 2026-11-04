@@ -21,15 +21,21 @@ final class DonatePage {
     card.setBackground(Ui.shape(activity, Company.current.surface(), 16));
     body.addView(card, new LinearLayout.LayoutParams(-1, -2));
 
-    TextView title = Ui.text(activity, "Show your support", 26, Ui.WHITE);
+    TextView title = Ui.text(activity, "Community & support", 26, Ui.WHITE);
     title.setTypeface(null, Typeface.BOLD);
     card.addView(title);
     Ui.gap(card, 16);
     TextView message = Ui.text(activity,
-        "If you'd like to show support, join our Discord community for more information.",
+        "Join our Discord community for direct update news, to share your own archive collections and feature ideas, and to find out how to enable web access.",
         16, Ui.MUTED);
     message.setLineSpacing(Ui.dp(activity, 3), 1);
     card.addView(message);
+    Ui.gap(card, 12);
+    TextView support = Ui.text(activity,
+        "If you'd like to donate, you'll find information in the community. Support is optional; everyone is welcome to join.",
+        16, Ui.MUTED);
+    support.setLineSpacing(Ui.dp(activity, 3), 1);
+    card.addView(support);
     Ui.gap(card, 20);
     card.addView(Ui.button(activity, "Join Discord", true, () -> activity.openAboutLink(DISCORD)));
     Ui.gap(card, 12);

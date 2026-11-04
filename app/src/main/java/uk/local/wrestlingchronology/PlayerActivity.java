@@ -62,6 +62,7 @@ public final class PlayerActivity extends Activity {
   @Override
   public void onCreate(Bundle state) {
     super.onCreate(state);
+    Ui.allowLandscapeRotation(this);
     getWindow().getDecorView().setSystemUiVisibility(5894);
     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     if (Catalog.episodes.isEmpty()) {

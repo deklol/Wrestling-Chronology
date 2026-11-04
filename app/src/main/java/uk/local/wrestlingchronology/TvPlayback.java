@@ -568,6 +568,8 @@ final class TvPlayback {
     if (active != null) active.seekTo(Math.max(0, active.getCurrentPosition() + delta));
   }
 
+  void detachFromLive() { joinLive = false; }
+
   void close() {
     closed = true;
     if (views != null) views.dispose();
