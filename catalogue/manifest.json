@@ -39,21 +39,21 @@
     },
     "njpw": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/njpw-2002.json",
-      "sha256": "6bc3b74b322a5e67f0df20b2c89684f02a4b221a975a1d636bbcda85aebb5610",
-      "bytes": 1188732,
-      "revision": 1793762115,
+      "sha256": "b5be7af93c2f055660600bf7851dcefbaa7754f50e7768f939335866d97daa75",
+      "bytes": 1190092,
+      "revision": 1793821910,
       "expanded": {
         "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/njpw.json",
-        "sha256": "c28c14f34647ef27320e5ba215c171fc68ef13658d7822d288db14ea4c1a5dbc",
-        "bytes": 1212355,
-        "revision": 1793762115
+        "sha256": "9ed5d258bbe2704abd2fbafe17a3a3ac453f6fa7ca855bf697e292ca37a95bf2",
+        "bytes": 1213715,
+        "revision": 1793821910
       }
     },
     "nxt": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/nxt.json",
-      "sha256": "6ce9dabc890ace58ed91b25a48e09bddf8ef2d567fab38c5e8e9d324788c32e9",
-      "bytes": 2726249,
-      "revision": 1793773983
+      "sha256": "baad0eddc013441a3b7907959110f62879c4e4f5c869c9d7b228ac0955587b3c",
+      "bytes": 2792567,
+      "revision": 1793821915
     }
   }
 }

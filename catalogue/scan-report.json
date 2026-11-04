@@ -3,7 +3,7 @@
     "company": "aew",
     "source": "OK.ru \u00b7 AEW PPVs and weeklies",
     "status": "checked public recent uploads",
-    "new_recordings": 1,
+    "new_recordings": 0,
     "skipped": []
   },
   {
@@ -829,7 +829,7 @@
     "company": "wwe",
     "source": "OK.ru \u00b7 sileem salaeam \u00b7 recent full shows",
     "status": "checked public recent uploads",
-    "new_recordings": 1,
+    "new_recordings": 0,
     "skipped": []
   },
   {
@@ -18715,7 +18715,7 @@
     "company": "tna",
     "source": "OK.ru \u00b7 TNA PPVs",
     "status": "checked public recent uploads",
-    "new_recordings": 2,
+    "new_recordings": 0,
     "skipped": []
   },
   {
@@ -20488,7 +20488,7 @@
     "company": "tna",
     "source": "YouTube recent uploads \u00b7 tnawrestling recent full-show uploads",
     "status": "checked recent uploads",
-    "new_recordings": 1,
+    "new_recordings": 0,
     "skipped": [
       "Bound For Glory 2022 (FULL EVENT) | Edwards vs. Alexander, Mickie vs. Mia",
       "TNA Bound For Glory 2023 (FULL EVENT) | Trinity vs. Mickie, Alexander vs. Shelley",
@@ -23089,7 +23089,7 @@
     "company": "njpw",
     "source": "Reviewed discovery",
     "status": "checked",
-    "new_recordings": 0
+    "new_recordings": 1
   },
   {
     "company": "nxt",

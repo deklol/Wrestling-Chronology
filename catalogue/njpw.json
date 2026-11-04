@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "njpw",
-  "revision": 1793762115,
+  "revision": 1793821910,
   "catalogue": {
     "company": "njpw",
     "episodes": [
@@ -2260,6 +2260,28 @@
           }
         ],
         "discoveredAt": 0
+      },
+      {
+        "id": "njpw:2020-07-12:ppv:dominioninosakajohall12july2020",
+        "date": "2020-07-12",
+        "year": 2020,
+        "show": "PPV",
+        "title": "Dominion in Osaka Jo Hall 12 July 2020",
+        "description": "Dominion in Osaka Jo Hall 12 July 2020",
+        "duration": 13051,
+        "thumbnail": "https://archive.org/download/njpw-dominion-in-osaka-jo-hall-12-july-2020/njpw-dominion-in-osaka-jo-hall-12-july-2020.thumbs/NJPW%20Dominion%20in%20Osaka-jo%20Hall%2012%20July%202020_004561.jpg",
+        "poster": "https://archive.org/download/njpw-dominion-in-osaka-jo-hall-12-july-2020/njpw-dominion-in-osaka-jo-hall-12-july-2020.thumbs/NJPW%20Dominion%20in%20Osaka-jo%20Hall%2012%20July%202020_004561.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "label": "Internet Archive",
+            "duration": 13051,
+            "language": "und",
+            "url": "https://archive.org/download/njpw-dominion-in-osaka-jo-hall-12-july-2020/NJPW%20Dominion%20in%20Osaka-jo%20Hall%2012%20July%202020.mp4",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793821910295
       },
       {
         "id": "njpw:2020-07-17:njpwstrong:lionsbreakcollisionepisode3170720",
@@ -28714,6 +28736,12 @@
         {
           "id": "njpw.-the.-new.-beginning.-in.-sapporo.-day.-2.2024.02.24.-eng.-fhd-njpw-the-new",
           "name": "njpw.-the.-new.-beginning.-in.-sapporo.-day.-2.2024.02.24.-eng.-fhd-njpw-the-new",
+          "enabled": true,
+          "frozen": true
+        },
+        {
+          "id": "njpw-dominion-in-osaka-jo-hall-12-july-2020",
+          "name": "njpw-dominion-in-osaka-jo-hall-12-july-2020",
           "enabled": true,
           "frozen": true
         }
