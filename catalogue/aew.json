@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "aew",
-  "revision": 1793727569,
+  "revision": 1793773747,
   "catalogue": {
     "schemaVersion": 1,
     "sourceValidation": 5,
@@ -30475,6 +30475,30 @@
             "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18711793961583&type=37&idx=1&scl=4&tkn=G7MHoz8tYm72U0E2Gmttvt5jXiI&fn=external_8"
           }
         ]
+      },
+      {
+        "id": "aew:2026-10-31:collision",
+        "date": "2026-10-31",
+        "year": 2026,
+        "show": "Collision",
+        "title": "Collision",
+        "description": "",
+        "duration": 6525,
+        "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18762795256431&type=37&idx=0&scl=4&tkn=se57e4lw4graRHIXqDbH5gWkKHs&fn=external_8",
+        "poster": "https://iv.okcdn.ru/videoPreview?id=18762795256431&type=37&idx=0&scl=4&tkn=se57e4lw4graRHIXqDbH5gWkKHs&fn=external_8",
+        "sources": [
+          {
+            "type": "okru",
+            "videoId": "16506344508015",
+            "owner": "579391530351",
+            "title": "Collision.2026.10.31.",
+            "duration": 6525,
+            "programme": "Collision",
+            "label": "OK.ru",
+            "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18762795256431&type=37&idx=0&scl=4&tkn=se57e4lw4graRHIXqDbH5gWkKHs&fn=external_8"
+          }
+        ],
+        "discoveredAt": 1793773743356
       }
     ],
     "eventCalendar": [],
@@ -37783,6 +37807,17 @@
           "show": "PPV",
           "title": "WrestleDream",
           "duration": 15288,
+          "enabled": true
+        },
+        {
+          "id": "16506344508015",
+          "owner": "579391530351",
+          "episodeId": "aew:2026-10-31:collision",
+          "date": "2026-10-31",
+          "show": "Collision",
+          "title": "Collision",
+          "name": "Collision.2026.10.31.",
+          "duration": 6525,
           "enabled": true
         }
       ],

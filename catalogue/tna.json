@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "tna",
-  "revision": 1793688894,
+  "revision": 1793773877,
   "catalogue": {
     "schemaVersion": 1,
     "sourceValidation": 5,
@@ -5975,6 +5975,16 @@
             "creator": "tnappv",
             "md5": "0a83791775d5bbe12ca96809089ac0e5",
             "dateEvidence": "existing catalogue"
+          },
+          {
+            "type": "okru",
+            "videoId": "4195775548015",
+            "owner": "579391530351",
+            "title": "TNA.Victory.Road.2004",
+            "duration": 10551,
+            "programme": "PPV",
+            "label": "OK.ru",
+            "thumbnail": "https://iv.okcdn.ru/videoPreview?id=2820680059503&type=37&idx=9&tkn=JpBNtykY9acSdX6Cs6ilUwcoQX4&fn=external_8"
           }
         ],
         "discoveredAt": 0
@@ -6144,6 +6154,16 @@
             "creator": "tnappv",
             "md5": "889f5abe6020c7735fe9054072c5ad04",
             "dateEvidence": "existing catalogue"
+          },
+          {
+            "type": "okru",
+            "videoId": "4195775482479",
+            "owner": "579391530351",
+            "title": "TNA.Turning.Point.2004",
+            "duration": 10313,
+            "programme": "PPV",
+            "label": "OK.ru",
+            "thumbnail": "https://iv.okcdn.ru/videoPreview?id=2820553575023&type=37&idx=14&tkn=13v8BT_fBwVUQbMx59zOgbvPbMw&fn=external_8"
           }
         ],
         "discoveredAt": 0
@@ -21470,7 +21490,7 @@
         "title": "Destination X",
         "description": "",
         "duration": 10220.08,
-        "thumbnail": "https://archive.org/download/tnappv/tnappv.thumbs/2011/TNA%20Destination%20X%202011_005110.jpg",
+        "thumbnail": "https://i.ytimg.com/vi/xFUVGg-wiTY/hqdefault.jpg",
         "poster": "",
         "sources": [
           {
@@ -21484,6 +21504,15 @@
             "creator": "tnappv",
             "md5": "116f5350a605289474161aaf798aa8d1",
             "dateEvidence": "https://en.wikipedia.org/wiki/List_of_TNA_pay-per-view_and_livestreaming_events"
+          },
+          {
+            "type": "youtube",
+            "videoId": "xFUVGg-wiTY",
+            "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+            "direct": true,
+            "title": "TNA Destination X 2011 (FULL EVENT) | Styles vs. Daniels, Kaz vs. Joe, RVD vs. Lynn",
+            "duration": 10221,
+            "label": "Official YouTube"
           }
         ],
         "discoveredAt": 1793232000000
@@ -63332,6 +63361,17 @@
           "enabled": true,
           "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
           "authorUrl": "https://www.youtube.com/@tnawrestling"
+        },
+        {
+          "id": "xFUVGg-wiTY",
+          "name": "TNA Destination X 2011 (FULL EVENT) | Styles vs. Daniels, Kaz vs. Joe, RVD vs. Lynn",
+          "title": "Destination X",
+          "date": "2011-07-10",
+          "show": "PPV",
+          "duration": 10221,
+          "enabled": true,
+          "channelId": "UCOp8wkVqdrWbFYHjDv946QQ",
+          "authorUrl": "https://www.youtube.com/@tnawrestling"
         }
       ]
     },
@@ -73908,6 +73948,28 @@
           "show": "Impact",
           "title": "Impact",
           "duration": 5735,
+          "enabled": true
+        },
+        {
+          "id": "4195775548015",
+          "owner": "579391530351",
+          "episodeId": "tna:2004-11-07:ppv:victoryroad",
+          "date": "2004-11-07",
+          "show": "PPV",
+          "title": "Victory Road",
+          "name": "TNA.Victory.Road.2004",
+          "duration": 10551,
+          "enabled": true
+        },
+        {
+          "id": "4195775482479",
+          "owner": "579391530351",
+          "episodeId": "tna:2004-12-05:ppv:turningpoint",
+          "date": "2004-12-05",
+          "show": "PPV",
+          "title": "Turning Point",
+          "name": "TNA.Turning.Point.2004",
+          "duration": 10313,
           "enabled": true
         }
       ],
