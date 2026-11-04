@@ -23,7 +23,7 @@ MONTHS.update({name.lower(): index for index, name in enumerate(calendar.month_a
 MONTHS["sept"] = 9
 LIMITS = {"aew": ("2018-01-01", "2028-12-31"), "wwe": ("1985-01-01", "2028-12-31"), "ecw": ("1992-01-01", "2006-12-31"),
           "wcw": ("1983-01-01", "2001-03-26"), "tna": ("2002-01-01", "2028-12-31"),
-          "roh": ("2002-02-23", "2028-12-31"), "njpw": ("2002-01-01", "2028-12-31"),
+          "roh": ("2002-02-23", "2028-12-31"), "njpw": ("1990-01-01", "2028-12-31"),
           "nxt": ("2010-01-01", "2028-12-31")}
 CHANNELS = {"wwe": "UCJ5v_MCY6GNUBTO8-D3XoAg", "wcw": "UCbGG2hv4cWmIrBAIhGiCdSg",
             "ecw": "UCNSnSemXKDc9UEZ7m31wY9Q", "tna": "UCOp8wkVqdrWbFYHjDv946QQ",
@@ -521,6 +521,18 @@ def publish_packs(base_url, refresh=False):
         raw = destination.read_bytes()
         manifest["companies"][company] = {"url": base_url.rstrip("/") + "/" + company + ".json",
             "sha256": hashlib.sha256(raw).hexdigest(), "bytes": len(raw), "revision": pack["revision"]}
+        if company == 'njpw':
+            # Older APKs reject the entire pack if any episode predates 2002.
+            expanded = dict(manifest['companies'][company])
+            compatible = {**pack, 'catalogue': {**library, 'episodes': [
+                row for row in library['episodes'] if row['date'] >= '2002-01-01'], 'coverageStart': '2002-01-01'}}
+            compatible_path = ROOT / 'catalogue/njpw-2002.json'
+            write(compatible_path, compatible)
+            compatible_raw = compatible_path.read_bytes()
+            manifest['companies'][company] = {
+                'url': base_url.rstrip('/') + '/njpw-2002.json',
+                'sha256': hashlib.sha256(compatible_raw).hexdigest(), 'bytes': len(compatible_raw),
+                'revision': pack['revision'], 'expanded': expanded}
     write(ROOT / "catalogue/manifest.json", manifest)
     if refresh:
         write(ROOT / "catalogue/scan-report.json", report)

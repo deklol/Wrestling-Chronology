@@ -19,7 +19,9 @@ final class Catalog {
     long started = android.os.SystemClock.elapsedRealtime();
     JSONObject cached = RemoteLibrary.cached(context);
     JSONObject pack;
-    if (cached != null && cached.optLong("revision") >= RemoteLibrary.bundledRevision(context)) {
+    boolean needsEarlierNjpw = cached != null && Company.current == Company.NJPW
+        && !"1990-01-01".equals(cached.getJSONObject("catalogue").optString("coverageStart"));
+    if (cached != null && !needsEarlierNjpw && cached.optLong("revision") >= RemoteLibrary.bundledRevision(context)) {
       pack = cached;
     } else {
       JSONObject seed = RemoteLibrary.bundled(context);

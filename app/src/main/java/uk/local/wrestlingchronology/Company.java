@@ -49,8 +49,8 @@ final class Company {
       "2018-01-01", "2028-12-31", new String[] {"Dynamite", "Collision", "Rampage", "Dark", "Dark: Elevation"});
   static final Company ROH = new Company("roh", "Ring of Honor", "2002–2026", R.drawable.logo_roh,
       "2002-02-23", "2028-12-31", new String[] {"HonorClub", "ROH TV", "HDNet", "High Impact TV"});
-  static final Company NJPW = new Company("njpw", "New Japan", "2002–2026", R.drawable.logo_njpw,
-      "2002-01-01", "2028-12-31", new String[] {"NJPW STRONG", "STRONG On Demand", "NJPW on AXS"});
+  static final Company NJPW = new Company("njpw", "New Japan", "1990–2026", R.drawable.logo_njpw,
+      "1990-01-01", "2028-12-31", new String[] {"NJPW STRONG", "STRONG On Demand", "NJPW on AXS", "World Pro-Wrestling"});
   static final Company NXT = new Company("nxt", "NXT", "2010–2026", R.drawable.logo_nxt,
       "2010-01-01", "2028-12-31", new String[] {"NXT", "NXT UK", "Level Up"});
   static final List<Company> ALL = Arrays.asList(WCW, WWE, ECW, ROH, TNA, NJPW, NXT, AEW);

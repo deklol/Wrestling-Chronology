@@ -119,6 +119,11 @@ def archive_rows(metadata, config):
     title = str(m.get('title', ''))
     if not ident or metadata.get('is_dark') or m.get('access-restricted-item') or EXCLUDE.search(title):
         return []
+    options = config.get('archiveOverrides', {}).get(ident, {})
+    if options.get('skip'):
+        return []
+    if 'programmes' in options:
+        return reviewed_archive_rows(metadata, options['programmes'])
     first_year = re.search(r'\b((?:19|20)\d{2})\b', title)
     if first_year and int(first_year[1]) < 2000:
         return []
@@ -210,6 +215,42 @@ def archive_rows(metadata, config):
         if show == 'NJPW on AXS':
             broadcast.update(title=show, description=show)
         result.append(broadcast)
+    return result
+
+
+def reviewed_archive_rows(metadata, programmes):
+    """Explicit broadcast dates and ordered recordings for older, ambiguous collections."""
+    ident = metadata['metadata']['identifier']
+    files = {f['name']: f for f in metadata.get('files', [])}
+    result = []
+    for item in programmes:
+        when = item['date']
+        if not date(1990, 1, 1) <= date.fromisoformat(when) <= date.today():
+            continue
+        names = item['files']
+        if not 1 <= len(names) <= 30 or len(set(names)) != len(names):
+            continue
+        selected = [files.get(name) for name in names]
+        if any(not f or f.get('private') or not VIDEO.search(f['name'])
+               or float(f.get('length') or 0) <= 0 for f in selected):
+            continue
+        duration = int(sum(float(f['length']) for f in selected))
+        if duration < (5400 if item['show'] == 'PPV' else 1200):
+            continue
+        urls = ['https://archive.org/download/' + ident + '/' + quote(name, safe='/') for name in names]
+        source = {'type': 'archive', 'label': 'Internet Archive', 'duration': duration,
+                  'language': item.get('language', 'und')}
+        source['url' if len(urls) == 1 else 'urls'] = urls[0] if len(urls) == 1 else urls
+        # Choose an actual recording thumbnail rather than the Archive search placeholder.
+        stills = [f for f in files.values() if f.get('format') == 'Thumbnail'
+                  and f.get('original') == names[len(names) // 2]]
+        target = float(selected[len(selected) // 2]['length']) * .35
+        def distance(f):
+            match = re.search(r'_(\d+)\.(?:jpg|png)$', f['name'], re.I)
+            return abs(int(match[1]) - target) if match else 10**9
+        thumbnail = ('https://archive.org/download/' + ident + '/' + quote(min(stills, key=distance)['name'], safe='/')) if stills else ''
+        result.append(row(when, item['title'], item['show'], [source], thumbnail,
+                          description=item.get('description', item['title']), duration=duration))
     return result
 
 

@@ -65,6 +65,14 @@ def main():
         path = ROOT / "catalogue" / (company + ".json")
         raw = path.read_bytes()
         entry = manifest["companies"][company]
+        if company == 'njpw' and 'expanded' in entry:
+            compatible = (ROOT / 'catalogue/njpw-2002.json').read_bytes()
+            assert entry['bytes'] == len(compatible)
+            assert entry['sha256'] == hashlib.sha256(compatible).hexdigest()
+            legacy = json.loads(compatible)
+            assert all(row['date'] >= '2002-01-01' for row in legacy['catalogue']['episodes'])
+            check_pack(legacy, company)
+            entry = entry['expanded']
         assert entry["bytes"] == len(raw) and len(raw) <= 48 * 1024 * 1024
         assert entry["sha256"] == hashlib.sha256(raw).hexdigest()
         count = check_pack(json.loads(raw), company)
