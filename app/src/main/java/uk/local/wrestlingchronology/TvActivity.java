@@ -37,6 +37,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
   boolean seeking, destroyed, touchControls, guideOpen = true;
   View firstChannelButton;
   Dialog help;
+  boolean guideHelpShown;
   int playerHeight, guideRequest;
   long errorGeneration, lastSaved, lastGuideCheck, lastBackAt;
   Company origin;
@@ -363,7 +364,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
             });
     controls.addView(aspect);
     Ui.gap(controls, 6);
-    controls.addView(button("Options", this::options));
+    controls.addView(button("Help", this::showHelp));
     Ui.gap(controls, 6);
     controls.addView(button("Guide", this::focusGuide));
     Ui.gap(controls, 6);
@@ -452,6 +453,10 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
   }
 
   void loadGuide(double start, boolean autoplay) {
+    loadGuide(start, autoplay, false);
+  }
+
+  void loadGuide(double start, boolean autoplay, boolean automatic) {
     lastGuideCheck = SystemClock.elapsedRealtime();
     int request = ++guideRequest;
     guideStatus.setText("Updating TV guide...");
@@ -492,7 +497,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
                           break;
                         }
                     if (selected != null && selected.at(watchAt) != null)
-                      tune(selected.at(watchAt), true);
+                      tune(selected.at(watchAt), true, automatic);
                     else notice("No current programmes are available.");
                   }
                 });
@@ -606,12 +611,16 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
   }
 
   void tune(TvGuide.Slot slot, boolean live) {
+    tune(slot, live, false);
+  }
+
+  void tune(TvGuide.Slot slot, boolean live, boolean automatic) {
     savePosition();
     failed = null;
     errorGeneration++;
     tuningChannel = slot.channel.id;
     preview = slot;
-    playback.tune(slot, live ? slot.offset(api.now()) : 0, live);
+    playback.tune(slot, live ? slot.offset(api.now()) : 0, live, automatic);
     showOverlay();
   }
 
@@ -761,6 +770,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
       overlay.setVisibility(View.INVISIBLE);
       ui.removeCallbacks(hideOverlay);
       if (firstChannelButton != null) firstChannelButton.requestFocus();
+      maybeShowGuideHelp();
     } else {
       playerBox.requestFocus();
       showOverlay();
@@ -856,8 +866,6 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
     errorGeneration++;
     remember(slot);
     showOverlay();
-    if (!prefs().getBoolean("remoteHelpSeen", false) && (help == null || !help.isShowing()))
-      showHelp();
   }
 
   void remember(TvGuide.Slot slot) {
@@ -879,60 +887,74 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
     editor.apply();
   }
 
+  void maybeShowGuideHelp() {
+    if (!guideHelpShown && !prefs().getBoolean("hideGuideHelp", false)) showHelp();
+  }
+
   void showHelp() {
-    if (isFinishing() || destroyed) return;
+    if (isFinishing() || destroyed || (help != null && help.isShowing())) return;
+    guideHelpShown = true;
+    ui.removeCallbacks(hideOverlay);
+    View previousFocus = getCurrentFocus();
     help = new Dialog(this);
     LinearLayout panel = Ui.vertical(this);
-    panel.setPadding(d(28), d(24), d(28), d(24));
+    panel.setPadding(d(24), d(20), d(24), d(20));
     panel.setBackground(Ui.gradient(this, origin.surface(), origin.background(), 0));
-    TextView title = text("Welcome to WCtv", 26, Ui.WHITE);
+    TextView title = text("Make the TV guide yours", 24, Ui.WHITE);
     title.setTypeface(null, Typeface.BOLD);
     panel.addView(title);
+    Ui.gap(panel, 10);
+    TextView subtitle = text("Watch now, jump ahead or revisit an earlier show.", 14, origin.accent());
+    panel.addView(subtitle);
     Ui.gap(panel, 12);
-    panel.addView(
-        text(
-            touchControls ? "Your TV, at a tap." : "Your remote is your TV guide.",
-            15,
-            origin.accent()));
-    Ui.gap(panel, 18);
-    for (String instruction :
-        touchControls
-            ? new String[] {
-              "Tap the picture to show or hide the player controls",
-              "Channel − / +  Preview channels; tap Watch to switch",
-              "Guide  Open the full schedule over the playing channel",
-              "Close guide  Return to the picture without changing channel",
-              "Swipe the schedule to browse; tap any programme to watch",
-              "Drag the seek bar to rewind or skip ahead",
-              "Back  Hide controls; press again to return to " + origin.name + " home"
-            }
-            : new String[] {
-              "↑ / ↓  Preview other channels without changing the picture",
-              "← / →  Browse earlier and upcoming programmes",
-              "OK  Watch the previewed programme or open player controls",
-              "Back  Hide the guide or controls; press again to return to " + origin.name,
-              "Menu  Open or close the guide over the playing channel",
-              "Options button  Restart, continue, go live or reopen this help",
-              "In the guide: use the arrows to browse, then OK to watch"
-            }) {
+    ScrollView scroll = new ScrollView(this);
+    scroll.setFocusable(true);
+    LinearLayout instructions = Ui.vertical(this);
+    scroll.addView(instructions);
+    String[] lines = touchControls ? new String[] {
+      "Guide opens the schedule over your playing channel. Tap any show to watch it.",
+      "Swipe left or right for earlier and upcoming shows. You can play future listings now.",
+      "Earlier / Later move through days. Day jumps to a date; Now returns to today's schedule.",
+      "Tap the picture for player controls. Preview channels, then tap Watch to switch.",
+      "Drag the seek bar to rewind or skip ahead. Help opens these tips at any time."
+    } : new String[] {
+      "In the guide: use Up / Down for channels, Left / Right for shows, then OK to watch.",
+      "Any listing can play now, including earlier shows and shows scheduled for later.",
+      "Earlier / Later move back or forward a day. Day jumps to a date; Now returns to today's schedule.",
+      "While watching: Up / Down preview channels; Left / Right preview shows. Press OK to switch.",
+      "Menu opens or closes the guide. Back hides it; press Back again to return home.",
+      "Press OK on the current show for player controls. Help reopens these tips."
+    };
+    for (String instruction : lines) {
       TextView line = text(instruction, 14, Ui.WHITE);
       line.setPadding(0, d(6), 0, d(6));
-      panel.addView(line);
+      instructions.addView(line);
     }
-    Ui.gap(panel, 16);
-    TextView done =
-        button(
-            "Got it — start watching",
-            () -> {
-              prefs().edit().putBoolean("remoteHelpSeen", true).apply();
-              help.dismiss();
-            });
-    panel.addView(done);
+    panel.addView(scroll, new LinearLayout.LayoutParams(-1,
+        Math.max(d(80), Math.min(d(228), getResources().getDisplayMetrics().heightPixels - d(240)))));
+    Ui.gap(panel, 12);
+    LinearLayout actions = Ui.horizontal(this);
+    TextView done = button("Got it", () -> help.dismiss());
+    actions.addView(done);
+    Ui.gap(actions, 10);
+    actions.addView(button("Don't show again", () -> {
+      prefs().edit().putBoolean("hideGuideHelp", true).apply();
+      help.dismiss();
+    }));
+    panel.addView(actions);
+    Ui.gap(panel, 8);
+    panel.addView(button("Playback options", () -> { help.dismiss(); options(); }), Ui.lp(this, -2, -2));
     help.setContentView(panel);
-    help.setOnDismissListener(dialog -> prefs().edit().putBoolean("remoteHelpSeen", true).apply());
+    help.setOnDismissListener(dialog -> {
+      if (destroyed || isFinishing()) return;
+      if (previousFocus != null && previousFocus.isShown()) previousFocus.requestFocus();
+      else if (guideOpen && firstChannelButton != null) firstChannelButton.requestFocus();
+      else playerBox.requestFocus();
+      if (!guideOpen) showOverlay();
+    });
     help.show();
     help.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-    help.getWindow().setLayout(d(640), -2);
+    help.getWindow().setLayout(Math.min(d(640), getResources().getDisplayMetrics().widthPixels - d(32)), -2);
     done.requestFocus();
   }
 
@@ -958,10 +980,10 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
     if (c == null) return;
     for (TvGuide.Slot next : c.slots)
       if (next.start >= slot.end - 0.1) {
-        tune(next, false);
+        tune(next, false, true);
         return;
       }
-    loadGuide(slot.end, true);
+    loadGuide(slot.end, true, true);
   }
 
   void savePosition() {

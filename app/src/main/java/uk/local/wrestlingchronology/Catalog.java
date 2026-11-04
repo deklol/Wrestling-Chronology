@@ -167,9 +167,8 @@ final class Catalog {
     ArrayList<Episode> rows = new ArrayList<>();
     for (Episode item : episodes) if (item.show.equals(show)) rows.add(item);
     rows.sort(
-        Comparator.comparingLong((Episode item) -> item.addedAt)
-            .reversed()
-            .thenComparing((Episode item) -> item.date, Comparator.reverseOrder()));
+        Comparator.comparing((Episode item) -> item.date, Comparator.reverseOrder())
+            .thenComparing(Comparator.comparingLong((Episode item) -> item.addedAt).reversed()));
     if (rows.size() > 20) rows.subList(20, rows.size()).clear();
     return rows;
   }

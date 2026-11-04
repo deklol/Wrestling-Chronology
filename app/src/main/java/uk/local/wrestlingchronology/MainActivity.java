@@ -108,6 +108,10 @@ public final class MainActivity extends Activity {
   }
 
   void openCompany(Company company, boolean reset) {
+    openCompany(company, reset, null);
+  }
+
+  void openCompany(Company company, boolean reset, Runnable onReady) {
     if (CatalogSync.busy) {
       Toast.makeText(this, "Finishing source update. Please try again shortly.", Toast.LENGTH_SHORT)
           .show();
@@ -137,10 +141,13 @@ public final class MainActivity extends Activity {
                       || page.equals("companies")) return;
                   ready = true;
                   render();
-                  handlePlayIntent();
                   LibraryJob.schedule(this);
-                  checkRefresh();
-                  updater.startup();
+                  if (onReady != null) onReady.run();
+                  else {
+                    handlePlayIntent();
+                    checkRefresh();
+                    updater.startup();
+                  }
                 });
           } catch (Exception error) {
             runOnUiThread(
@@ -176,7 +183,19 @@ public final class MainActivity extends Activity {
     TextView title = text("WRESTLING CHRONOLOGY", 28, Ui.WHITE);
     title.setTypeface(Typeface.create("sans-serif-black", Typeface.BOLD));
     title.setGravity(Gravity.CENTER);
-    content.addView(title);
+    LinearLayout chooserHeading = Ui.horizontal(this);
+    Company tvCompany = Company.lastSelected(this);
+    ImageButton tv = Ui.tvButton(this, tvCompany, () -> openCompany(tvCompany, true, this::openTv));
+    tv.setId(View.generateViewId());
+    chooserHeading.addView(tv, Ui.lp(this, 44, 44));
+    title.setSingleLine(true);
+    title.setEllipsize(TextUtils.TruncateAt.END);
+    if (Build.VERSION.SDK_INT >= 26)
+      title.setAutoSizeTextTypeUniformWithConfiguration(14, 28, 1, android.util.TypedValue.COMPLEX_UNIT_SP);
+    else if (getResources().getConfiguration().screenWidthDp < 600) title.setTextSize(18);
+    chooserHeading.addView(title, new LinearLayout.LayoutParams(0, d(44), 1));
+    chooserHeading.addView(new View(this), Ui.lp(this, 44, 44));
+    content.addView(chooserHeading, Ui.lp(this, -1, 44));
     Ui.gap(content, 6);
     TextView subtitle = text("Choose your company. Pick a year. Press play.", 14, Ui.MUTED);
     subtitle.setGravity(Gravity.CENTER);
@@ -221,7 +240,13 @@ public final class MainActivity extends Activity {
       LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(d(cardWidth), -1);
       params.setMargins(d(5), d(4), d(5), d(4));
       cards.addView(card, params);
-      if (first == null) first = card;
+      if (first == null) {
+        first = card;
+        card.setId(View.generateViewId());
+        tv.setNextFocusDownId(card.getId());
+        tv.setNextFocusRightId(card.getId());
+      }
+      if (cardIndex <= 4) card.setNextFocusUpId(tv.getId());
     }
     Ui.gap(content, 12);
     TextView credit =
@@ -234,7 +259,7 @@ public final class MainActivity extends Activity {
     credit.setLineSpacing(d(3), 1);
     content.addView(credit, Ui.lp(this, -1, 42));
     setContentView(screen);
-    if (first != null) first.requestFocus();
+    tv.requestFocus();
   }
 
   void immersive() {
@@ -823,7 +848,7 @@ public final class MainActivity extends Activity {
     label.setTypeface(null, Typeface.BOLD);
     row.addView(label);
     Ui.gap(row, 12);
-    row.addView(text("Newest discoveries first", 11, Ui.MUTED));
+    row.addView(text("Newest broadcasts first", 11, Ui.MUTED));
     Ui.weight(row);
     if (show.equals("PPV"))
       row.addView(
@@ -862,7 +887,7 @@ public final class MainActivity extends Activity {
     if (page.equals("ppv") || page.equals("show") || page.equals("weeklies")) {
       ArrayList<Catalog.Episode> result = new ArrayList<>();
       for (Catalog.Episode item : Catalog.episodes)
-        if ((page.equals("weeklies") ? Catalog.weeklyShow(item.show) && (filter.equals("All") || item.show.equals(filter))
+        if ((page.equals("weeklies") ? Catalog.weeklyShow(item.show) && (filter.equals("All") ? !Catalog.hiddenShows.contains(item.show) : item.show.equals(filter))
                 : item.show.equals(page.equals("ppv") ? "PPV" : filter))
             && (year == 0 || item.year == year)) result.add(item);
       return result;
@@ -882,7 +907,6 @@ public final class MainActivity extends Activity {
   void library() {
     ArrayList<Catalog.Episode> items = selected();
     boolean compact = compactScreen();
-    if (!compact && page.equals("year") && filter.equals("All")) root.addView(Ui.button(this, "Filter shows", false, this::showVisibility));
     LinearLayout heading = Ui.horizontal(this);
     root.addView(heading, Ui.lp(this, -1, compact ? 48 : 56));
     TextView title =
@@ -908,6 +932,12 @@ public final class MainActivity extends Activity {
     if (!items.isEmpty()) {
       heading.addView(
           Ui.button(this, "▶  Play all", true, () -> launch(items.get(0), items, null)));
+    }
+    if (page.equals("year") || page.equals("weeklies")) {
+      Ui.gap(heading, 10);
+      heading.addView(Ui.button(this, "Filter shows", false, this::showVisibility));
+    }
+    if (!items.isEmpty()) {
       String last = Catalog.prefs(this).getString("last:" + year, "");
       Catalog.Episode resume = Catalog.find(last);
       if (resume != null && items.contains(resume) && Catalog.position(this, resume) > 0) {
@@ -923,8 +953,9 @@ public final class MainActivity extends Activity {
       filterScroll.addView(chips);
       ArrayList<String> labels = new ArrayList<>();
       labels.add("All");
-      for (Catalog.Episode item : page.equals("weeklies") ? Catalog.episodes : Catalog.forYear(year, "All", true))
-        if ((!page.equals("weeklies") || Catalog.weeklyShow(item.show)) && !labels.contains(item.show)) labels.add(item.show);
+      for (Catalog.Episode item : Catalog.episodes)
+        if ((page.equals("weeklies") ? Catalog.weeklyShow(item.show) : item.year == year)
+            && !labels.contains(item.show)) labels.add(item.show);
       for (String choice : labels) {
         TextView chip =
             Ui.button(
@@ -1016,8 +1047,9 @@ public final class MainActivity extends Activity {
     if (page.equals("year") || page.equals("weeklies")) {
       ArrayList<String> shows = new ArrayList<>();
       shows.add("All");
-      for (Catalog.Episode item : page.equals("year") ? Catalog.forYear(year, "All", true) : Catalog.episodes)
-        if ((!page.equals("weeklies") || Catalog.weeklyShow(item.show)) && !shows.contains(item.show)) shows.add(item.show);
+      for (Catalog.Episode item : Catalog.episodes)
+        if ((page.equals("weeklies") ? Catalog.weeklyShow(item.show) : item.year == year)
+            && !shows.contains(item.show)) shows.add(item.show);
       ArrayList<String> labels = new ArrayList<>();
       for (String show : shows) labels.add(Catalog.showLabel(show, year));
       labels.add("Choose included shows…");
@@ -1271,7 +1303,8 @@ public final class MainActivity extends Activity {
     SharedPreferences prefs = Catalog.prefs(this);
     java.util.TreeSet<String> names = new java.util.TreeSet<>();
     for (Catalog.Episode item : Catalog.episodes)
-      if (!page.equals("year") || item.year == year) names.add(item.show);
+      if ((!page.equals("year") || item.year == year)
+          && (!page.equals("weeklies") || Catalog.weeklyShow(item.show))) names.add(item.show);
     String[] shows = names.toArray(new String[0]);
     boolean[] checked = new boolean[shows.length];
     java.util.Set<String> hidden = new java.util.HashSet<>(Catalog.hiddenShows);
@@ -1282,7 +1315,7 @@ public final class MainActivity extends Activity {
         }).setPositiveButton("Apply", (choice, which) -> {
           Catalog.hiddenShows = new java.util.HashSet<>(hidden);
           prefs.edit().putStringSet("hidden_shows", hidden).apply();
-          if (page.equals("year")) filter = "All";
+          if (page.equals("year") || page.equals("weeklies")) filter = "All";
           render();
         }).setNegativeButton("Cancel", null).show();
   }

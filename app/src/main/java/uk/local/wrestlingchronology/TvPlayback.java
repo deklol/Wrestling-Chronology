@@ -45,7 +45,7 @@ final class TvPlayback {
   private long startupDeadline;
   private Runnable timeout, slowNotice, retryTask;
   private final TvRetry retry = new TvRetry();
-  private boolean joinLive;
+  private boolean joinLive, automaticTransition;
   private int videoWidth = 16, videoHeight = 9;
 
   TvPlayback(Context context, TvApi api, FrameLayout surface, Listener listener) {
@@ -64,6 +64,11 @@ final class TvPlayback {
   }
 
   void tune(TvGuide.Slot slot, long offset, boolean live) {
+    tune(slot, offset, live, false);
+  }
+
+  void tune(TvGuide.Slot slot, long offset, boolean live, boolean automatic) {
+    automaticTransition = automatic;
     retry.reset();
     joinLive = live;
     startupDeadline = slot.channel.startupTimeoutMs > 0
@@ -73,6 +78,7 @@ final class TvPlayback {
       cancel();
       requested = null;
       playing = slot;
+      automaticTransition = false;
       if (!live || Math.abs(active.getCurrentPosition() - offset) > 15000)
         active.seekTo(offset);
       active.play();
@@ -92,17 +98,19 @@ final class TvPlayback {
     long remaining = startupDeadline > 0 ? startupDeadline - SystemClock.elapsedRealtime() : 30000;
     if (remaining <= 0) { fail(token, slot, "TV channel unavailable"); return; }
     tuneStarted = SystemClock.elapsedRealtime();
-    listener.notice(retrying ? "Retrying channel, please wait..." : "Changing channel, please wait...");
+    listener.notice(retrying ? (automaticTransition ? "Retrying next show..." : "Retrying channel, please wait...")
+        : automaticTransition ? "" : "Changing channel, please wait...");
     Log.i("ChronologyTV", "TUNE generation=" + token + " channel=" + slot.channel.id);
     slowNotice =
         () -> {
-          if (token == generation) listener.notice("Still loading channel...\nLarger or higher-quality recordings can take a little longer to load.");
+          if (token == generation) listener.notice(automaticTransition ? "Loading next show..."
+              : "Still loading channel...\nLarger or higher-quality recordings can take a little longer to load.");
         };
     timeout = () -> {
       if (startupDeadline > 0) fail(token, slot, "TV channel unavailable");
       else recover(token, slot, offset, new java.net.SocketTimeoutException("Channel startup timed out"));
     };
-    main.postDelayed(slowNotice, 5000);
+    main.postDelayed(slowNotice, automaticTransition ? 12000 : 5000);
     main.postDelayed(timeout, remaining);
     resolution =
         io.submit(
@@ -336,6 +344,7 @@ final class TvPlayback {
               pending = null;
               pendingView = null;
               playing = slot;
+              automaticTransition = false;
               requested = null;
               retry.playing(SystemClock.elapsedRealtime());
               videoWidth = width;
@@ -470,7 +479,7 @@ final class TvPlayback {
     cancel();
     final int scheduled = generation;
     requested = slot;
-    listener.notice("Retrying channel, please wait...");
+    listener.notice(automaticTransition ? "Retrying next show..." : "Retrying channel, please wait...");
     Log.w("ChronologyTV", "RETRY channel=" + slot.channel.id + " delayMs=" + delay
         + " error=" + error.getClass().getSimpleName());
     retryTask = () -> {

@@ -97,6 +97,14 @@ final class Ui {
     return button;
   }
 
+  static ImageButton tvButton(Context context, Company company, Runnable action) {
+    ImageButton button = searchButton(context, action);
+    button.setImageResource(R.drawable.ic_tv);
+    button.setContentDescription("Open TV guide · " + company.name);
+    button.setBackground(focus(context, false, company));
+    return button;
+  }
+
   static LinearLayout horizontal(Context context) {
     LinearLayout result = new LinearLayout(context);
     result.setOrientation(LinearLayout.HORIZONTAL);

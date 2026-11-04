@@ -23390,6 +23390,38 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "wwe:1989-11-12:survivorseriesshowdown",
+      "date": "1989-11-12",
+      "year": 1989,
+      "show": "Survivor Series Showdown",
+      "title": "Survivor Series Showdown",
+      "description": "WWF Survivor Series Showdown 1989.\n\nThis aired on USA Network leading up to the Survivor Series PPV event.",
+      "duration": 7138,
+      "thumbnail": "https://i.ytimg.com/vi/V4wVTGLcAfA/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/IQwGsLl6rko/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "IQwGsLl6rko",
+          "channelId": "UCGElnjKEmzPdAJaO03d8aJQ",
+          "direct": true,
+          "duration": 7138,
+          "title": "WWF Survivor Series Showdown 1989",
+          "label": "YouTube"
+        },
+        {
+          "type": "youtube",
+          "videoId": "V4wVTGLcAfA",
+          "channelId": "UCnlxUc9ltqUJIWqkNnw7Qrw",
+          "direct": true,
+          "duration": 7138,
+          "title": "WWF Survivor Series Showdown 1989",
+          "label": "YouTube"
+        }
+      ],
+      "discoveredAt": 1793754957162
+    },
+    {
       "id": "wwe:1989-11-12:wrestling-challenge",
       "date": "1989-11-12",
       "year": 1989,
@@ -31824,6 +31856,29 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "wwe:1991-08-18:summerslamspectacular",
+      "date": "1991-08-18",
+      "year": 1991,
+      "show": "SummerSlam Spectacular",
+      "title": "SummerSlam Spectacular",
+      "description": "WWF Summerslam Spectacular 1991",
+      "duration": 5758,
+      "thumbnail": "https://i.ytimg.com/vi/jMgI9kSDZgE/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/jMgI9kSDZgE/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "jMgI9kSDZgE",
+          "channelId": "UCGElnjKEmzPdAJaO03d8aJQ",
+          "direct": true,
+          "duration": 5758,
+          "title": "WWF Summerslam Spectacular 1991",
+          "label": "YouTube"
+        }
+      ],
+      "discoveredAt": 1793754957436
+    },
+    {
       "id": "wwe:1991-08-18:wrestling-challenge",
       "date": "1991-08-18",
       "year": 1991,
@@ -32402,6 +32457,29 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "wwe:1991-10-03:ppv:battleroyalattheroyalalberthall",
+      "date": "1991-10-03",
+      "year": 1991,
+      "show": "PPV",
+      "title": "Battle Royal at the Royal Albert Hall",
+      "description": "Relive WWE\u2019s first-ever event at London\u2019s Royal Albert Hall from Oct. 3, 1991, featuring a 20-Man Battle Royal for the Royal Samovar Trophy. Plus, the British Bulldog returns home to battle The Barbarian, The Undertaker faces \u201cHacksaw\u201d Jim Duggan, action featuring Ric Flair, The Rockers and more!",
+      "duration": 9482,
+      "thumbnail": "https://i.ytimg.com/vi/8aotvq6P0DY/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/8aotvq6P0DY/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "8aotvq6P0DY",
+          "channelId": "UCNSnSemXKDc9UEZ7m31wY9Q",
+          "direct": true,
+          "duration": 9482,
+          "title": "FULL EVENT: Battle Royal at the Royal Albert Hall | Battle Royal with Undertaker, Bulldog and MORE!",
+          "label": "YouTube"
+        }
+      ],
+      "discoveredAt": 1793754956995
     },
     {
       "id": "wwe:1991-10-06:all-american-wrestling",
@@ -33050,6 +33128,29 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "wwe:1991-11-24:survivorseriesshowdown",
+      "date": "1991-11-24",
+      "year": 1991,
+      "show": "Survivor Series Showdown",
+      "title": "Survivor Series Showdown",
+      "description": "Big Boss Man battles Earthquake, Ted DiBiase challenges Virgil for the Million Dollar Title, The Hulkster sounds off on The Undertaker and more in this special event days before Survivor Series 1991.",
+      "duration": 5637,
+      "thumbnail": "https://i.ytimg.com/vi/flqbBRYUEHM/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/flqbBRYUEHM/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "flqbBRYUEHM",
+          "channelId": "UCNSnSemXKDc9UEZ7m31wY9Q",
+          "direct": true,
+          "duration": 5637,
+          "title": "FULL SHOW: Survivor Series Showdown 1991 | Boss Man vs. Earthquake, Virgil vs. Million Dollar Man",
+          "label": "YouTube"
+        }
+      ],
+      "discoveredAt": 1793754957737
     },
     {
       "id": "wwe:1991-11-24:wrestling-challenge",
@@ -34572,6 +34673,29 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "wwe:1992-03-29:marchtowrestlemania",
+      "date": "1992-03-29",
+      "year": 1992,
+      "show": "March to WrestleMania",
+      "title": "March to WrestleMania VIII",
+      "description": "As he prepares to battle Sid Justice in what could be his final match, Hulk Hogan reflects on his legendary career. Intercontinental Champion \u201cRowdy\u201d Roddy Piper battles Shawn Michaels in a non-title contest. Plus, more action featuring WWE Champion Ric Flair, Jake \u201cThe Snake\u201d Roberts and The Natural Disasters.",
+      "duration": 5791,
+      "thumbnail": "https://i.ytimg.com/vi/vf6yw4F7vkU/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/vf6yw4F7vkU/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "vf6yw4F7vkU",
+          "channelId": "UCNSnSemXKDc9UEZ7m31wY9Q",
+          "direct": true,
+          "duration": 5791,
+          "title": "FULL SHOW: March to WrestleMania VIII | Hogan reflects; Michaels vs. Piper and MORE!",
+          "label": "YouTube"
+        }
+      ],
+      "discoveredAt": 1793754957915
     },
     {
       "id": "wwe:1992-03-29:prime-time-wrestling",
@@ -36450,6 +36574,29 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "wwe:1992-08-23:summerslamspectacular",
+      "date": "1992-08-23",
+      "year": 1992,
+      "show": "SummerSlam Spectacular",
+      "title": "SummerSlam Spectacular",
+      "description": "Tito Santana vs. Ric Flair\n Kato vs. Tatanka\nNailz vs. Ken Wayne\nWWF World Champion Randy Savage & Ultimate Warrior vs. The Nasty Boys",
+      "duration": 5713,
+      "thumbnail": "https://i.ytimg.com/vi/9uJvh_geY0U/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/9uJvh_geY0U/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "9uJvh_geY0U",
+          "channelId": "UC1CFeXiXWJGRxpUkIVfWDZw",
+          "direct": true,
+          "duration": 5713,
+          "title": "Summerslam Spectacular 8/23/1992",
+          "label": "YouTube"
+        }
+      ],
+      "discoveredAt": 1793754957519
     },
     {
       "id": "wwe:1992-08-23:wrestling-challenge",
@@ -39208,6 +39355,29 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "wwe:1993-03-28:marchtowrestlemania",
+      "date": "1993-03-28",
+      "year": 1993,
+      "show": "March to WrestleMania",
+      "title": "March to WrestleMania IX",
+      "description": "Get ready for WrestleMania IX with an action-packed card featuring The Undertaker battling \u201cThe Beast from the East\u201d Bam Bam Bigelow. Plus, Yokozuna goes one-on-one with \u201cMacho Man\u201d Randy Savage, and other action features WWE Tag Team Champions Money Inc., Mr. Perfect and much more!",
+      "duration": 5562,
+      "thumbnail": "https://i.ytimg.com/vi/YdZOJHjEsx0/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/YdZOJHjEsx0/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "YdZOJHjEsx0",
+          "channelId": "UCNSnSemXKDc9UEZ7m31wY9Q",
+          "direct": true,
+          "duration": 5562,
+          "title": "FULL SHOW: March to WrestleMania IX \u2013 Undertaker vs. Bigelow, Yokozuna vs. Savage and more!",
+          "label": "YouTube"
+        }
+      ],
+      "discoveredAt": 1793754958001
+    },
+    {
       "id": "wwe:1993-03-28:wrestling-challenge",
       "date": "1993-03-28",
       "year": 1993,
@@ -41720,6 +41890,29 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "wwe:1993-08-22:summerslamspectacular",
+      "date": "1993-08-22",
+      "year": 1993,
+      "show": "SummerSlam Spectacular",
+      "title": "SummerSlam Spectacular",
+      "description": "Eight days before his title defense against Lex Luger at SummerSlam, WWE Champion Yokozuna squares off with another American hero, \u201cHacksaw\u201d Jim Duggan. The WWE Tag Team Title is on the line in a Steel Cage Match, as The Steiner Brothers defend against Money Inc. Plus, action featuring Shawn Michaels, Razor Ramon and more!",
+      "duration": 5638,
+      "thumbnail": "https://i.ytimg.com/vi/7l4D0x4IM98/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/7l4D0x4IM98/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "7l4D0x4IM98",
+          "channelId": "UCNSnSemXKDc9UEZ7m31wY9Q",
+          "direct": true,
+          "duration": 5638,
+          "title": "FULL SHOW: SummerSlam Spectacular 1993 | Duggan vs. Yokozuna; Steiners vs. Money Inc. in a Cage",
+          "label": "YouTube"
+        }
+      ],
+      "discoveredAt": 1793754957633
+    },
+    {
       "id": "wwe:1993-08-22:wrestling-challenge",
       "date": "1993-08-22",
       "year": 1993,
@@ -43060,6 +43253,29 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "wwe:1993-11-21:survivorseriesshowdown",
+      "date": "1993-11-21",
+      "year": 1993,
+      "show": "Survivor Series Showdown",
+      "title": "Survivor Series Showdown",
+      "description": "Ahead of Survivor Series 1993, WWE Champion Yokozuna defends his title against Bret \u201cHit Man\u201d Hart. Plus, Doink the Clown and Crush are in action!",
+      "duration": 5524,
+      "thumbnail": "https://i.ytimg.com/vi/IrcVzCfW5Xw/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/IrcVzCfW5Xw/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "IrcVzCfW5Xw",
+          "channelId": "UCNSnSemXKDc9UEZ7m31wY9Q",
+          "direct": true,
+          "duration": 5524,
+          "title": "FULL SHOW: Survivor Series Showdown 1993",
+          "label": "YouTube"
+        }
+      ],
+      "discoveredAt": 1793754957828
     },
     {
       "id": "wwe:1993-11-21:wrestling-challenge",
@@ -44630,6 +44846,29 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "wwe:1994-03-13:marchtowrestlemania",
+      "date": "1994-03-13",
+      "year": 1994,
+      "show": "March to WrestleMania",
+      "title": "March to WrestleMania X",
+      "description": "The Superstars of WWE get ready for WrestleMania X. Before he challenges Yokozuna for the WWE Title, Lex Luger tunes up by stepping in the ring with \u201cGigolo\u201d Jimmy Del Ray. Plus, WWE Champion Yokozuna battles Tatanka, Bret \u201cHit Man\u201d Hart takes on Crush and action featuring Razor Ramon, Earthquake and more!",
+      "duration": 5482,
+      "thumbnail": "https://i.ytimg.com/vi/1v3fTLOxQqA/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/1v3fTLOxQqA/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "1v3fTLOxQqA",
+          "channelId": "UCNSnSemXKDc9UEZ7m31wY9Q",
+          "direct": true,
+          "duration": 5482,
+          "title": "FULL SHOW: March to WrestleMania X \u2013 Yokozuna vs. Tatanka, Bret Hart and Lex Luger in action",
+          "label": "YouTube"
+        }
+      ],
+      "discoveredAt": 1793754958091
     },
     {
       "id": "wwe:1994-03-13:raw",
@@ -339024,28 +339263,28 @@
       "discoveredAt": 1793232000000
     },
     {
-      "id": "wwe:2026-11-02:raw",
-      "date": "2026-11-02",
+      "id": "wwe:2026-10-19:raw",
+      "date": "2026-10-19",
       "year": 2026,
       "show": "Raw",
       "title": "Raw",
       "description": "",
-      "duration": 9333,
-      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18725556259406&type=37&idx=3&scl=4&tkn=zix_GhGrN-CQm-LZnbca87ZSqQU&fn=external_8",
-      "poster": "https://iv.okcdn.ru/videoPreview?id=18725556259406&type=37&idx=3&scl=4&tkn=zix_GhGrN-CQm-LZnbca87ZSqQU&fn=external_8",
+      "duration": 8314,
+      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18457643059790&type=37&idx=2&scl=4&tkn=sfD8GF4SAkwksjzmNyqKRdjLHDc&fn=external_8",
+      "poster": "https://iv.okcdn.ru/videoPreview?id=18457643059790&type=37&idx=2&scl=4&tkn=sfD8GF4SAkwksjzmNyqKRdjLHDc&fn=external_8",
       "sources": [
         {
           "type": "okru",
-          "videoId": "16275187173966",
+          "videoId": "16114255465038",
           "owner": "910148261710",
-          "title": "WWE.RAW.2026.11.02.NF.iNT.720p",
-          "duration": 9333,
+          "duration": 8314,
+          "title": "WWE.RAW.2026.10.19.NF.DEF.1080p",
           "programme": "Raw",
-          "label": "OK.ru",
-          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18725556259406&type=37&idx=3&scl=4&tkn=zix_GhGrN-CQm-LZnbca87ZSqQU&fn=external_8"
+          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18457643059790&type=37&idx=2&scl=4&tkn=sfD8GF4SAkwksjzmNyqKRdjLHDc&fn=external_8",
+          "label": "OK.ru"
         }
       ],
-      "discoveredAt": 1793688893000
+      "discoveredAt": 1793690168192
     },
     {
       "id": "wwe:2026-10-30:smackdown",
@@ -339082,28 +339321,28 @@
       "discoveredAt": 1793690168031
     },
     {
-      "id": "wwe:2026-10-19:raw",
-      "date": "2026-10-19",
+      "id": "wwe:2026-11-02:raw",
+      "date": "2026-11-02",
       "year": 2026,
       "show": "Raw",
       "title": "Raw",
       "description": "",
-      "duration": 8314,
-      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18457643059790&type=37&idx=2&scl=4&tkn=sfD8GF4SAkwksjzmNyqKRdjLHDc&fn=external_8",
-      "poster": "https://iv.okcdn.ru/videoPreview?id=18457643059790&type=37&idx=2&scl=4&tkn=sfD8GF4SAkwksjzmNyqKRdjLHDc&fn=external_8",
+      "duration": 9333,
+      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18725556259406&type=37&idx=3&scl=4&tkn=zix_GhGrN-CQm-LZnbca87ZSqQU&fn=external_8",
+      "poster": "https://iv.okcdn.ru/videoPreview?id=18725556259406&type=37&idx=3&scl=4&tkn=zix_GhGrN-CQm-LZnbca87ZSqQU&fn=external_8",
       "sources": [
         {
           "type": "okru",
-          "videoId": "16114255465038",
+          "videoId": "16275187173966",
           "owner": "910148261710",
-          "duration": 8314,
-          "title": "WWE.RAW.2026.10.19.NF.DEF.1080p",
+          "title": "WWE.RAW.2026.11.02.NF.iNT.720p",
+          "duration": 9333,
           "programme": "Raw",
-          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18457643059790&type=37&idx=2&scl=4&tkn=sfD8GF4SAkwksjzmNyqKRdjLHDc&fn=external_8",
-          "label": "OK.ru"
+          "label": "OK.ru",
+          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18725556259406&type=37&idx=3&scl=4&tkn=zix_GhGrN-CQm-LZnbca87ZSqQU&fn=external_8"
         }
       ],
-      "discoveredAt": 1793690168192
+      "discoveredAt": 1793688893000
     }
   ],
   "eventCalendar": [],

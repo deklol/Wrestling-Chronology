@@ -220,7 +220,7 @@ public class CatalogueTest {
   }
 
   @Test
-  public void latestRowsAreSeparateAndNewestDiscoveredFirst() throws Exception {
+  public void latestRowsAreSeparateAndNewestBroadcastFirst() throws Exception {
     List<Catalog.Episode> saved = Catalog.episodes;
     try {
       ArrayList<Catalog.Episode> rows = new ArrayList<>();
@@ -234,9 +234,9 @@ public class CatalogueTest {
       Catalog.episodes = rows;
       ArrayList<Catalog.Episode> recent = Catalog.recent("Nitro");
       assertEquals(20, recent.size());
-      assertEquals("1997-01-01", recent.get(0).date);
-      assertEquals("1997-01-25", recent.get(1).date);
-      assertEquals("1997-01-07", recent.get(19).date);
+      assertEquals("1997-01-25", recent.get(0).date);
+      assertEquals("1997-01-24", recent.get(1).date);
+      assertEquals("1997-01-06", recent.get(19).date);
       assertEquals(1, Catalog.recent("Thunder").size());
       assertEquals(1, Catalog.recent("PPV").size());
     } finally {

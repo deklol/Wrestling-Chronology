@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "tna",
-  "revision": 1793734441,
+  "revision": 1793688894,
   "catalogue": {
     "schemaVersion": 1,
     "sourceValidation": 5,
@@ -6144,16 +6144,6 @@
             "creator": "tnappv",
             "md5": "889f5abe6020c7735fe9054072c5ad04",
             "dateEvidence": "existing catalogue"
-          },
-          {
-            "type": "okru",
-            "videoId": "4195775482479",
-            "owner": "579391530351",
-            "title": "TNA.Turning.Point.2004",
-            "duration": 10313,
-            "programme": "PPV",
-            "label": "OK.ru",
-            "thumbnail": "https://iv.okcdn.ru/videoPreview?id=2820553575023&type=37&idx=14&tkn=13v8BT_fBwVUQbMx59zOgbvPbMw&fn=external_8"
           }
         ],
         "discoveredAt": 0
@@ -73918,17 +73908,6 @@
           "show": "Impact",
           "title": "Impact",
           "duration": 5735,
-          "enabled": true
-        },
-        {
-          "id": "4195775482479",
-          "owner": "579391530351",
-          "episodeId": "tna:2004-12-05:ppv:turningpoint",
-          "date": "2004-12-05",
-          "show": "PPV",
-          "title": "Turning Point",
-          "name": "TNA.Turning.Point.2004",
-          "duration": 10313,
           "enabled": true
         }
       ],

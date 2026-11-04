@@ -82,6 +82,12 @@ final class Company {
     return WWE;
   }
 
+  static Company lastSelected(Context context) {
+    String id = context.getSharedPreferences("application", 0).getString("company", "ecw");
+    for (Company company : ALL) if (company.id.equals(id)) return company;
+    return ECW;
+  }
+
   static void restore(Context context) {
     current = find(context.getSharedPreferences("application", 0).getString("company", "wwe"));
   }

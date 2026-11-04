@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "njpw",
-  "revision": 1793734548,
+  "revision": 1793757266,
   "catalogue": {
     "company": "njpw",
     "episodes": [
@@ -5013,6 +5013,15 @@
             "authorUrl": "https://www.youtube.com/@NJPWGLOBAL",
             "programme": "NJPW STRONG",
             "direct": true
+          },
+          {
+            "type": "youtube",
+            "label": "YouTube",
+            "videoId": "87iD7abron4",
+            "duration": 3447,
+            "language": "ja",
+            "direct": true,
+            "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA"
           }
         ],
         "discoveredAt": 0
@@ -6274,6 +6283,15 @@
             "authorUrl": "https://www.youtube.com/@NJPWGLOBAL",
             "programme": "NJPW STRONG",
             "direct": true
+          },
+          {
+            "type": "youtube",
+            "label": "YouTube",
+            "videoId": "jUfV9Pl_20c",
+            "duration": 3738,
+            "language": "ja",
+            "direct": true,
+            "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA"
           }
         ],
         "discoveredAt": 0
@@ -6969,6 +6987,15 @@
             "authorUrl": "https://www.youtube.com/@NJPWGLOBAL",
             "programme": "NJPW STRONG",
             "direct": true
+          },
+          {
+            "type": "youtube",
+            "label": "YouTube",
+            "videoId": "bzqlXXGVnf0",
+            "duration": 3702,
+            "language": "ja",
+            "direct": true,
+            "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA"
           }
         ],
         "discoveredAt": 0
@@ -7774,6 +7801,15 @@
             "authorUrl": "https://www.youtube.com/@NJPWGLOBAL",
             "programme": "NJPW STRONG",
             "direct": true
+          },
+          {
+            "type": "youtube",
+            "label": "YouTube",
+            "videoId": "vYOzXkp9SF4",
+            "duration": 5967,
+            "language": "ja",
+            "direct": true,
+            "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA"
           }
         ],
         "discoveredAt": 0
@@ -8716,6 +8752,15 @@
             "authorUrl": "https://www.youtube.com/@NJPWGLOBAL",
             "programme": "NJPW STRONG",
             "direct": true
+          },
+          {
+            "type": "youtube",
+            "label": "YouTube",
+            "videoId": "srrm7AAD96g",
+            "duration": 2907,
+            "language": "ja",
+            "direct": true,
+            "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA"
           }
         ],
         "discoveredAt": 0
@@ -8738,6 +8783,13 @@
             "language": "en",
             "url": "https://archive.org/download/njpw-wrestle-kingdom-16-night-3-720p-2022-eng-original/NJPW%20Wrestle%20Kingdom%2016%20%28Night%203%29%20%282022%29%20%28ENG%29%20ORIGINAL.mp4",
             "programme": "PPV"
+          },
+          {
+            "type": "archive",
+            "label": "Internet Archive",
+            "url": "https://archive.org/download/njpw-wrestle-kingdom-16-njpw-vs.-noah-in-yokohama-arena-08-01-22/NOAH.NJPW.2022.01.08.Wrestle.Kingdom.16.In.Yokohama.Arena.ENGLISH.720p.WEB.h264-NCMP.mp4",
+            "duration": 15278,
+            "language": "en"
           }
         ],
         "discoveredAt": 0
@@ -9000,6 +9052,15 @@
             "authorUrl": "https://www.youtube.com/@NJPWGLOBAL",
             "programme": "NJPW STRONG",
             "direct": true
+          },
+          {
+            "type": "youtube",
+            "label": "YouTube",
+            "videoId": "WuNPcR4Bcig",
+            "duration": 2826,
+            "language": "ja",
+            "direct": true,
+            "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA"
           }
         ],
         "discoveredAt": 0
@@ -10966,6 +11027,15 @@
             "authorUrl": "https://www.youtube.com/@NJPWGLOBAL",
             "programme": "NJPW STRONG",
             "direct": true
+          },
+          {
+            "type": "youtube",
+            "label": "YouTube",
+            "videoId": "1TGEiXjZiuM",
+            "duration": 4485,
+            "language": "ja",
+            "direct": true,
+            "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA"
           }
         ],
         "discoveredAt": 0
@@ -13439,6 +13509,15 @@
             "authorUrl": "https://www.youtube.com/@NJPWGLOBAL",
             "programme": "NJPW STRONG",
             "direct": true
+          },
+          {
+            "type": "youtube",
+            "label": "YouTube",
+            "videoId": "AnlGZFFlLjU",
+            "duration": 3172,
+            "language": "ja",
+            "direct": true,
+            "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA"
           }
         ],
         "discoveredAt": 0
@@ -15711,6 +15790,13 @@
             "language": "und",
             "url": "https://archive.org/download/njpw-death-pain-invitational-24-06-25/NJPW%20Death%20Pain%20Invitational%2024-06-25.mp4",
             "programme": "PPV"
+          },
+          {
+            "type": "archive",
+            "label": "Internet Archive",
+            "url": "https://archive.org/download/death.-pain.-invitacional.-1080p.-web.h-264-sbox/Death.Pain.Invitacional.1080p.WEB.h264-SBox.mp4",
+            "duration": 9982,
+            "language": "und"
           }
         ],
         "discoveredAt": 0
@@ -20179,12 +20265,12 @@
         "discoveredAt": 1793688745136
       },
       {
-        "id": "njpw:2026-11-03:ppv:powerstrugglesuperjuniortagleague2026",
+        "id": "njpw:2026-11-03:ppv:powerstruggle2026",
         "date": "2026-11-03",
         "year": 2026,
         "show": "PPV",
-        "title": "Power Struggle \u2014 Super Junior Tag League 2026",
-        "description": "Power Struggle \u2014 Super Junior Tag League 2026",
+        "title": "Power Struggle 2026",
+        "description": "Power Struggle 2026",
         "duration": 15599,
         "thumbnail": "",
         "poster": "",
@@ -20192,13 +20278,12 @@
           {
             "type": "archive",
             "label": "Internet Archive",
-            "duration": 15599,
-            "language": "und",
             "url": "https://archive.org/download/njpw-power-struggle-super-junior-tag-league-2026-03-11-26/NJPW%20Power%20Struggle%20~%20Super%20Junior%20Tag%20League%202026%2003-11-26.mp4",
-            "programme": "PPV"
+            "duration": 15599,
+            "language": "und"
           }
         ],
-        "discoveredAt": 1793734548377
+        "discoveredAt": 1793757266
       }
     ]
   },
@@ -23485,6 +23570,110 @@
           "show": "PPV",
           "duration": 6823,
           "reviewedFullShow": true
+        },
+        {
+          "id": "87iD7abron4",
+          "name": "STRONG #33",
+          "title": "STRONG #33",
+          "date": "2021-03-26",
+          "show": "NJPW STRONG",
+          "duration": 3447,
+          "enabled": true,
+          "language": "ja",
+          "reviewedFullShow": true,
+          "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+          "authorUrl": "https://www.youtube.com/@NJPW"
+        },
+        {
+          "id": "jUfV9Pl_20c",
+          "name": "STRONG #50",
+          "title": "STRONG #50",
+          "date": "2021-07-23",
+          "show": "NJPW STRONG",
+          "duration": 3738,
+          "enabled": true,
+          "language": "ja",
+          "reviewedFullShow": true,
+          "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+          "authorUrl": "https://www.youtube.com/@NJPW"
+        },
+        {
+          "id": "bzqlXXGVnf0",
+          "name": "STRONG #58",
+          "title": "STRONG #58",
+          "date": "2021-09-15",
+          "show": "NJPW STRONG",
+          "duration": 3702,
+          "enabled": true,
+          "language": "ja",
+          "reviewedFullShow": true,
+          "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+          "authorUrl": "https://www.youtube.com/@NJPW"
+        },
+        {
+          "id": "vYOzXkp9SF4",
+          "name": "STRONG #66",
+          "title": "STRONG #66",
+          "date": "2021-11-13",
+          "show": "NJPW STRONG",
+          "duration": 5967,
+          "enabled": true,
+          "language": "ja",
+          "reviewedFullShow": true,
+          "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+          "authorUrl": "https://www.youtube.com/@NJPW"
+        },
+        {
+          "id": "srrm7AAD96g",
+          "name": "STRONG #73",
+          "title": "STRONG #73",
+          "date": "2022-01-08",
+          "show": "NJPW STRONG",
+          "duration": 2907,
+          "enabled": true,
+          "language": "ja",
+          "reviewedFullShow": true,
+          "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+          "authorUrl": "https://www.youtube.com/@NJPW"
+        },
+        {
+          "id": "WuNPcR4Bcig",
+          "name": "STRONG #78",
+          "title": "STRONG #78",
+          "date": "2022-02-12",
+          "show": "NJPW STRONG",
+          "duration": 2826,
+          "enabled": true,
+          "language": "ja",
+          "reviewedFullShow": true,
+          "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+          "authorUrl": "https://www.youtube.com/@NJPW"
+        },
+        {
+          "id": "1TGEiXjZiuM",
+          "name": "STRONG #97",
+          "title": "STRONG #97",
+          "date": "2022-07-02",
+          "show": "NJPW STRONG",
+          "duration": 4485,
+          "enabled": true,
+          "language": "ja",
+          "reviewedFullShow": true,
+          "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+          "authorUrl": "https://www.youtube.com/@NJPW"
+        },
+        {
+          "id": "AnlGZFFlLjU",
+          "name": "STRONG #126",
+          "title": "STRONG #126",
+          "date": "2023-01-28",
+          "show": "NJPW STRONG",
+          "duration": 3172,
+          "enabled": true,
+          "language": "ja",
+          "reviewedFullShow": true,
+          "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+          "authorUrl": "https://www.youtube.com/@NJPW"
         }
       ]
     },
@@ -27801,9 +27990,18 @@
         },
         {
           "id": "njpw-power-struggle-super-junior-tag-league-2026-03-11-26",
-          "name": "njpw-power-struggle-super-junior-tag-league-2026-03-11-26",
           "enabled": true,
-          "frozen": true
+          "name": "Power Struggle 2026"
+        },
+        {
+          "id": "death.-pain.-invitacional.-1080p.-web.h-264-sbox",
+          "enabled": true,
+          "name": "Death Pain Invitational"
+        },
+        {
+          "id": "njpw-wrestle-kingdom-16-njpw-vs.-noah-in-yokohama-arena-08-01-22",
+          "enabled": true,
+          "name": "Wrestle Kingdom 16 \u2014 Night 3"
         }
       ]
     },

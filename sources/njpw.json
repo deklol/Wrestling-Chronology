@@ -3281,6 +3281,110 @@
         "show": "PPV",
         "duration": 6823,
         "reviewedFullShow": true
+      },
+      {
+        "id": "87iD7abron4",
+        "name": "STRONG #33",
+        "title": "STRONG #33",
+        "date": "2021-03-26",
+        "show": "NJPW STRONG",
+        "duration": 3447,
+        "enabled": true,
+        "language": "ja",
+        "reviewedFullShow": true,
+        "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+        "authorUrl": "https://www.youtube.com/@NJPW"
+      },
+      {
+        "id": "jUfV9Pl_20c",
+        "name": "STRONG #50",
+        "title": "STRONG #50",
+        "date": "2021-07-23",
+        "show": "NJPW STRONG",
+        "duration": 3738,
+        "enabled": true,
+        "language": "ja",
+        "reviewedFullShow": true,
+        "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+        "authorUrl": "https://www.youtube.com/@NJPW"
+      },
+      {
+        "id": "bzqlXXGVnf0",
+        "name": "STRONG #58",
+        "title": "STRONG #58",
+        "date": "2021-09-15",
+        "show": "NJPW STRONG",
+        "duration": 3702,
+        "enabled": true,
+        "language": "ja",
+        "reviewedFullShow": true,
+        "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+        "authorUrl": "https://www.youtube.com/@NJPW"
+      },
+      {
+        "id": "vYOzXkp9SF4",
+        "name": "STRONG #66",
+        "title": "STRONG #66",
+        "date": "2021-11-13",
+        "show": "NJPW STRONG",
+        "duration": 5967,
+        "enabled": true,
+        "language": "ja",
+        "reviewedFullShow": true,
+        "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+        "authorUrl": "https://www.youtube.com/@NJPW"
+      },
+      {
+        "id": "srrm7AAD96g",
+        "name": "STRONG #73",
+        "title": "STRONG #73",
+        "date": "2022-01-08",
+        "show": "NJPW STRONG",
+        "duration": 2907,
+        "enabled": true,
+        "language": "ja",
+        "reviewedFullShow": true,
+        "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+        "authorUrl": "https://www.youtube.com/@NJPW"
+      },
+      {
+        "id": "WuNPcR4Bcig",
+        "name": "STRONG #78",
+        "title": "STRONG #78",
+        "date": "2022-02-12",
+        "show": "NJPW STRONG",
+        "duration": 2826,
+        "enabled": true,
+        "language": "ja",
+        "reviewedFullShow": true,
+        "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+        "authorUrl": "https://www.youtube.com/@NJPW"
+      },
+      {
+        "id": "1TGEiXjZiuM",
+        "name": "STRONG #97",
+        "title": "STRONG #97",
+        "date": "2022-07-02",
+        "show": "NJPW STRONG",
+        "duration": 4485,
+        "enabled": true,
+        "language": "ja",
+        "reviewedFullShow": true,
+        "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+        "authorUrl": "https://www.youtube.com/@NJPW"
+      },
+      {
+        "id": "AnlGZFFlLjU",
+        "name": "STRONG #126",
+        "title": "STRONG #126",
+        "date": "2023-01-28",
+        "show": "NJPW STRONG",
+        "duration": 3172,
+        "enabled": true,
+        "language": "ja",
+        "reviewedFullShow": true,
+        "channelId": "UCWHkw0DdTCtbMpzeUkqtGRA",
+        "authorUrl": "https://www.youtube.com/@NJPW"
       }
     ]
   },
@@ -7594,6 +7698,21 @@
         "name": "njpw-super-junior-tag-league-2026-day-7-01-11-26",
         "enabled": true,
         "frozen": true
+      },
+      {
+        "id": "njpw-power-struggle-super-junior-tag-league-2026-03-11-26",
+        "enabled": true,
+        "name": "Power Struggle 2026"
+      },
+      {
+        "id": "death.-pain.-invitacional.-1080p.-web.h-264-sbox",
+        "enabled": true,
+        "name": "Death Pain Invitational"
+      },
+      {
+        "id": "njpw-wrestle-kingdom-16-njpw-vs.-noah-in-yokohama-arena-08-01-22",
+        "enabled": true,
+        "name": "Wrestle Kingdom 16 \u2014 Night 3"
       }
     ]
   },
