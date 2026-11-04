@@ -159,7 +159,7 @@
       },
       {
         "id": "YdZOJHjEsx0",
-        "name": "FULL SHOW: March to WrestleMania IX \u2013 Undertaker vs. Bigelow, Yokozuna vs. Savage and more!",
+        "name": "FULL SHOW: March to WrestleMania IX – Undertaker vs. Bigelow, Yokozuna vs. Savage and more!",
         "title": "March to WrestleMania IX",
         "date": "1993-03-28",
         "show": "March to WrestleMania",
@@ -171,7 +171,7 @@
       },
       {
         "id": "1v3fTLOxQqA",
-        "name": "FULL SHOW: March to WrestleMania X \u2013 Yokozuna vs. Tatanka, Bret Hart and Lex Luger in action",
+        "name": "FULL SHOW: March to WrestleMania X – Yokozuna vs. Tatanka, Bret Hart and Lex Luger in action",
         "title": "March to WrestleMania X",
         "date": "1994-03-13",
         "show": "March to WrestleMania",
@@ -51339,7 +51339,7 @@
             "show": "NXT",
             "title": "NXT"
           },
-          "2023/WWE NXT - S2023E02 - New Year\u2019s Evil 2023 - 01-10-2023.mp4": {
+          "2023/WWE NXT - S2023E02 - New Year’s Evil 2023 - 01-10-2023.mp4": {
             "date": "2023-01-10",
             "show": "NXT",
             "title": "NXT"
@@ -71589,6 +71589,16 @@
             "date": "1986-08-30",
             "show": "Championship Wrestling",
             "title": "Championship Wrestling"
+          },
+          "WWF Friday Night's Main Event/1997-08-29 - WWF Friday Night's Main Event.mp4": {
+            "date": "1997-08-29",
+            "show": "Raw",
+            "title": "Friday Night's Main Event"
+          },
+          "WWF Friday Night's Main Event/1997-09-05 - WWF Friday Night's Main Event.mp4": {
+            "date": "1997-09-05",
+            "show": "Raw",
+            "title": "Friday Night's Main Event"
           }
         },
         "mappedOnly": true
@@ -87834,7 +87844,7 @@
         "enabled": true
       },
       {
-        "name": "sileem salaeam \u00b7 recent full shows",
+        "name": "sileem salaeam · recent full shows",
         "url": "https://ok.ru/profile/910148261710/video/all",
         "owner": "910148261710",
         "enabled": true
