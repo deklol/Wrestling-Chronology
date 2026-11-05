@@ -11,7 +11,9 @@
     "source": "OK.ru \u00b7 sileem salaeam \u00b7 recent full shows",
     "status": "checked public recent uploads",
     "new_recordings": 0,
-    "skipped": []
+    "skipped": [
+      "AEW.Dynamite.2026.11.04.MyAEW.1080p: Public stream unavailable"
+    ]
   },
   {
     "company": "aew",
@@ -22944,9 +22946,8 @@
   {
     "company": "roh",
     "source": "roh-wrestling-special-02-12-25",
-    "status": "checked",
-    "recordings": 0,
-    "skipped": []
+    "status": "skipped",
+    "reason": "The read operation timed out"
   },
   {
     "company": "roh",
@@ -23089,7 +23090,7 @@
     "company": "njpw",
     "source": "Reviewed discovery",
     "status": "checked",
-    "new_recordings": 1
+    "new_recordings": 0
   },
   {
     "company": "nxt",
@@ -23107,7 +23108,7 @@
     "company": "nxt",
     "source": "OK.ru \u00b7 sileem salaeam \u00b7 recent full shows",
     "status": "checked public recent uploads",
-    "new_recordings": 0,
+    "new_recordings": 1,
     "skipped": []
   }
 ]

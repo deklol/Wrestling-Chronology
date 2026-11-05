@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "nxt",
-  "revision": 1793821915,
+  "revision": 1793861828,
   "catalogue": {
     "company": "nxt",
     "episodes": [
@@ -56319,10 +56319,15 @@
           },
           {
             "type": "archive",
-            "label": "Internet Archive",
-            "language": "en",
-            "duration": 5904,
             "url": "https://archive.org/download/wwe.nxt.2026.03.03.nf.int.1080p/wwe.nxt.2026.03.03.nf.int.1080p.mp4",
+            "filename": "wwe.nxt.2026.03.03.nf.int.1080p.mp4",
+            "creator": "wwe.nxt.2026.03.03.nf.int.1080p",
+            "label": "Internet Archive \u00b7 wwe.nxt.2026.03.03.nf.int.1080p",
+            "duration": 5904,
+            "height": 480,
+            "dateEvidence": "Reviewed filename mapping",
+            "bytes": 1074239269,
+            "md5": "7234755af717890597c9c588ce2fc159",
             "programme": "NXT"
           },
           {
@@ -56457,18 +56462,28 @@
           },
           {
             "type": "archive",
-            "label": "Internet Archive",
-            "language": "en",
-            "duration": 8417,
             "url": "https://archive.org/download/wwe.-nxt.-vengeance.-day.-2026.-multi.-1080p.x-264-gita.mkv/WWE.NXT.Vengeance.Day.2026.MULTi.1080p.x264-GITA.mkv.mp4",
+            "filename": "WWE.NXT.Vengeance.Day.2026.MULTi.1080p.x264-GITA.mkv.mp4",
+            "creator": "wwe.-nxt.-vengeance.-day.-2026.-multi.-1080p.x-264-gita.mkv",
+            "label": "Internet Archive \u00b7 wwe.-nxt.-vengeance.-day.-2026.-multi.-1080p.x-264-gita.mkv",
+            "duration": 8417,
+            "height": 1080,
+            "dateEvidence": "Reviewed filename mapping",
+            "bytes": 4402923480,
+            "md5": "6eb3dc79b9a85b6d7fff697df960047e",
             "programme": "PPV"
           },
           {
             "type": "archive",
-            "label": "Internet Archive",
-            "language": "en",
-            "duration": 8417,
             "url": "https://archive.org/download/wwe.nxt.vengeance.day.2026.1080p/wwe.nxt.vengeance.day.2026.1080p.mp4",
+            "filename": "wwe.nxt.vengeance.day.2026.1080p.mp4",
+            "creator": "wwe.nxt.vengeance.day.2026.1080p",
+            "label": "Internet Archive \u00b7 wwe.nxt.vengeance.day.2026.1080p",
+            "duration": 8417,
+            "height": 480,
+            "dateEvidence": "Reviewed filename mapping",
+            "bytes": 1532053516,
+            "md5": "3819184b74ed0e830c5c7fcf0912e598",
             "programme": "PPV"
           },
           {
@@ -56768,10 +56783,15 @@
           },
           {
             "type": "archive",
-            "label": "Internet Archive",
-            "language": "en",
-            "duration": 6070,
             "url": "https://archive.org/download/wwe.-nxt.-2026.03.24.-nf.i-nt.-720p/WWE.NXT.2026.03.24.NF.iNT.720p.mp4",
+            "filename": "WWE.NXT.2026.03.24.NF.iNT.720p.mp4",
+            "creator": "wwe.-nxt.-2026.03.24.-nf.i-nt.-720p",
+            "label": "Internet Archive \u00b7 wwe.-nxt.-2026.03.24.-nf.i-nt.-720p",
+            "duration": 6070,
+            "height": 720,
+            "dateEvidence": "Reviewed filename mapping",
+            "bytes": 2355716719,
+            "md5": "b3d4d2665c65feed64f02c94028b80af",
             "programme": "NXT"
           },
           {
@@ -56856,18 +56876,28 @@
           },
           {
             "type": "archive",
-            "label": "Internet Archive",
-            "language": "en",
-            "duration": 5847,
             "url": "https://archive.org/download/wwe.-nxt.-2026.03.31.-cw.-1080p.-60-fps.-web.h-264-heel.mkv/WWE.NXT.2026.03.31.CW.1080p.60FPS.WEB.h264-HEEL.mkv.mp4",
+            "filename": "WWE.NXT.2026.03.31.CW.1080p.60FPS.WEB.h264-HEEL.mkv.mp4",
+            "creator": "wwe.-nxt.-2026.03.31.-cw.-1080p.-60-fps.-web.h-264-heel.mkv",
+            "label": "Internet Archive \u00b7 wwe.-nxt.-2026.03.31.-cw.-1080p.-60-fps.-web.h-264-heel.mkv",
+            "duration": 5847,
+            "height": 1080,
+            "dateEvidence": "Reviewed filename mapping",
+            "bytes": 2367344035,
+            "md5": "50238465558b246605e7b8a99e002f28",
             "programme": "NXT"
           },
           {
             "type": "archive",
-            "label": "Internet Archive",
-            "language": "en",
-            "duration": 6108,
             "url": "https://archive.org/download/wwe.-nxt.-2026.03.31.-nf.i-nt.-720p.-60-fps.-webrip.h-264-heel/WWE.NXT.2026.03.31.NF.iNT.720p.60FPS.WEBRip.h264-HEEL.mp4",
+            "filename": "WWE.NXT.2026.03.31.NF.iNT.720p.60FPS.WEBRip.h264-HEEL.mp4",
+            "creator": "wwe.-nxt.-2026.03.31.-nf.i-nt.-720p.-60-fps.-webrip.h-264-heel",
+            "label": "Internet Archive \u00b7 wwe.-nxt.-2026.03.31.-nf.i-nt.-720p.-60-fps.-webrip.h-264-heel",
+            "duration": 6108,
+            "height": 720,
+            "dateEvidence": "Reviewed filename mapping",
+            "bytes": 2371979022,
+            "md5": "7122e0214ddba0bf65df91e98c9ad6d2",
             "programme": "NXT"
           },
           {
@@ -56979,18 +57009,28 @@
           },
           {
             "type": "archive",
-            "label": "Internet Archive",
-            "language": "en",
-            "duration": 5660,
             "url": "https://archive.org/download/wwe.-nxt.-2026.04.07.-cw.-1080p.-web.-hfr.h-264-heel.mkv/WWE.NXT.2026.04.07.CW.1080p.WEB.HFR.h264-HEEL.mkv.mp4",
+            "filename": "WWE.NXT.2026.04.07.CW.1080p.WEB.HFR.h264-HEEL.mkv.mp4",
+            "creator": "wwe.-nxt.-2026.04.07.-cw.-1080p.-web.-hfr.h-264-heel.mkv",
+            "label": "Internet Archive \u00b7 wwe.-nxt.-2026.04.07.-cw.-1080p.-web.-hfr.h-264-heel.mkv",
+            "duration": 5660,
+            "height": 720,
+            "dateEvidence": "Reviewed filename mapping",
+            "bytes": 1344344601,
+            "md5": "1c4fc7cd2f721ba7a3992f9ae60660d2",
             "programme": "NXT"
           },
           {
             "type": "archive",
-            "label": "Internet Archive",
-            "language": "en",
-            "duration": 6377,
             "url": "https://archive.org/download/wwe.-nxt.-2026.04.07.-nf.i-nt.-720p.-webrip.-hfr.h-264-heel/WWE.NXT.2026.04.07.NF.iNT.720p.WEBRip.HFR.h264-HEEL.mp4",
+            "filename": "WWE.NXT.2026.04.07.NF.iNT.720p.WEBRip.HFR.h264-HEEL.mp4",
+            "creator": "wwe.-nxt.-2026.04.07.-nf.i-nt.-720p.-webrip.-hfr.h-264-heel",
+            "label": "Internet Archive \u00b7 wwe.-nxt.-2026.04.07.-nf.i-nt.-720p.-webrip.-hfr.h-264-heel",
+            "duration": 6377,
+            "height": 720,
+            "dateEvidence": "Reviewed filename mapping",
+            "bytes": 2469330847,
+            "md5": "b11c74a10e1ea349b47a613829600131",
             "programme": "NXT"
           },
           {
@@ -57196,18 +57236,28 @@
           },
           {
             "type": "archive",
-            "label": "Internet Archive",
-            "language": "en",
-            "duration": 5620,
             "url": "https://archive.org/download/wwe.-nxt.-2026.04.21.-cw.-1080p.-web.-hfr.h-264-heel.mkv/WWE.NXT.2026.04.21.CW.1080p.WEB.HFR.h264-HEEL.mkv.mp4",
+            "filename": "WWE.NXT.2026.04.21.CW.1080p.WEB.HFR.h264-HEEL.mkv.mp4",
+            "creator": "wwe.-nxt.-2026.04.21.-cw.-1080p.-web.-hfr.h-264-heel.mkv",
+            "label": "Internet Archive \u00b7 wwe.-nxt.-2026.04.21.-cw.-1080p.-web.-hfr.h-264-heel.mkv",
+            "duration": 5620,
+            "height": 1080,
+            "dateEvidence": "Reviewed filename mapping",
+            "bytes": 2254735066,
+            "md5": "252f75bad107aa734c65406834c113aa",
             "programme": "NXT"
           },
           {
             "type": "archive",
-            "label": "Internet Archive",
-            "language": "en",
-            "duration": 5871,
             "url": "https://archive.org/download/wwe.-nxt.-2026.04.21.-nf.i-nt.-web.-hfr.-h-264-rbb/WWE.NXT.2026.04.21.NF.iNT.WEB.HFR.H264-RBB.mp4",
+            "filename": "WWE.NXT.2026.04.21.NF.iNT.WEB.HFR.H264-RBB.mp4",
+            "creator": "wwe.-nxt.-2026.04.21.-nf.i-nt.-web.-hfr.-h-264-rbb",
+            "label": "Internet Archive \u00b7 wwe.-nxt.-2026.04.21.-nf.i-nt.-web.-hfr.-h-264-rbb",
+            "duration": 5871,
+            "height": 400,
+            "dateEvidence": "Reviewed filename mapping",
+            "bytes": 862084838,
+            "md5": "ee9b73843f48e544eab6b74f6d533122",
             "programme": "NXT"
           },
           {
@@ -57239,26 +57289,41 @@
         "sources": [
           {
             "type": "archive",
-            "label": "Internet Archive",
-            "language": "en",
-            "duration": 5634,
             "url": "https://archive.org/download/wwe.-nxt.-2026.04.28.-cw.-1080p.-web.-hfr.h-264-heel.mkv/WWE.NXT.2026.04.28.CW.1080p.WEB.HFR.h264-HEEL.mkv.mp4",
+            "filename": "WWE.NXT.2026.04.28.CW.1080p.WEB.HFR.h264-HEEL.mkv.mp4",
+            "creator": "wwe.-nxt.-2026.04.28.-cw.-1080p.-web.-hfr.h-264-heel.mkv",
+            "label": "Internet Archive \u00b7 wwe.-nxt.-2026.04.28.-cw.-1080p.-web.-hfr.h-264-heel.mkv",
+            "duration": 5634,
+            "height": 1080,
+            "dateEvidence": "Reviewed filename mapping",
+            "bytes": 2264302298,
+            "md5": "d16774f606fcbfdff522724609034c43",
             "programme": "NXT"
           },
           {
             "type": "archive",
-            "label": "Internet Archive",
-            "language": "en",
-            "duration": 5888,
             "url": "https://archive.org/download/wwe.-nxt.-2026.04.28.-nf.i-nt.-sd/WWE.NXT.2026.04.28.NF.iNT.SD.ia.mp4",
+            "filename": "WWE.NXT.2026.04.28.NF.iNT.SD.ia.mp4",
+            "creator": "wwe.-nxt.-2026.04.28.-nf.i-nt.-sd",
+            "label": "Internet Archive \u00b7 wwe.-nxt.-2026.04.28.-nf.i-nt.-sd",
+            "duration": 5888,
+            "height": 480,
+            "dateEvidence": "Reviewed filename mapping",
+            "bytes": 1186946957,
+            "md5": "b4734d22db0d6635541bd44e1c523213",
             "programme": "NXT"
           },
           {
             "type": "archive",
-            "label": "Internet Archive",
-            "language": "en",
-            "duration": 5888,
             "url": "https://archive.org/download/wwe.-nxt.-2026.04.28.-nf.i-nt.-sd/WWE.NXT.2026.04.28.NF.iNT.SD.mp4",
+            "filename": "WWE.NXT.2026.04.28.NF.iNT.SD.mp4",
+            "creator": "wwe.-nxt.-2026.04.28.-nf.i-nt.-sd",
+            "label": "Internet Archive \u00b7 wwe.-nxt.-2026.04.28.-nf.i-nt.-sd",
+            "duration": 5888,
+            "height": 480,
+            "dateEvidence": "Reviewed filename mapping",
+            "bytes": 1186946957,
+            "md5": "e51b0b7cac36ceaeb7d528b5991930f5",
             "programme": "NXT"
           },
           {
@@ -59735,6 +59800,30 @@
           }
         ],
         "discoveredAt": 0
+      },
+      {
+        "id": "nxt:2026-11-04:nxt",
+        "date": "2026-11-04",
+        "year": 2026,
+        "show": "NXT",
+        "title": "NXT",
+        "description": "",
+        "duration": 5115,
+        "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18766278101582&type=38&idx=0&scl=4&tkn=xMdRVeFV49FVkGy3nHIAcUN6MZQ&fn=external_8",
+        "poster": "https://iv.okcdn.ru/videoPreview?id=18766278101582&type=38&idx=0&scl=4&tkn=xMdRVeFV49FVkGy3nHIAcUN6MZQ&fn=external_8",
+        "sources": [
+          {
+            "type": "okru",
+            "videoId": "16300366432846",
+            "owner": "910148261710",
+            "title": "WWE.NXT.2026.11.04.SD",
+            "duration": 5115,
+            "programme": "NXT",
+            "label": "OK.ru",
+            "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18766278101582&type=38&idx=0&scl=4&tkn=xMdRVeFV49FVkGy3nHIAcUN6MZQ&fn=external_8"
+          }
+        ],
+        "discoveredAt": 1793861828042
       }
     ]
   },
@@ -71492,6 +71581,17 @@
           "show": "PPV",
           "episodeId": "nxt:2026-10-31:nxthalloweenhavoc",
           "duration": 10667
+        },
+        {
+          "id": "16300366432846",
+          "owner": "910148261710",
+          "episodeId": "nxt:2026-11-04:nxt",
+          "date": "2026-11-04",
+          "show": "NXT",
+          "title": "NXT",
+          "name": "WWE.NXT.2026.11.04.SD",
+          "duration": 5115,
+          "enabled": true
         }
       ],
       "collections": [
