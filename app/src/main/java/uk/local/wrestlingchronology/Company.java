@@ -13,9 +13,9 @@ final class Company {
       new Company(
           "wwe",
           "WWF / WWE",
-          "1985–2026",
+          "1984–2026",
           R.drawable.logo_wwe,
-          "1985-01-01",
+          "1984-01-01",
           "2028-12-31",
           new String[] {"Raw", "SmackDown", "Heat"});
   static final Company WCW =
@@ -31,11 +31,11 @@ final class Company {
       new Company(
           "ecw",
           "ECW",
-          "1992–2006",
+          "1992–2010",
           R.drawable.logo_ecw,
           "1992-01-01",
-          "2006-12-31",
-          new String[] {"Hardcore TV", "ECW on TNN"});
+          "2010-12-31",
+          new String[] {"Hardcore TV", "ECW on TNN", "ECW on Sci-Fi"});
   static final Company TNA =
       new Company(
           "tna",
@@ -56,9 +56,12 @@ final class Company {
   static final List<Company> ALL = Arrays.asList(WCW, WWE, ECW, ROH, TNA, NJPW, NXT, AEW);
   // WCW is the default for the inherited parser tests; entry points select explicitly.
   static volatile Company current = WCW;
+  static final List<Company> INDEPENDENT = new java.util.ArrayList<>();
   final String id, name, period, firstDate, lastDate;
   final String[] shows;
   final int logo;
+  final String country;
+  final boolean indie;
 
   private Company(
       String id,
@@ -68,6 +71,13 @@ final class Company {
       String firstDate,
       String lastDate,
       String[] shows) {
+    this(id, name, period, logo, firstDate, lastDate, shows, "");
+  }
+
+  Company(String id, String name, String period, int logo, String firstDate,
+      String lastDate, String[] shows, String country) {
+    this.country = country;
+    this.indie = !country.isEmpty();
     this.id = id;
     this.name = name;
     this.period = period;
@@ -79,6 +89,7 @@ final class Company {
 
   static Company find(String id) {
     for (Company company : ALL) if (company.id.equals(id)) return company;
+    for (Company company : INDEPENDENT) if (company.id.equals(id)) return company;
     return WWE;
   }
 
@@ -89,6 +100,7 @@ final class Company {
   }
 
   static void restore(Context context) {
+    Indies.initialize(context);
     current = find(context.getSharedPreferences("application", 0).getString("company", "wwe"));
   }
 
@@ -112,12 +124,14 @@ final class Company {
   }
 
   String displayPeriod(Context context) {
+    if (indie) return period;
     int fallback = Integer.parseInt(period.substring(period.length() - 4));
     int last = context.getSharedPreferences("application", 0).getInt("availableYear:" + id, fallback);
     return period.substring(0, period.length() - 4) + last;
   }
 
   int hero() {
+    if (indie) return R.drawable.chronology_opening;
     if (this == NJPW) return R.drawable.hero_njpw;
     if (this == NXT) return R.drawable.hero_nxt;
     if (this == ROH) return R.drawable.hero_roh;
@@ -129,6 +143,7 @@ final class Company {
   }
 
   int accent() {
+    if (indie) return 0xff67aeef;
     if (this == NJPW) return 0xffeeeeee;
     if (this == NXT) return 0xffefc354;
     if (this == ROH) return 0xffff6470;
@@ -140,6 +155,7 @@ final class Company {
   }
 
   int primary() {
+    if (indie) return 0xff225b90;
     if (this == NJPW) return 0xff525252;
     if (this == NXT) return 0xff80611a;
     if (this == ROH) return 0xff950c20;
@@ -151,6 +167,7 @@ final class Company {
   }
 
   int secondary() {
+    if (indie) return 0xff142c45;
     if (this == NJPW || this == NXT) return 0xff171717;
     if (this == ROH) return 0xff27070c;
     if (this == AEW) return 0xff343434;
@@ -161,6 +178,7 @@ final class Company {
   }
 
   int background() {
+    if (indie) return 0xff080d14;
     if (this == NJPW || this == NXT) return 0xff090909;
     if (this == ROH) return 0xff090607;
     if (this == AEW) return 0xff090909;
@@ -171,6 +189,7 @@ final class Company {
   }
 
   int surface() {
+    if (indie) return 0xff142437;
     if (this == NJPW) return 0xff202020;
     if (this == NXT) return 0xff292316;
     if (this == ROH) return 0xff231014;

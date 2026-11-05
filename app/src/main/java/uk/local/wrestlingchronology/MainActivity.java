@@ -63,9 +63,9 @@ public final class MainActivity extends Activity {
     ImageView logo = new ImageView(this);
     Company.current.setLogo(logo);
     logo.setScaleType(ImageView.ScaleType.FIT_CENTER);
-    nav.addView(logo, Ui.lp(this, 44, 40));
+    if (!Company.current.indie) nav.addView(logo, Ui.lp(this, 44, 40));
     Ui.gap(nav, 8);
-    nav.addView(Ui.button(this, "Companies", false, this::companies));
+    nav.addView(Ui.button(this, Company.current.indie ? "Indies" : "Companies", false, this::companyDirectory));
     Ui.gap(nav, 8);
     String label = page.equals("year") ? "Years" : page.equals("show") ? "Weeklies"
         : page.equals("ppv") ? "PPVs" : Character.toUpperCase(page.charAt(0)) + page.substring(1);
@@ -92,6 +92,7 @@ public final class MainActivity extends Activity {
     Ui.allowLandscapeRotation(this);
     immersive();
     Company.restore(this);
+    if (state != null && "indies".equals(state.getString("page"))) { indies(); return; }
     if (state != null && !state.getString("page", "companies").equals("companies")) {
       year = state.getInt("year", 1997);
       page = state.getString("page", "home");
@@ -180,7 +181,12 @@ public final class MainActivity extends Activity {
     content.setPadding(d(40), d(16), d(40), d(16));
     content.setGravity(Gravity.CENTER);
     FrameLayout.LayoutParams contentBounds = new FrameLayout.LayoutParams(-1, -1);
-    screen.addView(content, contentBounds);
+    if (getResources().getConfiguration().screenHeightDp < 500) {
+      ScrollView chooserScroll = new ScrollView(this);
+      chooserScroll.setFillViewport(true);
+      screen.addView(chooserScroll, contentBounds);
+      chooserScroll.addView(content, new ScrollView.LayoutParams(-1, -2));
+    } else screen.addView(content, contentBounds);
     TextView title = text("WRESTLING CHRONOLOGY", 28, Ui.WHITE);
     title.setTypeface(Typeface.create("sans-serif-black", Typeface.BOLD));
     title.setGravity(Gravity.CENTER);
@@ -189,13 +195,20 @@ public final class MainActivity extends Activity {
     ImageButton tv = Ui.tvButton(this, tvCompany, () -> openCompany(tvCompany, true, this::openTv));
     tv.setId(View.generateViewId());
     chooserHeading.addView(tv, Ui.lp(this, 44, 44));
+    Ui.gap(chooserHeading, 8);
+    TextView indies = Ui.button(this, "Indies", false, this::indies);
+    indies.setId(View.generateViewId());
+    indies.setTextSize(12);
+    chooserHeading.addView(indies, Ui.lp(this, 76, 44));
+    tv.setNextFocusRightId(indies.getId());
+    indies.setNextFocusLeftId(tv.getId());
     title.setSingleLine(true);
     title.setEllipsize(TextUtils.TruncateAt.END);
     if (Build.VERSION.SDK_INT >= 26)
       title.setAutoSizeTextTypeUniformWithConfiguration(14, 28, 1, android.util.TypedValue.COMPLEX_UNIT_SP);
     else if (getResources().getConfiguration().screenWidthDp < 600) title.setTextSize(18);
     chooserHeading.addView(title, new LinearLayout.LayoutParams(0, d(44), 1));
-    chooserHeading.addView(new View(this), Ui.lp(this, 44, 44));
+    chooserHeading.addView(new View(this), Ui.lp(this, 128, 44));
     content.addView(chooserHeading, Ui.lp(this, -1, 44));
     Ui.gap(content, 6);
     TextView subtitle = text("Choose your company. Pick a year. Press play.", 14, Ui.MUTED);
@@ -245,22 +258,126 @@ public final class MainActivity extends Activity {
         first = card;
         card.setId(View.generateViewId());
         tv.setNextFocusDownId(card.getId());
-        tv.setNextFocusRightId(card.getId());
+        indies.setNextFocusDownId(card.getId());
       }
       if (cardIndex <= 4) card.setNextFocusUpId(tv.getId());
     }
     Ui.gap(content, 12);
     TextView credit =
         text(
-            "Videos are hosted externally on YouTube, Internet Archive, Dailymotion or OK.ru.\n"
-                + "The app creator does not upload or host these videos.",
-            11,
+            "Videos stream from public sources on YouTube, Internet Archive, Dailymotion and OK.ru.\n"
+                + "The app creator does not upload or host recordings.\n"
+                + "Watching does not save a full recording to your device.",
+            13,
             Ui.MUTED);
     credit.setGravity(Gravity.CENTER);
     credit.setLineSpacing(d(3), 1);
-    content.addView(credit, Ui.lp(this, -1, 42));
+    content.addView(credit, Ui.lp(this, -1, 60));
     setContentView(screen);
     tv.requestFocus();
+  }
+
+  void companyDirectory() {
+    if (Company.current.indie) indies(); else companies();
+  }
+
+  void indies() {
+    Indies.initialize(this);
+    ready = false;
+    page = "indies";
+    LinearLayout screen = Ui.vertical(this);
+    screen.setPadding(d(30), d(20), d(30), d(16));
+    screen.setBackground(new GradientDrawable(GradientDrawable.Orientation.TL_BR,
+        new int[] {Company.WCW.surface(), Company.WCW.background()}));
+    LinearLayout heading = Ui.horizontal(this);
+    TextView back = Ui.button(this, "Companies", false, this::companies);
+    back.setBackground(Ui.focus(this, false, Company.WCW));
+    heading.addView(back);
+    Ui.gap(heading, 18);
+    TextView title = text("Indies", 28, Ui.WHITE);
+    title.setTypeface(null, Typeface.BOLD);
+    heading.addView(title);
+    screen.addView(heading, Ui.lp(this, -1, 48));
+    Ui.gap(screen, 8);
+    screen.addView(text("Explore more wrestling, grouped by country.", 14, Ui.MUTED));
+    Ui.gap(screen, 14);
+    ScrollView scroll = new ScrollView(this);
+    scroll.setClipToPadding(false);
+    screen.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1));
+    LinearLayout body = Ui.vertical(this);
+    scroll.addView(body);
+    String country = "";
+    LinearLayout row = null;
+    int count = 0;
+    View first = null;
+    int columns = getResources().getConfiguration().screenWidthDp < 600 ? 2 : 4;
+    for (Company company : Company.INDEPENDENT) {
+      if (!country.equals(company.country)) {
+        if (row != null) while (count++ % columns != 0)
+          row.addView(new View(this), new LinearLayout.LayoutParams(0, d(84), 1));
+        country = company.country;
+        count = 0;
+        Ui.gap(body, 14);
+        TextView label = text(country, 20, Company.WCW.accent());
+        label.setTypeface(null, Typeface.BOLD);
+        body.addView(label);
+        Ui.gap(body, 8);
+      }
+      if (count % columns == 0) { row = Ui.horizontal(this); body.addView(row); }
+      TextView card = Ui.button(this, company.name, false, () -> openCompany(company, true));
+      card.setBackground(Ui.focus(this, false, Company.WCW));
+      card.setTextSize(15);
+      card.setMaxLines(2);
+      card.setEllipsize(TextUtils.TruncateAt.END);
+      LinearLayout.LayoutParams bounds = new LinearLayout.LayoutParams(0, d(84), 1);
+      bounds.setMargins(0, 0, d(8), d(8));
+      row.addView(card, bounds);
+      if (first == null) first = card;
+      count++;
+    }
+    if (row != null) while (count++ % columns != 0)
+      row.addView(new View(this), new LinearLayout.LayoutParams(0, d(84), 1));
+    setContentView(screen);
+    if (first != null) first.requestFocus(); else back.requestFocus();
+  }
+
+  void indieHome() {
+    ScrollView scroll = new ScrollView(this);
+    root.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1));
+    LinearLayout body = Ui.vertical(this);
+    body.setPadding(d(30), d(20), d(30), d(20));
+    scroll.addView(body);
+    TextView title = text(Company.current.name, 30, Ui.WHITE);
+    title.setTypeface(null, Typeface.BOLD);
+    body.addView(title);
+    Ui.gap(body, 8);
+    body.addView(text(Company.current.country + " · " + Catalog.episodes.size() + " available recordings", 14, Ui.MUTED));
+    Ui.gap(body, 16);
+    LinearLayout actions = Ui.horizontal(this);
+    body.addView(actions);
+    Catalog.Episode resume = Catalog.continueWatching(this);
+    if (resume != null) {
+      actions.addView(Ui.button(this, "Continue watching", true,
+          () -> launch(resume, Catalog.forYear(resume.year, "All", true), null)));
+      Ui.gap(actions, 10);
+    }
+    actions.addView(Ui.button(this, "Browse years", resume == null, this::openYears));
+    Ui.gap(body, 24);
+    TextView latest = text("LATEST ADDED EPISODES", 15, Ui.WHITE);
+    latest.setTypeface(null, Typeface.BOLD);
+    body.addView(latest);
+    Ui.gap(body, 12);
+    ArrayList<Catalog.Episode> items = new ArrayList<>(Catalog.episodes);
+    items.sort(Comparator.comparingLong((Catalog.Episode item) -> item.addedAt).reversed()
+        .thenComparing(Comparator.comparingInt((Catalog.Episode item) -> item.year).reversed())
+        .thenComparing(item -> item.date, Comparator.reverseOrder()));
+    if (items.size() > 20) items.subList(20, items.size()).clear();
+    RecyclerView rail = new RecyclerView(this);
+    rail.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
+    rail.setAdapter(new EpisodeAdapter(items, true, false));
+    rail.setNestedScrollingEnabled(false);
+    rail.setClipToPadding(false);
+    body.addView(rail, Ui.lp(this, -1, 208));
   }
 
   void immersive() {
@@ -426,6 +543,7 @@ public final class MainActivity extends Activity {
   }
 
   void render() {
+    if (page.equals("indies")) { indies(); return; }
     if (page.equals("companies")) {
       companies();
       return;
@@ -448,13 +566,13 @@ public final class MainActivity extends Activity {
     ImageView logo = new ImageView(this);
     Company.current.setLogo(logo);
     logo.setScaleType(ImageView.ScaleType.FIT_CENTER);
-    nav.addView(logo, Ui.lp(this, 62, 46));
+    if (!Company.current.indie) nav.addView(logo, Ui.lp(this, 62, 46));
     Ui.gap(nav, 12);
     TextView brand = text("", 1, Ui.WHITE);
     brand.setLetterSpacing(.16f);
     brand.setTypeface(null, Typeface.BOLD);
     nav.addView(brand);
-    nav.addView(Ui.button(this, "Companies", false, this::companies));
+    nav.addView(Ui.button(this, Company.current.indie ? "Indies" : "Companies", false, this::companyDirectory));
     Ui.weight(nav);
     nav.addView(
         Ui.button(
@@ -596,6 +714,7 @@ public final class MainActivity extends Activity {
   }
 
   void home() {
+    if (Company.current.indie) { indieHome(); return; }
     ScrollView pageScroll = new ScrollView(this);
     pageScroll.setClipToPadding(false);
     pageScroll.setFillViewport(true);
@@ -803,7 +922,7 @@ public final class MainActivity extends Activity {
       card.setFocusable(true);
       card.setClickable(true);
       card.setOnClickListener(view -> openYear(value));
-      TextView number = text(Integer.toString(value), 36, Ui.WHITE);
+      TextView number = text(value == 0 ? "Undated" : Integer.toString(value), value == 0 ? 24 : 36, Ui.WHITE);
       number.setTypeface(null, Typeface.BOLD);
       card.addView(number);
       Ui.gap(card, 10);
@@ -890,7 +1009,7 @@ public final class MainActivity extends Activity {
       for (Catalog.Episode item : Catalog.episodes)
         if ((page.equals("weeklies") ? Catalog.weeklyShow(item.show) && (filter.equals("All") ? !Catalog.hiddenShows.contains(item.show) : item.show.equals(filter))
                 : item.show.equals(page.equals("ppv") ? "PPV" : filter))
-            && (year == 0 || item.year == year)) result.add(item);
+            && (year == 0 || item.year == (year == -1 ? 0 : year))) result.add(item);
       return result;
     }
     if (!page.equals("search")) return Catalog.forYear(year, filter, extras());
@@ -916,7 +1035,7 @@ public final class MainActivity extends Activity {
                 ? "Search: " + query
                 : page.equals("ppv")
                     ? "Pay-per-views"
-                    : page.equals("weeklies") ? "Weeklies" : page.equals("show") ? filter : Company.current.name + " " + year,
+                    : page.equals("weeklies") ? "Weeklies" : page.equals("show") ? filter : Company.current.name + " " + (year == 0 ? "· Undated" : year),
             compact ? 20 : 29,
             Ui.WHITE);
     title.setTypeface(null, Typeface.BOLD);
@@ -981,12 +1100,12 @@ public final class MainActivity extends Activity {
       availableYears.add(0);
       for (Catalog.Episode item : Catalog.episodes)
         if (page.equals("weeklies") ? Catalog.weeklyShow(item.show) && (filter.equals("All") || item.show.equals(filter))
-            : item.show.equals(page.equals("ppv") ? "PPV" : filter)) availableYears.add(item.year);
+            : item.show.equals(page.equals("ppv") ? "PPV" : filter)) availableYears.add(item.year == 0 ? -1 : item.year);
       for (int value : availableYears) {
         years.addView(
             Ui.button(
                 this,
-                value == 0 ? "All years" : Integer.toString(value),
+                value == 0 ? "All years" : value == -1 ? "Undated" : Integer.toString(value),
                 year == value,
                 () -> {
                   year = value;
@@ -1064,12 +1183,13 @@ public final class MainActivity extends Activity {
       TreeSet<Integer> years = new TreeSet<>(Collections.reverseOrder());
       for (Catalog.Episode item : Catalog.episodes)
         if (page.equals("year") || (page.equals("weeklies") ? Catalog.weeklyShow(item.show)
-            && (filter.equals("All") || filter.equals(item.show)) : item.show.equals(page.equals("ppv") ? "PPV" : filter))) years.add(item.year);
+            && (filter.equals("All") || filter.equals(item.show)) : item.show.equals(page.equals("ppv") ? "PPV" : filter)))
+          years.add(item.year == 0 && !page.equals("year") ? -1 : item.year);
       ArrayList<Integer> values = new ArrayList<>(years);
       if (!page.equals("year")) values.add(0, 0);
       String[] labels = new String[values.size()];
-      for (int i = 0; i < labels.length; i++) labels[i] = values.get(i) == 0 ? "All years" : values.get(i).toString();
-      compactChoice(row, year == 0 ? "All years" : Integer.toString(year), () ->
+      for (int i = 0; i < labels.length; i++) labels[i] = yearChoiceLabel(values.get(i));
+      compactChoice(row, yearChoiceLabel(year), () ->
           new AlertDialog.Builder(this).setTitle("Year").setItems(labels, (dialog, index) -> {
             if (page.equals("year")) openYear(values.get(index));
             else { year = values.get(index); render(); }
@@ -1087,6 +1207,11 @@ public final class MainActivity extends Activity {
           .setItems(labels.toArray(new String[0]), (dialog, index) -> jumpToEpisode(grid, positions.get(index))).show());
     }
     if (row.getChildCount() == 0) row.setVisibility(View.GONE);
+  }
+
+  String yearChoiceLabel(int value) {
+    return value == -1 || (page.equals("year") && value == 0) ? "Undated"
+        : value == 0 ? "All years" : Integer.toString(value);
   }
 
   void jumpToEpisode(RecyclerView grid, int position) {
@@ -1730,8 +1855,9 @@ public final class MainActivity extends Activity {
       super.onBackPressed();
       return;
     }
+    if (page.equals("indies")) { companies(); return; }
     if (page.equals("home")) {
-      companies();
+      companyDirectory();
       return;
     }
     if (!page.equals("home")) {

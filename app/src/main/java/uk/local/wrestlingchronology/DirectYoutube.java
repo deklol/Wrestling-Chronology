@@ -52,7 +52,8 @@ final class DirectYoutube {
         || !entry.getString("authorUrl").matches("https://www\\.youtube\\.com/@[A-Za-z0-9_.-]+"))
       throw new JSONException("Invalid direct YouTube source identity");
     LocalDate date = LocalDate.parse(entry.getString("date"));
-    boolean reviewed = entry.optBoolean("reviewedFullShow") && (Company.current == Company.NJPW || Company.current == Company.NXT);
+    boolean reviewed = entry.optBoolean("reviewedFullShow")
+        && (Company.current == Company.NJPW || Company.current == Company.NXT || Company.current == Company.WWE);
     if (CatalogSync.validDate(date.getYear(), date.getMonthValue(), date.getDayOfMonth()) == null
         || entry.getInt("duration") < (reviewed ? 1200 : entry.getString("show").equals("PPV") && !preshow(entry) ? 2700 : 1200)
         || entry.getString("title").isEmpty()
@@ -77,7 +78,9 @@ final class DirectYoutube {
       throw new IOException("Video uploader does not match its configured source");
     String title = metadata.getString("title");
     boolean pre = preshow(entry);
-    if ((!title.matches("(?is).*\\bFULL (?:EPISODE|EVENT)\\b.*")
+    boolean reviewed = entry.optBoolean("reviewedFullShow")
+        && title.equals(entry.getString("name"));
+    if ((!title.matches("(?is).*\\bFULL (?:EPISODE|EVENT|SHOW)\\b.*") && !reviewed
             && !(pre && title.matches("(?is).*\\b(?:zero[ ._-]*hour|buy[ ._-]*in|pre[ ._-]*show)\\b.*")))
         || title.matches("(?is).*(?:FULL MATCH|watch party|compilation).*"))
       throw new IOException("Upload is not labelled as a full show or event");

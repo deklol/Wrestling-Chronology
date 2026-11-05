@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MONTHS = {name.lower(): index for index, name in enumerate(calendar.month_name) if name}
 MONTHS.update({name.lower(): index for index, name in enumerate(calendar.month_abbr) if name})
 MONTHS["sept"] = 9
-LIMITS = {"aew": ("2018-01-01", "2028-12-31"), "wwe": ("1985-01-01", "2028-12-31"), "ecw": ("1992-01-01", "2006-12-31"),
+LIMITS = {"aew": ("2018-01-01", "2028-12-31"), "wwe": ("1984-01-01", "2028-12-31"), "ecw": ("1992-01-01", "2010-12-31"),
           "wcw": ("1983-01-01", "2001-03-26"), "tna": ("2002-01-01", "2028-12-31"),
           "roh": ("2002-02-23", "2028-12-31"), "njpw": ("1990-01-01", "2028-12-31"),
           "nxt": ("2010-01-01", "2028-12-31")}
@@ -120,6 +120,12 @@ def episode_thumbnail(identifier, file, metadata):
 
 def add_record(library, company, when, show, title, source, description="", thumbnail=""):
     from event_identity import event_part, row_part
+    if company == 'wwe':
+        language = str(source.get('audioLanguage') or source.get('language') or '').lower()
+        identity_text = ' '.join(str(source.get(field) or '') for field in ('filename','title','label','authorUrl'))
+        if language in ('es','spa','spanish','ar','ara','arabic') or re.search(
+                r'(?i)\b(?:Spanish|Arabic|Espa[nñ]ol|WWEArabic|WWEEspanol)\b|العربية', identity_text):
+            return False
     if not when or not LIMITS[company][0] <= when <= LIMITS[company][1]:
         return False
     identity = company + ":" + when + ":" + key(show)
@@ -521,17 +527,35 @@ def publish_packs(base_url, refresh=False):
         raw = destination.read_bytes()
         manifest["companies"][company] = {"url": base_url.rstrip("/") + "/" + company + ".json",
             "sha256": hashlib.sha256(raw).hexdigest(), "bytes": len(raw), "revision": pack["revision"]}
-        if company == 'njpw':
-            # Older APKs reject the entire pack if any episode predates 2002.
+        legacy_start = {'njpw': '2002-01-01', 'wwe': '1985-01-01'}.get(company)
+        if legacy_start:
+            # Older APKs reject a pack containing broadcasts outside their date range.
             expanded = dict(manifest['companies'][company])
             compatible = {**pack, 'catalogue': {**library, 'episodes': [
-                row for row in library['episodes'] if row['date'] >= '2002-01-01'], 'coverageStart': '2002-01-01'}}
-            compatible_path = ROOT / 'catalogue/njpw-2002.json'
+                row for row in library['episodes'] if row['date'] >= legacy_start], 'coverageStart': legacy_start},
+                'sources': {**config, 'youtube': {**config['youtube'], 'videos': [
+                    video for video in config['youtube'].get('videos', []) if video.get('date', legacy_start) >= legacy_start]}}}
+            compatible_name = company + '-' + legacy_start[:4] + '.json'
+            compatible_path = ROOT / 'catalogue' / compatible_name
             write(compatible_path, compatible)
             compatible_raw = compatible_path.read_bytes()
             manifest['companies'][company] = {
-                'url': base_url.rstrip('/') + '/njpw-2002.json',
+                'url': base_url.rstrip('/') + '/' + compatible_name,
                 'sha256': hashlib.sha256(compatible_raw).hexdigest(), 'bytes': len(compatible_raw),
+                'revision': pack['revision'], 'expanded': expanded}
+        if company == 'ecw':
+            expanded = dict(manifest['companies'][company])
+            end = '2006-12-31'
+            compatible = {**pack, 'catalogue': {**library, 'episodes': [
+                row for row in library['episodes'] if row['date'] <= end], 'coverageEnd': end},
+                'sources': {**config, 'youtube': {**config['youtube'], 'videos': [
+                    video for video in config['youtube'].get('videos', []) if video.get('date', end) <= end]}}}
+            compatible_path = ROOT / 'catalogue/ecw-2006.json'
+            write(compatible_path, compatible)
+            raw = compatible_path.read_bytes()
+            manifest['companies'][company] = {
+                'url': base_url.rstrip('/') + '/ecw-2006.json',
+                'sha256': hashlib.sha256(raw).hexdigest(), 'bytes': len(raw),
                 'revision': pack['revision'], 'expanded': expanded}
     write(ROOT / "catalogue/manifest.json", manifest)
     if refresh:

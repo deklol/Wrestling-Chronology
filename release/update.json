@@ -1,7 +1,7 @@
 {
-  "versionCode": 23,
-  "versionName": "0.1.17",
-  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.17/Wrestling-Chronology.apk",
-  "sha256": "506b8903033201694b585d19d1215dc506dfdbbfa41043efd3a700494111c83d",
-  "notes": ""
+  "versionCode": 25,
+  "versionName": "0.1.19",
+  "apkUrl": "https://github.com/deklol/Wrestling-Chronology/releases/download/v0.1.19/Wrestling-Chronology.apk",
+  "sha256": "89d8c2b797c988093afad9817f74f17a529accbf270f6d76d001e128380297a6",
+  "notes": "Fixed TV guide focus, added shared watching counts, and improved library updates and episode date handling."
 }

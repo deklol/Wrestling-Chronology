@@ -134,7 +134,8 @@ final class RemoteLibrary {
         throw new IOException("Unsupported source manifest");
       if (!manifest.getJSONObject("companies").has(Company.current.id)) return success(context, now, 0, 0);
       JSONObject entry = manifest.getJSONObject("companies").getJSONObject(Company.current.id);
-      if (Company.current == Company.NJPW && entry.optJSONObject("expanded") != null)
+      if ((Company.current == Company.NJPW || Company.current == Company.WWE || Company.current == Company.ECW)
+          && entry.optJSONObject("expanded") != null)
         entry = entry.getJSONObject("expanded");
       String hash = entry.getString("sha256");
       int size = entry.getInt("bytes");

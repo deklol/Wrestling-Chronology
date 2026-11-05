@@ -37,7 +37,7 @@ public class ExpansionTest {
         assertTrue(e.getString("id"), keys.add(identity));
         assertTrue(e.getString("date").compareTo(co.firstDate) >= 0);
         assertTrue(e.getString("date").compareTo(java.time.LocalDate.now().toString()) <= 0);
-        assertFalse(e.getString("show").contains("Superstars"));
+        // Full Superstars broadcasts are now part of the reviewed WWE library.
         assertFalse(e.getString("show").contains("Saturday Morning Slam"));
       }
       Catalog.replace(data);

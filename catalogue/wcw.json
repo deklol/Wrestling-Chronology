@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "wcw",
-  "revision": 1793688894,
+  "revision": 1793857127,
   "catalogue": {
     "schemaVersion": 1,
     "generatedAt": "2026-10-19T22:06:23.287590+00:00",
@@ -4765,6 +4765,29 @@
       },
       {
         "date": "1987-02-07",
+        "duration": 6783,
+        "thumbnail": "https://iv.okcdn.ru/videoPreview?id=5873941744271&type=37&idx=10&tkn=hGSuw149gG7bWlMYiOnREtkXJk0&fn=external_8",
+        "sources": [
+          {
+            "owner": "589703611535",
+            "duration": 6783,
+            "thumbnail": "https://iv.okcdn.ru/videoPreview?id=5873941744271&type=37&idx=10&tkn=hGSuw149gG7bWlMYiOnREtkXJk0&fn=external_8",
+            "videoId": "7181093767823",
+            "label": "OK.ru",
+            "type": "okru",
+            "title": "JCP/NWA Supertowns On Superstations 02/07/1987",
+            "programme": "PPV"
+          }
+        ],
+        "year": 1987,
+        "show": "PPV",
+        "description": "JCP/NWA Supertowns On Superstations",
+        "id": "wcw:1987-02-07:ppv:jcpnwasupertownsonsuperstations",
+        "title": "JCP/NWA Supertowns On Superstations",
+        "discoveredAt": 1793409584020
+      },
+      {
+        "date": "1987-02-07",
         "duration": 6287,
         "thumbnail": "https://i.ytimg.com/vi/_iY8I6YMhuI/hqdefault.jpg",
         "sources": [
@@ -4788,29 +4811,6 @@
         "title": "World Championship Wrestling",
         "category": "weekly",
         "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1987-02-07",
-        "duration": 6783,
-        "thumbnail": "https://iv.okcdn.ru/videoPreview?id=5873941744271&type=37&idx=10&tkn=hGSuw149gG7bWlMYiOnREtkXJk0&fn=external_8",
-        "sources": [
-          {
-            "owner": "589703611535",
-            "duration": 6783,
-            "thumbnail": "https://iv.okcdn.ru/videoPreview?id=5873941744271&type=37&idx=10&tkn=hGSuw149gG7bWlMYiOnREtkXJk0&fn=external_8",
-            "videoId": "7181093767823",
-            "label": "OK.ru",
-            "type": "okru",
-            "title": "JCP/NWA Supertowns On Superstations 02/07/1987",
-            "programme": "PPV"
-          }
-        ],
-        "year": 1987,
-        "show": "PPV",
-        "description": "JCP/NWA Supertowns On Superstations",
-        "id": "wcw:1987-02-07:ppv:jcpnwasupertownsonsuperstations",
-        "title": "JCP/NWA Supertowns On Superstations",
-        "discoveredAt": 1793409584020
       },
       {
         "date": "1987-02-14",
@@ -5331,32 +5331,6 @@
       },
       {
         "date": "1987-07-04",
-        "duration": 5321,
-        "thumbnail": "https://i.ytimg.com/vi/9Q3L0-0XzTI/hqdefault.jpg",
-        "sources": [
-          {
-            "duration": 5321,
-            "streamVerified": true,
-            "playlistId": "PLqeI_ua6LQHF4w___rh980zXRn1ES83M0",
-            "videoId": "9Q3L0-0XzTI",
-            "audioLanguage": "en",
-            "label": "Official WCW \u00b7 English/original audio",
-            "type": "youtube",
-            "title": "FULL EPISODE: Flair & The Horsemen prepare for WarGames: WCW, July 4, 1987",
-            "programme": "Saturday Night",
-            "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg"
-          }
-        ],
-        "year": 1987,
-        "show": "Saturday Night",
-        "description": "World Championship Wrestling \u00b7 04 July 1987.",
-        "id": "1987-07-04:saturdaynight",
-        "title": "World Championship Wrestling",
-        "category": "weekly",
-        "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1987-07-04",
         "duration": 7239,
         "thumbnail": "https://archive.org/services/img/1987-vhs-wcw-pay-per-views",
         "sources": [
@@ -5391,6 +5365,32 @@
         "category": "ppv",
         "discoveredAt": 1792518755032,
         "poster": "https://archive.org/services/img/1987-vhs-wcw-pay-per-views"
+      },
+      {
+        "date": "1987-07-04",
+        "duration": 5321,
+        "thumbnail": "https://i.ytimg.com/vi/9Q3L0-0XzTI/hqdefault.jpg",
+        "sources": [
+          {
+            "duration": 5321,
+            "streamVerified": true,
+            "playlistId": "PLqeI_ua6LQHF4w___rh980zXRn1ES83M0",
+            "videoId": "9Q3L0-0XzTI",
+            "audioLanguage": "en",
+            "label": "Official WCW \u00b7 English/original audio",
+            "type": "youtube",
+            "title": "FULL EPISODE: Flair & The Horsemen prepare for WarGames: WCW, July 4, 1987",
+            "programme": "Saturday Night",
+            "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg"
+          }
+        ],
+        "year": 1987,
+        "show": "Saturday Night",
+        "description": "World Championship Wrestling \u00b7 04 July 1987.",
+        "id": "1987-07-04:saturdaynight",
+        "title": "World Championship Wrestling",
+        "category": "weekly",
+        "discoveredAt": 1792518755032
       },
       {
         "id": "wcw:1987-07-10:ppv",
@@ -5724,6 +5724,29 @@
         "title": "Saturday Night",
         "discoveredAt": 0,
         "poster": "https://i.ytimg.com/vi/mqw-fgtJ7Bc/hqdefault.jpg"
+      },
+      {
+        "id": "wcw:1987-10-03:saturdaynight",
+        "date": "1987-10-03",
+        "year": 1987,
+        "show": "Saturday Night",
+        "title": "Saturday Night",
+        "description": "",
+        "duration": 2890,
+        "thumbnail": "https://i.ytimg.com/vi/qyRQF_3QdUs/hqdefault.jpg",
+        "poster": "https://i.ytimg.com/vi/qyRQF_3QdUs/hqdefault.jpg",
+        "sources": [
+          {
+            "type": "youtube",
+            "videoId": "qyRQF_3QdUs",
+            "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
+            "direct": true,
+            "title": "FULL EPISODE: Ron Garvin celebrates World Title win; Taylor steals Koloff\u2019s title | WCW, Oct 3, 1987",
+            "duration": 2890,
+            "label": "Official YouTube"
+          }
+        ],
+        "discoveredAt": 0
       },
       {
         "date": "1987-11-26",
@@ -8868,31 +8891,6 @@
       },
       {
         "date": "1990-07-07",
-        "duration": 3541,
-        "thumbnail": "https://archive.org/download/wcw-pro-10-20-90_202404/wcw-pro-10-20-90_202404.thumbs/WCW%20PRO%207-7-90_001284.jpg",
-        "sources": [
-          {
-            "duration": 3541.34,
-            "streamVerified": true,
-            "filename": "WCW PRO 7-7-90.mp4",
-            "bytes": 353032375,
-            "label": "Internet Archive 480p",
-            "type": "archive",
-            "programme": "Pro",
-            "url": "https://archive.org/download/wcw-pro-10-20-90_202404/WCW%20PRO%207-7-90.mp4",
-            "height": 480
-          }
-        ],
-        "year": 1990,
-        "show": "Pro",
-        "description": "Pro \u00b7 07 July 1990.",
-        "id": "1990-07-07:pro",
-        "title": "Pro",
-        "category": "weekly",
-        "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1990-07-07",
         "duration": 10148,
         "thumbnail": "https://i.ytimg.com/vi/1RPmb4fQ8xQ/hqdefault.jpg",
         "sources": [
@@ -8949,6 +8947,31 @@
         "category": "ppv",
         "discoveredAt": 1792518755032,
         "poster": "https://i.ytimg.com/vi/1RPmb4fQ8xQ/hqdefault.jpg"
+      },
+      {
+        "date": "1990-07-07",
+        "duration": 3541,
+        "thumbnail": "https://archive.org/download/wcw-pro-10-20-90_202404/wcw-pro-10-20-90_202404.thumbs/WCW%20PRO%207-7-90_001284.jpg",
+        "sources": [
+          {
+            "duration": 3541.34,
+            "streamVerified": true,
+            "filename": "WCW PRO 7-7-90.mp4",
+            "bytes": 353032375,
+            "label": "Internet Archive 480p",
+            "type": "archive",
+            "programme": "Pro",
+            "url": "https://archive.org/download/wcw-pro-10-20-90_202404/WCW%20PRO%207-7-90.mp4",
+            "height": 480
+          }
+        ],
+        "year": 1990,
+        "show": "Pro",
+        "description": "Pro \u00b7 07 July 1990.",
+        "id": "1990-07-07:pro",
+        "title": "Pro",
+        "category": "weekly",
+        "discoveredAt": 1792518755032
       },
       {
         "date": "1990-07-07",
@@ -14133,6 +14156,30 @@
       },
       {
         "date": "1991-04-20",
+        "duration": 2663,
+        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.04.20_001294.jpg",
+        "sources": [
+          {
+            "duration": 2663,
+            "filename": "WCW.Saturday.Night.1991.04.20.mp4",
+            "bytes": 564225383,
+            "language": "en",
+            "label": "Internet Archive \u00b7 432p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.04.20.mp4",
+            "height": 432
+          }
+        ],
+        "year": 1991,
+        "show": "Saturday Night",
+        "description": "",
+        "id": "wcw:1991-04-20:saturdaynight",
+        "title": "Saturday Night",
+        "discoveredAt": 0,
+        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.04.20_001294.jpg"
+      },
+      {
+        "date": "1991-04-20",
         "duration": 2404,
         "thumbnail": "https://archive.org/download/wcw.-worldwide.-complete/wcw.-worldwide.-complete.thumbs/WCW.Worldwide.1991-04-20_001166.jpg",
         "sources": [
@@ -14155,30 +14202,6 @@
         "title": "Worldwide",
         "category": "weekly",
         "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1991-04-20",
-        "duration": 2663,
-        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.04.20_001294.jpg",
-        "sources": [
-          {
-            "duration": 2663,
-            "filename": "WCW.Saturday.Night.1991.04.20.mp4",
-            "bytes": 564225383,
-            "language": "en",
-            "label": "Internet Archive \u00b7 432p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.04.20.mp4",
-            "height": 432
-          }
-        ],
-        "year": 1991,
-        "show": "Saturday Night",
-        "description": "",
-        "id": "wcw:1991-04-20:saturdaynight",
-        "title": "Saturday Night",
-        "discoveredAt": 0,
-        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.04.20_001294.jpg"
       },
       {
         "date": "1991-04-21",
@@ -14394,6 +14417,30 @@
       },
       {
         "date": "1991-05-04",
+        "duration": 2606,
+        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.05.04_001260.jpg",
+        "sources": [
+          {
+            "duration": 2606,
+            "filename": "WCW.Saturday.Night.1991.05.04.mp4",
+            "bytes": 551060062,
+            "language": "en",
+            "label": "Internet Archive \u00b7 432p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.05.04.mp4",
+            "height": 432
+          }
+        ],
+        "year": 1991,
+        "show": "Saturday Night",
+        "description": "",
+        "id": "wcw:1991-05-04:saturdaynight",
+        "title": "Saturday Night",
+        "discoveredAt": 0,
+        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.05.04_001260.jpg"
+      },
+      {
+        "date": "1991-05-04",
         "duration": 2628,
         "thumbnail": "https://archive.org/download/wcw.-worldwide.-complete/wcw.-worldwide.-complete.thumbs/WCW.Worldwide.1991-05-04_001273.jpg",
         "sources": [
@@ -14418,30 +14465,6 @@
         "discoveredAt": 1792518755032
       },
       {
-        "date": "1991-05-04",
-        "duration": 2606,
-        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.05.04_001260.jpg",
-        "sources": [
-          {
-            "duration": 2606,
-            "filename": "WCW.Saturday.Night.1991.05.04.mp4",
-            "bytes": 551060062,
-            "language": "en",
-            "label": "Internet Archive \u00b7 432p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.05.04.mp4",
-            "height": 432
-          }
-        ],
-        "year": 1991,
-        "show": "Saturday Night",
-        "description": "",
-        "id": "wcw:1991-05-04:saturdaynight",
-        "title": "Saturday Night",
-        "discoveredAt": 0,
-        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.05.04_001260.jpg"
-      },
-      {
         "date": "1991-05-05",
         "duration": 1807,
         "thumbnail": "https://archive.org/download/wcw.-me.-complete/wcw.-me.-complete.thumbs/WCW.ME.1991.05.05_000874.jpg",
@@ -14463,56 +14486,6 @@
         "description": "Main Event \u00b7 05 May 1991.",
         "id": "1991-05-05:mainevent",
         "title": "Main Event",
-        "category": "weekly",
-        "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1991-05-11",
-        "duration": 2642,
-        "thumbnail": "https://archive.org/download/wcw.-pro.-1991.complete/wcw.-pro.-1991.complete.thumbs/WCW.Pro.1991.05.11.VHSRip.x264-RR_001540.jpg",
-        "sources": [
-          {
-            "duration": 2642.97,
-            "streamVerified": true,
-            "filename": "WCW.Pro.1991.05.11.VHSRip.x264-RR.mp4",
-            "bytes": 559351338,
-            "label": "Internet Archive 432p",
-            "type": "archive",
-            "programme": "Pro",
-            "url": "https://archive.org/download/wcw.-pro.-1991.complete/WCW.Pro.1991.05.11.VHSRip.x264-RR.mp4",
-            "height": 432
-          }
-        ],
-        "year": 1991,
-        "show": "Pro",
-        "description": "Pro \u00b7 11 May 1991.",
-        "id": "1991-05-11:pro",
-        "title": "Pro",
-        "category": "weekly",
-        "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1991-05-11",
-        "duration": 2374,
-        "thumbnail": "https://archive.org/download/wcw.-worldwide.-complete/wcw.-worldwide.-complete.thumbs/WCW.Worldwide.1991-05-11_001150.jpg",
-        "sources": [
-          {
-            "duration": 2374.05,
-            "streamVerified": true,
-            "filename": "WCW.Worldwide.1991-05-11.mp4",
-            "bytes": 231428347,
-            "label": "Internet Archive 480p",
-            "type": "archive",
-            "programme": "Worldwide",
-            "url": "https://archive.org/download/wcw.-worldwide.-complete/WCW.Worldwide.1991-05-11.mp4",
-            "height": 480
-          }
-        ],
-        "year": 1991,
-        "show": "Worldwide",
-        "description": "Worldwide \u00b7 11 May 1991.",
-        "id": "1991-05-11:worldwide",
-        "title": "Worldwide",
         "category": "weekly",
         "discoveredAt": 1792518755032
       },
@@ -14544,6 +14517,31 @@
       },
       {
         "date": "1991-05-11",
+        "duration": 2642,
+        "thumbnail": "https://archive.org/download/wcw.-pro.-1991.complete/wcw.-pro.-1991.complete.thumbs/WCW.Pro.1991.05.11.VHSRip.x264-RR_001540.jpg",
+        "sources": [
+          {
+            "duration": 2642.97,
+            "streamVerified": true,
+            "filename": "WCW.Pro.1991.05.11.VHSRip.x264-RR.mp4",
+            "bytes": 559351338,
+            "label": "Internet Archive 432p",
+            "type": "archive",
+            "programme": "Pro",
+            "url": "https://archive.org/download/wcw.-pro.-1991.complete/WCW.Pro.1991.05.11.VHSRip.x264-RR.mp4",
+            "height": 432
+          }
+        ],
+        "year": 1991,
+        "show": "Pro",
+        "description": "Pro \u00b7 11 May 1991.",
+        "id": "1991-05-11:pro",
+        "title": "Pro",
+        "category": "weekly",
+        "discoveredAt": 1792518755032
+      },
+      {
+        "date": "1991-05-11",
         "duration": 2327,
         "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.05.11_001130.jpg",
         "sources": [
@@ -14565,6 +14563,31 @@
         "title": "Saturday Night",
         "discoveredAt": 0,
         "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.05.11_001130.jpg"
+      },
+      {
+        "date": "1991-05-11",
+        "duration": 2374,
+        "thumbnail": "https://archive.org/download/wcw.-worldwide.-complete/wcw.-worldwide.-complete.thumbs/WCW.Worldwide.1991-05-11_001150.jpg",
+        "sources": [
+          {
+            "duration": 2374.05,
+            "streamVerified": true,
+            "filename": "WCW.Worldwide.1991-05-11.mp4",
+            "bytes": 231428347,
+            "label": "Internet Archive 480p",
+            "type": "archive",
+            "programme": "Worldwide",
+            "url": "https://archive.org/download/wcw.-worldwide.-complete/WCW.Worldwide.1991-05-11.mp4",
+            "height": 480
+          }
+        ],
+        "year": 1991,
+        "show": "Worldwide",
+        "description": "Worldwide \u00b7 11 May 1991.",
+        "id": "1991-05-11:worldwide",
+        "title": "Worldwide",
+        "category": "weekly",
+        "discoveredAt": 1792518755032
       },
       {
         "date": "1991-05-12",
@@ -14831,6 +14854,30 @@
       },
       {
         "date": "1991-05-25",
+        "duration": 2658,
+        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.05.25_001292.jpg",
+        "sources": [
+          {
+            "duration": 2658,
+            "filename": "WCW.Saturday.Night.1991.05.25.mp4",
+            "bytes": 563336689,
+            "language": "en",
+            "label": "Internet Archive \u00b7 432p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.05.25.mp4",
+            "height": 432
+          }
+        ],
+        "year": 1991,
+        "show": "Saturday Night",
+        "description": "",
+        "id": "wcw:1991-05-25:saturdaynight",
+        "title": "Saturday Night",
+        "discoveredAt": 0,
+        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.05.25_001292.jpg"
+      },
+      {
+        "date": "1991-05-25",
         "duration": 2819,
         "thumbnail": "https://archive.org/download/wcw.-worldwide.-complete/wcw.-worldwide.-complete.thumbs/WCW.Worldwide.1991-05-25_001364.jpg",
         "sources": [
@@ -14853,30 +14900,6 @@
         "title": "Worldwide",
         "category": "weekly",
         "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1991-05-25",
-        "duration": 2658,
-        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.05.25_001292.jpg",
-        "sources": [
-          {
-            "duration": 2658,
-            "filename": "WCW.Saturday.Night.1991.05.25.mp4",
-            "bytes": 563336689,
-            "language": "en",
-            "label": "Internet Archive \u00b7 432p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.05.25.mp4",
-            "height": 432
-          }
-        ],
-        "year": 1991,
-        "show": "Saturday Night",
-        "description": "",
-        "id": "wcw:1991-05-25:saturdaynight",
-        "title": "Saturday Night",
-        "discoveredAt": 0,
-        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.05.25_001292.jpg"
       },
       {
         "date": "1991-05-26",
@@ -15104,6 +15127,30 @@
       },
       {
         "date": "1991-06-08",
+        "duration": 2606,
+        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.06.08_001267.jpg",
+        "sources": [
+          {
+            "duration": 2606,
+            "filename": "WCW.Saturday.Night.1991.06.08.mp4",
+            "bytes": 539392837,
+            "language": "en",
+            "label": "Internet Archive \u00b7 432p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.06.08.mp4",
+            "height": 432
+          }
+        ],
+        "year": 1991,
+        "show": "Saturday Night",
+        "description": "",
+        "id": "wcw:1991-06-08:saturdaynight",
+        "title": "Saturday Night",
+        "discoveredAt": 0,
+        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.06.08_001267.jpg"
+      },
+      {
+        "date": "1991-06-08",
         "duration": 2658,
         "thumbnail": "https://archive.org/download/wcw.-worldwide.-complete/wcw.-worldwide.-complete.thumbs/WCW.Worldwide.1991-06-08_001285.jpg",
         "sources": [
@@ -15126,30 +15173,6 @@
         "title": "Worldwide",
         "category": "weekly",
         "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1991-06-08",
-        "duration": 2606,
-        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.06.08_001267.jpg",
-        "sources": [
-          {
-            "duration": 2606,
-            "filename": "WCW.Saturday.Night.1991.06.08.mp4",
-            "bytes": 539392837,
-            "language": "en",
-            "label": "Internet Archive \u00b7 432p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.06.08.mp4",
-            "height": 432
-          }
-        ],
-        "year": 1991,
-        "show": "Saturday Night",
-        "description": "",
-        "id": "wcw:1991-06-08:saturdaynight",
-        "title": "Saturday Night",
-        "discoveredAt": 0,
-        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.06.08_001267.jpg"
       },
       {
         "date": "1991-06-09",
@@ -15530,6 +15553,30 @@
       },
       {
         "date": "1991-06-29",
+        "duration": 2595,
+        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.06.29.VHSRip.x264-RR_001256.jpg",
+        "sources": [
+          {
+            "duration": 2595,
+            "filename": "WCW.Saturday.Night.1991.06.29.VHSRip.x264-RR.mp4",
+            "bytes": 528117774,
+            "language": "en",
+            "label": "Internet Archive \u00b7 432p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.06.29.VHSRip.x264-RR.mp4",
+            "height": 432
+          }
+        ],
+        "year": 1991,
+        "show": "Saturday Night",
+        "description": "",
+        "id": "wcw:1991-06-29:saturdaynight",
+        "title": "Saturday Night",
+        "discoveredAt": 0,
+        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.06.29.VHSRip.x264-RR_001256.jpg"
+      },
+      {
+        "date": "1991-06-29",
         "duration": 2339,
         "thumbnail": "https://archive.org/download/wcw.-worldwide.-complete/wcw.-worldwide.-complete.thumbs/WCW.Worldwide.1991-06-29_001133.jpg",
         "sources": [
@@ -15552,30 +15599,6 @@
         "title": "Worldwide",
         "category": "weekly",
         "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1991-06-29",
-        "duration": 2595,
-        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.06.29.VHSRip.x264-RR_001256.jpg",
-        "sources": [
-          {
-            "duration": 2595,
-            "filename": "WCW.Saturday.Night.1991.06.29.VHSRip.x264-RR.mp4",
-            "bytes": 528117774,
-            "language": "en",
-            "label": "Internet Archive \u00b7 432p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.06.29.VHSRip.x264-RR.mp4",
-            "height": 432
-          }
-        ],
-        "year": 1991,
-        "show": "Saturday Night",
-        "description": "",
-        "id": "wcw:1991-06-29:saturdaynight",
-        "title": "Saturday Night",
-        "discoveredAt": 0,
-        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.06.29.VHSRip.x264-RR_001256.jpg"
       },
       {
         "date": "1991-06-30",
@@ -15778,6 +15801,30 @@
       },
       {
         "date": "1991-07-13",
+        "duration": 2558,
+        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.07.13_001241.jpg",
+        "sources": [
+          {
+            "duration": 2558,
+            "filename": "WCW.Saturday.Night.1991.07.13.mp4",
+            "bytes": 538254670,
+            "language": "en",
+            "label": "Internet Archive \u00b7 432p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.07.13.mp4",
+            "height": 432
+          }
+        ],
+        "year": 1991,
+        "show": "Saturday Night",
+        "description": "",
+        "id": "wcw:1991-07-13:saturdaynight",
+        "title": "Saturday Night",
+        "discoveredAt": 0,
+        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.07.13_001241.jpg"
+      },
+      {
+        "date": "1991-07-13",
         "duration": 2456,
         "thumbnail": "https://archive.org/download/wcw.-worldwide.-complete/wcw.-worldwide.-complete.thumbs/WCW.Worldwide.1991-07-13_001188.jpg",
         "sources": [
@@ -15800,30 +15847,6 @@
         "title": "Worldwide",
         "category": "weekly",
         "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1991-07-13",
-        "duration": 2558,
-        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.07.13_001241.jpg",
-        "sources": [
-          {
-            "duration": 2558,
-            "filename": "WCW.Saturday.Night.1991.07.13.mp4",
-            "bytes": 538254670,
-            "language": "en",
-            "label": "Internet Archive \u00b7 432p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.07.13.mp4",
-            "height": 432
-          }
-        ],
-        "year": 1991,
-        "show": "Saturday Night",
-        "description": "",
-        "id": "wcw:1991-07-13:saturdaynight",
-        "title": "Saturday Night",
-        "discoveredAt": 0,
-        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.07.13_001241.jpg"
       },
       {
         "date": "1991-07-14",
@@ -16212,6 +16235,30 @@
       },
       {
         "date": "1991-08-03",
+        "duration": 2594,
+        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.08.03_001260.jpg",
+        "sources": [
+          {
+            "duration": 2594,
+            "filename": "WCW.Saturday.Night.1991.08.03.mp4",
+            "bytes": 547618863,
+            "language": "en",
+            "label": "Internet Archive \u00b7 432p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.08.03.mp4",
+            "height": 432
+          }
+        ],
+        "year": 1991,
+        "show": "Saturday Night",
+        "description": "",
+        "id": "wcw:1991-08-03:saturdaynight",
+        "title": "Saturday Night",
+        "discoveredAt": 0,
+        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.08.03_001260.jpg"
+      },
+      {
+        "date": "1991-08-03",
         "duration": 2403,
         "thumbnail": "https://archive.org/download/wcw.-worldwide.-complete/wcw.-worldwide.-complete.thumbs/WCW.Worldwide.1991-08-03_001163.jpg",
         "sources": [
@@ -16234,30 +16281,6 @@
         "title": "Worldwide",
         "category": "weekly",
         "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1991-08-03",
-        "duration": 2594,
-        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.08.03_001260.jpg",
-        "sources": [
-          {
-            "duration": 2594,
-            "filename": "WCW.Saturday.Night.1991.08.03.mp4",
-            "bytes": 547618863,
-            "language": "en",
-            "label": "Internet Archive \u00b7 432p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.08.03.mp4",
-            "height": 432
-          }
-        ],
-        "year": 1991,
-        "show": "Saturday Night",
-        "description": "",
-        "id": "wcw:1991-08-03:saturdaynight",
-        "title": "Saturday Night",
-        "discoveredAt": 0,
-        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.08.03_001260.jpg"
       },
       {
         "date": "1991-08-04",
@@ -16348,6 +16371,30 @@
       },
       {
         "date": "1991-08-10",
+        "duration": 2596,
+        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.08.10_001256.jpg",
+        "sources": [
+          {
+            "duration": 2596,
+            "filename": "WCW.Saturday.Night.1991.08.10.mp4",
+            "bytes": 548004623,
+            "language": "en",
+            "label": "Internet Archive \u00b7 432p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.08.10.mp4",
+            "height": 432
+          }
+        ],
+        "year": 1991,
+        "show": "Saturday Night",
+        "description": "",
+        "id": "wcw:1991-08-10:saturdaynight",
+        "title": "Saturday Night",
+        "discoveredAt": 0,
+        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.08.10_001256.jpg"
+      },
+      {
+        "date": "1991-08-10",
         "duration": 2419,
         "thumbnail": "https://archive.org/download/wcw.-worldwide.-complete/wcw.-worldwide.-complete.thumbs/WCW.Worldwide.1991-08-10_001169.jpg",
         "sources": [
@@ -16370,30 +16417,6 @@
         "title": "Worldwide",
         "category": "weekly",
         "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1991-08-10",
-        "duration": 2596,
-        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.08.10_001256.jpg",
-        "sources": [
-          {
-            "duration": 2596,
-            "filename": "WCW.Saturday.Night.1991.08.10.mp4",
-            "bytes": 548004623,
-            "language": "en",
-            "label": "Internet Archive \u00b7 432p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.08.10.mp4",
-            "height": 432
-          }
-        ],
-        "year": 1991,
-        "show": "Saturday Night",
-        "description": "",
-        "id": "wcw:1991-08-10:saturdaynight",
-        "title": "Saturday Night",
-        "discoveredAt": 0,
-        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.08.10_001256.jpg"
       },
       {
         "date": "1991-08-11",
@@ -16621,6 +16644,30 @@
       },
       {
         "date": "1991-08-24",
+        "duration": 2653,
+        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.08.24_001286.jpg",
+        "sources": [
+          {
+            "duration": 2653,
+            "filename": "WCW.Saturday.Night.1991.08.24.mp4",
+            "bytes": 541618262,
+            "language": "en",
+            "label": "Internet Archive \u00b7 432p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.08.24.mp4",
+            "height": 432
+          }
+        ],
+        "year": 1991,
+        "show": "Saturday Night",
+        "description": "",
+        "id": "wcw:1991-08-24:saturdaynight",
+        "title": "Saturday Night",
+        "discoveredAt": 0,
+        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.08.24_001286.jpg"
+      },
+      {
+        "date": "1991-08-24",
         "duration": 2428,
         "thumbnail": "https://archive.org/download/wcw.-worldwide.-complete/wcw.-worldwide.-complete.thumbs/WCW.Worldwide.1991-08-24_001177.jpg",
         "sources": [
@@ -16643,30 +16690,6 @@
         "title": "Worldwide",
         "category": "weekly",
         "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1991-08-24",
-        "duration": 2653,
-        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.08.24_001286.jpg",
-        "sources": [
-          {
-            "duration": 2653,
-            "filename": "WCW.Saturday.Night.1991.08.24.mp4",
-            "bytes": 541618262,
-            "language": "en",
-            "label": "Internet Archive \u00b7 432p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/WCW.Saturday.Night.1991.08.24.mp4",
-            "height": 432
-          }
-        ],
-        "year": 1991,
-        "show": "Saturday Night",
-        "description": "",
-        "id": "wcw:1991-08-24:saturdaynight",
-        "title": "Saturday Night",
-        "discoveredAt": 0,
-        "poster": "https://archive.org/download/wcw.-saturday.-night.-1991.complete/wcw.-saturday.-night.-1991.complete.thumbs/WCW.Saturday.Night.1991.08.24_001286.jpg"
       },
       {
         "date": "1991-08-31",
@@ -17800,6 +17823,31 @@
       },
       {
         "date": "1991-10-27",
+        "duration": 2287,
+        "thumbnail": "https://archive.org/download/wcw.-me.-complete/wcw.-me.-complete.thumbs/WCW.ME.1991.10.27_001108.jpg",
+        "sources": [
+          {
+            "duration": 2287.85,
+            "streamVerified": true,
+            "filename": "WCW.ME.1991.10.27.mp4",
+            "bytes": 424715192,
+            "label": "Internet Archive 432p",
+            "type": "archive",
+            "programme": "Main Event",
+            "url": "https://archive.org/download/wcw.-me.-complete/WCW.ME.1991.10.27.mp4",
+            "height": 432
+          }
+        ],
+        "year": 1991,
+        "show": "Main Event",
+        "description": "Main Event \u00b7 27 October 1991.",
+        "id": "1991-10-27:mainevent",
+        "title": "Main Event",
+        "category": "weekly",
+        "discoveredAt": 1792518755032
+      },
+      {
+        "date": "1991-10-27",
         "duration": 10064,
         "thumbnail": "https://i.ytimg.com/vi/RgbPgLOoAAs/hqdefault.jpg",
         "sources": [
@@ -17856,31 +17904,6 @@
         "category": "ppv",
         "discoveredAt": 1792518755032,
         "poster": "https://i.ytimg.com/vi/RgbPgLOoAAs/hqdefault.jpg"
-      },
-      {
-        "date": "1991-10-27",
-        "duration": 2287,
-        "thumbnail": "https://archive.org/download/wcw.-me.-complete/wcw.-me.-complete.thumbs/WCW.ME.1991.10.27_001108.jpg",
-        "sources": [
-          {
-            "duration": 2287.85,
-            "streamVerified": true,
-            "filename": "WCW.ME.1991.10.27.mp4",
-            "bytes": 424715192,
-            "label": "Internet Archive 432p",
-            "type": "archive",
-            "programme": "Main Event",
-            "url": "https://archive.org/download/wcw.-me.-complete/WCW.ME.1991.10.27.mp4",
-            "height": 432
-          }
-        ],
-        "year": 1991,
-        "show": "Main Event",
-        "description": "Main Event \u00b7 27 October 1991.",
-        "id": "1991-10-27:mainevent",
-        "title": "Main Event",
-        "category": "weekly",
-        "discoveredAt": 1792518755032
       },
       {
         "date": "1991-11-02",
@@ -20127,6 +20150,45 @@
       },
       {
         "date": "1992-02-29",
+        "duration": 10145,
+        "thumbnail": "https://archive.org/services/img/feb.-29-1992",
+        "sources": [
+          {
+            "duration": 10145.83,
+            "streamVerified": true,
+            "creator": "Chasing That W",
+            "filename": "FEB. 29, 1992.mp4",
+            "bytes": 4286777049,
+            "label": "Internet Archive 1080p",
+            "type": "archive",
+            "programme": "PPV",
+            "url": "https://archive.org/download/feb.-29-1992/FEB.%2029%2C%201992.mp4",
+            "height": 1080
+          },
+          {
+            "duration": 10145.83,
+            "creator": "wcwwrestling",
+            "filename": "WCW PPV/1992/WCW Superbrawl 2.mp4",
+            "dateEvidence": "existing catalogue",
+            "bytes": 1703451036,
+            "label": "Internet Archive \u00b7 wcwwrestling",
+            "type": "archive",
+            "url": "https://archive.org/download/wcwwrestling/WCW%20PPV/1992/WCW%20Superbrawl%202.mp4",
+            "height": 720,
+            "md5": "f29162043f4a4975f570bebf82b31f22"
+          }
+        ],
+        "year": 1992,
+        "show": "PPV",
+        "description": "SuperBrawl II \u00b7 29 February 1992.",
+        "id": "1992-02-29:superbrawlii",
+        "title": "SuperBrawl II",
+        "category": "ppv",
+        "discoveredAt": 1792518755032,
+        "poster": "https://archive.org/services/img/feb.-29-1992"
+      },
+      {
+        "date": "1992-02-29",
         "duration": 3607,
         "thumbnail": "https://archive.org/download/wcw.-power.-hour-complete/wcw.-power.-hour-complete.thumbs/WCW.Power.Hour.1992-02-29_001747.jpg",
         "sources": [
@@ -20211,45 +20273,6 @@
         "title": "World Championship Wrestling",
         "category": "weekly",
         "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1992-02-29",
-        "duration": 10145,
-        "thumbnail": "https://archive.org/services/img/feb.-29-1992",
-        "sources": [
-          {
-            "duration": 10145.83,
-            "streamVerified": true,
-            "creator": "Chasing That W",
-            "filename": "FEB. 29, 1992.mp4",
-            "bytes": 4286777049,
-            "label": "Internet Archive 1080p",
-            "type": "archive",
-            "programme": "PPV",
-            "url": "https://archive.org/download/feb.-29-1992/FEB.%2029%2C%201992.mp4",
-            "height": 1080
-          },
-          {
-            "duration": 10145.83,
-            "creator": "wcwwrestling",
-            "filename": "WCW PPV/1992/WCW Superbrawl 2.mp4",
-            "dateEvidence": "existing catalogue",
-            "bytes": 1703451036,
-            "label": "Internet Archive \u00b7 wcwwrestling",
-            "type": "archive",
-            "url": "https://archive.org/download/wcwwrestling/WCW%20PPV/1992/WCW%20Superbrawl%202.mp4",
-            "height": 720,
-            "md5": "f29162043f4a4975f570bebf82b31f22"
-          }
-        ],
-        "year": 1992,
-        "show": "PPV",
-        "description": "SuperBrawl II \u00b7 29 February 1992.",
-        "id": "1992-02-29:superbrawlii",
-        "title": "SuperBrawl II",
-        "category": "ppv",
-        "discoveredAt": 1792518755032,
-        "poster": "https://archive.org/services/img/feb.-29-1992"
       },
       {
         "date": "1992-02-29",
@@ -23505,6 +23528,31 @@
       },
       {
         "date": "1992-10-25",
+        "duration": 3249,
+        "thumbnail": "https://archive.org/download/main-event-complete/main-event-complete.thumbs/main%20event%2010-25-92_001578.jpg",
+        "sources": [
+          {
+            "duration": 3249.78,
+            "streamVerified": true,
+            "filename": "main event 10-25-92.mp4",
+            "bytes": 329530649,
+            "label": "Internet Archive 464p",
+            "type": "archive",
+            "programme": "Main Event",
+            "url": "https://archive.org/download/main-event-complete/main%20event%2010-25-92.mp4",
+            "height": 464
+          }
+        ],
+        "year": 1992,
+        "show": "Main Event",
+        "description": "Main Event \u00b7 25 October 1992.",
+        "id": "1992-10-25:mainevent",
+        "title": "Main Event",
+        "category": "weekly",
+        "discoveredAt": 1792518755032
+      },
+      {
+        "date": "1992-10-25",
         "duration": 10190,
         "thumbnail": "https://archive.org/services/img/oct.-25-1992",
         "sources": [
@@ -23551,31 +23599,6 @@
         "category": "ppv",
         "discoveredAt": 1792518755032,
         "poster": "https://archive.org/services/img/oct.-25-1992"
-      },
-      {
-        "date": "1992-10-25",
-        "duration": 3249,
-        "thumbnail": "https://archive.org/download/main-event-complete/main-event-complete.thumbs/main%20event%2010-25-92_001578.jpg",
-        "sources": [
-          {
-            "duration": 3249.78,
-            "streamVerified": true,
-            "filename": "main event 10-25-92.mp4",
-            "bytes": 329530649,
-            "label": "Internet Archive 464p",
-            "type": "archive",
-            "programme": "Main Event",
-            "url": "https://archive.org/download/main-event-complete/main%20event%2010-25-92.mp4",
-            "height": 464
-          }
-        ],
-        "year": 1992,
-        "show": "Main Event",
-        "description": "Main Event \u00b7 25 October 1992.",
-        "id": "1992-10-25:mainevent",
-        "title": "Main Event",
-        "category": "weekly",
-        "discoveredAt": 1792518755032
       },
       {
         "date": "1992-11-01",
@@ -26238,6 +26261,31 @@
       },
       {
         "date": "1993-07-18",
+        "duration": 2513,
+        "thumbnail": "https://archive.org/download/main-event-93-complete/main-event-93-complete.thumbs/MAIN%20EVENT%207-18-93_001045.jpg",
+        "sources": [
+          {
+            "duration": 2513.05,
+            "streamVerified": true,
+            "filename": "MAIN EVENT 7-18-93.mp4",
+            "bytes": 255337692,
+            "label": "Internet Archive 464p",
+            "type": "archive",
+            "programme": "Main Event",
+            "url": "https://archive.org/download/main-event-93-complete/MAIN%20EVENT%207-18-93.mp4",
+            "height": 464
+          }
+        ],
+        "year": 1993,
+        "show": "Main Event",
+        "description": "Main Event \u00b7 18 July 1993.",
+        "id": "1993-07-18:mainevent",
+        "title": "Main Event",
+        "category": "weekly",
+        "discoveredAt": 1792518755032
+      },
+      {
+        "date": "1993-07-18",
         "duration": 10278,
         "thumbnail": "https://i.ytimg.com/vi/toK5piVkqMo/hqdefault.jpg",
         "sources": [
@@ -26284,31 +26332,6 @@
         "category": "ppv",
         "discoveredAt": 1792518755032,
         "poster": "https://i.ytimg.com/vi/toK5piVkqMo/hqdefault.jpg"
-      },
-      {
-        "date": "1993-07-18",
-        "duration": 2513,
-        "thumbnail": "https://archive.org/download/main-event-93-complete/main-event-93-complete.thumbs/MAIN%20EVENT%207-18-93_001045.jpg",
-        "sources": [
-          {
-            "duration": 2513.05,
-            "streamVerified": true,
-            "filename": "MAIN EVENT 7-18-93.mp4",
-            "bytes": 255337692,
-            "label": "Internet Archive 464p",
-            "type": "archive",
-            "programme": "Main Event",
-            "url": "https://archive.org/download/main-event-93-complete/MAIN%20EVENT%207-18-93.mp4",
-            "height": 464
-          }
-        ],
-        "year": 1993,
-        "show": "Main Event",
-        "description": "Main Event \u00b7 18 July 1993.",
-        "id": "1993-07-18:mainevent",
-        "title": "Main Event",
-        "category": "weekly",
-        "discoveredAt": 1792518755032
       },
       {
         "date": "1993-07-24",
@@ -27105,6 +27128,31 @@
       },
       {
         "date": "1993-09-19",
+        "duration": 3271,
+        "thumbnail": "https://archive.org/download/main-event-93-complete/main-event-93-complete.thumbs/MAIN%20EVENT%209-19-93_001356.jpg",
+        "sources": [
+          {
+            "duration": 3271.81,
+            "streamVerified": true,
+            "filename": "MAIN EVENT 9-19-93.mp4",
+            "bytes": 320453105,
+            "label": "Internet Archive 464p",
+            "type": "archive",
+            "programme": "Main Event",
+            "url": "https://archive.org/download/main-event-93-complete/MAIN%20EVENT%209-19-93.mp4",
+            "height": 464
+          }
+        ],
+        "year": 1993,
+        "show": "Main Event",
+        "description": "Main Event \u00b7 19 September 1993.",
+        "id": "1993-09-19:mainevent",
+        "title": "Main Event",
+        "category": "weekly",
+        "discoveredAt": 1792518755032
+      },
+      {
+        "date": "1993-09-19",
         "duration": 10188,
         "thumbnail": "https://i.ytimg.com/vi/vzvZFV17rLA/hqdefault.jpg",
         "sources": [
@@ -27139,31 +27187,6 @@
         "category": "ppv",
         "discoveredAt": 1792518755032,
         "poster": "https://i.ytimg.com/vi/vzvZFV17rLA/hqdefault.jpg"
-      },
-      {
-        "date": "1993-09-19",
-        "duration": 3271,
-        "thumbnail": "https://archive.org/download/main-event-93-complete/main-event-93-complete.thumbs/MAIN%20EVENT%209-19-93_001356.jpg",
-        "sources": [
-          {
-            "duration": 3271.81,
-            "streamVerified": true,
-            "filename": "MAIN EVENT 9-19-93.mp4",
-            "bytes": 320453105,
-            "label": "Internet Archive 464p",
-            "type": "archive",
-            "programme": "Main Event",
-            "url": "https://archive.org/download/main-event-93-complete/MAIN%20EVENT%209-19-93.mp4",
-            "height": 464
-          }
-        ],
-        "year": 1993,
-        "show": "Main Event",
-        "description": "Main Event \u00b7 19 September 1993.",
-        "id": "1993-09-19:mainevent",
-        "title": "Main Event",
-        "category": "weekly",
-        "discoveredAt": 1792518755032
       },
       {
         "date": "1993-09-25",
@@ -27617,6 +27640,31 @@
       },
       {
         "date": "1993-10-24",
+        "duration": 3402,
+        "thumbnail": "https://archive.org/download/main-event-93-complete/main-event-93-complete.thumbs/MAIN%20EVENT%2010-24-93_001410.jpg",
+        "sources": [
+          {
+            "duration": 3402.94,
+            "streamVerified": true,
+            "filename": "MAIN EVENT 10-24-93.mp4",
+            "bytes": 346166005,
+            "label": "Internet Archive 464p",
+            "type": "archive",
+            "programme": "Main Event",
+            "url": "https://archive.org/download/main-event-93-complete/MAIN%20EVENT%2010-24-93.mp4",
+            "height": 464
+          }
+        ],
+        "year": 1993,
+        "show": "Main Event",
+        "description": "Main Event \u00b7 24 October 1993.",
+        "id": "1993-10-24:mainevent",
+        "title": "Main Event",
+        "category": "weekly",
+        "discoveredAt": 1792518755032
+      },
+      {
+        "date": "1993-10-24",
         "duration": 10275,
         "thumbnail": "https://i.ytimg.com/vi/ftPK-rYz7Vc/hqdefault.jpg",
         "sources": [
@@ -27663,31 +27711,6 @@
         "category": "ppv",
         "discoveredAt": 1792518755032,
         "poster": "https://i.ytimg.com/vi/ftPK-rYz7Vc/hqdefault.jpg"
-      },
-      {
-        "date": "1993-10-24",
-        "duration": 3402,
-        "thumbnail": "https://archive.org/download/main-event-93-complete/main-event-93-complete.thumbs/MAIN%20EVENT%2010-24-93_001410.jpg",
-        "sources": [
-          {
-            "duration": 3402.94,
-            "streamVerified": true,
-            "filename": "MAIN EVENT 10-24-93.mp4",
-            "bytes": 346166005,
-            "label": "Internet Archive 464p",
-            "type": "archive",
-            "programme": "Main Event",
-            "url": "https://archive.org/download/main-event-93-complete/MAIN%20EVENT%2010-24-93.mp4",
-            "height": 464
-          }
-        ],
-        "year": 1993,
-        "show": "Main Event",
-        "description": "Main Event \u00b7 24 October 1993.",
-        "id": "1993-10-24:mainevent",
-        "title": "Main Event",
-        "category": "weekly",
-        "discoveredAt": 1792518755032
       },
       {
         "date": "1993-10-30",
@@ -28024,7 +28047,7 @@
       {
         "date": "1993-11-20",
         "duration": 9908,
-        "thumbnail": "https://i.ytimg.com/vi/cAFE_tpdzJo/hqdefault.jpg",
+        "thumbnail": "https://archive.org/services/img/nov.-20-1993",
         "sources": [
           {
             "duration": 9908.67,
@@ -28325,31 +28348,6 @@
       },
       {
         "date": "1993-12-04",
-        "duration": 2633,
-        "thumbnail": "https://archive.org/download/wcw-worldwide-1993-complete/wcw-worldwide-1993-complete.thumbs/WCW%20Worldwide%201993-12-04_001528.jpg",
-        "sources": [
-          {
-            "duration": 2633.6,
-            "streamVerified": true,
-            "filename": "WCW Worldwide 1993-12-04.mp4",
-            "bytes": 950029298,
-            "label": "Internet Archive 480p",
-            "type": "archive",
-            "programme": "Worldwide",
-            "url": "https://archive.org/download/wcw-worldwide-1993-complete/WCW%20Worldwide%201993-12-04.mp4",
-            "height": 480
-          }
-        ],
-        "year": 1993,
-        "show": "Worldwide",
-        "description": "Worldwide \u00b7 04 December 1993.",
-        "id": "1993-12-04:worldwide",
-        "title": "Worldwide",
-        "category": "weekly",
-        "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1993-12-04",
         "duration": 5325.73,
         "thumbnail": "https://archive.org/download/wcwwrestling/wcwwrestling.thumbs/WCW%20Saturday%20Night/World%20Championship%20Wrestling%20WCW%20Saturday%20Night%20-%20S1993E49%20-%2012-04-1993_002662.jpg",
         "sources": [
@@ -28373,6 +28371,31 @@
         "title": "Saturday Night",
         "discoveredAt": 1793232000000,
         "poster": ""
+      },
+      {
+        "date": "1993-12-04",
+        "duration": 2633,
+        "thumbnail": "https://archive.org/download/wcw-worldwide-1993-complete/wcw-worldwide-1993-complete.thumbs/WCW%20Worldwide%201993-12-04_001528.jpg",
+        "sources": [
+          {
+            "duration": 2633.6,
+            "streamVerified": true,
+            "filename": "WCW Worldwide 1993-12-04.mp4",
+            "bytes": 950029298,
+            "label": "Internet Archive 480p",
+            "type": "archive",
+            "programme": "Worldwide",
+            "url": "https://archive.org/download/wcw-worldwide-1993-complete/WCW%20Worldwide%201993-12-04.mp4",
+            "height": 480
+          }
+        ],
+        "year": 1993,
+        "show": "Worldwide",
+        "description": "Worldwide \u00b7 04 December 1993.",
+        "id": "1993-12-04:worldwide",
+        "title": "Worldwide",
+        "category": "weekly",
+        "discoveredAt": 1792518755032
       },
       {
         "date": "1993-12-11",
@@ -31782,6 +31805,32 @@
       },
       {
         "date": "1994-09-18",
+        "duration": 3234.4,
+        "thumbnail": "https://archive.org/download/wcwwrestling/wcwwrestling.thumbs/WCW%20Main%20Event/WCW%20Main%20Event%20%20%20%20%20Sep%2018%201994_001617.jpg",
+        "sources": [
+          {
+            "duration": 3234.4,
+            "creator": "wcwwrestling",
+            "filename": "WCW Main Event/WCW Main Event     Sep 18 1994.mp4",
+            "dateEvidence": "Explicit filename date",
+            "bytes": 310097617,
+            "label": "Internet Archive \u00b7 wcwwrestling",
+            "type": "archive",
+            "url": "https://archive.org/download/wcwwrestling/WCW%20Main%20Event/WCW%20Main%20Event%20%20%20%20%20Sep%2018%201994.mp4",
+            "height": 360,
+            "md5": "77f66ef298dcb88a605a8abda859ef63"
+          }
+        ],
+        "year": 1994,
+        "show": "Main Event",
+        "description": "",
+        "id": "wcw:1994-09-18:main-event",
+        "title": "Main Event",
+        "discoveredAt": 1793232000000,
+        "poster": ""
+      },
+      {
+        "date": "1994-09-18",
         "duration": 10006,
         "thumbnail": "https://i.ytimg.com/vi/GcmzjRYkaJE/hqdefault.jpg",
         "sources": [
@@ -31841,32 +31890,6 @@
         "title": "Power Hour",
         "category": "weekly",
         "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1994-09-18",
-        "duration": 3234.4,
-        "thumbnail": "https://archive.org/download/wcwwrestling/wcwwrestling.thumbs/WCW%20Main%20Event/WCW%20Main%20Event%20%20%20%20%20Sep%2018%201994_001617.jpg",
-        "sources": [
-          {
-            "duration": 3234.4,
-            "creator": "wcwwrestling",
-            "filename": "WCW Main Event/WCW Main Event     Sep 18 1994.mp4",
-            "dateEvidence": "Explicit filename date",
-            "bytes": 310097617,
-            "label": "Internet Archive \u00b7 wcwwrestling",
-            "type": "archive",
-            "url": "https://archive.org/download/wcwwrestling/WCW%20Main%20Event/WCW%20Main%20Event%20%20%20%20%20Sep%2018%201994.mp4",
-            "height": 360,
-            "md5": "77f66ef298dcb88a605a8abda859ef63"
-          }
-        ],
-        "year": 1994,
-        "show": "Main Event",
-        "description": "",
-        "id": "wcw:1994-09-18:main-event",
-        "title": "Main Event",
-        "discoveredAt": 1793232000000,
-        "poster": ""
       },
       {
         "date": "1994-09-18",
@@ -32354,6 +32377,32 @@
       },
       {
         "date": "1994-11-06",
+        "duration": 2920.58,
+        "thumbnail": "https://archive.org/download/wcwwrestling/wcwwrestling.thumbs/WCW%20Main%20Event/WCW%20Main%20Event%20%20%20%20%20Nov%2006%201994_001460.jpg",
+        "sources": [
+          {
+            "duration": 2920.58,
+            "creator": "wcwwrestling",
+            "filename": "WCW Main Event/WCW Main Event     Nov 06 1994.mp4",
+            "dateEvidence": "Explicit filename date",
+            "bytes": 280869404,
+            "label": "Internet Archive \u00b7 wcwwrestling",
+            "type": "archive",
+            "url": "https://archive.org/download/wcwwrestling/WCW%20Main%20Event/WCW%20Main%20Event%20%20%20%20%20Nov%2006%201994.mp4",
+            "height": 360,
+            "md5": "4a538e695e07d94aaaef7fd43058a064"
+          }
+        ],
+        "year": 1994,
+        "show": "Main Event",
+        "description": "",
+        "id": "wcw:1994-11-06:main-event",
+        "title": "Main Event",
+        "discoveredAt": 1793232000000,
+        "poster": ""
+      },
+      {
+        "date": "1994-11-06",
         "duration": 7878,
         "thumbnail": "https://archive.org/services/img/when-worlds-collide-1994-aaa-ppv-los-angeles-ca",
         "sources": [
@@ -32378,32 +32427,6 @@
         "category": "ppv",
         "discoveredAt": 1792518755032,
         "poster": "https://archive.org/services/img/when-worlds-collide-1994-aaa-ppv-los-angeles-ca"
-      },
-      {
-        "date": "1994-11-06",
-        "duration": 2920.58,
-        "thumbnail": "https://archive.org/download/wcwwrestling/wcwwrestling.thumbs/WCW%20Main%20Event/WCW%20Main%20Event%20%20%20%20%20Nov%2006%201994_001460.jpg",
-        "sources": [
-          {
-            "duration": 2920.58,
-            "creator": "wcwwrestling",
-            "filename": "WCW Main Event/WCW Main Event     Nov 06 1994.mp4",
-            "dateEvidence": "Explicit filename date",
-            "bytes": 280869404,
-            "label": "Internet Archive \u00b7 wcwwrestling",
-            "type": "archive",
-            "url": "https://archive.org/download/wcwwrestling/WCW%20Main%20Event/WCW%20Main%20Event%20%20%20%20%20Nov%2006%201994.mp4",
-            "height": 360,
-            "md5": "4a538e695e07d94aaaef7fd43058a064"
-          }
-        ],
-        "year": 1994,
-        "show": "Main Event",
-        "description": "",
-        "id": "wcw:1994-11-06:main-event",
-        "title": "Main Event",
-        "discoveredAt": 1793232000000,
-        "poster": ""
       },
       {
         "date": "1994-11-12",
@@ -33605,8 +33628,7 @@
         "id": "1995-02-19:mainevent",
         "title": "Main Event",
         "category": "weekly",
-        "discoveredAt": 0,
-        "thumbnail": "https://archive.org/download/wcw-payperview-preshows/wcw-payperview-preshows.thumbs/02%2019%201995%20Main%20Event%20%28SUPERBRAWL%29_001128.jpg"
+        "discoveredAt": 0
       },
       {
         "date": "1995-02-19",
@@ -34011,8 +34033,7 @@
         "id": "1995-03-19:mainevent",
         "title": "Main Event",
         "category": "weekly",
-        "discoveredAt": 0,
-        "thumbnail": "https://archive.org/download/wcw-payperview-preshows/wcw-payperview-preshows.thumbs/03%2019%201995%20Main%20Event%20%28UNCENSORED%29_001092.jpg"
+        "discoveredAt": 0
       },
       {
         "date": "1995-03-19",
@@ -34942,8 +34963,7 @@
         "id": "1995-05-21:mainevent",
         "title": "Main Event",
         "category": "weekly",
-        "discoveredAt": 0,
-        "thumbnail": "https://archive.org/download/wcw-payperview-preshows/wcw-payperview-preshows.thumbs/05%2021%201995%20Main%20Event%20%28SLAMBOREE%29_001165.jpg"
+        "discoveredAt": 0
       },
       {
         "date": "1995-05-21",
@@ -36121,8 +36141,7 @@
         "id": "1995-08-06:mainevent",
         "title": "Main Event",
         "category": "weekly",
-        "discoveredAt": 0,
-        "thumbnail": "https://archive.org/download/wcw-payperview-preshows/wcw-payperview-preshows.thumbs/08%2006%201995%20Main%20Event%20%28CLASH%20OF%20THE%20CHAMPIONS%29_001173.jpg"
+        "discoveredAt": 0
       },
       {
         "date": "1995-08-07",
@@ -36813,6 +36832,28 @@
       },
       {
         "date": "1995-09-17",
+        "sources": [
+          {
+            "duration": 3300,
+            "filename": "09 17 1995 Main Event (FALL BRAWL).mp4",
+            "bytes": 830344245,
+            "language": "en",
+            "label": "Internet Archive \u00b7 480p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw-payperview-preshows/09%2017%201995%20Main%20Event%20%28FALL%20BRAWL%29.mp4",
+            "height": 480
+          }
+        ],
+        "year": 1995,
+        "show": "Main Event",
+        "description": "",
+        "id": "1995-09-17:mainevent",
+        "title": "Main Event",
+        "category": "weekly",
+        "discoveredAt": 0
+      },
+      {
+        "date": "1995-09-17",
         "duration": 9884,
         "thumbnail": "https://i.ytimg.com/vi/d4mMN7zW8E0/hqdefault.jpg",
         "sources": [
@@ -36847,29 +36888,6 @@
         "category": "ppv",
         "discoveredAt": 1792518755032,
         "poster": "https://i.ytimg.com/vi/d4mMN7zW8E0/hqdefault.jpg"
-      },
-      {
-        "date": "1995-09-17",
-        "sources": [
-          {
-            "duration": 3300,
-            "filename": "09 17 1995 Main Event (FALL BRAWL).mp4",
-            "bytes": 830344245,
-            "language": "en",
-            "label": "Internet Archive \u00b7 480p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw-payperview-preshows/09%2017%201995%20Main%20Event%20%28FALL%20BRAWL%29.mp4",
-            "height": 480
-          }
-        ],
-        "year": 1995,
-        "show": "Main Event",
-        "description": "",
-        "id": "1995-09-17:mainevent",
-        "title": "Main Event",
-        "category": "weekly",
-        "discoveredAt": 0,
-        "thumbnail": "https://archive.org/download/wcw-payperview-preshows/wcw-payperview-preshows.thumbs/09%2017%201995%20Main%20Event%20%28FALL%20BRAWL%29_001175.jpg"
       },
       {
         "date": "1995-09-17",
@@ -37827,6 +37845,28 @@
       },
       {
         "date": "1995-10-29",
+        "sources": [
+          {
+            "duration": 3210,
+            "filename": "10 29 1995 Main Event (HALLOWEEN HAVOC).mp4",
+            "bytes": 807830064,
+            "language": "en",
+            "label": "Internet Archive \u00b7 480p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw-payperview-preshows/10%2029%201995%20Main%20Event%20%28HALLOWEEN%20HAVOC%29.mp4",
+            "height": 480
+          }
+        ],
+        "year": 1995,
+        "show": "Main Event",
+        "description": "",
+        "id": "1995-10-29:mainevent",
+        "title": "Main Event",
+        "category": "weekly",
+        "discoveredAt": 0
+      },
+      {
+        "date": "1995-10-29",
         "duration": 9589,
         "thumbnail": "https://i.ytimg.com/vi/csAvBo3s66g/hqdefault.jpg",
         "sources": [
@@ -37873,29 +37913,6 @@
         "category": "ppv",
         "discoveredAt": 1792518755032,
         "poster": "https://i.ytimg.com/vi/csAvBo3s66g/hqdefault.jpg"
-      },
-      {
-        "date": "1995-10-29",
-        "sources": [
-          {
-            "duration": 3210,
-            "filename": "10 29 1995 Main Event (HALLOWEEN HAVOC).mp4",
-            "bytes": 807830064,
-            "language": "en",
-            "label": "Internet Archive \u00b7 480p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw-payperview-preshows/10%2029%201995%20Main%20Event%20%28HALLOWEEN%20HAVOC%29.mp4",
-            "height": 480
-          }
-        ],
-        "year": 1995,
-        "show": "Main Event",
-        "description": "",
-        "id": "1995-10-29:mainevent",
-        "title": "Main Event",
-        "category": "weekly",
-        "discoveredAt": 0,
-        "thumbnail": "https://archive.org/download/wcw-payperview-preshows/wcw-payperview-preshows.thumbs/10%2029%201995%20Main%20Event%20%28HALLOWEEN%20HAVOC%29_001143.jpg"
       },
       {
         "date": "1995-10-30",
@@ -40078,8 +40095,7 @@
         "id": "1996-02-11:mainevent",
         "title": "Main Event",
         "category": "weekly",
-        "discoveredAt": 0,
-        "thumbnail": "https://archive.org/download/wcw-payperview-preshows/wcw-payperview-preshows.thumbs/02%2011%201996%20Main%20Event%20SUPERBRAWL_001070.jpg"
+        "discoveredAt": 0
       },
       {
         "date": "1996-02-11",
@@ -40770,8 +40786,7 @@
         "id": "1996-03-24:mainevent",
         "title": "Main Event",
         "category": "weekly",
-        "discoveredAt": 0,
-        "thumbnail": "https://archive.org/download/wcw-payperview-preshows/wcw-payperview-preshows.thumbs/03%2024%201996%20Main%20Event%20%28UNCENSORED%29_001174.jpg"
+        "discoveredAt": 0
       },
       {
         "date": "1996-03-24",
@@ -42050,8 +42065,7 @@
         "id": "1996-06-16:mainevent",
         "title": "Main Event",
         "category": "weekly",
-        "discoveredAt": 0,
-        "thumbnail": "https://archive.org/download/wcw-payperview-preshows/wcw-payperview-preshows.thumbs/06%2016%201996%20Main%20Event%20GREAT%20AMERICAN%20BASH_001110.jpg"
+        "discoveredAt": 0
       },
       {
         "date": "1996-06-16",
@@ -44391,31 +44405,6 @@
       },
       {
         "date": "1996-11-24",
-        "duration": 1991,
-        "thumbnail": "https://archive.org/download/wcw.-pro.-wrestling.-complete_202406/wcw.-pro.-wrestling.-complete_202406.thumbs/WCW.Pro.Wrestling.11.24.96_001157.jpg",
-        "sources": [
-          {
-            "duration": 1991.97,
-            "streamVerified": true,
-            "filename": "WCW.Pro.Wrestling.11.24.96.mp4",
-            "bytes": 298729965,
-            "label": "Internet Archive 480p",
-            "type": "archive",
-            "programme": "Pro",
-            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_202406/WCW.Pro.Wrestling.11.24.96.mp4",
-            "height": 480
-          }
-        ],
-        "year": 1996,
-        "show": "Pro",
-        "description": "Pro \u00b7 24 November 1996.",
-        "id": "1996-11-24:pro",
-        "title": "Pro",
-        "category": "weekly",
-        "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1996-11-24",
         "duration": 9915,
         "thumbnail": "https://archive.org/services/img/nov.-24-1996",
         "sources": [
@@ -44452,6 +44441,31 @@
         "category": "ppv",
         "discoveredAt": 1792518755032,
         "poster": "https://archive.org/services/img/nov.-24-1996"
+      },
+      {
+        "date": "1996-11-24",
+        "duration": 1991,
+        "thumbnail": "https://archive.org/download/wcw.-pro.-wrestling.-complete_202406/wcw.-pro.-wrestling.-complete_202406.thumbs/WCW.Pro.Wrestling.11.24.96_001157.jpg",
+        "sources": [
+          {
+            "duration": 1991.97,
+            "streamVerified": true,
+            "filename": "WCW.Pro.Wrestling.11.24.96.mp4",
+            "bytes": 298729965,
+            "label": "Internet Archive 480p",
+            "type": "archive",
+            "programme": "Pro",
+            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_202406/WCW.Pro.Wrestling.11.24.96.mp4",
+            "height": 480
+          }
+        ],
+        "year": 1996,
+        "show": "Pro",
+        "description": "Pro \u00b7 24 November 1996.",
+        "id": "1996-11-24:pro",
+        "title": "Pro",
+        "category": "weekly",
+        "discoveredAt": 1792518755032
       },
       {
         "date": "1996-11-25",
@@ -44895,31 +44909,6 @@
       },
       {
         "date": "1996-12-29",
-        "duration": 1809,
-        "thumbnail": "https://archive.org/download/wcw.-pro.-wrestling.-complete_202406/wcw.-pro.-wrestling.-complete_202406.thumbs/WCW.Pro.Wrestling.12.29.96_001056.jpg",
-        "sources": [
-          {
-            "duration": 1809.72,
-            "streamVerified": true,
-            "filename": "WCW.Pro.Wrestling.12.29.96.mp4",
-            "bytes": 271594625,
-            "label": "Internet Archive 480p",
-            "type": "archive",
-            "programme": "Pro",
-            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_202406/WCW.Pro.Wrestling.12.29.96.mp4",
-            "height": 480
-          }
-        ],
-        "year": 1996,
-        "show": "Pro",
-        "description": "Pro \u00b7 29 December 1996.",
-        "id": "1996-12-29:pro",
-        "title": "Pro",
-        "category": "weekly",
-        "discoveredAt": 1792518755032
-      },
-      {
-        "date": "1996-12-29",
         "duration": 9921,
         "thumbnail": "https://archive.org/services/img/dec.-29-1996",
         "sources": [
@@ -44956,6 +44945,31 @@
         "category": "ppv",
         "discoveredAt": 1792518755032,
         "poster": "https://archive.org/services/img/dec.-29-1996"
+      },
+      {
+        "date": "1996-12-29",
+        "duration": 1809,
+        "thumbnail": "https://archive.org/download/wcw.-pro.-wrestling.-complete_202406/wcw.-pro.-wrestling.-complete_202406.thumbs/WCW.Pro.Wrestling.12.29.96_001056.jpg",
+        "sources": [
+          {
+            "duration": 1809.72,
+            "streamVerified": true,
+            "filename": "WCW.Pro.Wrestling.12.29.96.mp4",
+            "bytes": 271594625,
+            "label": "Internet Archive 480p",
+            "type": "archive",
+            "programme": "Pro",
+            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_202406/WCW.Pro.Wrestling.12.29.96.mp4",
+            "height": 480
+          }
+        ],
+        "year": 1996,
+        "show": "Pro",
+        "description": "Pro \u00b7 29 December 1996.",
+        "id": "1996-12-29:pro",
+        "title": "Pro",
+        "category": "weekly",
+        "discoveredAt": 1792518755032
       },
       {
         "date": "1996-12-30",
@@ -45455,37 +45469,6 @@
       },
       {
         "date": "1997-01-25",
-        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-complete_20240612/wcw.-saturday.-night.-complete_20240612.thumbs/WCW.Saturday.Night.01.25.97_002889.jpg",
-        "listedParts": 0,
-        "aliases": [
-          "tt0222648:6:4"
-        ],
-        "sources": [
-          {
-            "filename": "WCW.Saturday.Night.01.25.97.mp4",
-            "bytes": 478848260,
-            "label": "Internet Archive 480p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-saturday.-night.-complete_20240612/WCW.Saturday.Night.01.25.97.mp4"
-          },
-          {
-            "filename": "WCW.Saturday.Night.01.25.97.avi",
-            "bytes": 742635520,
-            "label": "Internet Archive 480p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-saturday.-night.-complete_20240612/WCW.Saturday.Night.01.25.97.avi"
-          }
-        ],
-        "year": 1997,
-        "part": 0,
-        "show": "Saturday Night",
-        "description": "",
-        "id": "1997-01-25:saturdaynight",
-        "title": "Saturday Night",
-        "category": "weekly"
-      },
-      {
-        "date": "1997-01-25",
         "thumbnail": "https://i.ytimg.com/vi/swwAR7xuq9k/hqdefault.jpg",
         "aliases": [
           "ia:wcw-1997-reupload-wwearchives:97fb12d5e54b9d6d"
@@ -45557,6 +45540,37 @@
         "id": "1997-01-25:souledout",
         "category": "ppv",
         "poster": ""
+      },
+      {
+        "date": "1997-01-25",
+        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-complete_20240612/wcw.-saturday.-night.-complete_20240612.thumbs/WCW.Saturday.Night.01.25.97_002889.jpg",
+        "listedParts": 0,
+        "aliases": [
+          "tt0222648:6:4"
+        ],
+        "sources": [
+          {
+            "filename": "WCW.Saturday.Night.01.25.97.mp4",
+            "bytes": 478848260,
+            "label": "Internet Archive 480p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-saturday.-night.-complete_20240612/WCW.Saturday.Night.01.25.97.mp4"
+          },
+          {
+            "filename": "WCW.Saturday.Night.01.25.97.avi",
+            "bytes": 742635520,
+            "label": "Internet Archive 480p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-saturday.-night.-complete_20240612/WCW.Saturday.Night.01.25.97.avi"
+          }
+        ],
+        "year": 1997,
+        "part": 0,
+        "show": "Saturday Night",
+        "description": "",
+        "id": "1997-01-25:saturdaynight",
+        "title": "Saturday Night",
+        "category": "weekly"
       },
       {
         "date": "1997-01-26",
@@ -46156,40 +46170,6 @@
       },
       {
         "date": "1997-02-23",
-        "thumbnail": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/wcw.-pro.-wrestling.-complete_20240612.thumbs/WCW.Pro.Wrestling.02.23.97%281%29_001243.jpg",
-        "listedParts": 0,
-        "aliases": [
-          "ia:wcw.-pro.-wrestling.-complete_20240612:7776c95c10fe7331"
-        ],
-        "sources": [
-          {
-            "filename": "WCW.Pro.Wrestling.02.23.97(1).mp4",
-            "bytes": 384474621,
-            "label": "Internet Archive 480p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/WCW.Pro.Wrestling.02.23.97(1).mp4"
-          },
-          {
-            "duration": 2561,
-            "filename": "WCW.Pro.Wrestling.02.23.97(1).mp4",
-            "bytes": 384474621,
-            "language": "en",
-            "label": "Internet Archive \u00b7 480p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/WCW.Pro.Wrestling.02.23.97%281%29.mp4",
-            "height": 480
-          }
-        ],
-        "year": 1997,
-        "part": 0,
-        "show": "Pro",
-        "description": "",
-        "id": "1997-02-23:pro",
-        "title": "Pro Wrestling 02 23 97(1)",
-        "category": "weekly"
-      },
-      {
-        "date": "1997-02-23",
         "thumbnail": "https://archive.org/download/feb.-23-1997/feb.-23-1997.thumbs/FEB.%2023%2C%201997_003474.jpg",
         "aliases": [
           "ia:feb.-23-1997:5ca80c00ad097c2f"
@@ -46245,6 +46225,40 @@
         "id": "1997-02-23:superbrawlvii",
         "category": "ppv",
         "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sPimYsrcl5pqajX8l1t0QAppPhZ.jpg"
+      },
+      {
+        "date": "1997-02-23",
+        "thumbnail": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/wcw.-pro.-wrestling.-complete_20240612.thumbs/WCW.Pro.Wrestling.02.23.97%281%29_001243.jpg",
+        "listedParts": 0,
+        "aliases": [
+          "ia:wcw.-pro.-wrestling.-complete_20240612:7776c95c10fe7331"
+        ],
+        "sources": [
+          {
+            "filename": "WCW.Pro.Wrestling.02.23.97(1).mp4",
+            "bytes": 384474621,
+            "label": "Internet Archive 480p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/WCW.Pro.Wrestling.02.23.97(1).mp4"
+          },
+          {
+            "duration": 2561,
+            "filename": "WCW.Pro.Wrestling.02.23.97(1).mp4",
+            "bytes": 384474621,
+            "language": "en",
+            "label": "Internet Archive \u00b7 480p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/WCW.Pro.Wrestling.02.23.97%281%29.mp4",
+            "height": 480
+          }
+        ],
+        "year": 1997,
+        "part": 0,
+        "show": "Pro",
+        "description": "",
+        "id": "1997-02-23:pro",
+        "title": "Pro Wrestling 02 23 97(1)",
+        "category": "weekly"
       },
       {
         "date": "1997-02-23",
@@ -46728,30 +46742,6 @@
       },
       {
         "date": "1997-03-16",
-        "thumbnail": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/wcw.-pro.-wrestling.-complete_20240612.thumbs/WCW.Pro.Wrestling.03.16.97_001085.jpg",
-        "listedParts": 0,
-        "aliases": [
-          "ia:wcw.-pro.-wrestling.-complete_20240612:6feb961d200eeb63"
-        ],
-        "sources": [
-          {
-            "filename": "WCW.Pro.Wrestling.03.16.97.mp4",
-            "bytes": 336142551,
-            "label": "Internet Archive 480p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/WCW.Pro.Wrestling.03.16.97.mp4"
-          }
-        ],
-        "year": 1997,
-        "part": 0,
-        "show": "Pro",
-        "description": "",
-        "id": "1997-03-16:pro",
-        "title": "Pro Wrestling 03 16 97",
-        "category": "weekly"
-      },
-      {
-        "date": "1997-03-16",
         "thumbnail": "https://archive.org/download/jan-06-1997-dec-29-1997/jan-06-1997-dec-29-1997.thumbs/03%2016%201997%20UC_003416.jpg",
         "aliases": [
           "ia:wcw-1997-reupload-wwearchives:d3299fdb044c43a1"
@@ -46825,6 +46815,30 @@
         "id": "1997-03-16:uncensored",
         "category": "ppv",
         "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/442ooBUWm3bjrZAUkputpzVLRfA.jpg"
+      },
+      {
+        "date": "1997-03-16",
+        "thumbnail": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/wcw.-pro.-wrestling.-complete_20240612.thumbs/WCW.Pro.Wrestling.03.16.97_001085.jpg",
+        "listedParts": 0,
+        "aliases": [
+          "ia:wcw.-pro.-wrestling.-complete_20240612:6feb961d200eeb63"
+        ],
+        "sources": [
+          {
+            "filename": "WCW.Pro.Wrestling.03.16.97.mp4",
+            "bytes": 336142551,
+            "label": "Internet Archive 480p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/WCW.Pro.Wrestling.03.16.97.mp4"
+          }
+        ],
+        "year": 1997,
+        "part": 0,
+        "show": "Pro",
+        "description": "",
+        "id": "1997-03-16:pro",
+        "title": "Pro Wrestling 03 16 97",
+        "category": "weekly"
       },
       {
         "date": "1997-03-16",
@@ -49011,30 +49025,6 @@
       },
       {
         "date": "1997-06-15",
-        "thumbnail": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/wcw.-pro.-wrestling.-complete_20240612.thumbs/WCW.Pro.Wrestling.06.15.97_001040.jpg",
-        "listedParts": 0,
-        "aliases": [
-          "ia:wcw.-pro.-wrestling.-complete_20240612:b32fc84e15f306d8"
-        ],
-        "sources": [
-          {
-            "filename": "WCW.Pro.Wrestling.06.15.97.mp4",
-            "bytes": 323053932,
-            "label": "Internet Archive 480p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/WCW.Pro.Wrestling.06.15.97.mp4"
-          }
-        ],
-        "year": 1997,
-        "part": 0,
-        "show": "Pro",
-        "description": "",
-        "id": "1997-06-15:pro",
-        "title": "Pro Wrestling 06 15 97",
-        "category": "weekly"
-      },
-      {
-        "date": "1997-06-15",
         "thumbnail": "https://archive.org/download/jan-06-1997-dec-29-1997/jan-06-1997-dec-29-1997.thumbs/06%2015%201997%20GAB_003394.jpg",
         "aliases": [
           "ia:wcw-1997-reupload-wwearchives:57b00bd792336180"
@@ -49108,6 +49098,30 @@
         "id": "1997-06-15:thegreatamericanbash",
         "category": "ppv",
         "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6y7ljU6qN9exM9EzADPWGHCfzDy.jpg"
+      },
+      {
+        "date": "1997-06-15",
+        "thumbnail": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/wcw.-pro.-wrestling.-complete_20240612.thumbs/WCW.Pro.Wrestling.06.15.97_001040.jpg",
+        "listedParts": 0,
+        "aliases": [
+          "ia:wcw.-pro.-wrestling.-complete_20240612:b32fc84e15f306d8"
+        ],
+        "sources": [
+          {
+            "filename": "WCW.Pro.Wrestling.06.15.97.mp4",
+            "bytes": 323053932,
+            "label": "Internet Archive 480p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/WCW.Pro.Wrestling.06.15.97.mp4"
+          }
+        ],
+        "year": 1997,
+        "part": 0,
+        "show": "Pro",
+        "description": "",
+        "id": "1997-06-15:pro",
+        "title": "Pro Wrestling 06 15 97",
+        "category": "weekly"
       },
       {
         "date": "1997-06-15",
@@ -52907,30 +52921,6 @@
       },
       {
         "date": "1997-11-23",
-        "thumbnail": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/wcw.-pro.-wrestling.-complete_20240612.thumbs/WCW.Pro.Wrestling.11.23.97_001063.jpg",
-        "listedParts": 0,
-        "aliases": [
-          "ia:wcw.-pro.-wrestling.-complete_20240612:ca349b1e1fdefac8"
-        ],
-        "sources": [
-          {
-            "filename": "WCW.Pro.Wrestling.11.23.97.mp4",
-            "bytes": 329332332,
-            "label": "Internet Archive 480p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/WCW.Pro.Wrestling.11.23.97.mp4"
-          }
-        ],
-        "year": 1997,
-        "part": 0,
-        "show": "Pro",
-        "description": "",
-        "id": "1997-11-23:pro",
-        "title": "Pro Wrestling 11 23 97",
-        "category": "weekly"
-      },
-      {
-        "date": "1997-11-23",
         "thumbnail": "https://archive.org/download/wcw-1997-reupload-wwearchives/wcw-1997-reupload-wwearchives.thumbs/059.%20WCW%20World%20War%203_S03E01_WCW%20WORLD%20WAR%203%201997_005849.jpg",
         "aliases": [
           "ia:wcw-1997-reupload-wwearchives:3963c1fe0ae5f0b5"
@@ -53004,6 +52994,30 @@
         "id": "1997-11-23:worldwar3",
         "category": "ppv",
         "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bznO9whWm1Ibyg3i6k4HuSlL49Z.jpg"
+      },
+      {
+        "date": "1997-11-23",
+        "thumbnail": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/wcw.-pro.-wrestling.-complete_20240612.thumbs/WCW.Pro.Wrestling.11.23.97_001063.jpg",
+        "listedParts": 0,
+        "aliases": [
+          "ia:wcw.-pro.-wrestling.-complete_20240612:ca349b1e1fdefac8"
+        ],
+        "sources": [
+          {
+            "filename": "WCW.Pro.Wrestling.11.23.97.mp4",
+            "bytes": 329332332,
+            "label": "Internet Archive 480p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/WCW.Pro.Wrestling.11.23.97.mp4"
+          }
+        ],
+        "year": 1997,
+        "part": 0,
+        "show": "Pro",
+        "description": "",
+        "id": "1997-11-23:pro",
+        "title": "Pro Wrestling 11 23 97",
+        "category": "weekly"
       },
       {
         "date": "1997-11-23",
@@ -53757,30 +53771,6 @@
       },
       {
         "date": "1997-12-28",
-        "thumbnail": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/wcw.-pro.-wrestling.-complete_20240612.thumbs/WCW.Pro.Wrestling.12.28.97_001064.jpg",
-        "listedParts": 0,
-        "aliases": [
-          "ia:wcw.-pro.-wrestling.-complete_20240612:3f442930b3d56953"
-        ],
-        "sources": [
-          {
-            "filename": "WCW.Pro.Wrestling.12.28.97.mp4",
-            "bytes": 329081009,
-            "label": "Internet Archive 480p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/WCW.Pro.Wrestling.12.28.97.mp4"
-          }
-        ],
-        "year": 1997,
-        "part": 0,
-        "show": "Pro",
-        "description": "",
-        "id": "1997-12-28:pro",
-        "title": "Pro Wrestling 12 28 97",
-        "category": "weekly"
-      },
-      {
-        "date": "1997-12-28",
         "thumbnail": "https://archive.org/download/wcw-1997-reupload-wwearchives/wcw-1997-reupload-wwearchives.thumbs/065.%20Starrcade_S15E01_Starrcade%201997_000001.jpg",
         "aliases": [
           "ia:wcw-1997-reupload-wwearchives:09a29b01e27cbde9"
@@ -53854,6 +53844,30 @@
         "id": "1997-12-28:starrcade",
         "category": "ppv",
         "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ssLRL2ngkxKSvUh8azSPB7MCsA3.jpg"
+      },
+      {
+        "date": "1997-12-28",
+        "thumbnail": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/wcw.-pro.-wrestling.-complete_20240612.thumbs/WCW.Pro.Wrestling.12.28.97_001064.jpg",
+        "listedParts": 0,
+        "aliases": [
+          "ia:wcw.-pro.-wrestling.-complete_20240612:3f442930b3d56953"
+        ],
+        "sources": [
+          {
+            "filename": "WCW.Pro.Wrestling.12.28.97.mp4",
+            "bytes": 329081009,
+            "label": "Internet Archive 480p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-pro.-wrestling.-complete_20240612/WCW.Pro.Wrestling.12.28.97.mp4"
+          }
+        ],
+        "year": 1997,
+        "part": 0,
+        "show": "Pro",
+        "description": "",
+        "id": "1997-12-28:pro",
+        "title": "Pro Wrestling 12 28 97",
+        "category": "weekly"
       },
       {
         "date": "1997-12-28",
@@ -54596,37 +54610,6 @@
       },
       {
         "date": "1998-01-24",
-        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-complete_20240614/wcw.-saturday.-night.-complete_20240614.thumbs/WCW.Saturday.Night.01.24.98_002617.jpg",
-        "listedParts": 0,
-        "aliases": [
-          "tt0222648:7:4"
-        ],
-        "sources": [
-          {
-            "filename": "WCW.Saturday.Night.01.24.98.mp4",
-            "bytes": 428841857,
-            "label": "Internet Archive 480p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-saturday.-night.-complete_20240614/WCW.Saturday.Night.01.24.98.mp4"
-          },
-          {
-            "filename": "WCW.Saturday.Night.01.24.98.avi",
-            "bytes": 733509632,
-            "label": "Internet Archive 480p",
-            "type": "archive",
-            "url": "https://archive.org/download/wcw.-saturday.-night.-complete_20240614/WCW.Saturday.Night.01.24.98.avi"
-          }
-        ],
-        "year": 1998,
-        "part": 0,
-        "show": "Saturday Night",
-        "description": "",
-        "id": "1998-01-24:saturdaynight",
-        "title": "Saturday Night",
-        "category": "weekly"
-      },
-      {
-        "date": "1998-01-24",
         "thumbnail": "https://archive.org/download/Jan-5-1998-Dec-28-1998-2/Jan-5-1998-Dec-28-1998-2.thumbs/01%2024%201998%20SO_003420.jpg",
         "aliases": [
           "ia:jan.-24-1998:6b9bdbfc08f1cab4"
@@ -54679,6 +54662,37 @@
         "id": "1998-01-24:souledout",
         "category": "ppv",
         "poster": ""
+      },
+      {
+        "date": "1998-01-24",
+        "thumbnail": "https://archive.org/download/wcw.-saturday.-night.-complete_20240614/wcw.-saturday.-night.-complete_20240614.thumbs/WCW.Saturday.Night.01.24.98_002617.jpg",
+        "listedParts": 0,
+        "aliases": [
+          "tt0222648:7:4"
+        ],
+        "sources": [
+          {
+            "filename": "WCW.Saturday.Night.01.24.98.mp4",
+            "bytes": 428841857,
+            "label": "Internet Archive 480p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-saturday.-night.-complete_20240614/WCW.Saturday.Night.01.24.98.mp4"
+          },
+          {
+            "filename": "WCW.Saturday.Night.01.24.98.avi",
+            "bytes": 733509632,
+            "label": "Internet Archive 480p",
+            "type": "archive",
+            "url": "https://archive.org/download/wcw.-saturday.-night.-complete_20240614/WCW.Saturday.Night.01.24.98.avi"
+          }
+        ],
+        "year": 1998,
+        "part": 0,
+        "show": "Saturday Night",
+        "description": "",
+        "id": "1998-01-24:saturdaynight",
+        "title": "Saturday Night",
+        "category": "weekly"
       },
       {
         "date": "1998-01-25",
@@ -83559,7 +83573,7 @@
       },
       {
         "date": "2000-12-12",
-        "thumbnail": "https://i.ytimg.com/vi/K9PBibXqcTo/hqdefault.jpg",
+        "thumbnail": "https://artworks.thetvdb.com/banners/episodes/76962/222190.jpg",
         "listedParts": 0,
         "aliases": [
           "tt0185130:6:50"
@@ -86683,29 +86697,6 @@
         "id": "2001-03-26:nitro",
         "title": "Monday Nitro",
         "category": "weekly"
-      },
-      {
-        "id": "wcw:1987-10-03:saturdaynight",
-        "date": "1987-10-03",
-        "year": 1987,
-        "show": "Saturday Night",
-        "title": "Saturday Night",
-        "description": "",
-        "duration": 2890,
-        "thumbnail": "https://i.ytimg.com/vi/qyRQF_3QdUs/hqdefault.jpg",
-        "poster": "https://i.ytimg.com/vi/qyRQF_3QdUs/hqdefault.jpg",
-        "sources": [
-          {
-            "type": "youtube",
-            "videoId": "qyRQF_3QdUs",
-            "channelId": "UCbGG2hv4cWmIrBAIhGiCdSg",
-            "direct": true,
-            "title": "FULL EPISODE: Ron Garvin celebrates World Title win; Taylor steals Koloff\u2019s title | WCW, Oct 3, 1987",
-            "duration": 2890,
-            "label": "Official YouTube"
-          }
-        ],
-        "discoveredAt": 0
       }
     ],
     "historyMigrations": {
@@ -106182,1107 +106173,1107 @@
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E1 - WCW Monday Nitro - Jan 06, 1997.mp4": {
               "date": "1997-01-06",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E10 - WCW Monday Nitro - Mar 10, 1997.mp4": {
               "date": "1997-03-10",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E11 - WCW Monday Nitro - Mar 17, 1997.mp4": {
               "date": "1997-03-17",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E12 - WCW Monday Nitro - Mar 24, 1997.mp4": {
               "date": "1997-03-24",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E13 - WCW Monday Nitro - Mar 31, 1997.mp4": {
               "date": "1997-03-31",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E14 - WCW Monday Nitro - Apr 07, 1997.mp4": {
               "date": "1997-04-07",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E15 - WCW Monday Nitro - Apr. 14, 1997.mp4": {
               "date": "1997-04-14",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E16 - WCW Monday Nitro - Apr. 21, 1997.mp4": {
               "date": "1997-04-21",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E17 - WCW Monday Nitro - Apr 28, 1997.mp4": {
               "date": "1997-04-28",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E18 - WCW Monday Nitro - May 05, 1997.mp4": {
               "date": "1997-05-05",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E19 - WCW Monday Nitro - May 12, 1997.mp4": {
               "date": "1997-05-12",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E2 - WCW Monday Nitro - Jan 13, 1997.mp4": {
               "date": "1997-01-13",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E20 - WCW Monday Nitro - May 19, 1997.mp4": {
               "date": "1997-05-19",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E21 - WCW Monday Nitro - May. 26, 1997.mp4": {
               "date": "1997-05-26",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E22 - WCW Monday Nitro - Jun 02, 1997.mp4": {
               "date": "1997-06-02",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E23 - WCW Monday Nitro - Jun 09, 1997.mp4": {
               "date": "1997-06-09",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E24 - WCW Monday Nitro - Jun 16, 1997.mp4": {
               "date": "1997-06-16",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E25 - WCW Monday Nitro - Jun. 23, 1997.mp4": {
               "date": "1997-06-23",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E26 - WCW Monday Nitro - Jun. 30, 1997.mp4": {
               "date": "1997-06-30",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E27 - WCW Monday Nitro - Jul 07, 1997.mp4": {
               "date": "1997-07-07",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E28 - WCW Monday Nitro - Jul 14, 1997.mp4": {
               "date": "1997-07-14",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E29 - WCW Monday Nitro - Jul 22, 1997.mp4": {
               "date": "1997-07-22",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E3 - WCW Monday Nitro - Jan. 20, 1997.mp4": {
               "date": "1997-01-20",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E30 - WCW Monday Nitro - Jul. 28, 1997.mp4": {
               "date": "1997-07-28",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E31 - WCW Monday Nitro - Aug 04, 1997.mp4": {
               "date": "1997-08-04",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E32 - WCW Monday Nitro - Aug 11, 1997.mp4": {
               "date": "1997-08-11",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E33 - WCW Monday Nitro - Aug 18, 1997.mp4": {
               "date": "1997-08-18",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E34 - WCW Monday Nitro - Aug 25, 1997.mp4": {
               "date": "1997-08-25",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E35 - WCW Monday Nitro - Sep 01, 1997.mp4": {
               "date": "1997-09-01",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E36 - WCW Monday Nitro - Sep 08, 1997.mp4": {
               "date": "1997-09-08",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E37 - WCW Monday Nitro - Sep 15, 1997.mp4": {
               "date": "1997-09-15",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E38 - WCW Monday Nitro - Sep. 22, 1997.mp4": {
               "date": "1997-09-22",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E39 - WCW Monday Nitro - Sep. 29, 1997.mp4": {
               "date": "1997-09-29",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E4 - WCW Monday Nitro - Jan 27, 1997.mp4": {
               "date": "1997-01-27",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E40 - WCW Monday Nitro - Oct 06, 1997.mp4": {
               "date": "1997-10-06",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E41 - WCW Monday Nitro - Oct. 13, 1997.mp4": {
               "date": "1997-10-13",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E42 - WCW Monday Nitro - Oct. 20, 1997.mp4": {
               "date": "1997-10-20",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E43 - WCW Monday Nitro - Oct 27, 1997.mp4": {
               "date": "1997-10-27",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E44 - WCW Monday Nitro - Nov 03, 1997.mp4": {
               "date": "1997-11-03",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E45 - WCW Monday Nitro - Nov 10, 1997.mp4": {
               "date": "1997-11-10",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E46 - WCW Monday Nitro - Nov. 17, 1997.mp4": {
               "date": "1997-11-17",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E47 - WCW Monday Nitro - Nov 24, 1997.mp4": {
               "date": "1997-11-24",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E48 - WCW Monday Nitro - Dec 01, 1997.mp4": {
               "date": "1997-12-01",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E49 - WCW Monday Nitro - Dec. 08, 1997.mp4": {
               "date": "1997-12-08",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E5 - WCW Monday Nitro - Feb 03, 1997.mp4": {
               "date": "1997-02-03",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E50 - WCW Monday Nitro - Dec. 15, 1997.mp4": {
               "date": "1997-12-15",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E51 - WCW Monday Nitro - Dec 22, 1997.mp4": {
               "date": "1997-12-22",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E52 - WCW Monday Nitro - Dec. 29, 1997.mp4": {
               "date": "1997-12-29",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E6 - WCW Monday Nitro - Feb 10, 1997.mp4": {
               "date": "1997-02-10",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E7 - WCW Monday Nitro - Feb. 17, 1997.mp4": {
               "date": "1997-02-17",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E8 - WCW Monday Nitro - Feb 24, 1997.mp4": {
               "date": "1997-02-24",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 3 (1997)/WCW Monday Nitro S3E9 - WCW Monday Nitro - Mar 03, 1997.mp4": {
               "date": "1997-03-03",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E1 - WCW Monday Nitro - Jan. 05, 1998.mp4": {
               "date": "1998-01-05",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E10 - WCW Monday Nitro - Mar. 09, 1998.mp4": {
               "date": "1998-03-09",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E11 - WCW Monday Nitro - Mar. 16, 1998.mp4": {
               "date": "1998-03-16",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E12 - WCW Monday Nitro - Mar. 23, 1998.mp4": {
               "date": "1998-03-23",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E13 - WCW Monday Nitro - Mar. 30, 1998.mp4": {
               "date": "1998-03-30",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E14 - WCW Monday Nitro - Apr. 06, 1998.mp4": {
               "date": "1998-04-06",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E15 - WCW Monday Nitro - Apr. 13, 1998.mp4": {
               "date": "1998-04-13",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E16 - WCW Monday Nitro - Apr. 20, 1998.mp4": {
               "date": "1998-04-20",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E17 - WCW Monday Nitro - Apr. 27, 1998.mp4": {
               "date": "1998-04-27",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E18 - WCW Monday Nitro - May. 04, 1998.mp4": {
               "date": "1998-05-04",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E19 - WCW Monday Nitro - May. 11, 1998.mp4": {
               "date": "1998-05-11",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E2 - WCW Monday Nitro - Jan. 12, 1998.mp4": {
               "date": "1998-01-12",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E20 - WCW Monday Nitro - May. 18, 1998.mp4": {
               "date": "1998-05-18",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E21 - WCW Monday Nitro - May. 25, 1998.mp4": {
               "date": "1998-05-25",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E22 - WCW Monday Nitro - Jun. 01, 1998.mp4": {
               "date": "1998-06-01",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E23 - WCW Monday Nitro - Jun. 08, 1998.mp4": {
               "date": "1998-06-08",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E24 - WCW Monday Nitro - Jun. 15, 1998.mp4": {
               "date": "1998-06-15",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E25 - WCW Monday Nitro - Jun. 22, 1998.mp4": {
               "date": "1998-06-22",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E26 - WCW Monday Nitro - Jun. 29, 1998.mp4": {
               "date": "1998-06-29",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E27 - WCW Monday Nitro - Jul. 06, 1998.mp4": {
               "date": "1998-07-06",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E28 - WCW Monday Nitro - Jul. 13, 1998.mp4": {
               "date": "1998-07-13",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E29 - WCW Monday Nitro - Jul. 20, 1998.mp4": {
               "date": "1998-07-20",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E3 - WCW Monday Nitro - Jan. 19, 1998.mp4": {
               "date": "1998-01-19",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E30 - WCW Monday Nitro - Jul. 27, 1998.mp4": {
               "date": "1998-07-27",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E31 - WCW Monday Nitro - Aug. 03, 1998.mp4": {
               "date": "1998-08-03",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E32 - WCW Monday Nitro - Aug. 10, 1998.mp4": {
               "date": "1998-08-10",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E33 - WCW Monday Nitro - Aug. 17, 1998.mp4": {
               "date": "1998-08-17",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E34 - WCW Monday Nitro - Aug. 24, 1998.mp4": {
               "date": "1998-08-24",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E35 - WCW Monday Nitro - Aug. 31, 1998.mp4": {
               "date": "1998-08-31",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E36 - WCW Monday Nitro - Sep. 07, 1998.mp4": {
               "date": "1998-09-07",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E37 - WCW Monday Nitro - Sep. 14, 1998.mp4": {
               "date": "1998-09-14",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E38 - WCW Monday Nitro - Sep. 21, 1998.mp4": {
               "date": "1998-09-21",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E39 - WCW Monday Nitro - Sep. 28, 1998.mp4": {
               "date": "1998-09-28",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E4 - WCW Monday Nitro - Jan. 26, 1998.mp4": {
               "date": "1998-01-26",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E40 - WCW Monday Nitro - Oct. 05, 1998.mp4": {
               "date": "1998-10-05",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E41 - WCW Monday Nitro - Oct. 12, 1998.mp4": {
               "date": "1998-10-12",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E42 - WCW Monday Nitro - Oct. 19, 1998.mp4": {
               "date": "1998-10-19",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E43 - WCW Monday Nitro - Oct. 26, 1998.mp4": {
               "date": "1998-10-26",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E44 - WCW Monday Nitro - Nov. 02, 1998.mp4": {
               "date": "1998-11-02",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E45 - WCW Monday Nitro - Nov. 09, 1998.mp4": {
               "date": "1998-11-09",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E46 - WCW Monday Nitro - Nov. 16, 1998.mp4": {
               "date": "1998-11-16",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E47 - WCW Monday Nitro - Nov. 23, 1998.mp4": {
               "date": "1998-11-23",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E48 - WCW Monday Nitro - Nov. 30, 1998.mp4": {
               "date": "1998-11-30",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E49 - WCW Monday Nitro - Dec. 07, 1998.mp4": {
               "date": "1998-12-07",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E5 - WCW Monday Nitro - Feb. 02, 1998.mp4": {
               "date": "1998-02-02",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E50 - WCW Monday Nitro - Dec. 14, 1998.mp4": {
               "date": "1998-12-14",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E51 - WCW Monday Nitro - Dec. 21, 1998.mp4": {
               "date": "1998-12-21",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E52 - WCW Monday Nitro - Dec. 28, 1998.mp4": {
               "date": "1998-12-28",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E6 - WCW Monday Nitro - Feb. 09, 1998.mp4": {
               "date": "1998-02-09",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E7 - WCW Monday Nitro - Feb. 16, 1998.mp4": {
               "date": "1998-02-16",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E8 - WCW Monday Nitro - Feb. 23, 1998.mp4": {
               "date": "1998-02-23",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 4 (1998)/WCW Monday Nitro S4E9 - WCW Monday Nitro - Mar. 02, 1998.mp4": {
               "date": "1998-03-02",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E1 - WCW Monday Nitro - Jan. 04, 1999.mp4": {
               "date": "1999-01-04",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E10 - WCW Monday Nitro - Mar. 08, 1999.mp4": {
               "date": "1999-03-08",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E11 - WCW Monday Nitro - Mar. 15, 1999.mp4": {
               "date": "1999-03-15",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E12 - WCW Monday Nitro - Mar. 22, 1999.mp4": {
               "date": "1999-03-22",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E13 - WCW Monday Nitro - Mar. 29, 1999.mp4": {
               "date": "1999-03-29",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E14 - WCW Monday Nitro - Apr. 05, 1999.mp4": {
               "date": "1999-04-05",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E15 - WCW Monday Nitro - Apr. 12, 1999.mp4": {
               "date": "1999-04-12",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E16 - WCW Monday Nitro - Apr. 19, 1999.mp4": {
               "date": "1999-04-19",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E17 - WCW Monday Nitro - Apr. 26, 1999.mp4": {
               "date": "1999-04-26",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E18 - WCW Monday Nitro - May. 03, 1999.mp4": {
               "date": "1999-05-03",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E19 - WCW Monday Nitro - May. 17, 1999.mp4": {
               "date": "1999-05-17",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E2 - WCW Monday Nitro - Jan. 11, 1999.mp4": {
               "date": "1999-01-11",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E20 - WCW Monday Nitro - May. 24, 1999.mp4": {
               "date": "1999-05-24",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E21 - WCW Monday Nitro - May. 31, 1999.mp4": {
               "date": "1999-05-31",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E22 - WCW Monday Nitro - Jun. 07, 1999.mp4": {
               "date": "1999-06-07",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E23 - WCW Monday Nitro - Jun. 14, 1999.mp4": {
               "date": "1999-06-14",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E24 - WCW Monday Nitro - Jun. 21, 1999.mp4": {
               "date": "1999-06-21",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E25 - WCW Monday Nitro - Jun. 28, 1999.mp4": {
               "date": "1999-06-28",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E26 - WCW Monday Nitro - Jul. 05, 1999.mp4": {
               "date": "1999-07-05",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E27 - WCW Monday Nitro - Jul. 12, 1999.mp4": {
               "date": "1999-07-12",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E28 - WCW Monday Nitro - Jul. 19, 1999.mp4": {
               "date": "1999-07-19",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E29 - WCW Monday Nitro - Jul. 26, 1999.mp4": {
               "date": "1999-07-26",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E3 - WCW Monday Nitro - Jan. 18, 1999.mp4": {
               "date": "1999-01-18",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E30 - WCW Monday Nitro - Aug. 02, 1999.mp4": {
               "date": "1999-08-02",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E31 - WCW Monday Nitro - Aug. 09, 1999.mp4": {
               "date": "1999-08-09",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E32 - WCW Monday Nitro - Aug. 16, 1999.mp4": {
               "date": "1999-08-16",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E33 - WCW Monday Nitro - Aug. 23, 1999.mp4": {
               "date": "1999-08-23",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E34 - WCW Monday Nitro - Aug. 30, 1999.mp4": {
               "date": "1999-08-30",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E35 - WCW Monday Nitro - Sep. 06, 1999.mp4": {
               "date": "1999-09-06",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E36 - WCW Monday Nitro - Sep. 13, 1999.mp4": {
               "date": "1999-09-13",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E37 - WCW Monday Nitro - Sep. 20, 1999.mp4": {
               "date": "1999-09-20",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E38 - WCW Monday Nitro - Sep. 27, 1999.mp4": {
               "date": "1999-09-27",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E39 - WCW Monday Nitro - Oct. 04, 1999.mp4": {
               "date": "1999-10-04",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E4 - WCW Monday Nitro - Jan. 25, 1999.mp4": {
               "date": "1999-01-25",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E40 - WCW Monday Nitro - Oct. 11, 1999.mp4": {
               "date": "1999-10-11",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E41 - WCW Monday Nitro - Oct. 18, 1999.mp4": {
               "date": "1999-10-18",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E42 - WCW Monday Nitro - Oct. 25, 1999.mp4": {
               "date": "1999-10-25",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E43 - WCW Monday Nitro - Nov. 01, 1999.mp4": {
               "date": "1999-11-01",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E44 - WCW Monday Nitro - Nov. 08, 1999.mp4": {
               "date": "1999-11-08",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E45 - WCW Monday Nitro - Nov. 15, 1999.mp4": {
               "date": "1999-11-15",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E46 - WCW Monday Nitro - Nov. 22, 1999.mp4": {
               "date": "1999-11-22",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E47 - WCW Monday Nitro - Nov. 29, 1999.mp4": {
               "date": "1999-11-29",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E48 - WCW Monday Nitro - Dec. 06, 1999.mp4": {
               "date": "1999-12-06",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E49 - WCW Monday Nitro - Dec. 13, 1999.mp4": {
               "date": "1999-12-13",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E5 - WCW Monday Nitro - Feb. 01, 1999.mp4": {
               "date": "1999-02-01",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E50 - WCW Monday Nitro - Dec. 20, 1999.mp4": {
               "date": "1999-12-20",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E51 - WCW Monday Nitro - Dec. 27, 1999.mp4": {
               "date": "1999-12-27",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E52 - WCW Monday Nitro - Dec. 29, 1999.mp4": {
               "date": "1999-12-29",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E6 - WCW Monday Nitro - Feb. 08, 1999.mp4": {
               "date": "1999-02-08",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E7 - WCW Monday Nitro - Feb. 15, 1999.mp4": {
               "date": "1999-02-15",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E8 - WCW Monday Nitro - Feb. 22, 1999.mp4": {
               "date": "1999-02-22",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 5 (1999)/WCW Monday Nitro S5E9 - WCW Monday Nitro - Mar. 01, 1999.mp4": {
               "date": "1999-03-01",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E1 - WCW Monday Nitro - Jan. 03, 2000.mp4": {
               "date": "2000-01-03",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E10 - WCW Monday Nitro - Mar. 06, 2000.mp4": {
               "date": "2000-03-06",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E11 - WCW Monday Nitro - Mar. 13, 2000.mp4": {
               "date": "2000-03-13",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E12 - WCW Monday Nitro - Mar. 20, 2000.mp4": {
               "date": "2000-03-20",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E13 - WCW Monday Nitro - Mar. 27, 2000.mp4": {
               "date": "2000-03-27",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E14 - WCW Monday Nitro - Apr. 03, 2000.mp4": {
               "date": "2000-04-03",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E15 - WCW Monday Nitro - Apr. 10, 2000.mp4": {
               "date": "2000-04-10",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E16 - WCW Monday Nitro - Apr. 17, 2000.mp4": {
               "date": "2000-04-17",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E17 - WCW Monday Nitro - Apr. 24, 2000.mp4": {
               "date": "2000-04-24",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E18 - WCW Monday Nitro - May. 01, 2000.mp4": {
               "date": "2000-05-01",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E19 - WCW Monday Nitro - May. 08, 2000.mp4": {
               "date": "2000-05-08",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E2 - WCW Monday Nitro - Jan. 10, 2000.mp4": {
               "date": "2000-01-10",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E20 - WCW Monday Nitro - May. 15, 2000.mp4": {
               "date": "2000-05-15",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E21 - WCW Monday Nitro - May. 22, 2000.mp4": {
               "date": "2000-05-22",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E22 - WCW Monday Nitro - May. 29, 2000.mp4": {
               "date": "2000-05-29",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E23 - WCW Monday Nitro - Jun. 05, 2000.mp4": {
               "date": "2000-06-05",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E24 - WCW Monday Nitro - Jun. 12, 2000.mp4": {
               "date": "2000-06-12",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E25 - WCW Monday Nitro - Jun. 19, 2000.mp4": {
               "date": "2000-06-19",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E26 - WCW Monday Nitro - Jun. 26, 2000.mp4": {
               "date": "2000-06-26",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E27 - WCW Monday Nitro - Jul. 03, 2000.mp4": {
               "date": "2000-07-03",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E28 - WCW Monday Nitro - Jul. 10, 2000.mp4": {
               "date": "2000-07-10",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E29 - WCW Monday Nitro - Jul. 18, 2000.mp4": {
               "date": "2000-07-18",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E3 - WCW Monday Nitro - Jan. 17, 2000.mp4": {
               "date": "2000-01-17",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E30 - WCW Monday Nitro - Jul. 24, 2000.mp4": {
               "date": "2000-07-24",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E31 - WCW Monday Nitro - Jul. 31, 2000.mp4": {
               "date": "2000-07-31",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E32 - WCW Monday Nitro - Aug. 07, 2000.mp4": {
               "date": "2000-08-07",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E33 - WCW Monday Nitro - Aug. 14, 2000.mp4": {
               "date": "2000-08-14",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E34 - WCW Monday Nitro - Aug. 21, 2000.mp4": {
               "date": "2000-08-21",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E35 - WCW Monday Nitro - Aug. 28, 2000.mp4": {
               "date": "2000-08-28",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E36 - WCW Monday Nitro - Sep. 04, 2000.mp4": {
               "date": "2000-09-04",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E37 - WCW Monday Nitro - Sep. 11, 2000.mp4": {
               "date": "2000-09-11",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E38 - WCW Monday Nitro - Sep. 18, 2000.mp4": {
               "date": "2000-09-18",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E39 - WCW Monday Nitro - Sep. 25, 2000.mp4": {
               "date": "2000-09-25",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E4 - WCW Monday Nitro - Jan. 24, 2000.mp4": {
               "date": "2000-01-24",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E40 - WCW Monday Nitro - Oct. 02, 2000.mp4": {
               "date": "2000-10-02",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E41 - WCW Monday Nitro - Oct. 09, 2000.mp4": {
               "date": "2000-10-09",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E42 - WCW Monday Nitro - Oct. 16, 2000.mp4": {
               "date": "2000-10-16",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E43 - WCW Monday Nitro - Oct. 23, 2000.mp4": {
               "date": "2000-10-23",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E44 - WCW Monday Nitro - Oct. 30, 2000.mp4": {
               "date": "2000-10-30",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E45 - WCW Monday Nitro - Nov. 06, 2000.mp4": {
               "date": "2000-11-06",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E46 - WCW Monday Nitro - Nov. 13, 2000.mp4": {
               "date": "2000-11-13",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E47 - WCW Monday Nitro - Nov. 20, 2000.mp4": {
               "date": "2000-11-20",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E48 - WCW Monday Nitro - Nov. 27, 2000.mp4": {
               "date": "2000-11-27",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E49 - WCW Monday Nitro - Dec. 04, 2000.mp4": {
               "date": "2000-12-04",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E5 - WCW Monday Nitro - Jan. 31, 2000.mp4": {
               "date": "2000-01-31",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E50 - WCW Monday Nitro - Dec. 12, 2000.mp4": {
               "date": "2000-12-12",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E51 - WCW Monday Nitro - Dec. 18, 2000.mp4": {
               "date": "2000-12-18",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E52 - WCW Monday Nitro - Dec. 25, 2000.mp4": {
               "date": "2000-12-25",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E6 - WCW Monday Nitro - Feb. 07, 2000.mp4": {
               "date": "2000-02-07",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E7 - WCW Monday Nitro - Feb. 14, 2000.mp4": {
               "date": "2000-02-14",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E8 - WCW Monday Nitro - Feb. 21, 2000.mp4": {
               "date": "2000-02-21",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 6 (2000)/WCW Monday Nitro S6E9 - WCW Monday Nitro - Feb. 28, 2000.mp4": {
               "date": "2000-02-28",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 7 (2001)/WCW Monday Nitro S7E1 - WCW Monday Nitro - Jan. 01, 2001.mp4": {
               "date": "2001-01-01",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 7 (2001)/WCW Monday Nitro S7E10 - WCW Monday Nitro - Mar. 05, 2001.mp4": {
               "date": "2001-03-05",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 7 (2001)/WCW Monday Nitro S7E11 - WCW Monday Nitro - Mar. 12, 2001.mp4": {
               "date": "2001-03-12",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 7 (2001)/WCW Monday Nitro S7E12 - WCW Monday Nitro - Mar. 19, 2001.mp4": {
               "date": "2001-03-19",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 7 (2001)/WCW Monday Nitro S7E13 - WCW Monday Nitro - Mar. 26, 2001.mp4": {
               "date": "2001-03-26",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 7 (2001)/WCW Monday Nitro S7E2 - WCW Monday Nitro - Jan. 08, 2001.mp4": {
               "date": "2001-01-08",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 7 (2001)/WCW Monday Nitro S7E3 - WCW Monday Nitro - Jan. 15, 2001.mp4": {
               "date": "2001-01-15",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 7 (2001)/WCW Monday Nitro S7E4 - WCW Monday Nitro - Jan. 23, 2001.mp4": {
               "date": "2001-01-23",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 7 (2001)/WCW Monday Nitro S7E5 - WCW Monday Nitro - Jan. 29, 2001.mp4": {
               "date": "2001-01-29",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 7 (2001)/WCW Monday Nitro S7E6 - WCW Monday Nitro - Feb. 05, 2001.mp4": {
               "date": "2001-02-05",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 7 (2001)/WCW Monday Nitro S7E7 - WCW Monday Nitro - Feb. 12, 2001.mp4": {
               "date": "2001-02-12",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 7 (2001)/WCW Monday Nitro S7E8 - WCW Monday Nitro - Feb. 19, 2001.mp4": {
               "date": "2001-02-19",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW Monday Nitro/Season 7 (2001)/WCW Monday Nitro S7E9 - WCW Monday Nitro - Feb. 26, 2001.mp4": {
               "date": "2001-02-26",
               "show": "Nitro",
-              "title": "Monday Nitro"
+              "title": "Nitro"
             },
             "WCW PPV/1986/WCW The Great American Bash 1986E1 - Jul. 5, 1986.mp4": {
               "date": "1986-07-05",
@@ -108888,6 +108879,266 @@
               "date": "1992-03-28",
               "show": "Saturday Night",
               "title": "World Championship Wrestling"
+            },
+            "WCW Main Event/WCW Main Event     Apr 24 1994.mkv": {
+              "date": "1994-04-24",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Aug 14 1994.mkv": {
+              "date": "1994-08-14",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Aug 21 1994.mkv": {
+              "date": "1994-08-21",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Dec 18 1994.mkv": {
+              "date": "1994-12-18",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Dec 23 1990.mkv": {
+              "date": "1990-12-23",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Dec 30 1990.mkv": {
+              "date": "1990-12-30",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Jan 09 1994.mkv": {
+              "date": "1994-01-09",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Jan 23 1994.mkv": {
+              "date": "1994-01-23",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Jul 03 1994.mkv": {
+              "date": "1994-07-03",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Jul 31 1994.mkv": {
+              "date": "1994-07-31",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Jun 05 1994.mkv": {
+              "date": "1994-06-05",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Mar 13 1994.mkv": {
+              "date": "1994-03-13",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Mar 20 1994.mkv": {
+              "date": "1994-03-20",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     May 01 1994.mkv": {
+              "date": "1994-05-01",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     May 08 1994.mkv": {
+              "date": "1994-05-08",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     May 15 1994.mkv": {
+              "date": "1994-05-15",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Nov 06 1994.mkv": {
+              "date": "1994-11-06",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Nov 20 1994.mkv": {
+              "date": "1994-11-20",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Oct 09 1994.mkv": {
+              "date": "1994-10-09",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Sep 18 1994.mkv": {
+              "date": "1994-09-18",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Main Event/WCW Main Event     Sep 25 1994.mkv": {
+              "date": "1994-09-25",
+              "show": "Main Event",
+              "title": "Main Event"
+            },
+            "WCW Saturday Night/WCW.Saturday.Night.1994.08.27.1080p.WEB.VP9-HEEL.mkv": {
+              "date": "1994-08-27",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E20 - 05-15-1993.mkv": {
+              "date": "1993-05-15",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E21 - 05-22-1993.mkv": {
+              "date": "1993-05-22",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E22 - 05-29-1993.mkv": {
+              "date": "1993-05-29",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E23 - 06-05-1993.mkv": {
+              "date": "1993-06-05",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E25 - 06-19-1993.mkv": {
+              "date": "1993-06-19",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E30 - 07-24-1993.mkv": {
+              "date": "1993-07-24",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E31 - 07-31-1993.mkv": {
+              "date": "1993-07-31",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E32 - 08-07-1993.mkv": {
+              "date": "1993-08-07",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E33 - 08-14-1993.mkv": {
+              "date": "1993-08-14",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E34 - 08-21-1993.mkv": {
+              "date": "1993-08-21",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E35 - 08-28-1993.mkv": {
+              "date": "1993-08-28",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E38 - 09-18-1993.mkv": {
+              "date": "1993-09-18",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E39 - 09-25-1993.mkv": {
+              "date": "1993-09-25",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E40 - 10-02-1993.mkv": {
+              "date": "1993-10-02",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E41 - 10-09-1993.mkv": {
+              "date": "1993-10-09",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E42 - 10-16-1993.mkv": {
+              "date": "1993-10-16",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E43 - 10-23-1993.mkv": {
+              "date": "1993-10-23",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E44 - 10-30-1993.mkv": {
+              "date": "1993-10-30",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E46 - 11-13-1993.mkv": {
+              "date": "1993-11-13",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E47 - 11-20-1993.mkv": {
+              "date": "1993-11-20",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E49 - 12-04-1993.mkv": {
+              "date": "1993-12-04",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E50 - 12-11-1993.mkv": {
+              "date": "1993-12-11",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E51 - 12-18-1993.mkv": {
+              "date": "1993-12-18",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1993E52 - 12-25-1993.mkv": {
+              "date": "1993-12-25",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1994E01 - 01-01-1994.mkv": {
+              "date": "1994-01-01",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1994E03 - 01-15-1994.mkv": {
+              "date": "1994-01-15",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1994E06 - 02-05-1994.mkv": {
+              "date": "1994-02-05",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1994E07 - 02-12-1994.mkv": {
+              "date": "1994-02-12",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1994E08 - 02-19-1994.mkv": {
+              "date": "1994-02-19",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
+            },
+            "WCW Saturday Night/World Championship Wrestling WCW Saturday Night - S1994E09 - 02-26-1994.mkv": {
+              "date": "1994-02-26",
+              "show": "Saturday Night",
+              "title": "Saturday Night"
             }
           },
           "mappedOnly": true

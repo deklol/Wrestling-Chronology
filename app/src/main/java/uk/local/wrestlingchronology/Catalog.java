@@ -17,6 +17,11 @@ final class Catalog {
     if (!episodes.isEmpty()) return;
     hiddenShows = new HashSet<>(prefs(context).getStringSet("hidden_shows", Collections.emptySet()));
     long started = android.os.SystemClock.elapsedRealtime();
+    if (Company.current.indie) {
+      replace(Indies.library(context), false);
+      loadedPack = null;
+      return;
+    }
     JSONObject cached = RemoteLibrary.cached(context);
     JSONObject pack;
     boolean needsEarlierNjpw = cached != null && Company.current == Company.NJPW
@@ -178,7 +183,7 @@ final class Catalog {
   static synchronized void replace(JSONObject data) throws Exception { replace(data, true); }
 
   private static synchronized void replace(JSONObject data, boolean normalize) throws Exception {
-    if (normalize) ArchiveIdentity.normalize(data);
+    if (normalize && !Company.current.indie) ArchiveIdentity.normalize(data);
     ArrayList<Episode> next = new ArrayList<>();
     JSONArray rows = data.getJSONArray("episodes");
     for (int i = 0; i < rows.length(); i++) {
@@ -191,13 +196,14 @@ final class Catalog {
       // Eligibility changes the view, not the stored source catalogue. Removing
       // the final source here produced invalid cached rows and forced reimports.
       for (int j = item.sources.size() - 1; j >= 0; j--)
-        if (!SourcePolicy.eligible(item.sources.get(j))) item.sources.remove(j);
+        if (!Company.current.indie && !SourcePolicy.eligible(item.sources.get(j))) item.sources.remove(j);
       if (item.date.compareTo(Company.current.firstDate) >= 0
           && item.date.compareTo(Company.current.lastDate) <= 0
           && !item.sources.isEmpty()) next.add(item);
     }
     next.sort(
-        Comparator.comparing((Episode item) -> item.date)
+        Comparator.comparingInt((Episode item) -> item.year == 0 ? 9999 : item.year)
+            .thenComparing(item -> item.date.isEmpty() ? "9999" : item.date)
             .thenComparingInt(item -> showOrder(item.show))
             .thenComparingInt(item -> item.json.optInt("eventOrder", 0))
             .thenComparing(item -> item.title));
@@ -373,6 +379,7 @@ final class Catalog {
   }
 
   static String dateLabel(String iso) {
+    if (iso == null || iso.isEmpty()) return "Date unavailable";
     try {
       return new java.text.SimpleDateFormat("d MMM yyyy", Locale.UK)
           .format(new java.text.SimpleDateFormat("yyyy-MM-dd", Locale.UK).parse(iso));
@@ -436,7 +443,7 @@ final class Catalog {
     }
 
     String heading() {
-      return show.equals("PPV")
+      return show.equals("PPV") || Company.current.indie
           ? title
           : Company.current == Company.WCW && show.equals("Saturday Night") && date.compareTo("1992-04-04") < 0
               ? "World Championship Wrestling"

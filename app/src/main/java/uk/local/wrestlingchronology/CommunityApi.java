@@ -19,6 +19,12 @@ final class CommunityApi {
 
   CommunityApi(Context context) {
     prefs = context.getApplicationContext().getSharedPreferences("community_private", Context.MODE_PRIVATE);
+    synchronized(AUTH) {
+      if(!BuildConfig.COMMUNITY_BASE_URL.equals(prefs.getString("tokenOrigin",""))) {
+        // Keep the installation identity and ownership; tokens belong to one API origin.
+        prefs.edit().remove("token").remove("expires").putString("tokenOrigin",BuildConfig.COMMUNITY_BASE_URL).commit();
+      }
+    }
   }
 
   static String newIdentity() {
@@ -110,7 +116,7 @@ final class CommunityApi {
       if (stream != null) try (InputStream in = stream) {
         byte[] block = new byte[4096]; int n;
         while ((n = in.read(block)) != -1) {
-          if (buffer.size() + n > 256 * 1024) throw new IOException("Community response is too large.");
+          if (buffer.size() + n > (path.equals(CollectionApi.PATH) ? 2 * 1024 * 1024 : 256 * 1024)) throw new IOException("Community response is too large.");
           buffer.write(block, 0, n);
         }
       }

@@ -13,6 +13,14 @@ final class SourcePolicy {
               + "full[ ._-]+match)\\b");
 
   static boolean eligible(JSONObject source) {
+    if (Company.current == Company.WWE) {
+      String language = source.optString("audioLanguage", source.optString("language"));
+      String identity = source.optString("filename") + " " + source.optString("title")
+          + " " + source.optString("label") + " " + source.optString("authorUrl");
+      if (language.matches("(?i)(?:es|spa|spanish|ar|ara|arabic)")
+          || Patterns.get("(?i)\\b(?:Spanish|Arabic|Espa[nñ]ol|WWEArabic|WWEEspanol)\\b|العربية")
+              .matcher(identity).find()) return false;
+    }
     if (!"archive".equals(source.optString("type"))) return true;
     // An incomplete year collection can contain complete episodes: inspect the file only.
     String filename = ArchiveIdentity.filename(source).replace('_', ' ');
@@ -27,11 +35,12 @@ final class SourcePolicy {
   }
 
   static int minimumSeconds(String show) {
+    if (Arrays.asList("HDNet", "ROH TV", "High Impact TV", "HonorClub").contains(show)) return 2300;
     if (Arrays.asList("NJPW STRONG", "STRONG On Demand", "NJPW on AXS").contains(show)) return 1200;
     if (Arrays.asList("Dark", "Dark: Elevation", "NXT Level Up").contains(show)) return 300;
     if (Arrays.asList("205 Live", "NXT UK", "Main Event", "The Deadly Draw").contains(show)) return 600;
     if (Arrays.asList("NXT", "Rampage", "Battle of the Belts").contains(show)) return 1200;
-    if (Arrays.asList("Velocity", "Xplosion", "Metal", "Mania", "Action Zone", "All American Wrestling",
+    if (Arrays.asList("Superstars", "Tuesday Night Titans", "ECW on Sci-Fi", "Velocity", "Xplosion", "Metal", "Mania", "Action Zone", "All American Wrestling",
         "All Star Wrestling", "Championship Wrestling", "Livewire", "Shotgun Saturday Night",
         "Wrestling Spotlight", "Wrestling Challenge", "Evolve", "ECW", "Cruiserweight Classic", "Mae Young Classic").contains(show)) return 1200;
     if (show.equals("Heat")

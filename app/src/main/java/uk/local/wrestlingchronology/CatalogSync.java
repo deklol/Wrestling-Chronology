@@ -403,6 +403,16 @@ final class CatalogSync {
   }
 
   static Result refresh(Context context, boolean full) throws Exception {
+    if (Company.current.indie) {
+      synchronized (CatalogSync.class) {
+        if (busy) return new Result(0, 0);
+        busy = true;
+      }
+      try {
+        progress(0, 1, "Checking " + Company.current.name + " sources");
+        return Indies.refresh(context);
+      } finally { busy = false; }
+    }
     return RemoteLibrary.refresh(context);
   }
 

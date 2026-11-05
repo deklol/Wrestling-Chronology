@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "njpw",
-  "revision": 1793821910,
+  "revision": 1793862397,
   "catalogue": {
     "company": "njpw",
     "episodes": [
@@ -1844,6 +1844,56 @@
         "discoveredAt": 0
       },
       {
+        "id": "njpw:2014-05-10:ppv:rohnjpwglobalwars",
+        "date": "2014-05-10",
+        "year": 2014,
+        "show": "PPV",
+        "title": "ROH NJPW Global Wars",
+        "description": "",
+        "duration": 9680,
+        "thumbnail": "https://archive.org/download/rohevents02/rohevents02.thumbs/2014/2014.05.10%20ROH%20NJPW%20Global%20Wars_004840.jpg",
+        "poster": "https://archive.org/download/rohevents02/rohevents02.thumbs/2014/2014.05.10%20ROH%20NJPW%20Global%20Wars_004840.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/rohevents02/2014/2014.05.10%20ROH%20NJPW%20Global%20Wars.mp4",
+            "filename": "2014/2014.05.10 ROH NJPW Global Wars.mp4",
+            "duration": 9680,
+            "height": 480,
+            "bytes": 4466053540,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793856795468
+      },
+      {
+        "id": "njpw:2014-05-17:ppv:rohnjpwwaroftheworlds",
+        "date": "2014-05-17",
+        "year": 2014,
+        "show": "PPV",
+        "title": "ROH NJPW War Of The Worlds",
+        "description": "",
+        "duration": 11686,
+        "thumbnail": "https://archive.org/download/rohevents02/rohevents02.thumbs/2014/2014.05.17%20ROH%20NJPW%20War%20Of%20The%20Worlds_005843.jpg",
+        "poster": "https://archive.org/download/rohevents02/rohevents02.thumbs/2014/2014.05.17%20ROH%20NJPW%20War%20Of%20The%20Worlds_005843.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/rohevents02/2014/2014.05.17%20ROH%20NJPW%20War%20Of%20The%20Worlds.mp4",
+            "filename": "2014/2014.05.17 ROH NJPW War Of The Worlds.mp4",
+            "duration": 11686,
+            "height": 480,
+            "bytes": 5402294227,
+            "label": "Internet Archive \u00b7 480p",
+            "language": "",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793856795468
+      },
+      {
         "id": "njpw:2015-01-04:ppv:wrestlekingdom92015",
         "date": "2015-01-04",
         "year": 2015,
@@ -1976,6 +2026,81 @@
         "discoveredAt": 0
       },
       {
+        "id": "njpw:2018-05-10:ppv:rohnjpwwaroftheworlds2018night1",
+        "date": "2018-05-10",
+        "year": 2018,
+        "show": "PPV",
+        "title": "ROH NJPW War Of The Worlds 2018 - Night 1",
+        "description": "",
+        "duration": 10851,
+        "thumbnail": "https://archive.org/download/rohevents02/rohevents02.thumbs/2018/2018.05.10%20ROH%20NJPW%20War%20Of%20The%20Worlds%202018%20-%20Night%201_005425.jpg",
+        "poster": "https://archive.org/download/rohevents02/rohevents02.thumbs/2018/2018.05.10%20ROH%20NJPW%20War%20Of%20The%20Worlds%202018%20-%20Night%201_005425.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/rohevents02/2018/2018.05.10%20ROH%20NJPW%20War%20Of%20The%20Worlds%202018%20-%20Night%201.mp4",
+            "filename": "2018/2018.05.10 ROH NJPW War Of The Worlds 2018 - Night 1.mp4",
+            "duration": 10851,
+            "height": 1080,
+            "bytes": 5017098164,
+            "label": "Internet Archive \u00b7 1080p",
+            "language": "",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793856795499
+      },
+      {
+        "id": "njpw:2018-05-11:ppv:rohnjpwwaroftheworlds2018night2",
+        "date": "2018-05-11",
+        "year": 2018,
+        "show": "PPV",
+        "title": "ROH NJPW War Of The Worlds 2018 - Night 2",
+        "description": "",
+        "duration": 11864,
+        "thumbnail": "https://archive.org/download/rohevents02/rohevents02.thumbs/2018/2018.05.11%20ROH%20NJPW%20War%20Of%20The%20Worlds%202018%20-%20Night%202_005932.jpg",
+        "poster": "https://archive.org/download/rohevents02/rohevents02.thumbs/2018/2018.05.11%20ROH%20NJPW%20War%20Of%20The%20Worlds%202018%20-%20Night%202_005932.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/rohevents02/2018/2018.05.11%20ROH%20NJPW%20War%20Of%20The%20Worlds%202018%20-%20Night%202.mp4",
+            "filename": "2018/2018.05.11 ROH NJPW War Of The Worlds 2018 - Night 2.mp4",
+            "duration": 11864,
+            "height": 1080,
+            "bytes": 5477014723,
+            "label": "Internet Archive \u00b7 1080p",
+            "language": "",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793856795499
+      },
+      {
+        "id": "njpw:2018-05-12:ppv:rohnjpwwaroftheworlds2018night3",
+        "date": "2018-05-12",
+        "year": 2018,
+        "show": "PPV",
+        "title": "ROH NJPW War Of The Worlds 2018 - Night 3",
+        "description": "",
+        "duration": 9688,
+        "thumbnail": "https://archive.org/download/rohevents02/rohevents02.thumbs/2018/2018.05.12%20ROH%20NJPW%20War%20Of%20The%20Worlds%202018%20-%20Night%203_004844.jpg",
+        "poster": "https://archive.org/download/rohevents02/rohevents02.thumbs/2018/2018.05.12%20ROH%20NJPW%20War%20Of%20The%20Worlds%202018%20-%20Night%203_004844.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/rohevents02/2018/2018.05.12%20ROH%20NJPW%20War%20Of%20The%20Worlds%202018%20-%20Night%203.mp4",
+            "filename": "2018/2018.05.12 ROH NJPW War Of The Worlds 2018 - Night 3.mp4",
+            "duration": 9688,
+            "height": 1080,
+            "bytes": 4473512201,
+            "label": "Internet Archive \u00b7 1080p",
+            "language": "",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793856795499
+      },
+      {
         "id": "njpw:2018-06-09:ppv:content",
         "date": "2018-06-09",
         "year": 2018,
@@ -2020,6 +2145,106 @@
         "discoveredAt": 0
       },
       {
+        "id": "njpw:2018-11-07:ppv:rohnjpwglobalwars2018night1",
+        "date": "2018-11-07",
+        "year": 2018,
+        "show": "PPV",
+        "title": "ROH NJPW Global Wars 2018 - Night 1",
+        "description": "",
+        "duration": 9266,
+        "thumbnail": "https://archive.org/download/rohevents02/rohevents02.thumbs/2018/2018.11.07%20ROH%20NJPW%20Global%20Wars%202018%20-%20Night%201_004633.jpg",
+        "poster": "https://archive.org/download/rohevents02/rohevents02.thumbs/2018/2018.11.07%20ROH%20NJPW%20Global%20Wars%202018%20-%20Night%201_004633.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/rohevents02/2018/2018.11.07%20ROH%20NJPW%20Global%20Wars%202018%20-%20Night%201.mp4",
+            "filename": "2018/2018.11.07 ROH NJPW Global Wars 2018 - Night 1.mp4",
+            "duration": 9266,
+            "height": 1080,
+            "bytes": 4269140572,
+            "label": "Internet Archive \u00b7 1080p",
+            "language": "",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793856795502
+      },
+      {
+        "id": "njpw:2018-11-08:ppv:rohnjpwglobalwars2018night2",
+        "date": "2018-11-08",
+        "year": 2018,
+        "show": "PPV",
+        "title": "ROH NJPW Global Wars 2018 - Night 2",
+        "description": "",
+        "duration": 12014,
+        "thumbnail": "https://archive.org/download/rohevents02/rohevents02.thumbs/2018/2018.11.08%20ROH%20NJPW%20Global%20Wars%202018%20-%20Night%202_006007.jpg",
+        "poster": "https://archive.org/download/rohevents02/rohevents02.thumbs/2018/2018.11.08%20ROH%20NJPW%20Global%20Wars%202018%20-%20Night%202_006007.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/rohevents02/2018/2018.11.08%20ROH%20NJPW%20Global%20Wars%202018%20-%20Night%202.mp4",
+            "filename": "2018/2018.11.08 ROH NJPW Global Wars 2018 - Night 2.mp4",
+            "duration": 12014,
+            "height": 1080,
+            "bytes": 5522784137,
+            "label": "Internet Archive \u00b7 1080p",
+            "language": "",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793856795502
+      },
+      {
+        "id": "njpw:2018-11-09:ppv:rohnjpwglobalwars2018night3",
+        "date": "2018-11-09",
+        "year": 2018,
+        "show": "PPV",
+        "title": "ROH NJPW Global Wars 2018 - Night 3",
+        "description": "",
+        "duration": 12818,
+        "thumbnail": "https://archive.org/download/rohevents02/rohevents02.thumbs/2018/2018.11.09%20ROH%20NJPW%20Global%20Wars%202018%20-%20Night%203_006409.jpg",
+        "poster": "https://archive.org/download/rohevents02/rohevents02.thumbs/2018/2018.11.09%20ROH%20NJPW%20Global%20Wars%202018%20-%20Night%203_006409.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/rohevents02/2018/2018.11.09%20ROH%20NJPW%20Global%20Wars%202018%20-%20Night%203.mp4",
+            "filename": "2018/2018.11.09 ROH NJPW Global Wars 2018 - Night 3.mp4",
+            "duration": 12818,
+            "height": 1080,
+            "bytes": 5882568068,
+            "label": "Internet Archive \u00b7 1080p",
+            "language": "",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793856795503
+      },
+      {
+        "id": "njpw:2018-11-11:ppv:rohnjpwglobalwars2018night4",
+        "date": "2018-11-11",
+        "year": 2018,
+        "show": "PPV",
+        "title": "ROH NJPW Global Wars 2018 - Night 4",
+        "description": "",
+        "duration": 12652,
+        "thumbnail": "https://archive.org/download/rohevents02/rohevents02.thumbs/2018/2018.11.11%20ROH%20NJPW%20Global%20Wars%202018%20-%20Night%204_006326.jpg",
+        "poster": "https://archive.org/download/rohevents02/rohevents02.thumbs/2018/2018.11.11%20ROH%20NJPW%20Global%20Wars%202018%20-%20Night%204_006326.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/rohevents02/2018/2018.11.11%20ROH%20NJPW%20Global%20Wars%202018%20-%20Night%204.mp4",
+            "filename": "2018/2018.11.11 ROH NJPW Global Wars 2018 - Night 4.mp4",
+            "duration": 12652,
+            "height": 1080,
+            "bytes": 5818333420,
+            "label": "Internet Archive \u00b7 1080p",
+            "language": "",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793856795503
+      },
+      {
         "id": "njpw:2019-01-04:ppv:wrestlekingdom132019",
         "date": "2019-01-04",
         "year": 2019,
@@ -2040,6 +2265,106 @@
           }
         ],
         "discoveredAt": 0
+      },
+      {
+        "id": "njpw:2019-04-06:ppv:rohnjpwg1supercard",
+        "date": "2019-04-06",
+        "year": 2019,
+        "show": "PPV",
+        "title": "ROH NJPW G1 Supercard",
+        "description": "",
+        "duration": 17100,
+        "thumbnail": "https://archive.org/download/rohevents02/rohevents02.thumbs/2019/2019.04.06%20ROH%20NJPW%20G1%20Supercard_008550.jpg",
+        "poster": "https://archive.org/download/rohevents02/rohevents02.thumbs/2019/2019.04.06%20ROH%20NJPW%20G1%20Supercard_008550.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/rohevents02/2019/2019.04.06%20ROH%20NJPW%20G1%20Supercard.mp4",
+            "filename": "2019/2019.04.06 ROH NJPW G1 Supercard.mp4",
+            "duration": 17100,
+            "height": 1080,
+            "bytes": 7881283690,
+            "label": "Internet Archive \u00b7 1080p",
+            "language": "",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793856795504
+      },
+      {
+        "id": "njpw:2019-05-08:ppv:rohnjpwwaroftheworlds2019night1",
+        "date": "2019-05-08",
+        "year": 2019,
+        "show": "PPV",
+        "title": "ROH NJPW War Of The Worlds 2019 - Night 1",
+        "description": "",
+        "duration": 10914,
+        "thumbnail": "https://archive.org/download/rohevents02/rohevents02.thumbs/2019/2019.05.08%20ROH%20NJPW%20War%20Of%20The%20Worlds%202019%20-%20Night%201_005457.jpg",
+        "poster": "https://archive.org/download/rohevents02/rohevents02.thumbs/2019/2019.05.08%20ROH%20NJPW%20War%20Of%20The%20Worlds%202019%20-%20Night%201_005457.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/rohevents02/2019/2019.05.08%20ROH%20NJPW%20War%20Of%20The%20Worlds%202019%20-%20Night%201.mp4",
+            "filename": "2019/2019.05.08 ROH NJPW War Of The Worlds 2019 - Night 1.mp4",
+            "duration": 10914,
+            "height": 1080,
+            "bytes": 5031647485,
+            "label": "Internet Archive \u00b7 1080p",
+            "language": "",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793856795505
+      },
+      {
+        "id": "njpw:2019-05-09:ppv:rohnjpwwaroftheworlds2019night2",
+        "date": "2019-05-09",
+        "year": 2019,
+        "show": "PPV",
+        "title": "ROH NJPW War Of The Worlds 2019 - Night 2",
+        "description": "",
+        "duration": 11184,
+        "thumbnail": "https://archive.org/download/rohevents02/rohevents02.thumbs/2019/2019.05.09%20ROH%20NJPW%20War%20Of%20The%20Worlds%202019%20-%20Night%202_005592.jpg",
+        "poster": "https://archive.org/download/rohevents02/rohevents02.thumbs/2019/2019.05.09%20ROH%20NJPW%20War%20Of%20The%20Worlds%202019%20-%20Night%202_005592.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/rohevents02/2019/2019.05.09%20ROH%20NJPW%20War%20Of%20The%20Worlds%202019%20-%20Night%202.mp4",
+            "filename": "2019/2019.05.09 ROH NJPW War Of The Worlds 2019 - Night 2.mp4",
+            "duration": 11184,
+            "height": 1080,
+            "bytes": 5169905538,
+            "label": "Internet Archive \u00b7 1080p",
+            "language": "",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793856795505
+      },
+      {
+        "id": "njpw:2019-05-11:ppv:rohnjpwwaroftheworlds2019night3",
+        "date": "2019-05-11",
+        "year": 2019,
+        "show": "PPV",
+        "title": "ROH NJPW War Of The Worlds 2019 - Night 3",
+        "description": "",
+        "duration": 11856,
+        "thumbnail": "https://archive.org/download/rohevents02/rohevents02.thumbs/2019/2019.05.11%20ROH%20NJPW%20War%20Of%20The%20Worlds%202019%20-%20Night%203_005928.jpg",
+        "poster": "https://archive.org/download/rohevents02/rohevents02.thumbs/2019/2019.05.11%20ROH%20NJPW%20War%20Of%20The%20Worlds%202019%20-%20Night%203_005928.jpg",
+        "sources": [
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/rohevents02/2019/2019.05.11%20ROH%20NJPW%20War%20Of%20The%20Worlds%202019%20-%20Night%203.mp4",
+            "filename": "2019/2019.05.11 ROH NJPW War Of The Worlds 2019 - Night 3.mp4",
+            "duration": 11856,
+            "height": 1080,
+            "bytes": 5476344427,
+            "label": "Internet Archive \u00b7 1080p",
+            "language": "",
+            "programme": "PPV"
+          }
+        ],
+        "discoveredAt": 1793856795505
       },
       {
         "id": "njpw:2020-01-04:ppv:wrestlekingdom14night12020",
@@ -20918,7 +21243,7 @@
         "title": "Power Struggle 2026",
         "description": "Power Struggle 2026",
         "duration": 15599,
-        "thumbnail": "",
+        "thumbnail": "https://archive.org/download/njpw-power-struggle-super-junior-tag-league-2026-03-11-26/njpw-power-struggle-super-junior-tag-league-2026-03-11-26.thumbs/NJPW%20Power%20Struggle%20~%20Super%20Junior%20Tag%20League%202026%2003-11-26_005460.jpg",
         "poster": "",
         "sources": [
           {
@@ -20932,8 +21257,7 @@
         ],
         "discoveredAt": 1793757266
       }
-    ],
-    "coverageStart": "1990-01-01"
+    ]
   },
   "sources": {
     "schemaVersion": 1,
@@ -27870,7 +28194,14 @@
           "id": "njpw-death-vegas-invitational-2026-16-04-26",
           "name": "njpw-death-vegas-invitational-2026-16-04-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Death Vegas Invitational 2026 16-04-26.mp4": {
+              "date": "2026-04-16",
+              "show": "PPV",
+              "title": "Death Vegas Invitational 2026 16-04-26"
+            }
+          }
         },
         {
           "id": "njpw.-death.-vegas.-invitational.-2026.04.16.-en.-720p.-web.h-264-ph",
@@ -27882,7 +28213,14 @@
           "id": "njpw-road-to-wrestling-dontaku-2026-day-1-19-04-26",
           "name": "njpw-road-to-wrestling-dontaku-2026-day-1-19-04-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Road To Wrestling Dontaku 2026 Day 1 19-04-26.mp4": {
+              "date": "2026-04-19",
+              "show": "PPV",
+              "title": "Road To Wrestling Dontaku 2026 Day 1 19-04-26"
+            }
+          }
         },
         {
           "id": "njpw.-road.-to.-wrestling.-dontaku.-2026.04.26.-ja.-720p.-web.h-264-hc",
@@ -27894,7 +28232,14 @@
           "id": "njpw-road-to-wrestling-dontaku-2026-day-2-20-04-26",
           "name": "njpw-road-to-wrestling-dontaku-2026-day-2-20-04-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Road To Wrestling Dontaku 2026 Day 2 20-04-26.mp4": {
+              "date": "2026-04-20",
+              "show": "PPV",
+              "title": "Road To Wrestling Dontaku 2026 Day 2 20-04-26"
+            }
+          }
         },
         {
           "id": "njpw.-road.-to.-wrestling.-dontaku.-2026.04.26.-ja.-720p.-web.h-264-hc_202605",
@@ -27906,7 +28251,14 @@
           "id": "njpw-road-to-wrestling-dontaku-2026-day-3-24-04-26",
           "name": "njpw-road-to-wrestling-dontaku-2026-day-3-24-04-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Road To Wrestling Dontaku 2026 Day 3 24-04-26.mp4": {
+              "date": "2026-04-24",
+              "show": "PPV",
+              "title": "Road To Wrestling Dontaku 2026 Day 3 24-04-26"
+            }
+          }
         },
         {
           "id": "njpw-wrestling-redzone-in-hiroshima-2026-25-04-26",
@@ -27918,7 +28270,14 @@
           "id": "njpw-road-to-wrestling-dontaku-2026-day-4-26-04-26",
           "name": "njpw-road-to-wrestling-dontaku-2026-day-4-26-04-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Road To Wrestling Dontaku 2026 Day 4 26-04-26.mp4": {
+              "date": "2026-04-26",
+              "show": "PPV",
+              "title": "Road To Wrestling Dontaku 2026 Day 4 26-04-26"
+            }
+          }
         },
         {
           "id": "njpw-road-to-wrestling-dontaku-2026-day-6-29-04-26",
@@ -27930,13 +28289,27 @@
           "id": "njpw-wrestling-dontaku-2026-day-1-03-05-26",
           "name": "njpw-wrestling-dontaku-2026-day-1-03-05-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Wrestling Dontaku 2026 Day 1 03-05-26.mp4": {
+              "date": "2026-05-03",
+              "show": "PPV",
+              "title": "Wrestling Dontaku 2026 Day 1 03-05-26"
+            }
+          }
         },
         {
           "id": "njpw-wrestling-dontaku-2026-day-2-04-05-26",
           "name": "njpw-wrestling-dontaku-2026-day-2-04-05-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Wrestling Dontaku 2026 Day 2 04-05-26.mp4": {
+              "date": "2026-05-04",
+              "show": "PPV",
+              "title": "Wrestling Dontaku 2026 Day 2 04-05-26"
+            }
+          }
         },
         {
           "id": "njpw.-wrestling.-dontaku.-2026.05.04.-dual.-1080p.-webrip.h-265-pni-x.mp-4",
@@ -27948,7 +28321,14 @@
           "id": "njpw-new-japan-road-in-karatsu-2026-ignition-to-dominion-06-05-26",
           "name": "njpw-new-japan-road-in-karatsu-2026-ignition-to-dominion-06-05-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW New Japan Road In Karatsu 2026 ~ Ignition To Dominion 06-05-26.mp4": {
+              "date": "2026-05-06",
+              "show": "PPV",
+              "title": "New Japan Road In Karatsu 2026 ~ Ignition To Dominion 06-05-26"
+            }
+          }
         },
         {
           "id": "njpw.-best.-of.-the.-super.-junior.-33.2026.05.14.-en.-720p.-web.h-264-hc",
@@ -28164,13 +28544,27 @@
           "id": "njpw-dominion-in-osaka-jo-hall-2026-14-06-26",
           "name": "njpw-dominion-in-osaka-jo-hall-2026-14-06-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Dominion in Osaka-Jo Hall 2026 14-06-26.mp4": {
+              "date": "2026-06-14",
+              "show": "PPV",
+              "title": "Dominion in Osaka-Jo Hall 2026 14-06-26"
+            }
+          }
         },
         {
           "id": "cmll-presenta-njpw-fantastica-mania-mexico-2026-19-06-6",
           "name": "cmll-presenta-njpw-fantastica-mania-mexico-2026-19-06-6",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "CMLL Presenta NJPW Fantastica Mania Mexico 2026 19-06-6.mp4": {
+              "date": "2026-06-19",
+              "show": "PPV",
+              "title": "CMLL Presenta NJPW Fantastica Mania Mexico 2026 19-06-26"
+            }
+          }
         },
         {
           "id": "njpw.-yuji.-nagata.-produce.-blue.-justice.-xviii.-2026.06.20.-dual.-web.h-264-rbb_202607",
@@ -28188,7 +28582,14 @@
           "id": "njpw-road-to-g-1-climax-36-day-3-23-06-26",
           "name": "njpw-road-to-g-1-climax-36-day-3-23-06-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Road To G1 Climax 36 Day 3 23-06-26.mp4": {
+              "date": "2026-06-23",
+              "show": "PPV",
+              "title": "Road To G1 Climax 36 Day 3 23-06-26"
+            }
+          }
         },
         {
           "id": "njpw.-road.-to.-g-1.-climax.-36.2026.06.23.-dual.-1080p.-web.h-264-spa-ze.mkv",
@@ -28212,7 +28613,14 @@
           "id": "njpw-road-to-g-1-climax-in-korakuen-hall-06-07-26",
           "name": "njpw-road-to-g-1-climax-in-korakuen-hall-06-07-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Road to G1 CLIMAX in Korakuen Hall 06-07-26.mp4": {
+              "date": "2026-07-06",
+              "show": "PPV",
+              "title": "Road to G1 CLIMAX in Korakuen Hall 06-07-26"
+            }
+          }
         },
         {
           "id": "njpw.-tiger.-masks.-retirement.-match.-2026.07.07.-dual.-1080p.-web.h-264-spa-ze.mkv-3_20260709_0325",
@@ -28230,13 +28638,27 @@
           "id": "njpw-g-1-climax-36-day-1-11-07-26",
           "name": "njpw-g-1-climax-36-day-1-11-07-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 Day 1 11-07-26.mp4": {
+              "date": "2026-07-11",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 1 11-07-26"
+            }
+          }
         },
         {
           "id": "njpw-g-1-climax-36-day-2-18-07-26",
           "name": "njpw-g-1-climax-36-day-2-18-07-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 Day 2 18-07-26.mp4": {
+              "date": "2026-07-18",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 2 18-07-26"
+            }
+          }
         },
         {
           "id": "njpw.-g-1.-climax.-36.2026.07.18.-dual.-1080p.-web.h-264-spa-ze.mkv",
@@ -28254,13 +28676,27 @@
           "id": "njpw-g-1-climax-36-day-3-19-07-26",
           "name": "njpw-g-1-climax-36-day-3-19-07-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 Day 3 19-07-26.mp4": {
+              "date": "2026-07-19",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 3 19-07-26"
+            }
+          }
         },
         {
           "id": "njpw-g-1-climax-36-day-4-21-07-26",
           "name": "njpw-g-1-climax-36-day-4-21-07-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 Day 4 21-07-26.mp4": {
+              "date": "2026-07-21",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 4 21-07-26"
+            }
+          }
         },
         {
           "id": "njpw.-g-1.-climax.-36.2026.07.21.-en.-720p.-web.h-264-hc",
@@ -28272,7 +28708,14 @@
           "id": "njpw-g-1-climax-36-day-5-22-07-26",
           "name": "njpw-g-1-climax-36-day-5-22-07-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 Day 5 22-07-26.mp4": {
+              "date": "2026-07-22",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 5 22-07-26"
+            }
+          }
         },
         {
           "id": "njpw.-g-1.-climax.-36.2026.07.22.-dual.-1080p.-web.h-264-spa-ze.mkv_20260727_1453",
@@ -28290,7 +28733,14 @@
           "id": "njpw-g-1-climax-36-day-6-25-07-26",
           "name": "njpw-g-1-climax-36-day-6-25-07-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 Day 6 25-07-26.mp4": {
+              "date": "2026-07-25",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 6 25-07-26"
+            }
+          }
         },
         {
           "id": "njpw.-g-1.-climax.-36.2026.07.25.-en.-720p.-web.h-264-hc",
@@ -28308,7 +28758,14 @@
           "id": "njpw-g-1-climax-36-day-7-26-07-26",
           "name": "njpw-g-1-climax-36-day-7-26-07-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 Day 7 26-07-26.mp4": {
+              "date": "2026-07-26",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 7 26-07-26"
+            }
+          }
         },
         {
           "id": "njpw.-g-1.-climax.-36.2026.07.29.-dual.-1080p.-web.h-264-spa-ze.mkv",
@@ -28332,7 +28789,14 @@
           "id": "njpw-g-1-climax-36-day-10-01-08-26",
           "name": "njpw-g-1-climax-36-day-10-01-08-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 -Day 10 01-08-26.mp4": {
+              "date": "2026-08-01",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 10 01-08-26"
+            }
+          }
         },
         {
           "id": "njpw.-g-1.-climax.-36.2026.08.02.-dual.-1080p.-web.h-264-spa-ze.mkv_202608",
@@ -28344,7 +28808,14 @@
           "id": "njpw-g-1-climax-36-day-11-02-08-26",
           "name": "njpw-g-1-climax-36-day-11-02-08-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 Day 11 02-08-26.mp4": {
+              "date": "2026-08-02",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 11 02-08-26"
+            }
+          }
         },
         {
           "id": "njpw.-g-1.-climax.-36.2026.08.02.-dual.-1080p.-web.h-264-spa-ze.mkv",
@@ -28356,7 +28827,14 @@
           "id": "njpw-g-1-climax-36-day-12-06-08-26",
           "name": "njpw-g-1-climax-36-day-12-06-08-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 Day 12 06-08-26.mp4": {
+              "date": "2026-08-06",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 12 06-08-26"
+            }
+          }
         },
         {
           "id": "njpw.-g-1.-climax.-36.2026.08.06.-dual.-1080p.-web.h-264-spa-ze.mkv",
@@ -28368,7 +28846,14 @@
           "id": "njpw-g-1-climax-36-day-13-08-08-26",
           "name": "njpw-g-1-climax-36-day-13-08-08-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 Day 13 08-08-26.mp4": {
+              "date": "2026-08-08",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 13 08-08-26"
+            }
+          }
         },
         {
           "id": "njpw.-g-1.-climax.-36.2026.08.08.-dual.-1080p.-web.-h-265.-ngp.mkv",
@@ -28404,7 +28889,14 @@
           "id": "njpw-g-1-climax-36-day-16-12-08-26",
           "name": "njpw-g-1-climax-36-day-16-12-08-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 Day 16 12-08-26.mp4": {
+              "date": "2026-08-12",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 16 12-08-26"
+            }
+          }
         },
         {
           "id": "njpw.-g-1.-climax.-36.2026.08.12.-dual.-1080p.-web.h-264-spa-ze.mkv_202608",
@@ -28416,7 +28908,14 @@
           "id": "njpw-g-1-climax-36-day-17-13-08-26",
           "name": "njpw-g-1-climax-36-day-17-13-08-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 Day 17 13-08-26.mp4": {
+              "date": "2026-08-13",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 17 13-08-26"
+            }
+          }
         },
         {
           "id": "njpw.-g-1.-climax.-36.2026.08.13.-dual.-1080p.-web.h-264-spa-ze.mkv",
@@ -28434,13 +28933,27 @@
           "id": "njpw-g-1-climax-36-day-18-15-08-26",
           "name": "njpw-g-1-climax-36-day-18-15-08-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 Day 18 15-08-26.mp4": {
+              "date": "2026-08-15",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 18 15-08-26"
+            }
+          }
         },
         {
           "id": "njpw-g-1-climax-36-day-19-16-08-26",
           "name": "njpw-g-1-climax-36-day-19-16-08-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW G1 Climax 36 Day 19 16-08-26.mp4": {
+              "date": "2026-08-16",
+              "show": "PPV",
+              "title": "G1 Climax 36 Day 19 16-08-26"
+            }
+          }
         },
         {
           "id": "njpw.-g-1.-climax.-36.-final.-2026.08.16.-ja.-720p.-web.h-264-hc_20260817",
@@ -28452,7 +28965,14 @@
           "id": "njpw-road-to-destruction-2026-day-1-05-09-26",
           "name": "njpw-road-to-destruction-2026-day-1-05-09-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Road To Destruction 2026 Day 1 05-09-26.mp4": {
+              "date": "2026-09-05",
+              "show": "PPV",
+              "title": "Road To Destruction 2026 Day 1 05-09-26"
+            }
+          }
         },
         {
           "id": "njpw.-yuji.-nagata.-produce.-blue.-justice.-xix.-aogi.-futotsu.-2026.09.06.-dual_20260911_1620",
@@ -28482,7 +29002,14 @@
           "id": "njpw-yuji-nagata-produce-blue-justice-xix-aogi-futotsu-06-09-26",
           "name": "njpw-yuji-nagata-produce-blue-justice-xix-aogi-futotsu-06-09-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Yuji Nagata Produce Blue Justice XIX ~Aogi Futotsu~ 06-09-26.mp4": {
+              "date": "2026-09-06",
+              "show": "PPV",
+              "title": "Yuji Nagata Produce Blue Justice XIX ~Aogi Futotsu~ 06-09-26"
+            }
+          }
         },
         {
           "id": "njpw.-yuji.-nagata.-produce.-blue.-justice.-xix.-aogi.-futotsu.-2026.09.06.-dual_20260911_1342",
@@ -28494,19 +29021,40 @@
           "id": "njpw-road-to-destruction-2026-day-2-09-09-26",
           "name": "njpw-road-to-destruction-2026-day-2-09-09-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Road To Destruction 2026  Day 2 09-09-26.mp4": {
+              "date": "2026-09-09",
+              "show": "PPV",
+              "title": "Road To Destruction 2026 Day 2 09-09-26"
+            }
+          }
         },
         {
           "id": "njpw-road-to-destruction-2026-day-3-10-09-26",
           "name": "njpw-road-to-destruction-2026-day-3-10-09-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Road To Destruction 2026 Day 3 10-09-26.mp4": {
+              "date": "2026-09-10",
+              "show": "PPV",
+              "title": "Road To Destruction 2026 Day 3 10-09-26"
+            }
+          }
         },
         {
           "id": "njpw-road-to-destruction-2026-day-4-13-09-26",
           "name": "njpw-road-to-destruction-2026-day-4-13-09-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Road To Destruction 2026 Day 4 13-09-26.mp4": {
+              "date": "2026-09-13",
+              "show": "PPV",
+              "title": "Road To Destruction 2026 Day 4 13-09-26"
+            }
+          }
         },
         {
           "id": "njpw.-road.-to.-destruction.-2026.09.13.-ja.-720p.-web.h-264-hc",
@@ -28518,7 +29066,14 @@
           "id": "njpw-road-to-destruction-2026-day-8-19-09-26",
           "name": "njpw-road-to-destruction-2026-day-8-19-09-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Road To Destruction 2026 Day 8 19-09-26.mp4": {
+              "date": "2026-09-19",
+              "show": "PPV",
+              "title": "Road To Destruction 2026 Day 8 19-09-26"
+            }
+          }
         },
         {
           "id": "njpw-2026-09-21-road-to-destruction-tag-9-hd",
@@ -28536,13 +29091,27 @@
           "id": "njpw-road-to-destruction-2026-day-11-23-09-26",
           "name": "njpw-road-to-destruction-2026-day-11-23-09-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Road To Destruction 2026 Day 11 23-09-26.mp4": {
+              "date": "2026-09-23",
+              "show": "PPV",
+              "title": "Road To Destruction 2026 Day 11 23-09-26"
+            }
+          }
         },
         {
           "id": "njpw-destruction-in-kobe-2026-27-09-26",
           "name": "njpw-destruction-in-kobe-2026-27-09-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Destruction In Kobe 2026 27-09-26.mp4": {
+              "date": "2026-09-27",
+              "show": "PPV",
+              "title": "Destruction In Kobe 2026 27-09-26"
+            }
+          }
         },
         {
           "id": "njpw.-destruction.-in.-kobe.-2026.09.27.-en.-720p.-web.h-264-hc",
@@ -28554,55 +29123,118 @@
           "id": "njpw-road-to-king-of-pro-wrestling-2026-day-1-06-10-26",
           "name": "njpw-road-to-king-of-pro-wrestling-2026-day-1-06-10-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Road To King Of Pro-Wrestling 2026 Day 1 06-10-26.mp4": {
+              "date": "2026-10-06",
+              "show": "PPV",
+              "title": "Road To King Of Pro-Wrestling 2026 Day 1 06-10-26"
+            }
+          }
         },
         {
           "id": "njpw-road-to-king-of-pro-wrestling-2026-day-2-07-10-26",
           "name": "njpw-road-to-king-of-pro-wrestling-2026-day-2-07-10-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Road To King Of Pro-Wrestling 2026 Day 2 07-10-26.mp4": {
+              "date": "2026-10-07",
+              "show": "PPV",
+              "title": "Road To King Of Pro-Wrestling 2026 Day 2 07-10-26"
+            }
+          }
         },
         {
           "id": "njpw-king-of-pro-wrestling-2026-12-10-26",
           "name": "njpw-king-of-pro-wrestling-2026-12-10-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW King Of Pro-Wrestling 2026 12-10-26.mp4": {
+              "date": "2026-10-12",
+              "show": "PPV",
+              "title": "King Of Pro-Wrestling 2026 12-10-26"
+            }
+          }
         },
         {
           "id": "njpw-super-junior-tag-league-2026-day-1-24-10-26",
           "name": "njpw-super-junior-tag-league-2026-day-1-24-10-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Super Junior Tag League 2026 Day 1 24-10-26.mp4": {
+              "date": "2026-10-24",
+              "show": "PPV",
+              "title": "Super Junior Tag League 2026 Day 1 24-10-26"
+            }
+          }
         },
         {
           "id": "njpw-super-junior-tag-league-2026-day-2-25-10-26",
           "name": "njpw-super-junior-tag-league-2026-day-2-25-10-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Super Junior Tag League 2026 Day 2 25-10-26.mp4": {
+              "date": "2026-10-25",
+              "show": "PPV",
+              "title": "Super Junior Tag League 2026 Day 2 25-10-26"
+            }
+          }
         },
         {
           "id": "njpw-super-junior-tag-league-2026-day-3-26-10-26",
           "name": "njpw-super-junior-tag-league-2026-day-3-26-10-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Super Junior Tag League 2026 Day 3 26-10-26.mp4": {
+              "date": "2026-10-26",
+              "show": "PPV",
+              "title": "Super Junior Tag League 2026 Day 3 26-10-26"
+            }
+          }
         },
         {
           "id": "njpw-super-junior-tag-league-2026-day-4-27-10-26",
           "name": "njpw-super-junior-tag-league-2026-day-4-27-10-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Super Junior Tag League 2026 Day 4 27-10-26.mp4": {
+              "date": "2026-10-27",
+              "show": "PPV",
+              "title": "Super Junior Tag League 2026 Day 4 27-10-26"
+            }
+          }
         },
         {
           "id": "njpw-super-junior-tag-league-2026-day-5-30-10-26",
           "name": "njpw-super-junior-tag-league-2026-day-5-30-10-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Super Junior Tag League 2026 Day 5 30-10-26.mp4": {
+              "date": "2026-10-30",
+              "show": "PPV",
+              "title": "Super Junior Tag League 2026 Day 5 30-10-26"
+            }
+          }
         },
         {
           "id": "njpw-super-junior-tag-league-2026-day-6-31-10-26",
           "name": "njpw-super-junior-tag-league-2026-day-6-31-10-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Super Junior Tag League 2026 Day 6 31-10-26.mp4": {
+              "date": "2026-10-31",
+              "show": "PPV",
+              "title": "Super Junior Tag League 2026 Day 6 31-10-26"
+            }
+          }
         },
         {
           "id": "njpw-rivals-episode-3-19-03-22",
@@ -28626,12 +29258,26 @@
           "id": "njpw-super-junior-tag-league-2026-day-7-01-11-26",
           "name": "njpw-super-junior-tag-league-2026-day-7-01-11-26",
           "enabled": true,
-          "frozen": true
+          "frozen": true,
+          "overrides": {
+            "NJPW Super Junior Tag League 2026 Day 7 01-11-26.mp4": {
+              "date": "2026-11-01",
+              "show": "PPV",
+              "title": "Super Junior Tag League 2026 Day 7 01-11-26"
+            }
+          }
         },
         {
           "id": "njpw-power-struggle-super-junior-tag-league-2026-03-11-26",
           "enabled": true,
-          "name": "Power Struggle 2026"
+          "name": "Power Struggle 2026",
+          "overrides": {
+            "NJPW Power Struggle ~ Super Junior Tag League 2026 03-11-26.mp4": {
+              "date": "2026-11-03",
+              "show": "PPV",
+              "title": "Power Struggle ~ Super Junior Tag League 2026 03-11-26"
+            }
+          }
         },
         {
           "id": "death.-pain.-invitacional.-1080p.-web.h-264-sbox",
@@ -28738,6 +29384,94 @@
           "name": "njpw.-the.-new.-beginning.-in.-sapporo.-day.-2.2024.02.24.-eng.-fhd-njpw-the-new",
           "enabled": true,
           "frozen": true
+        },
+        {
+          "id": "njpw-tiger-masks-retirement-match-07-07-26",
+          "name": "NJPW Tiger Mask's Retirement Match 07-07-26",
+          "enabled": true,
+          "mappedOnly": true,
+          "dateOrder": "MDY",
+          "overrides": {
+            "NJPW Tiger Mask's Retirement Match 07-07-26.mp4": {
+              "date": "2026-07-07",
+              "show": "PPV",
+              "title": "Tiger Mask's Retirement Match 07-07-26"
+            }
+          }
+        },
+        {
+          "id": "rohevents02",
+          "name": "rohevents02",
+          "enabled": true,
+          "mappedOnly": true,
+          "dateOrder": "MDY",
+          "overrides": {
+            "2014/2014.05.10 ROH NJPW Global Wars.mp4": {
+              "date": "2014-05-10",
+              "show": "PPV",
+              "title": "ROH NJPW Global Wars"
+            },
+            "2014/2014.05.17 ROH NJPW War Of The Worlds.mp4": {
+              "date": "2014-05-17",
+              "show": "PPV",
+              "title": "ROH NJPW War Of The Worlds"
+            },
+            "2018/2018.05.10 ROH NJPW War Of The Worlds 2018 - Night 1.mp4": {
+              "date": "2018-05-10",
+              "show": "PPV",
+              "title": "ROH NJPW War Of The Worlds 2018 - Night 1"
+            },
+            "2018/2018.05.11 ROH NJPW War Of The Worlds 2018 - Night 2.mp4": {
+              "date": "2018-05-11",
+              "show": "PPV",
+              "title": "ROH NJPW War Of The Worlds 2018 - Night 2"
+            },
+            "2018/2018.05.12 ROH NJPW War Of The Worlds 2018 - Night 3.mp4": {
+              "date": "2018-05-12",
+              "show": "PPV",
+              "title": "ROH NJPW War Of The Worlds 2018 - Night 3"
+            },
+            "2018/2018.11.07 ROH NJPW Global Wars 2018 - Night 1.mp4": {
+              "date": "2018-11-07",
+              "show": "PPV",
+              "title": "ROH NJPW Global Wars 2018 - Night 1"
+            },
+            "2018/2018.11.08 ROH NJPW Global Wars 2018 - Night 2.mp4": {
+              "date": "2018-11-08",
+              "show": "PPV",
+              "title": "ROH NJPW Global Wars 2018 - Night 2"
+            },
+            "2018/2018.11.09 ROH NJPW Global Wars 2018 - Night 3.mp4": {
+              "date": "2018-11-09",
+              "show": "PPV",
+              "title": "ROH NJPW Global Wars 2018 - Night 3"
+            },
+            "2018/2018.11.11 ROH NJPW Global Wars 2018 - Night 4.mp4": {
+              "date": "2018-11-11",
+              "show": "PPV",
+              "title": "ROH NJPW Global Wars 2018 - Night 4"
+            },
+            "2019/2019.04.06 ROH NJPW G1 Supercard.mp4": {
+              "date": "2019-04-06",
+              "show": "PPV",
+              "title": "ROH NJPW G1 Supercard"
+            },
+            "2019/2019.05.08 ROH NJPW War Of The Worlds 2019 - Night 1.mp4": {
+              "date": "2019-05-08",
+              "show": "PPV",
+              "title": "ROH NJPW War Of The Worlds 2019 - Night 1"
+            },
+            "2019/2019.05.09 ROH NJPW War Of The Worlds 2019 - Night 2.mp4": {
+              "date": "2019-05-09",
+              "show": "PPV",
+              "title": "ROH NJPW War Of The Worlds 2019 - Night 2"
+            },
+            "2019/2019.05.11 ROH NJPW War Of The Worlds 2019 - Night 3.mp4": {
+              "date": "2019-05-11",
+              "show": "PPV",
+              "title": "ROH NJPW War Of The Worlds 2019 - Night 3"
+            }
+          }
         },
         {
           "id": "njpw-dominion-in-osaka-jo-hall-12-july-2020",

@@ -25,6 +25,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
       miniMeta,
       miniDescription,
       miniClock,
+      miniWatching,
       guideStatus,
       aspect;
   ImageView miniArt;
@@ -34,6 +35,9 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
   double nextGuideBoundary;
   TvApi api;
   TvPlayback playback;
+  TvPresence presence;
+  final Map<String,Integer> watching=new HashMap<>();
+  final Map<String,TextView> channelLabels=new HashMap<>();
   TvGuide guide, liveGuide;
   TvGuide.Slot preview, failed;
   String tuningChannel, group = "All";
@@ -50,6 +54,9 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
       new Runnable() {
         public void run() {
           if (destroyed) return;
+          if(presence!=null)presence.sample(playback.playing==null?null:playback.playing.channel.id,
+              playback.active,guideOpen?"all":overlay.getVisibility()==View.VISIBLE?"current":"none");
+          paintMiniWatching();
           if (guideOpen) updateGuideNow();
           if (preview != null && overlay.getVisibility() == View.VISIBLE) {
             miniClock.setText(clock(api.now()));
@@ -155,6 +162,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
             getResources().getDisplayMetrics().heightPixels - d(112));
     buildPlayer();
     playback = new TvPlayback(this, api, surface, this);
+    presence=new TvPresence(this,this::paintWatching);
     playback.muted = BuildConfig.DEBUG && getIntent().getBooleanExtra("test_muted", false);
     playback.stretched = prefs().getBoolean("stretch", false);
     aspect.setText(playback.stretched ? "16:9" : "4:3");
@@ -263,9 +271,9 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
             GradientDrawable.Orientation.TOP_BOTTOM,
             new int[] {translucent(origin.surface(), 237), translucent(origin.background(), 245)}));
     playerBox.addView(
-        overlay, new FrameLayout.LayoutParams(-1, d(touchControls ? 232 : 190), Gravity.BOTTOM));
+        overlay, new FrameLayout.LayoutParams(-1, d(touchControls ? 232 : 202), Gravity.BOTTOM));
     LinearLayout top = Ui.horizontal(this);
-    overlay.addView(top, Ui.lp(this, -1, touchControls ? 44 : 23));
+    overlay.addView(top, Ui.lp(this, -1, touchControls ? 44 : 32));
     miniChannel = text("WCtv", 16, Ui.WHITE);
     miniChannel.setTypeface(null, Typeface.BOLD);
     miniChannel.setMaxLines(1);
@@ -279,7 +287,13 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
       top.addView(button("Channel +", () -> previewChannel(1)), Ui.lp(this, -2, 44));
     }
     miniClock = text("", 12, Ui.MUTED);
-    if (!touchControls) top.addView(miniClock);
+    LinearLayout clockStack=Ui.vertical(this);
+    clockStack.setGravity(Gravity.END);
+    clockStack.addView(miniClock);
+    miniWatching=text("",10,origin.accent());
+    miniWatching.setMaxLines(1);miniWatching.setVisibility(View.GONE);
+    clockStack.addView(miniWatching);
+    top.addView(clockStack,Ui.lp(this,82,-2));
     LinearLayout row = Ui.horizontal(this);
     overlay.addView(row, Ui.lp(this, -1, 76));
     miniArt = new ImageView(this);
@@ -486,7 +500,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
                       "Times shown in "
                           + TimeZone.getDefault().getDisplayName()
                           + " · Select any programme to watch");
-                  if (guideOpen && firstChannelButton != null) firstChannelButton.requestFocus();
+                  if (guideOpen) focusPlayingChannel();
                   if (autoplay) {
                     String testProgramme = BuildConfig.DEBUG ? getIntent().getStringExtra("test_programme") : null;
                     if (testProgramme != null) {
@@ -570,6 +584,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
       ruler.addView(label, bounds);
     }
     boolean firstRow = true;
+    channelLabels.clear();
     for (TvGuide.Channel channel : guide.channels) {
       if (!group.equals("All") && !group.equals(channel.group)) continue;
       TextView channelButton =
@@ -586,6 +601,10 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
               });
       channelButton.setGravity(Gravity.CENTER_VERTICAL);
       channelButton.setTextSize(12);
+      channelButton.setMaxLines(3);channelButton.setEllipsize(TextUtils.TruncateAt.END);
+      channelButton.setIncludeFontPadding(false);
+      channelLabels.put(channel.id,channelButton);
+      paintChannelWatching(channel,channelButton);
       if (firstRow) firstChannelButton = channelButton;
       LinearLayout.LayoutParams rowBounds = Ui.lp(this, -1, 64);
       rowBounds.setMargins(0, 0, d(5), d(4));
@@ -832,6 +851,25 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
     setGuideOpen(true);
   }
 
+  void focusPlayingChannel() {
+    String channel = playback.playing == null
+        ? prefs().getString("channel", "wwe") : playback.playing.channel.id;
+    // Reopening the guide must include the playing channel even after browsing a group.
+    if (guide != null && guide.channel(channel) != null && !channelLabels.containsKey(channel)) {
+      group = "All";
+      renderGuide();
+    }
+    View target = channelLabels.get(channel);
+    if (target == null) target = firstChannelButton;
+    if (target == null) return;
+    View selected = target;
+    selected.requestFocus();
+    selected.post(() -> {
+      if (guideOpen && selected.hasFocus() && selected.isShown())
+        selected.requestRectangleOnScreen(new Rect(0, 0, selected.getWidth(), selected.getHeight()), true);
+    });
+  }
+
   void setGuideOpen(boolean value) {
     finishScrub();
     guideOpen = value;
@@ -841,7 +879,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
       overlay.animate().cancel();
       overlay.setVisibility(View.INVISIBLE);
       ui.removeCallbacks(hideOverlay);
-      if (firstChannelButton != null) firstChannelButton.requestFocus();
+      focusPlayingChannel();
       maybeShowGuideHelp();
     } else {
       playerBox.requestFocus();
@@ -1040,7 +1078,7 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
     help.setOnDismissListener(dialog -> {
       if (destroyed || isFinishing()) return;
       if (previousFocus != null && previousFocus.isShown()) previousFocus.requestFocus();
-      else if (guideOpen && firstChannelButton != null) firstChannelButton.requestFocus();
+      else if (guideOpen) focusPlayingChannel();
       else playerBox.requestFocus();
       if (!guideOpen) showOverlay();
     });
@@ -1087,11 +1125,40 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
     lastSaved = SystemClock.elapsedRealtime();
   }
 
+  void paintWatching(Map<String,Integer> values) {
+    if(destroyed)return;
+    watching.clear();watching.putAll(values);
+    if(guide!=null)for(TvGuide.Channel channel:guide.channels){
+      TextView label=channelLabels.get(channel.id);if(label!=null)paintChannelWatching(channel,label);
+    }
+    paintMiniWatching();
+  }
+
+  void paintChannelWatching(TvGuide.Channel channel,TextView label) {
+    String name=channel.number+"  "+channel.name;
+    int count=watching.getOrDefault(channel.id,0);
+    if(count<=0){label.setText(name);return;}
+    android.text.SpannableString text=new android.text.SpannableString(name+"\n"+String.format(Locale.getDefault(),"%,d watching",count));
+    text.setSpan(new android.text.style.RelativeSizeSpan(.83f),name.length()+1,text.length(),0);
+    text.setSpan(new android.text.style.ForegroundColorSpan(origin.accent()),name.length()+1,text.length(),0);
+    label.setText(text);
+  }
+
+  void paintMiniWatching() {
+    if(miniWatching==null)return;
+    String channel=preview==null?(playback==null || playback.playing==null?null:playback.playing.channel.id):preview.channel.id;
+    Integer count=watching.get(channel);
+    int visibility=count==null?View.GONE:View.VISIBLE;
+    if(miniWatching.getVisibility()!=visibility)miniWatching.setVisibility(visibility);
+    if(count!=null){String value=String.format(Locale.getDefault(),"%,d watching",count);if(!value.contentEquals(miniWatching.getText()))miniWatching.setText(value);}
+  }
+
   @Override
   protected void onPause() {
     super.onPause();
     finishScrub();
     savePosition();
+    if(presence!=null)presence.foreground(false);
     if (playback != null) {
       playback.cancel();
       if (playback.active != null) playback.active.pause();
@@ -1102,12 +1169,14 @@ public final class TvActivity extends Activity implements TvPlayback.Listener {
   protected void onResume() {
     super.onResume();
     getWindow().getDecorView().setSystemUiVisibility(5894);
+    if(presence!=null)presence.foreground(true);
     if (playback != null && playback.active != null) playback.active.play();
   }
 
   @Override
   protected void onDestroy() {
     destroyed = true;
+    if(presence!=null)presence.close();
     ui.removeCallbacksAndMessages(null);
     io.shutdownNow();
     if (playback != null) playback.close();

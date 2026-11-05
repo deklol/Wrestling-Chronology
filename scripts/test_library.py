@@ -9,6 +9,17 @@ from library import broadcast_date, episode_thumbnail, scan_archive, scan_youtub
 
 
 class LibraryTests(unittest.TestCase):
+    def test_wwe_discovery_excludes_spanish_and_arabic_but_keeps_english(self):
+        data = {'episodes': []}
+        for language in ('es', 'spa', 'ar', 'arabic'):
+            self.assertFalse(add_record(data, 'wwe', '2026-11-02', 'Raw', 'Raw',
+                {'type':'youtube','videoId':'abcdefghijk','language':language}))
+        self.assertFalse(add_record(data, 'wwe', '2026-11-02', 'Raw', 'Raw',
+            {'type':'youtube','videoId':'abcdefghijk','title':'WWE Español'}))
+        self.assertTrue(add_record(data, 'wwe', '2026-11-02', 'Raw', 'Raw',
+            {'type':'youtube','videoId':'abcdefghijk','language':'en'}))
+        self.assertEqual(1, len(data['episodes']))
+
     def test_new_broadcast_gets_discovery_time_without_refreshing_existing_rows(self):
         library = {'episodes': []}
         source = {'type': 'okru', 'videoId': '123456', 'duration': 7200}

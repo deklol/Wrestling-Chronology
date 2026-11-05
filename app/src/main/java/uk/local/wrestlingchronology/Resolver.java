@@ -114,7 +114,7 @@ final class Resolver {
       Resolved delivered = CollectionApi.resolve(context, company, episode, source, quality);
       if (delivered != null) return delivered;
     }
-    return resolve(source, quality);
+    return resolve(source, quality, Indies.containsSource(company, episode, source));
   }
 
   static Resolved resolveTv(JSONObject source, int quality) throws Exception {

@@ -27,33 +27,6 @@
       "discoveredAt": 1793297725039
     },
     {
-      "id": "aew:2019-05-25:ppv:doubleornothingbuyin",
-      "date": "2019-05-25",
-      "year": 2019,
-      "show": "PPV",
-      "title": "Double or Nothing \u2014 Buy In",
-      "description": "",
-      "duration": 2149,
-      "thumbnail": "https://i.ytimg.com/vi/2QGnObRYbfg/hqdefault.jpg",
-      "poster": "https://i.ytimg.com/vi/2QGnObRYbfg/hqdefault.jpg",
-      "sources": [
-        {
-          "type": "youtube",
-          "videoId": "2QGnObRYbfg",
-          "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
-          "direct": true,
-          "title": "LIVE - AEW Double or Nothing Pre Show: The Buy In - Sat May 25th - 7e / 4p",
-          "duration": 2149,
-          "label": "Official YouTube",
-          "eventPart": "preshow",
-          "company": "aew"
-        }
-      ],
-      "discoveredAt": 0,
-      "eventPart": "preshow",
-      "eventOrder": -1
-    },
-    {
       "id": "aew:2019-05-25:ppv",
       "date": "2019-05-25",
       "year": 2019,
@@ -80,23 +53,23 @@
       "discoveredAt": 1793232000000
     },
     {
-      "id": "aew:2019-06-29:ppv:fyterfestbuyin",
-      "date": "2019-06-29",
+      "id": "aew:2019-05-25:ppv:doubleornothingbuyin",
+      "date": "2019-05-25",
       "year": 2019,
       "show": "PPV",
-      "title": "Fyter Fest \u2014 Buy In",
+      "title": "Double or Nothing \u2014 Buy In",
       "description": "",
-      "duration": 3658,
-      "thumbnail": "https://i.ytimg.com/vi/G7BHprdY-Pc/hqdefault.jpg",
-      "poster": "https://i.ytimg.com/vi/G7BHprdY-Pc/hqdefault.jpg",
+      "duration": 2149,
+      "thumbnail": "https://i.ytimg.com/vi/2QGnObRYbfg/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/2QGnObRYbfg/hqdefault.jpg",
       "sources": [
         {
           "type": "youtube",
-          "videoId": "G7BHprdY-Pc",
+          "videoId": "2QGnObRYbfg",
           "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
           "direct": true,
-          "title": "AEW Fyter Fest Buy In",
-          "duration": 3658,
+          "title": "LIVE - AEW Double or Nothing Pre Show: The Buy In - Sat May 25th - 7e / 4p",
+          "duration": 2149,
           "label": "Official YouTube",
           "eventPart": "preshow",
           "company": "aew"
@@ -133,6 +106,33 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2019-06-29:ppv:fyterfestbuyin",
+      "date": "2019-06-29",
+      "year": 2019,
+      "show": "PPV",
+      "title": "Fyter Fest \u2014 Buy In",
+      "description": "",
+      "duration": 3658,
+      "thumbnail": "https://i.ytimg.com/vi/G7BHprdY-Pc/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/G7BHprdY-Pc/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "G7BHprdY-Pc",
+          "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
+          "direct": true,
+          "title": "AEW Fyter Fest Buy In",
+          "duration": 3658,
+          "label": "Official YouTube",
+          "eventPart": "preshow",
+          "company": "aew"
+        }
+      ],
+      "discoveredAt": 0,
+      "eventPart": "preshow",
+      "eventOrder": -1
+    },
+    {
       "id": "aew:2019-07-13:ppv",
       "date": "2019-07-13",
       "year": 2019,
@@ -153,6 +153,32 @@
           "label": "Internet Archive \u00b7 aewshows02",
           "creator": "aewshows02",
           "md5": "7cd26457ef692c44f10971030aeaea06",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
+      "id": "aew:2019-08-31:ppv",
+      "date": "2019-08-31",
+      "year": 2019,
+      "show": "PPV",
+      "title": "All Out",
+      "description": "",
+      "duration": 13998.04,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2019/04%20-%20AEW%20All%20Out%202019/AEW.2019.08.31.All.Out.2019.PPV.1080p.WEB.h264-HEEL_006999.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2019/04%20-%20AEW%20All%20Out%202019/AEW.2019.08.31.All.Out.2019.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2019/04 - AEW All Out 2019/AEW.2019.08.31.All.Out.2019.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 13998.04,
+          "height": 480,
+          "bytes": 1390568020,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "1c942203ad57cfb597d1df7102df82bb",
           "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
         }
       ],
@@ -184,32 +210,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2019-08-31:ppv",
-      "date": "2019-08-31",
-      "year": 2019,
-      "show": "PPV",
-      "title": "All Out",
-      "description": "",
-      "duration": 13998.04,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2019/04%20-%20AEW%20All%20Out%202019/AEW.2019.08.31.All.Out.2019.PPV.1080p.WEB.h264-HEEL_006999.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2019/04%20-%20AEW%20All%20Out%202019/AEW.2019.08.31.All.Out.2019.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2019/04 - AEW All Out 2019/AEW.2019.08.31.All.Out.2019.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 13998.04,
-          "height": 480,
-          "bytes": 1390568020,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "1c942203ad57cfb597d1df7102df82bb",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2019-10-02:dynamite",
@@ -2019,6 +2019,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2020-05-23:ppv",
+      "date": "2020-05-23",
+      "year": 2020,
+      "show": "PPV",
+      "title": "Double or Nothing",
+      "description": "",
+      "duration": 13380.31,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2020/02%20-%20AEW%20Double%20or%20Nothing%202020/AEW.2020.05.23.Double.Or.Nothing..1080p.web.h264-levitate_006690.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2020/02%20-%20AEW%20Double%20or%20Nothing%202020/AEW.2020.05.23.Double.Or.Nothing..1080p.web.h264-levitate.mp4",
+          "filename": "PPV/2020/02 - AEW Double or Nothing 2020/AEW.2020.05.23.Double.Or.Nothing..1080p.web.h264-levitate.mp4",
+          "duration": 13380.31,
+          "height": 480,
+          "bytes": 1329488177,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "f1114a142afef606d3a33730177d13f2",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2020-05-23:ppv:doubleornothingbuyin",
       "date": "2020-05-23",
       "year": 2020,
@@ -2044,32 +2070,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2020-05-23:ppv",
-      "date": "2020-05-23",
-      "year": 2020,
-      "show": "PPV",
-      "title": "Double or Nothing",
-      "description": "",
-      "duration": 13380.31,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2020/02%20-%20AEW%20Double%20or%20Nothing%202020/AEW.2020.05.23.Double.Or.Nothing..1080p.web.h264-levitate_006690.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2020/02%20-%20AEW%20Double%20or%20Nothing%202020/AEW.2020.05.23.Double.Or.Nothing..1080p.web.h264-levitate.mp4",
-          "filename": "PPV/2020/02 - AEW Double or Nothing 2020/AEW.2020.05.23.Double.Or.Nothing..1080p.web.h264-levitate.mp4",
-          "duration": 13380.31,
-          "height": 480,
-          "bytes": 1329488177,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "f1114a142afef606d3a33730177d13f2",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2020-05-26:dark",
@@ -2878,6 +2878,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2020-09-05:ppv",
+      "date": "2020-09-05",
+      "year": 2020,
+      "show": "PPV",
+      "title": "All Out",
+      "description": "",
+      "duration": 13715.1,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2020/03%20-%20AEW%20All%20Out%202020/AEW.2020.09.05.All.Out.1080p.WEB.x264-DaShield_006857.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2020/03%20-%20AEW%20All%20Out%202020/AEW.2020.09.05.All.Out.1080p.WEB.x264-DaShield.mp4",
+          "filename": "PPV/2020/03 - AEW All Out 2020/AEW.2020.09.05.All.Out.1080p.WEB.x264-DaShield.mp4",
+          "duration": 13715.1,
+          "height": 480,
+          "bytes": 1352595832,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "d4ab4ff7bd94df174aeb392442bfaa57",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2020-09-05:ppv:alloutbuyin",
       "date": "2020-09-05",
       "year": 2020,
@@ -2903,32 +2929,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2020-09-05:ppv",
-      "date": "2020-09-05",
-      "year": 2020,
-      "show": "PPV",
-      "title": "All Out",
-      "description": "",
-      "duration": 13715.1,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2020/03%20-%20AEW%20All%20Out%202020/AEW.2020.09.05.All.Out.1080p.WEB.x264-DaShield_006857.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2020/03%20-%20AEW%20All%20Out%202020/AEW.2020.09.05.All.Out.1080p.WEB.x264-DaShield.mp4",
-          "filename": "PPV/2020/03 - AEW All Out 2020/AEW.2020.09.05.All.Out.1080p.WEB.x264-DaShield.mp4",
-          "duration": 13715.1,
-          "height": 480,
-          "bytes": 1352595832,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "d4ab4ff7bd94df174aeb392442bfaa57",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2020-09-08:dark",
@@ -3212,6 +3212,17 @@
           "creator": "aewdynamite01",
           "md5": "beea22a957c882949c761e6d5e4de4f6",
           "dateEvidence": "Explicit filename date"
+        },
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewdynamite01/2020/10.07.20%20Dynamite%20-%20Chris%20Jericho%27s%2030th%20Anniversary%20Celebration.mp4",
+          "filename": "2020/10.07.20 Dynamite - Chris Jericho's 30th Anniversary Celebration.mp4",
+          "duration": 7321,
+          "height": 480,
+          "bytes": 722266318,
+          "label": "Internet Archive \u00b7 480p",
+          "language": "",
+          "programme": "Dynamite"
         }
       ],
       "discoveredAt": 1793232000000
@@ -3451,6 +3462,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2020-11-07:ppv",
+      "date": "2020-11-07",
+      "year": 2020,
+      "show": "PPV",
+      "title": "Full Gear",
+      "description": "",
+      "duration": 13280.03,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2020/04%20-%20AEW%20Full%20Gear%202020/AEW.2020.11.07.Full.Gear.2020.1080p.WEB.h264-DaShield_006640.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2020/04%20-%20AEW%20Full%20Gear%202020/AEW.2020.11.07.Full.Gear.2020.1080p.WEB.h264-DaShield.mp4",
+          "filename": "PPV/2020/04 - AEW Full Gear 2020/AEW.2020.11.07.Full.Gear.2020.1080p.WEB.h264-DaShield.mp4",
+          "duration": 13280.03,
+          "height": 480,
+          "bytes": 1318581189,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "dff3fb803da1494236fe7081bcca4d31",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2020-11-07:ppv:fullgearbuyin",
       "date": "2020-11-07",
       "year": 2020,
@@ -3476,32 +3513,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2020-11-07:ppv",
-      "date": "2020-11-07",
-      "year": 2020,
-      "show": "PPV",
-      "title": "Full Gear",
-      "description": "",
-      "duration": 13280.03,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2020/04%20-%20AEW%20Full%20Gear%202020/AEW.2020.11.07.Full.Gear.2020.1080p.WEB.h264-DaShield_006640.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2020/04%20-%20AEW%20Full%20Gear%202020/AEW.2020.11.07.Full.Gear.2020.1080p.WEB.h264-DaShield.mp4",
-          "filename": "PPV/2020/04 - AEW Full Gear 2020/AEW.2020.11.07.Full.Gear.2020.1080p.WEB.h264-DaShield.mp4",
-          "duration": 13280.03,
-          "height": 480,
-          "bytes": 1318581189,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "dff3fb803da1494236fe7081bcca4d31",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2020-11-10:dark",
@@ -4251,6 +4262,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2021-03-07:ppv",
+      "date": "2021-03-07",
+      "year": 2021,
+      "show": "PPV",
+      "title": "Revolution",
+      "description": "",
+      "duration": 13343.18,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2021/01%20-%20AEW%20Revolution%202021/AEW.2021.03.07.Revolution.PPV.1080p.WEB.h264-DaShield_006671.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2021/01%20-%20AEW%20Revolution%202021/AEW.2021.03.07.Revolution.PPV.1080p.WEB.h264-DaShield.mp4",
+          "filename": "PPV/2021/01 - AEW Revolution 2021/AEW.2021.03.07.Revolution.PPV.1080p.WEB.h264-DaShield.mp4",
+          "duration": 13343.18,
+          "height": 480,
+          "bytes": 1328770991,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "9453052d1e331bedd5498d6d0bae0cb6",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2021-03-07:ppv:revolutionbuyin",
       "date": "2021-03-07",
       "year": 2021,
@@ -4276,32 +4313,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2021-03-07:ppv",
-      "date": "2021-03-07",
-      "year": 2021,
-      "show": "PPV",
-      "title": "Revolution",
-      "description": "",
-      "duration": 13343.18,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2021/01%20-%20AEW%20Revolution%202021/AEW.2021.03.07.Revolution.PPV.1080p.WEB.h264-DaShield_006671.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2021/01%20-%20AEW%20Revolution%202021/AEW.2021.03.07.Revolution.PPV.1080p.WEB.h264-DaShield.mp4",
-          "filename": "PPV/2021/01 - AEW Revolution 2021/AEW.2021.03.07.Revolution.PPV.1080p.WEB.h264-DaShield.mp4",
-          "duration": 13343.18,
-          "height": 480,
-          "bytes": 1328770991,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "9453052d1e331bedd5498d6d0bae0cb6",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2021-03-10:dynamite",
@@ -5022,6 +5033,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2021-05-30:ppv",
+      "date": "2021-05-30",
+      "year": 2021,
+      "show": "PPV",
+      "title": "Double or Nothing",
+      "description": "",
+      "duration": 14196.16,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2021/02%20-%20AEW%20Double%20or%20Nothing%202021/AEW.2021.05.30.Double.Or.Nothing.1080p.WEBRip.h264-TJ_007098.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2021/02%20-%20AEW%20Double%20or%20Nothing%202021/AEW.2021.05.30.Double.Or.Nothing.1080p.WEBRip.h264-TJ.mp4",
+          "filename": "PPV/2021/02 - AEW Double or Nothing 2021/AEW.2021.05.30.Double.Or.Nothing.1080p.WEBRip.h264-TJ.mp4",
+          "duration": 14196.16,
+          "height": 480,
+          "bytes": 1355302250,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "9089d60e87d8a6f7bfe657c0416e73f4",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2021-05-30:ppv:doubleornothingbuyin",
       "date": "2021-05-30",
       "year": 2021,
@@ -5047,32 +5084,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2021-05-30:ppv",
-      "date": "2021-05-30",
-      "year": 2021,
-      "show": "PPV",
-      "title": "Double or Nothing",
-      "description": "",
-      "duration": 14196.16,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2021/02%20-%20AEW%20Double%20or%20Nothing%202021/AEW.2021.05.30.Double.Or.Nothing.1080p.WEBRip.h264-TJ_007098.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2021/02%20-%20AEW%20Double%20or%20Nothing%202021/AEW.2021.05.30.Double.Or.Nothing.1080p.WEBRip.h264-TJ.mp4",
-          "filename": "PPV/2021/02 - AEW Double or Nothing 2021/AEW.2021.05.30.Double.Or.Nothing.1080p.WEBRip.h264-TJ.mp4",
-          "duration": 14196.16,
-          "height": 480,
-          "bytes": 1355302250,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "9089d60e87d8a6f7bfe657c0416e73f4",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2021-05-31:dark-elevation",
@@ -5969,6 +5980,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2021-09-05:ppv",
+      "date": "2021-09-05",
+      "year": 2021,
+      "show": "PPV",
+      "title": "All Out",
+      "description": "",
+      "duration": 13652.42,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2021/03%20-%20AEW%20All%20Out%202021/AEW.2021.09.05.All.Out.PPV.1080p.WEB.h264-HEEL_006826.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2021/03%20-%20AEW%20All%20Out%202021/AEW.2021.09.05.All.Out.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2021/03 - AEW All Out 2021/AEW.2021.09.05.All.Out.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 13652.42,
+          "height": 480,
+          "bytes": 1354018917,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "2cc7f665c6f774f6efe53d1cef75fc8a",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2021-09-05:ppv:alloutbuyin",
       "date": "2021-09-05",
       "year": 2021,
@@ -5994,32 +6031,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2021-09-05:ppv",
-      "date": "2021-09-05",
-      "year": 2021,
-      "show": "PPV",
-      "title": "All Out",
-      "description": "",
-      "duration": 13652.42,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2021/03%20-%20AEW%20All%20Out%202021/AEW.2021.09.05.All.Out.PPV.1080p.WEB.h264-HEEL_006826.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2021/03%20-%20AEW%20All%20Out%202021/AEW.2021.09.05.All.Out.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2021/03 - AEW All Out 2021/AEW.2021.09.05.All.Out.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 13652.42,
-          "height": 480,
-          "bytes": 1354018917,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "2cc7f665c6f774f6efe53d1cef75fc8a",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2021-09-06:dark-elevation",
@@ -6642,6 +6653,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2021-11-13:ppv",
+      "date": "2021-11-13",
+      "year": 2021,
+      "show": "PPV",
+      "title": "Full Gear",
+      "description": "",
+      "duration": 14261.4,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2021/04%20-%20AEW%20Full%20Gear%202021/AEW.Full.Gear.2021.PPV.1080p.WEB.h264-HEEL_007130.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2021/04%20-%20AEW%20Full%20Gear%202021/AEW.Full.Gear.2021.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2021/04 - AEW Full Gear 2021/AEW.Full.Gear.2021.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 14261.4,
+          "height": 480,
+          "bytes": 1416891148,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "31686888b0d1749293a3de9a526980b9",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2021-11-13:ppv:fullgearbuyin",
       "date": "2021-11-13",
       "year": 2021,
@@ -6667,32 +6704,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2021-11-13:ppv",
-      "date": "2021-11-13",
-      "year": 2021,
-      "show": "PPV",
-      "title": "Full Gear",
-      "description": "",
-      "duration": 14261.4,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2021/04%20-%20AEW%20Full%20Gear%202021/AEW.Full.Gear.2021.PPV.1080p.WEB.h264-HEEL_007130.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2021/04%20-%20AEW%20Full%20Gear%202021/AEW.Full.Gear.2021.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2021/04 - AEW Full Gear 2021/AEW.Full.Gear.2021.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 14261.4,
-          "height": 480,
-          "bytes": 1416891148,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "31686888b0d1749293a3de9a526980b9",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2021-11-15:dark-elevation",
@@ -8127,6 +8138,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2022-03-06:ppv",
+      "date": "2022-03-06",
+      "year": 2022,
+      "show": "PPV",
+      "title": "Revolution",
+      "description": "",
+      "duration": 13998.57,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2022/01%20-%20AEW%20Revolution%202022/AEW.Revolution.2022.PPV.1080p.WEB.h264-HEEL_006999.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2022/01%20-%20AEW%20Revolution%202022/AEW.Revolution.2022.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2022/01 - AEW Revolution 2022/AEW.Revolution.2022.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 13998.57,
+          "height": 480,
+          "bytes": 1396623205,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "0dec0695c8b35b90fce190ef0e1eebf2",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2022-03-06:ppv:revolutionbuyin",
       "date": "2022-03-06",
       "year": 2022,
@@ -8152,32 +8189,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2022-03-06:ppv",
-      "date": "2022-03-06",
-      "year": 2022,
-      "show": "PPV",
-      "title": "Revolution",
-      "description": "",
-      "duration": 13998.57,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2022/01%20-%20AEW%20Revolution%202022/AEW.Revolution.2022.PPV.1080p.WEB.h264-HEEL_006999.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2022/01%20-%20AEW%20Revolution%202022/AEW.Revolution.2022.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2022/01 - AEW Revolution 2022/AEW.Revolution.2022.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 13998.57,
-          "height": 480,
-          "bytes": 1396623205,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "0dec0695c8b35b90fce190ef0e1eebf2",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2022-03-07:dark-elevation",
@@ -9480,6 +9491,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2022-05-29:ppv",
+      "date": "2022-05-29",
+      "year": 2022,
+      "show": "PPV",
+      "title": "Double or Nothing",
+      "description": "",
+      "duration": 16740.78,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2022/02%20-%20AEW%20Double%20or%20Nothing%202022/AEW.Double.Or.Nothing.2022.PPV.1080p.WEB.h264-HEEL_008370.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2022/02%20-%20AEW%20Double%20or%20Nothing%202022/AEW.Double.Or.Nothing.2022.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2022/02 - AEW Double or Nothing 2022/AEW.Double.Or.Nothing.2022.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 16740.78,
+          "height": 480,
+          "bytes": 1661376967,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "226c098e5e238c25e2d9e63193d0e2b3",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2022-05-29:ppv:doubleornothingbuyin",
       "date": "2022-05-29",
       "year": 2022,
@@ -9505,32 +9542,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2022-05-29:ppv",
-      "date": "2022-05-29",
-      "year": 2022,
-      "show": "PPV",
-      "title": "Double or Nothing",
-      "description": "",
-      "duration": 16740.78,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2022/02%20-%20AEW%20Double%20or%20Nothing%202022/AEW.Double.Or.Nothing.2022.PPV.1080p.WEB.h264-HEEL_008370.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2022/02%20-%20AEW%20Double%20or%20Nothing%202022/AEW.Double.Or.Nothing.2022.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2022/02 - AEW Double or Nothing 2022/AEW.Double.Or.Nothing.2022.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 16740.78,
-          "height": 480,
-          "bytes": 1661376967,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "226c098e5e238c25e2d9e63193d0e2b3",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2022-05-30:dark-elevation",
@@ -9949,6 +9960,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2022-06-26:ppv",
+      "date": "2022-06-26",
+      "year": 2022,
+      "show": "PPV",
+      "title": "Forbidden Door",
+      "description": "",
+      "duration": 13529.56,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2022/03%20-%20AEW-NJPW%20Forbidden%20Door/AEW.NJPW.Forbidden.Door.2022.PPV.1080p.WEB.h264-HEEL_006764.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2022/03%20-%20AEW-NJPW%20Forbidden%20Door/AEW.NJPW.Forbidden.Door.2022.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2022/03 - AEW-NJPW Forbidden Door/AEW.NJPW.Forbidden.Door.2022.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 13529.56,
+          "height": 480,
+          "bytes": 1339171020,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "0580a5d0339921439b60d4f2b9f2a2ad",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2022-06-26:ppv:forbiddendoorbuyin",
       "date": "2022-06-26",
       "year": 2022,
@@ -9974,32 +10011,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2022-06-26:ppv",
-      "date": "2022-06-26",
-      "year": 2022,
-      "show": "PPV",
-      "title": "Forbidden Door",
-      "description": "",
-      "duration": 13529.56,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2022/03%20-%20AEW-NJPW%20Forbidden%20Door/AEW.NJPW.Forbidden.Door.2022.PPV.1080p.WEB.h264-HEEL_006764.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2022/03%20-%20AEW-NJPW%20Forbidden%20Door/AEW.NJPW.Forbidden.Door.2022.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2022/03 - AEW-NJPW Forbidden Door/AEW.NJPW.Forbidden.Door.2022.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 13529.56,
-          "height": 480,
-          "bytes": 1339171020,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "0580a5d0339921439b60d4f2b9f2a2ad",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2022-06-27:dark-elevation",
@@ -11120,6 +11131,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2022-09-04:ppv",
+      "date": "2022-09-04",
+      "year": 2022,
+      "show": "PPV",
+      "title": "All Out",
+      "description": "",
+      "duration": 14178.24,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2022/04%20-%20AEW%20All%20Out%202022/AEW.All.Out.2022.PPV.1080p.WEB.h264-HEEL_007089.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2022/04%20-%20AEW%20All%20Out%202022/AEW.All.Out.2022.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2022/04 - AEW All Out 2022/AEW.All.Out.2022.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 14178.24,
+          "height": 480,
+          "bytes": 1407888763,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "038d4c3b677208615191fb221b9574a3",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2022-09-04:ppv:alloutzerohour",
       "date": "2022-09-04",
       "year": 2022,
@@ -11145,32 +11182,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2022-09-04:ppv",
-      "date": "2022-09-04",
-      "year": 2022,
-      "show": "PPV",
-      "title": "All Out",
-      "description": "",
-      "duration": 14178.24,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2022/04%20-%20AEW%20All%20Out%202022/AEW.All.Out.2022.PPV.1080p.WEB.h264-HEEL_007089.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2022/04%20-%20AEW%20All%20Out%202022/AEW.All.Out.2022.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2022/04 - AEW All Out 2022/AEW.All.Out.2022.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 14178.24,
-          "height": 480,
-          "bytes": 1407888763,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "038d4c3b677208615191fb221b9574a3",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2022-09-05:dark-elevation",
@@ -12343,6 +12354,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2022-11-19:ppv",
+      "date": "2022-11-19",
+      "year": 2022,
+      "show": "PPV",
+      "title": "Full Gear",
+      "description": "",
+      "duration": 14064.13,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2022/05%20-%20AEW%20Full%20Gear/AEW.Full.Gear.2022.PPV.1080p.WEB.h264-HEEL_007032.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2022/05%20-%20AEW%20Full%20Gear/AEW.Full.Gear.2022.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2022/05 - AEW Full Gear/AEW.Full.Gear.2022.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 14064.13,
+          "height": 480,
+          "bytes": 1395968617,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "5c3067d7cee37da0dde166f10aa3b48b",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2022-11-19:ppv:fullgearzerohour",
       "date": "2022-11-19",
       "year": 2022,
@@ -12368,32 +12405,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2022-11-19:ppv",
-      "date": "2022-11-19",
-      "year": 2022,
-      "show": "PPV",
-      "title": "Full Gear",
-      "description": "",
-      "duration": 14064.13,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2022/05%20-%20AEW%20Full%20Gear/AEW.Full.Gear.2022.PPV.1080p.WEB.h264-HEEL_007032.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2022/05%20-%20AEW%20Full%20Gear/AEW.Full.Gear.2022.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2022/05 - AEW Full Gear/AEW.Full.Gear.2022.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 14064.13,
-          "height": 480,
-          "bytes": 1395968617,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "5c3067d7cee37da0dde166f10aa3b48b",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2022-11-21:dark-elevation",
@@ -14034,6 +14045,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2023-03-05:ppv",
+      "date": "2023-03-05",
+      "year": 2023,
+      "show": "PPV",
+      "title": "Revolution",
+      "description": "",
+      "duration": 13740.03,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/01%20-%20AEW%20Revolution%202023/AEW.Revolution.2023.PPV.1080p.WEB.h264-HEEL_006870.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2023/01%20-%20AEW%20Revolution%202023/AEW.Revolution.2023.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2023/01 - AEW Revolution 2023/AEW.Revolution.2023.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 13740.03,
+          "height": 480,
+          "bytes": 1310560565,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "00cc8dc1dd578ed6750182e2617304f6",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2023-03-05:ppv:revolutionzerohour",
       "date": "2023-03-05",
       "year": 2023,
@@ -14059,32 +14096,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2023-03-05:ppv",
-      "date": "2023-03-05",
-      "year": 2023,
-      "show": "PPV",
-      "title": "Revolution",
-      "description": "",
-      "duration": 13740.03,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/01%20-%20AEW%20Revolution%202023/AEW.Revolution.2023.PPV.1080p.WEB.h264-HEEL_006870.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2023/01%20-%20AEW%20Revolution%202023/AEW.Revolution.2023.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2023/01 - AEW Revolution 2023/AEW.Revolution.2023.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 13740.03,
-          "height": 480,
-          "bytes": 1310560565,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "00cc8dc1dd578ed6750182e2617304f6",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2023-03-06:dark-elevation",
@@ -15139,6 +15150,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2023-05-28:ppv",
+      "date": "2023-05-28",
+      "year": 2023,
+      "show": "PPV",
+      "title": "Double or Nothing",
+      "description": "",
+      "duration": 13700.17,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/02%20-%20AEW%20Double%20or%20Nothing%202023/AEW.Double.or.Nothing.2023.1080p.HEVC.regs_006850.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2023/02%20-%20AEW%20Double%20or%20Nothing%202023/AEW.Double.or.Nothing.2023.1080p.HEVC.regs.mp4",
+          "filename": "PPV/2023/02 - AEW Double or Nothing 2023/AEW.Double.or.Nothing.2023.1080p.HEVC.regs.mp4",
+          "duration": 13700.17,
+          "height": 480,
+          "bytes": 1308694001,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "510f502bbdbca8e1af3b15fd4da24260",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2023-05-28:ppv:doubleornothingbuyin",
       "date": "2023-05-28",
       "year": 2023,
@@ -15164,32 +15201,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2023-05-28:ppv",
-      "date": "2023-05-28",
-      "year": 2023,
-      "show": "PPV",
-      "title": "Double or Nothing",
-      "description": "",
-      "duration": 13700.17,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/02%20-%20AEW%20Double%20or%20Nothing%202023/AEW.Double.or.Nothing.2023.1080p.HEVC.regs_006850.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2023/02%20-%20AEW%20Double%20or%20Nothing%202023/AEW.Double.or.Nothing.2023.1080p.HEVC.regs.mp4",
-          "filename": "PPV/2023/02 - AEW Double or Nothing 2023/AEW.Double.or.Nothing.2023.1080p.HEVC.regs.mp4",
-          "duration": 13700.17,
-          "height": 480,
-          "bytes": 1308694001,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "510f502bbdbca8e1af3b15fd4da24260",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2023-06-02:rampage",
@@ -15400,6 +15411,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2023-06-25:ppv",
+      "date": "2023-06-25",
+      "year": 2023,
+      "show": "PPV",
+      "title": "Forbidden Door",
+      "description": "",
+      "duration": 14236.47,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/03%20-%20AEW-NJPW%20Forbidden%20Door/AEW.NJPW.Forbidden.Door.2023-1080p-HEVC-regs_007118.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2023/03%20-%20AEW-NJPW%20Forbidden%20Door/AEW.NJPW.Forbidden.Door.2023-1080p-HEVC-regs.mp4",
+          "filename": "PPV/2023/03 - AEW-NJPW Forbidden Door/AEW.NJPW.Forbidden.Door.2023-1080p-HEVC-regs.mp4",
+          "duration": 14236.47,
+          "height": 480,
+          "bytes": 1356033593,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "7ed54573136c158d749a68d9163161a7",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2023-06-25:ppv:forbiddendoorzerohour",
       "date": "2023-06-25",
       "year": 2023,
@@ -15425,32 +15462,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2023-06-25:ppv",
-      "date": "2023-06-25",
-      "year": 2023,
-      "show": "PPV",
-      "title": "Forbidden Door",
-      "description": "",
-      "duration": 14236.47,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/03%20-%20AEW-NJPW%20Forbidden%20Door/AEW.NJPW.Forbidden.Door.2023-1080p-HEVC-regs_007118.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2023/03%20-%20AEW-NJPW%20Forbidden%20Door/AEW.NJPW.Forbidden.Door.2023-1080p-HEVC-regs.mp4",
-          "filename": "PPV/2023/03 - AEW-NJPW Forbidden Door/AEW.NJPW.Forbidden.Door.2023-1080p-HEVC-regs.mp4",
-          "duration": 14236.47,
-          "height": 480,
-          "bytes": 1356033593,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "7ed54573136c158d749a68d9163161a7",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2023-06-28:dynamite",
@@ -16193,6 +16204,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2023-08-27:ppv",
+      "date": "2023-08-27",
+      "year": 2023,
+      "show": "PPV",
+      "title": "All In",
+      "description": "",
+      "duration": 14310.4,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/04%20-%20AEW%20All%20In%202023/AEW%20-%20All%20In%20(2023)%201080p%20Web-DL%20AAC_007155.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2023/04%20-%20AEW%20All%20In%202023/AEW%20-%20All%20In%20(2023)%201080p%20Web-DL%20AAC.mp4",
+          "filename": "PPV/2023/04 - AEW All In 2023/AEW - All In (2023) 1080p Web-DL AAC.mp4",
+          "duration": 14310.4,
+          "height": 480,
+          "bytes": 1408193281,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "ebf3beba97b5379dcb846ad9f4be875f",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2023-08-27:ppv:allinzerohour",
       "date": "2023-08-27",
       "year": 2023,
@@ -16218,32 +16255,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2023-08-27:ppv",
-      "date": "2023-08-27",
-      "year": 2023,
-      "show": "PPV",
-      "title": "All In",
-      "description": "",
-      "duration": 14310.4,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/04%20-%20AEW%20All%20In%202023/AEW%20-%20All%20In%20(2023)%201080p%20Web-DL%20AAC_007155.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2023/04%20-%20AEW%20All%20In%202023/AEW%20-%20All%20In%20(2023)%201080p%20Web-DL%20AAC.mp4",
-          "filename": "PPV/2023/04 - AEW All In 2023/AEW - All In (2023) 1080p Web-DL AAC.mp4",
-          "duration": 14310.4,
-          "height": 480,
-          "bytes": 1408193281,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "ebf3beba97b5379dcb846ad9f4be875f",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2023-08-30:dynamite",
@@ -16324,6 +16335,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2023-09-03:ppv",
+      "date": "2023-09-03",
+      "year": 2023,
+      "show": "PPV",
+      "title": "All Out",
+      "description": "",
+      "duration": 13775.36,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/05%20-%20AEW%20All%20Out%202023/AEW%20-%20All%20Out%20(2023)%201080p%20Web-DL%20AAC_006887.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2023/05%20-%20AEW%20All%20Out%202023/AEW%20-%20All%20Out%20(2023)%201080p%20Web-DL%20AAC.mp4",
+          "filename": "PPV/2023/05 - AEW All Out 2023/AEW - All Out (2023) 1080p Web-DL AAC.mp4",
+          "duration": 13775.36,
+          "height": 480,
+          "bytes": 1349619022,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "f0e57d17c44e851b6d0663ffafde9861",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2023-09-03:ppv:alloutzerohour",
       "date": "2023-09-03",
       "year": 2023,
@@ -16349,32 +16386,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2023-09-03:ppv",
-      "date": "2023-09-03",
-      "year": 2023,
-      "show": "PPV",
-      "title": "All Out",
-      "description": "",
-      "duration": 13775.36,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/05%20-%20AEW%20All%20Out%202023/AEW%20-%20All%20Out%20(2023)%201080p%20Web-DL%20AAC_006887.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2023/05%20-%20AEW%20All%20Out%202023/AEW%20-%20All%20Out%20(2023)%201080p%20Web-DL%20AAC.mp4",
-          "filename": "PPV/2023/05 - AEW All Out 2023/AEW - All Out (2023) 1080p Web-DL AAC.mp4",
-          "duration": 13775.36,
-          "height": 480,
-          "bytes": 1349619022,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "f0e57d17c44e851b6d0663ffafde9861",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2023-09-06:dynamite",
@@ -16699,6 +16710,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2023-10-01:ppv",
+      "date": "2023-10-01",
+      "year": 2023,
+      "show": "PPV",
+      "title": "WrestleDream",
+      "description": "",
+      "duration": 14310.13,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/06%20-%20AEW%20WrestleDream/AEW.WrestleDream.2023.PPV.1080p.WEB.h264-HEEL_007155.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2023/06%20-%20AEW%20WrestleDream/AEW.WrestleDream.2023.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2023/06 - AEW WrestleDream/AEW.WrestleDream.2023.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 14310.13,
+          "height": 480,
+          "bytes": 1368620036,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "98d0ad58ea3cb8752ce7940b0617be51",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2023-10-01:ppv:wrestledreamzerohour",
       "date": "2023-10-01",
       "year": 2023,
@@ -16724,32 +16761,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2023-10-01:ppv",
-      "date": "2023-10-01",
-      "year": 2023,
-      "show": "PPV",
-      "title": "WrestleDream",
-      "description": "",
-      "duration": 14310.13,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/06%20-%20AEW%20WrestleDream/AEW.WrestleDream.2023.PPV.1080p.WEB.h264-HEEL_007155.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2023/06%20-%20AEW%20WrestleDream/AEW.WrestleDream.2023.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2023/06 - AEW WrestleDream/AEW.WrestleDream.2023.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 14310.13,
-          "height": 480,
-          "bytes": 1368620036,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "98d0ad58ea3cb8752ce7940b0617be51",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2023-10-04:dynamite",
@@ -17324,6 +17335,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2023-11-18:ppv",
+      "date": "2023-11-18",
+      "year": 2023,
+      "show": "PPV",
+      "title": "Full Gear",
+      "description": "",
+      "duration": 14220.19,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/07%20-%20AEW%20Full%20Gear%202023/AEW.Full.Gear.2023.PPV.1080p.WEB.h264-HEEL_007110.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2023/07%20-%20AEW%20Full%20Gear%202023/AEW.Full.Gear.2023.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2023/07 - AEW Full Gear 2023/AEW.Full.Gear.2023.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 14220.19,
+          "height": 480,
+          "bytes": 1360202236,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "34cba3139b40c11f83392f50c292099a",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2023-11-18:ppv:fullgearzerohour",
       "date": "2023-11-18",
       "year": 2023,
@@ -17349,32 +17386,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2023-11-18:ppv",
-      "date": "2023-11-18",
-      "year": 2023,
-      "show": "PPV",
-      "title": "Full Gear",
-      "description": "",
-      "duration": 14220.19,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/07%20-%20AEW%20Full%20Gear%202023/AEW.Full.Gear.2023.PPV.1080p.WEB.h264-HEEL_007110.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2023/07%20-%20AEW%20Full%20Gear%202023/AEW.Full.Gear.2023.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2023/07 - AEW Full Gear 2023/AEW.Full.Gear.2023.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 14220.19,
-          "height": 480,
-          "bytes": 1360202236,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "34cba3139b40c11f83392f50c292099a",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2023-11-22:dynamite",
@@ -17793,6 +17804,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2023-12-30:ppv",
+      "date": "2023-12-30",
+      "year": 2023,
+      "show": "PPV",
+      "title": "Worlds End",
+      "description": "",
+      "duration": 13800.03,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/08%20-%20AEW%20World's%20End/AEW.Worlds.End.2023.PPV.1080p.WEB.h264-HEEL_006900.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2023/08%20-%20AEW%20World's%20End/AEW.Worlds.End.2023.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2023/08 - AEW World's End/AEW.Worlds.End.2023.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 13800.03,
+          "height": 480,
+          "bytes": 1319277394,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "fbe3e4a51e445aa96a27e97d643f9a0c",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2023-12-30:ppv:worldsendzerohour",
       "date": "2023-12-30",
       "year": 2023,
@@ -17818,32 +17855,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2023-12-30:ppv",
-      "date": "2023-12-30",
-      "year": 2023,
-      "show": "PPV",
-      "title": "Worlds End",
-      "description": "",
-      "duration": 13800.03,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2023/08%20-%20AEW%20World's%20End/AEW.Worlds.End.2023.PPV.1080p.WEB.h264-HEEL_006900.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2023/08%20-%20AEW%20World's%20End/AEW.Worlds.End.2023.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2023/08 - AEW World's End/AEW.Worlds.End.2023.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 13800.03,
-          "height": 480,
-          "bytes": 1319277394,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "fbe3e4a51e445aa96a27e97d643f9a0c",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2024-01-02:collision",
@@ -18628,33 +18639,6 @@
       "discoveredAt": 1793232000000
     },
     {
-      "id": "aew:2024-03-03:ppv:revolutionzerohour",
-      "date": "2024-03-03",
-      "year": 2024,
-      "show": "PPV",
-      "title": "Revolution \u2014 Zero Hour",
-      "description": "",
-      "duration": 5646,
-      "thumbnail": "https://i.ytimg.com/vi/5IYp_3_yHS0/hqdefault.jpg",
-      "poster": "https://i.ytimg.com/vi/5IYp_3_yHS0/hqdefault.jpg",
-      "sources": [
-        {
-          "type": "youtube",
-          "videoId": "5IYp_3_yHS0",
-          "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
-          "direct": true,
-          "title": "Zero Hour: AEW Revolution Pre Show | Sunday March 3 - 6:30pm ET / 3:30pm PT",
-          "duration": 5646,
-          "label": "Official YouTube",
-          "eventPart": "preshow",
-          "company": "aew"
-        }
-      ],
-      "discoveredAt": 0,
-      "eventPart": "preshow",
-      "eventOrder": -1
-    },
-    {
       "id": "aew:2024-03-03:ppv",
       "date": "2024-03-03",
       "year": 2024,
@@ -18691,6 +18675,33 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "aew:2024-03-03:ppv:revolutionzerohour",
+      "date": "2024-03-03",
+      "year": 2024,
+      "show": "PPV",
+      "title": "Revolution \u2014 Zero Hour",
+      "description": "",
+      "duration": 5646,
+      "thumbnail": "https://i.ytimg.com/vi/5IYp_3_yHS0/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/5IYp_3_yHS0/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "5IYp_3_yHS0",
+          "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
+          "direct": true,
+          "title": "Zero Hour: AEW Revolution Pre Show | Sunday March 3 - 6:30pm ET / 3:30pm PT",
+          "duration": 5646,
+          "label": "Official YouTube",
+          "eventPart": "preshow",
+          "company": "aew"
+        }
+      ],
+      "discoveredAt": 0,
+      "eventPart": "preshow",
+      "eventOrder": -1
     },
     {
       "id": "aew:2024-03-06:dynamite",
@@ -19309,33 +19320,6 @@
       "discoveredAt": 1793232000000
     },
     {
-      "id": "aew:2024-04-21:ppv:dynastyzerohour",
-      "date": "2024-04-21",
-      "year": 2024,
-      "show": "PPV",
-      "title": "Dynasty \u2014 Zero Hour",
-      "description": "",
-      "duration": 5185,
-      "thumbnail": "https://i.ytimg.com/vi/zujVoXITlic/hqdefault.jpg",
-      "poster": "https://i.ytimg.com/vi/zujVoXITlic/hqdefault.jpg",
-      "sources": [
-        {
-          "type": "youtube",
-          "videoId": "zujVoXITlic",
-          "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
-          "direct": true,
-          "title": "Zero Hour: AEW Dynasty Pre Show - LIVE Sunday, April 21 6:30pm ET / 3:30pm PT",
-          "duration": 5185,
-          "label": "Official YouTube",
-          "eventPart": "preshow",
-          "company": "aew"
-        }
-      ],
-      "discoveredAt": 0,
-      "eventPart": "preshow",
-      "eventOrder": -1
-    },
-    {
       "id": "aew:2024-04-21:ppv",
       "date": "2024-04-21",
       "year": 2024,
@@ -19384,6 +19368,33 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "aew:2024-04-21:ppv:dynastyzerohour",
+      "date": "2024-04-21",
+      "year": 2024,
+      "show": "PPV",
+      "title": "Dynasty \u2014 Zero Hour",
+      "description": "",
+      "duration": 5185,
+      "thumbnail": "https://i.ytimg.com/vi/zujVoXITlic/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/zujVoXITlic/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "zujVoXITlic",
+          "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
+          "direct": true,
+          "title": "Zero Hour: AEW Dynasty Pre Show - LIVE Sunday, April 21 6:30pm ET / 3:30pm PT",
+          "duration": 5185,
+          "label": "Official YouTube",
+          "eventPart": "preshow",
+          "company": "aew"
+        }
+      ],
+      "discoveredAt": 0,
+      "eventPart": "preshow",
+      "eventOrder": -1
     },
     {
       "id": "aew:2024-04-24:dynamite",
@@ -19800,6 +19811,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2024-05-26:ppv",
+      "date": "2024-05-26",
+      "year": 2024,
+      "show": "PPV",
+      "title": "Double or Nothing",
+      "description": "",
+      "duration": 16336.77,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2024/AEW%20Double%20or%20Nothing/AEW.Double.Or.Nothing.2024.PPV.1080p.WEB.h264-HEEL_008168.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2024/AEW%20Double%20or%20Nothing/AEW.Double.Or.Nothing.2024.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2024/AEW Double or Nothing/AEW.Double.Or.Nothing.2024.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 16336.77,
+          "height": 480,
+          "bytes": 1563412557,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "0d10433bec46fe395c8a02f384d46b73",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2024-05-26:ppv:doubleornothingbuyin",
       "date": "2024-05-26",
       "year": 2024,
@@ -19825,32 +19862,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2024-05-26:ppv",
-      "date": "2024-05-26",
-      "year": 2024,
-      "show": "PPV",
-      "title": "Double or Nothing",
-      "description": "",
-      "duration": 16336.77,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2024/AEW%20Double%20or%20Nothing/AEW.Double.Or.Nothing.2024.PPV.1080p.WEB.h264-HEEL_008168.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2024/AEW%20Double%20or%20Nothing/AEW.Double.Or.Nothing.2024.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2024/AEW Double or Nothing/AEW.Double.Or.Nothing.2024.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 16336.77,
-          "height": 480,
-          "bytes": 1563412557,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "0d10433bec46fe395c8a02f384d46b73",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2024-05-29:dynamite",
@@ -20293,6 +20304,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2024-06-30:ppv",
+      "date": "2024-06-30",
+      "year": 2024,
+      "show": "PPV",
+      "title": "Forbidden Door",
+      "description": "",
+      "duration": 14388.07,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2024/AEW%20Forbidden%20Door/AEW.NJPW.Forbidden.Door.2024.PPV.1080p.WEB.h264-HEEL_007194.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2024/AEW%20Forbidden%20Door/AEW.NJPW.Forbidden.Door.2024.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2024/AEW Forbidden Door/AEW.NJPW.Forbidden.Door.2024.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 14388.07,
+          "height": 480,
+          "bytes": 1418656405,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "62d42c4835f04a4ff6eb9c8dffc896ae",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2024-06-30:ppv:forbiddendoorzerohour",
       "date": "2024-06-30",
       "year": 2024,
@@ -20318,32 +20355,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2024-06-30:ppv",
-      "date": "2024-06-30",
-      "year": 2024,
-      "show": "PPV",
-      "title": "Forbidden Door",
-      "description": "",
-      "duration": 14388.07,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2024/AEW%20Forbidden%20Door/AEW.NJPW.Forbidden.Door.2024.PPV.1080p.WEB.h264-HEEL_007194.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2024/AEW%20Forbidden%20Door/AEW.NJPW.Forbidden.Door.2024.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2024/AEW Forbidden Door/AEW.NJPW.Forbidden.Door.2024.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 14388.07,
-          "height": 480,
-          "bytes": 1418656405,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "62d42c4835f04a4ff6eb9c8dffc896ae",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2024-07-03:dynamite",
@@ -21036,6 +21047,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2024-08-25:ppv",
+      "date": "2024-08-25",
+      "year": 2024,
+      "show": "PPV",
+      "title": "All In",
+      "description": "",
+      "duration": 14418.09,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2024/AEW%20All-In%20London/AEW.All.In.2024.PPV.1080p.WEB.h264-HEEL_007209.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2024/AEW%20All-In%20London/AEW.All.In.2024.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2024/AEW All-In London/AEW.All.In.2024.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 14418.09,
+          "height": 480,
+          "bytes": 1431474424,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "b6c40ef5c645fe3e866e20f929550607",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2024-08-25:ppv:allinzerohour",
       "date": "2024-08-25",
       "year": 2024,
@@ -21061,32 +21098,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2024-08-25:ppv",
-      "date": "2024-08-25",
-      "year": 2024,
-      "show": "PPV",
-      "title": "All In",
-      "description": "",
-      "duration": 14418.09,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2024/AEW%20All-In%20London/AEW.All.In.2024.PPV.1080p.WEB.h264-HEEL_007209.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2024/AEW%20All-In%20London/AEW.All.In.2024.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2024/AEW All-In London/AEW.All.In.2024.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 14418.09,
-          "height": 480,
-          "bytes": 1431474424,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "b6c40ef5c645fe3e866e20f929550607",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2024-08-28:dynamite",
@@ -21255,6 +21266,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2024-09-07:ppv",
+      "date": "2024-09-07",
+      "year": 2024,
+      "show": "PPV",
+      "title": "All Out",
+      "description": "",
+      "duration": 14262.06,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2024/AEW%20All-Out/AEW.All.Out.2024.PPV.1080p.WEB.h264-HEEL_007131.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2024/AEW%20All-Out/AEW.All.Out.2024.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2024/AEW All-Out/AEW.All.Out.2024.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 14262.06,
+          "height": 480,
+          "bytes": 1392695849,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "ea448e69b11a56e80cfda9767c95c2c4",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2024-09-07:ppv:alloutzerohour",
       "date": "2024-09-07",
       "year": 2024,
@@ -21280,32 +21317,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2024-09-07:ppv",
-      "date": "2024-09-07",
-      "year": 2024,
-      "show": "PPV",
-      "title": "All Out",
-      "description": "",
-      "duration": 14262.06,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2024/AEW%20All-Out/AEW.All.Out.2024.PPV.1080p.WEB.h264-HEEL_007131.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2024/AEW%20All-Out/AEW.All.Out.2024.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2024/AEW All-Out/AEW.All.Out.2024.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 14262.06,
-          "height": 480,
-          "bytes": 1392695849,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "ea448e69b11a56e80cfda9767c95c2c4",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2024-09-11:dynamite",
@@ -21696,6 +21707,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2024-10-12:ppv",
+      "date": "2024-10-12",
+      "year": 2024,
+      "show": "PPV",
+      "title": "WrestleDream",
+      "description": "",
+      "duration": 14382.04,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2024/AEW%20WrestleDream%202024/AEW.WrestleDream.2024.PPV.1080p.WEB.h264-HEEL_007191.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2024/AEW%20WrestleDream%202024/AEW.WrestleDream.2024.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2024/AEW WrestleDream 2024/AEW.WrestleDream.2024.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 14382.04,
+          "height": 480,
+          "bytes": 1418252640,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "e083ca8e8e9e556c02dbaa8db6104aec",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2024-10-12:ppv:wrestledreamzerohour",
       "date": "2024-10-12",
       "year": 2024,
@@ -21721,32 +21758,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2024-10-12:ppv",
-      "date": "2024-10-12",
-      "year": 2024,
-      "show": "PPV",
-      "title": "WrestleDream",
-      "description": "",
-      "duration": 14382.04,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2024/AEW%20WrestleDream%202024/AEW.WrestleDream.2024.PPV.1080p.WEB.h264-HEEL_007191.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2024/AEW%20WrestleDream%202024/AEW.WrestleDream.2024.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2024/AEW WrestleDream 2024/AEW.WrestleDream.2024.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 14382.04,
-          "height": 480,
-          "bytes": 1418252640,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "e083ca8e8e9e556c02dbaa8db6104aec",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2024-10-16:dynamite",
@@ -22307,33 +22318,6 @@
       "discoveredAt": 1793232000000
     },
     {
-      "id": "aew:2024-11-23:ppv:fullgearzerohour",
-      "date": "2024-11-23",
-      "year": 2024,
-      "show": "PPV",
-      "title": "Full Gear \u2014 Zero Hour",
-      "description": "",
-      "duration": 5381,
-      "thumbnail": "https://i.ytimg.com/vi/BoxE8Z8rgR0/hqdefault.jpg",
-      "poster": "https://i.ytimg.com/vi/BoxE8Z8rgR0/hqdefault.jpg",
-      "sources": [
-        {
-          "type": "youtube",
-          "videoId": "BoxE8Z8rgR0",
-          "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
-          "direct": true,
-          "title": "Zero Hour: AEW Full Gear - Big Boom A.J. with Big Justice + The Rizzler vs QT Marshall",
-          "duration": 5381,
-          "label": "Official YouTube",
-          "eventPart": "preshow",
-          "company": "aew"
-        }
-      ],
-      "discoveredAt": 0,
-      "eventPart": "preshow",
-      "eventOrder": -1
-    },
-    {
       "id": "aew:2024-11-23:ppv",
       "date": "2024-11-23",
       "year": 2024,
@@ -22368,6 +22352,33 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "aew:2024-11-23:ppv:fullgearzerohour",
+      "date": "2024-11-23",
+      "year": 2024,
+      "show": "PPV",
+      "title": "Full Gear \u2014 Zero Hour",
+      "description": "",
+      "duration": 5381,
+      "thumbnail": "https://i.ytimg.com/vi/BoxE8Z8rgR0/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/BoxE8Z8rgR0/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "BoxE8Z8rgR0",
+          "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
+          "direct": true,
+          "title": "Zero Hour: AEW Full Gear - Big Boom A.J. with Big Justice + The Rizzler vs QT Marshall",
+          "duration": 5381,
+          "label": "Official YouTube",
+          "eventPart": "preshow",
+          "company": "aew"
+        }
+      ],
+      "discoveredAt": 0,
+      "eventPart": "preshow",
+      "eventOrder": -1
     },
     {
       "id": "aew:2024-11-27:dynamite",
@@ -22864,6 +22875,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2024-12-28:ppv",
+      "date": "2024-12-28",
+      "year": 2024,
+      "show": "PPV",
+      "title": "Worlds End",
+      "description": "",
+      "duration": 13020.08,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2024/AEW%20World's%20End/AEW.Worlds.End.2024.PPV.1080p.WEB.h264-HEEL_006510.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2024/AEW%20World's%20End/AEW.Worlds.End.2024.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2024/AEW World's End/AEW.Worlds.End.2024.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 13020.08,
+          "height": 480,
+          "bytes": 1283732982,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "9637a6a348ad803de3c191b60a29c63b",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2024-12-28:ppv:worldsendzerohour",
       "date": "2024-12-28",
       "year": 2024,
@@ -22889,32 +22926,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2024-12-28:ppv",
-      "date": "2024-12-28",
-      "year": 2024,
-      "show": "PPV",
-      "title": "Worlds End",
-      "description": "",
-      "duration": 13020.08,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2024/AEW%20World's%20End/AEW.Worlds.End.2024.PPV.1080p.WEB.h264-HEEL_006510.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2024/AEW%20World's%20End/AEW.Worlds.End.2024.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2024/AEW World's End/AEW.Worlds.End.2024.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 13020.08,
-          "height": 480,
-          "bytes": 1283732982,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "9637a6a348ad803de3c191b60a29c63b",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2024-12-31:collision",
@@ -23573,6 +23584,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2025-03-09:ppv",
+      "date": "2025-03-09",
+      "year": 2025,
+      "show": "PPV",
+      "title": "Revolution",
+      "description": "",
+      "duration": 14760.06,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2025/AEW%20Revolution%202025/AEW.Revolution.2025.PPV.1080p.WEB.h264-HEEL_007380.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2025/AEW%20Revolution%202025/AEW.Revolution.2025.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2025/AEW Revolution 2025/AEW.Revolution.2025.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 14760.06,
+          "height": 480,
+          "bytes": 1440518579,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "6133e12a913ccb3bb7d2ed621bff1980",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2025-03-09:ppv:revolutionzerohour",
       "date": "2025-03-09",
       "year": 2025,
@@ -23598,32 +23635,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2025-03-09:ppv",
-      "date": "2025-03-09",
-      "year": 2025,
-      "show": "PPV",
-      "title": "Revolution",
-      "description": "",
-      "duration": 14760.06,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2025/AEW%20Revolution%202025/AEW.Revolution.2025.PPV.1080p.WEB.h264-HEEL_007380.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2025/AEW%20Revolution%202025/AEW.Revolution.2025.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2025/AEW Revolution 2025/AEW.Revolution.2025.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 14760.06,
-          "height": 480,
-          "bytes": 1440518579,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "6133e12a913ccb3bb7d2ed621bff1980",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2025-03-12:dynamite",
@@ -23884,33 +23895,6 @@
       "discoveredAt": 1793232000000
     },
     {
-      "id": "aew:2025-04-06:ppv:dynastyzerohour",
-      "date": "2025-04-06",
-      "year": 2025,
-      "show": "PPV",
-      "title": "Dynasty \u2014 Zero Hour",
-      "description": "",
-      "duration": 5296,
-      "thumbnail": "https://i.ytimg.com/vi/v_04iPBK-8o/hqdefault.jpg",
-      "poster": "https://i.ytimg.com/vi/v_04iPBK-8o/hqdefault.jpg",
-      "sources": [
-        {
-          "type": "youtube",
-          "videoId": "v_04iPBK-8o",
-          "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
-          "direct": true,
-          "title": "Zero Hour: AEW Dynasty Pre Show - LIVE, Sunday April 6 at 6:30pm ET / 3:30pm PT",
-          "duration": 5296,
-          "label": "Official YouTube",
-          "eventPart": "preshow",
-          "company": "aew"
-        }
-      ],
-      "discoveredAt": 0,
-      "eventPart": "preshow",
-      "eventOrder": -1
-    },
-    {
       "id": "aew:2025-04-06:ppv",
       "date": "2025-04-06",
       "year": 2025,
@@ -23945,6 +23929,33 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "aew:2025-04-06:ppv:dynastyzerohour",
+      "date": "2025-04-06",
+      "year": 2025,
+      "show": "PPV",
+      "title": "Dynasty \u2014 Zero Hour",
+      "description": "",
+      "duration": 5296,
+      "thumbnail": "https://i.ytimg.com/vi/v_04iPBK-8o/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/v_04iPBK-8o/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "v_04iPBK-8o",
+          "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
+          "direct": true,
+          "title": "Zero Hour: AEW Dynasty Pre Show - LIVE, Sunday April 6 at 6:30pm ET / 3:30pm PT",
+          "duration": 5296,
+          "label": "Official YouTube",
+          "eventPart": "preshow",
+          "company": "aew"
+        }
+      ],
+      "discoveredAt": 0,
+      "eventPart": "preshow",
+      "eventOrder": -1
     },
     {
       "id": "aew:2025-04-09:dynamite",
@@ -24341,33 +24352,6 @@
       "discoveredAt": 1793232000000
     },
     {
-      "id": "aew:2025-05-25:ppv:doubleornothingbuyin",
-      "date": "2025-05-25",
-      "year": 2025,
-      "show": "PPV",
-      "title": "Double or Nothing \u2014 Buy In",
-      "description": "",
-      "duration": 5514,
-      "thumbnail": "https://i.ytimg.com/vi/CcPzc6fvpaE/hqdefault.jpg",
-      "poster": "https://i.ytimg.com/vi/CcPzc6fvpaE/hqdefault.jpg",
-      "sources": [
-        {
-          "type": "youtube",
-          "videoId": "CcPzc6fvpaE",
-          "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
-          "direct": true,
-          "title": "The Buy In: AEW Double Or Nothing Pre Show - LIVE, Sunday May 25 at 6:30pm ET / 3:30pm PT",
-          "duration": 5514,
-          "label": "Official YouTube",
-          "eventPart": "preshow",
-          "company": "aew"
-        }
-      ],
-      "discoveredAt": 0,
-      "eventPart": "preshow",
-      "eventOrder": -1
-    },
-    {
       "id": "aew:2025-05-25:ppv",
       "date": "2025-05-25",
       "year": 2025,
@@ -24402,6 +24386,33 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "aew:2025-05-25:ppv:doubleornothingbuyin",
+      "date": "2025-05-25",
+      "year": 2025,
+      "show": "PPV",
+      "title": "Double or Nothing \u2014 Buy In",
+      "description": "",
+      "duration": 5514,
+      "thumbnail": "https://i.ytimg.com/vi/CcPzc6fvpaE/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/CcPzc6fvpaE/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "CcPzc6fvpaE",
+          "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
+          "direct": true,
+          "title": "The Buy In: AEW Double Or Nothing Pre Show - LIVE, Sunday May 25 at 6:30pm ET / 3:30pm PT",
+          "duration": 5514,
+          "label": "Official YouTube",
+          "eventPart": "preshow",
+          "company": "aew"
+        }
+      ],
+      "discoveredAt": 0,
+      "eventPart": "preshow",
+      "eventOrder": -1
     },
     {
       "id": "aew:2025-05-28:dynamite",
@@ -24873,6 +24884,42 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2025-07-12:ppv",
+      "date": "2025-07-12",
+      "year": 2025,
+      "show": "PPV",
+      "title": "All In",
+      "description": "",
+      "duration": 21384.05,
+      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2025/AEW%20All%20In%202025/AEW.All.In.2025.PPV.1080p.WEB.h264-HEEL_010692.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2025/AEW%20All%20In%202025/AEW.All.In.2025.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2025/AEW All In 2025/AEW.All.In.2025.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 21384.05,
+          "height": 480,
+          "bytes": 2108632475,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "a6c3c3c2751891748ed3196917b18620",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        },
+        {
+          "type": "okru",
+          "videoId": "10279916472943",
+          "owner": "579391530351",
+          "title": "All.In.2025.",
+          "label": "OK.ru",
+          "duration": 21384,
+          "programme": "PPV",
+          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=8757522598478&type=37&idx=7&tkn=-aXErEiJXhTiqNdM4zsGSQHnF4g&fn=external_8"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2025-07-12:ppv:allinzerohour",
       "date": "2025-07-12",
       "year": 2025,
@@ -24908,42 +24955,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2025-07-12:ppv",
-      "date": "2025-07-12",
-      "year": 2025,
-      "show": "PPV",
-      "title": "All In",
-      "description": "",
-      "duration": 21384.05,
-      "thumbnail": "https://archive.org/download/aewshows02/aewshows02.thumbs/PPV/2025/AEW%20All%20In%202025/AEW.All.In.2025.PPV.1080p.WEB.h264-HEEL_010692.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2025/AEW%20All%20In%202025/AEW.All.In.2025.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2025/AEW All In 2025/AEW.All.In.2025.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 21384.05,
-          "height": 480,
-          "bytes": 2108632475,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "a6c3c3c2751891748ed3196917b18620",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        },
-        {
-          "type": "okru",
-          "videoId": "10279916472943",
-          "owner": "579391530351",
-          "title": "All.In.2025.",
-          "label": "OK.ru",
-          "duration": 21384,
-          "programme": "PPV",
-          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=8757522598478&type=37&idx=7&tkn=-aXErEiJXhTiqNdM4zsGSQHnF4g&fn=external_8"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2025-07-16:dynamite",
@@ -25328,33 +25339,6 @@
       "discoveredAt": 1793232000000
     },
     {
-      "id": "aew:2025-08-24:ppv:forbiddendoorzerohour",
-      "date": "2025-08-24",
-      "year": 2025,
-      "show": "PPV",
-      "title": "Forbidden Door \u2014 Zero Hour",
-      "description": "",
-      "duration": 5690,
-      "thumbnail": "https://i.ytimg.com/vi/_MH4rs_SjvQ/hqdefault.jpg",
-      "poster": "https://i.ytimg.com/vi/_MH4rs_SjvQ/hqdefault.jpg",
-      "sources": [
-        {
-          "type": "youtube",
-          "videoId": "_MH4rs_SjvQ",
-          "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
-          "direct": true,
-          "title": "Zero Hour: AEW x NJPW Forbidden Door  | Sunday, August 24",
-          "duration": 5690,
-          "label": "Official YouTube",
-          "eventPart": "preshow",
-          "company": "aew"
-        }
-      ],
-      "discoveredAt": 0,
-      "eventPart": "preshow",
-      "eventOrder": -1
-    },
-    {
       "id": "aew:2025-08-24:ppv",
       "date": "2025-08-24",
       "year": 2025,
@@ -25389,6 +25373,33 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "aew:2025-08-24:ppv:forbiddendoorzerohour",
+      "date": "2025-08-24",
+      "year": 2025,
+      "show": "PPV",
+      "title": "Forbidden Door \u2014 Zero Hour",
+      "description": "",
+      "duration": 5690,
+      "thumbnail": "https://i.ytimg.com/vi/_MH4rs_SjvQ/hqdefault.jpg",
+      "poster": "https://i.ytimg.com/vi/_MH4rs_SjvQ/hqdefault.jpg",
+      "sources": [
+        {
+          "type": "youtube",
+          "videoId": "_MH4rs_SjvQ",
+          "channelId": "UCFN4JkGP_bVhAdBsoV9xftA",
+          "direct": true,
+          "title": "Zero Hour: AEW x NJPW Forbidden Door  | Sunday, August 24",
+          "duration": 5690,
+          "label": "Official YouTube",
+          "eventPart": "preshow",
+          "company": "aew"
+        }
+      ],
+      "discoveredAt": 0,
+      "eventPart": "preshow",
+      "eventOrder": -1
     },
     {
       "id": "aew:2025-08-27:dynamite",
@@ -25609,44 +25620,6 @@
       "discoveredAt": 1793232000000
     },
     {
-      "id": "aew:2025-09-20:ppv:alloutsaturdaytailgatebrawl",
-      "date": "2025-09-20",
-      "year": 2025,
-      "show": "PPV",
-      "title": "All Out \u2014 Saturday Tailgate Brawl",
-      "description": "All Out \u2014 Saturday Tailgate Brawl",
-      "duration": 3628,
-      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=9195569351279&type=37&idx=5&tkn=AK-iQsazvmKmAG2F0ljcKV1vf78&fn=external_8",
-      "discoveredAt": 1793409583957,
-      "sources": [
-        {
-          "type": "okru",
-          "videoId": "10517632322159",
-          "owner": "579391530351",
-          "title": "Saturday.Tailgate.Brawl.All.Out.2025.09.20.",
-          "label": "OK.ru",
-          "duration": 3628,
-          "programme": "PPV",
-          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=9195569351279&type=37&idx=5&tkn=AK-iQsazvmKmAG2F0ljcKV1vf78&fn=external_8"
-        },
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewshows02/PPV/2025/AEW%20All%20Out%202025/AEW.Saturday.Tailgate.Brawl.All.Out.2025.09.20.1080p.WEB.h264-HEEL.mp4",
-          "filename": "PPV/2025/AEW All Out 2025/AEW.Saturday.Tailgate.Brawl.All.Out.2025.09.20.1080p.WEB.h264-HEEL.mp4",
-          "duration": 3628.03,
-          "height": 480,
-          "bytes": 339132163,
-          "label": "Internet Archive \u00b7 aewshows02",
-          "creator": "aewshows02",
-          "md5": "b343833ea237bb6a88d8d6a3413fa19b",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events",
-          "eventPart": "tailgate"
-        }
-      ],
-      "eventPart": "tailgate",
-      "eventOrder": -2
-    },
-    {
       "id": "aew:2025-09-20:collision",
       "date": "2025-09-20",
       "year": 2025,
@@ -25707,6 +25680,44 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "aew:2025-09-20:ppv:alloutsaturdaytailgatebrawl",
+      "date": "2025-09-20",
+      "year": 2025,
+      "show": "PPV",
+      "title": "All Out \u2014 Saturday Tailgate Brawl",
+      "description": "All Out \u2014 Saturday Tailgate Brawl",
+      "duration": 3628,
+      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=9195569351279&type=37&idx=5&tkn=AK-iQsazvmKmAG2F0ljcKV1vf78&fn=external_8",
+      "discoveredAt": 1793409583957,
+      "sources": [
+        {
+          "type": "okru",
+          "videoId": "10517632322159",
+          "owner": "579391530351",
+          "title": "Saturday.Tailgate.Brawl.All.Out.2025.09.20.",
+          "label": "OK.ru",
+          "duration": 3628,
+          "programme": "PPV",
+          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=9195569351279&type=37&idx=5&tkn=AK-iQsazvmKmAG2F0ljcKV1vf78&fn=external_8"
+        },
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewshows02/PPV/2025/AEW%20All%20Out%202025/AEW.Saturday.Tailgate.Brawl.All.Out.2025.09.20.1080p.WEB.h264-HEEL.mp4",
+          "filename": "PPV/2025/AEW All Out 2025/AEW.Saturday.Tailgate.Brawl.All.Out.2025.09.20.1080p.WEB.h264-HEEL.mp4",
+          "duration": 3628.03,
+          "height": 480,
+          "bytes": 339132163,
+          "label": "Internet Archive \u00b7 aewshows02",
+          "creator": "aewshows02",
+          "md5": "b343833ea237bb6a88d8d6a3413fa19b",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events",
+          "eventPart": "tailgate"
+        }
+      ],
+      "eventPart": "tailgate",
+      "eventOrder": -2
     },
     {
       "id": "aew:2025-09-24:dynamite",
@@ -25949,31 +25960,6 @@
       "discoveredAt": 1793232000000
     },
     {
-      "id": "aew:2025-10-18:ppv:wrestledreamzerohour",
-      "date": "2025-10-18",
-      "year": 2025,
-      "show": "PPV",
-      "title": "WrestleDream \u2014 Zero Hour",
-      "description": "WrestleDream \u2014 Zero Hour",
-      "duration": 3628,
-      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=9324528929391&type=37&idx=8&tkn=pTp3dbfia4LWvDuK2QHJFFY4-no&fn=external_8",
-      "discoveredAt": 1793409583959,
-      "sources": [
-        {
-          "type": "okru",
-          "videoId": "10609315613295",
-          "owner": "579391530351",
-          "title": "WrestleDream.2025.Zero.Hour.",
-          "label": "OK.ru",
-          "duration": 3628,
-          "programme": "PPV",
-          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=9324528929391&type=37&idx=8&tkn=pTp3dbfia4LWvDuK2QHJFFY4-no&fn=external_8"
-        }
-      ],
-      "eventPart": "preshow",
-      "eventOrder": -1
-    },
-    {
       "id": "aew:2025-10-18:ppv",
       "date": "2025-10-18",
       "year": 2025,
@@ -26008,6 +25994,31 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "aew:2025-10-18:ppv:wrestledreamzerohour",
+      "date": "2025-10-18",
+      "year": 2025,
+      "show": "PPV",
+      "title": "WrestleDream \u2014 Zero Hour",
+      "description": "WrestleDream \u2014 Zero Hour",
+      "duration": 3628,
+      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=9324528929391&type=37&idx=8&tkn=pTp3dbfia4LWvDuK2QHJFFY4-no&fn=external_8",
+      "discoveredAt": 1793409583959,
+      "sources": [
+        {
+          "type": "okru",
+          "videoId": "10609315613295",
+          "owner": "579391530351",
+          "title": "WrestleDream.2025.Zero.Hour.",
+          "label": "OK.ru",
+          "duration": 3628,
+          "programme": "PPV",
+          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=9324528929391&type=37&idx=8&tkn=pTp3dbfia4LWvDuK2QHJFFY4-no&fn=external_8"
+        }
+      ],
+      "eventPart": "preshow",
+      "eventOrder": -1
     },
     {
       "id": "aew:2025-10-22:dynamite",
@@ -26319,31 +26330,6 @@
       "discoveredAt": 1793232000000
     },
     {
-      "id": "aew:2025-11-22:ppv:fullgearzerohour",
-      "date": "2025-11-22",
-      "year": 2025,
-      "show": "PPV",
-      "title": "Full Gear \u2014 Zero Hour",
-      "description": "Full Gear \u2014 Zero Hour",
-      "duration": 3588,
-      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=9490234083861&type=37&idx=1&tkn=0N4ku0VHt3BddhepEzvJ53jsG0M&fn=external_8",
-      "discoveredAt": 1793409583953,
-      "sources": [
-        {
-          "type": "okru",
-          "videoId": "10844603746927",
-          "owner": "579391530351",
-          "title": "Full.Gear.2025.Zero.Hour.",
-          "label": "OK.ru",
-          "duration": 3588,
-          "programme": "PPV",
-          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=9490234083861&type=37&idx=1&tkn=0N4ku0VHt3BddhepEzvJ53jsG0M&fn=external_8"
-        }
-      ],
-      "eventPart": "preshow",
-      "eventOrder": -1
-    },
-    {
       "id": "aew:2025-11-22:ppv",
       "date": "2025-11-22",
       "year": 2025,
@@ -26378,6 +26364,31 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "aew:2025-11-22:ppv:fullgearzerohour",
+      "date": "2025-11-22",
+      "year": 2025,
+      "show": "PPV",
+      "title": "Full Gear \u2014 Zero Hour",
+      "description": "Full Gear \u2014 Zero Hour",
+      "duration": 3588,
+      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=9490234083861&type=37&idx=1&tkn=0N4ku0VHt3BddhepEzvJ53jsG0M&fn=external_8",
+      "discoveredAt": 1793409583953,
+      "sources": [
+        {
+          "type": "okru",
+          "videoId": "10844603746927",
+          "owner": "579391530351",
+          "title": "Full.Gear.2025.Zero.Hour.",
+          "label": "OK.ru",
+          "duration": 3588,
+          "programme": "PPV",
+          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=9490234083861&type=37&idx=1&tkn=0N4ku0VHt3BddhepEzvJ53jsG0M&fn=external_8"
+        }
+      ],
+      "eventPart": "preshow",
+      "eventOrder": -1
     },
     {
       "id": "aew:2025-11-26:dynamite",
@@ -28325,6 +28336,32 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2026-05-24:ppv",
+      "date": "2026-05-24",
+      "year": 2026,
+      "show": "PPV",
+      "title": "Double or Nothing",
+      "description": "",
+      "duration": 18580,
+      "thumbnail": "https://archive.org/download/aewppv2026/aewppv2026.thumbs/2026/AEW%20Double%20or%20Nothing%202026/AEW.Double.Or.Nothing.2026.PPV.1080p.WEB.h264-HEEL_000563.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewppv2026/2026/AEW%20Double%20or%20Nothing%202026/AEW.Double.Or.Nothing.2026.PPV.1080p.WEB.h264-HEEL.mp4",
+          "filename": "2026/AEW Double or Nothing 2026/AEW.Double.Or.Nothing.2026.PPV.1080p.WEB.h264-HEEL.mp4",
+          "duration": 18580,
+          "height": 1080,
+          "bytes": 20273022483,
+          "label": "Internet Archive \u00b7 aewppv2026",
+          "creator": "aewppv2026",
+          "md5": "81927ac769dc9acdee0c3e672b5b6bca",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2026-05-24:ppv:doubleornothingbuyin",
       "date": "2026-05-24",
       "year": 2026,
@@ -28360,32 +28397,6 @@
       "discoveredAt": 0,
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2026-05-24:ppv",
-      "date": "2026-05-24",
-      "year": 2026,
-      "show": "PPV",
-      "title": "Double or Nothing",
-      "description": "",
-      "duration": 18580,
-      "thumbnail": "https://archive.org/download/aewppv2026/aewppv2026.thumbs/2026/AEW%20Double%20or%20Nothing%202026/AEW.Double.Or.Nothing.2026.PPV.1080p.WEB.h264-HEEL_000563.jpg",
-      "poster": "",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aewppv2026/2026/AEW%20Double%20or%20Nothing%202026/AEW.Double.Or.Nothing.2026.PPV.1080p.WEB.h264-HEEL.mp4",
-          "filename": "2026/AEW Double or Nothing 2026/AEW.Double.Or.Nothing.2026.PPV.1080p.WEB.h264-HEEL.mp4",
-          "duration": 18580,
-          "height": 1080,
-          "bytes": 20273022483,
-          "label": "Internet Archive \u00b7 aewppv2026",
-          "creator": "aewppv2026",
-          "md5": "81927ac769dc9acdee0c3e672b5b6bca",
-          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2026-05-27:collision",
@@ -28876,31 +28887,6 @@
       "discoveredAt": 1793232000000
     },
     {
-      "id": "aew:2026-06-28:ppv:forbiddendoorbuyin",
-      "date": "2026-06-28",
-      "year": 2026,
-      "show": "PPV",
-      "title": "Forbidden Door \u2014 Buy In",
-      "description": "Forbidden Door \u2014 Buy In",
-      "duration": 3524,
-      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=16241142663758&type=37&idx=3&tkn=g0SphNiJcyuI4tqH8aQyoxzxPu4&fn=external_8",
-      "discoveredAt": 1793409583952,
-      "sources": [
-        {
-          "type": "okru",
-          "videoId": "15199014619759",
-          "owner": "579391530351",
-          "title": "Forbidden.Door.2026.Pre.Show.The.Buy.In.",
-          "label": "OK.ru",
-          "duration": 3524,
-          "programme": "PPV",
-          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=16241142663758&type=37&idx=3&tkn=g0SphNiJcyuI4tqH8aQyoxzxPu4&fn=external_8"
-        }
-      ],
-      "eventPart": "preshow",
-      "eventOrder": -1
-    },
-    {
       "id": "aew:2026-06-28:ppv",
       "date": "2026-06-28",
       "year": 2026,
@@ -28947,6 +28933,31 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "aew:2026-06-28:ppv:forbiddendoorbuyin",
+      "date": "2026-06-28",
+      "year": 2026,
+      "show": "PPV",
+      "title": "Forbidden Door \u2014 Buy In",
+      "description": "Forbidden Door \u2014 Buy In",
+      "duration": 3524,
+      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=16241142663758&type=37&idx=3&tkn=g0SphNiJcyuI4tqH8aQyoxzxPu4&fn=external_8",
+      "discoveredAt": 1793409583952,
+      "sources": [
+        {
+          "type": "okru",
+          "videoId": "15199014619759",
+          "owner": "579391530351",
+          "title": "Forbidden.Door.2026.Pre.Show.The.Buy.In.",
+          "label": "OK.ru",
+          "duration": 3524,
+          "programme": "PPV",
+          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=16241142663758&type=37&idx=3&tkn=g0SphNiJcyuI4tqH8aQyoxzxPu4&fn=external_8"
+        }
+      ],
+      "eventPart": "preshow",
+      "eventOrder": -1
     },
     {
       "id": "aew:2026-07-01:dynamite",
@@ -29655,6 +29666,64 @@
       "discoveredAt": 1793232000000
     },
     {
+      "id": "aew:2026-08-30:ppv",
+      "date": "2026-08-30",
+      "year": 2026,
+      "show": "PPV",
+      "title": "All In",
+      "description": "",
+      "duration": 4262.27,
+      "thumbnail": "https://archive.org/download/aewppv2026/aewppv2026.thumbs/AEW%20All%20In%202026/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT_000250.jpg",
+      "poster": "",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewppv2026/AEW%20All%20In%202026/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT.mp4",
+          "filename": "AEW All In 2026/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT/AEW.Brawl.in.the.Ballpark.2026.1080p.WEB.H264-XWT.mp4",
+          "duration": 4262.27,
+          "height": 1080,
+          "bytes": 4231807687,
+          "label": "Internet Archive \u00b7 aewppv2026",
+          "creator": "aewppv2026",
+          "md5": "690f5a58a1e4f6f147dddcbadd43e40d",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        },
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aewppv2026/MyAEW.Darby.Allins.Journey.to.the.AEW.World.Championship.1080p.WEB.h264-SpaZe.mp4",
+          "filename": "MyAEW.Darby.Allins.Journey.to.the.AEW.World.Championship.1080p.WEB.h264-SpaZe.mp4",
+          "duration": 21239.96,
+          "height": 1080,
+          "bytes": 19448978540,
+          "label": "Internet Archive \u00b7 aewppv2026",
+          "creator": "aewppv2026",
+          "md5": "728d11177dc2ad06c3203fbe4cf0a94f",
+          "dateEvidence": "https://en.wikipedia.org/wiki/List_of_All_Elite_Wrestling_pay-per-view_events"
+        },
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt/AEW.All.In.2026.PPV.FEED.720p.HDTV.HFR.H264-Star.mp4",
+          "duration": 15303.18,
+          "filename": "AEW.All.In.2026.PPV.FEED.720p.HDTV.HFR.H264-Star.mp4",
+          "bytes": 9873449389,
+          "height": 720,
+          "label": "Internet Archive",
+          "language": "en"
+        },
+        {
+          "type": "archive",
+          "url": "https://archive.org/download/aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt/AEW_All_In_London_2026_HD.ia.mp4",
+          "duration": 15288.0,
+          "filename": "AEW_All_In_London_2026_HD.ia.mp4",
+          "bytes": 4896485483,
+          "height": 720,
+          "label": "Internet Archive",
+          "language": "en"
+        }
+      ],
+      "discoveredAt": 1793232000000
+    },
+    {
       "id": "aew:2026-08-30:ppv:allinlondonbuyin",
       "date": "2026-08-30",
       "year": 2026,
@@ -29678,40 +29747,6 @@
       ],
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2026-08-30:ppv",
-      "date": "2026-08-30",
-      "year": 2026,
-      "show": "PPV",
-      "title": "All In",
-      "description": "All In London 2026 \u2014 full main card. Kenny Omega vs. Will Ospreay headlines at Wembley Stadium.",
-      "duration": 15303.18,
-      "thumbnail": "https://archive.org/download/aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt/aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt.thumbs/AEW.All.In.2026.PPV.FEED.720p.HDTV.HFR.H264-Star_005610.jpg",
-      "poster": "https://archive.org/download/aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt/aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt.thumbs/AEW.All.In.2026.PPV.FEED.720p.HDTV.HFR.H264-Star_005610.jpg",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt/AEW.All.In.2026.PPV.FEED.720p.HDTV.HFR.H264-Star.mp4",
-          "duration": 15303.18,
-          "filename": "AEW.All.In.2026.PPV.FEED.720p.HDTV.HFR.H264-Star.mp4",
-          "bytes": 9873449389,
-          "height": 720,
-          "label": "Internet Archive",
-          "language": "en"
-        },
-        {
-          "type": "archive",
-          "url": "https://archive.org/download/aew.-all.-in.-2026.-ppv.with.-the.buy.-in.-my-aew.-1080p.-web.-hfr.-h-264-xwt/AEW_All_In_London_2026_HD.ia.mp4",
-          "duration": 15288.0,
-          "filename": "AEW_All_In_London_2026_HD.ia.mp4",
-          "bytes": 4896485483,
-          "height": 720,
-          "label": "Internet Archive",
-          "language": "en"
-        }
-      ],
-      "discoveredAt": 1793232000000
     },
     {
       "id": "aew:2026-09-02:dynamite",
@@ -30082,56 +30117,6 @@
       "discoveredAt": 1793232000000
     },
     {
-      "id": "aew:2026-09-26:ppv:alloutsaturdaytailgatebrawl",
-      "date": "2026-09-26",
-      "year": 2026,
-      "show": "PPV",
-      "title": "All Out \u2014 Saturday Tailgate Brawl",
-      "description": "All Out \u2014 Saturday Tailgate Brawl",
-      "duration": 2697,
-      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18078901733999&type=37&idx=1&scl=4&tkn=OmeFKfvp3F4PyvA4LNK6dsgzxSY&fn=external_8",
-      "discoveredAt": 1793409583957,
-      "sources": [
-        {
-          "type": "okru",
-          "videoId": "16099851438703",
-          "owner": "579391530351",
-          "title": "Saturday.Tailgate.Brawl.All.Out.2026.09.26.",
-          "label": "OK.ru",
-          "duration": 2697,
-          "programme": "PPV",
-          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18078901733999&type=37&idx=1&scl=4&tkn=OmeFKfvp3F4PyvA4LNK6dsgzxSY&fn=external_8"
-        }
-      ],
-      "eventPart": "tailgate",
-      "eventOrder": -2
-    },
-    {
-      "id": "aew:2026-09-26:ppv:alloutbuyin",
-      "date": "2026-09-26",
-      "year": 2026,
-      "show": "PPV",
-      "title": "All Out \u2014 Buy In",
-      "description": "All Out \u2014 Buy In",
-      "duration": 3575,
-      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18078948854383&type=37&idx=0&scl=4&tkn=k6My-Uc0tlgmqcQroAiuiQVucU0&fn=external_8",
-      "discoveredAt": 1793409583917,
-      "sources": [
-        {
-          "type": "okru",
-          "videoId": "16099854518895",
-          "owner": "579391530351",
-          "title": "All.Out.2026.Buy.In.",
-          "label": "OK.ru",
-          "duration": 3575,
-          "programme": "PPV",
-          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18078948854383&type=37&idx=0&scl=4&tkn=k6My-Uc0tlgmqcQroAiuiQVucU0&fn=external_8"
-        }
-      ],
-      "eventPart": "preshow",
-      "eventOrder": -1
-    },
-    {
       "id": "aew:2026-09-26:ppv",
       "date": "2026-09-26",
       "year": 2026,
@@ -30166,6 +30151,56 @@
         }
       ],
       "discoveredAt": 1793232000000
+    },
+    {
+      "id": "aew:2026-09-26:ppv:alloutbuyin",
+      "date": "2026-09-26",
+      "year": 2026,
+      "show": "PPV",
+      "title": "All Out \u2014 Buy In",
+      "description": "All Out \u2014 Buy In",
+      "duration": 3575,
+      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18078948854383&type=37&idx=0&scl=4&tkn=k6My-Uc0tlgmqcQroAiuiQVucU0&fn=external_8",
+      "discoveredAt": 1793409583917,
+      "sources": [
+        {
+          "type": "okru",
+          "videoId": "16099854518895",
+          "owner": "579391530351",
+          "title": "All.Out.2026.Buy.In.",
+          "label": "OK.ru",
+          "duration": 3575,
+          "programme": "PPV",
+          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18078948854383&type=37&idx=0&scl=4&tkn=k6My-Uc0tlgmqcQroAiuiQVucU0&fn=external_8"
+        }
+      ],
+      "eventPart": "preshow",
+      "eventOrder": -1
+    },
+    {
+      "id": "aew:2026-09-26:ppv:alloutsaturdaytailgatebrawl",
+      "date": "2026-09-26",
+      "year": 2026,
+      "show": "PPV",
+      "title": "All Out \u2014 Saturday Tailgate Brawl",
+      "description": "All Out \u2014 Saturday Tailgate Brawl",
+      "duration": 2697,
+      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18078901733999&type=37&idx=1&scl=4&tkn=OmeFKfvp3F4PyvA4LNK6dsgzxSY&fn=external_8",
+      "discoveredAt": 1793409583957,
+      "sources": [
+        {
+          "type": "okru",
+          "videoId": "16099851438703",
+          "owner": "579391530351",
+          "title": "Saturday.Tailgate.Brawl.All.Out.2026.09.26.",
+          "label": "OK.ru",
+          "duration": 2697,
+          "programme": "PPV",
+          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18078901733999&type=37&idx=1&scl=4&tkn=OmeFKfvp3F4PyvA4LNK6dsgzxSY&fn=external_8"
+        }
+      ],
+      "eventPart": "tailgate",
+      "eventOrder": -2
     },
     {
       "id": "aew:2026-09-30:dynamite",
@@ -30329,6 +30364,30 @@
       ]
     },
     {
+      "id": "aew:2026-10-17:ppv",
+      "date": "2026-10-17",
+      "year": 2026,
+      "show": "PPV",
+      "title": "WrestleDream",
+      "description": "WrestleDream 2026 \u2014 full pay-per-view.",
+      "duration": 15288,
+      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18474504948432&type=37&idx=3&scl=4&tkn=cgEfbu5rXyVNmFrzF7A4eJ3wHYY&fn=external_8",
+      "poster": "https://iv.okcdn.ru/videoPreview?id=18474504948432&type=37&idx=3&scl=4&tkn=cgEfbu5rXyVNmFrzF7A4eJ3wHYY&fn=external_8",
+      "sources": [
+        {
+          "type": "okru",
+          "videoId": "16404582173295",
+          "owner": "579391530351",
+          "title": "WrestleDream.PPV.2026.",
+          "label": "OK.ru",
+          "duration": 15288,
+          "programme": "PPV",
+          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18474504948432&type=37&idx=3&scl=4&tkn=cgEfbu5rXyVNmFrzF7A4eJ3wHYY&fn=external_8"
+        }
+      ],
+      "discoveredAt": 1793414989747
+    },
+    {
       "id": "aew:2026-10-17:ppv:saturdaytailgatebrawlwrestledream1017saturdaytailgatebrawl",
       "date": "2026-10-17",
       "year": 2026,
@@ -30378,30 +30437,6 @@
       ],
       "eventPart": "preshow",
       "eventOrder": -1
-    },
-    {
-      "id": "aew:2026-10-17:ppv",
-      "date": "2026-10-17",
-      "year": 2026,
-      "show": "PPV",
-      "title": "WrestleDream",
-      "description": "WrestleDream 2026 \u2014 full pay-per-view.",
-      "duration": 15288,
-      "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18474504948432&type=37&idx=3&scl=4&tkn=cgEfbu5rXyVNmFrzF7A4eJ3wHYY&fn=external_8",
-      "poster": "https://iv.okcdn.ru/videoPreview?id=18474504948432&type=37&idx=3&scl=4&tkn=cgEfbu5rXyVNmFrzF7A4eJ3wHYY&fn=external_8",
-      "sources": [
-        {
-          "type": "okru",
-          "videoId": "16404582173295",
-          "owner": "579391530351",
-          "title": "WrestleDream.PPV.2026.",
-          "label": "OK.ru",
-          "duration": 15288,
-          "programme": "PPV",
-          "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18474504948432&type=37&idx=3&scl=4&tkn=cgEfbu5rXyVNmFrzF7A4eJ3wHYY&fn=external_8"
-        }
-      ],
-      "discoveredAt": 1793414989747
     },
     {
       "id": "aew:2026-10-21:dynamite",
