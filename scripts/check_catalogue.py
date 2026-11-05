@@ -65,16 +65,23 @@ def main():
         path = ROOT / "catalogue" / (company + ".json")
         raw = path.read_bytes()
         entry = manifest["companies"][company]
-        if company == 'njpw' and 'expanded' in entry:
-            compatible = (ROOT / 'catalogue/njpw-2002.json').read_bytes()
-            assert entry['bytes'] == len(compatible)
-            assert entry['sha256'] == hashlib.sha256(compatible).hexdigest()
+        if 'expanded' in entry:
+            filename, first, last = {
+                'njpw': ('njpw-2002.json', '2002-01-01', LIMITS[company][1]),
+                'wwe': ('wwe-1985.json', '1985-01-01', LIMITS[company][1]),
+                'ecw': ('ecw-2006.json', LIMITS[company][0], '2006-12-31'),
+            }[company]
+            compatible = (ROOT / 'catalogue' / filename).read_bytes()
+            assert entry['bytes'] == len(compatible), filename + ': manifest byte count mismatch'
+            assert len(compatible) <= 48 * 1024 * 1024, filename + ': source pack too large'
+            assert entry['sha256'] == hashlib.sha256(compatible).hexdigest(), filename + ': manifest hash mismatch'
             legacy = json.loads(compatible)
-            assert all(row['date'] >= '2002-01-01' for row in legacy['catalogue']['episodes'])
+            assert all(first <= row['date'] <= last for row in legacy['catalogue']['episodes']), filename + ': incompatible broadcast date'
             check_pack(legacy, company)
             entry = entry['expanded']
-        assert entry["bytes"] == len(raw) and len(raw) <= 48 * 1024 * 1024
-        assert entry["sha256"] == hashlib.sha256(raw).hexdigest()
+        assert entry["bytes"] == len(raw), path.name + ': manifest byte count mismatch'
+        assert len(raw) <= 48 * 1024 * 1024, path.name + ': source pack too large'
+        assert entry["sha256"] == hashlib.sha256(raw).hexdigest(), path.name + ': manifest hash mismatch'
         count = check_pack(json.loads(raw), company)
         print(company, count, "broadcasts; manifest hash verified")
 
