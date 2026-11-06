@@ -3,14 +3,14 @@
     "company": "aew",
     "source": "OK.ru \u00b7 AEW PPVs and weeklies",
     "status": "checked public recent uploads",
-    "new_recordings": 2,
+    "new_recordings": 0,
     "skipped": []
   },
   {
     "company": "aew",
     "source": "OK.ru \u00b7 sileem salaeam \u00b7 recent full shows",
     "status": "checked public recent uploads",
-    "new_recordings": 1,
+    "new_recordings": 0,
     "skipped": []
   },
   {
@@ -27,14 +27,14 @@
     "company": "aew",
     "source": "aewdynamite01",
     "status": "checked",
-    "recordings": 64,
+    "recordings": 0,
     "skipped": []
   },
   {
     "company": "aew",
     "source": "aewdynamite02",
     "status": "checked",
-    "recordings": 68,
+    "recordings": 0,
     "skipped": [
       "2026/AEW.Dynamite.2020.07.01.1080p.WEB.h264-HEEL.mkv",
       "2026/AEW.Dynamite.2021.02.03.1080p.WEB.h264-HEEL.mkv",
@@ -94,7 +94,7 @@
     "company": "aew",
     "source": "aewshows01",
     "status": "checked",
-    "recordings": 136,
+    "recordings": 0,
     "skipped": [
       "AEW All-Access/Season 1/AEW.All.Access.S01E01.Life.On.The.Ropes.1080p.HDTV.x264-NWCHD.mkv",
       "AEW All-Access/Season 1/AEW.All.Access.S01E02.1080p.WEB.h264-HEEL.mkv",
@@ -123,7 +123,7 @@
     "company": "aew",
     "source": "aewshows02",
     "status": "checked",
-    "recordings": 62,
+    "recordings": 0,
     "skipped": [
       "AEW.Anarchy.In.The.Arena.Pack/01.The Elite & Matt Hardy vs. The Inner Circle Stadium Stampede Match AEW Double Or Nothing 2020 2020.05.23.mkv",
       "AEW.Anarchy.In.The.Arena.Pack/02.The Inner Circle vs. The Pinnacle Stadium Stampede Match AEW Double Or Nothing 2021 2021.05.30.mkv",
@@ -496,7 +496,7 @@
     "company": "wwe",
     "source": "OK.ru \u00b7 sileem salaeam \u00b7 recent full shows",
     "status": "checked public recent uploads",
-    "new_recordings": 1,
+    "new_recordings": 0,
     "skipped": []
   },
   {
@@ -3306,7 +3306,7 @@
     "company": "wwe",
     "source": "wwemainevent01",
     "status": "checked",
-    "recordings": 52,
+    "recordings": 0,
     "skipped": [
       "2012/WWE Main Event S2012 E1 WWE Main Event.mkv",
       "2012/WWE Main Event S2012 E10 WWE Main Event.mkv",
@@ -3692,7 +3692,7 @@
     "company": "wwe",
     "source": "wwemainevent02",
     "status": "checked",
-    "recordings": 14,
+    "recordings": 0,
     "skipped": [
       "2023/WWE Main Event S2023 E01 WWE Main Event.mkv",
       "2023/WWE Main Event S2023 E02 WWE Main Event.mkv",
@@ -3728,7 +3728,7 @@
     "company": "wwe",
     "source": "wwemnr01",
     "status": "checked",
-    "recordings": 34,
+    "recordings": 0,
     "skipped": []
   },
   {
@@ -6161,14 +6161,14 @@
     "company": "wwe",
     "source": "wwesd01",
     "status": "checked",
-    "recordings": 452,
+    "recordings": 0,
     "skipped": []
   },
   {
     "company": "wwe",
     "source": "wwesd02",
     "status": "checked",
-    "recordings": 364,
+    "recordings": 0,
     "skipped": [
       "2014/WWE SmackDown - S2014E35 - 08-29-2014.mkv"
     ]
@@ -6177,7 +6177,7 @@
     "company": "wwe",
     "source": "wwesd03",
     "status": "checked",
-    "recordings": 209,
+    "recordings": 0,
     "skipped": [
       "2022/WWE.SmackDown.2022.04.15.Dark.Matcht.Without.Commentator.720p.HDTV.x264-Star.mkv",
       "2023/WWE.SmackDown.2023.09.29.Dark.Match.1080p.HDTV.h264-Star.mp4",
@@ -6198,7 +6198,7 @@
     "company": "wwe",
     "source": "wweshows01",
     "status": "checked",
-    "recordings": 340,
+    "recordings": 0,
     "skipped": [
       "WWE 205 Live/205 Live 2020/205 Live S2020 E1 205 Live.mkv",
       "WWE 205 Live/205 Live 2020/205 Live S2020 E10 205 Live.mkv",
@@ -6518,7 +6518,7 @@
     "company": "wwe",
     "source": "wweshows02",
     "status": "checked",
-    "recordings": 14,
+    "recordings": 0,
     "skipped": [
       "Saturday Nights Main Event/Saturday Nights Main Event - S2006E01 - Saturday Nights Main Event.mkv",
       "Saturday Nights Main Event/Saturday Nights Main Event - S2006E02 - Saturday Nights Main Event.mkv",
@@ -6646,7 +6646,7 @@
     "company": "wwe",
     "source": "wwfmnr",
     "status": "checked",
-    "recordings": 468,
+    "recordings": 0,
     "skipped": [
       "1993/WWE Raw - S1993E10 - 03-22-1993.mkv",
       "1994/RAW S00E05 - Countdown to the Crowning of King of The Ring - 1994-06-13.mkv",
@@ -6658,7 +6658,7 @@
     "company": "wwe",
     "source": "wwfppv",
     "status": "checked",
-    "recordings": 12,
+    "recordings": 0,
     "skipped": [
       "1985/001.1 WWF WrestleMania 1 1985.mkv",
       "1985/001.2 1985.03.31-WWF.WrestleMania.Live.CCTV.Remastered.HQ.VHSRip.x264.mkv",
@@ -7313,7 +7313,7 @@
     "company": "wwe",
     "source": "wwfshows01",
     "status": "checked",
-    "recordings": 305,
+    "recordings": 0,
     "skipped": [
       "# Promos #/WWF Promo Andre & Hulk For Meadowlands JUL 1984.mp4",
       "# Promos #/WWF Promo Andre Hogan Promo on Studd Adonis Murdoch JUN 30 84.mp4",
@@ -8076,7 +8076,7 @@
     "company": "wwe",
     "source": "wwfshows02",
     "status": "checked",
-    "recordings": 626,
+    "recordings": 0,
     "skipped": [
       "WWF International Challenge 1987-1989/WWF IWC # 1 - Australian.mkv",
       "WWF International Challenge 1987-1989/WWF IWC # 10.mkv",
@@ -8340,7 +8340,7 @@
     "company": "wwe",
     "source": "wwfshows03",
     "status": "checked",
-    "recordings": 751,
+    "recordings": 0,
     "skipped": [
       "WWF Saturday Night's Main Event/Saturday Nights Main Event - S1990E0-1 - The Main Event #4.mp4",
       "WWF Shotgun Saturday Night/1997/1997-11-15 WWF Shotgun New York.avi",
@@ -8993,7 +8993,7 @@
     "company": "wwe",
     "source": "wwfsmackdown",
     "status": "checked",
-    "recordings": 141,
+    "recordings": 0,
     "skipped": []
   },
   {
@@ -9007,7 +9007,7 @@
     "company": "wwe",
     "source": "YouTube recent uploads \u00b7 WWEVault recent full-show uploads",
     "status": "checked recent uploads",
-    "new_recordings": 1,
+    "new_recordings": 0,
     "skipped": [
       "FULL EVENT: WWE In Your House: Buried Alive | Undertaker vs. Mankind; Sid vs. Vader and MORE!",
       "FULL EVENT: The Last Battle of Atlanta | Rich & Sawyer clash in match that inspired Hell in a Cell",
@@ -9049,7 +9049,7 @@
     "company": "wwe",
     "source": "YouTube \u00b7 superstars-1996",
     "status": "checked",
-    "new_recordings": 10,
+    "new_recordings": 0,
     "skipped": []
   },
   {
@@ -9063,14 +9063,14 @@
     "company": "wwe",
     "source": "YouTube \u00b7 tnt-1985",
     "status": "checked",
-    "new_recordings": 8,
+    "new_recordings": 0,
     "skipped": []
   },
   {
     "company": "wwe",
     "source": "YouTube \u00b7 tnt-1986",
     "status": "checked",
-    "new_recordings": 7,
+    "new_recordings": 0,
     "skipped": []
   },
   {
@@ -9168,7 +9168,7 @@
     "company": "ecw",
     "source": "ecwwrestling",
     "status": "checked",
-    "recordings": 360,
+    "recordings": 0,
     "skipped": [
       "ECW Exposed-  Part 1.mkv",
       "ECW Exposed-  Part 2.mkv",
@@ -9182,7 +9182,7 @@
     "company": "ecw",
     "source": "wweecw",
     "status": "checked",
-    "recordings": 185,
+    "recordings": 0,
     "skipped": [
       "ECW 2007/WWE WWE ECW - S2007E28 - 07-10-2007.mkv",
       "ECW 2007/WWE WWE ECW - S2007E29 - 07-17-2007.mkv",
@@ -10442,7 +10442,7 @@
     "company": "wcw",
     "source": "wcw-payperview-preshows",
     "status": "checked",
-    "recordings": 9,
+    "recordings": 0,
     "skipped": [
       "WCW Souled Out 2000 Countdown Show.mp4",
       "nWo Souled Out 1997 Countdown Show.mp4",
@@ -12155,7 +12155,7 @@
     "company": "wcw",
     "source": "wcwwrestling",
     "status": "checked",
-    "recordings": 48,
+    "recordings": 0,
     "skipped": [
       "WCW Clash of Champions/Clash of the Champions - S1988E01 - Clash of the Champions 1.mkv",
       "WCW Clash of Champions/Clash of the Champions - S1988E02 - Clash of the Champions 2.mkv",
@@ -12622,11 +12622,8 @@
   {
     "company": "wcw",
     "source": "YouTube \u00b7 WCW Monday Nitro Full Episodes",
-    "status": "checked",
-    "new_recordings": 0,
-    "skipped": [
-      "FULL EPISODE: Goldberg vs. Booker T; Tag Team Caged Heat: WCW Monday Nitro, July 24, 2020"
-    ]
+    "status": "skipped",
+    "reason": "Playlist data unavailable"
   },
   {
     "company": "wcw",
@@ -12639,7 +12636,7 @@
     "company": "tna",
     "source": "OK.ru \u00b7 TNA PPVs",
     "status": "checked public recent uploads",
-    "new_recordings": 2,
+    "new_recordings": 0,
     "skipped": []
   },
   {
@@ -12753,7 +12750,7 @@
     "company": "tna",
     "source": "tnaimpac04",
     "status": "checked",
-    "recordings": 132,
+    "recordings": 0,
     "skipped": [
       "2021/IMPACT! Wrestling (2021) 2021 E21 Kenny Omega vs Christian Cage - IMPACT World Championship _ AEW Rampage August 13, 2021.mkv",
       "2023/Impact Wrestling Impact 1000 Pack/Counting Down to IMPACT 1000!   EXTENSIVE Victory Road Highlights   BTI September 14, 2023.mp4",
@@ -12771,7 +12768,7 @@
     "company": "tna",
     "source": "tnaimpact01",
     "status": "checked",
-    "recordings": 71,
+    "recordings": 0,
     "skipped": [
       "2004/Impact! Wrestling (2004) 2004 E13 Impact! - August 27.mkv",
       "2004/Impact! Wrestling (2004) 2004 E14 Impact! - September 3.mkv",
@@ -12870,14 +12867,14 @@
     "company": "tna",
     "source": "tnaimpact02",
     "status": "checked",
-    "recordings": 52,
+    "recordings": 0,
     "skipped": []
   },
   {
     "company": "tna",
     "source": "tnaimpact03",
     "status": "checked",
-    "recordings": 295,
+    "recordings": 0,
     "skipped": [
       "2017/IMPACT! Wrestling (2017) 2017 E17 IMPACT Wrestling - April 27. 2017.mkv",
       "2019/IMPACT! Wrestling (2019) 2019 E52 IMPACT! Wrestling_ Best of 2019 Part 1 - December 28, 2019.mkv",
@@ -13014,7 +13011,7 @@
     "company": "tna",
     "source": "tnashows02",
     "status": "checked",
-    "recordings": 7,
+    "recordings": 0,
     "skipped": [
       "NJPW Super Jr. Tag League 2002/Ace Austin & Chris Bey in the 2022 NJPW Super Jr Tag League 2022 E1 Ace Austin & Chris Bey vs Lio Rush & YOH _ NJPW Super Jr Tag League 2022.mkv",
       "NJPW Super Jr. Tag League 2002/Ace Austin & Chris Bey in the 2022 NJPW Super Jr Tag League 2022 E10 Ace Austin & Chris Bey vs BUSHI & Titan _ NJPW Super Jr Tag League 2022.mkv",
@@ -13786,7 +13783,7 @@
     "company": "tna",
     "source": "tnaxplosion",
     "status": "checked",
-    "recordings": 48,
+    "recordings": 0,
     "skipped": []
   },
   {
@@ -13964,7 +13961,7 @@
     "company": "tna",
     "source": "tnashows01",
     "status": "checked",
-    "recordings": 203,
+    "recordings": 0,
     "skipped": [
       "British Boot Camp/Season 1/British Boot Camp (Season 1) S1 E1 TNA British Boot Camp_ S1 Ep. 01.mkv",
       "British Boot Camp/Season 1/British Boot Camp (Season 1) S1 E2 TNA British Boot Camp_ S1 Ep. 02.mkv",
@@ -14688,7 +14685,7 @@
     "company": "tna",
     "source": "YouTube recent uploads \u00b7 tnawrestling recent full-show uploads",
     "status": "checked recent uploads",
-    "new_recordings": 1,
+    "new_recordings": 0,
     "skipped": [
       "Bound For Glory 2022 (FULL EVENT) | Edwards vs. Alexander, Mickie vs. Mia",
       "TNA Bound For Glory 2023 (FULL EVENT) | Trinity vs. Mickie, Alexander vs. Shelley",
@@ -14707,7 +14704,10 @@
     "source": "OK.ru \u00b7 sileem salaeam \u00b7 recent full shows",
     "status": "checked public recent uploads",
     "new_recordings": 0,
-    "skipped": []
+    "skipped": [
+      "ROH.HonorClub.TV.2026.11.05.MyAEW.720p: Public stream unavailable",
+      "ROH.HonorClub.TV.2026.11.05.MyAEW.1080p: Public stream unavailable"
+    ]
   },
   {
     "company": "roh",
@@ -17144,9 +17144,8 @@
   {
     "company": "roh",
     "source": "roh-wrestling-special-02-12-25",
-    "status": "checked",
-    "recordings": 0,
-    "skipped": []
+    "status": "skipped",
+    "reason": "The read operation timed out"
   },
   {
     "company": "roh",
@@ -17280,7 +17279,7 @@
     "company": "roh",
     "source": "rohevents01",
     "status": "checked",
-    "recordings": 17,
+    "recordings": 0,
     "skipped": [
       "2002/Final Battle (2002)/Final Battle (2002) 480p AAC.mp4",
       "2002/Night of The Butcher (2002)/Night of The Butcher (2002) 480p AAC.mp4",
@@ -18672,7 +18671,7 @@
     "company": "roh",
     "source": "rohevents02",
     "status": "checked",
-    "recordings": 4,
+    "recordings": 0,
     "skipped": [
       "2014/2014.05.10 ROH NJPW Global Wars.mp4",
       "2014/2014.05.17 ROH NJPW War Of The Worlds.mp4",
@@ -18694,7 +18693,7 @@
     "company": "roh",
     "source": "rohevents03",
     "status": "checked",
-    "recordings": 7,
+    "recordings": 0,
     "skipped": [
       "2021/Events _ 2021 1 E1 ROH 19Th Anniversary.mp4",
       "2022/Events _ 2022 1 E1 Final Battle 2022.mp4",
@@ -18728,7 +18727,7 @@
     "company": "roh",
     "source": "rohonhonorclub",
     "status": "checked",
-    "recordings": 109,
+    "recordings": 0,
     "skipped": [
       "2023/ROH TV _ 2023 1 E01 ROH On HonorClub Episode 001.mp4",
       "2023/ROH TV _ 2023 1 E02 ROH On HonorClub Episode 002.mp4",
