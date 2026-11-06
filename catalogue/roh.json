@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "roh",
-  "revision": 1793857127,
+  "revision": 1793993502,
   "catalogue": {
     "schemaVersion": 1,
     "sourceValidation": 5,
@@ -37575,6 +37575,30 @@
           }
         ],
         "discoveredAt": 1793912440440
+      },
+      {
+        "id": "roh:2026-11-05:honorclub",
+        "date": "2026-11-05",
+        "year": 2026,
+        "show": "HonorClub",
+        "title": "HonorClub",
+        "description": "",
+        "duration": 5939,
+        "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18785135561294&type=37&idx=3&scl=4&tkn=n206lsO43yhNEC6A2z7208qtqVc&fn=external_8",
+        "poster": "https://iv.okcdn.ru/videoPreview?id=18785135561294&type=37&idx=3&scl=4&tkn=n206lsO43yhNEC6A2z7208qtqVc&fn=external_8",
+        "sources": [
+          {
+            "type": "okru",
+            "videoId": "16313740823118",
+            "owner": "910148261710",
+            "title": "ROH.HonorClub.TV.2026.11.05.MyAEW.1080p",
+            "duration": 5939,
+            "programme": "HonorClub",
+            "label": "OK.ru",
+            "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18785135561294&type=37&idx=3&scl=4&tkn=n206lsO43yhNEC6A2z7208qtqVc&fn=external_8"
+          }
+        ],
+        "discoveredAt": 1793993414405
       }
     ],
     "eventCalendar": [],
@@ -50963,6 +50987,17 @@
           "show": "HonorClub",
           "title": "HonorClub #165",
           "duration": 6438,
+          "enabled": true
+        },
+        {
+          "id": "16313740823118",
+          "owner": "910148261710",
+          "episodeId": "roh:2026-11-05:honorclub",
+          "date": "2026-11-05",
+          "show": "HonorClub",
+          "title": "HonorClub",
+          "name": "ROH.HonorClub.TV.2026.11.05.MyAEW.1080p",
+          "duration": 5939,
           "enabled": true
         }
       ],

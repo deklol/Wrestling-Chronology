@@ -12622,8 +12622,11 @@
   {
     "company": "wcw",
     "source": "YouTube \u00b7 WCW Monday Nitro Full Episodes",
-    "status": "skipped",
-    "reason": "Playlist data unavailable"
+    "status": "checked",
+    "new_recordings": 0,
+    "skipped": [
+      "FULL EPISODE: Goldberg vs. Booker T; Tag Team Caged Heat: WCW Monday Nitro, July 24, 2020"
+    ]
   },
   {
     "company": "wcw",
@@ -14703,11 +14706,8 @@
     "company": "roh",
     "source": "OK.ru \u00b7 sileem salaeam \u00b7 recent full shows",
     "status": "checked public recent uploads",
-    "new_recordings": 0,
-    "skipped": [
-      "ROH.HonorClub.TV.2026.11.05.MyAEW.720p: Public stream unavailable",
-      "ROH.HonorClub.TV.2026.11.05.MyAEW.1080p: Public stream unavailable"
-    ]
+    "new_recordings": 1,
+    "skipped": []
   },
   {
     "company": "roh",
@@ -17144,8 +17144,9 @@
   {
     "company": "roh",
     "source": "roh-wrestling-special-02-12-25",
-    "status": "skipped",
-    "reason": "The read operation timed out"
+    "status": "checked",
+    "recordings": 0,
+    "skipped": []
   },
   {
     "company": "roh",
@@ -18850,6 +18851,12 @@
     "source": "Discovery",
     "status": "skipped",
     "reason": "OK.ru profiles retained as reference links; reviewed video mappings used. Profile discovery was unavailable during the documented HTTP 204 barrier; no existing sources removed."
+  },
+  {
+    "company": "nxt",
+    "source": "Discovery",
+    "status": "skipped",
+    "reason": "YouTube qIzeU6gs_i8: uploader identity not verified; recording held for review"
   },
   {
     "company": "nxt",
