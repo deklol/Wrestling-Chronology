@@ -63,9 +63,9 @@
     },
     "nxt": {
       "url": "https://raw.githubusercontent.com/deklol/Wrestling-Chronology/main/catalogue/nxt.json",
-      "sha256": "f5dac82247141c01ae71b82ef02c7d42a00ee59baaf8e70350e230f6414ca431",
-      "bytes": 3342886,
-      "revision": 1794031701
+      "sha256": "db4d7e3d3d3522c053e2c41d0cc4d01829b9a4a3dbda1716853e4a56a8193181",
+      "bytes": 3404088,
+      "revision": 1794057003
     }
   }
 }

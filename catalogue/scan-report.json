@@ -481,8 +481,9 @@
   {
     "company": "aew",
     "source": "YouTube \u00b7 Official AEW full pre-shows (Buy In / Zero Hour)",
-    "status": "skipped",
-    "reason": "Playlist data unavailable"
+    "status": "checked",
+    "new_recordings": 0,
+    "skipped": []
   },
   {
     "company": "wwe",
@@ -9061,8 +9062,9 @@
   {
     "company": "wwe",
     "source": "YouTube \u00b7 tnt-1985",
-    "status": "skipped",
-    "reason": "Playlist data unavailable"
+    "status": "checked",
+    "new_recordings": 0,
+    "skipped": []
   },
   {
     "company": "wwe",
@@ -10077,8 +10079,9 @@
   {
     "company": "wcw",
     "source": "jan.-1997",
-    "status": "skipped",
-    "reason": "Empty metadata; previous recordings retained"
+    "status": "checked",
+    "recordings": 0,
+    "skipped": []
   },
   {
     "company": "wcw",
@@ -10343,7 +10346,7 @@
     "company": "wcw",
     "source": "oct--2000",
     "status": "skipped",
-    "reason": "Empty metadata; previous recordings retained"
+    "reason": "The read operation timed out"
   },
   {
     "company": "wcw",
@@ -10418,8 +10421,9 @@
   {
     "company": "wcw",
     "source": "sep.-2000",
-    "status": "skipped",
-    "reason": "Empty metadata; previous recordings retained"
+    "status": "checked",
+    "recordings": 0,
+    "skipped": []
   },
   {
     "company": "wcw",
@@ -12626,8 +12630,9 @@
   {
     "company": "wcw",
     "source": "YouTube \u00b7 Full World Championship Wrestling Episodes",
-    "status": "skipped",
-    "reason": "Playlist data unavailable"
+    "status": "checked",
+    "new_recordings": 0,
+    "skipped": []
   },
   {
     "company": "tna",
@@ -14701,13 +14706,6 @@
     "source": "OK.ru \u00b7 sileem salaeam \u00b7 recent full shows",
     "status": "checked public recent uploads",
     "new_recordings": 0,
-    "skipped": []
-  },
-  {
-    "company": "roh",
-    "source": "roh-on-honor-club-episode-191-05-11-26",
-    "status": "checked",
-    "recordings": 1,
     "skipped": []
   },
   {
@@ -17140,7 +17138,7 @@
     "company": "roh",
     "source": "roh-wrestling-special-02-12-25",
     "status": "skipped",
-    "reason": "Empty metadata; previous recordings retained"
+    "reason": "The read operation timed out"
   },
   {
     "company": "roh",
