@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "company": "roh",
-  "revision": 1793993502,
+  "revision": 1794031672,
   "catalogue": {
     "schemaVersion": 1,
     "sourceValidation": 5,
@@ -37596,6 +37596,16 @@
             "programme": "HonorClub",
             "label": "OK.ru",
             "thumbnail": "https://iv.okcdn.ru/videoPreview?id=18785135561294&type=37&idx=3&scl=4&tkn=n206lsO43yhNEC6A2z7208qtqVc&fn=external_8"
+          },
+          {
+            "type": "archive",
+            "url": "https://archive.org/download/roh-on-honor-club-episode-191-05-11-26/ROH%20on%20HonorClub%20Episode%20191%2005-11-26.mp4",
+            "filename": "ROH on HonorClub Episode 191 05-11-26.mp4",
+            "duration": 6066,
+            "height": 720,
+            "bytes": 1659821342,
+            "label": "Internet Archive \u00b7 720p",
+            "language": "en"
           }
         ],
         "discoveredAt": 1793993414405
@@ -50566,6 +50576,20 @@
               "date": "2010-12-27",
               "show": "HDNet",
               "title": "HDNet"
+            }
+          }
+        },
+        {
+          "id": "roh-on-honor-club-episode-191-05-11-26",
+          "name": "ROH on HonorClub Episode 191 05-11-26",
+          "enabled": true,
+          "mappedOnly": true,
+          "dateOrder": "DMY",
+          "overrides": {
+            "ROH on HonorClub Episode 191 05-11-26.mp4": {
+              "date": "2026-11-05",
+              "show": "HonorClub",
+              "title": "HonorClub #191"
             }
           }
         }
