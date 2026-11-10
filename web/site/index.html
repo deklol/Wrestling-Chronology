@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WC Player | My Library</title><link rel="stylesheet" href="base.css"><link rel="stylesheet" href="library/library.css"></head>
+<body><header><strong>WC Player</strong><span>Personal media library</span></header><main id="library"></main>
+<div id="notice" role="status" hidden></div><script type="module">
+import {mountPersonalLibrary} from './library/app.js';
+mountPersonalLibrary(document.querySelector('#library'));
+</script></body></html>
