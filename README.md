@@ -1,6 +1,6 @@
 # WC Player
 
-**[Join the Discord community](https://discord.gg/wSGVn7GWxZ)**
+**DISCORD INVITES BLOCKED INDEFINATELY, YOU HAVE [@DinosaurVoltage](https://x.com/DinosaurVoltage/status/2121112104870572356) TO THANK FOR THAT ON TWITTER! GO AHEAD AND THANK HIM FOR RUINING IT FOR YOU!**
 
 A metadata organiser and general-purpose video player, built by wrestling fans.
 
