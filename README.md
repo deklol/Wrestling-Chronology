@@ -1,6 +1,6 @@
 # WC Github
 
-# **DISCORD INVITES BLOCKED INDEFINITELY, YOU HAVE [@DinosaurVoltage](https://x.com/DinosaurVoltage/status/2121112104870572356) TO THANK FOR THAT ON TWITTER! GO AHEAD AND THANK HIM FOR RUINING IT FOR YOU!**
+# **DISCORD INVITES BLOCKED INDEFINITELY. YOU CAN THANK RANDOMS ON X FOR THAT!**
 
 A metadata organiser and general-purpose video player, built by wrestling fans.
 
